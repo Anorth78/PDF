@@ -7,7 +7,7 @@ START HERE: use library.json (or api/documents.json) to enumerate every document
 Do not rely on search-engine indexing or directory browsing.
 For each document, fetch its extracted text_url for searchable text; use pdf_url for the original PDF.
 
-Document count: 24
+Document count: 25
 
 ## Machine-readable resources
 - Catalogue: https://anorth78.github.io/PDF/library.json
@@ -15,6 +15,11 @@ Document count: 24
 - AI guide: https://anorth78.github.io/PDF/ai.txt
 
 ## Documents
+
+### ai 1 agenda   mc v1 en US
+- ID: ai-1-agenda-mc-v1-en-us
+- Text: https://anorth78.github.io/PDF/text/ai-1-agenda-mc-v1-en-us.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ai-1-agenda-mc-v1-en-us.pdf
 
 ### Cisco Calling
 - ID: cisco-calling

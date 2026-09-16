@@ -4,9 +4,26 @@
   "description": "A searchable collection of PDF knowledge resources.",
   "owner": "Your Organization",
   "site_url": "https://anorth78.github.io/PDF",
-  "generated": "2026-09-16T15:10:15.965760+00:00",
-  "document_count": 24,
+  "generated": "2026-09-16T15:20:11.068991+00:00",
+  "document_count": 25,
   "documents": [
+    {
+      "id": "ai-1-agenda-mc-v1-en-us",
+      "title": "ai 1 agenda   mc v1 en US",
+      "original_filename": "ai_1_agenda_-_mc_v1-en-US.pdf",
+      "source_relative_path": "ai_1_agenda_-_mc_v1-en-US.pdf",
+      "pdf_url": "pdfs/ai-1-agenda-mc-v1-en-us.pdf",
+      "text_url": "text/ai-1-agenda-mc-v1-en-us.txt",
+      "type": "PDF",
+      "pages": 27,
+      "bytes": 112110,
+      "sha256": "6e42e5b676eb75855da95d2e573fd0ece3711be710be2276158e52886732942f",
+      "modified": "2026-09-16T15:18:41.302699+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
     {
       "id": "cisco-calling",
       "title": "Cisco Calling",

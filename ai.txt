@@ -7,10 +7,17 @@ Use library.json for structured metadata.
 Use the linked text_url for extracted document text.
 Use the linked pdf_url for the original PDF.
 
-Document count: 24
-Generated: 2026-09-16T15:10:15.965760+00:00
+Document count: 25
+Generated: 2026-09-16T15:20:11.068991+00:00
 
 ## Documents
+
+### ai 1 agenda   mc v1 en US
+- ID: ai-1-agenda-mc-v1-en-us
+- Original filename: ai_1_agenda_-_mc_v1-en-US.pdf
+- PDF: pdfs/ai-1-agenda-mc-v1-en-us.pdf
+- Extracted text: text/ai-1-agenda-mc-v1-en-us.txt
+- Pages: 27
 
 ### Cisco Calling
 - ID: cisco-calling
