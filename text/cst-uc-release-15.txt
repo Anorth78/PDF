@@ -1,0 +1,3657 @@
+--- PAGE 1 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+November 9, 2023
+Unified Communications 
+Release 15 and On-
+Premises Update CST
+
+--- PAGE 2 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Agenda
+01 Introduction
+02 Unified Communications Release 15
+Applications and Platform
+03 Expressway
+Edge
+04 CUBE
+Edge
+06 Jabber
+Software Endpoints
+07 Devices
+Hardware Endpoints
+08 Conclusions & References
+05 Cisco Meeting Server (CMS/CMM)
+Meetings
+2
+
+--- PAGE 3 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+CST On-Premises Update: Presenters and Q&A Mgrs
+Manish Joshi
+Scott Kiewert
+Matthew Jordy
+Raja Deshpandey
+Somit Ghosh
+Iniyan Mdr
+Sudhir Parsuram 
+Deepak V Pol
+Wes Wiley
+James Arias
+Shane Long
+Luca Pellegrini
+3
+
+--- PAGE 4 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+David Scott
+CST On-Premises Update: Presenters and Q&A Mgrs
+Saurabh Khaneja
+Rama (Mallamkond 
+Ramakrishna)
+4
+Jonathan Marshall
+Hasmeet Singh 
+Bedi 
+Hussain Ali
+ Dushyant Chaudhary
+
+--- PAGE 5 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 5
+Safe harbor statement
+This presentation contains “forward-looking” statements 
+that involve risks, uncertainties and assumptions. If the risks or 
+uncertainties ever materialize or the assumptions prove
+incorrect, our results may differ materially from those 
+expressed or implied by such forward-looking statements. All 
+statements other than statements of historical fact could be 
+deemed forward-looking, including, but not limited to, any 
+projections of financial information; any statements about 
+historical results that may suggest trends for our business; any 
+statements of the plans, strategies, and objectives of 
+management for future operations; any statements of 
+expectation or belief regarding future events, technology 
+developments, or enforceability of our intellectual property 
+rights; and any statements of assumptions underlying any of 
+the foregoing.
+These statements are based on estimates and information 
+available to us at the time of this presentation and are not 
+guarantees of future performance. Actual results could differ 
+materially from our current expectations as a results of many 
+factors, including but not limited to: the unpredictable nature 
+of our rapidly evolving market and quarterly fluctuations in our 
+business; the effects of competition; and any adverse 
+changes in our indirect channel relationships. These and other 
+risks and uncertainties associated with our business are 
+described in the company’s annual report on Form 10-K. The 
+forward-looking statements in this presentation are made as 
+of the date of the initial publication of this presentation, and 
+we disclaim any obligation to update these statements at any 
+time in the future.
+
+--- PAGE 6 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Introduction
+Unified Communications Release 15 and On-
+Premises Update CST
+Sudhir Parsuram – Product Manager
+6
+
+--- PAGE 7 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Connected calling
+Hear See Do
+7
+
+--- PAGE 8 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Powering all workers
+Knowledge workers
+ Frontline workers
+ Support workers
+ Regulated workers
+8
+
+--- PAGE 9 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+This powerful experience delivered throughflexible Cisco Webex 
+Calling suite
+The most complete and flexible enterprise-grade calling experience is now part of the Webex Suite
+Delivered on-premises Delivered fully on Cloud, or as Hybrid
+Single Global Platform
+Dedicated 
+InstanceMulti-tenant  
+Customer Requirements
+Standard Specialized
+Shared MicroservicesInfrastructure Security AI
+Emergency 
+Responder 
+Unified CM
+CUCM
+Solution delivery options
+Virtualized DCAll-in-one Appliance 
+Expressway
+Unity 
+Connection
+IM & 
+Presence
+Unified Border 
+Element
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+CCUC
+9
+
+--- PAGE 10 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+On-Premises Calling Portfolio Strategy
+• Help our customers transform to unified and integrated Webex experience 
+across Webex Suite, Webex Calling, Webex App and Webex devices, with 
+flexible journey options
+• Maintain highest product quality and supportability of the overall UC solution 
+across various deployment models
+• Deliver best in class security, certification and compliance needs ensuring 
+business continuity for customers
+• Enhance compatibility with evolving ecosystem to provide flexible deployment 
+choices helping customers modernize
+10
+
+--- PAGE 11 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+CUCM Solution Updates – Last 24+ months
+Keeping pace with Innovation, Security and Compliance
+Simplified Administration
+Quality – Automation, Library/Platform updates
+Cisco Product Security Baseline, Federal Certification
+Connected to Cloud
+• Serviceability for Jabber/ MRA, 
+Persistent chat mgmt
+• TFTP large file download
+• BAT support for VG 420
+Security / Compliance
+• Wx App Self provisioning
+• IPv6 over MRA
+• Opus transcoding
+Better User Experience
+• E911 for remote worker
+• PLR Support for licensing
+• SHA-2 for SCCP analog gw and 
+conf bridge
+• CCUC – Jabber App Migrtaion, 
+Self Enable, Analytics, Certificate 
+Management. Operations 
+Dashboard, WebRTMT
+• Expressway Smart Licensing (w/ 
+PLR/SLR)
+• Cluster s/w location for simple 
+upgrades
+• Borderless CTI for MRA
+• Accessibility enhancements
+• National suicide prevention 
+Hotline (988)
+• Redsky E911 loc service
+• EST for Cert enrollment
+• Authenticated SMTP
+• CCUC – Borderless CTI, 
+Troubleshooting, Touchless 
+provisioning of Webex App, 
+Migrations, 
+14
+14 SU1
+14 SU2
+• SRST and Webex Calling SGW 
+colocation.
+• CUC Scale >100K
+• iOS Local Push Notification
+• Presence, DND sync w/ Wx App
+• VDI Support for Webex app
+• Webex Calling Dedicated 
+Instance - Remote Survivability 
+Node
+• DTMF interworking for Secure 
+Media MTP
+• HA for oAuth Refresh Token 
+renewal
+• CRL enhancement
+• ExpWay - ECDSA
+• ExpWay – Select >2500
+• CUBE – Secure media forking for 
+cloud speech services
+• CCUC – Presence 
+Synchronization, Azure AD 
+support for UCM/CUC, DND 
+Sync
+• MS Teams integration – Call 
+History, Presence, Voicemail
+14 SU3
+• Simple Phone refresh
+• Higher cluster scale
+• Fresh Install w/ Data import
+• E911 compliance
+• Simple Phone Security (oAuth) 
+and revocation
+• Simple certificate mgmt.
+• MRA HA – Expressway & 
+LTE/Wifi failover
+• Jabber zero downtime
+• Headset based EM login
+• Cloud-Connected UC – Analytics 
+• IM&P Open Federation
+• Unified Messaging w/ Google 
+and O365
+11
+
+--- PAGE 12 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+• Certificate based Multi Factor 
+Authentication for RTMT
+• FIP 140-2 certification
+• USGv6 R1 certification*
+• V6 Ready Logo*
+• TLS 1.3
+• DOD-IN APL Certification
+• Secure Communications 
+Interoperability Protocol (SCIP) 
+support – UCM & CUBE
+• FIPS 140-3 support
+• Common Criteria Certification –
+UCM & Expressway
+• IPv6 only for UCM & CSR apps
+Bridges to the CloudSecurity & Compliance 
+• Core Linux Transition
+• Python 3
+• IDS
+• Kernel crypto
+• FIPS Toolkit 
+• 64-bit Support
+• Support for VG410
+• PUSH Notification Service 
+enhancements for CUCM*
+• CER – New device support for 
+Switch Port tracking
+• CER – IPv6 Subnet Tracking
+• Megacluster Survivability 
+via Higher Node Count.
+• Higher scale/density (via 64-bit-
+app)
+Admin Simplicity
+CUCM 15 & Roadmap
+• Improved Webex App 
+experience with persistent 
+CUCM login flow
+• Local Push Notification*
+• CUC – Better noise 
+cancellation for VM deposit via 
+Babble Labs integration
+• CUBE - NAT Traversal using 
+RTP keepalives
+• Expressway - 88XX and 78XX 
+Series Phone Failover
+User Experience
+• Microsoft Teams Integration (via 
+CCUC) – Call History, 
+Voicemail, Bi-directional 
+Presence, Call Forwarding 
+Status and more
+Webex Cloud-Connected UC
+• Directory Services (Azure 
+AD support) – near real-time 
+delta sync based on Webex CI 
+Notification services
+Available beyond initial 15 releaseCUCM 15 Beta
+https://gobeta.webex.com/key/cucm
+12
+
+--- PAGE 13 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 13
+Certification Time Frames
+• FIPS 140-2 : UCM 15 Nov’23
+• USGv6 R1 : UCM 15 Q1CY24
+• DoDIN APL TLS 1.3 : UCM 15SU1 CY24
+• Common Criteria : UCM 15SU3 1HCY25
+
+--- PAGE 14 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 14
+End of Support for CentOS Linux distro 
+(Industry/Macro Event) 
+Kernel.org
+Linux.org
+• Linux kernel
+• GNU tools & libs
+• Additional for 
+“complete OS”
+Fedora
+ Red Hat 
+Enterprise Linux
+ CentOS
+UCM 12.5
+UCM 14
+CentOS Stream
+Alma Linux
+ UCM 15
+UCM 11.5
+Final 
+Releases Released End of Life
+CentOS 8 24-Sep-CY19 31-Dec-CY21
+CentOS 7 7-Jul-CY14 30-Jun-CY24
+
+--- PAGE 15 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+UCM 12.5 release EOLed
+Plan to Upgrade to UCM 15 or Migrate to Webex Calling.
+15
+• Macro industry event: End of Support for CentOS Linux distribution. CentOS7 goes end of support 
+June CY24.
+• Cisco is developing UCM release 15 based on alternative Linux, for long term customer supportability.
+• End of support for CentOS7 forces End of Life of UCM releases based on CentOS7.
+• 12.5 release EOL bulletin published on 1-March-CY23.
+• For best long-term solution, customers should either…
+• Upgrade to UCM release 15
+• Migrate to Webex Calling
+
+--- PAGE 16 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 16
+Release FCS/EOL – CUCM 15, 14, 12.5 (Cisco dates subject to change)
+Q2
+CY23
+Q3 
+CY23
+Q4
+CY23
+Q1
+CY24
+Q2 
+CY24
+Q3 
+CY24
+Q4
+CY24
+Q1 
+CY25
+Q1 
+CY23
+12.5
+14
+15
+1st Mar Aug Aug Aug
+1H CY24
+(no bug/security fixes)
+Nov
+Q3
+CY25
+Q4
+CY25
+Q2
+CY26
+Q1 
+CY26
+Q3
+CY26
+Q2
+CY25
+(no bug/security fixes)
+SU1 SU2
+SU3
+SU7a
+CentOS7 
+End of Support 
+Addon:
+A-FLEX-12.5-LIC in 
+future EOL14961
+GreenfieldIn published 
+EOL14949
+Products that this timing applies to:
+• UCM - Unified Communications Manager 
+• SME – Session Management Edition
+• IM&P – Instant Messaging & Presence service
+• CUC - Unity Connection
+• CER - Cisco® Emergency Responder
+• PCD - Prime Collaboration Deployment
+• Elements of Webex Calling dedicated instances, UCMC-G, Webex Contact Center 
+Enterprise
+SU3
+SU4
+End of Life (EOL) Announcement
+End of Support
+GA
+End of Sale
+End of Software Maintenance (no bug/security fix)
+
+--- PAGE 17 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Available releases for 
+• UCM - Unified Communications Manager 
+To which these applications and cloud services 
+also align:
+• SME – Session Management Edition
+• IM&P – Instant Messaging & Presence service
+• CUC - Unity Connection
+• CER - Cisco® Emergency Responder
+• PCD - Prime Collaboration Deployment
+• And parts of
+• UCCX - Contact Center Express
+• P/UCCE – Packaged/Unified Contact 
+Center Enterprise
+• Webex Calling dedicated instances 
+• Webex Contact Center Enterprise
+10.5
+(End of Support 
+– July 2022)
+11.0
+(End of Support 
+–  July 2020)
+11.5
+(End of Support.
+ -  May 2024)
+No defect fixes
+12.0
+(End of Support 
+- Aug 2023 )
+12.5
+(End of Support 
+– Aug 2025)
+14
+(Currently 
+Shipping)
+15
+(Coming soon)
+Supported UCM Versions
+17
+
+--- PAGE 18 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 18
+Cisco Unified Communications Manager Release Timeline
+Plan as of  Nov 2023 - Subject to change without notice
+15 SU3
+Q3 CY 24
+Major release
+Q4 CY 23Q2 CY23
+14 SU3
+…
+15 15SU2
+Continuous Value Delivery with Webex® CCUC
+Delivered
+… …
+Q1 CY 25
+X15.1X14.3 X15
+Expressway
+CUBE 
+(IOS-XE)
+XE 17.12.1 XE 17.15.1
+Q3 CY 23
+12.5 SU8 14 SU4
+CE1300
+XE 17.13.1 XE 17.14.1
+15SU1
+Q1 CY 24
+
+--- PAGE 19 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+What should I do?
+For best long-term solution, customers should either:
+1. Migrate to Webex Calling (Multi Tenant) … last migration
+2. Migrate to Webex Calling (dedicated instance) … last migration
+3. Upgrade to UCM 15
+19
+
+--- PAGE 20 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+For more information / details…
+What… Where…
+PM alias ask-ucm-release-eol@cisco.com
+ask-ucm-release-eol-partner@cisco.com 
+PM Webex space
+Ask-UCM-Release-EOL
+• Link to space: webexteams://im?space=2fbda8c0-b38e-11ed-b874-
+abbe62d26526
+• Join link: https://eurl.io/#EBoSUJrld
+Partner webinar Cisco UCM 15 
+Update - Get Current or Go 
+Cloud Now 
+http://cs.co/cvoe (8-Nov-CY23)
+UCM Release EOL bulletins
+12.5: EOL14949
+12.0: EOL13303
+11.5: EOL13693
+11.0: EOL11446
+10.5: EOL12642
+Internal
+Only
+
+--- PAGE 21 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Unified Communications 
+Release 15
+21
+CALLING, MESSAGING
+
+--- PAGE 22 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Release 15 Application 
+Updates
+22
+
+--- PAGE 23 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Webex Cloud-Connected UC (CCUC) - Bridge to Cloud
+1. Analytics
+2. Operationsal Metrics
+a. Operations Dashboard
+b. Troubleshooting
+c. Certificate Management
+d. Web RTMT
+3.  Migrations & Deployment Insights
+4. Rich Presence for Webex App
+5. Borderless CTI
+6. Touchless Provisioning for Webex App
+7.  CCUC Directory Service - Azure AD Support
+8.  Microsoft Teams Integration
+a. Call History
+b. Presence Sync – Webex <-> Microsoft
+c. Voicemail (CUC)Endpoints 
+& Headsets
+Unified 
+Communications 
+Manager (UCM)
+UCM                 
+IM & 
+Presence
+Unity 
+Connection
+Operations 
+Dashboards
+Analytics Troubleshooting
+Certificate 
+Management Web RTMT
+Touchless 
+Provisioning 
+Webex App
+Borderless 
+CTI
+Cisco 
+Emergency 
+Responder
+Directory Svc 
+Azure AD 
+Support
+MS Teams 
+Integration
+Rich 
+Presence
+Migration & 
+Deployment 
+Insights
+23
+
+--- PAGE 24 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 24
+Webex Calling for Microsoft Teams Integration
+Call/Search Input
+Enter a number, SIP address or type a name to 
+search for Azure AD/Outlook contact
+Call Tab
+Access dial pad, 
+contact search and 
+speed dials
+Contact Search
+Searrch for personal and 
+corporate
+contacts
+ 
+Dialpad
+Access to dialpad 
+to key in numbers
+Azure AD
+Contacts
+Outlook 365
+Contacts
+Add Speed dial
+Click to add up to 25
+speed dial cards
+Call
+Select number and call contact
+Call History
+See history of 
+incoming/outgoing/missed calls
+ 
+Voicemail
+Access and play 
+back the voicemail
+ 
+Contact 
+Resolution
+Resolves the incoming call 
+identifier to Azure AD
+Webex Cloud-Connected UC (CCUC) required
+Supported Releases
+• UCM – 15, 12.5 SU7+ , 14 SU3
+• CUC – 15, 12.5, 14 SU3
+Call Forwarding 
+See your call forwarding status at a single glance
+Bi-directional Presence
+Display your on UCM call presence to your 
+contacts and see their call presence too
+
+--- PAGE 25 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 25
+MS Teams: Bi-directional Presence Sync
+User's presence status on either 
+application (MS Teams / Webex 
+App) will now be kept in sync with 
+the other application for the below 
+presence states:
+
+--- PAGE 26 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Rich Presence: User’s Phone Presence in Webex App
+• Integrate User’s IP phone off-hook/on-hook 
+status with Webex app presence
+• Accurate real-time presence information for 
+contacts
+• Enables users to determine best 
+communication mode
+• Webex Cloud-Connected UC (CCUC) 
+required
+• Supported Releases :
+• Cisco UCM: 15, 12.5 SU7+, 14SU3+
+• Webex app: all releases
+26
+
+--- PAGE 27 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Presence Sync 
+DND from Webex app to IP Phone and vice-versa
+• Sync User’s IP phone DND status with Webex app and 
+vice-versa
+• DND status is cleared on all devices when DND expires 
+• Supported on CTI mode and Shared lines
+• Webex Cloud-Connected UC (CCUC) required
+• Supported Releases:
+• Cisco UCM: 15, 12.5 SU7+, 14SU3+
+• Webex app: all releases
+27
+
+--- PAGE 28 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Borderless CTI
+End user experience
+Cloud
+ -
+ Connected UC 
+MRA
+SIP/Media
+CTI
+CCUC
+Traffic  
+Benefits
+• Webex App CTI application functionalities available 
+remotely, no VPN connection required
+Key Features
+• Desk phone control of 88xx/7xx, CE, DX from Webex 
+App remotely
+• CTI applications such as receive incoming enterprise 
+calls, making/disconnect/Hold/Retrieve calls among 
+other applications. 
+• Webex Cloud-Connected UC (CCUC) required
+Supported Releases:
+• Cisco UCM: 15, 14SU2 onwards
+• Webex App Jun 22
+28
+
+--- PAGE 29 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Touchless Webex App Provisioning for UCM
+User can self-provision the Webex® App in UCM
+• Avoids over provisioning of devices for Webex App
+• Minimizes impact on cluster scale & licensing
+• Control Hub based policy control
+• Enable Jabber® to Webex App migration
+• Webex Cloud-Connected UC (CCUC) required
+• No admin intervention required
+• Supported Releases:
+• CUCM 15, 11.5+, 12.5+ and 14+ 
+• Expressway X14.0.2+ 
+• Webex app 41.10 and higher
+29
+
+--- PAGE 30 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+CCUC Directory Service: Azure AD Integration
+Synchronize users from cloud-based directory such as 
+Azure AD into on-premise UC infrastructure
+• Webex CI integrates with Azure AD using SCIM to sync 
+the users
+• CCUC Directory Service will sync users from Webex CI 
+into CUCM and Unity Connection
+• Webex Cloud-Connected UC (CCUC) Required
+Benefits
+• Ubiquitous Identity and Access management while 
+moving directory to Cloud
+• Reduction in TCO
+• Enables migration options – incremental to full cloud 
+native
+Supported Releases:
+• UCM 12.5(1)SU4+ and 14 or later
+30
+
+--- PAGE 31 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+ Expected delivery dates are subject to change
+iOS Local Push Connectivity for calls (LPNS) 
+Benefits
+• Reliable & Secure way to notify Webex 
+App / Jabber users on iOS devices of 
+incoming VoIP call and messages when 
+iOS devices operate in a WiFi constrained 
+network when there is no internet 
+connection and doesn’t have access to 
+APNs 
+Key Features
+• To the user, LPNS and APNS notifications 
+will be identical
+• Mission critical / Time critical Local 
+notifications get delivered when App is 
+suspended and running in background
+• Persistent connectivity to LPNS service 
+Supported Releases:
+• Cisco UCM: 15, 14SU3 onwards
+• Webex App 43.6
+• Jabber: 14.2
+Containing App
+Extension App
+CUCM (LPNS)
+Notification
+Restricted Local WiFi
+Industry first and only solution
+
+--- PAGE 32 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+ Expected delivery dates are subject to change
+iOS Local Push Connectivity for calls (LPNS) 
+• App Extension can directly communicate 
+directly with your CUCM (LPNS) on a local 
+WiFi network
+• Web Socket Protocol between CUCM 
+(LPNS) and App Extension to deliver the 
+notifications
+• App must specify WiFi networks where you 
+wish to enable local push connectivity
+• When device joins specified WiFi network 
+App Extension is responsible for 
+maintaining network connection with 
+CUCM(LPNS) and receiving the 
+notifications
+• App Extension continues to run in 
+background as long as device is 
+associated to the specified Wifi 
+network System stops all extension when 
+devices loses connectivity to specified wifi 
+network
+Containing App
+Extension App
+CUCM (LPNS)
+Notification
+Restricted Local WiFi
+
+--- PAGE 33 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 33
+CUC : Supporting160K users​
+Feature: 
+Improvement in Directory Size from 100K to 160K in an HTTPS network
+Benefits
+• Customers can have a larger network with 160K voice mailboxes.
+• All 160K users can perform Directory Search, leave Voice messages, Cross Box Sign -in 
+and Transfer in the network
+• Users can send Voice messages to Distribution Lists across the larger network
+• Ease of Administration with more efficient topology utilizing larger OVAs
+Supported Releases:
+• CUC 15, 14 SU3
+
+--- PAGE 34 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Benefits
+• Smart Call Home (SCH) as method of transport is EoL and 
+replaced by Smart Receiver based transport
+• Smart Receiver is HTTPS based 
+Key Features
+• New fresh install will be supported with Smart Receiver only 
+• Upgraded or Migrated system will be supported with Smart 
+Receiver provided system is able to connect to endpoint URL of 
+Smart Receiver automatically, If the system is not able to 
+connect to Smart Receiver endpoint URL , then admin would 
+need to manually configure and migrate to Smart Receiver 
+based transport 
+• Pre and Post upgrade checks will be provided 
+Minimum release support:
+• Cisco UCM : 14 SU4, 15 SU2
+• CER : 15 SU2
+• CUC : 15 SU2
+CUCM
+ Cisco Smart 
+Software Manager (CSSM) 
+Direct Access
+On-Premises
+Offline
+Roadmap
+Smart Receiver as method of transport for Smart Licensing in UCM 
+Calling
+
+--- PAGE 35 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential Expected delivery dates are subject to change
+• NATO requirement
+Benefits
+• Application layer , Encrypted RTP payload
+• Transparent relay , "clear-channel data”
+Key Features
+• Line side support in CUCM 
+• Trunk side support in CUBE
+CUCM CUCM
+SME
+CUBE
+Third party SIP IP phone Third party SIP IP phone
+Third party SIP IP phoneThird party SIP IP phone
+SCIP over sRTP
+SCIP over sRTP
+SIP Line
+SIP Line SIP Line
+SIP Line
+SIP TrunkSIP Trunk
+SIP Trunk SIP Trunk
+Network 2Network 1
+Future
+Secure Communication Interoperability Protocol support in CUCM 
+& CUBE
+
+--- PAGE 36 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+USGV6 R1 Certification for CUCM
+As per Federal Acquisition Regulation (FAR) - Case 2005-041, 
+IPv6 compliance is mandatory for all US Government (USG) 
+agencies.
+To meet this requirement the National Institute of Standards 
+and Technology (NIST) created the USGv6 certification 
+program.
+IPv6 Ready Logo Program is a conformance and 
+interoperability testing program intended to increase user 
+confidence by demonstrating that IPv6 is available now and 
+is ready to be used.
+UCM 15 will be USGV6 R1 certified ~Q1CY24
+36
+
+--- PAGE 37 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+IPv6 only support on CUCM
+Problem Statement
+• IPv4 address exhaustion 
+• OMB Mandate : 20% by FY 2023 , 50% by FY 2024, 80% by FY 2025
+Current Recommendation: 
+• CUCM, IMP, CER, CUC in Dual Stack
+• Endpoints , SIP GW in IPv6 only
+• Network Infrastructure: IPv4 LDAP Dir Sync (IPv6 compliant), IPv6 NTP, 
+IPv4 CDR / CMR/ Trace/ Backup server  (IPv6 aware) , IPv4 Syslog 
+server, IPv6 DNS, IPv6 DHCP
+• The same CUCM / IM&P will be able to handle all phone services for 
+IPv4 only endpoints as well​
+Future Goal:
+• CUCM, IMP, CER, CUC in IPv6 only
+• Endpoints , SIP GW in IPv6 only
+• Network Infrastructure : IPv6 LDAP Dir Sync (IPv6 compliant), IPv6 CDR 
+/ CMR/ Trace/ Backup server (IPv6 aware) , IPv6 Syslog server
+Current
+Future
+Future
+37
+
+--- PAGE 38 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+• Webex app registered to CUCM 
+Registered prompts user to login every 60 
+days to maintain phone service.
+• User may cancel login for phone service 
+and still have access to 
+messaging, meetings, and internal calls as 
+the account is still authenticated with IdP 
+on Cisco Webex cloud
+• If the user on Webex app is 
+not authenticated by CUCM:
+• Phone service disconnects which results 
+in Missed calls
+• Mixed calling User Experience. Internal 
+calls may work as connectivity to Cisco 
+Webex cloud is maintained, but 
+PSTN calls don’t.
+Key Feature
+• The refresh token in Webex App is 
+automatically renewed without user 
+intervention so that the user does not get 
+logged out of the phone service.
+• Expressway will be able to pass through 
+the auto-renew parameter for refresh 
+token so that the clients will renew the 
+tokens automatically
+Benefits
+• Improved Webex App user experience 
+resulting in end users not missing calls due 
+to phone service disconnects
+Supported Releases: 
+• UCM 15, Expressway X15
+• Webex App 43.8
+38
+Improved Webex App experience with persistent CUCM 
+login flow
+
+--- PAGE 39 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+TLS 1.3 Roadmap
+Why TLS 1.3 ?
+• Improved Security – TLS 1.3 more secured than TLS 
+1.0, 1.1 and 1.2
+• Improves performance – Shorter handshake 
+mechanism
+• Simplified Cipher Suites ​​- Use of simple and stronger 
+Cipher suites
+TLS 1.3 
+support 
+planned by 
+Q3 CY24
+Unity
+Webex App
+CUCM
+ Cisco Jabber
+Exp C Exp E
+SIPSIP
+SIP SIP
+Cisco Jabber
+CUBE
+ER
+CERIM&P
+TLS 1.3 Support planned
+Both ends supporting TLS 
+1.3​
+Requirements Support TLS 1.3 end-to-end at solution 
+level
+Support for both inbound and outbound 
+connections
+TLS 1.3 handshake should auto-fallback to 
+supported lesser version if client does not 
+support TLS 1.3
+39
+
+--- PAGE 40 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+ 40
+Certificate based Multi Factor Authentication for RTMT
+Problem Summary: 
+UCM supports Certificate based Multifactor Authentication 
+along with SSO from the regular web interface, but this is not 
+available for RTMT. 
+Benefits
+• Phishing resistant cryptographic technique avoiding use of 
+passwords for authentication and access.
+• Protects against password breach / compromise.
+• Suitable for use in classified systems
+Key Features
+• Leverages SSO flows
+• User certificates are selected from RTMT Client machine 
+truststore and presented to IdP for authentication
+• May be used in conjunction with username / password 
+based auth (MFA)
+Supported Releases:
+• Cisco UCM 15
+User Truststore
+IdP
+X509 cert 
+presented for 
+auth
+SSO flow 
+RTMT 
+Client
+CUCM
+
+--- PAGE 41 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+ 41
+CUCM support of VG 410
+Supported Releases:
+• UCM 15 (adds BAT support)
+• UCM 14 SU3 (basic support)
+
+--- PAGE 42 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+42
+CER: New device support for switch port tracking
+Switch Port Tracking: 
+For the most accurate location tracking, Switch Port based phone tracking can be utilized. Emergency 
+Responder queries Cisco Unified CM for a list of phones registered with the cluster. Emergency 
+Responder then queries the switches (using SNMP) on the network to determine the port used by the 
+phones (using CDP/MAC-Table). Emergency Responder can then send emergency calls to the correct 
+PSAP (Public Safety Answering Point) based on the ERL assigned to the switch.
+Feature: 
+CER is constantly adding new switches and routers to the list of supported devices.
+The following are the most recently added based on customer requests:
+• Cisco Integrated Services Routers
+• Cisco C1111-8P
+• Cisco C1111-8PWA
+• Cisco C1111-8PWB
+• Cisco C1111-8PWE
+• Cisco C891F-K9
+• Cisco Catalyst Switches
+• WS-C2960L-8PS-LL
+Supported Release: CER 15
+CER now supports:
+• 326 Cisco Catalyst Switches
+• 60 Cisco Industrial Switches
+• 53 Cisco Meraki Switches
+• 29 Cisco Integrated Services Routers
+For an up-to-date list of supported network devices (and their SNMP OIDs)
+refer to the CER release notes
+
+--- PAGE 43 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 43
+CER: IPv6 Subnet based 
+phone/client location tracking
+Problem Summary: CER does not support IPv6 subnet based phone/client location 
+tracking making it difficult to manage endpoints in an IPv6 network. 
+Solution: CER is now enhanced to support IPv6 subnet tracking.
+Benefits: IPv6 subnet tracking support on CER will now allow to
+• Track device locations using IPv6 Subnets
+• Map physical location to IPv6 Subnet
+• Define a combination of IPv4 & IPv6 Subnets in CER
+• Support IPv6 registrations to CUCM from IP Phones, Desk/Room EPs, and wired 
+soft-client support
+• Support IPv6 On-Prem ERL
+• Support IPv6 Off-Prem ERL (e.g. VPN Subnet or Expressway IP)
+• Support Cisco and 3rd party phone
+Supported Release: CER 15 SU1
+Cisco Emergency
+ResponderER
+Cisco or 3rd 
+Party 
+Infrastructure
+IPv6 Registrations
+CUCM
+Cisco Phone
+IPv6 Subnet 
+Based Tracking 
+Webex App or Jabber
+(Wired or non-roaming)
+3rd Party Phone
+Cisco Desk/Room 
+EP
+Roadmap
+
+--- PAGE 44 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Product Bulletins / Deprecation Notice
+Feature Impacted Date Action / Details
+Data Center Migration for 
+Push REST Service
+24th November 
+2023
+Add the new IP address: 144.196.130.125 for Push 
+REST service in Firewall’s Access Control List or any 
+other Allow List before 24th November 2023 
+Production Cutover Date
+Product Bulletin -   
+https://www.cisco.com/c/en/us/products/collateral/u
+nified-communications/unified-communications-
+manager-callmanager/uni-cm-im-presence-
+service-bulletin.html
+Deprecation of Remote Call 
+Control with Microsoft Lync 
+Server for IM&P
+Release 15 • Microsoft Lync Server 2013 is past Extended End of 
+support Date of Apr 11, 2023
+• Customers are encouraged to migrate to Cisco 
+Webex App users to control their Cisco Unified IP 
+Phone
+44
+
+--- PAGE 45 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Release 15 Platform 
+Updates
+45
+
+--- PAGE 46 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Release Set (emerging) for version 15
+1. x-App Release Set
+• For “everything on 15”…
+• Known versions are “so far”.
+• Version TBD for products not impacted 
+by CentOS EOL.
+• Backwards compatibility
+• Calling & CC on subsequent slides.
+• Meetings expecting low-risk (UCM NOT 
+changing SIP interface when interacting 
+with CMS as a conf bridge).
+TSP?
+Endpoints & Cloud Interop
+Contact
+Center
+Messaging/ 
+Teams
+Calling
+CUCM 
+15
+PCD
+15
+Expwy 
+X15
+CER
+15
+CUC 
+15
+CCX 
+15
+CPS
+15
+IMP
+15
+SME 
+15 Meetings
+CUACS/A
+14.0.2.10/20
+CCE 
+15
+CMS 
+3.9
+VMN 
+TBD
+TMS 
+TBD
+CUBE
+TBD
+Webex App
+TBD
+Jabber
+TBD
+Webex CCUC
+TBD
+IP Phones
+FW TBD
+15 beta uses from 12.5su8
+Headsets
+FW TBD
+Video Endpoints
+CE/FW TBD
+46
+
+--- PAGE 47 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Release Set (cont’d)
+Planned Calling/CC compatibility
+(pending testing, subject to change)
+ 1. if UCM version is…
+2. …then other 
+app can be 
+version(s) …
+UCM 12.5 UCM 14 UCM 15
+SME 12.5 14 / 12.5 15 / 14 / 12.5
+IMP 12.5 14 15
+CUC 15 / 14 / 12.5 15 / 14 15
+CER 15 / 14 / 12.5 15 / 14 15
+PCD 15 /14 / 12.6 15 / 14 15
+Expressway X14.3 X15 / X14.3 X15 / X14.3
+CPS 14.4.x 14.4.x 15
+CUAC Std/Adv 14.0.2.10+ 14.0.2.10+ 14.0.2.10/20
+UCCE suite 15 / 12.x 15 / 12.x 15 / 12.x
+UCCX suite 15 / 12.x 15 / 12.x 15 / 12.x
+47
+
+--- PAGE 48 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+UCM 15 API Compatibility
+UCM 15
+UCM 14
+UCM 12.5
+API version* 15
+API version* 14
+API version* 12.5
+API version* 12.5
+API version* 14
+API version* 12.5
+• In general, UCM R supports APIs R, R-1, R-2. 
+• v15 is not changing external API definitions.
+• 3rd-party validation “Gold/Silver/Bronze” for v15.
+* API version means 
+things like AXL base 
+schema version or 
+JTAPI plugin version
+48
+
+--- PAGE 49 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+UCM 15 endpoint support vs. deprecation
+• UCM 15 will NOT deprecate any additional endpoints from 14/older.
+• UCM 15 WILL inherit deprecation from prior releases.
+• UCM 14+12.5 did NOT deprecate any additional endpoints from 12.0/older.
+• UCM 12.0+11.5 DID deprecate some endpoints, and these carry over to 14+15.
+• Summary here: 
+https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/trouble/14_0_1/fieldNotices/cucm_b_d
+eprecated-phones-14.html 
+• Usual caveats apply if using endpoint that is “not deprecated, but end of support”.
+• Can’t repair/replace phone/endpoint hardware or buy spares.
+• Risk of unfixable security issues (e.g. insufficient phone memory to hold newer/bigger certs/keys)
+• Risk of other unfixable software issues (e.g. bug in old firmware, or inability to load new firmware on the 
+old phone).
+• Softclient details still being worked out for Jabber vs. Wx App.
+49
+
+--- PAGE 50 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Phone Firmware Bundling Strategy : 15 onwards
+Description Change for 15
+Supported Phone Firmware No change , continue to be included in CUCM ISO
+End of Support Phone firmware • Bundled separately in Device Pack
+• Impacts fresh install of 15
+• Does not impact upgrade from previous version to 15 
+deprecated phone firmware is already installed in previous 
+version of CUCM
+50
+
+--- PAGE 51 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Compatibility & support planning
+On-prem Calling vs. ESXi vs. Hardware
+CSR 14CSR 12.8CSR 11.6CSR 10.6
+UCM
+10.5 eoSupp now
+11.5 eoSupp MayCY24
+12.5 EOL announce MarCY23
+14    Pre-announce MarCY23
+10.5 11.5 12.5 SU2+ 14 15
+(pre-FCS)
+VMware ESXi
+6.0/older eoSupp now
+6.5/6.7    eoSupp NovCY23
+7.0  eoGS AprCY25 6.5
+6.7 / 
+6.5
+6.7 / 
+6.5
+7.0
+ 6.7
+7.0
+8.0
+7.0
+8.0
+UCS M7
+SapphireRapids (+Genoa 
+select apps)
+UCS M6
+Ice Lake (+Milan select apps)
+UCS M5
+CascadeLake / Skylake
+BE6K/7K M5 eoSupp CY28
+UCS M4
+Broadwell / Haswell
+BE6K/7K M4 eoSupp JunCY23
+UCS M3
+Sandy Bridge / Ivy Bridge
+BE6K/7K M3/older eoSupp now
+C220/C240 M3 eoSupp now
+CSR 15
+Unsupported combos
+• Anything on esxi 6.0 / 5.x
+• No 10.5 on esxi 6.7+
+• No 11.5 on esxi 7.0+
+• No 12.5 on esxi 8.0+
+• No 14 on esxi 6.5
+• No 15 on esxi 6.7
+Good to go…
+Something’s NOT supported!
+Complications…
+51
+
+--- PAGE 52 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+UCM 15
+VM Configurations / Specs / Footprints
+UCM 15 
+(reco’d starting points)
+UCM 14 
+(reco’d starting points)
+Higher density/scale for same VM count.
+Small Med Large
+2 2 4
+2.0+ 2.0-2.5 (run CST)
+10 12 14
+1x 110
+ext4, 15
+1x 110
+ext4, 15
+N/A N/A
+UCM 12.5
+ (fixed specs/capacity)
+Cluster built out of 2-22 VMs.
+Each VM same config for full cluster scale & node density.
+1K 
+user 
+VM 
+config
+2.5K 
+user 
+VM 
+config
+7.5K 
+user
+VM 
+config
+10K 
+user
+VM 
+config
+vcpu 2 1 2 4
+Base Freq (GHz), full support 2.0+ 2.5+ 2.5+ 2.5+
+vram (GB) 6 6 8 8
+Vdisk (GB), 
+fs, partition ver
+1st FI as 
+11.5+
+1x80
+ext4, 11.5
+1x110
+ext4, 11.5
+1st FI as 
+8.0-11.0
+1x80
+ext3, 8.0-11.0
+2x80
+ext3/4, 8.0-11.0
+Small Med Large
+2 2 4
+2.0+ 2.0-2.5 (run CST)
+6 8 8
+1x 80
+ext4, 11.5
+1x110
+ext4, 11.5
+1x80
+ext3, 8.0-11.0
+2x80
+ext3/4, 8.0-11.0
+15 min vmv / vmx 17 (13 in 12.5/14)
+Guest OS type = “Other 4.x or later Linux (64-bit)"
+15 SU2+ might 
+reduce VM count.
+15 SU2+ might support higher node counts at same 
+cluster/node capacities.Can NOT direct upgrade to 15 or 15 SU.  
+See next slide for alternatives.
+CAN direct upgrade to 15 or 15 SU.
+3. Derive VM Count+Specs
+
+--- PAGE 53 ---
+© 2023  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+SME 15
+VM Configurations / Specs / Footprints
+3. Derive VM Count+Specs
+SME 15 
+ (fixed specs/capacity)
+SME 14 
+ (fixed specs/capacity)
+Med Large
+2 4
+2.5+
+12 14
+1x 110
+ext4, 15
+N/A
+SME 12.5
+ (fixed specs/capacity)
+Cluster built out of 2 to 22 VMs.
+Each VM same config for full cluster scale & node density.
+Med Large
+vcpu 2 4
+Base Freq (GHz), full support 2.5+ 2.5+
+vram (GB) 8 8
+Vdisk (GB), 
+fs, partition ver
+1st FI as 
+11.5+
+1x110
+ext4, 11.5
+1st FI as 
+8.0-11.0
+2x80GB
+ext3/4, 8.0-11.0
+Med Large
+2 4
+2.5+
+8 8
+1x110
+ext4, 11.5
+2x80GB
+ext3/4, 8.0-11.0
+Can NOT direct upgrade to 15 or 15 SU.  
+Same alternatives as for UCM.
+CAN direct upgrade to 15 or 15 SU.
+Same capacity as SME 14.
+
+--- PAGE 54 ---
+© 2023  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+SME 15
+VM Configurations / Specs / Footprints
+3. Derive VM Count+Specs
+SME 15 
+ (fixed specs/capacity)
+SME 14 
+ (fixed specs/capacity)
+Med Large
+2 4
+2.5+
+12 14
+1x 110
+ext4, 15
+N/A
+SME 12.5
+ (fixed specs/capacity)
+Cluster built out of 2 to 22 VMs.
+Each VM same config for full cluster scale & node density.
+Med Large
+vcpu 2 4
+Base Freq (GHz), full support 2.5+ 2.5+
+vram (GB) 8 8
+Vdisk (GB), 
+fs, partition ver
+1st FI as 
+11.5+
+1x110
+ext4, 11.5
+1st FI as 
+8.0-11.0
+2x80GB
+ext3/4, 8.0-11.0
+Med Large
+2 4
+2.5+
+8 8
+1x110
+ext4, 11.5
+2x80GB
+ext3/4, 8.0-11.0
+Can NOT direct upgrade to 15 or 15 SU.  
+Same alternatives as for UCM.
+CAN direct upgrade to 15 or 15 SU.
+Same capacity as SME 14.
+
+--- PAGE 55 ---
+© 2023  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+IMP 15
+VM Configurations / Specs / Footprints
+3. Derive VM Count+Specs
+IMP 15 
+(fixed specs/capacity)
+IMP 14 
+(fixed specs/capacity)
+IMP 12.5
+ (fixed specs/capacity)
+Cluster built out of 2-6 VMs.
+Each VM same config for full cluster scale & node density.
+vcpu 1 1 2 4 6
+Base Freq (GHz), full support 2.0+ 2.0+ 2.5+ 2.5+ 2.5+
+vram (GB) 2 4 4 8 16
+vdisk (GB) 1x80 1x80 2x80 2x80 2x80
+CAN direct upgrade to 15 or 15 SU.
+1 1 2 4 6
+2.0+ 2.0+ 2.5+ 2.5+ 2.5+
+2 4 4 8 16
+1x80 1x80 2x80 2x80 2x80
+1K 
+devices 
+VM 
+config
+5K
+devices
+VM 
+config
+15K 
+devices
+VM 
+config
+25K 
+devices
+VM 
+config
+Small 
+(≤5K 
+devices)
+VM 
+config
+Medium
+(≤15K 
+devices)
+VM 
+config
+Large
+(≤25K 
+devices)
+VM 
+config
+1 2 4 6
+2.0 2.5 2.5+ 2.5+
+6 10 14 18
+1x110 2x80 2x80 2x80
+150 
+devices
+VM 
+config
+1K 
+devices 
+VM 
+config
+5K
+devices
+VM 
+config
+15K 
+devices
+VM 
+config
+25K 
+devices
+VM 
+config
+150 
+devices
+VM 
+config
+Can NOT direct upgrade to 15 or 15 SU.  
+Move to another VM config.
+Extra-
+Small 
+(≤1K 
+devices)
+VM 
+config
+
+--- PAGE 56 ---
+© 2023  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+CUC 15
+VM Configurations / Specs / Footprints
+3. Derive VM Count+Specs
+CUC 15 
+(fixed specs/capacity)
+CUC 14 
+(fixed specs/capacity)
+CUC 12.5
+ (fixed specs/capacity)
+Cluster built out of 2 VMs.
+Each VM same config for full cluster scale & node density.
+200 
+user 
+VM 
+config
+1K 
+user 
+VM 
+config
+5K
+user
+VM 
+config
+10K 
+user
+VM 
+config
+vcpu 1 * 2 4 7
+Base Freq (GHz), full support 1.8+ * 2.5+ 2.5+ 2.5+
+vram (GB) 4 4 6 6 ***
+vdisk (GB) 160 160 200 ** ***
+CAN direct upgrade to 15 or 15 SU.
+20K 
+user
+VM 
+config
+1 * 2 4 7
+1.8+ * 2.5+ 2.5+ 2.5+
+4 4 6 6 ***
+160 160 200 ** ***
+* vcpu 1 (+1 if UM)
+     Min GHz 2.0 (1.8 if UM)
+ ** 2x146GB, 300GB or 500GB
+*** vram 8GB (+2GB w/ Secure Jabber)
+      vdisk 2x300GB or 500GB
+1K 
+user 
+VM 
+config
+5K
+user
+VM 
+config
+10K 
+user
+VM 
+config
+20K 
+user
+VM 
+config
+1K 
+user 
+VM 
+config
+5K
+user
+VM 
+config
+10K 
+user
+VM 
+config
+20K 
+user
+VM 
+config
+2 2 4 7
+1.8+ 2.5+ 2.5+ 2.5+
+10 12 12 16
+160 200 ** ***
+200 
+user 
+VM 
+config
+Maybe NOT direct upgrade to 15 or 15 SU.  
+Check hardware CPU pcores.
+Can NOT direct upgrade to 15 or 15 SU.  
+Alternatives TBD.
+
+--- PAGE 57 ---
+© 2023  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+CER 15
+VM Configurations / Specs / Footprints
+3. Derive VM Count+Specs
+CER 15 
+(fixed specs/capacity)
+CER 14 
+(fixed specs/capacity)
+CER 12.5
+ (fixed specs/capacity)
+Cluster built out of 2 VMs.
+Each VM same config for full cluster scale & node density.
+12K 
+user 
+VM 
+config
+20K 
+user 
+VM 
+config
+30K
+user
+VM 
+config
+40K 
+user
+VM 
+config
+vcpu 2 1 2 4
+Base Freq (GHz), full support 2.0+ 2.5+ 2.5+ 2.5+
+vram (GB) 4 4 6 6
+vdisk (GB) 1x80 1x80 1x110 1x110
+CAN direct upgrade to 15 or 15 SU.
+2 1 2 4
+2.0+ 2.5+ 2.5+ 2.5+
+4 4 6 6
+1x80 1x80 1x110 1x110
+2 2 4
+* 2.5+ 2.5+
+6 8 8
+1x80 1x110 1x110
+12K 
+user 
+VM 
+config
+20K 
+user 
+VM 
+config
+30K
+user
+VM 
+config
+40K 
+user
+VM 
+config
+20K 
+user 
+VM 
+config
+30K
+user
+VM 
+config
+40K 
+user
+VM 
+config
+*  Min GHz is:
+      2.0+ for max 12K users.     
+      2.5+ for max 20K users
+Can NOT direct upgrade to 15 or 15 SU.  
+Move to another VM config.
+
+--- PAGE 58 ---
+© 2023  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+PCD 15
+VM Configurations / Specs / Footprints
+3. Derive VM Count+Specs
+PCD 15 PCD 14 
+VM
+PCD 12.6
+VM
+vcpu 2
+Base Freq (GHz), full support 2.0+
+vram (GB) 4
+Vdisk (GB),
+fs, partition ver
+1x 80GB
+ext4,  11.5
+(++GB if using PCD as 
+SFTP Server for UCM)
+VM
+2
+2.0+
+4
+1x 80GB
+ext4, 11.5
+2
+2.0+
+6
+1x 110
+ext4, 15
+No concerns about 
+vdisk size/qty, ext3 
+or guest OS 
+partitions as with 
+UCM.CAN direct upgrade to 15 or 15 SU.
+
+--- PAGE 59 ---
+© 2023  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Expressway X15
+VM Configurations / Specs / Footprints
+3. Derive VM Count+Specs
+Expressway X15 
+(fixed specs/capacity)
+Expressway X14.3 
+(fixed specs/capacity)
+Expressway X12.7
+ (fixed specs/capacity)
+Cluster built out of 2 VMs.
+Each VM same config for full cluster scale & node density.
+Small
+VM 
+config
+Medium 
+VM 
+config
+Large
+VM 
+config
+vcpu 2 2 8
+Base Freq (GHz), full support 1.8+ 2.4+ 3.2+
+vram (GB) 4 6 8
+vdisk (GB) 132 132 132
+CAN direct upgrade to 15 or 15 SU.
+2 2 8
+1.8+ 2.4+ 3.2+
+4 6 8
+132 132 132
+2 2 8
+1.8+ 2.4+ 3.2+
+4 6 8
+132 132 132
+Small
+VM 
+config
+Medium 
+VM 
+config
+Large
+VM 
+config
+Small
+VM 
+config
+Medium 
+VM 
+config
+Large
+VM 
+config
+
+--- PAGE 60 ---
+© 2023  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Hardware capacity planning
+Example #1 – Small Collaboration
+ESXi 
+7.0>8.0
+CUCM 
+14>15
+CUC 
+14>15
+IMP 
+14>15
+CER 
+14>15
+Expressway –C / -E 
+X14.3 >X15
+CPU (pcores) - - +1 - - -
+RAM (GB) +8 +4 +6 +6 +2 -
+Storage (GB) - +30 - +30 - -
+Other - - - - - -
+From www.cisco.com/go/quotecollab 
+Small Collaboration (<1K users, <1200 devices)
+Single-site, redundant BE6000M (M5) appliances
+ESXi 7.0 and CSR 14 app versions
+Available per BE6M-M5-K9 appliance:
+1S/10C/2.2GHz CPU
+48GB RAM
+~1 TB usable storage
+Delta for ESX 7.0 > 8.0 & upgrade all VM’s 14 > 15:
++1C (won’t fit!)
++26GB RAM (if ESXi 8.0) … won’t fit!
+or +18 GB RAM (if stay ESXi 7.0) … barely fits
++60GB storage (fits with ~276 GBheadroom)
+Solution on next slide.
+Needed for ESXi 7.0 / CSR 14:
+10C (fits but no headroom)
+30GB RAM (fits with 18GB headroom)
+664GB storage (fits with ~336 GB headroom)
+ESXi is per appliance
+Rest is per VM
+
+--- PAGE 61 ---
+© 2023  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Hardware capacity planning
+Example #1 – Small Collaboration (cont’d)
+Things explored:
+- Is cloud calling an option?  No (airgapped).
+- Would migrating IMP VM’s to Webex cloud messaging help?  Not by enough.
+- Can I up-spec the HW?  No (CPU swap not supported, add RAM won’t help due to pcore problem).
+Solution:
+- Add another appliance.  Provides better redundancy, more expansion headroom, easier change management.
+ESXi 8.0
+ESXi 8.0
+ESXi 8.0
+36GB
+38GB
+38GB
+
+--- PAGE 62 ---
+© 2023  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Hardware capacity planning
+Example #2 – Medium Collaboration
+ESXi 
+7.0>8.0
+CUCM 
+14>15
+CUC 
+14>15
+IMP 
+14>15
+CER 
+14>15
+Expressway –C / -E 
+X14.3 >X15
+CPU (pcores) - - - - - -
+RAM (GB) +8 +4 +6 +6 +2 -
+Storage (GB) - - - - - -
+Other - - - - - -
+From www.cisco.com/go/quotecollab 
+Medium Collaboration (5K devices)
+Single-site, redundant BE7000M (M6) appliances (recent HW refresh).
+ESXi 7.0 and CSR 12.7 app versions
+Available per BE7M-M6-K9 appliance:
+1S/16C/2.9GHz CPU
+96GB RAM
+4x ~1 TB usable storage
+Delta for ESX 7.0 > 8.0 & upgrade all VM’s 14 > 15:
++0C & +0C (fits)
++34GB & +30GB RAM (if ESXi 8.0) … fits
+or +26GB & +22GB RAM (if stay ESXi 7.0) … fits
++0GB storage (fits)
+Can upgrade everything “in place” on existing hardware.
+Needed for ESXi 7.0 / CSR 14:
+14C & 14C (fits with 2C headroom)
+50GB & 48GB RAM (fits with 46-48GB headroom)
+932GB & 954GB storage (fits with LOTS of headroom)
+ESXi is per appliance
+Rest is per VM
+
+--- PAGE 63 ---
+© 2023  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Hardware capacity planning
+Example #3 – Large Collaboration
+Large Collaboration (10K-20K users with 20K-30K devices)
+Dual-DC farms of B200 M4 blade servers (HW going end of support).
+ESXi 6.x and CSR 11.6 app versions (SW vers going end of support).
+Available per UCSB-B200-M4-U blade server:
+2S/10C/2.6GHz CPU
+94GB RAM
+Diskless / off-blade shared storage
+Delta for ESX 6.x > 8.0 & upgrade all VM’s 11.5 > 15:
++0C / blade (fits but HW refresh needed!)
+Per blade, +12-38GB RAM (if ESXi 8.0) … fits if rearrange VMs or +4-30GB 
+RAM (if stay ESXi 7.0) … fits but HW refresh needed!
++0GB storage (fits)
+Refresh HW or adjust VM placement, then can upgrade everything “in place” 
+on existing HW.
+Needed for ESXi 7.0 / CSR 14:
+16-18C / blade (fits with 2-4C/blade headroom but HW refresh needed!)
+34-58GB RAM / blade (fits with 36-60GB headroom but HW refresh needed!)
+Off-box shared storage (fits with LOTS of headroom but HW refresh needed!)
+From www.cisco.com/go/quotecollab 
+ESXi 
+6.x>8.0
+CUCM 
+11.5>15
+CUC 
+11.5>15
+IMP 
+11.5>15
+CER 
+11.5>15
+Expressway –C / -E 
+X12.6 >X15
+CPU (pcores) - - - - - -
+RAM (GB) +8 +6 +6 +6 +2 -
+Storage (GB) - - - - - -
+Other - - - - - -
+ESXi is per blade
+Rest is per VM
+
+--- PAGE 64 ---
+© 2023  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+12.5*11.510.5 14*
+Simple Upgrades
+Fresh Install with Data Import (V2V)
+PCD Migration Task (V2V)
+Direct Standard Upgrade
+Direct Refresh Upgrade (RU)
+Recommendation:
+• Simple Upgrades where you can, Fresh Install with Data Import where you can’t.
+Migrating to UCM 15
+15
+* If destination 12.5, must be 12.5 SU5+
+   If destination 14, 14 SU2+ recommended
+
+--- PAGE 65 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Expressway
+Luca Pellegrini – Technical Marketing Engineer
+65
+EDGE
+
+--- PAGE 66 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+• LDAP over TCP/UDP uses port 389, while 
+LDAP over TLS uses port 636
+• For security reasons, some companies would 
+like to use a different port than 636
+• This port is now configurable, while with 
+previous releases it didn’t work after TLS 
+handshake
+• STARTTLS: TLS encryption is used over TCP 
+port.
+• Supported Release: X15
+• Timeline: Q4 CY23
+66
+LDAP Support for different port than 636
+
+--- PAGE 67 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 67
+• TLS 1.3 adds security and velocity compared to TLS 1.2
+• Faster handshake
+• Removes less secure cipher suites and keeps the stronger
+ones
+• Benefits
+• If you set TLS 1.3 as minimum release, Expressway will only 
+talk to systems and devices supporting TLS 1.3
+• In case TLS 1.2 is still present in some scenarios, set the 
+minumum TLS release to 1.2. Fallback to 1.2 will happen if 1.3 
+can’t be negotiated
+• Supported Release: X15+
+• Timeline: Q2 CY24
+TLS 1.3 Support
+Roadmap
+
+--- PAGE 68 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+• Webex app registered to CUCM 
+Registered prompts user to login every 60 
+days to maintain phone service.
+• User may cancel login for phone service 
+and still have access to 
+messaging, meetings, and internal calls as 
+the account is still authenticated with IdP 
+on Cisco Webex cloud
+• If the user on Webex app is 
+not authenticated by CUCM:
+• Phone service disconnects which results 
+in Missed calls
+• Mixed calling User Experience. Internal 
+calls may work as connectivity to Cisco 
+Webex cloud is maintained, but 
+PSTN calls don’t.
+Key Feature
+• The refresh token in Webex App is 
+automatically renewed without user 
+intervention so that the user does not get 
+logged out of the phone service.
+• Expressway will be able to pass through 
+the auto-renew parameter for refresh 
+token so that the clients will renew the 
+tokens automatically
+Benefits
+• Improved Webex App user experience 
+resulting in end users not missing calls due 
+to phone service disconnects
+Supported Releases: 
+• UCM 15, Expressway X15
+• Webex App 43.8
+68
+Improved Webex App experience with persistent CUCM 
+login flow
+
+--- PAGE 69 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 69
+Actual Failover Scenario
+88XX and 78XX Series Phone Failover
+UCM 
+Cluster
+Expressway-C 
+Cluster
+Expressway-E 
+Cluster
+UCM1
+UCM2
+ExpC1
+ExpC2
+ExpE1
+ExpE2
+chain 1: 
+UCM1-ExpC1-ExpE1
+chain 2: 
+UCM2-ExpC2-ExpE2
+In order to failover to work, multiple 
+servers can fail only inside a chain. 
+I.e. :
+• ExpC1 and ExpE1 fail, then chain 2 
+will be selected.
+• No failover if ExpC1 and ExpE2 fail
+
+--- PAGE 70 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 70
+Actual Failover Scenario: Implications and Limitations
+88XX and 78XX Series Phone Failover
+UCM 
+Cluster
+Expressway-C 
+Cluster
+Expressway-E 
+Cluster
+UCM1
+UCM2
+ExpC1
+ExpC2
+ExpE1
+ExpE2
+chain 1: 
+UCM1-ExpC1-ExpE1
+chain 2: 
+UCM2-ExpC2-ExpE2
+If CallManager group includes UCM1, 
+UCM2, UCM3, then failover might not 
+occur because UCM3 is not associated 
+to any Expressway. 
+The number of Expressway servers 
+must match the number of servers in 
+the CallManager group.
+With multiple CallManager groups, this 
+might become a problem
+UCM3 ExpC3 ExpE3
+chain 3: 
+UCM3-ExpC3-ExpE3
+
+--- PAGE 71 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 71
+88XX and 78XX Series Phone Failover
+UCM 
+Cluster
+Expressway-C 
+Cluster
+Expressway-E 
+Cluster
+UCM1
+UCM2
+ExpC1
+ExpC2
+ExpE1
+ExpE2
+On Registration:
+1. Based on get-edge config response, the 
+phone creates one possible route:
+ExpE1 - ExpC1- UCM1
+2. ExpC1 is down; ExpC2 is used instead
+3. Phone updates the route to:
+ExpE1 – ExpC2– UCM1
+After registration:
+Phone polls each server through STUN 
+keepalives. If get no response assumes that 
+the server is down and uses another one in 
+the get-edge config response
+UCM3
+Solution: Adaptive Routing and STUN Based Keepalives
+UCM1-ExpC2-ExpE1
+UCM1-ExpC1-ExpE1
+Roadmap
+
+--- PAGE 72 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Expressway CE1300 appliance
+72
+Latest CE1x00 appliance model
+• Refreshes prior CE1200 (M5, LDoS Oct CY28 / EOL14929).
+• Provides Edge services to on-prem-Collaboration for Hybrid Work.
+• Bare-metal / non-virtualized to satisfy critical customer DMZ security concerns.
+• All in an easy to plan/design/quote/deliver appliance solution. 
+CE1300 hardware & software
+• Leverages UCS C220 M6S, but is NOT a general-purpose “server”, NOT a UCS 
+convenience quoting bundle.
+• SED’s for encryption at rest (factory load defaults to encryption disabled; see 
+Install Guide for how to enable).
+• Field Recovery Mechanism updated from SD card to M.2 device-based.
+• Only supports Expressway X14.3.1 or later.  No other applications.  No older 
+versions.
+• See X14.3.1 Release Notes and CE1300 Install Guide for other details.
+EXPWY-1300-K9
+or
+One 
+Med/Large
+Expressway-C
+One 
+Med/Large
+Expressway-E
+Bare-metal install w/ BIOS customizations
+
+--- PAGE 73 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+CUBE
+Hussain Ali – Technical Marketing Engineer
+73
+EDGE
+
+--- PAGE 74 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+ 74
+New Platforms for CUBE/vCUBE
+
+--- PAGE 75 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+ 75
+CUBE (Enterprise) Product Portfolio [Not to Scale]
+ASR 1004/6/6-X RP2
+Active Concurrent Voice Calls Capacity
+Calls Per Second
+<5
+8-12
+75-100
+14-16K<50 500-600 900-1000
+15-20
+2000-2500
+20-35
+9000-10,000
+40-50
+12K-14K
+4500-6000
+ISR 4451-X
+ASR 1002-X
+3000-4000
+ISR 4431
+ISR- 4321/4331
+ISR 4351 
+ASR 1006-X w/RP3 
++ ESP40/ESP100
+IOS-XE 16.6+
+ESP100-X 
+supported from IOS-
+XE 17.3.2
+IOS-XE 17.x does 
+not support ESP 20
+SPA-DSPs EoL
+ISR1100s – IOS-XE 16.12+
+Introducing CUBE on Catalyst 8300 series
+IOS-XE 17.3.2+
+ISR 4461
+IOS-XE 17.2.1r
+50-75
+ASR 1001-X
+7000-8,000
+C8300-2N2S-4T2X
+C8300-1N1S-4T2X
+C8300-2N2S-6T
+C8300-1N1S-6T
+vCUBE on ESXi
+vCUBE on AWS
+IOS-XE 16.12.4a/17.4.1a
+C8200-1N-4T – IOS-XE 17.4+
+Introducing vCUBE on Azure
+IOS-XE 17.6.3a
+C8000v (17.4+) vs CSR1000v (<17.3)
+
+--- PAGE 76 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+ 76
+CUBE Software Release 
+Mapping
+
+--- PAGE 77 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+CUBE 
+Version
+Initial IOS-XE Release for this CUBE 
+version and Release date
+Subsequent IOS-XE Release for this 
+CUBE version
+14.0 17.3.1a July 2020 17.3.6
+14.1 17.3.2* Oct 2020 17.3.6
+14.2 17.4.1a Nov 2020 17.4.2
+14.3 17.5.1 March 2021 17.5.1a
+14.4 17.6.1a July 2021 17.6.6a
+14.4 17.7.1a Nov 2021 17.7.2
+14.5 17.8.1a March 2022
+14.6 17.9.1a July 2022 17.9.4a
+14.6 17.10.1a Nov 2022
+14.6 17.11.1a March 2023
+14.7 17.12.1a July 2023
+14.8 17.13.1a Nov 2023
+77
+CUBE Software Release Mapping
+Last release for 
+ISR4K except 
+ISR4461
+
+--- PAGE 78 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+ 78
+Enabling third-party Cloud 
+Calling with CUBE
+
+--- PAGE 79 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+ 79
+Microsoft Teams Direct Routing – Solution Overview
+Customer Site
+Teams Client
+Microsoft 
+Provided Internet
+SIP     TLS        sRTP
+Teams Client
+SIP UDP/RTP
+CUBE
+PSTN
+
+--- PAGE 80 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 80
+Zoom Phone with CUBE 
+Customer Site
+Internet
+SIP     TLS        sRTP
+• IOS-XE 17.6+ / 17.9+ 
+recommended
+• Configuration Guide
+• CUBE TLS certificate must 
+contain FQDN as common name, 
+and be 2048 bits in size
+Cisco MPP Phones
+CUBE
+PSTN https://support.zoom.us/hc/en-us/categories/360001370051
+
+--- PAGE 81 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 81
+Amazon Chime Voice Connector
+• Amazon Chimes provides PSTN service to an on-premises or a cloud-based phone 
+system connected via a CUBE
+• CUBE can be on-premises or hosted in AWS (vCUBE in AWS)
+• IOS-XE 17.9+ recommended, but other IOS-XE releases also supported
+• Configuration Guide
+• https://aws.amazon.com/chime/chime-sdk/resources/#Configuration_Guides  
+Customer Site
+Internet
+SIP UDP/TLS
+sRTP/RTP for media LGW/CUBE
+PSTN
+AWS
+Webex Calling
+
+--- PAGE 82 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Proven Interoperability and Interworking with 
+Service Providers Worldwide
+• Zoom Phone
+• Microsoft Direct 
+Routing
+• Amazon Chime Voice 
+Connector
+• vCUBE-on-AWS
+• vCUBE-on-Azure
+CUBE Interoperability Portal for application notes
+Cisco Interoperability Portal:
+www.cisco.com/go/interoperability
+Verified by
+82
+
+--- PAGE 83 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+ 83
+Introducing vCUBE on Azure
+
+--- PAGE 84 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Introducing vCUBE on Azure
+• Platform validated and tested –D2_v2 [2 vCPUs, 7 GB memory] 
+• IOS-XE versions tested  – 17.3.4a (Later IOS-XE releases also supported)
+• BYOL – Instance billed only for hosting by Azure and licensing managed through 
+Cisco Smart Licensing
+• CSR1000v required licenses – AX/APPX (No TLS/sRTP), Throughput, and CUBE Session Licenses
+• C8000V required licenses – DNA Network Essentials or above and CUBE Session Licenses
+• vCUBE in Azure session counts same as CSR1000v - 2 vCPU
+vCUBE 
+(C8000V/CSR1000v)
+Azure
+84
+
+--- PAGE 85 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+ 85
+Managing Gateways from the 
+Webex Control Hub
+
+--- PAGE 86 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Introducing Gateway Connectors
+86
+• Gateway connectors are small applications that run in the gateway Guest 
+Shell to maintain a connection to Control Hub, co-ordinate events and 
+collect status information. 
+• Guest Shell is independent of IOS-XE running on the platform
+• NETCONF and YANG data models are used as opposed to the Command 
+Line (CLI) to manage the gateways, thus, allowing APIs to manage and 
+configure the gateways
+• Two types of connectors exist
+• Management Connector - takes care of gateway enrollment to the cloud and lifecycle 
+management of the telemetry connector
+• Telemetry Connector – used for pushing configs and getting command requests from 
+the CH to the gateway
+
+--- PAGE 87 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Connector Considerations
+87
+• ISR 1100 series are not supported
+• CUBE High Availability (HA) mode is not supported
+• Controller or SD-WAN mode is not supported (only IOS-XE Autonomous 
+mode is supported)
+• Currently two services are supported:
+• Registration-based Local Gateway Configuration Validation
+• Survivability Gateway Configuration template (BRKCOL-2993)
+• IOS-XE version required:
+• Local Gateways—Cisco IOS XE 17.3.4a or later
+• Survivability Gateways—Cisco IOS XE 17.9.3 or later
+
+--- PAGE 88 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 88
+Connector Installation Prerequisites
+The platform must have the following configured:
+• DNS Server ip name-server <IP Address>
+• HTTP Proxy 
+ip http client proxy-server <server address> proxy-port <port-number>
+ip http client username <username>
+ip http client password <password>
+• Default AAA lists to authenticate and authorize NETCONF access
+aaa new-model
+aaa authentication login default radius local
+aaa authorization exec default radius local if-authenticated
+username test privilege 15 secret <password>
+• Import the IOS-XE public CA bundle
+crypto pki trustpool import url http://www.cisco.com/security/pki/trs/ios.p7b
+
+--- PAGE 89 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 89
+Under Services, click Calling and then click the Managed 
+Gateways Tab
+
+--- PAGE 90 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 90
+In the Add a Managed Gateway window, copy the 
+command to install the connector onto the Gateway
+
+--- PAGE 91 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 91
+Run the Management Connector deployment Script
+• Run the TCL script
+• tclsh
+https://binaries.webex.com/ManagedGatewayScriptProdStable/
+gateway_onboarding.tcl 
+• Follow the wizard
+
+--- PAGE 92 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 92
+Select the External Interface to reach Webex Cloud
+
+--- PAGE 93 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 93
+Confirm or Edit DNS and Proxy settings
+
+--- PAGE 94 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 94
+Specify the Connector IP Address and Credentials
+
+--- PAGE 95 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 95
+Connector Successfully Installed
+
+--- PAGE 96 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 96
+Webex Managed Gateway Connector Options
+
+--- PAGE 97 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 97
+In the Add a Managed Gateway window, check the I have 
+installed the management connector on the gateway check 
+box and click Next.
+
+--- PAGE 98 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 98
+At the Add a Managed Gateway screen, enter the connector IP 
+address that you entered during the connector installation 
+procedure, and a preferred display name for the gateway
+
+--- PAGE 99 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 99
+At the Connector Management page, enter the Gateway Admin 
+Username and Password that you specified during the 
+connector installation procedure
+
+--- PAGE 100 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 100
+Click the Enroll Now button within an hour
+
+--- PAGE 101 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 101
+Check the Allow Access to the Gateway Management 
+Connector check box
+
+--- PAGE 102 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 102
+Enrollment Successful
+
+--- PAGE 103 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 103
+Managed Gateways
+
+--- PAGE 104 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 104
+Managed Gateway now Online
+
+--- PAGE 105 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 105
+Assign a Service to the Managed Gateway
+
+--- PAGE 106 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 106
+Select a Service Type
+
+--- PAGE 107 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 107
+Service Type: LGW or SGW
+
+--- PAGE 108 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+ 108
+WebSocket-Based Media 
+Forking
+
+--- PAGE 109 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Secure media forking for cloud speech services
+The Feature: CUBE supports GCM 
+Cipher when using WebSocket to fork 
+media in a Cisco Unified Contact 
+Center Enterprise (UCCE) solution 
+deployment with Cloud Speech 
+Service
+When the feature is being released: 
+Available with IOS XE 17.12.1a, 
+August 2023.
+The value of the feature: More secure 
+TLS connection to Contact Center 
+deployments for Cloud Speech 
+Services.
+WebSocket 
+secure 
+connection
+Cloud 
+Server/services
+CUBE
+End Customer
+UCCE Agent-
+side
+Telco 
+Trunk
+109
+
+--- PAGE 110 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+ 110
+NAT Traversal using RTP 
+keepalives
+
+--- PAGE 111 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+NAT Traversal using RTP keepalives
+• The Feature: Cisco voice solution including CUBE 
+and UCM can be deployed behind a NAT router.
+• When a PSTN user A calls an enterprise user B who 
+has setup call forward to an external PSTN user C, the 
+call between A & C will get established, but audio will 
+not flow through.
+• A configurable option is provided in CUBE 
+to periodically send the payload-free RTP keepalive 
+packets to keep the pinholes open for media to flow 
+through.
+When the feature is being released: Available 
+with IOS XE 17.13.1a, targeted Nov 2023.
+• The value of the feature: Enhanced calling 
+experience that allows PSTN user A to talk to user C 
+when call is forwarded from enterprise user B.
+• Provides an additional option beyond STUN based 
+mechanisms.
+CUBE
+User C
+CUCM
+NAT 
+Router
+User A
+User B
+SIP 
+PSTN 
+Trunk
+RTP flow
+111
+
+--- PAGE 112 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 112
+References
+▪ CUBE Performance and Sizing
+▪ Cisco Unified Border Element Configuration Guide Through Cisco IOS XE 17.5
+▪ CUBE Config Guide – IOS-XE 17.6 Onwards
+▪ CUBE Roadmap
+▪ IOS-UC Sharepoint
+▪ CUBE Support
+o CUBE partner/customer questions: ask-cube@external.cisco.com
+
+--- PAGE 113 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Cisco Meeting Server 
+(CMS/CMM)
+Suarabh Khaneja – Product Manager
+113
+MEETINGS
+
+--- PAGE 114 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Hardware Refresh
+114
+
+--- PAGE 115 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+CMS 1000 M5v2
+(UCS C220 M5v2)
+CMS 1000 M6
+(UCS C220 M6)
+Overview – CMS1K processor refresh
+M5v2 to M6
+Type of Calls M5v2 M6
+Full HD calls
+1080p60 video
+720p30 content
+30 40
+Full HD calls
+1080p30 video
+1080p30/4K7 content
+30 40
+Full HD calls
+1080p30 video
+720p30 content
+60 80
+HD calls
+720p30 video
+720p5 content
+120 160
+SD calls
+480p30 video
+720p5 content
+240 320
+Audio calls (G.722) 2200 3000
+115
+
+--- PAGE 116 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Overview – CMS2K processor refresh
+M5 “Cascade lake” to M6 “Ice lake
+CMS 2K M5v2
+(UCS B200 M5v2)
+CMS 2K M6
+(UCS B200 M6)
+Type of Calls M5v2 M6
+Full HD calls
+1080p60 video
+720p30 content
+218 324
+Full HD calls
+1080p30 video
+1080p30/4K7 content
+218 324
+Full HD calls
+1080p30 video
+720p30 content
+437 648
+HD calls
+720p30 video
+720p5 content
+875 1296
+SD calls
+480p30 video
+720p5 content
+1250 1875
+Audio calls (G.722) 3000 3200
+116
+
+--- PAGE 117 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Release: 3.8
+August 2023 (GA)
+119
+
+--- PAGE 118 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Solution Roadmap (Release 3.8)
+Meeting Experience (CMS)
+• Screen Share Quality 
+Improvements
+• Presence update on Jabber (GA)
+• Ability to take Surveys 
+• Directed chat during meeting
+• Czech language support
+• Admin control screen sharing 
+resolution
+Improving Quality Engaging 
+Experience
+• Restrict Meeting View for Operators
+Meeting Management (CMM)
+• Smart Licensing Updates
+Meeting 
+Control Serviceability
+120
+
+--- PAGE 119 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+• Integration between Jabber IM&P and CMS to update 
+user presence when in CMS web app meeting
+• CMS User id should match Directory URI field in CUCM
+• Jabber JID could be CUCM User id or Directory URI
+• Implementation Enhancements between IMP and CMS, 
+with TLS support
+• Supports only 1 CUCM/IM&P cluster
+• Presence status set to `On a call`
+• Jabber reverts to old status post CMS meeting.
+• Supported with CUCM/IMP 14.0
+CMS:
+Jabber Presence set when in meeting
+Pre meeting In CMS meeting
+(Non-Scheduled)
+ In Scheduled 
+CMS meeting
+In a meeting,
+121
+
+--- PAGE 120 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+• In previous versions of CMS, chat was always 
+sent to Everyone in the meeting
+• Release 3.8 provides an ability to select a 
+participant to send chat
+• Only CMS web app participants are shown in the 
+chat dropdown list
+•  No chat history is retained if participant drops 
+and joins back again
+CMS web app:
+Directed Chat
+Chat to participant
+Chat to everyone
+Expected delivery dates are subject to change
+122
+
+--- PAGE 121 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+• Web app participants can create and launch surveys
+• Multiple surveys can be created but only 1 can be 
+active 
+• All participants will be notified when survey is available
+• Feature introduces 2 config parameters at CallProfile 
+(to enable the feature) and CallLegProfile (to assign 
+Survey permission)
+• Guest users can only participate in the survey
+• Surveys are retained till the call is active. Participants 
+disconnecting does not remove their surveys
+• Needs `meetingapps` deployment
+CMS web app:
+Ability to take survey
+123
+
+--- PAGE 122 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+• CMS not provides Admin settings to control 
+resolution for screen sharing on web app
+• This helps provide the best experience in a 
+lossy network.
+• Web app users can always over-ride this 
+setting to get the best experience when sharing 
+text heavy contents
+• A restart of ongoing screen sharing is needed 
+for the user selection to take effect
+CMS and web app:
+Control Screen Share Resolution
+Admin Configured
+User Config
+Expected delivery dates are subject to change
+124
+
+--- PAGE 123 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+• Initially Video operators can see all ongoing 
+meetings on CMS through CMM
+• This features now controls that experience
+• A new coSpace attribute “spaceTag” allows 
+admins to assign a Tag to a space
+• On CMM, Video operators can be assigned 
+multiple Tags
+• Video Operators with no tags → Can see all 
+spaces with no tags
+• Video Operators with tags → Can see only 
+spaces with respective tags
+• Tags cannot be assigned to Administrators → 
+Can continue to view all meetings on CMM
+Expected delivery dates are subject to change
+CMM:
+Restrict Video Operators view
+125
+
+--- PAGE 124 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Upcoming Release: 3.9
+Feb 2024 (Target mid-Feb)
+126
+
+--- PAGE 125 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Meeting Experience (CMS web app)
+• AV1 Codec for Screen 
+Sharing (Beta)
+• CUCM Multi-cluster support for 
+presence update
+• Ability to select Audio Output 
+device on web app
+• Web app connection resiliency 
+(Beta)
+• User search improvements
+• Create CMM Spaces
+Meeting Management
+Management
+• Support for ECDSA 
+Certificates
+confidential and subject to change
+confidential and subject to change
+Solution Roadmap (Release 3.9)
+Tentative
+Improving Quality Engaging Experience Security
+127
+
+--- PAGE 126 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Jabber
+128
+Shane Long – Technical Marketing Engineer
+ENDPOINTS
+
+--- PAGE 127 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Agenda
+129
+• Jabber Deployment Modes
+• Recent Jabber Updates
+• Jabber Roadmap
+• Webex App with Unified CM Calling Architecture
+• Webex App Unified CM Calling Features
+• MS Teams Calling Integration
+
+--- PAGE 128 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Jabber Architecture
+130
+Unified CM
+IM & Presence
+Active 
+Directory
+Exp-C
+ Exp-E
+LDAP –  AD Integration
+HTTPS – Login/Config/Contacts, UDS Directory
+SIP – Softphone Mode
+CTI/QBE – Deskphone Control Mode
+XMPP -  IM, Presence
+
+--- PAGE 129 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Jabber Deployment Models
+131
+Full UC Mode
+ Phone Only Mode
+ Phone Only with Contacts
+➢ Calling (softphone mode)
+➢ Calling (deskhone mode)
+➢ Contacts
+➢ Presence
+➢ Instant Messaging
+➢ Requires IM & Presence
+➢ Calling (softphone mode)
+➢ Calling (deskhone mode)
+➢ IM & Presence not required
+➢ Calling (softphone mode)
+➢ Calling (deskhone mode)
+➢ Contacts
+➢ Presence (optional)
+➢ Requires IM & Presence
+Windows
+Mac
+iOS
+Android
+Virtual Desktop
+
+--- PAGE 130 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Jabber Releases
+132
+12.8
+ 12.9
+ 14.0
+ 14.1
+ 14.2
+14.3
+ 15.0
+July 2023
+ Q4 CY23
+ Q1 CY24
+
+--- PAGE 131 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Jabber 14.2 Release Updates
+133
+New Device Support
+• Apple M1 chip native
+• Samsung Xcover6 Pro
+• Samsung Galaxy A53
+• iPhone 15 / 15 Plus / 15 Pro / 15 Pro Max
+New OS Support
+• iOS 17 and iPadOS 17
+• Android 13
+• Apple local push notifications for iOS over 
+Wi-Fi
+• Admin settings to allow ignoring call using 
+“x” button in call notification toast
+• Android dual VPN support
+
+--- PAGE 132 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 134
+Cisco Jabber priorities
+Provide critical 
+security fixes
+Deliver 
+selective 
+regulatory 
+compliance 
+features
+Maintain 
+compatibility with 
+new versions of 
+device hardware 
+and OS
+Maintain 
+compatibility with 
+new versions of 
+Cisco UC 
+backend 
+applications
+
+--- PAGE 133 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 135
+Cisco Jabber future release plan
+Cisco Jabber 14.3 (Q4CY23)
+• macOS Sonoma support
+• Android 14 support
+• Replace IE with Microsoft WebView2
+• Outlook Calendar integration for CMS 
+meeting
+• Jabber for Android: Jabber presence 
+status goes to "Away" when Jabber is in 
+the background
+Cisco Jabber 15 (Q1CY24)
+• Background blur for Windows (not virtual 
+background)
+• TLS 1.3 support
+• Apple local push notifications over private 
+LTE/5G network
+• Enhancing security for Cisco Jabber 
+Chrome extension
+Subject to Change
+
+--- PAGE 134 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Outlook Calendar Integration for CMS Meetings
+136
+Allows for launching of the CMS Web 
+App direct from the Jabber meetings tab 
+or meeting notification
+• To configure the organization CMS meeting 
+domain:
+<CMSMeetingDomains>cms.abc.com, join.abc.com 
+<CMSMeetingDomains>
+• Click ‘Join’ button, launch CMS Web app, open 
+the Meeting URL: https://join.abc.com/meeting/test
+
+--- PAGE 135 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 137
+Replace IE with Webview2
+• Jabber for Windows uses Internet Explorer as the engine 
+for displaying web content during sign in and Chrome for 
+displaying content in custom tabs
+• Default web engine will be updating to Webview2 from 
+14.3
+• This is controllable via a jabber-config key
+• The following will be the default:
+<BrowserEngineForLogin>EDGE</BrowserEngineForLogin>
+<BrowserEngineForCustomTab>EDGE</BrowserEngineForCustomTab>
+
+--- PAGE 136 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 138
+Blur Background
+• Blur Background will be available on Jabber 
+for Windows only
+• Virtual Backgrounds are not planned
+
+--- PAGE 137 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Are you ready to move from Jabber to Webex App?
+139
+
+--- PAGE 138 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+ 140
+Webex App Unified CM Calling Architecture
+Unified CM
+Exp-C Exp-E
+Webex
+LDAP –  AD Integration
+HTTPS – Login/Config, Webex Services
+SIP – Softphone Mode
+CTI/QBE – Deskphone Control Mode
+Active 
+Directory
+
+--- PAGE 139 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Deploy Webex to meet your needs
+141
+Webex Suite Calling Only Mode
+➢ Calling (softphone mode)
+➢ Calling (deskhone mode)
+➢ Contacts
+➢ Presence
+➢ Messaging
+➢ Meetings
+➢ Calling (softphone mode)
+➢ Calling (deskhone mode)
+➢ Presence
+➢ Contacts
+Windows
+Mac
+iOS
+Android
+Linux
+Virtual Desktop
+Calling Only Mode
+
+--- PAGE 140 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Webex App 
+(Unified CM) Cisco Jabber
+Messaging
+IM-only Share
+Remote Desktop Control (Mouse & Keyboard)
+Device Desk-phone Control
+Calling
+HD Video & Audio Softphone
+Contacts (Corporate, Personal, Local Search)
+In-a-call Presence, DND
+Hold/Resume, Consultative Transfer, Conference
+Call History
+Voicemail (Visual & MWI & Call VM)
+Hunt Group
+Call Pickup
+Call Park
+Extend & Connect  & Dial-via Office
+In-Call Sharing
+Call Recording
+Multi-Line
+FECC (Far End Camera Control)
+ICE Media Optimization
+3rd Party Headset Control
+CTI-Control by Other Application
+Enterprise Contact Center (UCCE/X) Support
+Virtual Desktop Integration (VDI)
+Feature 
+parity
+Webex App 
+reached feature 
+parity with Cisco 
+Jabber for most 
+knowledge workers
+142
+
+--- PAGE 141 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Incremental features in Webex App 
+Webex App delivers many more features that are not supported by Cisco Jabber
+Messaging
+• Group chat escalation to meeting
+Admin/Deployment
+• Cisco headset management
+• App auto update
+• Auto device provisioning
+• Epic Rover integration
+Device Integration
+• Proximity pair with Joining Meeting and 1:1 calling
+• Seamless move between device and Webex App
+• Wireless share & whiteboard with cloud devices
+• 3rd party headset control on Mac
+• Cisco headset control
+End User Experience
+• Single unified app for calling and meetings
+Calling
+• Virtual & custom background
+• Noise removal and music mode
+• Remote side (PSTN) noise removal
+• Local push notifications
+• Business texting
+• Multi call window
+• Seamless call handover between networks (Wi-Fi, LTE/4G)
+• B2B2C app-to-app calling with annotation and whiteboard
+• Move call to meeting
+• E911 RedSky native support
+• App share with desk phone control
+• Desk phone control over MRA
+• Whisper coaching
+• Barge in for shared line
+• Realtime closed captions and translation
+143
+
+--- PAGE 142 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 144
+Contact center features in Webex App 
+Webex App supports key calling features for contact center solutions
+• Whisper 
+announcements
+• cBarge
+• Agent greetings
+• Whisper coaching
+• Silent monitoring 
+• Call notification 
+control for admin
+• Call windows control 
+for user and admin 
+• Zip tone for auto 
+pickup
+• Make/receive call
+• Hold/resume
+• Transfer
+• Conference
+• DTMF
+• Recording (BIB)
+• Multi-line
+
+--- PAGE 143 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 145
+Further Information
+https://www.cisco.com/go/ct
+https://www.ciscolive.com/on-demand/on-demand-
+library.html?search=BRKCOL-2062#/
+
+--- PAGE 144 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Microsoft Teams Integration
+146
+Call/Search Input
+Enter a number, SIP address or type a name to 
+search for Azure AD/Outlook contact
+Call Tab
+Access dial pad, 
+contact search and 
+speed dials
+Contact Search
+Searrch for personal and 
+corporate
+contacts
+ 
+Dialpad
+Access to dialpad 
+to key in numbers
+Azure AD
+Contacts
+Outlook 365
+Contacts
+Add Speed dial
+Click to add up to 25
+speed dial cards
+Call
+Select number and call contact
+Call History
+See history of 
+incoming/outgoing/missed calls
+ 
+Voicemail
+Access and play 
+back the voicemail
+ 
+Contact 
+Resolution
+Resolves the incoming call 
+identifier to Azure AD
+UCM - Pre-Req: 
+UCM 15, 12.5 SU7 or 14 SU3
+CUC – 15 / 12.5 / 14 SU3
+On-premises: Webex Cloud-Connected UC (CCUC)
+Call Forwarding 
+See your call forwarding status at a single glance
+Bi-directional Presence
+Display your on UCM call presence to your 
+contacts and see their call presence too
+
+--- PAGE 145 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+DEMO
+Webex Calling for MS 
+Teams
+
+--- PAGE 146 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Devices
+David Scott – Product Manager
+148
+ENDPOINTS
+
+--- PAGE 147 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+The first desk phone built for hybrid work.
+One button to join 
+meetings experience
+1080p camera
+with privacy shutter.
+72° horizontal field 
+of view, 45° vertical 
+field of view
+Illuminated wake button 
+Introducing Cisco Video Phone 8875
+Traditional 
+telephony keypad
+Wideband handset
+1024 x 600-pixel 
+resolution
+7” touch screen
+1 USB-A (side)
+1 USB-C (rear)
+Bluetooth 4.2 LE
+Carbon Black
+149
+
+--- PAGE 148 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 150
+Swipe Down for Speed Dial
+• Access Speed Dials 
+by swiping down from 
+the top of the touch 
+screen
+• Scroll horizontally to 
+access more 
+• BLF status will 
+indicate if they are in 
+a call or on DND
+• Up to 108 speed dials 
+supported on CUCM
+CUCM or Webex Calling
+
+--- PAGE 149 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 151
+Active Bar
+• When navigating 
+away from a call, 
+the call appears as 
+an active bar at 
+the bottom of the 
+screen 
+• Tap the bar to 
+return to the call
+• An active meeting 
+will also appear as 
+an active bar when 
+you navigate away 
+from the meeting
+CUCM or Webex Calling
+
+--- PAGE 150 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 152
+8875 Custom Wallpaper & Logo
+• You can now have 
+a custom logo and 
+custom wallpaper 
+simultaneously
+• These require a 
+List.xml file
+• The admin can 
+remotely push a 
+custom wallpaper
+• For details, view 
+the video below:
+http://cs.co/8875Tutorial 
+CUCM
+
+--- PAGE 151 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 153
+8875 Training Resources
+• Useful for End Users or 
+Admins
+• http://cs.co/8875Tutorial 
+CUCM or Webex Calling
+
+--- PAGE 152 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 154
+Early Preview: 8875 3rd Party Meetings using OBTJ
+• Join MS Teams, Zoom, or 
+Webex meetings from 
+your 8875
+• Turn the 8875 video 
+phone into a meeting 
+companion device
+• For more information, 
+contact us or your Cisco 
+representative
+3rd Party Meetings
+
+--- PAGE 153 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Enterprise Phone Headsets Enhancements
+155
+Enhancements:
+• Simplified Extension Mobility Login with Expressway MRA for 7800/8800
+• Simplified Extension Mobility Login with 730 USB Adaptor for 8851/61/65
+• Bluetooth Mute Sync for 730 for 8851/61/65
+• Cisco Headset 720 support for 8851/61/65
+• Cisco Headset 980 support for 8851/61/65
+• 560 Auto Answer on/off dock support for 7800/8800
+• By default, you can answer calls by simply lifting your 560 headset off the base and ending 
+them when you put it back down. This firmware release enables you to toggle this feature on 
+and off through Webex App or on Cisco IP Phones with firmware 14.2 or later.
+New in 14.2 Firmware
+• External Phone Number Mask Display for Non-primary Line
+• SIP OAuth Support on SRST
+Enterprise Phone Other Enhancements
+
+--- PAGE 154 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Cisco Wireless Phones
+Cisco Wireless Phone 840
+IP65 ruggedized, water and dust 
+resistant
+4” Dragontail
+  glass touch screen
+8MP rear camera, 5MP front camera
+Cisco Wireless Phone 860
+IP68 ruggedized, waterproof and 
+dustproof
+5.2” Gorilla® glass touch screen
+13MP rear camera, 8MP front camera
+Hot swappable battery for 100% up-
+time
+• SRST Support
+• Call Pickup on CUCM
+• Call Pickup for Txfer on 
+WxC
+• Audible Caller ID
+• Ringtone/Alert Sound and 
+Wallpaper management 
+(CUCM)
+• FW + application updates 
+(CUCM)
+• Diagnostics Application
+• Security updates
+• Bug Fixes
+Version 1.9
+May 2023
+• InformaCast XML 
+Support
+• Hoteling login 
+(WxC)
+• Japanese-localized 
+applications
+• UX Improvements
+• Security updates
+• Bug Fixes
+Version 1.10
+September 2023
+156
+Android 10 OS
+Google Play Store
+Webex app installed
+CUCM Registration
+Scanner HW Option
+Optional charging station
+Customizable buttons
+Vertical Applications
+EMM/MDM Control
+802.11 Wi-Fi
+
+--- PAGE 155 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Cisco Wireless Phones Key Resources
+o Microsoft InTune
+        https://youtu.be/i5NcAGJI3e4
+o VMWARE Workspace One (AirWatch)
+https://youtu.be/23jC15zlnlc
+o Meraki SM
+       https://youtu.be/ysmW6bcOjT0&t=863s
+MDM 840/860 Tutorials
+o Video Demo
+http://cs.co/emma-demo
+o Tool URL       
+https://configure.cisco.com
+Free EMM Alternative
+Wireless Phone Overviews
+o Technical Overview: Hardware & Features
+http://cs.co/wireless-phone-overview
+o Technical Overview2: Core Telephony
+http://cs.co/wireless-phone-overview2
+Core Documentation
+o Wireless LAN Deployment Guide
+http://cs.co/webex-wireless-dg
+157
+Android 10 OS
+Google Play Store
+Webex app installed
+CUCM Registration
+Scanner HW Option
+Optional charging station
+Customizable buttons
+Vertical Applications
+EMM/MDM Control
+802.11 Wi-Fi
+
+--- PAGE 156 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Firmware Release 5.1(2) for 6800 Series IP DECT
+Smart, hybrid 
+work 
+experiences
+Delivers customer requested features to 
+the 6800 series IP DECT devices:
+• Cisco IP DECT Phone on CUCM
+• Configuration Changes Logging
+• Configuration Changes Reporting
+• EDOS Profile Supports all XML Parameters
+• Stateful Firewall to Control Inbound Ethernet Traffic
+• Voice-VLAN support (Network-Related Information 
+Extraction using CDP/LLDP)
+Recents Contacts
+Jun 1 2018
+07:56
+John Smith
+1000
+Recents Contacts
+Jun 1 2018
+07:56
+John Smith
+1000
+158
+
+--- PAGE 157 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+6800 DECT on CUCM
+• The 6800 DECT is now supported 
+on CUCM. It must be added a 
+Third-Party SIP (Advanced) 
+endpoint.
+• The MAC address in CUCM should 
+be arbitrary and any value other 
+than the actual DBS MAC.
+• You must configure the DSB for 
+TCP and not UDP.
+• Video on how to install: 
+https://youtu.be/75018CuYzKc
+User1 User2 User3
+TCP
+TCP
+TCP
+Now supported on CUCM
+159
+
+--- PAGE 158 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+700 Series
+Work everywhere with 
+Bluetooth® wireless 
+headsets for hybrid work 
+featuring intelligent noise 
+removal
+500 Series
+Professional wired and 
+wireless headsets for 
+everyday calling and 
+contact center applications
+900 Series
+Executive Bluetooth® 
+Wireless headsets with 
+premium audio 
+300 Series
+Professional value line with 
+convenient controls
+530 Series560 Series 
+Headset 730
+320 Series
+520 Series
+Bang & Olufsen Cisco 980
+720 Series
+Desk Camera
+Intelligent USB webcams 
+for use on external displays 
+/ tripods
+ Desk Camera 
+4K
+Desk Camera 
+1080p
+Integrated with Webex app and 
+Cisco devices. 
+Microsoft Teams certified 
+versions.
+Dedicated Headset and Camera 
+apps
+Manage & view insights on your 
+fleet of peripherals in Webex 
+Control Hub
+Find the 
+perfect 
+peripherals
+Bang & Olufsen Cisco 950
+Updated 
+ergonomics!
+New!
+160
+
+--- PAGE 159 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Cisco and Bang & Olufsen joined forces to deliver 
+an audio experience that is equipped for business 
+communications, excels in immersive sound, and 
+designed with elegance.
+The Bang & Olufsen Cisco 900 Series
+The new Bang & Olufsen Cisco 950 true wireless earbuds  
+combine the B&O craftsmanship, design, and legendary 
+sound with purpose built software for business users. It's 
+your new discreet and powerful all-day audio companion.
+161
+
+--- PAGE 160 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Take great audio anywhere
+Bluetooth 5.2
+Adaptive active noise cancellation and transparency mode
+Immerse yourself in B&O legendary sound
+Six built-in microphones for crystal clear communications
+All-day comfort
+Tailored fit with 4 sizes of silicon tips or COMPLYTM memory foam tips
+Stereo or mono use on left or right earbud
+User centric experiences
+Only earbuds optimised for Webex app and Cisco devices with on-ear call controls 
+over native BT 
+Touch or motion controls to easily navigate calls and music
+In-ear voice or tone notifications
+Customize settings in the B&O mobile app
+Peace of mind for IT
+Enterprise grade hardware and software security
+Centralized inventory management in Control Hub
+Built to last with premium materials including aluminum and tempered glass
+162
+Bang & Olufsen Cisco 950
+True wireless earbuds 
+designed for professionals.
+
+--- PAGE 161 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Conclusions & References
+164
+
+--- PAGE 162 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Release 15 and On-Premises Update
+165
+Ongoing and continued investment in on-premises products and solutions
+• Release 15 (Unified CM, IM&P, Unity Connection, Emergency Responder + Platform)
+• Expressway
+• CUBE
+• Cisco Meeting Server (CMS)
+• Jabber
+• Devices
+
+--- PAGE 163 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+References – Release 15 / Platform
+166
+• Unified CM 15 Beta: https://gobeta.webex.com/key/cucm 
+• Partner webinar 'Cisco UCM 15 Update - Get Current or Go Cloud Now': http://cs.co/cvoe 
+• Unified CM Release EoL mailers: ask-ucm-release-eol@cisco.com  or ask-ucm-release-eol-partner@cisco.com 
+• Data Center Migration for Push REST Service: https://www.cisco.com/c/en/us/products/collateral/unified-
+communications/unified-communications-manager-callmanager/uni-cm-im-presence-service-bulletin.html 
+• Phone Deprectation Release 14: 
+https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/trouble/14_0_1/fieldNotices/cucm_b_deprecated-
+phones-14.html 
+• Quote Collab Tool: http://www.cisco.com/go/quotecollab 
+• Unified Communications Manager Support Docs: https://www.cisco.com/c/en/us/support/unified-
+communications/unified-communications-manager-callmanager/series.html
+
+--- PAGE 164 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+References - Expressway
+167
+• Expressway X14.3 Release Notes: 
+https://www.cisco.com/c/dam/en/us/td/docs/voice_ip_comm/expressway/release_note/X14-3-x/Cisco-
+Expressway-and-Cisco-Expressway-Select-Release-Note-X14-3-x.pdf 
+• Expressway CE1300 Appliance Install Guide: 
+https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/expressway/install_guide/X14-3-
+1/CE1300/exwy_b_cisco-expressway-ce1300-appliance-installation-guide-x1431.html 
+• Expressway Support Docs: https://www.cisco.com/content/en/us/support/unified-communications/expressway-
+series/series.html#~tab-documents
+
+--- PAGE 165 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+References – CUBE (1 of 2)
+168
+• CUBE Interop Portal: http://www.cisco.com/go/interoperability 
+• Zoom Phone with CUBE: https://assets.zoom.us/docs/zoom-phone/Zoom-Phone-Config-Guide-Cisco-UBE-
+ISR4331.pdf 
+• Amazon Chime with CUBE: https://d1.awsstatic.com/Products/product-name/Chime/Amazon Chime Voice 
+Connector_SIP_Trunking_Configuration with Cisco UCM and Cisco UBE v2.1.pdf
+• Management Connector Deployment Script: 
+https://binaries.webex.com/ManagedGatewayScriptProdStable/gateway_onboarding.tcl 
+• CUBE Box: https://cisco.box.com/CUBE-Enterprise (Internal Only - external folks can be added if they request access via email)
+• CUBE Performance and Sizing
+• Cisco Unified Border Element Configuration Guide Through Cisco IOS XE 17.5 
+• CUBE Config Guide – IOS-XE 17.6 Onwards
+
+--- PAGE 166 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+References – CUBE (2 of 2)
+169
+• CUBE Roadmap
+• IOS-UC Sharepoint
+• CUBE Support
+CUBE partner/customer questions: ask-cube@external.cisco.com
+
+--- PAGE 167 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+References – Cisco Meeting Server
+170
+• Cisco Meeting Server Support Docs: https://www.cisco.com/content/en/us/support/conferencing/meeting-
+server/tsd-products-support-series-home.html
+
+--- PAGE 168 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+References - Jabber
+171
+• Collaboration Transitions: https://www.cisco.com/go/ct
+• Jabber Support Docs: https://www.cisco.com/content/en/us/support/unified-
+communications/jabber/series.html#~tab-documents
+
+--- PAGE 169 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+References - Devices
+172
+• 8875 Tutorial: http://cs.co/8875Tutorial 
+• Wireless Technical overviews: http://cs.co/wireless-phone-overview and http://cs.co/wireless-phone-overview2 
+• Wireless LAN Deployment Guide: http://cs.co/webex-wireless-dg 
+• Mobility Management: http://cs.co/emma-demo | https://configure.cisco.com/ (Tool)
+• MDM Tutorials - MS Intune: https://youtu.be/i5NcAGJI3e4 
+• MDM Tutorials - VMWare Workspace One (AirWatch): https://youtu.be/23jC15zlnlc 
+• MDM Tutorials - Meraki SM: https://youtu.be/ysmW6bcOjT0&t=863s 
+• 6800 DECT: https://youtu.be/75018CuYzKc
+
+--- PAGE 170 ---
+© 2023 Cisco and/or its affiliates. All rights reserved. Cisco Confidential

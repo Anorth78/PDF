@@ -1,0 +1,3510 @@
+--- PAGE 1 ---
+#CiscoLive
+Steven Fly, Technical Marketing Engineer, 
+Technical Leader
+BRKCOL-2062
+Best Practices for a Successfully Migrating
+Jabber to the Webex App
+
+--- PAGE 2 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Cisco Webex App 
+Questions? 
+Use Cisco Webex App to chat 
+with the speaker after the session
+Find this session in the Cisco Live Mobile App
+Click “Join the Discussion”
+Install the Webex App or go directly to the Webex space
+Enter messages/questions in the Webex space
+How
+Webex spaces will be moderated 
+by the speaker until June 7, 2024.
+1
+2
+3
+4
+https://ciscolive.ciscoevents.com/
+ciscolivebot/#BRKCOL-2062
+Enter your personal notes here
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco PublicBRKCOL-2062 2
+
+--- PAGE 3 ---
+Agenda
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+• Transition of Jabber 
+Workloads
+• Migration Tools
+• Migration Best Practices
+• Pre-Migration Activities
+• Migration Prep Activities
+• Migration Activities
+• Conclusion
+• Additional Info
+BRKCOL-2062 3
+
+--- PAGE 4 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Icon Guidelines
+The following icons are used to indicate the Collaboration workloads, 
+deployments and apps referenced throughout this presentation
+Webex Meetings Desktop 
+App (WDA)
+* FFM = Full Featured Meetings
+Webex App*
+Jabber
+UCM Calling Deployment
+Webex Calling Deployment
+Multi-tenant
+UCM Messaging
+Webex Messaging
+Webex Meetings
+On-PremCloud
+Apps
+Webex Calling Deployment
+Dedicated Instance
+= Best Practice Recommendation
+BRKCOL-2062 4
+
+--- PAGE 5 ---
+Transition of 
+Jabber Workloads
+
+--- PAGE 6 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Pre-Migration
+ Migration
+Migration Prep
+Recommend a 3-Phase Approach
+Migration Ready
+Prepare Webex Org and UC 
+environment for migration, setup base 
+org functionality, and verify access to 
+Webex services
+• Webex Org setup
+• Licensing, User Provisioning
+• Enable analytics
+• Network readiness
+• Software upgrades
+Define/Configure workload services, 
+app deployment plan and develop 
+migration plan/schedule
+• Messaging, meeting and calling 
+services & features
+• UCM user/contact extraction
+• Users, Client versions
+• Integration requirements
+• Planning & Testing
+• PoC/Pilot
+Migration of users and soft client and 
+decommission of on-premises servers
+• End user adoption & training
+• Migration communication
+• Migrate users, clients/apps & 
+contacts
+• Decommission existing on-
+premise UC infrastructure
+BRKCOL-2062 6
+
+--- PAGE 7 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Jabber Workloads
+Migrating to Webex App
+• Calling (UCM)
+• Stay with UCM on-prem for 
+calling platform
+• Messaging
+• UCM IM&P → Webex
+• Meetings
+• Webex
+• WDA → Webex App*
+*Majority of existing customers and all new customers are 
+using the Webex App for Meetings since end of CY21
+BRKCOL-2062 7
+
+--- PAGE 8 ---
+UCM Calling 
+Migration Journey
+➢ Jabber → Webex App
+➢ Stay on UCM On-prem
+
+--- PAGE 9 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+UCM Calling: High-Level Transition Map 
+Note: This map is a visual representation of the workload transition(s), highlighting the primary architectural changes during the deployment.
+Cisco Jabber
+0
+Cisco Webex
+1
+BRKCOL-2062 9
+ON-PREMISES
+ REMOTE
+ON-PREMISES
+ REMOTE
+
+--- PAGE 10 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Migration Prep
+Discover & 
+Design
+• Review Jabber 
+Users Collab 
+Workloads
+• Webex App 
+Client 
+Requirements
+• Protocol Hander 
+Integration
+• Jabber 
+Integrations
+UCM Calling: Migration Journey
+Pre-Migration
+Analytics 
+Deployment
+• Cloud-
+Connected 
+UC
+• Jabber 
+Telemetry
+Migration
+Webex  
+Control Hub 
+Setup
+Applications 
+Readiness
+(CUCM, Expwy, & 
+CUC Servers)
+Plan & Prep
+Deploy & 
+Configure
+(CUCM, Expwy, & 
+CUC Servers)
+Migrate
+ Decom
+• Create/Verify 
+Production 
+Webex Org
+• Verify/Claim 
+Domain(s)
+• Claim Users
+• Auto License 
+Templates
+• Deploy SSO
+• User 
+Provisioning
+• Directory Sync
+• Directory 
+Connector, 
+SCIM
+• CCUC
+• Manual, CSV
+• API
+• Configure 
+Users’ Phone 
+Numbers
+• Webex App 
+Deployment 
+Options 
+• Develop 
+Migration Plan
+• Develop 
+Acceptance 
+Test Plan
+• Stage Webex 
+App 
+Installation File
+• POC/Pilot
+• Configure 
+Webex Users/ 
+Calling Settings
+• Verify CUCM/  
+Expwy Configs
+• Webex App 
+Update Schedule
+• End User 
+Comms/Training
+• Migrate Users 
+• Jabber to 
+Webex App
+• Acceptance 
+Testing
+• Migrate User/Org 
+Contacts
+• Update Protocol 
+Handlers for 3rd
+Party App Cross-
+Launch
+• Remove 
+Jabber from 
+Users’ 
+Devices
+Webex Org 
+Setup
+• Verify 
+Licenses
+• Software 
+Versions 
+(CUCM, 
+Expwy, CUC)
+• Authentication 
+Method 
+(CUCM / CUC)
+• Deploy SSO
+• SSO OAuth w/ 
+Refresh Token 
+Flow Config 
+(CUCM, 
+Expwy, CUC)
+• MRA 
+Deployment
+Network & 
+Security 
+Readiness
+• Validate 
+Network 
+Connectivity
+• Security & 
+InfoSec 
+Approvals
+• Verify/Update 
+Internal/ 
+External 
+Voice 
+Domains
+• Validate DNS 
+SRV Records
+CUCM
+Migration Ready
+* See Reference slides for more details Required Activity
+Recommended Activity
+Optional Activity
+BRKCOL-2062 10
+CUCM
+
+--- PAGE 11 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+UCM Calling: Readiness Checklist
+3Minimum:
+* CUCM: 11.5(1)SU3 / 12.5(1)  --or-- 11.5(1)SU8 / 12.5(1)SU3 (for iOS)
+* Expressway: X8.11.4 / X12.5.0
+CUCM 12.5(1) or later required for secure calling (SIP OAuth) - signaling and media
+CUCM 12.5(1)SU4 or later & Expressway X14.0 or later - best mobile SSO experience
+1SSO required on Expressway if enabled on CUCM for Mobile and Remote Access (MRA)
+2SSO required on CUC if enabled on CUCM
+Checks Required
+Production Webex Org ✓
+Required Licenses Available in UC Applications ✓
+Network Connectivity (to Webex) - Protocols, Ports, 
+Bandwidth ✓
+Security / InfoSec Approvals ✓
+CUCM / CUC Authentication Method ✓
+Verify Internal and External Voice Domains are the Same ✓
+Validate DNS Configurations ✓
+Verified Domain(s)  (Best Practice)
+Claimed Domain(s)  (Best Practice)
+Claim Users  (Best Practice)
+Auto License Templates  (Best Practice)
+SSO Enabled  (Best Practice)
+Webex
+CUCM
+Expressway1
+Unity Connection2
+Checks Required
+User Provisioning – Webex ✓
+Directory Sync  (Best Practice)
+Webex - Directory Connector (AD), SCIM (Azure AD, 
+Okta), CCUC, API
+CUCM
+Unity Connection
+Users’ Phone Numbers Configured in Control Hub ✓
+UC Analytics Enabled
+CCUC
+Jabber Telemetry 
+Software Versions3
+CUCM
+Expressway
+Unity Connection (align with CUCM version)
+✓
+✓
+✓
+SSO OAuth w/ Refresh Token Flow (Best Practice)
+CUCM
+Expressway
+Unity Connection
+MRA for remote users 
+Reference
+✓ Mandatory
+Highly Recommended
+ Optional
+BRKCOL-2062 11
+
+--- PAGE 12 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+• Review Jabber User Personas
+• Calling only, Calling + Messaging only, Full 
+UC, etc.
+• Required Webex App Clients
+• Desktop (Win and Mac)
+• Mobile (iOS and Android)
+• VDI
+• Linux
+• 3rd Party App cross-launch (Protocol 
+Handlers)
+• Jabber Integrations
+• Webex Users/Calling Settings
+• UC Profiles, Calling licenses, Org Calling 
+settings, Client settings, etc.
+UCM Calling: Migration Prep Considerations
+• Review On-prem UC Configurations
+• CUCM – End user configs, ILS, Home cluster, 
+Jabber XML Config, Service Profiles, Security 
+Profiles, Push Notifications, etc.
+• Expressway – Zones, Call routing, etc.
+• Unity
+• Deployment Options for Each Client Type
+• User driven
+• Admin software push
+• Deployment Plan
+• POC – feature validation/testing, deployment 
+testing, etc.
+• Pilot – size, success criteria
+• Production rollout plan – flash or phased
+• User/Solution Acceptance Test Plan
+Reference
+BRKCOL-2062 12
+
+--- PAGE 13 ---
+Messaging 
+Migration Journey
+➢ Jabber → Webex App
+➢ CUCM IM&P → Webex
+
+--- PAGE 14 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Messaging: High-Level Transition Map 
+Note: This map is a visual representation of the workload transition(s), highlighting the primary architectural changes during the deployment.
+Cisco Jabber
+0
+Cisco Webex
+1
+BRKCOL-2062 14
+ON-PREMISES
+ REMOTE
+ON-PREMISES
+ REMOTE
+
+--- PAGE 15 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Migration
+Migrate
+Messaging: Migration Journey
+Pre-Migration
+Analytics 
+Deployment
+• Cloud-
+Connected 
+UC
+• Jabber 
+Telemetry
+Webex  
+Control Hub 
+Setup
+Messaging 
+Interop
+ Decom
+• Create/Verify 
+Production 
+Webex Org
+• Add/Verify 
+Licenses
+• Verify/Claim 
+Domain(s)
+• Auto License 
+Templates
+• Claim Users
+• Deploy SSO
+• User 
+Provisioning
+• Directory Sync
+• Directory 
+Connector, 
+SCIM
+• CCUC
+• Manual, CSV
+• API
+• End User 
+Comms/Training
+• Migrate Users 
+• Jabber to 
+Webex App
+• Acceptance 
+Testing
+• Migrate User 
+Contacts
+• Update Protocol 
+Handlers
+• Remove Jabber 
+from Users’ 
+Devices
+• Archive 
+Persistent Chat 
+History
+• Decommission 
+IM&P Servers
+Webex Org 
+Setup
+• Deploy Hybrid 
+Messaging
+• XMPP & SIP 
+Federation
+• Centralize 
+IM&P Clusters
+Network & 
+Security 
+Readiness
+• Validate 
+Network 
+Connectivity
+• Security & 
+InfoSec 
+Approvals
+CUCM+
+IM&P
+Migration Prep
+Discovery & 
+Design
+Deploy & 
+Config
+• Webex 
+Messaging 
+Features & 
+Services
+• Webex App 
+Update 
+Schedule
+• Review 
+Jabber Users 
+Collab 
+Workloads
+• Review 
+Jabber Only 
+Features
+• Webex App 
+Client Types
+• Protocol 
+Handler 
+Integrations
+• Jabber 
+Integrations
+Plan & Prep
+• Webex App 
+Deployment 
+Options
+• Develop 
+Migration Plan
+• Develop 
+Acceptance 
+Test Plan
+• Stage Webex 
+App 
+Installation File
+• POC/Pilot
+Migration Ready
+* See Reference slides for more details Required Activity
+Recommended Activity
+Optional Activity
+BRKCOL-2062 15
+
+--- PAGE 16 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Messaging: Readiness Checklist
+2May be desired for phased migrations
+1Consider Data Residency (which Webex datacenter stores customer’s data)
+Checks Required
+Production Webex Org1 ✓
+Required Licenses Available in Webex ✓
+Network Connectivity (to Webex) - Protocols, Ports, 
+Bandwidth ✓
+Security / InfoSec Approvals ✓
+Verify Domain(s)  (Best Practice)
+Claim Domain(s)  (Best Practice)
+Claim Users  (Best Practice)
+Auto License Templates  (Best Practice)
+Checks Required
+SSO Enabled  (Best Practice)
+Webex
+User Provisioning - Webex ✓
+Directory Sync  (Best Practice)
+Webex - Directory Connector (AD), SCIM (Azure AD, 
+Okta), CCUC, API
+UC Analytics Enabled
+CCUC
+Jabber Telemetry 
+XMPP or SIP Federation 
+Hybrid Messaging Services2 
+Centralize IM&P clusters 
+Reference
+✓ Mandatory
+Highly Recommended
+ Optional
+BRKCOL-2062 16
+
+--- PAGE 17 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+• Jabber User Personals
+• Messaging only, Calling only, Full UC, etc.
+• Identify if any Jabber only features are 
+configured
+• Persistent Chat Rooms
+• Managed File Transfer
+• Etc…
+• Webex App Client Requirements
+• Desktop (Win and Mac)
+• Mobile (iOS and Android)
+• VDI
+• Linux
+• 3rd Party App Cross-launch (Protocol 
+Handlers)
+• Jabber Integrations
+Messaging: Migration Prep Considerations
+• Webex Messaging Feature/Service 
+Requirements
+• Message Retention
+• Content Management - including 3rd party ECM 
+(Enterprise Content Management) integrations
+• External Messaging - Allow/Block messaging 
+capabilities with external domains
+• Deployment Options
+• User driven
+• Admin software push
+• Deployment Plan
+• POC – feature validation/testing, deployment 
+testing, etc.
+• Pilot – size, success criteria
+• Production rollout plan – flash or phased
+• User/Solution Acceptance Test Plan
+Reference
+BRKCOL-2062 17
+
+--- PAGE 18 ---
+Meetings 
+Update Journey 
+➢ Webex Meetings Desktop App (WDA) →
+Webex App
+➢ Stay on Webex Meetings
+
+--- PAGE 19 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Meetings: High-Level Transition Map 
+Note: This map is a visual representation of the workload transition(s), highlighting the primary architectural changes during the deployment.
+Webex Meetings App
+0
+Webex App
+1
+<10 customers left to update
+BRKCOL-2062 19
+Webex
+Meetings Site
+ON-PREMISES
+REMOTE
+Webex Org +
+Webex 
+Meetings Site
+ON-PREMISES
+REMOTE
+
+--- PAGE 20 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Migration
+Migrate
+Meetings: Migration Journey
+Pre-Migration
+Webex  
+Control Hub 
+Setup
+Decom
+• Create/Verify 
+Production 
+Webex Org
+• Add/Verify 
+Licenses
+• Link SA Webex 
+Sites & Users*
+• Verify/Claim 
+Domain(s)
+• Auto License 
+Templates
+• Claim Users
+• Deploy SSO
+• User 
+Provisioning
+• Directory Sync
+• Directory 
+Connector, 
+SCIM
+• CCUC
+• Manual, CSV
+• API
+• Deploy Hybrid 
+Calendar
+Webex Org 
+Setup
+Network & 
+Security 
+Readiness
+• Validate 
+Network 
+Connectivity
+• Security & 
+InfoSec 
+Approvals
+Application 
+Readiness
+(Webex Meetings 
+& WDA)
+• Verify/Update  
+Webex Meeting 
+Site Version
+• Verify/Update 
+WDA Version
+• End User 
+Comms/Training
+• Update Users 
+App
+• WDA to 
+Webex App
+• Acceptance 
+Testing
+• MS Office 
+Integration
+• Remove WDA 
+from Users’ 
+Devices
+*Or migrate Site Admin managed Webex Sites to Control Hub managed
+Migration Prep
+Discovery & 
+Design
+Deploy & 
+Config
+• Webex App 
+Client Types
+• Verify User 
+Meeting 
+License 
+Assignments
+• Verify / Enable 
+Org for Full 
+Feature 
+Meeting 
+Experience
+• Meeting Data 
+Retention 
+Policy
+• Webex App 
+Update 
+Schedule
+Plan & Prep
+• Webex App 
+Deployment 
+Options
+• Develop 
+Migration Plan
+• Develop 
+Acceptance 
+Test Plan
+• Stage Webex 
+App Installation 
+File
+• POC/Pilot
+Migration Ready
+* See Reference slides for more details Required Activity
+Recommended Activity
+Optional Activity
+BRKCOL-2062 20
+
+--- PAGE 21 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Meetings: Readiness Checklist
+1Consider Data Residency (which Webex datacenter stores customer’s data)
+2Webex Meetings site must be on 40.10 or later (latest version recommended)
+3For Site Administration sites, Webex Meetings site(s) and Webex Meeting users must be
+linked to Webex Control Hub
+4WDA 41.2 or later (latest version recommended)
+Checks Required
+Production Webex Org1 ✓
+Required Licenses Available in Webex ✓
+Network Connectivity (to Webex) - Protocols, Ports, 
+Bandwidth ✓
+Security / InfoSec Approvals ✓
+Webex Meeting Site(s) Version2 ✓
+Webex Site & User Linking3 ✓
+Verify Webex Desktop App (WDA) Version4 ✓
+Checks Required
+Verify Domain(s) (Best Practice)
+Claim Domain(s)  (Best Practice)
+Claim Users  (Best Practice)
+Auto License Templates  (Best Practice)
+SSO Enabled  (Best Practice)
+Webex5
+User Provisioning - Webex ✓
+Directory Sync  (Best Practice)
+Webex - Directory Connector (AD), SCIM (Azure AD, 
+Okta), CCUC, API
+Hybrid Calendar Services  (Best Practice)
+5Highly recommend to enable SSO on Control Hub if SSO is enabled on Site Admin 
+managed sites before updating. This is to avoid possible different authentication 
+methods for users.
+Reference
+✓ Mandatory
+Highly Recommended
+ Optional
+BRKCOL-2062 21
+
+--- PAGE 22 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Meetings: Update Prep Considerations
+• Webex App Client Requirements
+• Desktop (Win and Mac)
+• Mobile (iOS and Android)
+• VDI
+• Linux
+• Verify Users’ Meetings License Assignments
+• Host, Attendee, None (Basic Meetings)
+• Verify Org is enabled for the “Full Feature 
+Meeting” Experience
+• Review Meeting data retention Requirements
+• Deployment Options
+• User driven
+• Admin software push
+• Deployment Plan
+• POC – feature validation/testing, deployment 
+testing, etc.
+• Pilot – size, success criteria
+• Production rollout plan – flash or phased
+• User/Solution Acceptance Test Plan
+• Calendar Service Options (Outlook, In-App)
+• Understand Video Mesh Implications (if 
+applicable)
+• Productivity Tools and Webex Scheduler 
+NOT impacted but update.
+• Note: Productivity Tool EOL (last release: June 
+2022)
+• Migrate to Webex Scheduler
+Reference
+BRKCOL-2062 22
+
+--- PAGE 23 ---
+Migration Tools
+
+--- PAGE 24 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex Control Hub - Migration Tools
+BRKCOL-2062 24
+
+--- PAGE 25 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex Control Hub - Jabber Migration Tools
+1 Requires CCUC
+2 Not required if Directory Sync is deployed
+3 Requires Deployment Insights to be enabled
+Migrate 
+Jabber➔WxA2
+(Calling: Stay on CUCM,
+Messaging: IMP➔Wbx)
+“Migration 
+services/tools”
+• Import or Sync1,2,3
+CUCM/LDAP users & 
+Org Contacts
+1
+• Migrate Jabber users’ 
+contacts to Webex 
+App
+2
+• Migrate Jabber users 
+to Webex App with 
+UCM Calling1,3
+3
+Import/Sync Users1,2
+BRKCOL-2062 25
+1
+2
+3
+& Personal Contacts
+
+--- PAGE 26 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex APIs – Program/Script Migration
+Individual or Groups of Users
+https://developer.webex.com/
+Script / 
+Program
+Developer 
+Webpage
+BRKCOL-2062 26
+
+--- PAGE 27 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex Control Hub Migration Tool Considerations
+1. Looking for Jabber and Webex App usage & insights before/during/after the 
+migration?
+• Deploy CCUC1
+• Optionally deploy Jabber Telemetry 
+2. Is Director Connector, Azure AD or SCIM deployed to sync users to Control Hub?
+• The ‘User/Contact Synchronization’ tool is not applicable for users, but can still be used for 
+Org Contacts
+3. Planning a phased user migration?
+• Use the ‘Migrate Jabber to the new Webex’ Control Hub tool
+4. How are user contacts being migrated?
+• By End-user ➔ Use Jabber XML file to enable end-users to migrate their own Jabber 
+contacts/preferences
+• By Admin ➔ Use the ‘Migrate Personal Contacts to Webex App’ Control Hub tool to migrate 
+end-users’ Jabber contacts for them (users must configure their own preferences in the Webex App)
+1 Required for the ‘Migrate Jabber to the new Webex’, 
+‘Migration Insights’, and ‘User/Contact Synchronization’ tools
+BRKCOL-2062 27
+
+--- PAGE 28 ---
+Migration Best 
+Practices
+
+--- PAGE 29 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Pre-Migration Activities
+29BRKCOL-2062
+Migration Prep
+Discover & 
+Design
+ Plan & Prep
+Deploy & 
+Configure
+(CUCM, Expwy, & 
+CUC Servers)
+Migrate
+Migrate
+ Decom
+CUCM
+Migration Ready
+Pre-Migration
+Analytics 
+Deployment
+Webex  
+Control Hub 
+Setup
+Applications 
+Readiness
+(CUCM, Expwy, & 
+CUC Servers)
+Webex Org 
+Setup
+Network & 
+Security 
+Readiness
+CUCM
+
+--- PAGE 30 ---
+Webex Org Setup 
+Best Practices
+Pre-Migration
+Analytics 
+Deployment
+Webex  
+Control Hub 
+Setup
+Applications 
+Readiness
+(CUCM, Expwy, & 
+CUC Servers)
+Webex Org 
+Setup
+Network & 
+Security 
+Readiness
+• Cloud-
+Connected 
+UC
+• Jabber 
+Telemetry
+• Create/Verify 
+Production 
+Webex Org
+• Add/Verify 
+Licenses
+• Verify/Claim 
+Domain(s)
+• Claim Users
+• Auto License 
+Templates
+• Deploy SSO
+• User 
+Provisioning
+• Directory Sync
+• Directory 
+Connector, 
+SCIM
+• CCUC
+• Manual, CSV
+• API
+• Configure 
+Users’ Phone 
+Numbers
+• Verify 
+Licenses
+• Software 
+Versions 
+(CUCM, 
+Expwy, CUC)
+• Authentication 
+Method 
+(CUCM / CUC)
+• Deploy SSO
+• SSO OAuth w/ 
+Refresh Token 
+Flow Config 
+(CUCM, 
+Expwy, CUC)
+• MRA 
+Deployment
+• Validate 
+Network 
+Connectivity
+• Security & 
+InfoSec 
+Approvals
+• Verify/Update 
+Internal/ 
+External 
+Voice 
+Domains
+• Validate DNS 
+SRV Records
+
+--- PAGE 31 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Production Org & Data Residency Selection
+• Use Production Org for all 
+migrations
+Get Started with Cisco Webex 
+Control Hub
+• Data residency selected at 
+service setup
+• Identifies location/region 
+Org’s data is stored
+Required Activity
+BRKCOL-2062 31
+
+--- PAGE 32 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Data Residency Regions
+Data residency in Webex
+Required Activity
+BRKCOL-2062 32
+
+--- PAGE 33 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Data Residency Verification
+• Verify Webex Org’s Data Locations
+Required Activity
+BRKCOL-2062 33
+
+--- PAGE 34 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Content Storage & Data Location
+• Messaging Data
+• Webex App - Messages, files, whiteboards
+• Meeting Data:
+• Site data, recordings, transcripts
+• Stored based on time zone selected during Webex Meeting site provisioning
+• Where are the Webex Data Centers and iPOP Locations?
+• European Union data migration for Webex sites in Control Hub
+• Common Application Data:
+• User profiles/identities, authentication data, analytics data, encryption keys and 
+billing data
+Required Activity
+Reference
+BRKCOL-2062 34
+
+--- PAGE 35 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+* UCM licenses are still assigned/applied on CUCM/Unity.
+Control Hub does not show the UCM Calling licenses.
+Webex Licenses
+• Verify the licenses, quantities
+and expiry date
+• Acquired through Webex
+subscription
+• Required to assign Webex
+services to users
+View License Usage in Cisco 
+Webex Control Hub
+Required Activity
+BRKCOL-2062 35
+
+--- PAGE 36 ---
+Analytics
+Best Practices
+Pre-Migration
+Analytics 
+Deployment
+• Cloud-
+Connected 
+UC
+• Jabber 
+Telemetry
+Webex  
+Control Hub 
+Setup
+Applications 
+Readiness
+(CUCM, Expwy, & 
+CUC Servers)
+• Create/Verify 
+Production 
+Webex Org
+• Verify/Claim 
+Domain(s)
+• Claim Users
+• Auto License 
+Templates
+• Deploy SSO
+• User 
+Provisioning
+• Directory Sync
+• Directory 
+Connector, 
+SCIM
+• CCUC
+• Manual, CSV
+• API
+• Configure 
+Users’ Phone 
+Numbers
+Webex Org 
+Setup
+• Verify 
+Licenses
+• Software 
+Versions 
+(CUCM, 
+Expwy, CUC)
+• Authentication 
+Method 
+(CUCM / CUC)
+• Deploy SSO
+• SSO OAuth w/ 
+Refresh Token 
+Flow Config 
+(CUCM, 
+Expwy, CUC)
+• MRA 
+Deployment
+Network & 
+Security 
+Readiness
+• Validate 
+Network 
+Connectivity
+• Security & 
+InfoSec 
+Approvals
+• Verify/Update 
+Internal/ 
+External 
+Voice 
+Domains
+• Validate DNS 
+SRV Records
+
+--- PAGE 37 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+UC Analytics • Insights into current UC deployment & 
+usage
+• Active Users, Client Versions, OS Versions
+• Calls - Volume, Types, Experience
+• Messages - Sent, Types
+• Asset Usage
+• Call Traffic Analysis & Locations
+• Trunk Utilization
+• Data Insights for Migration planning
+• Analytics before/during/after migration
+• Day-to-day operational capabilities
+• (Enable) Tools to assist with migration & 
+on-going operations
+Cloud-Connected UC1
+• Collects data from UCM, 
+IM&P and CUC
+Jabber Telemetry2
+• Collects data from  Jabber 
+clients*
+1 Recommended Activity
+2 Optional Activity
+* See Reference slides for more details
+BRKCOL-2062 37
+
+--- PAGE 38 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+CCUC Key Features
+• What's New in Webex Cloud-Connected UC
+• Webex Cloud-Connected UC
+• Analytics for Your Webex Cloud-Connected UC
+Webex App Borderless CTI 
+(enduser controls IP phone via WxApp CTI over MRA… not VPN)
+UCM Calling and Messaging Analytics
+(call quality, traffic analysis, trunk usage, device usage, message analysis)
+UC App Certificate Management
+(centralize management, view/distribute/update, across UC apps/clusters)
+Ops Dashboard with WebRTMT
+(near-real-time view in Control Hub of last hour's call status with web-based 
+RTMT tool for deeper stats and troubleshooting)
+Troubleshooting
+(CX CSA integration for SDL logs in Control Hub)
+Touchless WxApp (auto-)provisioning 
+(enduser self-provisioning of the WxApp for UCM calling)
+"Migration" to Webex
+(understand Jabber usage, enable Control Hub tools to assist with Jabber to 
+WxApp Migration)
+Cloud Directory Service for on-premise UCM
+(synch cloud active directory, e.g. Azure AD, via WbxIdentify to on-premise 
+UC apps)
+User/Device Presence Status
+(UCM-registered phone call status synced to WxApp presence and/or 
+Microsoft Teams client presence)
+Also requires Webex 
+Serviceability Connector
+Centralized Call History
+(consolidation of call history for UCM phones with the WxApp)
+BRKCOL-2062 38
+
+--- PAGE 39 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Jabber Telemetry
+• Enables insights into the Jabber client usage patterns (messages and 
+calls)
+• Primarily for Messaging and UCM Calling migrations
+• Provides data to assist with Jabber user migration planning
+• Reference Links:
+• Analytics for Your Cloud Collaboration Portfolio (see “Jabber” tab)
+• Feature Configuration for Cisco Jabber 12.8 - Telemetry with Cisco Jabber Analytics
+• Feature Configuration for Cisco Jabber 14.0 - Telemetry with Cisco Jabber Analytics
+Reference
+Optional Activity
+BRKCOL-2062 39
+
+--- PAGE 40 ---
+Webex Control Hub
+Best Practices
+Pre-Migration
+Analytics 
+Deployment
+• Cloud-
+Connected 
+UC
+• Jabber 
+Telemetry
+Webex  
+Control Hub 
+Setup
+Applications 
+Readiness
+(CUCM, Expwy, & 
+CUC Servers)
+• Create/Verify 
+Production 
+Webex Org
+• Verify/Claim 
+Domain(s)
+• Claim Users
+• Auto License 
+Templates
+• Deploy SSO
+• User 
+Provisioning
+• Directory Sync
+• Directory 
+Connector, 
+SCIM
+• CCUC
+• Manual, CSV
+• API
+• Configure 
+Users’ Phone 
+Numbers
+Webex Org 
+Setup
+• Verify 
+Licenses
+• Software 
+Versions 
+(CUCM, 
+Expwy, CUC)
+• Authentication 
+Method 
+(CUCM / CUC)
+• Deploy SSO
+• SSO OAuth w/ 
+Refresh Token 
+Flow Config 
+(CUCM, 
+Expwy, CUC)
+• MRA 
+Deployment
+Network & 
+Security 
+Readiness
+• Validate 
+Network 
+Connectivity
+• Security & 
+InfoSec 
+Approvals
+• Verify/Update 
+Internal/ 
+External 
+Voice 
+Domains
+• Validate DNS 
+SRV Records
+
+--- PAGE 41 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Compliance
+1. Verify Domains
+Ensure users adhere to Enterprise’s Security Policies
+41
+Recommended Activity
+BRKCOL-2062
+
+--- PAGE 42 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Compliance
+1. Verify Domains
+2. Claim Domains
+Ensure users adhere to Enterprise’s Security Policies
+42
+Recommended Activity
+BRKCOL-2062
+company.org
+
+--- PAGE 43 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Compliance
+1. Verify Domains
+2. Claim Domains
+3. Claim Users
+Ensure users adhere to Enterprise’s Security Policies
+43
+Recommended Activity
+BRKCOL-2062
+* New User Management Experience (Jun/Jul ‘24)
+
+--- PAGE 44 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+“Verify” & “Claim” Domain(s)
+• Verify Domain(s)
+• Identify domain(s) belonging to Webex Org – who “owns” the domain(s)
+• Enables Admins to claim existing Webex users* from other Orgs
+• Claim Domain(s)
+• Ensures new users* are automatically added to your Org, including self 
+sign-up Webex App users
+• Existing Webex users not impacted
+• Allows for Admins to manage Webex services for all users in the Enterprise
+• Manage your Domains - Add, Verify and Claim
+• Prevent Users from Self-Registering with your Domain
+Recommended Activity
+* Using your Enterprise email domain(s)
+BRKCOL-2062 44
+
+--- PAGE 45 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+“Verified” vs “Claimed”
+Verified Domain Claimed Domain
+Process Control Hub,
+DNS based validation (TXT record)
+Control Hub,
+Verify 1st then Claim
+Exclusive Associate domain to Org,
+Domain users can exist in and can be 
+added to other organizations
+Domain Users cannot be added to other 
+organizations,
+Domain users existing prior to claim are not 
+affected
+Sideboarding
+(self-registration or exiting 
+users inviting new users)
+Domain users can be sideboarded into 
+organization
+Sideboarding into organization, can be 
+disabled*
+Directory Connector: No sideboarding!
+Conversion Domain users can be converted from other consumer organizations
+(Delayed conversion if email domain is not verified nor claimed)
+Directory Sync Can add users from domain Can add users from domain
+* Prevent-Users-from-Self-Registering-with-your-Domain
+Recommended Activity
+BRKCOL-2062 45
+
+--- PAGE 46 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Claim Users
+• Ensures all Enterprise users have:
+• Consistent experience
+• Same capabilities
+• Adhere to Enterprise security
+policies
+• Move existing Webex users* from other Orgs into your Org
+…including from the “free” consumer Org
+Recommended Activity
+* Using your Enterprise email domain(s)
+BRKCOL-2062 46
+Reference Links:
+• Claim Users to Your Organization (Covert Users)
+• Disable Delayed Claim for Your Organization
+
+--- PAGE 47 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Assigning Webex services to 
+users
+• Divided up by Webex Service
+• Select licenses for all services 
+you want to assign
+Webex Licenses
+BRKCOL-2062 47
+Required Activity
+
+--- PAGE 48 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Auto License Templates
+• Simplify user onboarding
+• New users automatically
+licensed
+• Can also be applied
+to Existing Users
+• Assign/manage Webex licenses at:
+• Org level   --and/or-- Group level
+• Reference Links:
+• Set Up Automatic License Assignment Templates in Cisco Webex Control Hub
+Management > Users > Licenses
+Recommended Activity
+BRKCOL-2062 48
+
+--- PAGE 49 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Org-based Template
+• Single template for
+entire Org
+• License assignments
+apply to ALL users
+• Any new user added
+to the Org will be automatically assigned these licenses
+Recommended Activity
+BRKCOL-2062 49
+
+--- PAGE 50 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Group-based Templates 
+• Multiple templates
+• Template per Group 
+(Synced or Webex)
+• License assignment 
+applied to users in
+group
+• New users added to group 
+are automatically assigned 
+the licenses of that group
+❖ Works with Groups synced to Webex via:
+• Directory Connector ✓
+• Azure AD Wizard ✓
+❖ Also works with Webex Groups
+• Groups created in Control Hub ✓
+Recommended Activity
+BRKCOL-2062 50
+
+--- PAGE 51 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Authentication
+Webex
+Identity
+Provider
+Basic Authentication
+• Email & Webex password
+• Optional integration with Duo for 
+MFA
+Single Sign On (SSO)
+• Any auth type supported by the IDP
+• MFA
+• Common user identity across all 
+services/ platforms
+Webex
+Recommended Activity
+BRKCOL-2062 51
+
+--- PAGE 52 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+SSO: Webex Control Hub
+• Enable on Webex Org for Best user experience
+• Single set of credentials for ALL Webex services
+• If enabled for Jabber users today (maintain existing user experience)
+• If enabled for Webex Meetings (Site Admin) today (maintain existing user experience)
+• Reference Links:
+• Single Sign-On Integration in Control Hub
+• Configure Single Sign-On for Cisco Webex Site (Meetings workload only)
+• Control of activation emails in Control Hub (Requires SSO with Directory Connector)
+Recommended Activity
+BRKCOL-2062 52
+
+--- PAGE 53 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+• Webex App can connect to multiple services 
+and platforms (Cloud and on-prem)
+• Allows for single authentication, granting user 
+access to the different platforms’ services:
+• Webex Services: Webex App & Webex Meetings
+• UC Services: CUCM, CUC & Expressway (MRA)
+• OAuth w/ Refresh Token Flow
+• Allows for fewer user logins
+SSO: Simplify User Experience
+Identity
+Provider
+Unified 
+CM
+Unity 
+Connection
+3rd party 
+Content 
+Management 
+Services
+Embedded apps
+Webex
+Recommended Activity
+BRKCOL-2062 53
+
+--- PAGE 54 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Single Sign On (SSO)
+• SAML 2.0 based (SP initiated form-based REDIRECT/POST 
+authorization code authorization flow)
+• Validated configuration guides for:
+Links to configuration guides for IdPs listed on this page:
+https://help.webex.com/en-us/article/lfu88u/Single-Sign-On-Integration-in-Control-Hub
+Reference
+Recommended Activity
+• Active Directory Federation 
+Services (ADFS) 
+• Duo
+• F5 Big-IP
+• Google Apps
+• Microsoft Azure
+• OKTA
+• PingFederate
+• Shibboleth
+• SimpleSAML
+BRKCOL-2062 54
+
+--- PAGE 55 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex OAuth Token Management
+• Webex service issues the Webex App an 
+OAuth Refresh token at login
+• The Refresh token is stored securely on the 
+device and used each time the App needs to 
+fetch a new Access token
+• Once the Refresh token expires, the user will 
+need to re-authenticate
+• Consider settings best for your environment
+• Note: Previously Auto Extend was set to ‘On’, 
+now default is ‘Off’
+• Default Webex Refresh token = 60 days
+• Consider the UCM default Refresh token setting 
+(60 days)
+* Requires Webex Pro Pack
+Recommended Activity
+BRKCOL-2062 55
+
+--- PAGE 56 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Activation with SSO
+• Default: New users receive validation email to activate
+• User validates activation
+• User sets their password
+• User provides some personal details
+• Recommended: New users automatically activated
+(no user intervention)
+• Directory Connector + SSO + disable automatic activation emails
+• Validation of user activation not required if domain is
+associated with given organization (domain is verified)
+• Setting password is not required with SSO
+• Providing user details is not required with
+Directory Connector
+Recommended Activity
+BRKCOL-2062 56
+
+--- PAGE 57 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex User Provisioning
+Webex
+User Info
+(3rd party  DB)
+Create user • avatar
+• buildingName
+• c
+• departmentNumber
+• displayName
+• ds-pwp-account-disabled
+• emails.type-work
+• employeeNumber
+• employeeType
+• externalID
+• facsimileTelephoneNumber
+• givenName
+• jabberID
+• l
+• locale
+• manager
+• mobile
+• o
+• ou
+• phoneNumbers;type-
+work_extension
+• physicalDeliveryOfficeName
+• postalCode
+• preferredLanguage
+• pronoun
+• sipAddresses;type-enterprise
+• sn
+• st
+• street
+• telephoneNumber
+• timezone
+• title
+• uid*
+Webex User Attributes
+* = Required
+Bold = Recommended
+Deployment Guide for Directory Connector:
+Active Directory and Cloud attributes
+Required Activity
+BRKCOL-2062 57
+
+--- PAGE 58 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex User Provisioning
+• Users must be in Webex Control Hub to consume Webex services
+• Users must be in the Webex Directory service to be searchable
+• Critical to maintain an up-to-date and accurate Webex user directory
+❖ User provisioning is IMPORTANT for the correct user experience of the Webex App
+• Reference Links:
+Ways to add users to your Control Hub 
+organization
+Add Users Manually in Control Hub
+Edit Service Licenses in Control Hub for 
+Individual Users
+Add Multiple Users in Control Hub with the 
+CSV Template
+Modify Users in Control Hub with the CSV 
+Template
+People API
+Required Activity
+BRKCOL-2062 58
+
+--- PAGE 59 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex App User/Contact Search & Resolution
+• Webex App will perform directory 
+queries against the Webex Directory 
+Search Service 
+• User Search
+• User Resolution
+• Phone Number Resolution
+• Avatar Display
+• Ensure all necessary users and user 
+attributes are imported/synced to 
+Webex via user provisioning process
+• UCM Calling does NOT search CUCM 
+UDS or LDAP
+Webex
+Required Activity
+BRKCOL-2062 59
+
+--- PAGE 60 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User’s Phone Number for Calling
+• UCM Calling:
+• Users’ work number must
+be based on UCM dial-plan
+• E-164
+• Extension dialing
+• Site dialing
+• Add/Update via user 
+provisioning method
+• Recommend syncing 
+UCM/CUC and Webex from 
+same source
+• Work number must be configured in 
+Control Hub to call via directory search 
+(click-to-call)
+❖ Webex App supports user’s work number 
+and work extension*
+* See the Directory Sync Comparison reference 
+for which options support work extension
+Required Activity
+BRKCOL-2062 60
+
+--- PAGE 61 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Configure Users’ Phone Numbers
+• Add/Update phone number for individual users or multiple users
+• Add/Update via Control Hub UI, Control Hub CSV import or Webex APIs
+• Options available to synchronize phone numbers with users
+(see Directory Sync)
+• Reference Links:
+• Change Users' Phone Numbers
+• People API
+• Deployment Guide for Cisco Directory Connector
+(see “Map User Attributes” and “Active Directory and Cloud Attributes” sections)
+• Synchronize Azure Active Directory Users into Control Hub
+(see “Map User Attributes from Azure to Webex” section)
+• Synchronize Okta Users into Cisco Webex Control Hub
+Reference
+Required Activity
+BRKCOL-2062 61
+
+--- PAGE 62 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+1 Requires CCUC
+Webex User Provisioning Options
+Method Description
+Directory Connector Automatic method for creating, updating and deactivating user accounts and groups via Active 
+Directory or AD LDS
+Azure AD Wizard Automatic method for creating, updating and deactivating user accounts via Entra ID
+SCIM (e.g. Okta) Automatic method for creating, updating and deactivating user accounts via Okta (or Entra ID)
+CUCM User Sync1/Import Create Webex user accounts based on CUCM end-users
+CSV file Admin can create and update users by importing a CSV file into Control Hub. Bulk user 
+management.
+API Admin can create, update delete and list users by using Webex API’s. Use own or 3 rd party 
+scripts/tools for user management
+SAML JIT Automatic account creation based on SSO login
+Manual Admin can use Control Hub to manage individual user accounts
+Self Registration User can self register to create their Webex account in a claimed org
+Social Login Automatic account creation via sign in to third party service for claimed domain (Apple, Google, 
+Facebook, Microsoft)
+Meetings Site User Linking Automatically link Site Admin user accounts to Control Hub
+= Recommended
+Non-Microsoft 
+Environments
+Secondary 
+Considerations
+Additional 
+Options
+Microsoft 
+Environments
+Required Activity
+See Reference Slides for Comparisons
+BRKCOL-2062 62
+
+--- PAGE 63 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex User Provisioning - Comparison
+Directory Sync Options
+Sync from MS AD*
+Director Connector
+Sync from Entra ID
+Azure AD Wizard1
+Sync from Entra ID
+Azure AD App (SCIM)
+Sync from Okta
+Okta (SCIM)
+Moves, Adds, 
+Changes
+++
+Automatic – Based on sync 
+schedule
+++
+Automatic – Immediate in 
+Control Hub
+++
+Automatic – Immediate in 
+Control Hub
+++
+Automatic – Immediate in 
+Control Hub
+Ease of use -
+Initial setup required with 
+on-prem Windows Server
+++
+All configurations done in 
+Control Hub
++
+Setup in Control Hub and 
+Azure AD
++
+Setup in Control Hub and 
+Okta tenant
+Infrastructure 
+Requirements
+o
+Directory Connector
+++
+None
+++
+None
+++
+None
+Flexibility +
+Customization possible 
+(groups, avatars, attribute 
+mapping)2
++
+Customization possible 
+(groups, avatars, attribute 
+mapping)
+o
+Limited attributes
+(attribute mapping; no 
+groups or avatars)
+-
+Minimum attributes possible 
+(~8 attributes; no attribute 
+mapping, groups or avatars)
+Integration into 
+business 
+processes
+Yes, if users are managed 
+by Active Directory
+None None None
+1 Recommended over Azure AD App (SCIM)
+2 Most user attributes available with AD Directory Connector
+++ Highly Positive Impact
++ Positive Impact
+o Neutral Impact - Negative Impact
+-- Highly Negative Impact
+Required Activity
+Reference
+BRKCOL-2062 63
+* On-prem
+
+--- PAGE 64 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex User Provisioning - Comparison
+Other Options
+Manual Provisioning Control Hub Tool Bulk Provisioning (CSV) API
+Moves, Adds, 
+Changes
+--
+Users one-by-one
+o
+Multiple users
++
+Multiple users
+++
+Multiple users (based on 
+integration)
+Ease of use ++ +
+Initial setup to configure
+o
+Process setup (data source, 
+data format, ..)
+--
+Learning curve, requires 
+DevOps to integrate
+Infrastructure 
+Requirements
+++
+None
+o
+CCUC
++
+CSV files
+--
+Servers for coding and 
+integration
+Flexibility ++ o
+Customization possible 
+(users, groups & org 
+contacts
++
+Managing CSV file
+++
+Increased API for more 
+options
+Integration into 
+business 
+processes
+None None Possibly limited integration 
+via customized data 
+export/import
+Tight integration possible
+++ Highly Positive Impact
++ Positive Impact
+o Neutral Impact - Negative Impact
+-- Highly Negative Impact
+Required Activity
+Reference
+BRKCOL-2062 64
+
+--- PAGE 65 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Directory Sync
+• SIMPLIFY Webex user provisioning and management
+• Directory → Webex:
+• Cloud Directory → Webex → CUCM
+➢Sync Webex Common Identify (CI) users to CUCM/CUC via CCUC1
+• Sync Webex, CUCM and CUC users from same directory source
+1 Webex Cloud-Connected UC Directory Service support for Unified CM
+Webex Cloud-Connected UC Directory Service support for Unity Connection
+➢ MS AD => Directory Connector
+➢ MS Entra ID => Azure AD Wizard
+➢ Okta, Azure AD App* => SCIM/SCIM 2.0
+* Recommend Azure AD Wizard
+Recommended Activity
+BRKCOL-2062 65
+
+--- PAGE 66 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Directory Sync - Comparison
+1 SCIM 2.0 2 Entra/Azure Logs 3 SCIM 2.0 API 4 Manual
+Functions / Features (AD) Directory 
+Connector
+Azure AD 
+Wizard App
+Entra ID 
+Application1
+Okta
+(Cisco Webex 
+Identity SCIM 2.0)1
+Sync Users (Create, Delete, Update) ✓ ✓ ✓ ✓
+Allows local Webex user creation  ✓ ✓ ✓
+Filter/Select users or groups-of-users to sync ✓ ✓ ✓ ✓
+Soft-Delete/Recover Inactive User ✓ ✓ ✓ ✓
+Sync Groups ✓ ✓  (2H CY24)3 ✓
+Sync Avatar ✓ ✓  
+Attribute Sync/Mapping ✓(30) ✓(15) ✓(15) ✓(29)
+2nd Work Number/Extension Attribute ✓    TBD3
+Full & Incremental sync options ✓  In Entra ID 
+Manual/Force sync option ✓  In Entra ID ✓
+On-Demand User Provisioning  ✓ In Entra ID ✓
+Dry-Run (pre-check) ✓ ✓   TBD
+Sync report ✓ ✓2 ✓2 ✓
+Support multiple sync source  ✓ ✓ ✓
+Exclusive sync source/Single source of truth ✓  (2H CY24)3  (2H CY24)3  (2H CY24)3
+Sync Room Objects ✓ ✓  NA
+Domain Verification  ✓ ✓ 
+User’s Manager ✓ ✓  
+Sync Org Contacts ✓   
+Multiple Emails ✓  (2H CY24)4   TBD3
+BRKCOL-2062 66
+Reference
+
+--- PAGE 67 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Management Tools
+1 Not required if using Directory Sync 2 Requires CCUC
+3 CUCM BAT Export 4 CCUC cannot be deployed
+Webex Control Hub
+1
+❖ Directory Sync for Users 
+(Recommended)
+❖ Alternate Options1
+• Sync Users from UCM on-
+premise2
+• Import Users using CSV file3,42
+1
+Migrate Users to Webex
+Synchronize User and Organizational Contacts
+Recommended Activity
+BRKCOL-2062 67
+
+--- PAGE 68 ---
+Option 1
+Sync Users
+* Requires CCUC
+* Directory Sync is NOT deployed
+
+--- PAGE 69 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Management Tools
+Option 1: Synchronize Users
+Webex Control Hub
+Recommended Activity
+BRKCOL-2062 69
+See session handout 
+for full workflow
+
+--- PAGE 70 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Management Tools
+Option 1: Synchronize Users
+Recommended Activity
+BRKCOL-2062 70
+
+--- PAGE 71 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Management Tools
+Option 1: Synchronize Users
+Recommended Activity
+BRKCOL-2062 71
+
+--- PAGE 72 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Management Tools
+Option 1: Synchronize Users (from Unified CM enduser list)
+Recommended Activity
+BRKCOL-2062 72
+
+--- PAGE 73 ---
+Option 2
+Import Users
+* Directory Sync and CCUC are NOT deployed
+* Uses BAT Export from CUCM
+
+--- PAGE 74 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Management Tools
+Option 2: Import Users
+Recommended Activity
+BRKCOL-2062 74
+See session handout 
+for full workflow
+
+--- PAGE 75 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Management Tools
+Option 2: Import Users
+Recommended Activity
+BRKCOL-2062 75
+Webex Control Hub
+UCM User (BAT) 
+Export File
+
+--- PAGE 76 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Management Tools
+Option 2: Import Users
+Recommended Activity
+BRKCOL-2062 76
+
+--- PAGE 77 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Management Tools
+Option 2: Import Users
+Recommended Activity
+BRKCOL-2062 77
+
+--- PAGE 78 ---
+Network & Security
+Best Practices
+Pre-Migration
+Analytics 
+Deployment
+• Cloud-
+Connected 
+UC
+• Jabber 
+Telemetry
+Webex  
+Control Hub 
+Setup
+Applications 
+Readiness
+(CUCM, Expwy, & 
+CUC Servers)
+• Create/Verify 
+Production 
+Webex Org
+• Verify/Claim 
+Domain(s)
+• Claim Users
+• Auto License 
+Templates
+• Deploy SSO
+• User 
+Provisioning
+• Directory Sync
+• Directory 
+Connector, 
+SCIM
+• CCUC
+• Manual, CSV
+• API
+• Configure 
+Users’ Phone 
+Numbers
+Webex Org 
+Setup
+• Verify 
+Licenses
+• Software 
+Versions 
+(CUCM, 
+Expwy, CUC)
+• Authentication 
+Method 
+(CUCM / CUC)
+• Deploy SSO
+• SSO OAuth w/ 
+Refresh Token 
+Flow Config 
+(CUCM, 
+Expwy, CUC)
+• MRA 
+Deployment
+Network & 
+Security 
+Readiness
+• Validate 
+Network 
+Connectivity
+• Security & 
+InfoSec 
+Approvals
+• Verify/Update 
+Internal/ 
+External 
+Voice 
+Domains
+• Validate DNS 
+SRV Records
+
+--- PAGE 79 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Network & Security 
+Requirements
+• On-Prem Users:
+• Verify network requirements 
+(ports, protocols, firewall rules, 
+whitelist URLS, bandwidth, etc.)
+• VPN Users:
+• Optimize AnyConnect Split 
+Tunnel for Cisco Webex
+• Remote/Mobile Users:
+• Deploy MRA for UC voice 
+services
+• Critical to work with InfoSec & 
+Security teams early
+User Quality of Experience
+* See Reference slides for more details
+Required Activity
+BRKCOL-2062 79
+
+--- PAGE 80 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Network Connectivity
+• Ensure the Enterprise network allows for the appropriate protocols, 
+ports, bandwidth and security policies to allow the Webex App to 
+connect to the Webex cloud services
+• Reference Links:
+• Network Requirements for Webex, Webex Meetings, and Cisco Jabber
+• Network Requirements for Webex Services
+• How Do I Allow Webex Meetings Traffic on My Network?
+• Bandwidth Planning in your Cisco Webex Meetings Environment White Paper
+• Cisco Webex Hybrid Services Bandwidth Management
+• Cisco Webex Network Test
+Reference
+Required Activity
+BRKCOL-2062 80
+
+--- PAGE 81 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex Network Requirements Tool
+Select Services & Features
+https://help.webex.com/nrt
+• Select services the Webex 
+App users will consume
+• Generate report
+BRKCOL-2062 81
+
+--- PAGE 82 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex Network Requirements Tool
+Results
+BRKCOL-2062 82
+https://help.webex.com/nrt
+• Review network requirements 
+for your deployment
+• Download report
+
+--- PAGE 83 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex Network Requirements Tool
+Download Results
+BRKCOL-2062 83
+Reference
+
+--- PAGE 84 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Validate Voice Domains
+Internal/External Voice Domains
+• Must be the same
+• Can have multiple voice domains
+for different groups of users
+• But must be the same internally
+and externally for each group
+DNS
+• Configure DNS SRV and A 
+records for service discovery
+• DNS records should already
+be in place from Jabber 
+deployment, but still VERIFY
+Required Activity
+BRKCOL-2062 84
+Voice Services Domain:
+RHS of email address entered when logging into the Webex App or domain name specified by admin in Control Hub 
+using UC Manager Profiles
+DNS Discovery:
+Webex App sends 2 DNS SRV queries to locate Unified CM or Expressway-E
+_cisco-uds._tcp.cb130.dc-01.com
+_collab-edge._tls.cb130.dc-01.com
+
+--- PAGE 85 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Validate Voice Domains
+Reference Links:
+• Cisco Collaboration Solution Analyzer
+➢ Use the “SRV checker” to check your public domains for the correct service records
+• UC Manager Profiles in Cisco Webex Control Hub
+• Deploying Calling in Webex App (Unified CM) – Configure DNS SRV Records
+Required Activity
+BRKCOL-2062 85
+
+--- PAGE 86 ---
+Application Readiness
+Best Practices
+Pre-Migration
+Analytics 
+Deployment
+• Cloud-
+Connected 
+UC
+• Jabber 
+Telemetry
+Webex  
+Control Hub 
+Setup
+Applications 
+Readiness
+(CUCM, Expwy, & 
+CUC Servers)
+• Create/Verify 
+Production 
+Webex Org
+• Verify/Claim 
+Domain(s)
+• Claim Users
+• Auto License 
+Templates
+• Deploy SSO
+• User 
+Provisioning
+• Directory Sync
+• Directory 
+Connector, 
+SCIM
+• CCUC
+• Manual, CSV
+• API
+• Configure 
+Users’ Phone 
+Numbers
+Webex Org 
+Setup
+• Verify 
+Licenses
+• Software 
+Versions 
+(CUCM, 
+Expwy, CUC)
+• Authentication 
+Method 
+(CUCM / CUC)
+• Deploy SSO
+• SSO OAuth w/ 
+Refresh Token 
+Flow Config 
+(CUCM, 
+Expwy, CUC)
+• MRA 
+Deployment
+Network & 
+Security 
+Readiness
+• Validate 
+Network 
+Connectivity
+• Security & 
+InfoSec 
+Approvals
+• Verify/Update 
+Internal/ 
+External 
+Voice 
+Domains
+• Validate DNS 
+SRV Records
+
+--- PAGE 87 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+UC Premise Software
+Upgrade to version(s) that provide required admin/user experience 
+and meets all security requirements
+Unified CM, Unity Connection, Expressway
+• Minimum:
+UCM: 11.5(1)SU3 or 12.5(1)
+Expressway: X8.11.4 or X12.5.0
+Unity: Same version as UCM servers
+• Best Desktop, Mobile & User Experience 
+(including SSO):
+UCM: 14.0(1)SU3+  -or- 15.0(1)SU1+
+• Minimum :12.5(1)SU3+ for iOS Push Notifications
+• IP Phone/Webex Presence Sync
+Expressway: X14+ or X15+
+Unity: Same version as UCM servers
+• Secure Calling - signaling & media            
+(SIP OAuth):
+UCM: 12.5(1) or later
+• MRA failover:
+UCM: 14.0 or later
+Expressway: X14.0 or later
+Required Activity
+BRKCOL-2062 87
+
+--- PAGE 88 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+UC Premise Authentication
+• Must use the same authentication method
+• Legacy SSO
+• OAuth SSO
+• Non-SSO
+• Must use the same user credentials
+Unified CM, Unity Connection
+Required Activity
+BRKCOL-2062 88
+
+--- PAGE 89 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+UC Premise SSO
+• Enable for Best user experience
+• Single set of credentials for ALL UC services
+• Required on Expressway for Mobile and Remote Access (MRA) if enabled on CUCM
+• Required on CUC if enabled on CUCM
+• Use same IdP as Webex Org – single login to Webex App and UC services
+• Reference Links:
+• SAML SSO Deployment Guide for Cisco Unified Communications Applications: Release 12.5(1), or Release 14
+• Mobile and Remote Access Through Cisco Expressway Deployment Guide: X12.7, or X14.0.1 (“SAML SSO 
+Configuration” section)
+• Cisco Unity Connection - Quick Start Guide for SAML SSO Access: 11.x, or 12.x
+• SSO SAML Configurations & Configure SAML SSO on Cisco Unified Communications Manager with ADFS 3.0
+Unified CM, Unity Connection, Expressway
+Required Activity
+BRKCOL-2062 89
+
+--- PAGE 90 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+UC Premise SSO OAuth Token Refresh
+• Enable for best user login experience
+• Reference Links:
+(Note: The following links reference Jabber documents but they also apply to the Webex App)
+• System Configuration Guide for Cisco Unified Communications Manager, Release 
+12.0(1)
+See “Configure Refresh Logins for Cisco Jabber” in the “Cisco Jabber Configuration Task 
+Flow” section
+• Deploying OAuth with Cisco Collaboration Solution Release 12.0
+For CUCM see “Enabling Unified CM & IM&P” section on page 15
+For Unity see “Enabling Unity Connection” section on page 15
+* Parameter for both CUCM and CUC is ‘OAuth with Refresh Login Flow’
+Unified CM, Unity Connection, Expressway
+Recommended Activity
+BRKCOL-2062 90
+
+--- PAGE 91 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Auto Renewal of Refresh Token for Webex App
+• Webex App can auto extend the UCM OAuth refresh token
+• Never expires as long as Webex App is active within token’s 50% timeline
+• Requirements:
+• Unified CM 15.0+, 14.0 SU3 (with COP file), 14.0 SU4+
+• New enterprise parameter (enabled by default)
+• Expressway X14.3.1+
+• For more information, see:
+• Common Enterprise Parameters table in the System Configuration Guide for Cisco Unified 
+Communications Manager
+• OAuth Framework section in the Security Guide for Cisco Unified Communications Manager
+Unified CM
+Recommended Activity
+BRKCOL-2062 91
+
+--- PAGE 92 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Migration Prep Activities
+92BRKCOL-2062
+Pre-Migration
+Analytics 
+Deployment
+Webex  
+Control Hub 
+Setup
+Applications 
+Readiness
+(CUCM, Expwy, & 
+CUC Servers)
+Webex Org 
+Setup
+Network & 
+Security 
+Readiness
+Migrate
+Migrate
+ Decom
+CUCM
+Migration Ready
+CUCM
+Migration Prep
+Discover & 
+Design
+ Plan & Prep
+Deploy & 
+Configure
+(CUCM, Expwy, & 
+CUC Servers)
+
+--- PAGE 93 ---
+UCM Configuration
+Best Practices
+Migration Prep
+Discover & 
+Design
+• Review Jabber 
+Users Collab 
+Workloads
+• Webex App 
+Client 
+Requirements
+• Protocol Hander 
+Integration
+• Jabber 
+Integrations
+Plan & Prep
+Deploy & 
+Configure
+(CUCM, Expwy, & 
+CUC Servers)
+• Webex App 
+Deployment 
+Options 
+• Develop 
+Migration Plan
+• Develop 
+Acceptance 
+Test Plan
+• Stage Webex 
+App 
+Installation File
+• POC/Pilot
+• Configure 
+Webex Users/ 
+Calling Settings
+• Verify CUCM/  
+Expwy Configs
+• Webex App 
+Update Schedule
+
+--- PAGE 94 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Unified CM User Identity
+Home Cluster Discovery:
+https://ucm1-clusters1.tmedemo.com:8443/cucm-uds/clusterUser?username=cholland (compares to CUCM User ID)
+https://ucm1-clusters1.tmedemo.com:8443/cucm-uds/clusterUser?email=cholland@cb130.dc-01.com (compares to CUCM Mail ID)
+• Webex App will use the users Webex identity as 
+the Unified CM user identity (userID or email)
+• Configure each user’s Unified CM email attribute 
+as the email address matching their Webex ID
+UCM 
+Cluster
+User Login/Email = cholland@cb130.dc-01.com
+Required Activity
+BRKCOL-2062 94
+
+--- PAGE 95 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+CUCM Device for the Webex App
+• Same device types
+as Jabber
+• Reuse for the Webex App
+(no changes required)
+Required Activity
+BRKCOL-2062 95
+Device Type Platform
+Windows / Mac CSF
+Linux CSF
+VDI CSF
+iPad / Android Tablet TAB
+Chromebook TAB
+iPhone TCT
+Android Phone BOT
+
+--- PAGE 96 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+CUCM Certificates
+• Webex App validates server
+certificate from CUCM
+• WILL NOT prompt user to
+accept an untrusted certificate
+• Configure Unified CM with
+certificates that the Webex
+App can validate
+• CA root that signed the tomcat certificate (preferred)
+• Self-signed trusted certificate (must be deployed to the OS in advance)
+• Laptop OS (Windows or MacOS) needs to know/have certs
+Required Activity
+* See the Certificate requirements section in the 
+Deployment guide for Calling in Webex App (Unified CM)
+cb104.dc-01.com
+BRKCOL-2062 96
+
+--- PAGE 97 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+CUCM Certificates
+• Workaround:
+• Services > Calling > Client Settings > Unified CM Settings
+Required Activity
+BRKCOL-2062 97
+
+--- PAGE 98 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+CUCM Configurations
+• Review Deployment guide for Calling in Webex App (Unified CM)
+for CUCM features/capabilities with the Webex App
+• Push Notifications
+• Moving a Call to a Meeting
+• Emergency Calling (E911 or 
+RedSky)
+• Multiline / Multi Call Window
+• Move Call to Mobile
+• Appendix
+• Supported Jabber Config XML 
+policy parameters
+• Calling protocol handlers
+• Etc…
+Required Activity
+BRKCOL-2062 98
+
+--- PAGE 99 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Jabber Config XML Policy Parameters
+• Feature 
+Parameters
+• Customized 
+Parameters
+• Jabber to 
+Webex App 
+Migration 
+Parameters
+Optional Activity
+BRKCOL-2062 99
+
+--- PAGE 100 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Unified CM Discovery Best Practices
+• Voice Services Domain
+• Keep it simple – try to use the Webex/email 
+domain as the Voice Services Domain. 
+Remember, the _cisco-uds and _collab-edge 
+SRV domains, do not need to be the same as 
+the Unified CM/Expressway domains
+• Certificate Validation
+• Webex App will validate a TLS certificate from 
+each Expressway/Unified CM/Unity Connection 
+node it connects to. Ensure that the certificates 
+installed on each of these services is trusted i.e. 
+CA signed
+• Webex and Unified CM User Identity
+• Webex App will use the users Webex identity as 
+the Unified user identity (userID or email). 
+Ensure that the Unified CM email attribute is 
+populated for each user (with the email address 
+matching the Webex identity)
+• Authentication
+• SSO enable both the Webex Org and 
+Expressway/Unified CM/Unity Connection (using 
+the same IDP!). Without this, users will have 
+multiple login prompts when signing into the 
+app. For Webex App on mobile deployments, 
+ensure Unified CM is 12.5(1)su4 and later, 
+Expressway  X14 and later (SSO redirect URI)
+• Unified CM OAuth Refresh Token Flow
+• Enable OAuth Refresh token flow on Unified CM. 
+User will not need to reauthenticate to Unified 
+CM for defined period of token (default = 60 
+days). Allows admin to enable secure SIP calling 
+(SIP OAuth)
+See https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cloudCollaboration/wbxt/ucmcalling/unified-cm-wbx-teams-deployment-guide.pdf
+Required Activity
+BRKCOL-2062 100
+
+--- PAGE 101 ---
+App Deployment
+Best Practices
+Migration Prep
+Discover & 
+Design
+• Review Jabber 
+Users Collab 
+Workloads
+• Webex App 
+Client 
+Requirements
+• Protocol Hander 
+Integration
+• Jabber 
+Integrations
+Plan & Prep
+Deploy & 
+Configure
+(CUCM, Expwy, & 
+CUC Servers)
+• Webex App 
+Deployment 
+Options*
+• Develop 
+Migration Plan
+• Develop 
+Acceptance 
+Test Plan
+• Stage Webex 
+App 
+Installation File
+• POC/Pilot
+• Configure 
+Webex Users/ 
+Calling Settings
+• Verify CUCM/  
+Expwy Configs
+• Webex App 
+Update Schedule
+* See BRKCOL-2198: Deploying the Webex 
+App to your Organization for more information
+
+--- PAGE 102 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex App Supported Platforms
+Desktop
+Windows
+Windows 10
+Windows 11
+MacOS
+MacOS 10.13 and later
+Intel CPU
+Apple M1 CPU
+Linux
+Red Hat EL 8.2, 8.3
+Ubuntu 18.04, 20.04, 22.04
+Web App
+Last 2 major releases
+Chrome
+Firefox
+Edge
+Safari
+Mobile
+iOS/iPadOS
+iPhone7 and later
+iOS 13.7 and later
+Various iPad Releases
+Android
+8.0 and later
+ChromeOS
+(Android app emulated on 
+ChromeOS)
+Required Activity
+BRKCOL-2062 102
+
+--- PAGE 103 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex App Release Cycle
+First time user/admin 
+install
+Webex
+Periodic in-app update from 
+webex.com
+• New major release delivered monthly
+• Typically first Tuesday of the month1
+• App auto update may take a few days 
+to occur
+• App version based on date
+• Year : 44.x.x.xxxx  (44 = 2024)
+• Month : 44.1.x.xxxxx  (1 = Jan)
+• Build : 44.1.0.28423
+Update Management
+• Recommend updating monthly
+• Desktop Update Schedule: Control Hub
+• Mobile Update Schedule: App Store 
+Setting
+Optional Activity
+BRKCOL-2062 103
+* Webex App support policy
+1 Slow (released every 4 months) — only available upon request
+
+--- PAGE 104 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+VDI Deployment Overview
+104BRKCOL-2062
+Virtual Desktop
+Thin Client
+VDI 
+Agent1VDI 
+Agent
+2
+VDI plugin
+ VDI plugin
+VDI 
+Client1
+2
+VDI 
+Client
+VDI plugin
+ VDI plugin
+Virtual Desktop
+1. VDI Agent (e.g. Citrix Agent, Vmware
+Horizon Agent etc)
+2. Webex App for VDI (or bundled installer)
+Thin Client
+1. VDI Client (e.g. Citrix Workspace, 
+VMware Horizon Client, AVD RDP Client)
+2. Webex App and Webex Meetings VDI 
+plugins (or bundled installer)
+
+--- PAGE 105 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+• Webex App for VDI
+• Released every second month
+• Beta every other month
+• Webex App VDI Plugin
+• Released every second month
+• Backward compatible with 
+Webex App for VDI for n-3 
+versions (6 months)
+• Webex Meetings VDI Plugin
+• Released every 4 months
+• Backward compatible with Webex App for VDI for n-2 versions (8 months)
+• Release 43.6 will be backward compatible with all future versions of the Webex App for VDI. 
+Webex Meetings VDI plugin functionality will be consolidated into the Webex VDI plugin
+Release Plan and Support
+Oct          Nov         Dec          Jan            Feb          Mar          Apr          May          Jun           Jul   Aug          Sep
+2023 2024
+42.10                      42.12                         43.2                         43.4                         43.6      43.8
+Webex 
+App for 
+VDI
+Webex 
+App VDI 
+Plugin
+Webex 
+Meetings 
+VDI  Plugin
+43.10 43.12                         44.2                         44.4                         44.6                         44.8
+43.10 4.2 44.6
+BRKCOL-2062 105
+
+--- PAGE 106 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex App for Windows & VDI
+User Install Admin Install
+• User downloads the .exe installer from Webex.com
+• User runs the installer
+• Webex App is installed to USER PROFILE
+C:\users\userID\AppData\Local\CiscoSparkLauncher
+• Admin permissions NOT required
+• Admin installs app using the MSI installer via a 
+deployment tools (e.g. SCCM)*
+• msiexec /i webex.msi ALLUSERS=1 /quiet
+• Webex App installed to C:\Program Files\Cisco Spark\
+• Admin permissions ARE required, but not for updates
+https://www.webex.com/downloads.html https://help.webex.com/en-us/article/nw5p67g/Webex-
+App-%7C-Installation-and-automatic-upgrade
+* Recommend using the default deployment locations
+Required Activity
+BRKCOL-2062 106
+* See Reference slides for more details about installer switches
+Recommended 
+for VDI
+
+--- PAGE 107 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex App for Windows Installation
+Installer Switches
+107BRKCOL-2062
+Switch Purpose
+ALLUSERS=1 Admin install to C:\Program Files\Cisco Spark\
+ACCEPT_EULA=true Automatically accept EULA so user does not have to
+AUTOSTART_WITH_WINDOWS=true App auto starts on Windows login. User cannot change within 
+the app
+DEFAULT_THEME=“Light” Sets theme to light. User can set their preference in the app
+DELETEUSERDATA=1 Removes all existing cache is app is already installed
+INSTALLWV2=1 Installs Microsoft WebView2 embedded browser
+EMAIL=$mail Prepopulates the Webex App with user UPN for login. 
+Restricts access to the app current Windows user only
+ENABLEOUTLOOKINTEGRATION=1 Enables Outlook integration at install time (registry key). Admin 
+permissions required. On by default
+Reference
+
+--- PAGE 108 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Webex App for VDI Installation
+Installer Switches
+108BRKCOL-2062
+Reference
+Switch Purpose Values
+ALLUSERS=1 Admin install to “Program Files” 1
+ENABLEVDI=2 Auto detect if Webex App is running in VDI (1, 2)
+AUTOUPGRADEENABLED=1 Webex App in VDI will auto update every 2 months (0, 1)
+ROAMINGENABLED=1 User config/cache is stored AppData\Roaming (for non 
+persistent VDI session)
+1
+FORCELOCKDOWN=LockWhenCom
+patible
+Locks the Meetings Component if its compatible with the 
+Meeting site. Only applies to the Bundled installer
+LockWhenCompatible, 
+NeverUpdate
+ACCEPT_EULA=true Auto accept software license on behalf of user n/a
+EMAIL=$mail Retrieve the users email from LDAP at sign in time. This 
+email will be used for the Webex App. User cannot 
+override this without admin rights
+$mail, $userPrincipalName, 
+EMAIL=
+AUTOSTART_WITH_WINDOWS=true Webex App auto starts on login to Windows true, false
+DEFAULT_THEME=“Dark” Sets Webex App to run in dark theme (default) Dark, Light
+DELETEUSERDATA=0 Preserve user App database at install time 0, 1
+INSTALLWV2=1 Install Miscrost Web View 2 at App install time n/a
+ENABLEOUTLOOKINTEGRATION=1 Enable Webex App presence and click2x
+integration with Outlook
+0, 1
+
+--- PAGE 109 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Migration Prep Activities
+109BRKCOL-2062
+Migration Prep
+Discover & 
+Design
+ Plan & Prep
+Deploy & 
+Configure
+(CUCM, Expwy, & 
+CUC Servers)
+CUCM
+Migration Ready
+CUCM
+Pre-Migration
+Analytics 
+Deployment
+Webex  
+Control Hub 
+Setup
+Applications 
+Readiness
+(CUCM, Expwy, & 
+CUC Servers)
+Webex Org 
+Setup
+Network & 
+Security 
+Readiness
+Migrate
+Migrate
+ Decom
+
+--- PAGE 110 ---
+Migration
+Best Practices
+Migration
+Migrate
+ Decom
+• End User 
+Comms/Training
+• Migrate Users 
+• Jabber to 
+Webex App
+• Acceptance 
+Testing
+• Migrate User/Org 
+Contacts
+• Update Protocol 
+Handlers for 3rd
+Party App Cross-
+Launch
+• Remove 
+Jabber from 
+Users’ 
+Devices
+
+--- PAGE 111 ---
+User Contact 
+Migration
+
+--- PAGE 112 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Contact Migration
+• Migrating users’ Jabber contacts
+• Normal Contacts (IM&P Contacts)
+• Custom Contacts (Non-Presence Contacts)
+• Migration Options:
+1. End-user driven
+• Configure Users to Move Jabber Contacts
+and Common Settings to Webex
+• Jabber | Move Contacts and Common Settings to Webex
+2. Admin driven
+• Migrate Personal Contacts to Webex
+Optional Activity
+BRKCOL-2062 112
+Jabber Contacts
+
+--- PAGE 113 ---
+User Contact 
+Migration
+Option 1: End-user Driven Migration
+
+--- PAGE 114 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Contact Migration Options
+• Admin enables for Users
+• Users migrates their Jabber contacts and common preferences to 
+the Webex App
+Note: Webex App must be installed on user’s laptop prior to starting the migration
+Option 1: End-user Driven Migration
+Contacts:
+• Directory Contacts
+• Custom Contacts and photos
+• XMPP Federated Contacts
+Preferences:
+• Chat notification settings (including mute all)
+• Call notification settings (including mute all)
+• Audio device and video device selection (except for VDI)
+• Video preferences for incoming calls (start with video or 
+no video)
+Optional Activity
+BRKCOL-2062 114
+
+--- PAGE 115 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Contact Migration Options
+Option 1: End-user Driven Migration
+• Add migration parameters (EnableJabber2TeamsMigration and 
+WebexTeamsDownloadURL) to the UC Service profile on UCM:
+• Use existing UC Service
+• Create a new UC Service
+Optional Activity
+BRKCOL-2062 115
+UC Service
+
+--- PAGE 116 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Contact Migration Options
+Option 1: End-user Driven Migration
+• Configure the ‘Jabber Client Configuration Profile’ with the new UC Service
+• Recommend creating a new Service Profile
+Service 
+Profile
+Optional Activity
+End User 
+Configuration
+• Apply the new Service Profile to users as you migrate them
+BRKCOL-2062 116
+
+--- PAGE 117 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Contact Migration Options
+Option 1: End-user Driven Migration
+User Initiated Migration
+• Migration automatically starts for user (5 minutes to 3 hours after user signs into Jabber)
+• User can also initial the migration
+Start Migration
+Optional Activity
+BRKCOL-2062 117
+
+--- PAGE 118 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Contact Migration Options
+Option 1: End-user Driven Migration
+Sign into Webex
+Optional Activity
+Webex App MUST already be 
+installed on the user’s laptop
+BRKCOL-2062 118
+Missing Contacts
+Contacts not already users 
+in Webex Control Hub
+
+--- PAGE 119 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Contact Migration Options
+Option 1: End-user Driven Migration
+Webex App with Contacts
+Optional Activity
+BRKCOL-2062 119
+
+--- PAGE 120 ---
+User Contact 
+Migration
+Option 2: Admin Driven Migration
+
+--- PAGE 121 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Contact Migration Options
+• Webex Admin migrates Jabber contacts for the users
+using Control Hub tools
+• Migrates contacts only
+• Common preferences are NOT migrated
+Option 2: Admin Driven Migration
+Optional Activity
+BRKCOL-2062 121
+
+--- PAGE 122 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Contact Migration Option
+Option 2: Admin Driven Migration
+Export Presence Contacts *
+Optional Activity
+* From UCM IM&P Server
+BRKCOL-2062 122
+➢ Exports IM&P Contacts
+➢ Use filters to export 
+subset of users’ contacts
+
+--- PAGE 123 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Contact Migration Option
+Option 2: Admin Driven Migration
+Export Non-Presence Contacts*
+Optional Activity
+* From UCM IM&P Server
+➢ Exports Non-presence 
+Contacts for ALL IM&P 
+users
+➢ Only required if any 
+Jabber users have added 
+Custom Contacts
+BRKCOL-2062 123
+
+--- PAGE 124 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Contact Migration Option
+Option 2: Admin Driven Migration
+Webex Control Hub
+Optional Activity
+* Warning: Running tool multiple times for the same user’s 
+contacts will cause duplicate contacts in their Webex App
+BRKCOL-2062 124
+
+--- PAGE 125 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Contact Migration Option
+Option 2: Admin Driven Migration
+Import Options Import Contacts CSV File
+Optional Activity
+• Generic Personal Contacts
+For importing contacts from third-
+party sources (Import Personal 
+Contacts from Third Party Sources)
+BRKCOL-2062 125
+Repeat process for Non-Presence Contacts 
+(if required)
+
+--- PAGE 126 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Contact Migration Option
+Option 2: Admin Driven Migration
+Import of Non-Presence Contacts
+Optional Activity
+Import of Normal Contacts
+BRKCOL-2062 126
+
+--- PAGE 127 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Contact Migration Option
+Option 2: Admin Driven Migration
+Optional Activity
+Import Status
+BRKCOL-2062 127
+
+--- PAGE 128 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Contact Migration Option
+Option 2: Admin Driven Migration
+Contacts in Webex App
+Optional Activity
+Normal 
+Contacts
+Custom 
+Contacts
+BRKCOL-2062 128
+
+--- PAGE 129 ---
+Org Contact 
+Migration
+
+--- PAGE 130 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Org Contact Migration
+• All users can search for and call Organizational contacts (e.g. HR, IT 
+Support, etc.)
+• Webex Admin manages (add/modify/delete) the organizational 
+contacts
+• Migration Options:
+• Import (CSV file)
+Manage organization contacts in Control Hub
+• Sync (from UCM or LDAP/AD)1
+Synchronize User and Organizational Contacts
+1 Requires CCUC
+Optional Activity
+BRKCOL-2062 130
+
+--- PAGE 131 ---
+Org Contact 
+Migration
+Option 1: Import
+
+--- PAGE 132 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Migrate Org Contacts
+Option 1: Import
+Webex Control 
+Hub
+Contacts Page
+Optional Activity
+BRKCOL-2062 132
+
+--- PAGE 133 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Migrate Org Contacts
+Option 1: Import
+Optional Activity
+Edit CSV File
+Import 
+Contacts
+BRKCOL-2062 133
+Download  
+CSV template
+
+--- PAGE 134 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Migrate Org Contacts
+Option 1: Import
+Contacts Page
+Optional Activity
+BRKCOL-2062 134
+
+--- PAGE 135 ---
+Org Contact 
+Migration
+Option 2: Sync via CCUC
+
+--- PAGE 136 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Migrate Org Contacts
+Option 2: Sync1
+Webex Control Hub
+Contact Sync
+Optional Activity
+1 Requires CCUC
+BRKCOL-2062 136
+
+--- PAGE 137 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Migrate Org Contacts
+Option 2: Sync1
+-- OR --
+Config Sync Settings
+Set Sync Preferences
+Optional Activity
+* Requires the ‘Deployment Insights’ 
+CCUC service to be enabled
+1 Requires CCUC
+✓
+BRKCOL-2062 137
+
+--- PAGE 138 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Migrate Org Contacts
+Option 2: Sync1
+AD Contacts
+Optional Activity
+1 Requires CCUC
+BRKCOL-2062 138
+
+--- PAGE 139 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Migrate Org Contacts
+Option 2: Sync1
+Synchronization 
+Task Status
+Contacts 
+Sync Status
+Optional Activity
+1 Requires CCUC
+BRKCOL-2062 139
+
+--- PAGE 140 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Migrate Org Contacts
+Option 2: Sync1
+Optional Activity
+Contacts Page
+1 Requires CCUC
+BRKCOL-2062 140
+
+--- PAGE 141 ---
+User Migration
+Best Practices
+
+--- PAGE 142 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Two Settings for User Migration*
+1. Enable UCM Calling licenses for user
+• This can be set with Auto License templates (Recommended)
+Required Activity
+* Complete when you are ready to migrate 
+user(s) from Jabber to the Webex App
+BRKCOL-2062 142
+
+--- PAGE 143 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Two Settings User Migration*
+2. Configure user’s Calling Behavior
+• UC Voice Services Domain
+• Configure after adding UCM Calling
+license for use
+• Apply at:
+• Org Level, Group Level or User Level
+Required Activity
+BRKCOL-2062 143
+* Complete when you are ready to migrate 
+user(s) from Jabber to the Webex App
+
+--- PAGE 144 ---
+User Migration 
+Options
+
+--- PAGE 145 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Migration Options
+Option 1: Manually Configure Individual Users
+• Configure an individual user
+One at a time 
+145BRKCOL-2062
+
+--- PAGE 146 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Migration Options
+Option 1: Manually Configure Individual Users
+146BRKCOL-2062
+
+--- PAGE 147 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Migration Options
+Option 1: Manually Configure Individual Users
+147BRKCOL-2062
+
+--- PAGE 148 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Migration Options
+Option 2: Configure Multiple Users in Bulk
+• Configure multiple users at one time with CSV file
+148BRKCOL-2062
+
+--- PAGE 149 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Migration Options
+Option 2: Configure Multiple Users in Bulk
+• Configure multiple users at one time with CSV file
+149BRKCOL-2062
+
+--- PAGE 150 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Migration Options
+Option 2: Configure Multiple Users in Bulk
+• Configure multiple users at one time with CSV file
+150BRKCOL-2062
+
+--- PAGE 151 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Migration Options
+Option 3: Configure Groups of Users
+• Configure multiple users via Groups
+• Create Group (Webex or
+Synced) for users who will
+use UCM Calling
+BRKCOL-2062 151
+
+--- PAGE 152 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Migration Options
+Option 3: Configure Groups of Users
+• Configure multiple users via Groups
+• Create Group (Webex or
+Synced) for users who will
+use UCM Calling
+• Assign Licenses to the
+Group
+BRKCOL-2062 152
+
+--- PAGE 153 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Migration Options
+Option 3: Configure Groups of Users
+• Configure multiple users via Groups
+• Create Group (Webex or
+Synced) for users who will
+use UCM Calling
+• Assign Licenses to the
+Group
+BRKCOL-2062 153
+
+--- PAGE 154 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Migration Options
+Option 3: Configure Groups of Users
+• Configure multiple users via Groups
+• Create Group (Webex or
+Synced) for users who will
+use UCM Calling
+• Assign Licenses to the
+Group
+• Add Members (users)
+when ready to migrate
+• Individually or with NEW
+Bulks CSV
+BRKCOL-2062 154
+
+--- PAGE 155 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Migration Options
+Option 3: Configure Groups of Users
+• Configure Calling Behavior via Template (optional, if needed)
+• Create Calling Template
+BRKCOL-2062 155
+
+--- PAGE 156 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Migration Options
+Option 3: Configure Groups of Users
+• Configure Calling Behavior via Template (optional, if needed)
+• Create Calling Template
+• Configure
+Calling Behavior
+BRKCOL-2062 156
+
+--- PAGE 157 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Migration Options
+Option 3: Configure Groups of Users
+• Configure Calling Behavior via Template (optional, if needed)
+• Create Calling Template
+• Configure
+Calling Behavior
+• Apply Template to Group
+BRKCOL-2062 157
+
+--- PAGE 158 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Migration Options
+Option 4: Webex Control Hub Tool1
+Webex Control Hub
+• Update group of users’ Licensing and Calling 
+Behavior via Webex Control Hub tool
+1 Requires CCUC
+BRKCOL-2062 158
+
+--- PAGE 159 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Counts/
+Create Task
+User Migration Options
+Option 4: Webex Control Hub Tool1
+Task 
+Flow
+1 Requires CCUC
+BRKCOL-2062 159
+
+--- PAGE 160 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+User Migration Options
+Option 4: Webex Control Hub Tool1
+User’s License After Migration
+1 Requires CCUC
+BRKCOL-2062 160
+User’s Calling Settings After Migration
+
+--- PAGE 161 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Verify Migrated Users
+CCUC
+Recommended Activity
+BRKCOL-2062 161
+
+--- PAGE 162 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Verify Migrated Users
+CCUC
+Filter by ‘Endpoint Series’
+Select timeframe
+Number of 
+Jabber & Webex 
+App users
+Download CSV Report
+Recommended Activity
+BRKCOL-2062 162
+
+--- PAGE 163 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Verify Migrated Users
+CUCM
+• Unified CM Administration: Device > Phone
+Jabber Device
+Webex App Device
+Docker tool to extract Active 
+Load ID from UCM RIS database:
+• Raw data extract
+• Uses AXL SOAP
+https://hub.docker.com/r/omerilyas1/c_e_t
+Recommended Activity
+BRKCOL-2062 163
+
+--- PAGE 164 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Verify Migrated Users
+CUCM
+• Device’s Endpoint Model stored in Unified CM’s real-time database (RIS)
+• Data is not persistent
+• Unused devices removed after a set time (Default = 3 days)
+• Duration can be changed via UCM Service Parameter: (System > Service 
+Parameters)
+Recommended Activity
+BRKCOL-2062 164
+
+--- PAGE 165 ---
+Decommission
+Migration
+Migrate
+ Decom
+• End User 
+Comms/Training
+• Migrate Users 
+• Jabber to 
+Webex App
+• Acceptance 
+Testing
+• Migrate User/Org 
+Contacts
+• Update Protocol 
+Handlers for 3rd
+Party App Cross-
+Launch
+• Remove 
+Jabber from 
+Users’ 
+Devices
+• Archive 
+Persistent 
+Chat History
+• Decommission 
+IM&P Servers
+
+--- PAGE 166 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+App and Sever Decommission
+• Remove applications
+from users’ devices
+• Jabber - Laptop, Mobile
+• WDA – Laptop
+• Decommission UC servers
+not required post-migration:
+• IM&P
+• Archive persistent chat
+Required Activity
+* Only 1 soft client can be logged into UCM phone services at a time
+BRKCOL-2062 166
+
+--- PAGE 167 ---
+Conclusion
+
+--- PAGE 168 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Key Take Aways
+• Start connecting your on-
+prem UCM to Webex
+• Complete Pre-Migration 
+activities
+• No one size fits all
+• Identify the critical activities for 
+your Org
+• Start addressing longer 
+activities today (SSO, User 
+Directory Sync, etc.)
+• Leverage tools and 
+Cisco/Cisco Partner services
+BRKCOL-2062 168
+
+--- PAGE 169 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Complete Your Session Evaluations
+Complete a minimum of 4 session surveys and the Overall Event Survey to be 
+entered in a drawing to win 1 of 5 full conference passes to Cisco Live 2025.  
+Earn 100 points per survey completed and compete on the Cisco Live 
+Challenge leaderboard. 
+Level up and earn exclusive prizes!
+Complete your surveys in the Cisco Live mobile app.
+BRKCOL-2062 169
+
+--- PAGE 170 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Continue 
+your education
+• Visit the Cisco Showcase 
+for related demos
+• Book your one-on-one
+Meet the Engineer meeting
+• Attend the interactive education 
+with DevNet, Capture the Flag, 
+and Walk-in Labs
+• Visit the On-Demand Library 
+for more sessions at 
+www.CiscoLive.com/on-demand
+Contact me at: sfly@cisco.com via email or the 
+Webex App
+BRKCOL-2062 170
+
+--- PAGE 171 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Cisco Live US 2024
+• BRKCOL-2007: Authentication, Authorization and Provision for 
+Cisco Collaboration
+• BRKCOL-2198: Deploying the Webex App to your Organization
+• BRKCOL-3009: Troubleshooting UCM Calling in Webex App Like a 
+TAC Engineer
+• BRKCOL-3117: Troubleshooting Webex Authentication and 
+Provisioning
+Recommended Sessions
+* If you missed these sessions, access them 
+from the Cisco Live On-Demand Library
+BRKCOL-2062 171
+Reference
+
+--- PAGE 172 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Cisco Live On-Demand
+Cisco Live:
+On-Demand Library
+(2024 Amsterdam, 
+2023 Melbourne)
+Past Collaboration Sessions
+BRKCOL-2062 172
+Reference
+
+--- PAGE 173 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Cisco Live Collaboration Learning Maps
+https://www.ciscolive.com/emea/learn/technical-education/learning-maps/collaboration.html
+BRKCOL-2062 173
+Reference
+
+--- PAGE 174 ---
+Thank you
+#CiscoLive

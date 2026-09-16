@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PDF Knowledge Library</title>
+<meta name="description" content="A searchable collection of PDF knowledge resources.">
+<link rel="alternate" type="application/json" href="library.json">
+<style>
+:root {
+  --bg: #f4f6f8;
+  --panel: #ffffff;
+  --text: #172033;
+  --muted: #667085;
+  --border: #dfe4ea;
+  --accent: #0b5cab;
+  --accent-dark: #084b8a;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background: #111827;
+  color: white;
+  padding: 48px 24px;
+}
+.header-inner, main, footer {
+  max-width: 1120px;
+  margin: auto;
+}
+h1 { margin: 0 0 10px; font-size: 38px; }
+.subtitle { color: #d1d5db; font-size: 17px; }
+main { padding: 34px 24px 60px; }
+.search {
+  width: 100%;
+  padding: 17px 18px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 17px;
+  margin-bottom: 16px;
+}
+.meta { color: var(--muted); margin-bottom: 24px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+}
+.card {
+  display: flex;
+  gap: 18px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px;
+}
+.pdf-badge {
+  flex: 0 0 auto;
+  width: 54px;
+  height: 64px;
+  border-radius: 8px;
+  background: #eef2f7;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 12px;
+}
+.card-body { min-width: 0; flex: 1; }
+.card h2 { margin: 0 0 8px; font-size: 19px; }
+.card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.actions { margin-top: 15px; display: flex; gap: 9px; flex-wrap: wrap; }
+.actions a {
+  text-decoration: none;
+  background: var(--accent);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 7px;
+  font-size: 13px;
+}
+.actions a:hover { background: var(--accent-dark); }
+#empty {
+  display: none;
+  padding: 50px;
+  text-align: center;
+  color: var(--muted);
+}
+footer {
+  padding: 25px 24px 45px;
+  color: var(--muted);
+  font-size: 13px;
+}
+footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <h1>PDF Knowledge Library</h1>
+    <div class="subtitle">A searchable collection of PDF knowledge resources.</div>
+  </div>
+</header>
+<main>
+  <input id="search" class="search" type="search"
+         placeholder="Search documents..."
+         aria-label="Search documents">
+  <div class="meta">
+    <span id="count">9</span> documents
+    &nbsp;·&nbsp;
+    Machine-readable index:
+    <a href="library.json">library.json</a>
+    &nbsp;·&nbsp;
+    AI guide:
+    <a href="ai.txt">ai.txt</a>
+  </div>
+  <section id="grid" class="grid">
+    
+        <article class="card"
+                 data-search="cisco ucm 15 tdm cisco_ucm_15_tdm.pdf">
+          <div class="pdf-badge">PDF</div>
+          <div class="card-body">
+            <h2>Cisco UCM 15 TDM</h2>
+            <p>Cisco_UCM_15_TDM.pdf</p>
+            <div class="actions">
+              <a href="pdfs/cisco-ucm-15-tdm.pdf" target="_blank" rel="noopener">Open PDF</a>
+              <a href="text/cisco-ucm-15-tdm.txt" target="_blank" rel="noopener">Text</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card"
+                 data-search="cst uc release 15 cst-uc_release_15.pdf">
+          <div class="pdf-badge">PDF</div>
+          <div class="card-body">
+            <h2>CST UC Release 15</h2>
+            <p>CST-UC_Release_15.pdf</p>
+            <div class="actions">
+              <a href="pdfs/cst-uc-release-15.pdf" target="_blank" rel="noopener">Open PDF</a>
+              <a href="text/cst-uc-release-15.txt" target="_blank" rel="noopener">Text</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card"
+                 data-search="cuc15 datasheet cuc15_datasheet.pdf">
+          <div class="pdf-badge">PDF</div>
+          <div class="card-body">
+            <h2>CUC15 DataSheet</h2>
+            <p>CUC15_DataSheet.pdf</p>
+            <div class="actions">
+              <a href="pdfs/cuc15-datasheet.pdf" target="_blank" rel="noopener">Open PDF</a>
+              <a href="text/cuc15-datasheet.txt" target="_blank" rel="noopener">Text</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card"
+                 data-search="design and deployment of unified communication services design_and-deployment_of_unified_communication_services.pdf">
+          <div class="pdf-badge">PDF</div>
+          <div class="card-body">
+            <h2>Design and Deployment of Unified Communication Services</h2>
+            <p>Design_and-Deployment_of_Unified_Communication_Services.pdf</p>
+            <div class="actions">
+              <a href="pdfs/design-and-deployment-of-unified-communication-services.pdf" target="_blank" rel="noopener">Open PDF</a>
+              <a href="text/design-and-deployment-of-unified-communication-services.txt" target="_blank" rel="noopener">Text</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card"
+                 data-search="jabber to webexapp jabber_to_webexapp.pdf">
+          <div class="pdf-badge">PDF</div>
+          <div class="card-body">
+            <h2>Jabber to WebexApp</h2>
+            <p>Jabber_to_WebexApp.pdf</p>
+            <div class="actions">
+              <a href="pdfs/jabber-to-webexapp.pdf" target="_blank" rel="noopener">Open PDF</a>
+              <a href="text/jabber-to-webexapp.txt" target="_blank" rel="noopener">Text</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card"
+                 data-search="on prem content strategy on-prem-content-strategy.pdf">
+          <div class="pdf-badge">PDF</div>
+          <div class="card-body">
+            <h2>On Prem Content Strategy</h2>
+            <p>On-Prem-Content-Strategy.pdf</p>
+            <div class="actions">
+              <a href="pdfs/on-prem-content-strategy.pdf" target="_blank" rel="noopener">Open PDF</a>
+              <a href="text/on-prem-content-strategy.txt" target="_blank" rel="noopener">Text</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card"
+                 data-search="one cisco deck one-cisco-deck.pdf">
+          <div class="pdf-badge">PDF</div>
+          <div class="card-body">
+            <h2>One Cisco Deck</h2>
+            <p>One-Cisco-Deck.pdf</p>
+            <div class="actions">
+              <a href="pdfs/one-cisco-deck.pdf" target="_blank" rel="noopener">Open PDF</a>
+              <a href="text/one-cisco-deck.txt" target="_blank" rel="noopener">Text</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card"
+                 data-search="sip troubleshooting sip-troubleshooting.pdf">
+          <div class="pdf-badge">PDF</div>
+          <div class="card-body">
+            <h2>SIP troubleshooting</h2>
+            <p>SIP-troubleshooting.pdf</p>
+            <div class="actions">
+              <a href="pdfs/sip-troubleshooting.pdf" target="_blank" rel="noopener">Open PDF</a>
+              <a href="text/sip-troubleshooting.txt" target="_blank" rel="noopener">Text</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card"
+                 data-search="strategy ropadmap strategy-ropadmap.pdf">
+          <div class="pdf-badge">PDF</div>
+          <div class="card-body">
+            <h2>Strategy Ropadmap</h2>
+            <p>Strategy-Ropadmap.pdf</p>
+            <div class="actions">
+              <a href="pdfs/strategy-ropadmap.pdf" target="_blank" rel="noopener">Open PDF</a>
+              <a href="text/strategy-ropadmap.txt" target="_blank" rel="noopener">Text</a>
+            </div>
+          </div>
+        </article>
+        
+  </section>
+  <div id="empty">No documents match your search.</div>
+</main>
+<footer>
+  Generated 2026-09-16T13:49:50.635149+00:00.
+  
+</footer>
+<script>
+const input = document.getElementById("search");
+const cards = [...document.querySelectorAll(".card")];
+const count = document.getElementById("count");
+const empty = document.getElementById("empty");
+
+input.addEventListener("input", () => {
+  const q = input.value.trim().toLowerCase();
+  let visible = 0;
+
+  cards.forEach(card => {
+    const match = !q || card.dataset.search.includes(q);
+    card.style.display = match ? "flex" : "none";
+    if (match) visible++;
+  });
+
+  count.textContent = visible;
+  empty.style.display = visible ? "none" : "block";
+});
+</script>
+</body>
+</html>

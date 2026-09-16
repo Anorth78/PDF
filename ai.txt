@@ -1,0 +1,76 @@
+# PDF Knowledge Library
+
+A searchable collection of PDF knowledge resources.
+
+This is a machine-readable document catalogue.
+Use library.json for structured metadata.
+Use the linked text_url for extracted document text.
+Use the linked pdf_url for the original PDF.
+
+Document count: 9
+Generated: 2026-09-16T13:49:50.635149+00:00
+
+## Documents
+
+### Cisco UCM 15 TDM
+- ID: cisco-ucm-15-tdm
+- Original filename: Cisco_UCM_15_TDM.pdf
+- PDF: pdfs/cisco-ucm-15-tdm.pdf
+- Extracted text: text/cisco-ucm-15-tdm.txt
+- Pages: 53
+
+### CST UC Release 15
+- ID: cst-uc-release-15
+- Original filename: CST-UC_Release_15.pdf
+- PDF: pdfs/cst-uc-release-15.pdf
+- Extracted text: text/cst-uc-release-15.txt
+- Pages: 170
+
+### CUC15 DataSheet
+- ID: cuc15-datasheet
+- Original filename: CUC15_DataSheet.pdf
+- PDF: pdfs/cuc15-datasheet.pdf
+- Extracted text: text/cuc15-datasheet.txt
+- Pages: 8
+
+### Design and Deployment of Unified Communication Services
+- ID: design-and-deployment-of-unified-communication-services
+- Original filename: Design_and-Deployment_of_Unified_Communication_Services.pdf
+- PDF: pdfs/design-and-deployment-of-unified-communication-services.pdf
+- Extracted text: text/design-and-deployment-of-unified-communication-services.txt
+- Pages: 173
+
+### Jabber to WebexApp
+- ID: jabber-to-webexapp
+- Original filename: Jabber_to_WebexApp.pdf
+- PDF: pdfs/jabber-to-webexapp.pdf
+- Extracted text: text/jabber-to-webexapp.txt
+- Pages: 174
+
+### On Prem Content Strategy
+- ID: on-prem-content-strategy
+- Original filename: On-Prem-Content-Strategy.pdf
+- PDF: pdfs/on-prem-content-strategy.pdf
+- Extracted text: text/on-prem-content-strategy.txt
+- Pages: 5
+
+### One Cisco Deck
+- ID: one-cisco-deck
+- Original filename: One-Cisco-Deck.pdf
+- PDF: pdfs/one-cisco-deck.pdf
+- Extracted text: text/one-cisco-deck.txt
+- Pages: 19
+
+### SIP troubleshooting
+- ID: sip-troubleshooting
+- Original filename: SIP-troubleshooting.pdf
+- PDF: pdfs/sip-troubleshooting.pdf
+- Extracted text: text/sip-troubleshooting.txt
+- Pages: 144
+
+### Strategy Ropadmap
+- ID: strategy-ropadmap
+- Original filename: Strategy-Ropadmap.pdf
+- PDF: pdfs/strategy-ropadmap.pdf
+- Extracted text: text/strategy-ropadmap.txt
+- Pages: 98

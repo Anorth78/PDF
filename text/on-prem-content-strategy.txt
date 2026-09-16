@@ -1,0 +1,84 @@
+--- PAGE 1 ---
+On-Premise Content Strategy
+
+--- PAGE 2 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Pre-Sales Stage 1
+Learning Objectives:
+By the end of this training:
+1. Articulate the value proposition of Cisco’s on-premise collaboration solutions (CUCM, CUBE, CMS)
+2. Identify core components of the on-premise portfolio vs. cloud-connected options.
+3. Match on-premise capabilities to specific customer business requirements.
+Metrics of Success
+Post completion, learner can demonstrate the ability to qualify on
+ -
+ premise opportunities effectively and 
+successfully drive those opportunities into the proposal and solution development stages.
+
+--- PAGE 3 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Series Structure
+Sections Modules Module Type Description Link
+On-Premise 
+Solutions Overview
+Core Architecture 
+and Fundamentals
+Call Control
+Conferencing
+Collaboration Edge
+Endpoints
+Licensing and Flex 
+Plan Essentials
+Value Positioning
+Roadmap and 
+Lifecycle
+Assessment
+
+--- PAGE 4 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Deployment Stage 1
+Learning Objectives:
+1.
+ Describe the high
+ -
+ level architecture of an on
+ -
+ premise collaboration environment.
+2.
+ U
+nderstand the high
+ -
+ availability design principles such as redundancy and Survivability.
+3.
+ Identify foundational troubleshooting techniques and the standard process for engaging Cisco Technical 
+Assistance Center (TAC) support to maintain system operational health.
+Metrics of Success
+
+--- PAGE 5 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Series Structure
+Sections Modules Module Type Description Link
+On-Premise 
+Solutions Overview
+Core Architecture and Fundamentals
+Call Control
+Conferencing
+Collaboration Edge
+Endpoints
+Call flow, Design 
+and Deployment 
+Practices
+SIP Fundamentals and SIP Trunks
+Basic Call Flow
+Basic 
+Troubleshooting
+CUCM Troubleshooting Approach and 
+issues
+Log Collection, Packet Captures, and CSA 
+tool
+TAC Engagement How to engage with TAC
+Cisco AI Assistant for Support https://partnerlearning.cisco.com/new/ui/learner/up
+date/2064954884653135124/consume?loId=2064
+955096403143833&topicId=206495488478850433
+7&series=2064951382777066729
+Assessment

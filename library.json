@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0",
+  "name": "PDF Knowledge Library",
+  "description": "A searchable collection of PDF knowledge resources.",
+  "owner": "Your Organization",
+  "generated": "2026-09-16T13:49:50.635149+00:00",
+  "document_count": 9,
+  "documents": [
+    {
+      "id": "cisco-ucm-15-tdm",
+      "title": "Cisco UCM 15 TDM",
+      "original_filename": "Cisco_UCM_15_TDM.pdf",
+      "source_relative_path": "Cisco_UCM_15_TDM.pdf",
+      "pdf_url": "pdfs/cisco-ucm-15-tdm.pdf",
+      "text_url": "text/cisco-ucm-15-tdm.txt",
+      "type": "PDF",
+      "pages": 53,
+      "bytes": 3436689,
+      "sha256": "a15b9b2d057931252cfecd912ef3e979d8eb975357baa34313d7f9a8d6aeccd1",
+      "modified": "2026-09-08T15:01:23.209771+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "cst-uc-release-15",
+      "title": "CST UC Release 15",
+      "original_filename": "CST-UC_Release_15.pdf",
+      "source_relative_path": "CST-UC_Release_15.pdf",
+      "pdf_url": "pdfs/cst-uc-release-15.pdf",
+      "text_url": "text/cst-uc-release-15.txt",
+      "type": "PDF",
+      "pages": 170,
+      "bytes": 8878081,
+      "sha256": "733d4c78a18e8ea80466585b387ad5101f62d777c5cd0e7764f7df3c17accf70",
+      "modified": "2026-09-08T15:01:54.604632+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "cuc15-datasheet",
+      "title": "CUC15 DataSheet",
+      "original_filename": "CUC15_DataSheet.pdf",
+      "source_relative_path": "CUC15_DataSheet.pdf",
+      "pdf_url": "pdfs/cuc15-datasheet.pdf",
+      "text_url": "text/cuc15-datasheet.txt",
+      "type": "PDF",
+      "pages": 8,
+      "bytes": 309686,
+      "sha256": "c08a0e726b73242692898a1e0b6c469b78b889d591ecf190711d72ca61c0ebc1",
+      "modified": "2026-09-09T14:50:58.214179+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "design-and-deployment-of-unified-communication-services",
+      "title": "Design and Deployment of Unified Communication Services",
+      "original_filename": "Design_and-Deployment_of_Unified_Communication_Services.pdf",
+      "source_relative_path": "Design_and-Deployment_of_Unified_Communication_Services.pdf",
+      "pdf_url": "pdfs/design-and-deployment-of-unified-communication-services.pdf",
+      "text_url": "text/design-and-deployment-of-unified-communication-services.txt",
+      "type": "PDF",
+      "pages": 173,
+      "bytes": 14444890,
+      "sha256": "1f6aa4ab2c8b2d13cfe0fc9aaf1dcb0839a9cb9eb37da2495e42571493ff55d4",
+      "modified": "2026-09-09T14:51:02.967087+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "jabber-to-webexapp",
+      "title": "Jabber to WebexApp",
+      "original_filename": "Jabber_to_WebexApp.pdf",
+      "source_relative_path": "Jabber_to_WebexApp.pdf",
+      "pdf_url": "pdfs/jabber-to-webexapp.pdf",
+      "text_url": "text/jabber-to-webexapp.txt",
+      "type": "PDF",
+      "pages": 174,
+      "bytes": 12207733,
+      "sha256": "0b4276e082bccacb8b1713c25f4fa02c174e5d68f1e3ffc61ad084c88ac59a4c",
+      "modified": "2026-09-09T14:51:03.069440+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "on-prem-content-strategy",
+      "title": "On Prem Content Strategy",
+      "original_filename": "On-Prem-Content-Strategy.pdf",
+      "source_relative_path": "On-Prem-Content-Strategy.pdf",
+      "pdf_url": "pdfs/on-prem-content-strategy.pdf",
+      "text_url": "text/on-prem-content-strategy.txt",
+      "type": "PDF",
+      "pages": 5,
+      "bytes": 367659,
+      "sha256": "297bf00e69acb79a0eefb29a1325f99c7ab7b027668ee98107739f669aa87c61",
+      "modified": "2026-09-14T13:38:41.919728+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "one-cisco-deck",
+      "title": "One Cisco Deck",
+      "original_filename": "One-Cisco-Deck.pdf",
+      "source_relative_path": "One-Cisco-Deck.pdf",
+      "pdf_url": "pdfs/one-cisco-deck.pdf",
+      "text_url": "text/one-cisco-deck.txt",
+      "type": "PDF",
+      "pages": 19,
+      "bytes": 8357092,
+      "sha256": "eb8aa806245f9f192f16eaf2efd9830feeab58760f9d9e2c26059061884e8a47",
+      "modified": "2026-09-08T15:02:17.004519+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "sip-troubleshooting",
+      "title": "SIP troubleshooting",
+      "original_filename": "SIP-troubleshooting.pdf",
+      "source_relative_path": "SIP-troubleshooting.pdf",
+      "pdf_url": "pdfs/sip-troubleshooting.pdf",
+      "text_url": "text/sip-troubleshooting.txt",
+      "type": "PDF",
+      "pages": 144,
+      "bytes": 8081189,
+      "sha256": "3b4ca19366470005a4226339b6bdb66b93497070797320aa466c1e2630a98f23",
+      "modified": "2026-09-09T14:51:03.137919+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "strategy-ropadmap",
+      "title": "Strategy Ropadmap",
+      "original_filename": "Strategy-Ropadmap.pdf",
+      "source_relative_path": "Strategy-Ropadmap.pdf",
+      "pdf_url": "pdfs/strategy-ropadmap.pdf",
+      "text_url": "text/strategy-ropadmap.txt",
+      "type": "PDF",
+      "pages": 98,
+      "bytes": 6229271,
+      "sha256": "bbb101597f77eb622ca2d5e9b0bbd3c10400b267463137fd38dbd29941f17046",
+      "modified": "2026-09-08T14:42:08.943534+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    }
+  ]
+}
