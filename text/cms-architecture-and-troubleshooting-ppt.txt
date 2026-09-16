@@ -1,0 +1,962 @@
+--- PAGE 1 ---
+Cisco Meeting Server (CMS)  
+TAC Training
+
+--- PAGE 2 ---
+Experience:
+GC-COL TAC 2014-2022
+Endpoints, VCS/Expressway, 
+MCU, TMS, CMS, CUCM, UCCX,   
+CUC, GW
+Fuxiang Song
+宋福祥
+Technical Consulting Engineer
+Collaboration Team SME
+China TAC
+Certificate:
+
+--- PAGE 3 ---
+• Cisco CollaborationArchitecture
+• Cisco Meeting ServerOverview
+• CMS PlatformOptions
+• Deployment models andconfiguration
+• CMSCertificates
+• CMS – UC Integration (CUCM,VCS)
+• CMS Dial Plan
+• API, CDR, LicenseOverview
+• CallbridgeGrouping
+• Skypeintegration
+• Troubleshooting and Logs
+Agenda
+
+--- PAGE 4 ---
+Cisco Collaboration  
+Architecture
+
+--- PAGE 5 ---
+4
+Preferred Call Control Solution  
+Architecture
+
+--- PAGE 6 ---
+Cisco Meeting Server  
+Overview
+
+--- PAGE 7 ---
+Cisco Meeting server (CMS)
+
+--- PAGE 8 ---
+Cisco Meeting server (CMS) - Endpoints
+
+--- PAGE 9 ---
+Cisco Meeting server (CMS) – Meetings
+
+--- PAGE 10 ---
+• Cisco Meeting Server brings video, audio, and web communication together to meet the  
+collaboration needs of the modern workplace. It allows anyone to create and join meetings  
+easily, from a room or desktop video system, mobile client, or browser.
+• Everyone gets a consistent, familiar meeting experience, whether they’re joining a meeting using  
+a Cisco or third-party video endpoint, a Cisco Jabber® client, Cisco Meeting App, a WebRTC  
+compatible browser, or Skype for Business.
+• Meetings can scale easily, allowing any number of people to join, and bandwidth usage is  
+optimized in order to reduce cost. Cisco Meeting Server provides a user experience that is  
+simple and intuitive.
+Cisco Meeting server (CMS)
+
+--- PAGE 11 ---
+CMS – Platform Options
+
+--- PAGE 12 ---
+X series Server [EOS]
+Deployments – Platform Options
+CMS 1000/2000
+MM410v, MM400v (legacy)
+Spec Based Server
+
+--- PAGE 13 ---
+Cisco Meeting Server 1000
+• UCS C series server (1RU)
+• Pre installed CMS Software
+• VMWare ESXi6.0 and above
+• 70 Hyperthreaded cores
+• Co-residency not supported
+• CMS 1000 and Appliances can be combined in a  
+redundant deployment, however a backup from one  
+cannot be restored onanother
+
+--- PAGE 14 ---
+CMS Virtualized Solution
+Type of Calls
+Cisco meeting  
+Server 1000
+Cisco Multiparty  
+Media 410
+Cisco Multiparty  
+Media 400
+HD Calls 96 64 32
+SD Calls 192 128 72
+Audio Calls 3000 2000 1000
+
+--- PAGE 15 ---
+Cisco Meeting Server 2000
+High-Capacity Platform
+• 6RU UCS
+Based on UCS 5108 and B200 Blades
+• High Capacity
+Up to 700 HD calls (500 HD calls prior 2.4)
+• Bare Metal platform
+
+--- PAGE 16 ---
+Cisco Meeting Server 2000
+• Deployment Options
+CMS 2000 is an Appliance (no vmware)
+Cannot buy with singleblade
+Does not need certified UCS Engineer to  
+deploy
+All 8 blades act as single unit
+Does not use clustering or cascading to  
+achieve this
+Can be clustered with another CMS2000,  
+CMS1000 or spec based server  
+deployment
+700 x N HD calls
+700 HD calls
+ 700 HD calls
+X 8
+Maximum 4000 HD calls
+CMS 2000
+ CMS 1000
+ UCS
+
+--- PAGE 17 ---
+CMS Spec Based VM Requirements
+Reference: https://www.cisco.com/c/dam/en/us/td/docs/voice_ip_comm/uc_system/virtualization/virtualization-cisco-meeting-server.html
+
+--- PAGE 18 ---
+CMS VM Solution Recommended Setups
+
+--- PAGE 19 ---
+Server Components
+
+--- PAGE 20 ---
+Cisco Meeting Server components
+
+--- PAGE 21 ---
+Cisco Meeting Server components
+
+--- PAGE 22 ---
+Deployment Models
+
+--- PAGE 23 ---
+Three types of deploymentModels
+• Single combined server
+• Single Split server
+• Scalable and Resilient
+Deployment Models
+
+--- PAGE 24 ---
+Single Combined Server  
+Deployment
+
+--- PAGE 25 ---
+Single Combined Server Deployment
+
+--- PAGE 26 ---
+Server Components  
+configuration
+
+--- PAGE 27 ---
+The first Component we configure is the Webadmin. The Webadmin is the Service to enable Web GUI  
+for Meeting server
+• Webadmin is specifically to configure how the Call Bridge talks to othercomponents
+• Required for Call routingconfiguration
+• Required for Clusteringconfiguration
+• Required for viewing logs via web and increasing loglevels
+Web Admin
+
+--- PAGE 28 ---
+Configure Webadmin using MMP , We need to set Webadmin listen interface, add certificate and  
+key, and enable the service
+• “webadmin listen <iface> <port>”
+• “webadmin certs <key> <cert>”
+• “webadmin http-redirect enable”
+• “webadmin enable”
+Web Admin Config
+
+--- PAGE 29 ---
+The next Component is the Callbridge. The call Bridge is the service on the Meeting Server that bridges  
+the conference connections, enabling multiple participants to join meetings hosted on the Meeting  
+Server
+• Primary component of thesolution
+• Must exist somewhere in all deployments
+• Media processing engine
+• API integration point
+• Call processing and routing component
+• Fully brand-able audio and videoprompts
+• Supports clustering for distributedcalls
+Call Bridge
+
+--- PAGE 30 ---
+Configure a Callbridge listen interface, add certificate and key, and restart the service
+• “callbridge listen <iface> ”
+• “callbridge certs <key> <cert>”
+• “callbridge trust c2w <bundle>”
+• “callbridge restart”
+Call Bridge Config
+
+--- PAGE 31 ---
+The Webbridge service to enable WebRTC app. The WebRTC app works on HTML5-compliance  
+browsers and uses the WebRTC standard for video andaudio
+• It equivalent of VCS Jabber Guest solution
+• Allows for a guest to join via special link or full access to “web” version of desktopclient
+• Based around Websockets andWebRTC
+• Chrome, Firefox, and Opera supported, Chrome is preferred
+• Must use different port or IP from Web Admin if on the sameserver
+Web Bridge
+
+--- PAGE 32 ---
+Set Webbridge with a listen interface, key and certificate, add a trust towards the callbridge, and enable the service
+• “webbridge3 listen <iface> <port>”
+• “webbridge3 certs <key> <cert>”
+• “webbridge3 trust <callbridge_cert/ca_cert>”
+• “webbridge3 c2w listen <interface:port>”
+• “webbridge3 c2w certs <key file> <crt-fullchain-file>”
+• “webbridge3 http-redirect enable”
+• “webbridge3 enable”
+Web Bridge Config
+
+--- PAGE 33 ---
+• Necessary for NAT traversal when clients are connectingexternally
+• Provides a media path in situations when direct media is not possible
+• H.323 Capable
+• Included as an option in all deployments (no additionallicensing)
+TURN Server
+
+--- PAGE 34 ---
+TURN server support for TCP toUDP  
+interworking
+• Allows TCP media from browser clients to be received
+• TURN server converts this back to UDP media
+• Useful when UDP traffic from browsers is blocked
+
+--- PAGE 35 ---
+TURN Server
+
+--- PAGE 36 ---
+• Basic TURN Server setup
+• “turn listen <iface>”
+• “turn credentials <username> <password><domain>”
+• “turn enable”
+• “turn public-ip <IP>”
+• “turn tls 443”
+To run Turn and Webbridge on port 443 requires them to  
+be run on separate servers/VMs, or if on the same 
+server/VM they need to be on different interfaces and  
+different subnets.
+For maximum connectivity from external locations, Cisco  
+recommends that port 443 is used for both the Web Bridge and  
+TURN Server.
+TURN Server Config
+
+--- PAGE 37 ---
+• Automatically created when a Call Bridge is created
+• Stores information regarding spaces and theircontent
+• Supports clustering if desired for redundancy
+• When clustered, automatically elects a master which all Call Bridge servers will talk to
+• If 5 consecutive keepalives fail, new master is elected
+• A Call Bridge cluster requires a Database cluster
+• Database failover can take approx. 1 minute to become operational
+• Inter-database communication handled via SSL
+Database
+
+--- PAGE 38 ---
+• Each service to be activated must have its own  
+signed certificate and key pair (part of the  
+configuration process).
+• These certificates can be the same across multiple  
+services.
+• CMS server provides the option to generate self  
+signed certificates with the “pki selfsigned”  
+command along with CSRs.
+• Certificates can be inspected directly via the MMP  
+with the “pki inspect” command fortroubleshooting.
+Certificate Requirements
+
+--- PAGE 39 ---
+Self signed certificates
+pki selfsigned <key/cert basename>
+CMS> pki selfsigned webadmin
+..........................+++
+........+++
+Created key file webadmin.key and selfsigned certificatewebadmin.crt
+CMS> pki list (certificates are in server root)
+webadmin.key  
+webadmin.crt
+
+--- PAGE 40 ---
+CA signed Certificates
+T o generate the private key and Certificate Signing Requestfile:
+• Type the “pki csr” command using this syntax
+• pki csr <Key/Cert basename> <CN:value> [OU:<value>] [O:<value>] [ST:<value>] [C:<value>]  
+[subjectAltName:<value>]
+• <Key/Cert basename>: is a string identifying the new key and CSR. Can contain alphanumeric, hyphen or  
+underscore characters.
+• CN: This is the fully qualified domain name (FQDN) that specifies the server’s exact location in the Domain Name  
+System (DNS)
+• subjectAltName: From X509 Version 3 (RFC 2459), SSL certificates are allowed to specify multiple names that the  
+certificate should match.
+• If you plan to use the same certificate across multiple components, for example the Web Bridge, XMPP Server, Call  
+Bridge and TURN server, then specify your domain name (DN) in the CN field, and in the SAN field specify your  
+domain name (DN) and the FQDN for each of the components that will use thecertificate.
+
+--- PAGE 41 ---
+Certificate Bundle
+• A certificate bundle is a single file (with an extension of .pem, .cer or.crt) holding a copy of the Root CA’s certificate  
+and all intermediate certificates in thechain
+• The certificates need to be in sequence with the certificate of the Root CA being last in the certificatebundle
+• Combine all the certificates into one bundle of certificates in one of the followingways
+❖ Linux or Unix operating systems:
+cat cert1.cer cert2.cer cert3.cer > certbundle.cer
+❖ Windows or DOS:
+copy cert1.cer + cert2.cer + cert3.cer certbundle.cer
+❖ You can create a certificate bundle by using a plain text editor such as notepad. All of the characters including the -----BEGIN  
+CERTIFICATE- and -----END CERTIFICATE tags need to be inserted into the document. There should be no space between the  
+certificates, for example no spaces or extra lines between -----END CERTIFICATE- of certificate 1 and -----BEGIN CERTIFICATE- of  
+certificate 2. At the end of the file there should be 1 extra line
+❖ Save the file with an extension of .pem, .cer, or .crt
+
+--- PAGE 42 ---
+CA vs Self signed Certificates
+• Applications that interface internally within the Meeting Server only require certificates signed by an internalCA
+• Internal CA signed certificates can be generated by a local or organizational Certificate Authority, such as an Active  
+Directory server with the Active Directory Certificate Services Roleinstalled
+• The applications that require public CA signed certificatesare
+• Webbridge: If using webRTC, WebRTC clients require a public CA signed certificate from the Web Bridge in order to  
+trust the connection.
+• TURN server : If you configure TLS on your TURN server, then the TURN server will require a certificate/key pair  
+similar to that created for the Web Bridge, so that the WebRTC client trusts the connection. The certificate should be  
+signed by the same Certificate Authority as used for the Web Bridge certificate
+• Skype/Lync Integration: If you integrate CMS with Skype/Lync, then Callbridge certificate require to sign with same CA  
+as Lync CA.
+
+--- PAGE 43 ---
+Lab 1
+
+--- PAGE 44 ---
+UC Infrastructure Integration
+
+--- PAGE 45 ---
+• CUCM Integration – Rendezvous (SIP trunk)
+• CUCM Integration – Adhoc (conferencebridge)
+CUCM Integration
+
+--- PAGE 46 ---
+• CUCM needs a trunk with the appropriate dial patterns or SIP route patterns in place to send  
+the traffic to the CMS server.
+SIP Trunk
+CUCM Integration - Rendezvous
+Route Pattern
+Note: SIP trunk need to reset after add on CUCM first time
+
+--- PAGE 47 ---
+CUCM Integration - Rendezvous (Cont’d)
+Incoming rule on CMS server
+• Ensure that the CMS inbound dial rules take into account the format the  
+CUCM will be sending the URI in.
+
+--- PAGE 48 ---
+• CMS can be added as a conference
+bridge in CUCM
+• Once CMS registered as conference
+bridge, create appropriate MRG and
+MRGL
+• Assign the MRGL to Phones
+CUCM Integration - Adhoc
+
+--- PAGE 49 ---
+• Rendezvous Calls
+• Upload Callbridge Certificate as CUCM-Trust
+• Upload RootCA/CA Bundle certificate asCUCM-Trust
+• Adhoc Calls
+• Upload Webadmin certificate as CUCM-Trust
+• Upload RootCA/CA Bundle certificate asCUCM-Trust
+Note: Wild card certificates are not supported. Certificates must have SSL  
+Client and SSL Server Perposes enabled
+CUCM Integration - Certificates
+
+--- PAGE 50 ---
+• Implemented via a neighbor zone pointingto  
+the CMS call-bridge.
+• Outbound domain can be transformedvia  
+search rule if necessary for inbound  
+matching.
+• VCS should also be configured to handle  
+incoming calls appropriately.
+VCS/Expressway Integration
+
+--- PAGE 51 ---
+VCS/Expressway Integration (Cont’d)
+Neighbor Zone
+Search Rule
+
+--- PAGE 52 ---
+Lync (Skype for Business) Integration call types
+Gateway : call goes across CMS for adaptation and transcoding
+Rendezvous : Video and Lync Endpoints meet in a CMS space
+Dual Homed conferencing – Video endpoint joins via CMS and
+Lync/S4B  meeting as a full featured participants (picture in the next
+slides)
+
+--- PAGE 53 ---
+-Dial Lync meeting via IVR
+Lync Integration (Dual Homed)
+Dial IVR+ConferenceID
+ Click-To-JoinJoin Lync Conference
+LYNCSERVER  
+AVMCU
+CMSVideo EP
+
+--- PAGE 54 ---
+Dial Plan Overview
+
+--- PAGE 55 ---
+• Outbound Call webadmin Configuration describes:
+• Where CMS server send a call based on domain in URI
+• Any transformation that need to be done on URI
+• Incoming Call webadmin configuration describes if incoming call need to be :
+• Handled locally (spaces, users)
+• Forwarded to an external destination (e.g. call from CUCM to Lync)  
+via dial plan (Outbound Call)configuration
+(forward behaviour can be summarized asbelow:
+Incoming Call => Incoming Call rule (no match) => Forwarded Call rule (match) => handle call according to Outbound Call rule)
+Local Dial Plan
+
+--- PAGE 56 ---
+Local Dial Plan - Outbound (Cont’d)
+Domain: Destination Domain of the outgoing call
+SIP Proxy: which SIP trunk to use
+Local Contact Domain: to be used only with Lync, FQDN of CMS server
+(applies to the domain of the “Contact” header in the outgoing SIP INVITE, if blank IP address of the server is used)
+Local From Domain: domain used as “From”
+(applies to the domain of the “From” header of the outgoing SIP INVITE, if blank domain of the server is used)
+Trunk Type: Standard SIP or Lync or Avaya
+Encryption Type: Auto or Encrypted or Unencrypted (use Encrypted for Lync trunks)  
+Priority: order of priority of the rule (high priority is tried first)
+
+--- PAGE 57 ---
+When an incoming rule is defined
+Domain: with domain the callbridge consider “own” and use to match users and spaces  
+(similar to CUCM “Cluster Fully Qualified DomainName”)
+Priority has the usual meaning
+T arget: Spaces, User, IVR or Lync can be used to specify better thescope
+Which domain should be used for incomingcalls?
+1.
+2.
+3.
+Domain assigned to callbridgeserver
+IP address/FQDN of all call bridges in cluster  
+(CUCM uses it for call routed with numeric patterns)  
+Lync Domain (-> to be used with targetLync)
+Local Dial Plan - Inbound (Cont’d)
+
+--- PAGE 58 ---
+Additional Features
+
+--- PAGE 59 ---
+• CDRs cannot be viewed directly on the CMS  
+server.
+• Sent via HTTP or HTTPS as a series of XML  
+documents to the configured server.
+• CDR destination is configured under the  
+configuration -> CDR section of the webadmin.
+• If CMM is in use it must be configured as the CDR  
+destination.
+CDRs
+
+--- PAGE 60 ---
+License Model
+• Required Activation Keys and Licenses
+• Activation Keys are needed for
+• Call-Bridge
+• Recording
+• Streaming
+• Licenses
+• Multiparty Licensing (PMP Plus and SMP Plus)
+• Cisco Capacity Units
+• Licenses are tied to MACAddress
+
+--- PAGE 61 ---
+Expressway proxy for  
+WebRTC
+
+--- PAGE 62 ---
+Cisco Meeting Server Web Proxy
+Cisco Meeting Server Web Proxy is supported From Expressway X8.9.2 release
+• CMS WebProxy feature in Expressway allows to leverage expressway existing capabilities  
+(TURN and MRA Web-Proxy) to facilitate firewall transversal of WebRTC CMS clients
+• On expressway it can coexist with MRA, B2B, Registrar, IMP federation but not with Jabber-
+Guest or MS Interop
+• CMA native clients still need classical CMS edge
+• Expressway TURN supports TCP 443 as TURN port from x8.11onwards
+
+--- PAGE 63 ---
+From legacy CMS Edge to Expressway Web-
+Proxy
+XMPP HTTPS / WEBRTC Media ; TURN
+XMPP WEBBRIDGE
+WEBBRIDGE
+CMS CORE SERVER
+CMS EDGE SERVER
+TURN
+CALLBRIDGE
+LOADBALANCER
+ Web-Proxy  
+UC transversal
+Expressway-E
+TURN
+XMPP
+WEBBRIDGE
+CMS CORE SERVER
+CALLBRIDGE
+UC transversal  
+client
+Expressway-C
+Expressway
+WebProxy
+
+--- PAGE 64 ---
+HTTPS / WEBRTC
+ Media/TURN
+Core CMS
+Expressway-C Expressway-E WebRTC Client
+Internal DNS (split) resolves:
+1) (A) join.myCompany.com to WebbridgeIPs
+2) (SRV) _cms-web._tls. join.myDomain to WebbridgeFQDNs
+3) (SRV) _xmpp-client._tcp.MyDomain to XMPPFQDN(s)
+External DNS (split)resolves
+(A) join.myDomain to Expressway-E IP
+DMZ Internet
+DNS
+DNS DNS
+Cisco Meeting Server Web Proxy
+
+--- PAGE 65 ---
+DNS design - Web Client with Expressway
+External CMA Web Clients:
+1. A DNS Lookup for JOIN.MyDomain to get Expressway-E IP
+2. Connect to Expressway-E which supplies address of TURN server
+3. Expway-C queries(SRV) _cms-web._tls.Join.MyDomain for Internal WebBridges
+4. Webbridge queries (SRV) _xmpp-client._tcp.MyDomain for XMPP server
+Internal Web Client (no changes)
+• DNS Lookup for JOIN. MyDomain which return Internal WebBridge
+• WebBridge queries _xmpp-client._tcp.MyDomain to get XMPP server
+1) Query (A)Join.MyDomain
+→ Expressway-E
+Internal  
+DNS
+External  
+DNS
+HTTPS
+DNS
+Query (A)Join.MyDomain
+→ InternalWebBridges
+Expway-E
+Core
+Expway-E
+ Expway-E
+CoreCore
+EMEA
+Expway-C
+Americas
+Expway-C
+ Expway-C
+APAC
+2)
+2)
+3)
+
+--- PAGE 66 ---
+Internet
+Expressway-E
+Expressway-CCMS
+ WebRTC Client
+External DNSInternal DNS
+DO NOT configure TURN parameters from Web GUI
+X
+• CMS Configuration - TURN Server
+• Configure TURN server on CMS point toExpressway-E
+Dual NIC Deployment
+Cisco Meeting Server Web Proxy
+
+--- PAGE 67 ---
+Internet
+Expressway-E
+Expressway-CCMS
+ WebRTC Client
+Parameter Value
+serverAddress TURN Server’s FQDN/IP Address  
+(Expressway-E Private IP Address, i.e. address ofLAN1)
+clientAddress TURN Server’s FQDN/IPAddress
+(Expressway-E Public IP Address, i.e. NAT address of LAN2)
+username TURN Authenticationrealm
+password TURN Authenticationpassword
+type expressway
+tcpPortNumberOverride 443
+• CMS Configuration - TURN Server
+• Configure TURN server on CMS point to Expressway-E as TURN server by usingAPI
+Dual NIC Deployment
+Internal DNS External DNS
+Cisco Meeting Server Web Proxy
+
+--- PAGE 68 ---
+• Expressway-C Configuration - Certification
+• Install trusted CA certificate and servercertificate
+Internet
+Expressway-E
+CMS
+ WebRTC Client
+External DNS
+Internal DNS
+Expressway-C
+Dual NIC Deployment
+Cisco Meeting Server Web Proxy
+
+--- PAGE 69 ---
+Internet
+Expressway-E
+Expressway-CCMS
+ WebRTC Client
+External DNSInternal DNS
+• Expressway-C Configuration - UC Traversal Zone
+• Create Unified Communications traversal zone pointing toExpressway-E
+Dual NIC Deployment
+Cisco Meeting Server Web Proxy
+
+--- PAGE 70 ---
+• Expressway-C Configuration - Unified Communications
+• Enabled Mobile and Remote Accessmode
+Internet
+Expressway-E
+CMS
+ WebRTC Client
+External DNS
+Internal DNS
+Expressway-C
+Dual NIC Deployment
+Cisco Meeting Server Web Proxy
+
+--- PAGE 71 ---
+Internet
+Expressway-E
+Expressway-CCMS
+ WebRTC Client
+External DNSInternal DNS
+• Expressway-C Configuration - Guest account client URI
+• Enabled CMS Web Proxy and configure Guest account clientURI
+Dual NIC Deployment
+Cisco Meeting Server Web Proxy
+
+--- PAGE 72 ---
+➢ In default, Web GUI only allow to change 443 or 445, but support to modify other port by using CLI
+Internet
+Expressway-E
+Expressway-CCMS
+ WebRTC Client
+• Expressway-E Configuration - Web Administration Listening Port
+• Change the web administration listening port to something other then default443
+Dual NIC Deployment
+Internal DNS External DNS
+Cisco Meeting Server Web Proxy
+
+--- PAGE 73 ---
+• Expressway-E Configuration - Certification
+• Install trusted CA certificate and servercertificate
+➢ Guest account client URI should be
+added on Expressway-E certificate
+as additional SAN
+Internet
+Expressway-E
+Expressway-CCMS
+ WebRTC Client
+External DNSInternal DNS
+Dual NIC Deployment
+Cisco Meeting Server Web Proxy
+
+--- PAGE 74 ---
+• Expressway-E Configuration - Certification
+• Install trusted CA certificate and servercertificate
+➢ Guest account client URI should be added on Expressway-E certificate as additional SAN for WebRTC session to  
+display as secure connection
+Internet
+CMS Expressway-C Expressway-E
+ WebRTC Client
+External DNSInternal DNS
+Dual NIC Deployment
+Cisco Meeting Server Web Proxy
+
+--- PAGE 75 ---
+Internet
+Expressway-E
+Expressway-CCMS
+ WebRTC Client
+External DNSInternal DNS
+• Expressway-E Configuration - UC Traversal Zone
+• Create Unified Communications traversal zone pointing toExpressway-E
+Dual NIC Deployment
+Cisco Meeting Server Web Proxy
+
+--- PAGE 76 ---
+• Expressway-E Configuration - Unified Communications
+• Enabled Mobile and Remote Accessmode
+Internet
+Expressway-E
+Expressway-CCMS
+ WebRTC Client
+External DNSInternal DNS
+Dual NIC Deployment
+Cisco Meeting Server Web Proxy
+
+--- PAGE 77 ---
+• Expressway-E Configuration - Unified Communications
+• Enabled Mobile and Remote Accessmode
+Internet
+Expressway-E
+Expressway-CCMS
+ WebRTC Client
+External DNSInternal DNS
+Dual NIC Deployment
+Cisco Meeting Server Web Proxy
+
+--- PAGE 78 ---
+Logs and Troubleshooting  
+Tools
+
+--- PAGE 79 ---
+CLI (MMP) Basic Troubleshoot Commands
+• Ping
+• “ping <destination>”
+• Traceroute
+• “traceroute <destination>”
+• DNS Lookup
+• “dns lookup <A/AAAA/SRV>
+<hostname>”
+
+--- PAGE 80 ---
+Troubleshooting Tools
+•WebAdmin Logs
+•SFTP Files
+•SFTP: logbundle.tar.gz (Version2.2+)
+•pcaps
+
+--- PAGE 81 ---
+• Two places to view errors/logs
+- Webadmin “status” page
+- Webadmin “logs” page
+• The status page only shows specifics  
+errors or warnings
+• Webadmin page viewed logs do not  
+contain all logging info
+WebAdmin Logs
+
+--- PAGE 82 ---
+•In WebAdmin we can increase the  
+logging level of certain services
+•If logging is not enabled, detailed  
+information will not be written to the  
+syslog
+•Logging automatically disables after the  
+timer expires
+Logging Levels
+
+--- PAGE 83 ---
+• Certificates and Keys
+• live.json
+• Boot.json
+• Backups
+• Audit log
+• Log (syslog)
+• Crash dumps
+• pcaps
+SFTP Files
+
+--- PAGE 84 ---
+• Version 2.2 of CMS adds a new log  
+bundle that can be collected via SFTP
+• Syslog
+• Database
+• Crash Dumps
+• Live.json
+Log Bundle
+
+--- PAGE 85 ---
+• Pcap <interface>
+• Show all network traffic in/out aninterface
+• Extremely useful in troubleshooting networkimpairment
+• Captures roughly 1GB before ending
+• Capture command issued viaMMP
+• File downloaded via SFTP
+pcap–Packet Capture
+
+--- PAGE 86 ---
+• Full system snapshot – Creates a full snapshot of  
+entire config along with database for download.  
+This includes spaces, chat, and activity.
+“backup snapshot <filename>”
+• Restore full snapshot…
+“backup rollback <filename>”
+• “Reboot”
+• List all current backups on system
+“backup list”
+CLI (MMP) Backup/Restore Files
+
+--- PAGE 87 ---
+• live.json is the running mmp config on the server.  
+This is what is copied when taking a config  
+snapshot.
+• The json contains all mmp configurations, but does  
+not include API basedconfigurations.
+• The .bak file also contains this information, however  
+it also includes the database info (which cannot be  
+read).
+• The .bak file cannot be edited even though some  
+parts are readable.
+JSON and Backup Files
+
+--- PAGE 88 ---
+• Create with “debug <filename>” command.
+• Can take some time to generate the file, and can  
+be downloaded via winSCP from rootdirectory.
+• The debug file contains the followinginfo…
+- File Structure
+- TCP/UDP Connections
+- ifconfig Output
+- Process List
+- CPU and Memory Usage
+- Kernel Logs
+- Disk Info
+- PostGres Database Info
+- Logging Info
+Debug Files
+
+--- PAGE 89 ---
+13
+API - GET
+• Can be done with any browser
+• Check Configuration/Status
+• Returns XML
+• Reference APIguide
+
+--- PAGE 90 ---
+14
+API – Call Diagnostic Logs
+• Require a POST – Extension required
+• POST to /api/v1/coSpaces/<cospace-ID>/diagnostics
+• Location Header in 200 OK gives Diagnostic ID
+• GET to <location>/contents
+• Diagnostics can also be seen in WebAdmin Status page
+
+--- PAGE 91 ---
+CMA / WebRTC call  
+Diagnostics
+
+--- PAGE 92 ---
+• If a problem is detected on a call using an CMA / WebRTC client, it may prompt the user to “send diagnostics”.
+• These are saved locally on the device in the case of a PC or MAC from the clients point of view, and a diagnostic file  
+is also created on the server running the callbridge it was connectedto.
+• This file can be seen and downloaded in the webadmin on the “general status” page
+• The last 12 files are stored on theserver.
+• Includes information on the client software/hardware, relevant log lines from server, captured SDP and media info,  
+and other diagnostics.
+• Diagnostics can also be manually generated on the client by going to options -> diagnostics -> save.
+Client/Call Diagnostics
+
+--- PAGE 93 ---
+Client/Call Diagnostics (Cont’d)
+
+--- PAGE 94 ---
+Client/Call Diagnostics (Cont’d)
+
+--- PAGE 95 ---
+Client Diagnostic Log Examples
+
+--- PAGE 96 ---
+Client Diagnostic Log Examples - Audio
+
+--- PAGE 97 ---
+Client Diagnostic Log Examples - Audio
+
+--- PAGE 98 ---
+Client Diagnostic Log Examples - Video
+
+--- PAGE 99 ---
+Client Diagnostic Log Examples - Video
+
+--- PAGE 100 ---
+Client Diagnostic Log Examples - Video
+
+--- PAGE 101 ---
+• chrome://webrtc-internals/
+Chrome WebRTC debugging
+
+--- PAGE 102 ---
+• about:webrtc
+Mozilla WebRTC debugging
+
+--- PAGE 103 ---
+CMA / CMS Server Crash
+
+--- PAGE 104 ---
+• In the event that a module crashes, a crash dump file  
+will be created on the server.
+• You can view and download these files viawinSCP .
+• The file name will indicate the module that hascrashed.
+• Module 0 generally indicates a full system crash resulting in a  
+reboot.
+• Other modules usually indicate a DSP issue and can result in a  
+quick black screen on video, but should not bring down the  
+server.
+CMS Crash Dump Files
+
+--- PAGE 105 ---
+• PC client crash dump files are also collected and  
+stored on the local machine.
+• They can be found in  
+C:\Users\<username>\AppData\Roaming\Acano\Client
+CMA Crash Dump Files
+
+--- PAGE 106 ---
+• With a multi-server deployment, it is very important  
+to configure syslog monitoring to have a single  
+source of logs from all servers, rather than having  
+to manually sftp to each and download the logfiles.
+• T o configure syslog on the CMS servers, use the  
+following…
+• “syslog server add <IP/hostname><port>”
+• “syslog enable”
+• CMS servers use TCP for syslogoutput.
+• Syslog can also be set to output the audit logs.
+• Debugs enabled via the webadmin page will be  
+output to syslog.
+Syslog Server
+
+--- PAGE 107 ---
+Troubleshooting Clustering
+
+--- PAGE 108 ---
+• Do not forget to issue “database cluster upgrade_schema” command on Master after upgrading the Database  
+cluster
+• Minimum 3 servers are required for Databaseclustering
+• Restoring Older version backup to newer version is possible but NOT newer version backup to older version
+• All nodes check the status of each other at regularintervals.
+• If one of these checks fails or takes too long to complete, that node will be considereddisconnected.
+• If five of the checks fail in a row, a new master will be elected and all slave nodes will now reference themaster
+Database Clustering – Best practice
+
+--- PAGE 109 ---
+Database Clustering
+
+--- PAGE 110 ---
+CallBridge Clustering – Best practice
+
+--- PAGE 111 ---
+Questions?

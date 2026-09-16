@@ -7,10 +7,31 @@ Use library.json for structured metadata.
 Use the linked text_url for extracted document text.
 Use the linked pdf_url for the original PDF.
 
-Document count: 9
-Generated: 2026-09-16T14:47:54.795013+00:00
+Document count: 24
+Generated: 2026-09-16T15:10:15.965760+00:00
 
 ## Documents
+
+### Cisco Calling
+- ID: cisco-calling
+- Original filename: Cisco Calling.pdf
+- PDF: pdfs/cisco-calling.pdf
+- Extracted text: text/cisco-calling.txt
+- Pages: 101
+
+### Cisco Meeting Servers
+- ID: cisco-meeting-servers
+- Original filename: Cisco Meeting Servers.PDF
+- PDF: pdfs/cisco-meeting-servers.pdf
+- Extracted text: text/cisco-meeting-servers.txt
+- Pages: 32
+
+### Cisco UCM, OnPremises and Dedicated Instance from on premises to the cloud and all things in between CLS 2267 slides
+- ID: cisco-ucm-onpremises-and-dedicated-instance-from-on-premises-to-the-cloud-and-all-things-in-between-cls-2267-slides
+- Original filename: Cisco UCM, OnPremises and Dedicated Instance from on-premises to the cloud and all things in between CLS-2267-slides.pdf
+- PDF: pdfs/cisco-ucm-onpremises-and-dedicated-instance-from-on-premises-to-the-cloud-and-all-things-in-between-cls-2267-slides.pdf
+- Extracted text: text/cisco-ucm-onpremises-and-dedicated-instance-from-on-premises-to-the-cloud-and-all-things-in-between-cls-2267-slides.txt
+- Pages: 122
 
 ### Cisco UCM 15 TDM
 - ID: cisco-ucm-15-tdm
@@ -18,6 +39,20 @@ Generated: 2026-09-16T14:47:54.795013+00:00
 - PDF: pdfs/cisco-ucm-15-tdm.pdf
 - Extracted text: text/cisco-ucm-15-tdm.txt
 - Pages: 53
+
+### CMS Architecture and Troubleshooting   PPT
+- ID: cms-architecture-and-troubleshooting-ppt
+- Original filename: CMS Architecture and Troubleshooting - PPT.pdf
+- PDF: pdfs/cms-architecture-and-troubleshooting-ppt.pdf
+- Extracted text: text/cms-architecture-and-troubleshooting-ppt.txt
+- Pages: 111
+
+### CMS
+- ID: cms
+- Original filename: CMS.pdf
+- PDF: pdfs/cms.pdf
+- Extracted text: text/cms.txt
+- Pages: 102
 
 ### CST UC Release 15
 - ID: cst-uc-release-15
@@ -33,6 +68,13 @@ Generated: 2026-09-16T14:47:54.795013+00:00
 - Extracted text: text/cuc15-datasheet.txt
 - Pages: 8
 
+### CUCM troubleshooting
+- ID: cucm-troubleshooting
+- Original filename: CUCM troubleshooting.pdf
+- PDF: pdfs/cucm-troubleshooting.pdf
+- Extracted text: text/cucm-troubleshooting.txt
+- Pages: 60
+
 ### Design and Deployment of Unified Communication Services
 - ID: design-and-deployment-of-unified-communication-services
 - Original filename: Design_and-Deployment_of_Unified_Communication_Services.pdf
@@ -40,12 +82,33 @@ Generated: 2026-09-16T14:47:54.795013+00:00
 - Extracted text: text/design-and-deployment-of-unified-communication-services.txt
 - Pages: 173
 
+### Expressway certificates
+- ID: expressway-certificates
+- Original filename: Expressway certificates.pdf
+- PDF: pdfs/expressway-certificates.pdf
+- Extracted text: text/expressway-certificates.txt
+- Pages: 63
+
+### Expressway
+- ID: expressway
+- Original filename: Expressway.pdf
+- PDF: pdfs/expressway.pdf
+- Extracted text: text/expressway.txt
+- Pages: 77
+
 ### Jabber to WebexApp
 - ID: jabber-to-webexapp
 - Original filename: Jabber_to_WebexApp.pdf
 - PDF: pdfs/jabber-to-webexapp.pdf
 - Extracted text: text/jabber-to-webexapp.txt
 - Pages: 174
+
+### Learning and Support Resources   CUCM
+- ID: learning-and-support-resources-cucm
+- Original filename: Learning and Support Resources - CUCM.pdf
+- PDF: pdfs/learning-and-support-resources-cucm.pdf
+- Extracted text: text/learning-and-support-resources-cucm.txt
+- Pages: 5
 
 ### On Prem Content Strategy
 - ID: on-prem-content-strategy
@@ -61,6 +124,13 @@ Generated: 2026-09-16T14:47:54.795013+00:00
 - Extracted text: text/one-cisco-deck.txt
 - Pages: 19
 
+### Phone migration
+- ID: phone-migration
+- Original filename: Phone migration.pdf
+- PDF: pdfs/phone-migration.pdf
+- Extracted text: text/phone-migration.txt
+- Pages: 85
+
 ### SIP troubleshooting
 - ID: sip-troubleshooting
 - Original filename: SIP-troubleshooting.pdf
@@ -74,3 +144,38 @@ Generated: 2026-09-16T14:47:54.795013+00:00
 - PDF: pdfs/strategy-ropadmap.pdf
 - Extracted text: text/strategy-ropadmap.txt
 - Pages: 98
+
+### UCM15 Data Sheet
+- ID: ucm15-data-sheet
+- Original filename: UCM15 Data Sheet.pdf
+- PDF: pdfs/ucm15-data-sheet.pdf
+- Extracted text: text/ucm15-data-sheet.txt
+- Pages: 8
+
+### Unified CM Security Architecture
+- ID: unified-cm-security-architecture
+- Original filename: Unified CM Security Architecture.pdf
+- PDF: pdfs/unified-cm-security-architecture.pdf
+- Extracted text: text/unified-cm-security-architecture.txt
+- Pages: 108
+
+### Upgrading to CUCM version 15
+- ID: upgrading-to-cucm-version-15
+- Original filename: Upgrading to CUCM version 15.pdf
+- PDF: pdfs/upgrading-to-cucm-version-15.pdf
+- Extracted text: text/upgrading-to-cucm-version-15.txt
+- Pages: 90
+
+### Webex Cloud Connected UC   BDM
+- ID: webex-cloud-connected-uc-bdm
+- Original filename: Webex Cloud Connected UC - BDM.pdf
+- PDF: pdfs/webex-cloud-connected-uc-bdm.pdf
+- Extracted text: text/webex-cloud-connected-uc-bdm.txt
+- Pages: 48
+
+### Webex Cloud Connected UC TDM Presentation
+- ID: webex-cloud-connected-uc-tdm-presentation
+- Original filename: Webex Cloud-Connected UC TDM Presentation.pdf
+- PDF: pdfs/webex-cloud-connected-uc-tdm-presentation.pdf
+- Extracted text: text/webex-cloud-connected-uc-tdm-presentation.txt
+- Pages: 251

@@ -1,0 +1,1635 @@
+--- PAGE 1 ---
+Cisco Meeting Server 
+Unveiled
+Advanced Capabilities and Best Practices
+Svend Boerding
+BRKCOL-2228
+Solution Engineer, Collaboration
+
+--- PAGE 2 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Webex App
+BRKCOL-2228
+Questions? 
+Use Webex App to chat with the speaker after the session
+Find this session in the Cisco Events App
+Click “Join the Discussion”
+Install the Webex App or go directly to the Webex space
+Enter messages/questions in the Webex space
+How
+Webex spaces will be moderated by the speaker until February 27, 2026.
+1
+2
+3
+4
+Enter your personal notes here
+Cisco Meeting Server Unveiled - …
+
+--- PAGE 3 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Agenda 01 Technical Refresher
+02 What has changed?
+03 Hardware
+04 TMS is passing away
+05 What’s next?
+06 Conclusion
+07 Reference
+BRKCOL-2228
+
+--- PAGE 4 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+This presentation contains “forward-looking” statements 
+that involve risks, uncertainties and assumptions. If the risks or 
+uncertainties ever materialize or the assumptions prove incorrect, 
+our results may differ materially from those expressed or implied by 
+such forward-looking statements. All statements other than 
+statements of historical fact could be deemed forward-looking, 
+including, but not limited to, any projections of financial information; 
+any statements about historical results that may suggest trends for 
+our business; any statements of the plans, strategies, and objectives 
+of management for future operations; any statements of expectation 
+or belief regarding future events, technology developments, or 
+enforceability of our intellectual property rights; and any statements 
+of assumptions underlying any of the foregoing.
+These statements are based on estimates and information available 
+to us at the time of this presentation and are not guarantees of 
+future performance. Actual results could differ materially from our 
+current expectations as a results of many factors, including but not 
+limited to, the unpredictable nature of our rapidly evolving market 
+and quarterly fluctuations in our business; the effects of 
+competition; and any adverse changes in our indirect channel 
+relationships. These and other risks and uncertainties associated 
+with our business are described in the company’s annual report on 
+Form 10-K. The forward-looking statements in this presentation are 
+made as of the date of the initial publication of this presentation, 
+and we disclaim any obligation to update these statements at any 
+time in the future.
+Safe harbor statement
+BRKCOL-2228
+
+--- PAGE 5 ---
+01 - Technical Refresher
+
+--- PAGE 6 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+General Deployment Concepts
+BRKCOL-2228
+Session ID: BRKSEC-XXXX
+• Cisco Meeting Server has two general deployment concepts
+• Single Combined Server Deployment
+• Split Server Deployments
+
+--- PAGE 7 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+General Deployment Concepts
+BRKCOL-2228
+Session ID: BRKSEC-XXXX
+• Cisco Meeting Server has two general deployment concepts
+• Single Combined Server Deployment
+This deployment enables both SIP and web app participants
+to join meetings if participants have direct network access to
+the Call Bridge for signaling and media.
+This deployment works where all participants are within the
+same network.
+
+--- PAGE 8 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+General Deployment Concepts
+Single Combined Server
+BRKCOL-2228
+Session ID: BRKSEC-XXXX
+Internet
+DMZ
+Call Bridge
+Database
+Web Bridge MMP
+Web
+AdminCisco Meeting Server
+CUCM/ IM&P ClusterIP PhoneVideo Device
+Laptop/ PC
+LDAP AD
+Services 
+NTP, DNS, etc.HTTPS
+Media
+SIP
+WebRTC
+Services
+
+--- PAGE 9 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+General Deployment Concepts
+BRKCOL-2228
+Session ID: BRKSEC-XXXX
+• Cisco Meeting Server has two general deployment concepts
+• Split Server Deployments
+Every deployment which includes resiliency, multiple server for scale
+or participants joining from outside of your network boundry is a „Split 
+Server Deployment“.
+
+--- PAGE 10 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+General Deployment Concepts
+Split Server
+BRKCOL-2228
+Session ID: BRKSEC-XXXX
+Internet
+DMZ
+Call Bridge
+Database
+Web Bridge MMP
+Web
+AdminCMS 1
+CUCM/ IM&P Cluster IP Phone Video Device Laptop/ PC
+LDAP AD
+Services 
+NTP, DNS, etc.
+HTTPS
+Media
+SIP
+WebRTC
+Services
+Cisco Meeting 
+Management
+Call Bridge
+Database
+MMP
+Web
+AdminCMS 2
+Outside UserSIP User
+C
+E
+Web Bridge TURN CMS
+
+--- PAGE 11 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS Components
+Database
+The Call Bridge reads 
+from and writes to the 
+database storing the 
+space information, for
+example, the members 
+of spaces, and recent 
+activity within a space.
+Call Bridge
+The Call Bridge is the 
+component on the 
+Meeting Server that 
+bridges the conference
+connections, enabling 
+multiple participants to 
+join meetings hosted on 
+the Meeting Server. 
+Web Bridge 3
+Web Bridge 3 is a 
+Meeting Server 
+component that enables 
+participants to join 
+meetings using
+the browser-based 
+Cisco web app client. 
+TURN Server
+The TURN server 
+provides firewall 
+traversal technology, 
+allowing the Meeting 
+Server to be
+deployed behind a 
+Firewall or NAT. 
+BRKCOL-2228
+
+--- PAGE 12 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS Components
+Web Scheduler
+The Scheduler is a 
+Meeting Server 
+component that allows 
+end users to schedule 
+meetings via the web 
+app.
+Recorder
+The Recorder 
+component on the 
+Meeting Server adds 
+the capability of 
+recording meetings and 
+saving the recordings to 
+a document storage 
+such as a network file 
+system (NFS).
+Has to be deployed on 
+a dedicated instance.
+Streamer
+The Streamer 
+component adds the 
+capability of streaming
+meetings held in a 
+space to the RTMP URL 
+configured on the 
+space.
+Has to be deployed on 
+a dedicated instance.
+BRKCOL-2228
+MeetingApps
+WebApp features like 
+File Sharing and 
+Surveys are deployed 
+on the MeetingApps 
+service. 
+Have to be deployed on 
+a dedicated instance.
+
+--- PAGE 13 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS Components
+Web Admin
+The Web Admin is a 
+web based interface to 
+configure the Meeting 
+Server.
+Web Scheduler
+The Scheduler is a 
+Meeting Server 
+component that allows 
+end users to schedule 
+meetings via the web 
+app.
+Recorder
+The Recorder 
+component on the 
+Meeting Server adds 
+the capability of 
+recording meetings and 
+saving the recordings to 
+a document storage 
+such as a network file 
+system (NFS).
+Has to be deployed on 
+a dedicated instance.
+Streamer
+The Streamer 
+component adds the 
+capability of streaming
+meetings held in a 
+space to the RTMP URL 
+configured on the 
+space.
+Has to be deployed on 
+a dedicated instance.
+BRKCOL-2228
+MeetingApps
+WebApp features like 
+File Sharing and 
+Surveys are deployed 
+on the MeetingApps 
+service. 
+Have to be deployed on 
+a dedicated instance.
+Mainboard 
+Management 
+Processor (MMP)
+The CLI interface to 
+configure the platform 
+itself
+
+--- PAGE 14 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+TURN Server
+BRKCOL-2228
+• A TURN (Traversal Using Relays around NAT) server is a component in real-
+time communication (like WebRTC video calls) that acts as a relay to connect 
+devices when direct connections are blocked by firewalls or Network Address
+Translation (NAT).
+Outside User
+TURN Server
+CMS
+TURN Listen 
+Ports 
+UDP/ TCP 
+3478
+TURN Relay 
+Ports 
+UDP 50000 -
+62000
+Public IP
+37.1.1.1
+FW 1 DMZ 
+10.1.10.10
+FW 2 DMZ 
+10.1.10.20
+10.1.10.30
+192.168.10.20
+
+--- PAGE 15 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Meeting Server Edge vs. Expressway
+BRKCOL-2228
+• To allow external participants to join a meeting a Traversal/ TURN component is needed to
+work around the firewall rules and NAT as no direct connection is allowed.
+Session ID: BRKSEC-XXXX
+Internet
+DMZ
+Call Bridge
+Database
+Web Bridge MMP
+Web
+AdminCisco Meeting Server
+Outside User
+CMS Edge or Expw.?
+
+--- PAGE 16 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Meeting Server Edge
+BRKCOL-2228
+• CMS offers Web Bridge 
+and TURN Server service in 
+DMZ
+• Expressway C/E needed for
+external SIP participants
+Internet
+DMZ
+Call Bridge
+DatabaseWeb Bridge MMP
+Web
+AdminCisco Meeting Server
+Outside User
+Web Bridge TURN
+C
+E
+HTTPS
+Media
+C2W
+SIP
+Services
+CMS
+SIP User
+Traffic flows:
+TLS 443 – Client to WebBridge
+UDP/TCP 3478 – Traffic between Client 
+and TURN (both ways)
+TCP 9999 – C2W traffic (CB to WB)
+UDP 50000 to 62000 – Media between
+CallBridge & TURN (both ways)
+
+--- PAGE 17 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Note: if these ports are not allowed, TURN media will use UDP 3478, this will add additional load on turn 
+server
+Traffic flows:
+TLS 443 – Client to WebProxy (Exp-E 
+Public)
+UDP/TCP 3478 – Traffic between Client 
+and TURN (Exp-E public) (both ways)
+TLS/TCP 7001+ff Signaling Exp-C to
+Exp-E private
+TCP 2222 SSH tunnel Fw-Traversal
+Exp-C to Exp-E private
+HTTPS 443 Signaling Exp-C to
+WebBridge
+UDP 3478 TURN WebBridge to Exp-E 
+private
+UDP 24000-29999 TURN media
+CallBridge to Exp-E public
+Expressway Edge
+BRKCOL-2228
+• Expressway additionally
+offers WebProxy and 
+TURN service in DMZ
+Internet
+DMZ
+Call Bridge
+DatabaseWeb Bridge MMP
+Web
+AdminCisco Meeting Server
+Outside User
+Web Proxy TURN
+C
+E
+HTTPS
+Media
+Signal
+SIP
+Services
+SIP User
+
+--- PAGE 18 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Data Base Resiliency
+BRKCOL-2228
+• Every setup needs at minimum 1 database. Installing the CMS image 
+automatically deploys an empty database on that server
+Call Bridge
+CMS Amsterdam
+Call Bridge
+CMS Berlin
+Call Bridge
+CMS Madrid
+
+--- PAGE 19 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Data Base Resiliency
+BRKCOL-2228
+• Every setup needs at minimum 1 database. Installing the CMS image 
+automatically deploys an empty database on that server
+• We recommend the use of a data base cluster (odd number of nodes 
+required)
+Call Bridge
+CMS Amsterdam
+Call Bridge
+CMS Berlin
+Call Bridge
+CMS Madrid
+Primary Database
+
+--- PAGE 20 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Data Base Resiliency
+BRKCOL-2228
+• Every setup needs at minimum 1 database. Installing the CMS image 
+automatically deploys an empty database on that server
+• We recommend the use of a data base cluster (odd number of nodes 
+required)
+• Database works on primary/ replica base, no loadbalancing, 
+<200ms RTT between DB nodes, call bridges and primary DB node
+Call Bridge
+CMS Amsterdam
+Call Bridge
+CMS Berlin
+Call Bridge
+CMS Madrid
+Primary Database
+Database Replica
+Database Replica
+
+--- PAGE 21 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Data Base Resiliency
+BRKCOL-2228
+• If a failure occurs on the primary DB node
+Call Bridge
+CMS Amsterdam
+Call Bridge
+CMS Berlin
+Call Bridge
+CMS Madrid
+Primary DatabaseDB Replica DB Replica
+!
+
+--- PAGE 22 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Data Base Resiliency
+BRKCOL-2228
+• If a failure occurs on the primary DB node
+• A Replica DB will be promoted to Primary Database and Call Bridges 
+and DB replicas will reconnect accordingly
+Call Bridge
+CMS Amsterdam
+Call Bridge
+CMS Berlin
+Call Bridge
+CMS Madrid
+Failed DBDB Replica Primary Database
+!
+^
+
+--- PAGE 23 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Data Base Resiliency
+BRKCOL-2228
+• If a failure occurs on the primary DB node
+• A Replica DB will be promoted to Primary Database and Call Bridges 
+and DB replicas will reconnect accordingly
+• After failure, old primary DB node will reconnect as DB replica node
+Call Bridge
+CMS Amsterdam
+Call Bridge
+CMS Berlin
+Call Bridge
+CMS Madrid
+DB Replica Primary Database DB Replica
+^
+
+--- PAGE 24 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Call Bridge vs. Call Bridge Cluster vs. Call Bridge Groups
+BRKCOL-2228
+• Call Bridge
+Connects and bridges multiple participants into their meetings. It doesn‘t
+offer load balancing or resiliency
+• Call Bridge Cluster
+Enables and allows you to operate multiple Call Bridges as a single entity
+and scale capacity beyond of a single Call Bridge
+• Call Bridge Group
+Is a subset of clustered Call Bridges (CB) to allow logical grouping of
+CBs which are located closely to each other (same site, DC, etc.) and to
+enable better ressource allocation and load balancing
+
+--- PAGE 25 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Call Bridge Resiliency
+BRKCOL-2228
+• Resiliency ≠ Load Balancing
+• In a Call Bridge Cluster, if a Call Bridge fails the call will immediately
+failover to the next available callbridge
+• A CB Cluster should contain at least 3 nodes up to 7 nodes
+(recommended)
+Up to 24 nodes are possible, Cisco approval needed
+• Node RTT between cluster nodes should not exeed 300ms
+• All nodes are connected to the same Database/ DB Cluster
+
+--- PAGE 26 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Call Bridge Resiliency
+BRKCOL-2228
+Peer-to-Peer-Link
+• Reduce call complexitiy due to
+direct link between call bridges
+• Reduce load on Call Control device
+and frees ressources for call which
+have to be route through call control
+Call Bridge Cluster
+HTTPS
+Peer-to-
+Peer-link
+CB_1
+CB_2
+CB_3
+< 300ms RTT for
+Cluster nodes
+
+--- PAGE 27 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Call Bridge Resiliency
+BRKCOL-2228
+Routing via Call Control
+• Consistent call flow between 
+Meeting Server and local SIP 
+devices
+• Pot. simplify network config, if 
+firewalls are in place
+Call Bridge Cluster
+HTTPS
+Media
+CB_1 CB_2 CB_3
+Call Control
+< 300ms RTT for 
+Cluster nodes
+
+--- PAGE 28 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Call Bridge Load Balancing
+BRKCOL-2228
+• CB Groups can intelligently load balance calls between call 
+bridges in the same location or across locations
+• Decision making is handled by CMS itselfs
+• Call control must be able to handle SIP messages (e.g. Replace 
+Header) to route calls to the correct node
+Call Bridge Cluster
+CB_1 CB_2
+< 100ms RTT
+CB_3 CB_4 CB_5 CB_6
+CBG_AMS CBG_BER CBG_MAD
+< 100ms RTT< 100ms RTT
+< 300ms RTT
+
+--- PAGE 29 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Call Bridge Load Balancing
+BRKCOL-2228
+Based on these values:
+Load
+Value of maximum load per Call Bridge (depending on HW)
+newConferenceLoadLimitBasisPoints
+Value between 1–10000 for starting a new non-active conference. 
+Default 5000 = 50%
+existingConferenceLoadLimitBasisPoints
+Value between 1–10000 for adding participants to existing 
+conferences. Default 8000 = 80%
+
+--- PAGE 30 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Call Bridge Load Balancing
+BRKCOL-2228
+Call Bridge Cluster
+CB_1 CB_2
+< 100ms RTT
+CB_3 CB_4 CB_5 CB_6
+CBG_AMS CBG_BER CBG_MAD
+< 100ms RTT< 100ms RTT
+< 300ms RTT
+Call Control
+Distribution link
+Media
+Signal
+SIP
+• SIP call load balancing is based
+on Call Control rerouting and
+SIP redirection
+• WebApp Calls (non SIP) get
+routed depending on the data-
+base information (space related) 
+and load based
+• Rerouting within a CB group works directly, 
+rerouting to another CB group or joining a 
+distributed meeting creates a “distribution 
+link” between these CB groups
+Web Bridge Web Bridge Web Bridge
+
+--- PAGE 31 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Call Bridge Load Balancing
+BRKCOL-2228
+Call Bridge Cluster
+CB_1 CB_2 CB_3 CB_4 CB_5 CB_6
+CBG_AMS
+< 100ms RTT
+< 300ms RTT
+Call Control
+Media
+Signal
+SIP
+Web Bridge Web Bridge Web Bridge
+Also if no logical grouping is needed,
+it’s recommended to create at least 
+one Call Bridge Group to enable load 
+balancing
+Overloading a node can result in bad quality.
+Connections to other Web 
+Bridges and Call Bridges
+
+--- PAGE 32 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Sizing
+BRKCOL-2228
+• Sizing depends on multiple factors
+1. Required call/ conference capacity
+2. Resiliency & load balancing
+3. Logical grouping (sites, etc.)
+4. Additional features (Streamer, Recorder, File Share, etc.)
+
+--- PAGE 33 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Capacity depending on selected hardware:
+Actual numbers can be found in Appendix „X“ named „Call Capacities by Cisco Meeting 
+Server platform“ in nearly all CMS guides
+Example:
+https://www.cisco.com/c/dam/en/us/td/docs/conferencing/ciscoMeetingServer/Deployment_Guide/Version-3-
+12/Cisco-Meeting-Server-3-12-Single-Split-Server-Deployment.pdf
+→ Appendix C
+*End of Sale Hardware
+Sizing
+BRKCOL-2228
+Cisco Meeting Server 
+platform
+Cisco Meeting 
+Server 1000 M6*
+Cisco 
+Meeting Server 
+Small M7
+Cisco Meeting 
+Server 2000 M6*
+Cisco Meeting 
+Server  Medium 
+M8
+Individual Meeting 
+Servers or Meeting 
+Servers in a cluster
+1080p30
+720p30
+SD
+Audio calls
+80
+160
+320
+3000
+120
+240
+480
+3000
+648
+1296
+1875
+3200
+225
+450
+850
+3000
+….. ….. ….. ….. ….. …..
+
+--- PAGE 34 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Sizing
+BRKCOL-2228
+If using virtualized environments:
+Cisco Collaboration Virtualization
+https://www.cisco.com/c/dam/en/us/td/docs/voice_ip_comm/uc_system/virtualization/cisco-collaboration-
+virtualization.html
+→ Installation guide for Cisco Meeting Server 1000/Small and virtualized deployments for version 3.12
+
+--- PAGE 35 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Sizing Best practices & Guidelines
+BRKCOL-2228
+• Up to 24 nodes/ Cluster BUT designs with 8 or more nodes/ Cluster 
+needs to approved by Cisco
+• Meeting Apps (File share, Surveys, Streamer & Recorder) have to be
+deployed on a dedicated node
+• If you need 2 dedicated interfaces in DMZ, use Expressway Edge
+• For resiliency use Call Bridge Cluster(s)
+• To avoid Call Bridge Overload configure at least 1 Call Bridge Group for
+load balancing
+
+--- PAGE 36 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Example Design
+Split Server
+BRKCOL-2228
+Session ID: BRKSEC-XXXX
+Internet
+DMZ
+Call Bridge
+Database
+Web Bridge MMP
+Web
+AdminCMS 1
+CUCM/ IM&P
+Cluster IP Phone
+Video Device
+Laptop/ PC
+LDAP AD Services 
+NTP, DNS, etc.
+Cisco Meeting 
+Management
+Call Bridge
+Database
+MMP
+Web
+AdminCMS 2
+Outside UserSIP User
+C
+Web Proxy TURN
+E
+Web Proxy TURN
+E
+C
+Call Bridge
+Database
+Web Bridge MMP
+Web
+AdminCMS 3
+Location A Location B
+CMS 4 RecorderCMS 5 Streamer
+CMS 6 MeetingApp
+CUCM/ IM&P
+Cluster
+
+--- PAGE 37 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Licensing
+BRKCOL-2228
+• Cisco Meeting Server still supports two methods of licensing
+• Local license mode
+No CMM needed, licenses are „installed“ on Callbridges
+• Smart licensing mode
+CMM needed, CMM connects to CSSM (Cisco Smart 
+Software Manager) or license reservation needed
+
+--- PAGE 38 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Licensing
+BRKCOL-2228
+• Smart licensing mode
+• Online Mode
+CMM connects to CSSM and syncs the needed licenses
+• Specific License Reservation (SLR)
+Challenge/ Response methode, no connection to CSSM needed.
+Add & change has to be done manually.
+• Permanent License Reservation (PLR)
+
+--- PAGE 39 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Licensing Deployment Methods
+BRKCOL-2228
+Direct cloud access
+Cisco product sends usage information directly over the internet, no additional components needed.
+Options
+Direct cloud access through an HTTPs proxy 
+Cisco Products send usage information over the internet via a Proxy Server – Smart Call Home Transport 
+Gateway (Free VM Download) or off-the-shelf Proxy (such as Apache).
+Mediated access through an on-premises collector – connected
+Cisco Products send usage information to a local connected collector, which acts as a local license 
+authority. Periodically, an exchange of information will be performed to keep the databases in sync.
+Mediated access through an on-premises collector –  disconnected
+Cisco Products send usage information to a local disconnected collector, which acts as a local license 
+authority. Once a month, an exchange of synchronization information will be performed to keep the 
+databases in sync.
+Ease of use
+1
+2
+3
+4
+License Reservation: (PLR / SLR) 
+Designed for highly secure intelligence and military environments where communications with outside is 
+difficult. Products will operate normally without ongoing communication to CSSMSM.
+5
+Security Policy
+
+--- PAGE 40 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Licensing
+BRKCOL-2228
+• Available licenses:
+• A-CMS-PMP - Personal Multiparty License
+• A-CMS-SMP - Shared Multiparty License
+• A-CMS-CUSTOM – Customization License
+• A-CMS-RECORDING – Recording-/ Streaming-Port License
+• A-CMS-SNAPSHOT – Snapshot Monitor License
+
+--- PAGE 41 ---
+02 – What has changed?
+
+--- PAGE 42 ---
+CMS & CMM 3.10 to 3.12
+Highlights
+
+--- PAGE 43 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Release-Overview
+BRKCOL-2228
+Major release
+3.10 3.11 3.12
+Q3 CY24 Q2 CY25 Q4 CY25
+3.10.1
+3.10.2
+3.11.1
+3.11.2
+3.12.1
+3.11.3
+All versions below 3.10 
+and End-of-Support
+3.11.4
+
+--- PAGE 44 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Software Lifecycle
+BRKCOL-2228
+3.10 3.11 3.12
+Announcement
+End-of-
+Software
+Maintenance
+Version 3.10
+3.9
+End-of-
+Software
+Maintenance
+Version 3.9
+Announcement
+End-of-
+Software
+Maintenance
+Version 3.9
+End-of-
+Software
+Maintenance
+Version 3.8
+Announcement
+End-of-
+Software
+Maintenance
+Version 3.8
+End-of-
+Software
+Maintenance
+Version 3.7
+Announcement
+End-of-
+Software
+Maintenance
+Version 3.7
+…..
+…..
+…..
+
+--- PAGE 45 ---
+Cisco Meeting Management (CMM)
+Highlights 3.10 to 3.12
+
+--- PAGE 46 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Per Participant Pane Placement
+BRKCOL-2228
+
+--- PAGE 47 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Per Participant Pane Placement
+BRKCOL-2228
+• Pane placements can now be applied at individual participant levels
+• Pane placement workflow is split into 2 steps:
+1. Create Pane Placement Models: Create up to 3 models
+2. Apply Pane Placement
+• All Participants
+• Group of Participants
+• Single Participants
+
+--- PAGE 48 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Layout/ Pane Placement for new participants 
+BRKCOL-2228
+• For every new participant entering, Video 
+Operators had to apply the meeting layout
+or pane placement again (CMM 3.10)
+• With this feature, this is reduced to single
+configuration step
+• Once set, any new participant entering the
+meeting will be given selected layout or
+pane placement
+• If both are set, pane placement takes precedence
+
+--- PAGE 49 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Video Mute On Entry
+BRKCOL-2228
+• Provides an option to Video Mute 
+participants when they enter the meeting
+Info:
+Participant Video may be visible for milli-seconds
+when Video Mute setting gets applied
+
+--- PAGE 50 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Message to all 
+BRKCOL-2228
+• CMM Admins/Video Operators can now
+send messages to all participants in the
+meeting
+• Select position and timer for the message
+• Message size up to 200 characters
+
+--- PAGE 51 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Participant Gain Adjustment
+BRKCOL-2228
+• CMM alongside CMS APIs will provide an 
+ability to adjust gain (+/-) for each
+participant
+• The gain controls how the CMS alters the
+audio stream received from the
+participant, and so affects how loud they
+sound to other conference participants
+Allowed Gains:
++6 dB = Actual volume * 4
++3 dB = Actual volume * 2
+0 dB = Automatic Gain (CMS default)
+-3 dB = Actual volume / 2
++6 dB = Actual volume / 4
+
+--- PAGE 52 ---
+Cisco Meeting Server (CMS)/ WebApp
+Highlights 3.10 to 3.12
+
+--- PAGE 53 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Jabber Presence set when in meeting
+BRKCOL-2228
+• Integration between Jabber IM&P and 
+CMS to update user presence when in 
+CMS web app meeting
+• CMS User ID must match Jabber JID to
+update presence
+• Presence status set to „In a meeting, In a 
+call“
+
+--- PAGE 54 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+TLS 1.3 Support
+BRKCOL-2228
+• Improved Security, TLS 1.3 more secured than TLS 1.0, 1.1 and 1.2
+• TLS 1.0 and 1.1 will soon be discontinued
+• Supported across all components
+• Call bridge
+• Web bridge
+• Scheduler
+• Recorder and Streamer
+• Database 
+• Enabled by default, negotiated to TLS 1.2 if remote end 
+does not support TLS 1.3
+
+--- PAGE 55 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+AV1 Codec
+BRKCOL-2228
+• To improve screen sharing quality in low
+bandwidth scenario, web app now
+supports AV1 codec for content sharing
+• Supported on all chromium-based
+browsers (Google Chrome/Edge)
+• Codec can be enabled/disabled through
+callbridge MMP command
+• Support for 1080p resolution over AV1
+MMP Config Command:
+cms01> callbridge av1 enable
+Callbridge Restart needed
+
+--- PAGE 56 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Space Access Control
+BRKCOL-2228
+• Provide ability for space owners to
+limit access to members of the space only
+• This helps secure space access to “non-
+members”
+• Web app provides a direct interface to limit
+the access
+• Pre CMS 3.12 behavior:
+If applied, members cannot join the
+meeting directly via link. They have to log 
+into web app and then ”Join” from space
+
+--- PAGE 57 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+User Identification on WebApp
+BRKCOL-2228
+• Web app users can now visually
+distinguish a non-signed in, a signed in 
+user or a SIP-user/ device from participant
+list of web app
+Signed-in user
+Non-signed-in user
+SIP user
+
+--- PAGE 58 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Rename Participants
+BRKCOL-2228
+• With appropriate
+permissions, meeting hosts
+can now change the display
+name for any participant from
+web app
+• Participant whose name is
+changed will get notified
+
+--- PAGE 59 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS/ CMM 3.10
+BRKCOL-2228
+
+--- PAGE 60 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS/ CMM 3.11
+BRKCOL-2228
+
+--- PAGE 61 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS/ CMM 3.12
+BRKCOL-2228
+
+--- PAGE 62 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Future Releases
+BRKCOL-2228
+3.12
+Major release
+Q2 CY25
+3.11
+Q4 CY25
+3.13 4.0 4.1
+Q1 CY26 Q2/3 CY26 Q3 CY26
+3.11.1
+3.11.2
+3.12.1
+3.11.3
+You are here
+3.11.4
+3.11.5 Only apply to CMS Medium M8
+Beta
+
+--- PAGE 63 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Future Releases
+BRKCOL-2228
+3.12
+Major release
+Q2 CY25
+3.11
+Q4 CY25
+3.13 4.0 4.1
+Q1 CY26 Q2/3 CY26 Q3 CY26
+You are here
+Deprecation Note:
+CMS 3.13 will be the final release in 3.x series with SfB support.
+CMS 4.0 and ongoing will not include native SfB gateway support
+CMS 3.13 will be the final release in 3.x series with local license mode
+CMS 4.0 and ongoing will support Smart Licensing with all previously
+mentioned modes (online, SLR & PLR)
+Beta
+
+--- PAGE 64 ---
+03 – Hardware
+
+--- PAGE 65 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS EoS Hardware
+BRKCOL-2228
+• CMS 1000 M6 EoS Announcement
+https://www.cisco.com/c/en/us/products/collateral/conferencing/meeting-
+server/meeting-server-1000-m6-eol.html
+Announcement date: 16. June 2025
+End of Support: 30. Sep. 2030
+Replacement: Cisco Meeting Server M7 Small
+• CMS 2000 M6 EoS Announcement
+https://www.cisco.com/c/en/us/products/collateral/conferencing/meeting-
+server/meeting-server-2000-m6-eol.html
+Announcement date: 01. Oct. 2025
+End of Support: 31. Dec. 2030
+Replacement: no direct replacement
+
+--- PAGE 66 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS Hardware Architecture
+Simplify Architecture and Deployment
+BRKCOL-2228
+CMS M7 Small
+ CMS M8 Medium
+→ Simplification of architecture and deployment
+
+--- PAGE 67 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS Hardware Architecture
+Simplify Architecture and Deployment
+BRKCOL-2228
+Component CMS 2K CMS 1K/ 
+virtualized
+Call Bridge available available
+Web Bridge 3 available available
+Database available available
+Scheduler available available
+TURN Server not available available
+Recorder not available available
+Uploader not available available
+Streamer not available available
+SNMP MIB not available available
+Component All 
+deployments
+Call Bridge available
+Web Bridge 3 available
+Database available
+Scheduler available
+TURN Server available
+Recorder available
+Uploader available
+Streamer available
+SNMP MIB available
+
+--- PAGE 68 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS Hardware performance
+BRKCOL-2228
+Appliance Model Video Resolution Port Capacity
+CMS Small M7 1080p60 60
+1080p30 120
+720p30 240
+SD 480
+Audio Calls 3000
+CMS Medium M8* 1080p60 150
+1080p30 225
+720p30 450
+SD 850
+Audio Calls 3000
+* Capacitiy increase expected with CMS 4.x release
+
+--- PAGE 69 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+General Collaboration Hypervisor Strategy
+BRKCOL-2228
+Hardware
+Hypervisor
+Deployment
+Existing Hardware
+Stay On VMware
+Available Today
+1
+
+--- PAGE 70 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+General Collaboration Hypervisor Strategy
+BRKCOL-2228
+Hardware
+Hypervisor
+Deployment
+Existing Hardware
+Stay On VMware Go to Webex Cloud
+Available Today Available Today
+1 2
+
+--- PAGE 71 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+General Collaboration Hypervisor Strategy
+BRKCOL-2228
+Hardware
+Hypervisor
+Deployment
+Selected Cisco Hardware 
+Servers – BE6K/7K (UCS-C 
+Appliance) M5/M6, M7 Later
+CE1400V M7
+Existing Hardware
+Stay On VMware Go to Webex Cloud Cisco Hypervisor
+Available Today Available Today Q1-Q4 CY26
+1 2 3
+
+--- PAGE 72 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+General Collaboration Hypervisor Strategy
+BRKCOL-2228
+Hardware
+Hypervisor
+Deployment
+Selected Cisco Hardware 
+Servers – BE6K/7K (UCS-C 
+Appliance) M5/M6, M7 Later
+CE1400V M7
+Cisco Compute Hyperconverged
+Servers - HCI/UCS-C
+M6/M7
+HCI-X/UCS-X M7
+Existing Hardware
+Stay On VMware Go to Webex Cloud Cisco Hypervisor Nutanix
+Available Today Available Today Q1-Q4 CY26 Q1-Q4 CY26
+1 2 3 4
+AHV, AOS, Prism
+Nutanix NCI
+
+--- PAGE 73 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS Hypervisor Strategy
+BRKCOL-2228
+Hardware
+Hypervisor
+Deployment
+Spec-based 
+Hardware
+Stay On VMware
+Available Today
+1
+Application CMM/ CMS
+
+--- PAGE 74 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS Hypervisor Strategy
+BRKCOL-2228
+Hardware
+Hypervisor
+Deployment
+Cisco Compute Hyperconverged
+Servers - HCI/UCS-C
+M6/M7
+HCI-X/UCS-X M7
+Spec-based 
+Hardware
+Stay On VMware Nutanix
+Available Today Q1/Q2 CY26
+1 4
+Application CMM/ CMS CMM/ CMS
+3.13 onwards
+AHV, AOS, Prism
+Nutanix NCI
+
+--- PAGE 75 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS Hypervisor Strategy
+BRKCOL-2228
+Hardware
+Hypervisor
+Deployment
+Selected Cisco Hardware 
+Servers – BE6K/7K M7+
+(UCS-C Appliance)
+Cisco Compute Hyperconverged
+Servers - HCI/UCS-C
+M6/M7
+HCI-X/UCS-X M7
+Spec-based 
+Hardware
+Stay On VMware Cisco Hypervisor Nutanix
+Available Today Q3 CY26
+1 3 4
+Application CMM/ CMS CMM
+4.0 onwards
+CMM/ CMS
+3.13 onwards
+AHV, AOS, Prism
+Nutanix NCI 
+Q1/Q2 CY26
+
+--- PAGE 76 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS Hypervisor Strategy
+BRKCOL-2228
+Hardware
+Hypervisor
+Deployment
+Cisco Compute Hyperconverged
+Servers - HCI/UCS-C
+M6/M7
+HCI-X/UCS-X M7
+AHV, AOS, Prism
+Nutanix NCI 
+Spec-based 
+Hardware
+Stay On VMware Cisco Hypervisor Nutanix
+Available Today Q3 CY26
+1 3 4
+Application CMM/ CMS CMM
+4.0 onwards
+CMM/ CMS
+3.13 onwards
+Selected Cisco Hardware 
+Servers – CMS Small M7, 
+CMS Medium M8
+Q3 CY26
+2
+CMS
+4.0 onwards
+Bare Metal
+Not
+Applicable
+Selected Cisco Hardware 
+Servers – BE6K/7K M7+
+(UCS-C Appliance)
+Q1/Q2 CY26
+
+--- PAGE 77 ---
+04 – TMS is passing away
+
+--- PAGE 78 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+TMS is passing away
+BRKCOL-2228
+• EoS Announcement:
+https://www.cisco.com/c/en/us/products/collateral/c
+onferencing/telepresence-management-suite-
+tms/telepresence-management-system-eol.html
+• End of Software Maintenance:
+May 2026
+• End of Support
+May 2027
+
+--- PAGE 79 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Plan ahead….
+BRKCOL-2228
+
+--- PAGE 80 ---
+05 – What’s next?
+
+--- PAGE 81 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Delivering a seamless, reliable meeting platform 
+that sets new standards for quality and stability, 
+with intuitive, AI-powered experiences inspired by 
+Webex.
+Vision & Strategy
+BRKCOL-2228
+
+--- PAGE 82 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS 4.0 & Forward looking
+Improving user experience across
+BRKCOL-2228
+A Fresh Look (Inspired by Webex)
+• Join experience updates
+• In meeting updates
+Improved Quality and Stability
+• Webex Media Framework: Revamped 
+for CMS
+• Media Resiliency with TWCC and MARI
+• Video layouts (just like Webex)
+AI Powered
+• Noise Removal (Client and Sever side)
+• Improved background blur
+
+--- PAGE 83 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS 4.x Callouts
+• Media Framework
+• Webex Media framework replicated on CMS to provide similar meeting 
+quality as webex.
+• Introduces latest resiliency protocols for both web app and SIP endpoints
+• Enhanced MARI/TWCC for web app
+• FEC and RTX used when SIP devices support them
+• No more legacy codecs
+• Removal of legacy codecs like CN, H263+. 
+• Focused investment on H264/AV1 for Video, Opus for Audio and AV1 for 
+content share
+BRKCOL-2228
+
+--- PAGE 84 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS 4.x Callouts
+• Refreshed UI
+• Web app meeting experience just like Webex
+• Improved Security
+• TLS1.2 default transport mechanism. 
+• Discontinue TLS 1.0/1.1
+• Support for TLS1.3 for all services
+• UEFI boot and secure boot and storage
+• Latest cryptographic ciphers
+BRKCOL-2228
+
+--- PAGE 85 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS 4.x Callouts
+• There is one more thing!
+BRKCOL-2228
+
+--- PAGE 86 ---
+Webex Private AI
+Powered by Cisco AI PODs
+
+--- PAGE 87 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+ BRKCOL-2228
+Realtime Closed Captions Demo
+
+--- PAGE 88 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+ BRKCOL-2228
+
+--- PAGE 89 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CMS Meeting with AI POD On-Premise
+BRKCOL-2228
+Webex Private AI POD
+UCS C240 M8 Rack Server w/ NVIDIA RTX Pro 6000 GPU
+CMS Application
+CMS Medium/Small + CMS VM + CMS 2K
+Completely On-Premise | Air-Gapped
+• Real-Time Closed Captioning
+• Transcription
+• Translation
+• Summarization
+Audio
+Video
+Transcriptions, Summaries
+Future
+Committed
+
+--- PAGE 90 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+   
+Webex Private AI on Cisco AI POD
+Purpose-Built 2RU Form Factor AI Hardware​
+Built to provide introductory AI capabilities to power 
+meeting experiences on Cisco meeting server/Video 
+Mesh.
+AI Capabilities (To be supported)
+- Real Time Transcriptions (Day 1)
+- Batch Transcriptions
+- Batch Summaries, Action items
+- Real Time Summaries (a.k.a. “Catch me up”)
+• We will be publishing capacity estimates for each 
+capabilities running on version 1.0 reference 
+hardware
+• Customers can scale up their deployments by 
+adding more nodes 
+ UCS C240 M8 Rack Server AI POD
+Collab AI
+Factory Installed Software Licensed
+         
+             
+        
+ASR Summaries Translation Catch me
+BRKCOL-2228
+2 x NVIDIA RTX Pro 6000
+
+--- PAGE 91 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Software Licensing
+• Getting Started: Platform will offer 60-day trial mode with no CAP on 
+usage
+• Simplified Licensing for predictable consumption
+• Real Time Assistant License → Covers all AI features that could be 
+used in an “on-going” meeting/call.
+• On-Demand Assistant License → Covers all AI features that could 
+be used for “post” meeting/call.
+BRKCOL-2228
+
+--- PAGE 92 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Do you want to know
+more?
+BRKCOL-2228
+Visit the showcase for a demo
+• Feature-Proof Workspaces: 
+Supercharge Collaboration with AI
+• AI-Ready Data Center: Accelerate AI 
+Deployments
+
+--- PAGE 93 ---
+06 – Conclusion
+
+--- PAGE 94 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Key Takeaways
+BRKCOL-2228
+• Cisco Meeting Server is more alive than ever
+• We’re modernizing the User Experience
+• Bringing advanced features and AI capabilities
+• Cisco has a strong commitment and strategy for CMS and the other on-premise 
+collaboration products
+
+--- PAGE 95 ---
+07 – References
+
+--- PAGE 96 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Other related Cisco Live 2026 Sessions
+BRKCOL-2228
+• [LTRCOL-2574] - A Hands-on Approach to Automation with Cisco 
+Collaboration APIs
+• [BRKCOL-2076]  - Cisco Unified Communications Manager (CUCM) Platform 
+Update for On Premise Calling and Webex Calling Dedicated Instance (DI)
+• [BRKCOL-2125] - Expressway Architectural Update
+• [BRKCOL-2143] - Troubleshooting the Session Initiation Protocol (SIP) 
+• [BRKCOL-2166] - Understanding how Provision and Single Sign-On works for
+Collaboration
+• [BRKCOL-2226] - Unified CM Security Architecture: Technical Foundations for
+Deployment
+
+--- PAGE 97 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+References
+BRKCOL-2228
+• Cisco Meeting Server 3.12, Single Split Server Deployment Guide
+https://www.cisco.com/c/dam/en/us/td/docs/conferencing/ciscoMeetingServer/Deployment_Guide/Version-3-
+12/Cisco-Meeting-Server-3-12-Single-Split-Server-Deployment.pdf
+• Cisco Meeting Server 3.12 Scalability and Resilience Deployment Guide
+https://www.cisco.com/c/dam/en/us/td/docs/conferencing/ciscoMeetingServer/Deployment_Guide/Version-3-
+12/Cisco-Meeting-Server-3-12-Scalable-and-Resilient-Deployment.pdf
+• Cisco Meeting Server 3.12 with Cisco Unified Communications Manager 
+Deployment Guide
+https://www.cisco.com/c/dam/en/us/td/docs/conferencing/ciscoMeetingServer/Deployment_Guide/Version-3-
+12/Cisco-Meeting-Server-3-12-with-CUCM-deployment.pdf
+• Cisco Meeting Server 3.12 Deployments with Expressway Planning and 
+Preparation Guide
+https://www.cisco.com/c/dam/en/us/td/docs/conferencing/ciscoMeetingServer/Deployment_Guide/Version-3-
+12/Cisco-Meeting-Server-Deployment-Planning-and-Preparation-with-Expressway-Guide.pdf
+
+--- PAGE 98 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+References
+BRKCOL-2228
+• Cisco Meeting Server 3.12 White Paper on Load Balancing Calls Across Cisco 
+Meeting Servers
+https://www.cisco.com/c/dam/en/us/td/docs/conferencing/ciscoMeetingServer/White_papers/Load-balancing-calls-
+across-Meeting-Servers-3-12-white-paper.pdf
+• Cisco Meeting Server 3.11 and later, Certificate Guidelines for all deployments
+https://www.cisco.com/c/dam/en/us/td/docs/conferencing/ciscoMeetingServer/Deployment_Guide/Version-3-
+11/Certificate-Guidelines-for-all-Deployments-3-11.pdf
+• Cisco Meeting Server 3.12, Single Combined Server Deployment Guide
+https://www.cisco.com/c/dam/en/us/td/docs/conferencing/ciscoMeetingServer/Deployment_Guide/Version-3-
+12/Cisco-Meeting-Server-3-12-Single-Combined-Server-Deployment.pdf
+
+--- PAGE 99 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Complete your session surveys
+BRKCOL-2228
+Complete your surveys in the Cisco Events 
+App.
+Complete a minimum of 4 session surveys and 
+the overall event survey to receive a unique 
+Cisco Live t-shirt. 
+(from 11:30 on Thursday, while supplies last)
+
+--- PAGE 100 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Book your one-on-one 
+Meet the Engineer 
+meeting
+Visit the Technical
+Solutions Clinics to 
+discuss your technical 
+questions
+Attend the interactive 
+education with DevNet, 
+Capture the Flag, and 
+Walk-in Labs
+Visit the On-Demand 
+Library for more 
+sessions at 
+CiscoLive.com/On-
+Demand
+Visit the Cisco 
+Showcase for related 
+demos
+Continue your education
+BRKCOL-2228
+Contact me at: Webex sboerdin@cisco.com
+
+--- PAGE 101 ---
+Thank you
+
+--- PAGE 102 ---

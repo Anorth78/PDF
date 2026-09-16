@@ -1,0 +1,1980 @@
+--- PAGE 1 ---
+Cisco Calling, from Premise to 
+Cloud
+BRKCOL-1527
+Amy Ryan
+Principal Solutions Engineer
+November 12, 2025
+
+--- PAGE 2 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Enter your personal notes here
+Catalyst 9000 Series Switching Family - …
+Cisco Webex App
+Questions? 
+Use Cisco Webex App to chat 
+with the speaker after the session
+Find this session in the Cisco Live Mobile App
+Click “Join the Discussion”
+Install the Webex App or go directly to the Webex space
+Enter messages/questions in the Webex space
+How
+Webex spaces will be moderated by the speaker until 14 November 2025.
+1
+2
+3
+4
+https://ciscolive.ciscoevents.com/
+ciscolivebot/#BRKCOL-1527
+BRKCOL-1527
+
+--- PAGE 3 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Agenda 01 Introduction
+02 On-Premises Strategy
+03 Platform Strategy 
+04 Cloud Calling
+05 Enabling Hybrid
+06 AI in Calling
+07 Elevating Customer Experience
+08 Closing
+BRKCOL-1527
+
+--- PAGE 4 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Cisco Calling
+30M+
+Cisco UCM
+50M+
+Cisco Cloud
+(Cisco and partner hosted)
+18M+
+Webex Calling
+Market leadership
+Commitment to ongoing investment
+Customer choice and flexibility
+BRKCOL-1527
+
+--- PAGE 5 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+What is the WAY 
+Forward?
+SaaS On PremHybrid
+BRKCOL-1527
+
+--- PAGE 6 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+CISCO CALLING
+Any deployment. Any time.
+On-Premises
+Ongoing investment
+Federal Certifications
+Hypervisor flexibility
+Enhanced Jabber experience
+Hybrid
+PSTN trunking
+Cloud Connected-UC
+Sovereign controls
+Local compliance
+Cloud
+Dedicated Instance
+Multi-tenant
+On-Premise Survivability
+99.999% Calling SLA
+BRKCOL-1527
+
+--- PAGE 7 ---
+Empowering Long Term On-
+Premises Strategy
+
+--- PAGE 8 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Cisco UCM Release Strategy
+End-of-life milestones by version
+Products that this timing applies to:
+• UCM - Unified Communications Manager 
+• SME – Session Management Edition
+• IM&P – Instant Messaging & Presence service
+• CUC - Unity Connection
+• CER - Cisco® Emergency Responder
+• PCD - Prime Collaboration Deployment
+• Elements of Webex Calling Dedicated Instances, 
+UCMC-G, Webex Contact Center Enterprise
+Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 Q1 Q2
+CY 2023 CY 2024 CY 2025 CY 2026 CY 2027
+General availability
+End of Life announcement
+End of Sale
+End of Software Maintenance
+Last date of support
+UCM 15
+These dates are 
+subject to change.
+Q1Q4
+SU1 SU2
+Q3
+UCM 12.5
+Mar Aug AugAug
+SU7a
+UCM 14
+Oct AprApr
+SU3
+Apr
+UCM 11.5
+May
+SU8a SU9
+(last for 12.5)
+SU4
+No security or bug fixes
+No security or bug fixes
+No security or bug fixes
+You are here
+Q3
+SU3 SU4
+Q1 H2
+SU5
+BRKCOL-1527
+
+--- PAGE 9 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Continued investment in CUCM for long term 
+supportability
+Unified Communications Manager Development Themes
+Delivering the best
+user experiences
+Enhancing security
+and compliance
+Connections to 
+Cloud
+Simplifying UC
+administration
+300+
+Security updates
+400K+
+Hours of developmentPortfolio enhancements 
+since v14
+125+
+BRKCOL-1527
+
+--- PAGE 10 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+15 SU4 (pre-FCS, target Q3FY26)
+Admin Simplicity • Alternate Hypervisor Support (NFVIS-for-UC, 
+Nutanix)
+• Appliance preload w/ NFVIS (~2HCY26)
+• CER: M2 Migration Support
+• CUC  / IM&P: EWS to Graph API Migration
+• UCM: NSE fax/modem pass thru support
+• Cisco Contact Center SIP Proxy (Q2FY26)
+• CUBE,SRST NextGen C8375-E-G2 Crestone 
+platform support (Q2FY26)
+Client and User 
+Experience
+• Accessibility Improvements
+Security and 
+Compliance
+• Jabber SDK support with Oauth 1.0 SSO in redirect 
+URI
+• Federal Certifications
+• Security Improvements
+Cloud Enablement • MS Teams Integration
+• Webex Cloud-Connected UC
+UCM 15 SU4 - UCM, CUC, CER, BE6K/7K 
+15SU4 (pre-FCS)
+• New Hypervisors!
+• Easier Migrations.
+Action to take
+• Upgrade to SU4 if need 
+ESXi alternatives.
+Roadmap
+Subject 
+to change
+BRKCOL-1527
+
+--- PAGE 11 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Let the Celebration Begin……. 
+BRKCOL-1527
+
+--- PAGE 12 ---
+Platform Strategy 
+New Hypervisor plans - Tackle 
+VMware disruption
+
+--- PAGE 13 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+New On-premise Hypervisor Strategy
+CPS 15
+CUACA 14
+Hardware on ESXi HCL
+UCM, IMP, CUC, CER, DI ESN, SME 15 SU4 
+Expressway   X15.4
+Nutanix NCI 
+Software
+(AHV + AOS + 
+Prism Central)
+Target beta Q4CY25
+Target FCS Q1CY26
+Cisco 
+NFVIS-for-UC
+vSphere 
+ESXi
+Cisco Compute Hyperconverged 
+with Nutanix (CCHN)
+Supported today
+Cisco CCHN 
+Hardware
+Cisco Appliance Hardware
+(BE6K/7K M5/M6/M7, 
+CE1400V)
+Target beta eoCY25
+Target FCS Q2CY26
+Roadmap
+ 
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 14 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Cisco NFVIS-for-UC addresses UC-centric use cases
+Cisco BE6K/7K, CE1400V only
+NFVIS
+Incumbent Hardware
+Cisco Collab appsRest of business apps
+Customer’s On-premises Infrastructure
+Targets limited-purpose needs.
+• OK with carving out Cisco Collab, run 
+on mandated Cisco infra.  Do what you 
+need to for rest of environment.  
+• OK with Cisco Collab-only workloads.
+• OK with select Cisco hardware only.
+• Does NOT require advanced 
+hypervisor features.
+• Best fit for UC-centric deployments 
+like appliances, typical customers with 
+<1K-5K phones, separate UC depts in 
+larger enterprise/SP.
+• Cisco NFVIS not targeting parity with 
+3rdparty hypervisor products or solving 
+for “pan-Cisco” needs.
+BRKCOL-1527
+
+--- PAGE 15 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+CCHN addresses DC-centric use cases
+Customer’s On-premises Infrastructure
+Targets general-purpose needs.
+• Needs common infra for Cisco 
+Collab & all other workloads.
+• Needs 3rdparty workload support 
+• Needs 3rdparty hardware support
+• Needs hypervisor-layer advanced 
+deploy/operate/manage features.
+• Best fit for datacenter-centric 
+deployments like large enterprise/SP 
+with 20Ks-100K’s of users or  
+separate admins for applications vs. 
+infra.
+• If ESXi off-limits, only way we plan 
+to address general-purpose needs.
+Nutanix AHV + AOS + Prism Central Software
+Initially Cisco HCI/HCIX only, After AHV experience/proven, 
+consider 3rdparty on Nutanix HCL
+Roadmap
+ 
+Subject to 
+Change
+“Interleaved” Cisco Collab & other business apps
+BRKCOL-1527
+
+--- PAGE 16 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+NFVIS-for-UC Discovery Checklist
+Product Support Entitlements • Ensure Collaboration Flex Subscription in place.
+• Ensure NFVIS-for-UC Subscription in place.
+On Prem Applications
+• ID your Cisco Apps that will support NFVIS-for-UC.
+• Other Cisco/3rdparty/homegrown apps need to stay ESXi or 
+do something else.
+Scope of Migration
+• Apps will need to upgrade to 15 SU4, with all that entails.
+• ESXi > NFVIS-for-UC is a replatform, with all that entails.
+• Anything else? (site move, change HW, readdress?)
+NFVIS-for-UC Version • 4.18.x required (FCS will determine min release & 
+compatibility matrix plans).
+Hardware • HW SN in CCW-R must be BE6K/7K or CE1400V.
+• CIMC Base PID must show as BE6K/7K or CE1400V.
+• Exact components loadout required.  HUU/CIMC/BIOS update?
+End Points / Devices • Mainly to see if any gotchas vs. 15 SU4.
+Similar to UCM 15 upgrade 
+discovery checklist.
+BRKCOL-1527
+
+--- PAGE 17 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Applications Supported on NFVIS-for-UC 
+Calling
+CUCM 
+ 15 SU4
+Expwy 
+ X15.4
+CER
+15 SU4
+CUC 
+ 15 SU4
+ CPS
+IMP
+ 15 SU4 SME 
+15 SU4
+CUACA
+DI ESN
+15 SU4
+Contact Center
+UCCX suite
+Meetings
+Target Q1CY26 Planned, pre-commit Investigating, TBD
+CMM
+NOT Planned:
+• PCD
+• IOS UC (CME, CUE, 
+SRST, CUBE, CUSP) 
+• CMS
+• TMS (EOL)
+• UCCE Suite
+• Anything else unlisted
+VMN
+BRKCOL-1527
+
+--- PAGE 18 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+NFVIS-for-UC Supported Hardware
+Calling
+Target Q1CY26 Planned, pre-commit NOT Planned:
+• General-purpose hardware
+• UCS C/B/X/E/S-Series 
+• HX/HCI/HCIX-Series
+• Expanded models or 
+peripherals
+• 3rdparty compute
+• 3rdparty storage 
+(NAS, SAN, HCI)
+• Mods to BE6K, BE7K, 
+CE1400V appliance 
+hardware loadouts.
+• Anything else unlisted.
+BE7M-M5-K9
+BE7H-M5-K9
+BE6M-M5-K9
+BE6H-M5-K9
+NFVIS-for-UC
+or
+NFVIS-for-UC
+only
+Appliance refresh
+to M8
+BE7M-M6-K9
+BE7H-M6-K9
+BE6K-M6-K9
+BE6K-M7-K9BE7M-M7-K9
+BE7H-M7-K9
+CE1400V-M7-K9
+vSphere ESXi
+BRKCOL-1527
+
+--- PAGE 19 ---
+Cloud Calling
+
+--- PAGE 20 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+WxMeetings
+Video Mesh
+WxC Site 
+Survivability
+Webex Architecture
+Local Gateway
+Webex Unified Edge
+Webex Control Hub and Partner Hub
+Meetings
+CallingCPaaS
+Dedicated
+Instance
+Messaging
+Webex App
+Webex
+Desk
+Desk
+Phones
+ATAs DECT & Wi-Fi
+Phones
+Cisco
+Calling Plans
+Cloud
+Connected PSTN
+ByoPSTN
+CUBE 3rd Party SBC
+Browser Clients
+Premise Server
+Components
+CUCM
+CUBE
+Hybrid Data 
+Security
+Shared
+Services
+Control Hub:
+Single pane of glass
+Common Identity
+Single Sign On
+Endpoints and Clients:
+Rich portfolio of hardware endpoints
+Mobile and Desktop Webex App
+Pure Browser clients
+Unified Edge:
+Common Edge across portfolio
+Access and PSTN connectivity
+Flexible PSTN Options:
+Cisco Calling Plans
+Cloud Connected PSTN
+Local Gateway ByoPSTN
+Advanced Hybrid Features:
+Hybrid Data Security (on-prem KMS)
+Video Mesh
+Webex Calling Site Survivability
+Local Gateway Enterprise PBX
+Multi-Tenant 
+CUCM
+Node
+Vidcast
+Contact
+Center
+Meetings Messaging Calling Webinars Events Polling Video MessagingWhiteboarding
+Polling
+Webinars
+Events
+BRKCOL-1527
+
+--- PAGE 21 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+What is Webex Edge Connect?
+Answer: One or more private network peering connections to Webex
+Benefits:
+• Direct connection to the Webex backbone for services
+• A dedicated, consistent, reliable, high-quality secure meeting and calling experience
+• Provides protection from the public Internet and the potential threats and attacks associated with the Internet.
+• Connectivity through a cloud exchange provider only:
+• Equinix or Megaport
+• Options from 200MB to 10 GB connection speed to Webex
+• Able to upgrade speed after initial purchase
+• Able to upgrade speed after initial purchase
+Webex
+Cloud Exchange ProviderCustomer 
+Meetings
+Calling
+BRKCOL-1527
+
+--- PAGE 22 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+PSTN Options for Webex Calling 
+Available in 195+ Markets
+Continue using your existing 
+provider
+Support remote branch offices
+Manage phone numbers Control 
+Hub
+Third Party SBC support
+Available in over 65 countries
+Select from 30+ world-class Cisco-
+certified providers
+Choose providers on a site-by-site 
+basis
+Manage numbers in Control Hub
+Available in the U.S., Canada, 
+Europe, Australia and New Zealand
+Single offer through Cisco and our 
+partners
+Fully integrated and managed from 
+Control Hub
+Cisco Calling Plans
+(Cisco PSTN)
+Cloud Connect for 
+Webex Calling
+Premises PSTN
+Access
+Network
+Peering
+network
+CCP
+PSTN 1
+CCP
+PSTN 2
+Local
+Gateway
+PSTN
+Cisco 
+Calling 
+Plans
+BRKCOL-1527
+
+--- PAGE 23 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Cloud Connect for Webex Calling
+BRKCOL-1527BRKCOL-1527© 2025 Cisco and/or its affiliates. All rights reserved.
+
+--- PAGE 24 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Survivability for Webex Calling and Dedicated Instance
+Works just like SRST does 
+now
+Supports both the Webex 
+App and Devices
+Supported on Physical and 
+Virtual ISR’s
+No configuration to manage 
+but Dial Plans
+Calling works over secondary 
+Internet connections
+Calls will heal and re-connect 
+when primary outage happens
+Webex Calling supports Highly 
+Latent Environments
+Network Path FirstSurvivable Appliance
+Local
+Gateway
+PSTN
+Enhanced Survivability 
+Node
+Local
+Gateway
+PSTN
+ESN
+With Dedicated instance, fully 
+operational Subscriber when 
+Active
+Supports all typical CUCM
+Fully Managed by the Cloud, 8 
+Nodes supported per cluster
+BRKCOL-1527
+
+--- PAGE 25 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Site Survivability Multiple Locations per Gateway
+• Allows customers the ability to map multiple smaller 
+Webex Calling Locations to a single Site Survivable 
+Gateway (SGW)
+• Smaller Locations allow flexibility in grouping users to 
+specific Calling permissions, MoH,  Device Templates, 
+PSTN etc 
+• Removes the 1-Location to 1-SGW  mapping 
+requirement from before
+• Enables better gateway resource utilization, by allowing 
+smaller Locations (e.g. within a same campus or close 
+proximity) to use a single gateway for failover.
+• Reduced CapEx with a smaller set of gateways 
+• Lesser admin overhead of managing multiple gateways
+Location1 Location2
+PSTN
+X
+Site Survivability 
+Gateway (SGW)
+Access NW
+Roadmap
+ FY26Q1
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 26 ---
+Administration
+
+--- PAGE 27 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Integrated
+Control Hub
+Complete lifecycle
+Supports full Webex 
+portfolio
+Realtime insights
+Simple
+ ThousandEyes 
+integration
+BRKCOL-1527
+
+--- PAGE 28 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Thousand Eyes Integration for Calling
+Troubleshoot all hops in the network path for poor audio issues in calls
+Available 
+Now
+BRKCOL-1527
+
+--- PAGE 29 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+ © 2025 Cisco and/or its affiliates. All rights reserved. Cisco Public 34
+Quickly identify and resolve call quality issues
+Call quality troubleshooting 
+Troubleshooting tool provides 
+admins with:
+• Ability to identify calls with 
+poor-call quality
+• Information about both 
+sides of the call and the 
+network in between
+• Callers with the worst 
+experience listed in Calling 
+Analytics dashboard for 
+quick troubleshooting
+• ThousandEyes integration
+BRKCOL-1527
+
+--- PAGE 30 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+ © 2025 Cisco and/or its affiliates. All rights reserved. Cisco Public 35
+Immediate notifications when call quality 
+issues occur
+Call quality notifications 
+Call quality notifications:
+• Provide immediate, 
+automatic notifications 
+when call quality issues 
+occur for target users or 
+sites
+• Admins can identify ”VIP” 
+users and are alerted when 
+these users experience call 
+quality issues
+• Admins can be alerted with 
+call quality at a site passes 
+below a threshold
+• Monitor up to 30 users or locations
+• Define call quality rules that trigger alerts 
+BRKCOL-1527
+
+--- PAGE 31 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Custom Roles in Control Hub
+Ability to define administrative roles based on permissions
+Create your own admin role and assign 
+specific permissions to the role:
+• User Management
+• Device Management
+• Calling
+• PSTN
+• Compliance Officer
+• And more permissions to come 
+(continued phased delivery)
+Available 
+Now
+BRKCOL-1527
+
+--- PAGE 32 ---
+Enabling Hybrid 
+Drive Higher Value from Cloud 
+for your On-Prem deployment
+
+--- PAGE 33 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+ © 2025 Cisco and/or its affiliates. All rights reserved. Cisco Public 39
+Meeting you where you are
+Cisco Calling
+Webex Calling Hybrid
+Cloud Connected
+Webex Calling
+Cloud
+Cisco Unified 
+Communications Manager
+Premises
+BRKCOL-1527
+
+--- PAGE 34 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Simplifying the transition to the cloud
+Cisco UCM Cloud calling Room device Messaging
+Single 
+Platform
+Advantage
+Hybrid-migration journeys from on-prem PBX to native cloud 
+site by site, or user by user with full collaboration suite
+*dependent on deployment model and devices
+Third-party PBX
+Webex 
+Cloud
+40
+Hybrid and advanced calling features 
+maximise ROI and flexibility – no 80/20 rule
+Centralised enterprise dial plans
+• Configure advanced Enterprise dial plans to optimise on-network call 
+routing
+Trunks and route groups
+• Geo-redundant routing policies for enterprise trunks
+• Scale call traffic to the PSTN using geo-redundant trunk groups across 
+enterprise sites
+Media optimisation 
+• ICE for calling media 
+• Regional media for cloud connected PSTN
+Centralised calling analytics 
+• Usage, call quality*
+BRKCOL-1527
+
+--- PAGE 35 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Webex Cloud-Connected UC & Hybrid Services
+Unified 
+Communications 
+Manager (UCM)
+Unity 
+Connection
+Emergency 
+Responder
+Endpoints & 
+Headsets
+                   
+                     
+                              
+                     
+                        
+                     
+                   
+                     
+                   
+                     
+UCM IM & 
+Presence
+CCUC AGENT Connection
+Certificate Management Migration Tools
+Troubleshooting Webex® App Auto-Provisioning
+Analytics MS Teams “Presence” Integration 
+(WxApp), Call History, Voicemail
+WebRTMT
+Touchless Provisioning for Webex App Directory Service - Azure AD  Support
+Borderless CTI Rich Presence for Webex App
+Webex App Centralised Call History Speechview Voicemail Transcription
+Calendar 
+Video Mesh 
+Hybrid Data 
+Security 
+Calendar to Exchange
+Keep Video on-prem
+KMS and Secure Index to prem
+Enhanced Survivability
+CCUC Hybrid Services
+Supercharge 
+your on-
+premises calling 
+with the power 
+of cloud
+BRKCOL-1527
+
+--- PAGE 36 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Webex Cloud-Connected UC
+A suite of Webex® cloud services that provide 
+enhanced business and operational insights to 
+improve administrative productivity
+For customers who:
+• Want the centralized administrative workflow 
+experience of the cloud, while keeping their UC 
+services on-premises
+• Need a single global view to manage on-premises 
+UC, along with any Webex cloud, or hybrid 
+services
+• Desire efficient, cloud-based admin services 
+(delivered by partner) for an on-premises CUCM 
+deployment
+• Ease my journey on-prem➔”hybrid”➔cloud
+• CCUC-powered “migrate to Webex” features.
+Endpoints 
+& Headsets
+Unified 
+Communications 
+Manager (UCM)
+UCM                 
+IM & 
+Presence
+Unity 
+Connection
+Cisco 
+Emergency 
+Responder 
+(CER)
+Operations 
+Dashboards
+Analytics
+Troubleshooting
+Certificate 
+Management
+Web RTMT
+Webex App 
+Auto-provisioning 
+See CCUC System Requirements and CCUC Network Requirements
+BRKCOL-1527
+
+--- PAGE 37 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Webex Cloud-Connected UC (cont’d) – Key Features
+Analytics
+(call quality, traffic analysis, trunk usage, device usage)
+Certificate Management
+(central view/distribute across apps/clusters)
+Ops Dashboard with WebRTMT
+(near-real-time view in CH not thick-client of last hour's call status 
+& audio quality for top 5 UCM clusters)
+Troubleshooting
+(CX CSA integration for SDL logs in CH)
+Touchless WxApp (auto-)provisioning 
+(enduser self-provision via just login to WxApp with UCM calling)
+"Migration" to Webex
+(understand Jabber usage, enable wizards under CH->Migration)
+Directory Service
+(UCM to WxIdentity for AzureAD etc.)
+Rich Presence 
+(UCM-registered in-call phone status synced to WxApp presence)
+Borderless CTI 
+(enduser controls IP phone via WxApp CTI over MRA not VPN)
+Also requires Webex 
+Serviceability Connector
+BRKCOL-1527
+
+--- PAGE 38 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Calling features you need, available anywhere
+Instant access to:
+• Call history
+• Visual 
+voicemail 
+• Transcriptions
+• Recordings*
+• Contacts
+• Messaging
+• Spaces
+• Meetings
+Call preferences, forwarding, 
+single number reach
+Select line, group, 
+queue, shared line
+AI-powered Audio Intelligence:
+Noise removal, optimize for my voice
+Hold / resume, transfer, 
+merge / conference, 
+record, and elevate to a 
+meeting
+Share content during 
+a Webex Call
+Call, text, 
+message, meet 
+with one click
+Directory search
+Call on Webex or PSTN 
+with video or video
+Desk phone & room 
+device pairing and 
+control
+*coming soon with Imagicle
+BRKCOL-1527
+
+--- PAGE 39 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Common Call History for UCM Calling
+When users are not signed in Webex app calls 
+placed/received on other devices are not seen. 
+The result is inconsistency across the devices. 
+With this feature, users will get synchronized call 
+history on Webex app registered to UCM.
+IT admin can turn on required options through 
+CCUC on Control Hub. 
+Specific Platform releases/dates:
+Webex App on Desktop and mobile
+Pre-requisite: 
+• Webex Cloud-Connected UC (CCUC)
+• UCM 14 SU4 / 15 SU2
+• Webex App 44.6
+Cloud-
+Connected UC
+(CCUC) History
+Webex
+Call history 
+update
+Webex app
+SIP registration
+Call history service 
+lookup
+SIP/SCCP  
+registration
+Cisco Unified 
+Communications Manager
+Available 
+Now
+BRKCOL-1527
+
+--- PAGE 40 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Cisco Call for Microsoft Teams 
+UCM, Webex Calling Dedicated Instance & Multi Tenant
+Call/Search Input
+Enter a number, SIP
+address or type a 
+name to search for a Azure AD/Outlook 
+contact
+Call Tab
+Access dial pad, 
+contact search and 
+speed dials
+Contact Search
+Search for personal and 
+corporate
+contacts
+ 
+Dialpad
+Access to dialpad 
+to key in numbers
+Azure AD
+Contacts
+Outlook 365
+Contacts
+Add Speed dial
+Click to add up to 25
+speed dial cards
+Call
+Select number and call 
+contact
+Call History
+See history of 
+incoming/outgoing/missed 
+calls
+Also shows if the call comes 
+from a Hunt Group or Call 
+Queue (MT)
+Voicemail
+Access and play 
+back the 
+voicemail
+ 
+Contact 
+Resolution
+Resolves the incoming call 
+identifier to Azure AD
+Pre-requisite: 
+UCM 12.5 SU7 or 14 SU3 or 15 SU1
+CUC – 12.5 / 14 SU3 / 15
+On-premises: Webex Cloud-Connected UC (CCUC)
+Call Forwarding 
+See your call forwarding status at a single 
+glance
+Presence Sync
+User presence kept consistent between 
+MS teams and Webex Available 
+Now
+BRKCOL-1527
+
+--- PAGE 41 ---
+Uplifting User Experience
+
+--- PAGE 42 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Cisco Desk Phone 9800 Series
+Desk Phone 9841
+ Desk Phone 9851
+ Desk Phone 9861
+ Desk Phone 9871
+S E C U R E  |  M A N A G E A B L E  |  S U S T A I N A B L E
+M O R E  T H A N  A  P H O N E .  P O W E R E D  B Y  P H O N E O S
+Key Expansion Module 
+(KEM)
+Available 
+Now
+UCM and Webex Calling
+BRKCOL-1527
+
+--- PAGE 43 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Desk Phone 9811
+Expanding the 9800 Portfolio with a Value-Priced, Entry-level 
+phone for Essential Calling
+Powered by PhoneOS
+• Simplified deployment and management
+• Seamless migrations
+• Enhanced device management capabilities
+• Action button
+• Favorites button
+• Accessibility
+Technical Specifications
+• Display: 2.6” (256x132) grayscale
+• Line Keys: 2 Programmable
+• Connectivity: 2 x 10/100 Mbps Ethernet
+• POE: IEEE Class 2
+• Audio: RJ-9 Headset Support
+• Indicators; Front Arc LED
+BRKCOL-1527
+General Availability
+End of CY25
+
+--- PAGE 44 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Action Button Multi-Trigger
+Trigger different actions by pressing Action Button a 
+specific number of times.
+9800 + 3.5 Firmware (CUCM & Cloud) 
+Examples:
+Single press for internal IT support
+Three presses for emergency call
+Long press for service URL
+Triple Press
+BRKCOL-1527
+
+--- PAGE 45 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Thousand Eyes w/ 9800 Series Desk Phones
+Troubleshoot faster with hop-
+by-hop network path provided 
+by ThousandEyes. 
+• CUCM & WxC: 9861 & 9871
+Control Hub > Troubleshooting
+ThousandEyes Portal
+BRKCOL-1527
+
+--- PAGE 46 ---
+Recent Dial-Plan 
+Enhancements
+
+--- PAGE 47 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Webex Calling Dialing Habits in General
+• Extension dialing: 2-10 digits (default 4)
+• Inter- and intra-site; inter-site requires unique extensions
+• ESN (Location routing prefix + user extension) using an optional location code: up to 7 digits
+• +E.164
+• Telephone numbers defined in the Webex Calling system. Always resolvable by +E164 dialing
+• PSTN
+• PSTN destinations defined by pre-loaded Country Dial Plans
+• Optional outside steering digit (outside access code, OAC) to avoid 
+overlaps between PSTN and enterprise dialing habits
+https://help.webex.com/en-us/article/757iyo/Dial-plans-by-country 
+BRKCOL-1527
+
+--- PAGE 48 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Outgoing Call Permissions – By Pattern
+• Policy (allow, block, auth. code, auto-transfer number) per pattern
+• Up to 500 patterns per location/user/workspace/virtual line
+• Provisioning APIs for locations, users, workspaces (virtual line APIs
+tracked as separate initiative)
+• Bulk management for locations, users (workspaces and virtual lines
+don’t have bulk management; separate initiative)
+• Permissions by pattern take precedence over permissions by type
+• Note: call types other than “internal” always block for
+user in Cisco Calling Plan location w/o OCP regardless of any pattern
+• For external destinations pattern match is tried twice: before/after translation according to national 
+numbering plan
+• +E.164 patterns can be used to apply policy regardless of how the destination was dialled
+• Non +E.164 patterns can be used to apply different handling depending on how the number was dialed
+• As outgoing call permissions are applied for all routing tree outcomes, policy can be applied 
+to all call types (… other than emergency) .. even internal
+BRKCOL-1527
+
+--- PAGE 49 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+• Simplified Management of call routing for 
+outbound calls to support use cases such as 
+operator dialing, abbreviated/short number 
+dialing, and number translation needed for 
+routing calls to PSTN
+• Consistent Experience of users across the 
+organization
+• Support for commonly used wildcards is 
+provided to simplify configuration and create 
+efficient translation patterns with ease.
+Enterprise Dial Plan
+Translation Patterns
+BRKCOL-1527
+
+--- PAGE 50 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Verify Call Routing Tool
+• Verify Call Routing Tool supports translation patterns
+• Final output will have 
+information about matched 
+translation patterns
+BRKCOL-1527
+
+--- PAGE 51 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+What’s next you ask?
+BRKCOL-1527
+
+--- PAGE 52 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+AI cloud 
+innovation
+Cloud 
+administration
+Cloud 
+trunking
+Webex Calling 
+Hybrid
+Cloud innovation for 
+Cisco UCM customers
+Cloud PSTN
+Cisco Calling Plans
+Third party integrations
+Control Hub
+Call recording
+AI Receptionist
+Customer Assist
+CY H2 2025 to H1 2026
+BRKCOL-1527
+
+--- PAGE 53 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Webex  Go
+C I S C O  U N I F I E D  C O M M U N I C A T I O N S  M A N A G E R
+I M & P  |  C U C  |  C E R  | S M E  |  E x p r e s s w a y
+C o n t r o l  H u b
+Cisco Desk Phones Webex app
+Customer 
+Assist
+AI 
+Receptionist Cloud PSTN
+Webex Calling Trunk
+Microsoft Teams
+W E B E X  C A L L I N G  H Y B R I D
+Call Recording
+CY H2 2025 to H1 2026
+BRKCOL-1527
+
+--- PAGE 54 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+ © 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 60
+• Connect Cloud Connected PSTN 
+Providers for UCM
+• 40+ cloud connect PSTN 
+providers to choose from 
+• Lower costs - no need to invest in 
+or maintain local PSTN gateways 
+or circuits
+• Centralized control and 
+administration of PSTN services 
+across multiple locations
+• Supported Calling Scenarios
+▪ On-Net and Off-Net Calling
+▪ Calls to and from all Webex 
+Calling users, devices and virtual 
+services to users behind the trunk
+▪ Emergency calling
+▪ Redundancy and Failover support
+• Cisco Calling Plans (future)
+Cloud PSTN for UCM
+Roadmap
+ FY26Q2
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 55 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Configurable retention and Legal Hold for native Call 
+Recording
+• Webex Calling add-on for flexible policy that 
+allows 7 days to 3600 days* of recording 
+retention and Legal Hold 
+• Retention policy is at the organization level for all 
+recordings
+• Option for “Deleted Recordings” to follow 
+retention policy
+• Webex Control Hub to show the current storage 
+used by recordings
+• Add On offer, work in Progress
+• Add On Option to purchase additional storage 
+(over the free 100GB storage)
+• With Webex Call recording, there is a new 
+options to record all emergency calls. 
+* Without the paid add-on, default retention is fixed to 360 days (the above setting will be greyed 
+out)
+Roadmap
+ FY26Q1
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 56 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Webex Consistent Branding of Voicemail, Voicemail 
+transcript and Fax
+• Consistent look and feel in the email 
+notification that aligns with Webex 
+meeting and messaging by including 
+voicemail, transcription, and fax 
+notification
+• Customers and partners can 
+customize the branding of emails by 
+customizing elements like the “logo”, 
+"Contact Us" link, and "Terms of 
+Service
+• Reinforces trust and brand recognition 
+for users
+Roadmap
+ FY26Q1
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 57 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Configurable Storage Region for Call Recording and 
+Voicemail
+• Support for Data Residency and Compliance by 
+enabling Webex calling administrator to choose 
+where call recording and voicemail data is 
+stored.
+• Regions include Australia, Canada, Germany, 
+India, Japan, Saudi Arabia, Singapore, United 
+Kingdom, United States.
+• Webex calling administrator selects the default 
+storage region at the organization level with the 
+option to override at specific locations
+• For customers in India and Multinational 
+Corporations with Branch offices in India, the 
+storage location is set to India and can not be 
+changed for compliance reasons.
+Roadmap
+ FY26Q2
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 58 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Advanced Auto Attendant: Speech enabled prompts
+Effortless customer navigation using 
+voice for intuitive and efficient menu 
+selection
+• Customer calling into the Auto 
+Attendant can use voice commands 
+to drive the menu
+• Natural interaction compared to 
+pressing keys
+• Administrator to have the ability to 
+configure potential trigger words for 
+each menu option
+Q2FY26
+Roadmap
+ FY26Q1
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 59 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Advanced Auto Attendant: Text to Speech enabled 
+Announcement Repository
+Dynamic prompts using Text to 
+Speech
+• Enable Announcement Repository to 
+generate announcements using TTS
+• Works like a recorded wav file, with no 
+overhead to record
+• Can be referenced according to 
+hierarchy by any entity using 
+Announcement Repository
+• Features moving to announcement 
+repository will automatically get the 
+capability of TTS
+• Updates to the announcements can 
+reflect to all referenced entities at the 
+same time
+Roadmap
+ FY26Q1
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 60 ---
+Calling AI
+
+--- PAGE 61 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+ © 2025 Cisco and/or its affiliates. All rights reserved. Cisco Public 68
+Hear and be heard, anywhere, on any device
+Audio Intelligence
+Noise removal and 
+optimize for my voice
+Automatically removes noise from the 
+Webex Calling side of the call.
+Available on the Webex App.
+HD Voice
+Remove noise from an external, non-Webex 
+user’s side of the call with one click.
+Improve richness and clarity of speech with 
+wideband audio
+Noise removal
+Removes noise from the device side of the 
+call.
+Available on the Cisco 8875 IP phone and 
+Cisco headsets 
+Learn more: At-a-glance | Demo
+BRKCOL-1527
+
+--- PAGE 62 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Summaries for recorded calls 
+• User access to call 
+recording, transcription, 
+AI-generated summary 
+and action items on the 
+Webex application.
+• Comes with Control 
+Hub toggle to control 
+user’s access to post 
+call recordings, 
+summary, transcript and 
+action items.
+• Available via APIs.
+• Data storage regional 
+setting available on 
+Control Hub – org and 
+location level.
+BRKCOL-1527
+
+--- PAGE 63 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Closed Captions and Live transcription
+• Closed captions in Webex 
+Calling without escalating 
+the call into a meeting
+• Rolling closed captions/ 
+transcription in the side 
+panel of Webex in-call-
+window
+Available 
+Now
+BRKCOL-1527
+
+--- PAGE 64 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+ BRKCOL-1527BRKCOL-1527© 2025 Cisco and/or its affiliates. All rights reserved.
+
+--- PAGE 65 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+• Front end customer communication with natural human like 
+conversations with voice
+• Automate routine queries, through learning from business 
+FAQs and knowledge base
+• Up and running in minutes
+• Works 24x7
+• Integrates deeply with Webex Calling
+• Seamless handoff to human agents by integrating with Webex 
+Calling Customer Assist
+AI Receptionist
+Smart, Always-On AI Receptionist – Engaging, Efficient, Effortless.
+Hey, I can answer questions, 
+route the calls and schedule 
+appointments
+Roadmap
+ FY26Q1
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 66 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Setup AI Receptionist
+Basics
+Set location, phone number, language, and voice
+BRKCOL-1527
+
+--- PAGE 67 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Setup AI Receptionist
+Schedule
+Set hours when AI Receptionist operates
+BRKCOL-1527
+
+--- PAGE 68 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Setup AI Receptionist
+Receptionist Guidelines
+Add business details, taking guidelines, and negative 
+prompts
+BRKCOL-1527
+
+--- PAGE 69 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Setup AI Receptionist
+Knowledge Base
+Train AI Receptionist with text, files, or links
+BRKCOL-1527
+
+--- PAGE 70 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Setup AI Receptionist
+Knowledge Base
+Train AI Receptionist with text, files, or links
+BRKCOL-1527
+
+--- PAGE 71 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Setup AI Receptionist
+Knowledge Base
+Train AI Receptionist with text, files, or links
+BRKCOL-1527
+
+--- PAGE 72 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Setup AI Receptionist
+Contacts
+Add locations to enhance AI Receptionist’s reach – 
+users from these locations will be reachable contacts
+BRKCOL-1527
+
+--- PAGE 73 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Setup AI Receptionist
+Intent
+Add intents that will help AI Receptionist connect 
+callers to the right users or queues
+BRKCOL-1527
+
+--- PAGE 74 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Setup AI Receptionist
+Review
+Confirm AI Receptionist settings
+BRKCOL-1527
+
+--- PAGE 75 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+AI Assistant for Calling
+• AI assistant allows Webex 
+app user to summarize the 
+call and provide action 
+items in real-time.
+• Using the AI assistant 
+makes the call summary, 
+transcript and action items 
+available to users, post-
+call as well.
+• Indicators on call history 
+to show availability of call 
+summary, transcript and 
+recordings
+Roadmap
+ FY26Q1
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 76 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+• When transferring or conferencing a 
+call, the Webex app user can share 
+the summary of the call so far with 
+the new participant.
+• User would be allowed to edit the 
+summary before sharing it.
+• The new participant will get a short 
+summary of the original call within 
+their incoming call toast notification.
+AI Assistant for Calling: Share Summary on transfer or 
+conference
+Roadmap
+ FY26Q1
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 77 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+ © 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 84
+Give employees context upfront for faster, smarter conversations.
+Caller Intent
+• Displays a brief summary of the 
+caller’s intent in the incoming call 
+notification
+• Leverages enterprise data - AI 
+Receptionist interactions, prior 
+conversations or call transfer history – 
+to determine possible need 
+• Empowers employees with actionable 
+context before answering calls, 
+improving preparation and first-call 
+resolution
+Roadmap
+1HCY26
+Subject to 
+Change
+Requires Premium AI Add-On
+BRKCOL-1527
+
+--- PAGE 78 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+ © 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 85
+Help staff respond faster and more effectively 
+with real-time guidance.
+Suggested Responses
+• Context-aware response suggestions 
+appear in the Webex app based on 
+the customer’s questions
+• Pulls answers from your organization’s 
+knowledge base and support content
+• Equips staff with timely, relevant 
+information to keep conversations 
+efficient and on track
+Requires Premium AI Add-On
+Roadmap
+1HCY26
+Subject to 
+Change
+Requires Premium AI Add-On
+BRKCOL-1527
+
+--- PAGE 79 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+ © 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 86
+Build stronger relationships and improve call outcomes 
+Prep me for my next call 
+• Comprehensive profile summary: 
+Instantly generate a concise profile of the 
+individual giving you clear understanding 
+of the contact
+• Engagement history: Surfaces previous 
+interactions, such as voicemails, calls, 
+messages and meetings so you can pick 
+up where you left off 
+• Agenda & talking points: Suggest 
+personalized talking points to make the 
+call more impactful
+• Available with Calling home page in the 
+Webex app
+Requires Premium AI Add-On
+Roadmap
+1QCY26
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 80 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+ © 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential 87
+Unlock global productivity – live translation for better 
+inclusion and decision making 
+AI Speech to Speech Translator 
+•AI-powered live speech 
+translation so users can hear and 
+talk in their preferred language
+•Speech translation occurs in real 
+time with no lag to power 
+conversations between users 
+speaking different languages
+Roadmap
+1HCY26
+Subject to 
+Change
+Requires Premium AI Add-On
+BRKCOL-1527
+
+--- PAGE 81 ---
+Elevate Customer Experience
+
+--- PAGE 82 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+*Promotional price for licensing only for US only in USD with a 3-year minimum term, pricing through 
+partners may vary depending on included elements and will vary regionally.
+Webex Calling
+Professional License
+Channels Voice
+Click-to-call
+Voice
+Click-to-call Omni-channel
+Queues and 
+routing Skills / priority Skills / priority Intelligent routing
+Agent and
+supervisor
+Agent role in Webex App
+Desktop / Mobile
+Agent / supervisor tools in Webex App
+Screen pops
+Wrap up codes (coming soon)
+Browser-based
+Optimisation Analytics in Control Hub Analytics experience in Webex App WFO / WFM / QM
+AI and 
+automation
+HD Voice | Audio Intelligence
+Webex AI Codec
+Call recording summaries
+HD Voice | Audio Intelligence
+Webex AI Codec
+Call recording summaries
+Virtual agents
+Agent and supervisor AI
+*Promotional price for licensing only for US only in USD with a 3-year minimum term, pricing through 
+partners may vary depending on included elements and will vary regionally.
+Customer Assist Webex Contact Center
+Webex Platform
+C E N T R A L I Z E D  A D M I N I S T R A T I O N  |  A R T I F I C A L  I N T E L L I G E N C E  |  P S T N  |  S E R V I C E  N U M B E R S
+A customer experience solution for any need
+Webex Customer Experience
+BRKCOL-1527
+
+--- PAGE 83 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Voice queues
+Elevates performance of inbound calling 
+teams
+Included with Webex Calling Professional License
+Easy to setup and use
+Advanced call queue capabilities (request call-back, 
+skills-based routing)
+Supervisor experience: monitor, coach, barge-in, 
+takeover
+Reporting and analytics in Control Hub
+*Formerly Group Call 
+Management
+Voice Queues
+BRKCOL-1527
+
+--- PAGE 84 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Customer Assist (formerly Customer Experience Essentials)
+At-a-glance
+Unified Administration Control
+• Administer Webex Customer 
+Experience from Control Hub
+• Key details at a glance
+• Manage call queues, supervisors 
+and agents
+• Access call queue analytics
+Supervisor Experience in Webex App
+• Manage agents from within the Webex 
+App
+• Access to real time and historical data 
+on agents and queues
+• Manage availability of agents and 
+join/unjoin status
+• Silently monitor agents
+Agent experience in Webex App
+• Set availability and join/unjoin from call 
+queues
+• Realtime views of call queues they are 
+part of
+• Screen pop for call queue calls
+• Available on desktop or mobile devices
+BRKCOL-1527
+
+--- PAGE 85 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+ © 2025 Cisco and/or its affiliates. All rights reserved. Cisco Public 92
+Queuing
+Click to call
+Voice queues
+Text queues
+Employee Interactions Analysis & Follow-up
+Customer satisfaction
+Barge / monitor / whisper
+Queue recording
+Call Sentiment*
+Analytics
+Agent analytics
+Queue analytics
+Wrap up analytics
+Topic Analytics*
+Efficient interactions
+Screen Pops
+AI Assistant*
+Caller Intent*
+Suggested Responses*
+Speech to Speech Translator*
+Pre interaction
+Advanced Auto 
+Attendant
+AI Receptionist*
+A modern, AI-powered experience delivered natively in the Webex app
+Webex Calling Customer Assist
+$30 / user / month – includes Webex Calling Professional License*Add-on
+NEW
+BRKCOL-1527
+
+--- PAGE 86 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Customer Assist: Download wrap-up reports from 
+Webex App
+• Supervisors can 
+download the data for 
+agent wrap-up directly 
+from the Webex App, 
+for further analysis. 
+• Supervisors no longer 
+need to log into Control 
+Hub to pull this report.
+Available 
+Now
+BRKCOL-1527
+
+--- PAGE 87 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Call Queue Recording
+Policy based call recording for call 
+queues
+• Recording support for both inbound 
+and outbound calls by an agent
+• Admins can configure queue level 
+policy for calls recording in Webex 
+Control Hub 
+• Admin controls for automatic 
+recording and with pause/resume
+• Must have compliance role to view, 
+download recordings in Webex 
+Control Hub 
+• (Future) Access to recordings for 
+Supervisor in Webex App
+Available 
+Now
+BRKCOL-1527
+
+--- PAGE 88 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Built-in Voicemail​ for Group Calling (e.g. Call Queue, 
+Hunt Group)
+• Voice mailbox native to Call Queue, 
+Hunt Group and Auto Attendant 
+features
+• Simplifies voicemail setup for group 
+features by removing the need for a 
+separate Voicemail Group and a 
+separate telephone number or 
+extension for the voicemail group
+• Introduces the voicemail access 
+membership; members automatically 
+get visual voicemail experience on 
+Webex App
+• Administrator can configure the line key 
+(as voicemail service line) on desk 
+phone for MWI and voice portal access
+App user can use filter to select the mailbox. Default is all mailboxes  
+Roadmap
+ FY26Q1
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 89 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Topic Analytics
+• Analyze customer 
+conversations at scale
+• Gain visibility into the topic of 
+customer calls
+• Proactively prepare staff for 
+calls and identify opportunities 
+to reduce call volume
+• Optimize customer experience 
+and drive more efficient 
+interactions
+Requires Premium AI Add-On
+Roadmap
+1HCY26
+Subject to 
+Change
+Requires Premium AI Add-On
+BRKCOL-1527
+
+--- PAGE 90 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Agent activity report
+A report that provides the detailed agent 
+activity for the queues and the status they 
+are in
+• Report available for administrator in 
+Control Hub for agents across the org
+• Session wise details of agent’s activity
+• Figure out how long an agent has been 
+available, unavailable
+Roadmap
+ FY26Q1
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 91 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Outbound calls visibility to Supervisor
+Complete call visibility to 
+Supervisors
+• View outbound calls made by the 
+agents in the Monitoring 
+dashboard
+• Invoke the same functions such as 
+monitoring, coach and barge on 
+outbound calls
+Roadmap
+ FY26Q1
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 92 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Support multiple DNIS for Call Queues
+Efficient Multi-Number Support:
+• Associate a single queue with up to 
+100 phone numbers in addition to the 
+primary number, enabling seamless call 
+handling across multiple lines
+• Customized Caller Experience:
+• Customize announcements per number
+• Provide agents with critical context 
+(Queue name and number of DNIS 
+dialled)
+• Scalability:
+• Support multiple businesses or 
+departments using a single queue, 
+streamlining operations
+Roadmap
+ FY26Q1
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 93 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Call Sentiment for Supervisors
+Proactive agent monitoring 
+powered by AI
+At-a-glance call sentiment 
+analysis for proactive monitoring 
+of agents
+• Call sentiment as part of agent 
+monitoring dashboard
+• Easy filter to prioritize 
+monitoring negative sentiment 
+calls
+• Expanded inline summary of the 
+call for understanding the 
+context
+Roadmap
+ FY26Q1
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 94 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Auto Answer for Call Queues
+Automatically answer calls from call 
+queue
+• Customer Assist agent to have the 
+ability to automatically answer 
+calls, set by the admin
+• Admin can set the policy for auto 
+answer at a queue level, with an 
+appropriate delay
+• Agent will have the ability to select 
+preferred device for auto answer 
+from Webex App or User Hub
+Roadmap
+ FY26Q2
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 95 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Multiline support for Customer Assist Agents
+Customer Assist Agents can be 
+assigned a second line for joining call 
+queues
+• Agent can easily select which line to 
+use for outbound calls.
+• Better separation of call detail, call 
+history for the agent's personals 
+calls and calls associated with the 
+queue.
+• Clear notification for incoming calls 
+to the agent's personal number vs.  
+incoming calls to the queue.
+• Call reports show clear separation 
+of calls on behalf of the agents call 
+queues vs. personal calls made by 
+the agent.
+Roadmap
+ FY26Q2
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 96 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Call Queue call details report
+A report that provides the detailed view 
+of the calls received in the Call Queue
+• Report available for administrator in 
+Control Hub for agents across the org
+• Report with the call details with the 
+end status
+• Easily figure out all the abandoned 
+calls to the call queue(s)
+• Track the call to an agent who 
+answered the call
+Roadmap
+ FY26Q2
+Subject to 
+Change
+BRKCOL-1527
+
+--- PAGE 97 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+ BRKCOL-1527
+Additional 
+Resources
+Hypervisor Update w/ James Arias
+UCM 15 and Beyond with Justin Jordan
+Webex Calling Hybrid AAG (New)
+Webex Calling Customer Assist AAG (Updated)
+Webex Calling AI Innovations Video
+Webex Calling Blog by Amey 
+AI Receptionist page on WDC
+Webex Calling Migration page on WDC
+
+--- PAGE 98 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Earn up to 800 points 
+by completing all 
+surveys and climb the 
+Cisco Live Challenge 
+leaderboard. 
+Level up and earn 
+exclusive prizes!
+Complete your surveys 
+in the Cisco Live 
+Events app.
+Complete a minimum of 
+4 session surveys and 
+the Overall Event 
+Survey to claim a Cisco 
+Live T-Shirt.
+Complete your session evaluations
+BRKCOL-1527
+
+--- PAGE 99 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Book your one-on-one 
+Meet the Expert 
+meeting
+Attend the interactive 
+education with Capture 
+the Flag, and Walk-in 
+Labs
+Visit the On-Demand 
+Library for more 
+sessions at 
+www.CiscoLive.com/
+on-demand
+Visit the Cisco Stand for 
+related demos
+Continue your education
+BRKCOL-1527
+Contact me at: amryan@cisco.com
+
+--- PAGE 100 ---
+Thank you
+
+--- PAGE 101 ---
+Cisco

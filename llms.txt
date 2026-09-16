@@ -7,7 +7,7 @@ START HERE: use library.json (or api/documents.json) to enumerate every document
 Do not rely on search-engine indexing or directory browsing.
 For each document, fetch its extracted text_url for searchable text; use pdf_url for the original PDF.
 
-Document count: 9
+Document count: 24
 
 ## Machine-readable resources
 - Catalogue: https://anorth78.github.io/PDF/library.json
@@ -16,10 +16,35 @@ Document count: 9
 
 ## Documents
 
+### Cisco Calling
+- ID: cisco-calling
+- Text: https://anorth78.github.io/PDF/text/cisco-calling.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cisco-calling.pdf
+
+### Cisco Meeting Servers
+- ID: cisco-meeting-servers
+- Text: https://anorth78.github.io/PDF/text/cisco-meeting-servers.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cisco-meeting-servers.pdf
+
+### Cisco UCM, OnPremises and Dedicated Instance from on premises to the cloud and all things in between CLS 2267 slides
+- ID: cisco-ucm-onpremises-and-dedicated-instance-from-on-premises-to-the-cloud-and-all-things-in-between-cls-2267-slides
+- Text: https://anorth78.github.io/PDF/text/cisco-ucm-onpremises-and-dedicated-instance-from-on-premises-to-the-cloud-and-all-things-in-between-cls-2267-slides.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cisco-ucm-onpremises-and-dedicated-instance-from-on-premises-to-the-cloud-and-all-things-in-between-cls-2267-slides.pdf
+
 ### Cisco UCM 15 TDM
 - ID: cisco-ucm-15-tdm
 - Text: https://anorth78.github.io/PDF/text/cisco-ucm-15-tdm.txt
 - PDF: https://anorth78.github.io/PDF/pdfs/cisco-ucm-15-tdm.pdf
+
+### CMS Architecture and Troubleshooting   PPT
+- ID: cms-architecture-and-troubleshooting-ppt
+- Text: https://anorth78.github.io/PDF/text/cms-architecture-and-troubleshooting-ppt.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cms-architecture-and-troubleshooting-ppt.pdf
+
+### CMS
+- ID: cms
+- Text: https://anorth78.github.io/PDF/text/cms.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cms.pdf
 
 ### CST UC Release 15
 - ID: cst-uc-release-15
@@ -31,15 +56,35 @@ Document count: 9
 - Text: https://anorth78.github.io/PDF/text/cuc15-datasheet.txt
 - PDF: https://anorth78.github.io/PDF/pdfs/cuc15-datasheet.pdf
 
+### CUCM troubleshooting
+- ID: cucm-troubleshooting
+- Text: https://anorth78.github.io/PDF/text/cucm-troubleshooting.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cucm-troubleshooting.pdf
+
 ### Design and Deployment of Unified Communication Services
 - ID: design-and-deployment-of-unified-communication-services
 - Text: https://anorth78.github.io/PDF/text/design-and-deployment-of-unified-communication-services.txt
 - PDF: https://anorth78.github.io/PDF/pdfs/design-and-deployment-of-unified-communication-services.pdf
 
+### Expressway certificates
+- ID: expressway-certificates
+- Text: https://anorth78.github.io/PDF/text/expressway-certificates.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/expressway-certificates.pdf
+
+### Expressway
+- ID: expressway
+- Text: https://anorth78.github.io/PDF/text/expressway.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/expressway.pdf
+
 ### Jabber to WebexApp
 - ID: jabber-to-webexapp
 - Text: https://anorth78.github.io/PDF/text/jabber-to-webexapp.txt
 - PDF: https://anorth78.github.io/PDF/pdfs/jabber-to-webexapp.pdf
+
+### Learning and Support Resources   CUCM
+- ID: learning-and-support-resources-cucm
+- Text: https://anorth78.github.io/PDF/text/learning-and-support-resources-cucm.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/learning-and-support-resources-cucm.pdf
 
 ### On Prem Content Strategy
 - ID: on-prem-content-strategy
@@ -51,6 +96,11 @@ Document count: 9
 - Text: https://anorth78.github.io/PDF/text/one-cisco-deck.txt
 - PDF: https://anorth78.github.io/PDF/pdfs/one-cisco-deck.pdf
 
+### Phone migration
+- ID: phone-migration
+- Text: https://anorth78.github.io/PDF/text/phone-migration.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/phone-migration.pdf
+
 ### SIP troubleshooting
 - ID: sip-troubleshooting
 - Text: https://anorth78.github.io/PDF/text/sip-troubleshooting.txt
@@ -60,3 +110,28 @@ Document count: 9
 - ID: strategy-ropadmap
 - Text: https://anorth78.github.io/PDF/text/strategy-ropadmap.txt
 - PDF: https://anorth78.github.io/PDF/pdfs/strategy-ropadmap.pdf
+
+### UCM15 Data Sheet
+- ID: ucm15-data-sheet
+- Text: https://anorth78.github.io/PDF/text/ucm15-data-sheet.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ucm15-data-sheet.pdf
+
+### Unified CM Security Architecture
+- ID: unified-cm-security-architecture
+- Text: https://anorth78.github.io/PDF/text/unified-cm-security-architecture.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/unified-cm-security-architecture.pdf
+
+### Upgrading to CUCM version 15
+- ID: upgrading-to-cucm-version-15
+- Text: https://anorth78.github.io/PDF/text/upgrading-to-cucm-version-15.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/upgrading-to-cucm-version-15.pdf
+
+### Webex Cloud Connected UC   BDM
+- ID: webex-cloud-connected-uc-bdm
+- Text: https://anorth78.github.io/PDF/text/webex-cloud-connected-uc-bdm.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/webex-cloud-connected-uc-bdm.pdf
+
+### Webex Cloud Connected UC TDM Presentation
+- ID: webex-cloud-connected-uc-tdm-presentation
+- Text: https://anorth78.github.io/PDF/text/webex-cloud-connected-uc-tdm-presentation.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/webex-cloud-connected-uc-tdm-presentation.pdf

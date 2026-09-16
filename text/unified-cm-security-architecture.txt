@@ -1,0 +1,2915 @@
+--- PAGE 1 ---
+Unified CM Security 
+Architecture
+Technical Foundations for Deployment
+Matt Jordy (mjordy@cisco.com)
+BRKCOL-2226
+Technical Marketing Engineer, CTG
+Scott Kiewert (sckiewer@cisco.com)
+Technical Marketing Engineer, CTG
+
+--- PAGE 2 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Enter your personal notes here
+Catalyst 9000 Series Switching Family - …
+Webex App
+BRKCOL-2226
+Questions? 
+Use Webex App to chat with the speaker after the session
+Find this session in the Cisco Events App
+Click “Join the Discussion”
+Install the Webex App or go directly to the Webex space
+Enter messages/questions in the Webex space
+How
+Webex spaces will be moderated by the speaker until February 27, 2026.
+1
+2
+3
+4
+2
+
+--- PAGE 3 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Agenda 01 Architecture Overview
+BRKCOL-2226
+02 Client and Device Trust with PKI
+03 Certificate Management & Encryption
+04 API Protection and OAuth 2.0
+05 Simplified Device Onboarding & Provisioning
+06 Conclusions and References
+3
+
+--- PAGE 4 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Rome was not built in a day…
+BRKCOL-2226
+CSR 14:
+• Always-secure phones
+with OAuth
+• Server cert reduction
+• Centralized cert mgmt
+CSR 12.5:
+• TLS cipher suite control    
+• ECDSA endpoint certificates
+• SIP OAuth for Jabber
+• Secure phone onboarding
+• Expwy-E automatic certificates
+• Automatic phone cert enrollment
+CSR 12.0-12.1:
+• OAuth with refresh
+• Jabber MRA improvements
+• ITLRecovery trust anchor
+• TLS 1.2
+CSR 11.x:
+• LSC management
+• Next-gen encryption
+• Single SAML agreement
+• Mixed mode auto-reg
+CSR 10.x:
+• SAML SSO
+• Cluster-wide certs
+• MRA
+CSR 15:
+• TLS 1.3
+• OAuth with 
+refresh for Wx 
+App
+• OAuth framework 
+enhancements
+4
+
+--- PAGE 5 ---
+Architecture Overview
+
+--- PAGE 6 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Architecture Overview
+Key Areas for UC Security
+BRKCOL-2226
+Users
+Endpoints
+(Phones, Soft Clients)
+Infrastructure
+(UCM, IM&P, Expwy, UCxn)
+API Protection:
+Security and 
+access authorization
+Client Trust:
+           Validation of servers
+           and services
+SIP
+XMPP
+HTTP
+Enrollment:
+          Initial endpoint setup
+          (typically involves some form
+          of authentication)
+6
+
+--- PAGE 7 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Architecture Overview
+Traditional UC Security Model (CAPF)
+BRKCOL-2226
+ITL/CTL File
+Identity certificates
+LSC
+ITLRecovery
+   CallManager
+      TVS
+        CAPF
+           …
+TFTP
+CAPF
+Authorize SIP requests 
+by validating LSC 
+(client certificate)
+SIP/TLS Connection
+Endpoint
+Unified CM
+MIC
+TVS
+Download 
+ITL/CTL file
+CAPF Enrollment:
+use MIC to deliver 
+LSC (client certificate)
+Check if identity certificate of 
+server exists in ITL/CTL file 
+(or is validated by TVS)
+7
+
+--- PAGE 8 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Architecture Overview
+Principles of New Architecture
+BRKCOL-2226
+Users
+Endpoints
+(Phones, Soft Clients)
+Infrastructure
+(UCM, IM&P, Expwy, UCxn)
+API Protection:
+OAuth 2.0 framework
+for all client-facing
+API’s
+Enrollment:
+          Authorization Code Grant or
+          Secure Phone Onboarding 
+          deliver OAuth token to endpoint
+Client Trust:
+           Standard PKI X.509 
+           certificate chain 
+           validation
+SIP
+XMPP
+HTTP
+8
+
+--- PAGE 9 ---
+Client and Device Trust (PKI)
+
+--- PAGE 10 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Secure Phone Onboarding:
+use MIC + Activation Code to get 
+OAuth tokens (+optional root certs)
+Authorize SIP requests 
+by validating OAuth 
+Access Token
+Always-secure Phones with OAuth
+Client Trust: PKI
+BRKCOL-2226
+Trust Store
+Identity certificate
+(Tomcat)
+OAuth
+Access Token
+TFTP
+Check if identity certificate of 
+server was signed by a trusted 
+CA (root cert is in Trust Store)
+SIP and HTTP TLS Connections
+Unified CM
+Certificate
+Authority 
+(CA)
+Phone
+MIC
+Trusted Root Bundle
+(built-in) Enterprise CA
+Root Certificate
+Activation
+Code
+Enterprise Root CA’s
+(via Secure Onboarding)
+AuthZ Server
+(SSOSP)
+10
+
+--- PAGE 11 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+SIP (TLS)
+HTTP (TLS)
+Infrastructure
+(Unified CM, IM&P, Expwy, UCxn)
+Client Trust
+PKI (Certificate Chain Validation)
+BRKCOL-2226
+Trust Store
+Server 
+certificate
+Issuing CA
+Phone
+Root CA 
+Certificate
+Trust Store
+(managed by OS)
+Soft Client
+Certificate Chain
+Server certificate
+Subject cm1.foo.com
+Issuer RootCA
+Valid to 3-30-2027
+SAN cm1.foo.com, cm2.foo.com
+Public key 
+RootCA certificate
+Subject RootCA
+Issuer RootCA
+Valid to 1-1-2030
+Public key 
+Verify validity of all certs in chain
+Check FQDN of server cert 
+matches hostname in URL
+Verify that issuing 
+CA is trusted (check 
+signature with root 
+cert in trust store)
+Root CA
+11
+
+--- PAGE 12 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Client Trust
+CA Choice Considerations
+BRKCOL-2226
+Commercial (Public) CA
+• Generally trusted by default by all devices:
+• PC’s, mobile devices: check with OS vendor
+• Cisco phones: “Cisco Trusted Union Root Bundle”, 
+available at www.cisco.com/security/pki/ 
+• Ongoing certificate cost (per server per year)
+UC Applications
+(Unified CM, IM&P, 
+Expwy, UCxn)
+Server
+Certificates
+Enterprise CA
+Root
+Certificates
+MDM
+Commercial CA
+UC Applications
+(Unified CM, IM&P, 
+Expwy, UCxn)
+Server
+Certificates
+Root
+Certificates
+Enterprise (Private) CA
+• Requires mechanism to distribute root certificate 
+to all Enterprise devices:
+• PC’s, mobile devices: MDM software, Microsoft AD 
+GPO’s, ...
+• Cisco phones: Unified CM (Secure Onboarding)
+• No certificate cost
+13
+
+--- PAGE 13 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Client Trust
+Certificate Chain Validation Support
+BRKCOL-2226
+Unified CM Unity
+Connection
+Expressway E/C
+Soft clientsSoft clients
+Phones
+Phones
+Internet
+Unified CM
+(SSOSP)
+Unified CM
+(IM&P)
+HTTPS (TLS)
+SIP (TLS) [OAuth mode]
+XMPP (TLS)
+CA
+Tomcat
+cert
+CSR 14: “OAuth” 
+Encrypted mode for 
+on-premises Phones
+Legend:
+14
+
+--- PAGE 14 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Intranet
+Client Trust
+Certificate Chain Validation with an Enterprise (Private) CA
+BRKCOL-2226
+1. Admin uploads root certificates of 
+Enterprise CAs to Phone-Edge-trust on 
+Unified CM and resets the phones
+2. If there are certs in Phone-Edge-trust, 
+phone downloads a file with these trust 
+anchors from TFTP and updates its Trust 
+Store (built-in root bundle no longer 
+trusted!)
+3. In “OAuth” Encrypted mode, phone 
+validates Tomcat certificate chain using 
+the root certs in its Trust Store (applies 
+to SIP and HTTPS/SSOSP connections)
+Unified 
+CM
+1
+Admin
+Phone
+2
+1
+2
+3
+3
+Note: not needed when Tomcat and Expwy certs are 
+signed by a Public CA included in the “Cisco Trusted 
+Union Root Bundle” at www.cisco.com/security/pki/  
+Root CA 
+Certificate
+TFTP
+Trusted Root Bundle
+(built-in)
+Enterprise
+CA
+How to use an Enterprise CA:
+Tomcat
+cert
+15
+
+--- PAGE 15 ---
+Certificate Management & 
+Encryption
+
+--- PAGE 16 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Certificate Management Simplification
+BRKCOL-2226
+✓ Reduced overhead on 
+certificate renewal 
+✓ Automate certificate 
+management 
+ 
+✓ Server certificate 
+monitoring
+✓ Long-lived 
+certificates
+✓ Centralized certificate 
+management
+Simplified Server 
+Certificate Management
+✓ Multi-server (SAN) 
+self-signed 
+certificates
+✓ Tomcat certificate 
+reuse
+✓ Remove unnecessary 
+certificates
+Server Certificate 
+Count Reduction
+✓ Automatic endpoint 
+certificate enrollment 
+with private CA 
+✓ Endpoint certificate 
+(LSC) monitoring
+✓ ITL mismatch report
+Endpoint Certificate 
+Simplification
+Simplification with SIP 
+OAuth
+✓ Simplify endpoint 
+security for these 
+devices:
+• 7800 / 8800 / 9800 
+series desk phones
+• Cisco Jabber
+• Webex App (on-prem 
+calling)
+✓ No LSC for encrypted 
+signaling/media = no 
+CAPF enrollment.
+✓ Mixed-mode not 
+enabled, no CTL file.
+17
+
+--- PAGE 17 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Server Certificate Count Reduction
+BRKCOL-2226
+• No need to manage a certificate at every node
+The multi-server (SAN) option for self-signed 
+certificates means no CA-signed certificate required 
+to take advantage of the reduced overhead of 
+managing a single service certificate per cluster. This 
+includes TVS certificate.
+• Fewer service certificates to manage
+Reuse the multi-server (SAN) tomcat certificate for 
+securing CallManager service connections. In this 
+case the tomcat certificate replaces the CallManager 
+certificate leaving one less certificate to manage. 
+• Remove unnecessary certificates
+ Publisher-only CAPF ceritifcate: CAPF certificates 
+removed from subscribers.
+✓ Multi-server (SAN) 
+self-signed 
+certificates
+✓ Tomcat certificate 
+reuse
+✓ Remove unnecessary 
+certificates
+Server Certificate 
+Count Reduction
+18
+
+--- PAGE 18 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Server Certificate Count Reduction
+Certificate Unified CM
+ Pre-14 Versions
+Tomcat 11
+Tomcat ECDSA 11
+CallManager 11
+CallManager ECDSA 11
+TVS 11
+CAPF 11
+ITL Recovery 1
+IPSec 11
+TOTAL 78
+EXAMPLE: Unified CM 11-node cluster (Pub, TFTP x2, Sub pairs x4)
+BRKCOL-2226 19
+1
+1
+58
+
+--- PAGE 19 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified CM Version 
+14 and later
+1
+1
+1
+1
+1
+Server Certificate Count Reduction
+• Multi-server (SAN) self-signed 
+certificates allows nodes in clusters 
+to use the same self-signed 
+certificates.
+Certificate Unified CM
+ Pre-14 Versions
+Tomcat 11
+Tomcat ECDSA 11
+CallManager 11
+CallManager ECDSA 11
+TVS 11
+CAPF 11
+ITL Recovery 1
+IPSec 11
+TOTAL 78
+EXAMPLE: Unified CM 11-node cluster (Pub, TFTP x2, Sub pairs x4)
+BRKCOL-2226 20
+1
+1
+58
+
+--- PAGE 20 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified CM Version 
+14 and later
+1
+1
+1
+1
+1
+1
+1
+Server Certificate Count Reduction
+• Multi-server (SAN) self-signed 
+certificates allows nodes in clusters 
+to use the same self-signed 
+certificates.
+• CAPF certificate only exists on the 
+Publisher node reducing the 
+number of certificates to manage.
+Certificate Unified CM
+ Pre-14 Versions
+Tomcat 11
+Tomcat ECDSA 11
+CallManager 11
+CallManager ECDSA 11
+TVS 11
+CAPF 11
+ITL Recovery 1
+IPSec 11
+TOTAL 78
+EXAMPLE: Unified CM 11-node cluster (Pub, TFTP x2, Sub pairs x4)
+BRKCOL-2226 21
+1
+1
+58
+
+--- PAGE 21 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified CM Version 
+14 and later
+1
+1
+0
+0
+1
+1
+1
+Server Certificate Count Reduction
+• Multi-server (SAN) self-signed 
+certificates allows nodes in clusters 
+to use the same self-signed 
+certificates.
+• CAPF certificate only exists on the 
+Publisher node reducing the 
+number of certificates to manage.
+• Tomcat certificate can be reused 
+as the CallManager certificate 
+further reducing the number of 
+certificates to manage.
+Certificate Unified CM
+ Pre-14 Versions
+Tomcat 11
+Tomcat ECDSA 11
+CallManager 11
+CallManager ECDSA 11
+TVS 11
+CAPF 11
+ITL Recovery 1
+IPSec 11
+TOTAL 78
+EXAMPLE: Unified CM 11-node cluster (Pub, TFTP x2, Sub pairs x4)
+BRKCOL-2226 22
+1
+1
+58
+
+--- PAGE 22 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified CM Version 
+14 and later
+1
+1
+0
+0
+1
+1
+1
+11
+16
+Server Certificate Count Reduction
+• Multi-server (SAN) self-signed 
+certificates allows nodes in clusters 
+to use the same self-signed 
+certificates.
+• CAPF certificate only exists on the 
+Publisher node reducing the 
+number of certificates to manage.
+• Tomcat certificate can be reused 
+as the CallManager certificate 
+further reducing the number of 
+certificates to manage.
+Certificate Unified CM
+ Pre-14 Versions
+Tomcat 11
+Tomcat ECDSA 11
+CallManager 11
+CallManager ECDSA 11
+TVS 11
+CAPF 11
+ITL Recovery 1
+IPSec 11
+TOTAL 78
+EXAMPLE: Unified CM 11-node cluster (Pub, TFTP x2, Sub pairs x4)
+BRKCOL-2226 23
+1
+1
+58
+
+--- PAGE 23 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified CM Version 
+?*
+1
+1
+0
+0
+1
+1
+1
+0*
+5
+Server Certificate Count Reduction
+• Multi-server (SAN) self-signed 
+certificates allows nodes in clusters 
+to use the same self-signed 
+certificates.
+• CAPF certificate only exists on the 
+Publisher node reducing the 
+number of certificates to manage.
+• Tomcat certificate can be reused 
+as the CallManager certificate 
+further reducing the number of 
+certificates to manage. 
+• *Future: IPSec certificate to be 
+eliminated when IPSec not in use.
+Certificate Unified CM
+ Pre-14 Versions
+Tomcat 11
+Tomcat ECDSA 11
+CallManager 11
+CallManager ECDSA 11
+TVS 11
+CAPF 11
+ITL Recovery 1
+IPSec 11
+TOTAL 78
+EXAMPLE: Unified CM 11-node cluster (Pub, TFTP x2, Sub pairs x4)
+BRKCOL-2226 24
+1
+1
+58
+* Plan of record. SUBJECT TO CHANGE
+
+--- PAGE 24 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+✓ Multi-server (SAN) 
+self-signed 
+certificates
+✓ Tomcat certificate 
+reuse
+✓ Remove unnecessary 
+certificates
+Server Certificate 
+Count Reduction
+Simplified Server Certificate Management
+BRKCOL-2226
+✓ Reduced overhead on 
+certificate renewal 
+✓ Automate certificate 
+management 
+ 
+✓ Server certificate 
+monitoring
+✓ Long-lived 
+certificates
+✓ Centralized certificate 
+management
+Simplified Server 
+Certificate Management
+* ‘Phone Interaction on Certificate Update’
+• Fewer manual service restarts required for 
+certificate renewals
+ CAPF and TVS services are restarted automatically in the 
+background when these certificates are renewed.
+• Endpoint reset control post certificate renewals
+Enterprise parameter* determines automatic v. manual 
+restart on renewal of CAPF, TVS, and CallMangaer 
+certificates. 
+• Reduce certificate management overhead 
+Use APIs to automate certificate renewal.
+• Monitor server certificate validity dates
+Don’t get surprised by expired server certificates. Receive 
+advanced notification by email before they expire.
+• Renew core trust certificates less frequently
+Cerificates with long validity periods mean fewer renewals 
+and easier upgrades:  ITL Recovery (20 years).
+• Cloud Connected UC (CCUC)
+25
+
+--- PAGE 25 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Server Certificate Management APIs
+• Certificate management REST APIs: Enable administrators to programmatically manage 
+collaboration application certificates (Unified CM, IM&P, Unity Connection, Emergency Responder)
+• API Endpoints: Certificate signing 
+request (CSR), identity, and trust 
+certificate operations – get/view, 
+generate, delete, upload, reuse. 
+• Review the documentation for 
+certificate management API 
+endpoints
+https://developer.cisco.com/docs/certificate-management/ 
+BRKCOL-2226 26
+
+--- PAGE 26 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Server Certificate Expiration Monitoring and Notification
+Monitor server certificates expiration (Certificate Management)
+   Receive email notification prior to server certificate expiration 
+   (Certificate Monitor)
+(OS Admin)
+BRKCOL-2226 27
+
+--- PAGE 27 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Long-lived Server Certificates and Upgrades
+• While convenient, using certificate with long validity periods is NOT a security best practice. 
+Long-lived certificates pose a security risk due to increased exposure time (the longer a 
+certificate exists the higher the risk for compromise).
+• In cases where the certificate is not public and is not exposed externally, a long lived certificate 
+might still be used - for example, the Unified CM ITL Recovey certificate.
+• The 20-year ITL Recovery certificate provides a trust anchor for phones across cluster service 
+certifcate renewals and system upgrades ensuring that phones maintain trust. 
+• The certificate is not exposed beyond the scope of Unified CM and its registered devices nor is 
+it freely served on a port call (no answer)
+BRKCOL-2226 28
+
+--- PAGE 28 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Centralized Certificate Management: Cloud Connected UC
+BRKCOL-2226
+Webex Cloud Connected UC (CCUC) Certificate Management enables a single place for 
+administartors to view and manage certificates across multiple clusters and multiple UC 
+applications 
+• Ability to distribute 
+certificates across the 
+UC application trust stores
+• Quick dashboard to view 
+expired or about to expire 
+certificates and take actions 
+directly from centralized UI
+• Insights for certificate 
+consolidation and out of
+compliance
+** Cloud feature – requires connectivity to Webex **
+29
+
+--- PAGE 29 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Endpoint Certificate Simplification
+BRKCOL-2226
+✓ Reduced overhead on 
+certificate renewal 
+✓ Automate certificate 
+management 
+ 
+✓ Server certificate 
+monitoring
+✓ Long-lived 
+certificates
+✓ Centralized certificate 
+management
+Simplified Server 
+Certificate Management
+✓ Multi-server (SAN) 
+self-signed 
+certificates
+✓ Tomcat certificate 
+reuse
+✓ Remove unnecessary 
+certificates
+Server Certificate 
+Count Reduction
+✓ Automatic endpoint 
+certificate enrollment 
+with private CA 
+✓ Endpoint certificate 
+(LSC) monitoring
+✓ ITL mismatch report
+Endpoint Certificate 
+Simplification
+30
+• Automatically install private CA-signed LSCs 
+With Online CAPF mode endpoint locally significant 
+certificates are automatically signed using your private CA.
+• Monitor endpoint LSC validity dates
+Don’t get surprised by expired endpoint certificates. 
+Receive advanced notification by email prior to expiration.
+• Discover endpoints with broken trust
+Get your devices back online faster. The ILT mismatch 
+report identifies devices that are unable to register due to 
+loss of trust (generally as a result of certificate renewal).
+
+--- PAGE 30 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified CM and Endpoints: Encrypted Media & Signaling
+• Encrypted signaling between Unified CM and endpoints: 
+ SIP TLS: Encrypted SIP requires endpoint/client to present 
+valid certificate to connect (mTLS)
+ CAPF generated locally significant certificate (LSC) 
+recommended. 
+• Encrypted media between endpoints: 
+ Requires secure signaling (SIP TLS)
+ Secure RTP (sRTP): Secure media encryption 
+via SIP client derived encryption key.
+• When enabled for encrpyted media and signaling
+ Endpoints in encrypted calls will display a lock icon.
+ Interoperability with non-secure endpoints. Calls to / from 
+non-secure endpoints fall back to unencrypted media (default)*
+Encrypted 
+Signaling:
+SIP TLS 
+(mTLS)
+Encrypted 
+Media: sRTP
+Unecrypted 
+Media: RTP
+Unecrypted 
+Signaling: SIP
+Unified CM 
+MIXED MODE
+BRKCOL-2226 31
+* ‘Block Unencrypted Calls’ service 
+   Pararmeter is ‘False’ by default
+LSC usage: 
+• TLS 
+• CAPF enrollment, 
+802.1x auth, phone VPN
+
+--- PAGE 31 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified CM and Endpoints: Encrypted Media & Signaling
+• Encrypted signaling between Unified CM and endpoints: 
+ SIP TLS: Encrypted SIP requires endpoint/client to present 
+valid certificate to connect (MTLS)
+ CAPF generated locally significant certificate (LSC) 
+recommended. 
+• Encrypted media between endpoints: 
+ Requires secure signaling (SIP TLS)
+ Secure RTP (sRTP): Secure media encryption 
+via SIP client derived encryption key.
+• When enabled for encrpyted media and signaling
+ Endpoints in encrypted calls will display a lock icon.
+ Interoperability with non-secure endpoints. Calls to / from 
+non-secure endpoints fall back to unencrypted media (default)*
+Encrypted 
+Signaling:
+SIP TLS 
+(mTLS)
+Encrypted 
+Media: sRTP
+Unecrypted 
+Media: RTP
+Unecrypted 
+Signaling: SIP
+Unified CM 
+MIXED MODE
+BRKCOL-2226 32
+* ‘Block Unencrypted Calls’ service 
+   Pararmeter is ‘False’ by default
+LSC usage: 
+• TLS 
+• CAPF enrollment, 
+802.1x auth, phone VPN
+
+--- PAGE 32 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified CM and Endpoints: Encrypted Media & Signaling
+• Encrypted signaling between Unified CM and endpoints: 
+ SIP TLS: Encrypted SIP requires endpoint/client to present 
+valid certificate to connect (MTLS)
+ CAPF generated locally significant certificate (LSC) 
+recommended. 
+• Encrypted media between endpoints: 
+ Requires secure signaling (SIP TLS)
+ Secure RTP (sRTP): Secure media encryption 
+via SIP client derived encryption key.
+• When enabled for encrpyted media and signaling
+ Endpoints in encrypted calls will display a lock icon.
+ Interoperability with non-secure endpoints. Calls to / from 
+non-secure endpoints fall back to unencrypted media (default)*
+Encrypted 
+Signaling:
+SIP TLS 
+(mTLS)
+Encrypted 
+Media: sRTP
+Unecrypted 
+Media: RTP
+Unecrypted 
+Signaling: SIP
+Unified CM 
+MIXED MODE
+BRKCOL-2226 33
+* ‘Block Unencrypted Calls’ service 
+   Pararmeter is ‘False’ by default
+LSC usage: 
+• TLS 
+• CAPF enrollment, 
+802.1x auth, phone VPN
+
+--- PAGE 33 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Endpoint LSCs – CAPF Enrollment Methods
+• Encrypted Media Prerequisite:
+Certificate Authority Proxy 
+Function (CAPF) enrollment 
+required to install device-
+specific certificates (LSCs) on 
+collaboration endpoints. 
+(Relying on MIC not recommended)
+• Multiple CAPF enrollment 
+methods are available to 
+accomodate an each 
+organization’s requirements.
+• Online CA Mode for automatic 
+enterprise CA endpoint 
+certificate enrollment with 
+CAPF.
+LSC
+LSC
+LSC
+1. CAPF MODE
+Endpoints CAPF Enrollment 
+Method
+External Certificate 
+Authority
+CAPF CA
+(internal)
+CAPF
+34BRKCOL-2226
+
+--- PAGE 34 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Endpoint LSCs – CAPF Enrollment Methods
+• Encrypted Media Prerequisite:
+Certificate Authority Proxy 
+Function (CAPF) enrollment 
+required to install device-
+specific certificates (LSCs) on 
+collaboration endpoints. 
+(Relying on MIC not recommended)
+• Multiple CAPF enrollment 
+methods are available to 
+accomodate an each 
+organization’s requirements.
+• Online CA Mode for automatic 
+enterprise CA endpoint 
+certificate enrollment with 
+CAPF.
+Unified CM
+Administrator
+LSC
+LSC
+LSC
+2. OFFLINE CA 
+MODE
+Endpoints CAPF Enrollment 
+Method
+External Certificate 
+Authority
+LSC
+LSC
+LSC
+CAPF CA
+(internal)
+Public / Private 
+CA
+CAPF
+35BRKCOL-2226
+
+--- PAGE 35 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Endpoint LSCs – CAPF Enrollment Methods
+• Encrypted Media Prerequisite:
+Certificate Authority Proxy 
+Function (CAPF) enrollment 
+required to install device-
+specific certificates (LSCs) on 
+collaboration endpoints. 
+(Relying on MIC not recommended)
+• Multiple CAPF enrollment 
+methods are available to 
+accomodate an each 
+organization’s requirements.
+• Online CA Mode for automatic 
+enterprise CA endpoint 
+certificate enrollment with 
+CAPF.
+Unified CM
+LSC
+LSC
+LSC
+LSC
+LSC
+LSC
+3. ONLINE CA 
+MODE
+Endpoints CAPF Enrollment 
+Method
+External Certificate 
+Authority
+Private CA
+CAPF CA
+(internal)
+CAPF
+36BRKCOL-2226
+
+--- PAGE 36 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Online CA Mode: Automatic Enterprise CA Enrollment
+Online CA Mode enables automatic endpoint 
+certificate enrollment with an Enterprise 
+CA. Available starting with 12.5.
+Microsoft CA: Certificate Enrollment 
+Service (CES) on Unified CM publisher 
+communicates with Microsoft CA for 
+certificate operations via Microsoft API.
+EST-capable CA: CES on Unified CM 
+publisher communicates with Enterprise 
+CA for certificate operations using 
+standards-based Enrollment over Secure 
+Transport. Supported starting with 14 SU2.
+Unified CM 12.5 +
+CAPF 
+enrollment
+CESCAPF
+API
+Certificate 
+Enrollment 
+Service
+LSC
+LSC
+LSC
+Microsoft
+Enterprise 
+CA
+Unified CM 14 SU2 +
+CESCAPF
+EST
+CAPF 
+enrollment
+LSC
+LSC
+LSC
+EST
+EST-capable 
+Enterprise 
+CA
+Enrollment over 
+Secure 
+Transport
+BRKCOL-2226 37
+
+--- PAGE 37 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Online CA Mode: Automatic Enterprise CA Enrollment
+Online CA Mode enables automatic endpoint 
+certificate enrollment with an Enterprise 
+CA. Available starting with 12.5.
+Microsoft CA: Certificate Enrollment 
+Service (CES) on Unified CM publisher 
+communicates with Microsoft CA for 
+certificate operations via Microsoft API.
+EST-capable CA: CES on Unified CM 
+publisher communicates with Enterprise 
+CA for certificate operations using 
+standards-based Enrollment over Secure 
+Transport. Supported starting with 14 SU2.
+Unified CM 12.5 +
+CAPF 
+enrollment
+CESCAPF
+API
+Certificate 
+Enrollment 
+Service
+LSC
+LSC
+LSC
+Microsoft
+Enterprise 
+CA
+Unified CM 14 SU2 +
+CESCAPF
+EST
+CAPF 
+enrollment
+LSC
+LSC
+LSC
+EST
+EST-capable 
+Enterprise 
+CA
+Enrollment over 
+Secure 
+Transport
+CA
+EST Server
+TVS certificate for 
+TLS authorization
+EST DETAILS
+CESCAPF
+EST 
+Proxy Mode
+EST ServerEST Client
+EST Client
+TVS
+EST
+ 
+(HTTPS)
+EST
+ 
+(HTTPS)
+BRKCOL-2226 38
+
+--- PAGE 38 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Endpoint LSC Expiration Monitoring and Notification
+Monitor endpoint LSC certificate expiration (Unified CM Administration)
+   Receive email notification prior to LSC expiration (OS Administration)
+Upgrade   11/21/2026  CAPF-a41cf   05/07/2029
+Success
+Upgrade   11/21/2026  CAPF-a41cf   05/07/2029
+Success
+Upgrade   11/21/2026  CAPF-a41cf   05/07/2029
+Success
+BRKCOL-2226 39
+
+--- PAGE 39 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Mismatched
+Mismatched
+Mismatched
+Phone Initial Trust List (ITL) Mismatch and Reporting
+BRKCOL-2226
+• ITL mismatch: When the ITL file on a phone becomes outdated and does not match the current ITL 
+file on the Unified CM server. 
+• For example, an ITL mismatch could happen when the Unified CM admin renews core certificates 
+(TVS, ITL Recovery) while a phone is offline.
+• If the ITL is mismatched, the phone may register, but it will not operate correctly due to lost trust 
+(e.g., phone cannot verify signature of downloaded files (CTL, config file, etc.) – no config updates)
+Easily identify phones that have mismatched ITL: Phone search where ‘ITL File Status’ = ‘Mismatch’
+40
+This search returns a list of devices 
+that have outdated ITL files.
+Devices are registered, but 
+services will not operate normally
+
+--- PAGE 40 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Public CA Certificate Validity Period
+WHAT: Reduced Public CA issued/signed certificate lifetime
+WHY: To reduce risk of compromised certificates the CA/Browser Forum voted to amend TLS requirements to shorten 
+the length of certificate validity. As a result, all Public CAs will begin reducing the maximum certificate lifetime/validity 
+length of issued certificates.
+WHEN: 
+• Beginning March 15, 2026 maximum validity length for an issued certificate will be reduced to 200 days. 
+• On March 15, 2027 maximum validity length for issued certificates will be further reduced to 100 days. 
+• 2 years later on March 15, 2029 maximum validity length for issued certificates will be reduced to 47 days.
+IMPACT: Any public CA signed certificates in a Unified CM deployment must be updated more frequently.
+ 
+** No impact to private CA signed/issued (or self-signed) certificates.**
+WHAT CAN YOU DO TO REDUCE IMPACT:
+1. Consider using certificates that have longer validity lengths – use private CA signed Unified CM certificates or 
+revert to multi-SAN self-signed certificates.
+2. If public CA signed certificates are required – leverage server certificate management APIs to help automate 
+certificate renewal operations. And use certificate monitoring to enable email notification prior to expiration.
+BRKCOL-2226 41
+
+--- PAGE 41 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Public CA Client Auth EKU Sunsetting
+WHAT: Removal of Client Authentication EKU (purpose) from Public CA issued/signed certificates
+WHY: To improve security posture based on principle of least privilege the Chrome Root Policy (v1.6)* was modified to 
+disallow mixed-use TLS root certficates and allow only Server Auth EKU on public TLS certificates. As a result, all Public 
+CAs root and intermediate certificates must be dedicated to TLS Server Auth purpose or they will no longer be trusted. 
+Further Public CAs will stop issuing dual-purpose certficates.
+WHEN: 
+Date of enforcement June 15, 2026 (phased cut off of certs issued with Client Auth EKU as this deadline approaches).
+BRKCOL-2226 42
+* Determines set of requirements Trusted Root CAs must 
+meet to be trusted by Google Chrome. Not optional for CAs
+Certificate 
+Enrollment 
+Service
+CA
+EST Server
+TVS certificate for 
+TLS authorization
+Online CA Mode: EST DETAILS
+CESCAPF
+EST ServerEST Client
+EST Client
+EST
+ 
+(HTTPS)
+EST
+ 
+(HTTPS)
+Client Auth EKU required
+TVS
+TVS
+Server Auth EKU required
+
+--- PAGE 42 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Public CA Client Auth EKU Sunsetting
+WHAT: Removal of Client Authentication EKU (purpose) from Public CA issued/signed certificates
+WHY: To improve security posture based on principle of least privilege the Chrome Root Policy (v1.6)* was modified to 
+disallow mixed-use TLS root certficates and allow only Server Auth EKU on public TLS certificates. As a result, all Public 
+CAs root and intermediate certificates must be dedicated to TLS Server Auth purpose or they will no longer be trusted. 
+Further Public CAs will stop issuing dual-purpose certficates.
+WHEN: 
+Date of enforcement June 15, 2026 (phased cut off of certs issued with Client Auth EKU as this deadline approaches).
+IMPACT: Any public CA signed certificates in a Unified CM deployment must be updated to remove the Client Auth EKU.  
+Further, dual service certificates will be required (1 for the client interface and 1 for the server interface).
+** No impact to private CA signed/issued (or self-signed) certificates.**
+BRKCOL-2226 43
+
+--- PAGE 43 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Public CA Client Auth EKU Sunsetting - Mitigation
+WORKAROUND / MITIGATION: 
+1. If using public CA issued certificates, consider replacing with certifiates containing dual EKUs. This 
+means private CA issued certficates or revert to self-signed certificates. 
+Pro: Maintain dual EKU / Con: Trust - private CA/self-signed cert
+ OR
+2. Switch to certificates issued by public root CA that continues to issue certificate with combined EKU 
+(from an alternative root) – e.g., DigiCert, IdenTrust. 
+Pro: Maintain dual EKU / Con: Trust - alternative root not included in Chrome browser truststore (by 
+default)
+ OR
+2. Renew current public CA issued certificates to extend validity  Do this by March 15 for maximum 
+validity period!
+ ** AND this is only to prepare for upgrade to Unified CM version 15 SU5 in the future ** 
+BRKCOL-2226 44
+
+--- PAGE 44 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Public CA Client Auth EKU Sunsetting – 15 SU5
+PLANNED ENCHANCEMENTS FOR UNIFIED CM 15 SU5*:
+1. Implement dual certificate model (server and client cert per service)
+2. Implement service parameter to disable Client Auth EKU check.
+Note: This will require similar parameter/setting on the other side of the TLS connection
+BRKCOL-2226 45
+* Current target 2H CY2026. Plan of record. SUBJECT TO CHANGE.
+tomcat
+tomcat ECDSA
+CallManager
+CallManager ECDSA
+CAPF
+TVS
+IPSec
+15 SU4 and earlier
+Dual EKU
+tomcat  Server
+tomcat Client
+CallManager Server
+CallManager Client
+CAPF Server
+CAPF Client
+TVS Server
+TVS Client
+IPSec Server
+IPSec Client
+tomcat ECDSA Server
+tomcat ECDSA Client
+CallManager ECDSA Server
+CallManager ECDSA Client
+15 SU5 and later
+Single EKU
+
+--- PAGE 45 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cipher Management
+Cipher management capabilities on Unified CM enable administrator to control the encryption 
+ciphers used by the system when making secure connections.
+• Not required / Not recommended: By default, Unified CM has a set of recommended 
+encryption ciphers that support secure integrations with most other products (Cisco and 3rd-party). 
+• Why change?: An administrator might change the ciphers available on the system to:
+ Add a cipher to the system to address cipher mismatches duing TLS handshake (less restrictive)*
+ Remove a cipher to prevent it from being negotiated (more restrictive). 
+• Be aware of the implications: Modifying system ciphers may cause cipher mismatches at TLS 
+handshake leading to connection failures.
+Cipher management options: 
+ Basic cipher management: Enterprise Parameters (Unified CM Administration)
+ Advanced cipher management: Cipher management (OS Administration) 
+BRKCOL-2226 46
+* Certiain weaker ciphers are not allowed, even if configured 
+   (e.g.,PSK-3DES-EDE-CBC-SHA, ECDH-RSA-NULL-SHA)
+128
+256
+384
+AES
+SHAGCM 
+ECDHE
+ECDSA
+128
+256
+384
+AES
+SHAGCM 
+ECDHE
+ECDSA
+
+--- PAGE 46 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Basic Cipher Control - Enterprise Parameters 
+If managing system ciphers, a good first step is to use the enterprise parameter basic controls
+• TLS Ciphers
+• sRTP Ciphers
+• HTTPS Ciphers
+These settings provide 
+convenient recommended 
+cipher groupings for various 
+levels of security 
+(e.g., Medium, Strongest)
+  Default = least restrictive
+BRKCOL-2226 47
+
+--- PAGE 47 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Full Cipher Control – Cipher Management
+If basic controls are not sufficient, specify a set of preferred 
+ciphers under Cipher Management configuration.
+• Cipher configuration applies to all TLS interfaces 
+and/or individual interfaces:
+ All TLS
+ HTTPS TLS
+ SIP TLS
+• ‘HTTPS TLS’ and ‘SIP TLS’ cipher configuration 
+overrides cipher configuration for ‘All TLS’
+• Configuration under Cipher Management 
+overrides the basic cipher control 
+Enterprise Parameters.
+• Ciphers are entered in OpenSSL cipher string 
+format: <Cipher-Suite-Name>:<Cipher-Suite-Name>
+e.g., ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256
+BRKCOL-2226 48
+(OS Admin)
+!
+Proceed with 
+Caution
+
+--- PAGE 48 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Transport Layer Security (TLS) 1.3
+Unified CM 15 SU2 introduced support for TLS 1.3 
+• TLS 1.3 is the latest version of the TLS protocol (RFC 8446) standard 
+and provides significant improvements over previous versions:
+BRKCOL-2226 49
+TLS 1.3
+TLS 1.3
+TLS 
+1.3
+
+--- PAGE 49 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Transport Layer Security (TLS) 1.3
+Unified CM 15 SU2 introduced support for TLS 1.3 
+• TLS 1.3 is the latest version of the TLS protocol (RFC 8446) standard 
+and provides significant improvements over previous versions:
+ Faster: Reduced TLS connection setup time due to faster handshake mechanism
+ More secure: Removes support for older / less secure encryption algorithms 
+and instead relies on modern authenticated* algorithms 
+(e.g., AES-GCM, ChaCha20-Poly1305).
+• TLS 1.3 available by default but use is dependent on server/
+client capabilities at connection.
+• Careful if setting TLS minimum version (e.g., set tls min-version 1.3) … 
+TLS 1.3 is more secure, but may not be universally supported/
+compatible across your deployment
+* Authenitcated Encryption with Associated Data (AEAD)
+BRKCOL-2226 50
+TLS 1.3
+TLS 1.3
+TLS 
+1.3
+
+--- PAGE 50 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Transport Layer Security (TLS) 1.3
+Unified CM 15 SU2 introduced support for TLS 1.3 
+• TLS 1.3 is the latest version of the TLS protocol (RFC 8446) standard 
+and provides significant improvements over previous versions:
+ Faster: Reduced TLS connection setup time due to faster handshake mechanism
+ More secure: Removes support for older / less secure encryption algorithms 
+and instead relies on modern authenticated* algorithms 
+(e.g., AES-GCM, ChaCha20-Poly1305).
+• TLS 1.3 available by default but use is dependent on server/
+client capabilities at connection.
+• Careful if setting TLS minimum version (e.g., set tls min-version 1.3) … 
+TLS 1.3 is more secure, but may not be universally supported/
+compatible across your deployment
+• Refer to the TLS 1.3 Compatibility Matrix for details on supported products:
+https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/uc_system/unified/communications/system/Compatibility/TLS/TLS1-3-Compatibility-Matrix.html 
+* Authenitcated Encryption with Associated Data (AEAD)
+BRKCOL-2226 51
+TLS 1.3
+TLS 1.3
+TLS 
+1.3
+
+--- PAGE 51 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+TLS 1.3 prefers ECDSA over RSA. This preference is based on the client’s advertised signature 
+algorithms and ensures smoother compatibility for TLS connections.
+• With TLS 1.2 server selects cert based on key algorithm in the negotiated cipher suite
+• With TLS 1.3 server instead selects cert based on client advertised supported signature algorithms list
+New enterprise parameter ‘TLS 1.3 Certificate Preference Order’ provides backward 
+compatibility inbound TLS 1.3 connections to ensure expected certificate(s) are used:
+ TLS 1.2 Ciphers Preference Order (Default): Certificate selection for inbound TLS 1.3 
+connections based on ‘TLS Ciphers’ parameter (default = ‘All Ciphers RSA Preferred’).
+ TLS 1.3 Signature Algorithm Preference Order: Certificate selection for inbound TLS 1.3 
+connections based on client’s signature algorithm advertisement (ECDSA over RSA).
+TLS 1.3 Deployment Considerations
+BRKCOL-2226 52
+RSA cert
+ECDSA cert
+TLS 
+1.3
+
+--- PAGE 52 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+TLS 1.3 prefers ECDSA over RSA. This preference is based on the client’s advertised signature 
+algorithms and ensures smoother compatibility for TLS connections.
+• With TLS 1.2 server selects cert based on key algorithm in the negotiated cipher suite
+• With TLS 1.3 server instead selects cert based on client advertised supported signature algorithms list
+New enterprise parameter ‘TLS 1.3 Certificate Preference Order’ provides backward 
+compatibility inbound TLS 1.3 connections to ensure expected certificate(s) are used:
+ TLS 1.2 Ciphers Preference Order (Default): Certificate selection for inbound TLS 1.3 
+connections based on ‘TLS Ciphers’ parameter (default = ‘All Ciphers RSA Preferred’).
+ TLS 1.3 Signature Algorithm Preference Order: Certificate selection for inbound TLS 1.3 
+connections based on client’s signature algorithm advertisement (ECDSA over RSA).
+TLS 1.3 Deployment Considerations
+BRKCOL-2226 53
+RSA cert
+ECDSA cert
+TLS 
+1.3
+
+--- PAGE 53 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+TLS 1.3 Restrictions and Caveats:
+• TLS 1.3 protocol is not supported in Common Criteria. 
+ Solution: Use TLS 1.2 instead
+• ‘Authenticated’ Device Security Mode on SIP Trunk and/or Phone Security Profiles is not supported with 
+TLS 1.3 (falls back to lower TLS version).
+ Solution: Switch profile security mode to 
+‘Encrypted’ (or alternatively, do not set 
+minimum TLS version on the cluster to 1.3).
+• Endpoint support: Older phone models (including 7800 and 8800 series) do NOT support TLS 1.3
+ Solution: User supported endpoints.
+ Phone OS devices (9800 series, 8875) – Minimum version Phone OS 3.2.
+ Software clients (minimum versions: Jabber 15, Webex App 44.5)
+ Room OS devices (Desk / Room / Board series) – Minimum versions 11.9.
+TLS 1.3 Deployment Caveats
+BRKCOL-2226 54
+
+X
+TLS 
+1.3
+
+--- PAGE 54 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Simplification with SIP OAuth
+BRKCOL-2226
+✓ Reduced overhead on 
+certificate renewal 
+✓ Automate certificate 
+management 
+ 
+✓ Server certificate 
+monitoring
+✓ Long-lived 
+certificates
+✓ Centralized certificiate 
+management
+Simplified Server 
+Certificate Management
+✓ Multi-server (SAN) 
+self-signed 
+certificates
+✓ Tomcat certificate 
+reuse
+✓ Remove unnecessary 
+certificates
+Server Certificate 
+Count Reduction
+✓ Automatic endpoint 
+certificate enrollment 
+with private CA 
+✓ Endpoint certificate 
+(LSC) monitoring
+✓ ITL mismatch report
+Endpoint Certificate 
+Simplification
+Simplification with SIP 
+OAuth
+✓ Simplify endpoint 
+security for these 
+devices:
+• 7800 / 8800 / 9800 
+series desk phones
+• Cisco Jabber
+• Webex App (on-prem 
+calling)
+✓ No LSC for encrypted 
+signaling/media = no 
+CAPF enrollment.
+✓ Mixed-mode not 
+enabled, no CTL file.
+55
+
+--- PAGE 55 ---
+Endpoint and API 
+Authorization with OAuth
+
+--- PAGE 56 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+What is OAuth 2.0?
+Open Authorization Standard
+BRKCOL-2226
+OAuth 2.0 is an industry-standard authorization 
+framework that enables secure delegated 
+access without sharing credentials
+• Industry standard authorization protocol (RFC 
+6749)
+• Uses tokens instead of passwords for 
+authorization
+• Provides secure, limited access to protected 
+resources
+• Widely adopted across web services and 
+APIs
+• Separates authentication from authorization
+Key Security Benefits:
+• No password sharing: Credentials never 
+exposed to third parties
+• Limited scope: Tokens grant specific, 
+limited permissions
+• Token expiration: Access automatically 
+expires after set period
+• Revocable access: Tokens can be revoked 
+without password changes
+• Centralized control: Single point for 
+access management and auditing
+57
+
+--- PAGE 57 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+OAuth Primer
+Authorization Code Flow
+58
+Resource Server
+(a server that the
+application needs 
+access to)
+Authorization 
+Server
+Resource Owner
+(the user)
+Client
+(the application)
+User Agent
+(web browser)
+Authentication
+Trust relationship
+2
+3
+1
+code=udh4jf7…
+5
+IdP
+4
+BRKCOL-2226
+
+--- PAGE 58 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+OAuth Primer
+Access and Refresh Tokens
+59
+Resource
+Server
+Authorization 
+Server
+Client
+Trust relationship
+3
+1
+2
+2
+4
+Refresh Token:
+• Used to request a new 
+Access Token
+• Longer expiry time
+Access Token:
+• Authorizes bearer to access 
+protected resources
+• Issued to a user with a scope 
+and a (short) expiry time
+BRKCOL-2226
+
+--- PAGE 59 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+OAuth Primer
+OAuth Roles in Cisco UC
+60
+Resource Server
+Authorization 
+Server
+Resource Owner
+Client
+Grants
+authorization
+Requests
+authorization
+Unified CM, IM&P, 
+Expressway,
+Unity Connection
+Unified CM
+(SSOSP)
+Soft Clients,
+Phones
+1
+2
+4
+5
+3
+BRKCOL-2226
+
+--- PAGE 60 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+OAuth Primer
+Token Format: Self-contained Access Tokens
+61
+• Self-contained access tokens are signed 
+and encrypted by the AuthZ server and 
+contain the relevant scopes
+• They can be validated and examined by 
+Resource Servers (e.g., Expressway, Unity 
+Connection) with the appropriate keys
+• Clients cannot read the content of the tokens 
+and treat them as “blobs”
+• Format adopted by Cisco UC: JSON Web 
+Token (JWT) (RFC 7519,7515,7516) 
+• (Note: token format is not part of the OAuth 
+2.0 standard)
+Expressway
+CUCM
+Client
+AuthZ Server
+Validating 
+Self-contained Access Tokens
+BRKCOL-2226
+
+--- PAGE 61 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+HTTP (CUCM) SIP XMPP HTTP (Unity Cxn)
+On-premises 
+Phones Certificate-based* Certificate-based* (N/A) (N/A)
+On-premises 
+Clients (Local or LDAP 
+AuthN)
+Digest Certificate-based*
+SOAP binding with digest 
+auth, derive VTG token 
+used as SASL bind
+Digest
+MRA Phones
+Basic auth, Expwy-E 
+caches credentials, 
+generates x-auth cookie 
+sent back to client
+Digest auth at Expwy-E 
+based on cached 
+CUCM credentials
+(N/A) (N/A)
+MRA Clients
+(Local or LDAP AuthN)
+Basic auth, Expwy-E 
+caches credentials, 
+generates x-auth cookie 
+sent back to client
+Digest auth at Expwy-E 
+based on cached 
+CUCM credentials
+SOAP binding with digest 
+auth (after edge traversal 
+using x-auth cookie), derive 
+VTG token for SASL bind
+Digest auth after edge 
+traversal using x-auth 
+cookie
+On-premises 
+Clients (SAML SSO) OAuth token Certificate-based*
+SOAP binding with OAuth 
+token, derive VTG token 
+used as SASL bind
+OAuth token (different 
+token from CUCM)
+MRA Clients
+(SAML SSO) OAuth token
+Opaque token 
+generated on Expwy-C 
+as result of OAuth flow
+SOAP binding with OAuth 
+token, derive VTG token 
+used as SASL bind
+OAuth token (different 
+token from CUCM)
+API Protection
+Before CSR 12
+BRKCOL-2226 * Requires CAPF enrollment and “mixed mode”
+62
+
+--- PAGE 62 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+HTTP (CUCM) SIP XMPP HTTP (Unity Cxn)
+On-premises 
+Phones Certificate-based* Certificate-based* (N/A) (N/A)
+On-premises 
+Clients (Local or LDAP 
+AuthN)
+OAuth token OAuth token OAuth token OAuth token
+MRA Phones OAuth token OAuth token (N/A) (N/A)
+MRA Clients
+(Local or LDAP AuthN) OAuth token OAuth token OAuth token OAuth token
+On-premises 
+Clients (SAML SSO) OAuth token OAuth token OAuth token OAuth token
+MRA Clients
+(SAML SSO) OAuth token OAuth token OAuth token OAuth token
+API Protection
+CSR 12.5
+BRKCOL-2226 * Requires CAPF enrollment and “mixed mode”
+63
+
+--- PAGE 63 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+HTTP (CUCM) SIP XMPP HTTP (Unity Cxn)
+On-premises 
+Phones OAuth token OAuth token (N/A) (N/A)
+On-premises 
+Clients (Local or LDAP 
+AuthN)
+OAuth token OAuth token OAuth token OAuth token
+MRA Phones OAuth token OAuth token (N/A) (N/A)
+MRA Clients
+(Local or LDAP AuthN) OAuth token OAuth token OAuth token OAuth token
+On-premises 
+Clients (SAML SSO) OAuth token OAuth token OAuth token OAuth token
+MRA Clients
+(SAML SSO) OAuth token OAuth token OAuth token OAuth token
+API Protection
+CSR 14
+BRKCOL-2226 64
+
+--- PAGE 64 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+OAuth for Phones
+CSR 14
+BRKCOL-2226
+• Phones support OAuth for SIP and 
+HTTPS with Unified CM
+• Signaling and media encryption without 
+mixed-mode or client certificates
+• HTTPS with OAuth for config download
+• Phones onboarded with activation code 
+in CSR 12.5 can be upgraded to this 
+mode without reactivation
+• Phones in non-secure mode can also be 
+upgraded to this mode using Zero-Touch 
+Onboarding
+Tomcat
+TCPTLS +
+OAuth
+in SIP
+mTLS
+50605090
+5091
+Names of
+Expwy-C
+nodes
+Non-secureEncrypted
+(OAuth)
+Expwy-C
+Unified CM Phone Security Profile Modes*
+AXL
+Expwy-E
+TLS +
+OAuth
+in SIP
+TCP
+TLS +
+OAuth
+in SIP
+Legacy encrypted mode omitted for simplicity
+65
+
+--- PAGE 65 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+sRTP
+sRTP
+OAuth for Phones
+SIP and Media Security – Before CSR 14
+BRKCOL-2226
+Phones over MRA:
+• SIP signaling is authenticated (TLS + OAuth token) 
+and encrypted
+• Expwy-C enforces encryption (B2BUA)
+• Media is encrypted (Phone 
+  Expwy-C)
+• No ICE media path optimization possible
+Internet DMZ Enterprise
+Expressway E Expressway C
+Phones
+RTP
+Phones
+SIP/TCP
+SIP/TLS
+SIP/TLS
+SIP/TCP
+Phones on-premises:
+• SIP signaling and media are not authenticated or 
+encrypted by default
+• Encryption requires Unified CM mixed mode
+• Signaling authentication is certificate-based (mTLS), 
+requires CAPF enrollment
+SIP/TCP
+SIP/TCPUnified CM
+66
+
+--- PAGE 66 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+OAuth for Phones
+SIP and Media Security – CSR 14
+BRKCOL-2226
+Phones over MRA:
+• SIP signaling is authenticated (TLS + OAuth token) 
+and encrypted
+• Expwy-C uses mTLS with Unified CM
+• Media is encrypted end-to-end
+• ICE media path optimization is possible
+Internet DMZ Enterprise
+Phones Phones
+Phones on-premises:
+• SIP signaling is authenticated (TLS + OAuth 
+token) and encrypted
+• Media is encrypted (no need for CAPF 
+enrollment or mixed-mode)
+Unified CMExpressway E Expressway C
+SIP/TLS
+SIP/TLS
+SIP/TLS
+SIP/TLS
+SIP/TLS
+SIP/TLS
+TURN
+67
+
+--- PAGE 67 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Check if identity certificate of 
+server was signed by a trusted 
+CA (root cert is in Trust Store)
+Secure Phone Onboarding:
+use MIC + Activation Code to get 
+OAuth tokens (+optional root certs)
+Authorize SIP requests 
+by validating OAuth 
+Access Token
+Trust Store
+Identity certificate
+(Tomcat)
+TFTP
+SIP and HTTP TLS Connections
+Unified CM
+Certificate
+Authority 
+(CA)
+AuthZ Server
+(SSOSP)
+Phone
+Trusted Root Bundle
+(Public CAs)
+Enterprise CA
+Root Certificate
+Always-secure Phones with OAuth
+API Protection: OAuth
+BRKCOL-2226
+OAuth
+Access Token
+MIC
+Activation
+Code
+69
+
+--- PAGE 68 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+OAuth for Phones
+Configuration Download – CSR 14
+BRKCOL-2226
+Identity certificates
+ITLRecovery
+CallManager
+TVS …
+HTTPS (TLS)
+Phone Unified CM
+ITL/CTL File
+Root CA’s
+Tomcat
+(CA signed)
+Signed
+mini-config
+TFTP
+Root CA’s
+TFTP
+HTTP
+Download 
+ITL/CTL file
+1
+Request config over HTTPS
+Provide OAuth Access Token
+Check if server cert is in ITL/CTL file
+3
+Request config over HTTP
+Receive signed mini-config
+(If needed, download updated 
+signed file containing Root CA’s)
+2
+Validate OAuth Access Token
+Check for device ID match
+Send full config
+3
+Phone is configured with 
+“OAuth” Encrypted Mode
+profile in Unified CM
+Config file
+70
+
+--- PAGE 69 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+ 71
+Request new Access Token
+Validate cert chain with Root CA’s
+Provide Refresh Token
+5
+OAuth for Phones
+SIP and AuthZ Server (SSOSP) – CSR 14
+Identity certificates
+ITLRecovery
+CallManager
+TVS …
+HTTPS (TLS)
+Phone Unified CM
+Tomcat
+(CA signed)
+TFTP
+Root CA’s
+TFTP
+Send SIP REGISTER
+Validate cert chain with Root CAs
+Present OAuth Access Token
+4
+Challenge registration (407)
+Validate Access Token
+4
+Validate Refresh Token
+Check if device is in DB
+Send new Access Token 
+(+new Refresh Token if <50% left)
+5
+SIP call control
+AuthZ server 
+(SSOSP)
+SIP (TLS)
+Expired
+ITL/CTL File
+Root CA’s
+BRKCOL-2226
+Config file
+
+--- PAGE 70 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Endpoint 
+(Soft Client or Phone)
+ OAuth Refresh Token 
+(signed)
+OAuth Access Token 
+(signed & encrypted)
+Token signature 
+validation key
+Token 
+decryption key
+OAuth for Phones
+Accessing Services over MRA
+BRKCOL-2226
+Internet DMZ Internal Network
+Expwy E Expwy C
+Unified CM
+Legend
+• Endpoint uses OAuth 
+Access Token on 
+HTTP, SIP (REGISTER) 
+and XMPP connections
+• Expwy C checks signature, 
+decrypts Access Token, 
+analyses scopes and 
+validity
+1 2
+IM&P
+Unity Connection
+• If token scope entitles 
+user to the service, 
+Expwy forwards request 
+to internal network
+3
+VOICE:
+VIDEO:
+       IM:
+Valid until:
+72
+
+--- PAGE 71 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+OAuth for Phones
+Configuration Process
+BRKCOL-2226
+1. Enable OAuth with Refresh Login flow on Unified CM*
+2. Enable and configure SIP OAuth on Unified CM
+3. Configure Expressway (if MRA is needed)
+4. Assign “OAuth” Encrypted Phone Security Profile to 
+Endpoints
+*Remember to enable OAuth with Refresh on all UC 
+applications for the optimal user experience.
+Unified CM
+Expressway
+Endpoints
+(Phones, Clients)
+73
+
+--- PAGE 72 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+OAuth for Phones
+Configuration: Enable OAuth with Refresh Login Flow
+BRKCOL-2226
+• Enable OAuth with Refresh Login Flow (disabled by default)
+• If needed, adjust token expiry timers
+Unified CM Admin > System > Enterprise Parameters :
+74
+
+--- PAGE 73 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+OAuth for Phones
+Configuration: Enable SIP OAuth on Unified CM
+BRKCOL-2226
+• Enable feature from Unified CM publisher CLI (requires smart license enabled for 
+export-controlled functionality):
+utils sip-oauth enable
+• Restart Callmanager service on all relevant subscriber nodes
+• Verify cluster configuration at:
+Unified CM Admin > System > Enterprise Parameters:
+75
+
+--- PAGE 74 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+OAuth for Phones
+Configuration: SIP OAuth Phone Security Profile
+BRKCOL-2226
+• Create or modify Phone Security Profiles for 
+all relevant endpoint types
+• Set Device Security Mode to “Encrypted”
+• Select checkbox to “Enable OAuth 
+Authentication”
+• Reset/restart devices
+Unified CM Admin > System > Security > Phone Security Profile:
+This is ignored!
+76
+
+--- PAGE 75 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified CM Admin > System > 
+Enterprise Parameters
+Expiry Timer for Phone Refresh Token: 
+Phone refresh tokens automatically renewed 
+when reaching 50% of expiry timer
+Default value: 60 days (configurable)
+OAuth for Phones
+Configuration: Refresh Token Expiry Time
+BRKCOL-2226
+If a phone remains unplugged for 
+more than 30 days (default value), 
+it may need to be re-onboarded
+77
+
+--- PAGE 76 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified CM Admin > System > Enterprise Parameters :
+Implicit: Zero-touch onboarding allowed
+Explicit: Activation-code onboarding only
+OAuth for Phones
+Configuration: Disabling Zero-Touch Onboarding
+BRKCOL-2226 78
+
+--- PAGE 77 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Always-secure Phones with OAuth
+Benefits of New Architecture
+Compliant
+Internal and external security 
+and privacy requirements
+Flexible
+Seamless mobility between 
+on-premises and MRA for 
+phones and soft clients
+Secure
+Easy to manage, always-on 
+security built with modern 
+standards
+Optimized
+Better quality and scale for 
+remote workers with media 
+optimization
+BRKCOL-2226 79
+
+--- PAGE 78 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Check if identity certificate of 
+server was signed by a trusted 
+CA (root cert is in Trust Store)
+New UC Security Architecture
+Enrollment for Soft Clients
+BRKCOL-2226 80
+Trust Store
+(managed by OS)
+Identity certificate
+(Tomcat)
+OAuth
+Access Token
+SIP/TLS Connection
+Unified CM
+Certificate
+Authority 
+(CA)
+AuthZ Server
+(SSOSP)
+Soft Client
+Enterprise CA
+Root Certificate
+IdP
+LDAP
+User
+Authorization Code Grant:
+use SAML SSO, LDAP or local 
+authN to get OAuth tokens
+Authorize SIP requests 
+by validating OAuth 
+Access Token
+
+--- PAGE 79 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Enrollment for Soft Clients
+Refresher: Soft Client Authentication Options
+BRKCOL-2226 81
+IdP
+Expressway E/C
+LDAP
+Directory LDAP Authentication:
+• CUCM/IM&P and Unity 
+Connection use LDAP bind to 
+authenticate end-users against 
+external directory
+• Equivalent to local authN for 
+Expressway/MRA
+Local Authentication :
+• Built-in user databases in CUCM/ 
+IM&P and Unity Connection
+• Expressway forwards authN 
+requests to CUCM/Unity for MRA
+SAML SSO:
+• CUCM/IM&P, Unity Connection 
+and Expressway set up SAML 
+agreements with IdP
+• All end-user authentication is 
+delegated to the IdP
+• Soft clients rely on platform 
+browser to interact with IdP
+SAML
+IdP
+1
+23
+Unity
+Connection
+Soft clients
+Soft
+clients
+Unified CM + IM&P
+
+--- PAGE 80 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+OAuth with Refresh Tokens – Pre CSR 15
+BRKCOL-2226
+• Signing and encryption keys are shared across all 
+nodes
+• Subs can validate access tokens based on this 
+shared signing and encryption key.
+• Login is successful
+Publisher
+Sub1 Sub2
+Token Type Token Status
+Access Token Valid
+Refresh Token Valid
+82
+
+--- PAGE 81 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+OAuth with Refresh Tokens – Pre CSR 15
+BRKCOL-2226
+Publisher
+Sub1 Sub2
+refreshtokendetails
+rt_9kL3nM6pQ2wX
+5yZ8cT4vB1aD
+refreshtokendetails
+rt_9kL3nM6pQ2wX
+5yZ8cT4vB1aD
+• Subscribers have access to the refreshtokendetails 
+table.
+• Refresh token is validated based on shared 
+signing/encryption keys.
+• Login is successful because subscribers can 
+validate Refresh Tokens and issue Access Tokens
+Token Type Token Status
+Access Token Expired
+Refresh Token Valid
+83
+
+--- PAGE 82 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+OAuth with Refresh Tokens – Pre CSR 15
+BRKCOL-2226
+Publisher
+Sub1 Sub2
+refreshtokendetails
+rt_9kL3nM6pQ2wX
+5yZ8cT4vB1aD
+refreshtokendetails
+rt_9kL3nM6pQ2wX
+5yZ8cT4vB1aD
+• Publisher is either down or unreachable by the 
+subscribers.
+• Access token validation fails.
+• Refresh token validation fails due to expiration or 
+revocation.
+• Login is unsuccessful because subscribers cannot 
+issue refresh tokens. 
+Token Type Token Status
+Access Token Expired
+Refresh Token Expired/Revoked
+84
+
+--- PAGE 83 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CSR 15 OAuth Architecture Update
+BRKCOL-2226
+Publisher
+Sub1 Sub2
+refreshtokendetails
+rt_9kL3nM6pQ2wX
+5yZ8cT4vB1aD
+refreshtokendetails
+rt_9kL3nM6pQ2wX
+5yZ8cT4vB1aD
+refreshtokendetails
+rt_7hR2sF9mK4nP6
+wQ3xJ8vL5cY1zT
+refreshtokendetails
+rt_7hR2sF9mK4nP6
+wQ3xJ8vL5cY1zT
+• Publisher is either down or unreachable by the 
+subscribers.
+• Access token validation fails.
+• Refresh token validation fails due to expiration or 
+revocation.
+• Login is successful because subscribers can now 
+issue refresh tokens and write that information to 
+other nodes.
+Token Type Token Status
+Access Token Expired
+Refresh Token Expired/Revoked
+85
+
+--- PAGE 84 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+OAuth Comparison
+BRKCOL-2226
+Aspect Before Version 15 & 14SU3 After Version 15 & 14SU3
+Access Token Issuance Publisher + all subscribers Publisher + all subscribers
+Refresh Token Issuance Publisher only Publisher + all subscribers
+Access Token Storage None (stateless JWT) None (stateless JWT)
+Access Token Validation Any node Any node
+Refresh Token Storage Database (refreshtokendetails table) Database (refreshtokendetails table)
+Signing/Encryption Keys Generated on publisher, distributed to all nodes Generated on publisher, distributed to all nodes
+Key Distribution Method Automatic cluster distribution Automatic cluster distribution
+Load Distribution All refresh token requests bottlenecked at publisher Token requests can be distributed across the cluster
+Cluster Distribution Database replication (for refresh tokens) Database replication (for refresh tokens)
+86
+
+--- PAGE 85 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Automatic Renewal of Refresh Token for Webex Clients
+BRKCOL-2226
+• Eliminates manual re-login every 60 
+days - refresh tokens automatically 
+renew before expiration.
+• Prevents unexpected Webex App 
+disconnections and authentication 
+interruptions.
+• Controlled by "Auto Renew Refresh 
+Token" enterprise parameter (enabled 
+by default).
+• Improves user experience, especially 
+for remote/MRA deployments.
+87
+
+--- PAGE 86 ---
+Simplified Device Onboarding 
+& Provisioning
+
+--- PAGE 87 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Authorize SIP requests 
+by validating OAuth 
+Access Token
+Check if identity certificate of 
+server was signed by a trusted 
+CA (root cert is in Trust Store)
+Always-secure Phones with OAuth
+Enrollment: Secure Phone Onboarding
+BRKCOL-2226
+Trust Store
+Identity certificate
+(Tomcat)
+TFTP
+SIP and HTTP TLS Connections
+Unified CM
+Certificate
+Authority 
+(CA)
+Phone
+Trusted Root Bundle
+(Public CA’s)
+Enterprise CA
+Root Certificate
+Secure Phone Onboarding:
+use MIC (+ Activation Code) to get 
+OAuth tokens (+optional root CA certs)
+OAuth
+Access Token
+ AuthZ Server
+(SSOSP)
+MICActivation
+Code
+89
+
+--- PAGE 88 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Activation Code Onboarding
+On-Premises Flow
+BRKCOL-2226
+1. Admin creates full device config, may 
+leave MAC address blank
+2. Admin requests activation code for this 
+device (Unified CM-generated)
+3. Activation code sent to/retrieved by user
+4. Phone gets Unified CM target from DHCP 
+opt 150/TFTP, user enters act. code
+5. Phone authenticates to Unified CM using 
+MIC + activation code
+6. Unified CM updates device config with 
+phone MAC. Phone can now get its config 
+from TFTP and register
+Intranet
+Unified
+CM
+Enterprise
+5
+4
+1
+2
+6
+2
+MAC ?
+ 6
+Admin
+User
+1
+2
+3
+4
+5
+6
+MAC1234
+3
+Activation Code
+DHCP
+MIC
+90
+
+--- PAGE 89 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Activation Code Onboarding
+MRA Flow
+BRKCOL-2226
+1. Unified CM onboards with cloud/GDS, 
+creates MRA target (+optional CA)
+2. Admin creates full device config, may 
+leave MAC address blank
+3. Admin requests activation code for this 
+device (Act. ID from GDS, OTP from 
+Unified CM)
+4. Activation code sent to a user/admin
+5. User enters activation code, phone 
+gets MRA target (+ opt. CA) from GDS
+6. Phone authenticates to Expwy/Unified CM 
+using MIC + activation code
+7. Unified CM updates device config with 
+phone MAC, sends tokens (+CA) to 
+phone. Phone can now download config 
+and register
+Internet
+Unified
+CM
+Enterprise
+mra.foo.com
+GDS
+4
+1
+0
+2
+2
+MAC ?
+ 6
+mra.foo.com
+Admin
+User
+0
+1
+2
+3
+4
+5
+6
+MAC1234
+3
+mra.foo.com
+Activation Code
+5
+6
+MIC
+91
+
+--- PAGE 90 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Secure Phone Onboarding
+New Option with CSR 14: Zero-Touch Onboarding
+BRKCOL-2226
+Cisco Collaboration
+   Cloud
+Internet
+Unified CM
+ Enterprise
+GDS
+Expwy E/C
+Activation Code
+ Activation Code
+Activation Code Onboarding – On-premises and over MRA
+(needed only for activation 
+code onboarding over MRA)
+Once onboarded, all endpoints behave 
+the same way and leverage the 
+OAuth security framework
+Zero-touch Onboarding – On-premises only
+92
+
+--- PAGE 91 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Zero-Touch Onboarding
+On-premises Only – CSR 14
+BRKCOL-2226
+1. Phone is registered in non-secure mode
+2. Admin configures Phone Security Profile 
+with Encrypted mode and OAuth 
+Authentication, then resets phone
+3. Phone gets new “mini-config” from TFTP 
+that indicates SIP OAuth mode
+4. Phone downloads signed CA trust anchor 
+file over from TFTP (uses ITL to validate)
+5. Phone requests OAuth tokens from UCM 
+over HTTPS, validates cert with trust store 
+and is challenged for MIC/LSC
+6. UCM checks MAC address in MIC is 
+present in DB and issues OAuth tokens
+7. Phone can now register with SIP OAuth
+Intranet
+Unified
+CM
+4
+1
+MAC xyz
+Admin
+1
+2
+3
+4
+5
+6
+TFTP
+0
+Phone
+(MAC xyz)
+2
+3
+6
+5
+MIC
+ITL Root CA’s
+93
+
+--- PAGE 92 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Zero-Touch Onboarding
+On-premises Only – CSR 14
+BRKCOL-2226
+1. Phone is registered in non-secure mode
+2. Admin configures Phone Security Profile 
+with Encrypted mode and OAuth 
+Authentication, then resets phone
+3. Phone gets new “mini-config” from TFTP 
+that indicates SIP OAuth mode
+4. Phone downloads signed CA trust anchor 
+file over from TFTP (uses ITL to validate)
+5. Phone requests OAuth tokens from UCM 
+over HTTPS, validates cert with trust store 
+and is challenged for MIC/LSC
+6. UCM checks MAC address in MIC is 
+present in DB and issues OAuth tokens
+7. Phone can now register with SIP OAuth
+Intranet
+Unified
+CM
+4
+1
+MAC xyz
+Admin
+1
+2
+3
+4
+5
+6
+TFTP
+0
+Phone
+(MAC xyz)
+2
+3
+6
+5
+MIC
+ITL Root CA’s
+94
+
+--- PAGE 93 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Moving Onboarded Phones Off-premises
+From On-premises to MRA – CSR 12.5+
+BRKCOL-2226
+1. Phone was onboarded on-premises with 
+zero-touch or activation code flow
+2. Admin configures “Allow Activation Code 
+via MRA” and “Activation Code MRA 
+Service Domain” on phone config (can be 
+done in bulk)
+3. Phone downloads new config, validates 
+token and switches to MRA mode (may 
+cause registration loss while on-
+premises)
+4. Phone is moved off-premises
+5. Phone registers automatically over MRA 
+using OAuth tokens and MRA Service 
+Domain in config (no user input)
+Internet
+Unified
+CM
+Enterprise
+mra.foo.com
+1
+0
+ 2
+Admin
+0
+1
+2
+3
+43
+Unified CM Admin > Device > Phone :
+TFTP
+4
+95
+
+--- PAGE 94 ---
+Conclusions & References
+
+--- PAGE 95 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified CM Security Architecture
+Key Areas for UC Security
+BRKCOL-2226
+Users
+Endpoints
+(Phones, Soft Clients)
+Infrastructure
+(UCM, IM&P, Expwy, UCxn)
+API Protection:
+Security and 
+access authorization
+Client Trust:
+           Validation of servers
+           and services
+SIP
+XMPP
+HTTP
+Enrollment:
+          Initial endpoint setup
+          (typically involves some form
+          of authentication)
+97
+
+--- PAGE 96 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified CM Security Architecture
+Principles of the New Architecture
+BRKCOL-2226
+Users
+Endpoints
+(Phones, Soft Clients)
+Infrastructure
+(UCM, IM&P, Expwy, UCxn)
+API Protection:
+Security and 
+access authorization
+Client Trust:
+           Validation of servers
+           and services
+SIP
+XMPP
+HTTP
+Enrollment:
+          Initial endpoint setup
+          (typically involves some form
+          of authentication)
+Client Trust:
+           Standard PKI X.509 
+           certificate chain 
+           validation
+98
+
+--- PAGE 97 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified CM Security Architecture
+Principles of the New Architecture
+BRKCOL-2226
+Users
+Endpoints
+(Phones, Soft Clients)
+Infrastructure
+(UCM, IM&P, Expwy, UCxn)
+API Protection:
+Security and 
+access authorization
+Client Trust:
+           Validation of servers
+           and services
+SIP
+XMPP
+HTTP
+Enrollment:
+          Initial endpoint setup
+          (typically involves some form
+          of authentication)
+Client Trust:
+           Standard PKI X.509 
+           certificate chain 
+           validation
+99
+
+--- PAGE 98 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified CM Security Architecture
+Principles of the New Architecture
+BRKCOL-2226
+Users
+Endpoints
+(Phones, Soft Clients)
+Infrastructure
+(UCM, IM&P, Expwy, UCxn)
+API Protection:
+Security and 
+access authorization
+Client Trust:
+           Validation of servers
+           and services
+SIP
+XMPP
+HTTP
+Enrollment:
+          Initial endpoint setup
+          (typically involves some form
+          of authentication)
+Client Trust:
+           Standard PKI X.509 
+           certificate chain 
+           validation
+100
+
+--- PAGE 99 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified CM Security Architecture
+Principles of the New Architecture
+BRKCOL-2226
+Users
+Endpoints
+(Phones, Soft Clients)
+Infrastructure
+(UCM, IM&P, Expwy, UCxn)
+API Protection:
+Security and 
+access authorization
+Client Trust:
+           Validation of servers
+           and services
+SIP
+XMPP
+HTTP
+Enrollment:
+          Initial endpoint setup
+          (typically involves some form
+          of authentication)
+API Protection:
+OAuth 2.0 framework
+for all client-facing
+API’s
+Client Trust:
+           Standard PKI X.509 
+           certificate chain 
+           validation
+101
+
+--- PAGE 100 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified CM Security Architecture
+Principles of the New Architecture
+BRKCOL-2226
+Users
+Endpoints
+(Phones, Soft Clients)
+Infrastructure
+(UCM, IM&P, Expwy, UCxn)
+API Protection:
+Security and 
+access authorization
+Client Trust:
+           Validation of servers
+           and services
+SIP
+XMPP
+HTTP
+Enrollment:
+          Initial endpoint setup
+          (typically involves some form
+          of authentication)
+API Protection:
+OAuth 2.0 framework
+for all client-facing
+API’s
+Enrollment:
+          Authorization Code Grant or
+          Secure Phone Onboarding 
+          deliver OAuth token to endpoint
+Client Trust:
+           Standard PKI X.509 
+           certificate chain 
+           validation
+102
+
+--- PAGE 101 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+References – PKI
+BRKCOL-2226
+• Security Guide for Cisco Unified Communications Manager, Release 15 and SUs – Certificate Authority Proxy Function
+https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/security/15_0/cucm_b_security-guide-release-
+15/cucm_m_certificate-authority-proxy-function_su2_reorg.html 
+• Security Guide for Cisco Unified Communications Manager, Release 15 and SUs – ITL/CTL/TVS/Encryption
+https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/security/15_0/cucm_b_security-guide-release-
+15/cucm_m_default-security-setup_su2_reorg.html
+• Cisco PKI: Policies, Certificates, and Documents
+https://www.cisco.com/security/pki/
+103
+
+--- PAGE 102 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+References – Cert Management & Encryption
+BRKCOL-2226
+• Security Guide for Cisco Unified Communications Manager, Release 15 and SUs – Certificates
+https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/security/15_0/cucm_b_security-guide-release-
+15/cucm_m_certificates.html
+• Administration Guide for Cisco Unified Communications Manager, Release 15 and SUs – Manage Certificates
+https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/adminGd/cucm_b_administration-guide-
+15/cucm_b_test-adminguide_chapter_01111.html 
+• Security Guide for Cisco Unified Communications Manager, Release 15 and SUs – Cipher Management
+https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/security/15_0/cucm_b_security-guide-release-
+15/cucm_m_cipher-management_r_15.html 
+• Security Guide for Cisco Unified Communications Manager, Release 15 and SUs – TLS 1.3 Setup
+https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/security/15_0/cucm_b_security-guide-release-
+15/cucm_m_tls-setup_2.html 
+• On-Premises Calling Products Field Notice: FN74345 - Impact on Secure Communication Due to Upcoming Changes 
+to TLS certificates Issued by Public Certificate Authorities with Client Authentication EKU
+https://www.cisco.com/c/en/us/support/docs/field-notices/743/fn74345.html 
+104
+
+--- PAGE 103 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+References – OAuth 2.0 and API Protection
+BRKCOL-2226
+• The OAuth 2.0 Authorization Framework – RFC6749
+https://www.rfc-editor.org/rfc/rfc6749 
+• Security Guide for Cisco Unified Communications Manager, Release 15 and SUs – Phone Security Overview
+https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/security/15_0/cucm_b_security-guide-release-
+15/cucm_m_phone-security_reorg.html 
+• Security Guide for Cisco Unified Communications Manager, Release 15 and SUs – SIP OAuth Mode
+https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/security/15_0/cucm_b_security-guide-release-
+15/cucm_m_sip-oauth-mode-on-unified.html 
+• Security Guide for Cisco Unified Communications Manager, Release 15 and SUs -OAuth Framework
+https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/security/15_0/cucm_b_security-guide-release-
+15/cucm_m_identity-management.html#reference_C8208B54F36A0A4813A69E859A14F6B2 
+105
+
+--- PAGE 104 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+References – Simplified Onboarding / Provisioning
+BRKCOL-2226
+• System Configuratoin Guide for Cisco Unified Communications Manager, Release 15 and SUs – Device Onboarding via 
+Activiation Codes
+https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-
+configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_0100000.html 
+• Mobile and Remote Access Through Cisco Expressway Deployment Guide (X15.0) – Onboarding MRA Devices
+https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/expressway/config_guide/X15-0/mra/exwy_b_mra-
+deployment-guide-x150/exwy_m_provisioning-mra-devices.html 
+106
+
+--- PAGE 105 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Complete your session surveys
+Complete your surveys in the Cisco Events 
+App.
+Complete a minimum of 4 session surveys and 
+the overall event survey to receive a unique 
+Cisco Live t-shirt. 
+(from 11:30 on Thursday, while supplies last)  
+BRKCOL-2226 107
+
+--- PAGE 106 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Book your one-on-one 
+Meet the Engineer 
+meeting
+Visit the Technical
+Solutions Clinics to 
+discuss your technical 
+questions
+Attend the interactive 
+education with DevNet, 
+Capture the Flag, and 
+Walk-in Labs
+Visit the On-Demand 
+Library for more 
+sessions at 
+CiscoLive.com/On-
+Demand
+Visit the Cisco 
+Showcase for related 
+demos
+Continue your education
+Contact me at: Contact me via Webex
+BRKCOL-2226 108
+
+--- PAGE 107 ---
+Thank you
+
+--- PAGE 108 ---

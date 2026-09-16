@@ -1,0 +1,842 @@
+--- PAGE 1 ---
+Webex Calling PM Team
+Jul 2025
+Webex Cloud-
+Connected UC
+Supercharge your on-premises calling 
+with the power of cloud
+
+--- PAGE 2 ---
+Cisco Confidential
+Customer challenges – On-Premises UC deployment
+Need tools that provide benefits of modern 
+cloud experiences, yet allow use of on-
+premises calling service
+Need solutions that brings admin simplicity, 
+provide multi-cluster visibility, with end-to-end 
+workflows and enable cloud transition by 
+providing single pane of glass for cloud and 
+on-premises deployments
+Need solutions to improve user experience by 
+connecting on-premises and cloud deployments, 
+work better with 3rd party apps like Microsoft
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 3 ---
+Cisco Confidential
+Customer administration needs
+• Better visibility into the network deployment and usage through analytics, deployment insights
+• Insights to trends and KPI measures for quality of service
+• Usage reports for broader communication, within and outside organization
+• Cost effective, cloud managed admin experience, with multi-cluster visibility through single 
+pane of glass 
+• Improved admin experience for operation workflows such as ease of certificate management, 
+enhanced provisioning workflows, simple migration tools
+• Automated, end-to-end workflows for frequent troubleshooting scenarios
+• Diagnostic insights, log collection and analysis results
+• Visual call tracing, with hop-by-hop troubleshooting details
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 4 ---
+Cisco Confidential
+End User needs
+t
+• Improve disjoined user experience between on-premises and cloud deployment
+• Presence aggregation and synchronization across different endpoints
+• Synchronize call history across different endpoints
+• Enhance remote working ease by reducing dependency on VPN connections
+• Need for voicemail transcription
+• Seamless user experience between Microsoft Teams and Cisco calling
+• One stop shop for Cisco calling within Microsoft teams
+• Better orchestration of presence status between the two apps
+• Ability to easily make and receive calls using Cisco even outside of Microsoft Teams
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 5 ---
+Cisco Confidential
+Webex Cloud-Connected UC 
+Direct 
+connectivity to 
+the cloud
+Single stop visibility 
+from Control Hub
+Cloud 
+Connectors
+Cisco 
+Emergency 
+Responder (CER)
+Unity 
+ConnectionUCM IM & Presence
+Unified 
+Communications 
+Manager (UCM)
+Endpoints 
+& Headsets
+Control Hub
+Operations 
+Dashboards
+Analytics Troubleshooting
+Certificate 
+Management
+Web RTMT
+Webex App 
+Auto-provisioning 
+Rich Presence for 
+Webex App
+Borderless 
+CTI
+Directory Service 
+– Azure AD
+Deployment Insights & 
+Migrations
+Microsoft Teams 
+Integration
+SpeechView 
+Voicemail 
+Transcription
+A suite of Webex® cloud services, to 
+supercharge on-premises calling 
+with the power of the cloud, to 
+provide 
+• Improved Admin Experience
+• Enhanced User Experience
+• Migration path to cloud
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 6 ---
+Cisco Confidential
+Solution benefits for customers
+Bridge to migrate 
+on-premises 
+solutions to Webex 
+Calling
+Simplifies and 
+augments 
+configuration, 
+provisioning, 
+monitoring, and 
+reporting features 
+for Cisco's unified 
+collaboration on-
+prem deployments, 
+enabling a seamless 
+transition to cloud 
+services.
+Improved User 
+Experience
+Enhances the user 
+experience through 
+rich presence, 
+providing, providing 
+simplest way to 
+integrate Microsoft 
+Teams Messaging 
+and Cisco
+Centralized 
+Administrative 
+Workflow
+Customers can 
+experience the 
+centralized 
+administrative 
+workflow of the cloud 
+while keeping their 
+UC services on-
+premises
+Offers efficient, 
+cloud-based 
+managed services for 
+on-premises UCM 
+deployment.
+Centralized workflow 
+management for 
+certificate 
+management, 
+troubleshooting, and 
+Web RTMT
+Efficient Cloud-
+Based Services Security, privacy and 
+reliability
+Industry leading 
+Webex security and 
+privacy, with disaster 
+recovery and 
+redundancy
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 7 ---
+Cisco Confidential
+Security and privacy considerations
+• All data is encrypted at rest and 
+in transit
+• Webex Identity Services 
+infrastructure is used to 
+authenticate and authorize cloud 
+connectors to a specific Control 
+Hub organization
+• All the privacy related data sent 
+by CCUC is outlined in Privacy 
+data sheet maintained at the 
+Trust Portal 
+(trustportal.cisco.com)
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 8 ---
+Cisco Confidential
+Webex Cloud-Connected UC deployment
+Control Hub
+CUCM
+IM&P
+ Unity
+CER
+CCUC Agent
+Whitelist URLs
+Install COP (CCUC agent)
+On-Premises
+Accept incoming agent registration to onboard
+Use Connected UC features
+Webex® cloud
+Telemetry Telemetry
+Easy onboarding of clusters guided through Control Hub
+Push 
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 9 ---
+Cisco Confidential
+Supercharged 
+Experiences
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 10 ---
+Cisco Confidential
+Supercharged Experiences
+Supercharge your on-premises calling with the power of cloud
+Improved Admin Experiences
+1. Analytics
+2. Operational Metrics
+a) Operations Dashboard
+b) Troubleshooting
+c) Web RTMT
+3. Certificate Management
+4. Touchless Provisioning for Webex App
+5. CCUC Directory Service - Azure AD
+6. Migration
+Enhanced User Experience
+1. Rich Presence for Webex App
+1. Deskphone on call status to Webex App
+2. DND sync between deskphone & Webex App
+2. Centralized Call History
+1. Deskphone call information to Webex App
+3. Borderless CTI
+4. Microsoft Teams Integration
+a) Call History – (2)
+b) Presence Sync – Webex <-> Microsoft (1)
+c) Voicemail (CUC)
+5. SpeechView Voicemail Transcription
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 11 ---
+Cisco Confidential
+Admin Experience 
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 12 ---
+Cisco Confidential
+Analytics service
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 13 ---
+Cisco Confidential
+Analyticsfeatures
+Quality of experience
+• Call success & failures
+• Call quality metrics
+Asset usage and inventory
+• Number of calls, talk time
+• Endpoints & headset usage
+Capacity analysis
+• Trunk usage
+Traffic Analysis
+• Number of calls by CAC 
+Locations & Call Types
+User filters
+Export Data 
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 14 ---
+Cisco Confidential
+• Filter Analytics charts by User ID, URI, 
+Phone Number to understand trends 
+around individual users 
+• Download information now contains User 
+ID, URI, Phone number information
+• Top 5 Calling and Called Number charts
+• Supported Releases: 12.5 onwards
+Analytics
+User Filters
+Upcoming 
+Features
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 15 ---
+Cisco Confidential
+Operational Metrics – Ops Dashboard, Web 
+RTMT, Troubleshooting
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 16 ---
+Cisco Confidential
+Operations Dashboard - UCM
+• The Operations Dashboard gives a near 
+real time view of on-premises network 
+call traffic
+• Serves as a launchpad for Web RTMT
+• Provides a view of the previous 1-hour 
+call status (successful, failed, dropped) 
+and call audio quality (good, acceptable 
+poor) for the top 5 UCM clusters in the 
+network.
+• Supported Releases: 12.5 onwards
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 17 ---
+Cisco Confidential
+Web RTMT – UCM, IM&P, CUC
+Simplify and enhances the administration and 
+troubleshooting experience
+• Web-based application with modern look / feel 
+to monitor real-time behavior of your system 
+components in UCM, IM&P and Unity 
+Connection. 
+• Access via Webex® Cloud-Connected UC 
+Operations Dashboard to monitor and 
+troubleshoot the UC infrastructure at an 
+individual cluster-level. 
+• Unlike classic RTMT, no dependency on Java 
+and OS platform 
+• Supported Releases: 12.5 SU4 and 14 onwards
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 18 ---
+Cisco Confidential
+• Collect call logs and analyse them at the click 
+of a button.
+• Drill down into call signalling issues with help 
+of SIP ladder diagrams and more.
+• Supported Releases: 12.5 onwards
+Troubleshooting - UCM
+Filter calls by Call Status, Call ID, Cluster Name, Calling/Called Number, 
+Calling/Called UserID, Calling/Called URI, Source/Destination Device
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 19 ---
+Cisco Confidential
+Certificate Management – UCM, IM&P, CUC, CER
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 20 ---
+Cisco Confidential
+Certificate Management – UCM, IM&P, CUC, CER
+• Single place to view and manage certificates 
+of CUCM, IM&P, Unity Connection and CER 
+across multiple clusters
+• Easily distribute certificates across trust 
+stores within a cluster and across the 
+clusters 
+• Quick dashboard to view expired or about to 
+expire certificates
+• Insights for certificate consolidation and out 
+of compliance
+• Supported Releases: 12.5 onwards
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 21 ---
+Cisco Confidential
+Touchless Webex App Provisioning for UCM
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 22 ---
+Cisco Confidential
+Touchless Webex App Provisioning for UCM
+User can self-provision the Webex® App in UCM
+• No admin intervention required
+• Avoids over provisioning of devices for Webex App
+• Minimizes impact on cluster scale & licensing
+• Control Hub based policy control
+• Enable Jabber® to Webex App migration
+• Supported Releases: CUCM 12.5 onwards
+• Webex App version is 41.12 and higher
+Webex Cloud-Connected UC (CCUC) required
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 23 ---
+Cisco Confidential
+Cloud-Connected UC Directory Service – Azure AD
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 24 ---
+Cisco Confidential
+Cloud-Connected UC Directory Service
+Admin simplicity 
+HTTPs
+Cloud-Connected UC
+Directory Service
+Supported Releases: 
+• UCM 11.5(x), 12.5(x) and 14(x)
+• No LDAP based Auth support
+No Group sync support
+SCIM
+Microsoft 
+Azure AD
+Unity Connection
+CUCM
+CCUC will Sync user from 
+CI into  on prem servers
+Benefits
+• Ubiquitous Identity and Access management while 
+• moving directory to Cloud
+• Reduction in TCO
+• Enables migration options – incremental to Cloud native
+Key Features
+• Seamless full sync from Cloud Directory / Webex Common Identity to UCM. 
+• Periodic sync every 24 hours. 
+• Near real-time Delta sync is on the Roadmap
+• Dry-run / preview option before actual sync is committed
+• Minimal disruptions to User operations.
+Common 
+Identity Service
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 25 ---
+Cisco Confidential
+Deployment Insights - Migrations
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 26 ---
+Cisco Confidential
+Webex App & Cloud Calling Migration
+Option 1: Single phase migration
+Options 2: Two phase migration
+Webex 
+Calling
+UCM
+(On-Prem)
+Webex 
+Calling
+UCM
+(On-Prem)
+Options from On-premise UCM to Cloud Calling
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 27 ---
+Cisco Confidential
+I want to explore Webex…
+User / Contact Migration
+Migrate UCM, Jabber, and third-party 
+users and contacts to Webex.
+See Demo
+I’m ready to use the Webex app…
+Webex App Migration
+Stay on premise UCM, migrate 
+messaging, meetings to the cloud.
+MIGRATING?  THERE’S A TOOL FOR THAT!
+I want to personalize my Webex …
+Personal Contact Migration
+Import personal contacts—including 
+Jabber contacts– to Webex.
+I’m ready to move to Webex Calling!
+UCM to WxCalling Migration
+Entitle users, devices, and phone numbers 
+from UCM to cloud-native Webex Calling.
+I want to configure detailed Webex Calling 
+services
+APIs, CSV, and Bulk
+Take advantage of multiple tools available 
+to customize your Webex experience.
+I want to use my Cisco device for Webex 
+Calling…
+MPP Devices Migration
+Migrate Cisco IP phone firmware to the 
+Webex Calling-ready firmware
+See Demo
+CCUC CCUC
+CCUC
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 28 ---
+Cisco Confidential
+User Experience 
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 29 ---
+Cisco Confidential
+Rich Presence for Webex App - UCM 
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 30 ---
+Cisco Confidential
+© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Rich Presence
+End user experience
+Benefits
+• Enables users to determine best 
+communication mode
+• Shows accurate real-time presence 
+information of your contact list 
+Key Features
+• Integrates user’s IP phone off-hook/on-
+hook status with Webex® App presence
+• Desk phone as shared devices or multiline 
+as shared device supported
+Webex App 
+services
+SIP
+SIP
+Push phone
+presence event
+CCUC traffic  
+Supported Releases
+• Cisco UCM: 12.5 SU4 onwards, 14 onwards
+• Webex App: all releases
+Cloud-Connected UC
+Rich Presence Service
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 31 ---
+Cisco Confidential
+DND Sync
+Sync DND from Webex app to IP Phone and vice-versa
+• Sync User’s IP phone DND status with Webex 
+app and vice-versa
+• DND status is cleared on all devices when DND 
+expires 
+• Supported on CTI mode and Shared lines
+• Webex Cloud-Connected UC (CCUC) required
+• Supported Releases:
+• Cisco UCM: 15, 12.5 SU7+, 14SU3+
+• Webex app: all releases
+31
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 32 ---
+Cisco Confidential
+Centralized  Call History - UCM
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 33 ---
+Cisco Confidential© 2025  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Centralized  Call History - UCM
+When users are not signed in Webex app calls 
+placed/received on other devices are not seen. 
+The result is inconsistency across the devices. 
+With this feature, users will get synchronized call history on 
+Webex app registered to UCM.
+IT admin can turn on required options through CCUC on 
+Control Hub. 
+Specific Platform releases/dates:
+Webex App on Desktop and mobile
+Pre-requisite: 
+• Webex Cloud-Connected UC (CCUC)
+• UCM 14 SU4 / 15 SU2
+• Webex App 44.6
+Cloud-
+Connected UC
+(CCUC) Janus
+Webex
+Call history 
+update
+Webex app
+SIP registration
+Call history service 
+lookup
+SIP/SCCP  
+registration
+Cisco Unified 
+Communications Manager
+
+--- PAGE 34 ---
+Cisco Confidential
+Borderless CTI
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 35 ---
+Cisco Confidential
+© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Borderless CTI
+End user experience
+Supported Releases:
+• Cisco UCM: 14SU2 onwards
+• Webex App Jun 22
+Cloud-Connected UC 
+MRA
+SIP/Media
+CTI
+CCU
+C
+Traffi
+c  
+Benefits
+• Webex App CTI application functionalities 
+available remotely, no VPN connection 
+required
+Key Features
+• Desk phone control of 88xx/7xx, CE, DX 
+from Webex App remotely
+• CTI applications such as receive incoming 
+enterprise calls, 
+making/disconnect/Hold/Retrieve calls 
+among other applications. 
+CTI GW CCUC GW
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 36 ---
+Cisco Confidential
+Cisco Call for Microsoft Teams – UCM & CUC
+CUCUCM
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 37 ---
+Cisco Confidential
+Cisco Call for Microsoft Teams 
+UCM, Webex Calling Dedicated Instance & Multi Tenant
+Call/Search Input
+Enter a number, SIP
+address or type a 
+name to search for a Azure AD/Outlook 
+contact
+Call Tab
+Access dial pad, 
+contact search and 
+speed dials
+Contact 
+Search
+Search for personal and 
+corporate
+contacts
+ 
+Dialpad
+Access to dialpad 
+to key in numbers
+Azure AD
+Contacts
+Outlook 365
+Contacts
+Add Speed dial
+Click to add up to 25
+speed dial cards
+Call
+Select number and call 
+contact
+Voicemail
+Access and play 
+back the 
+voicemail
+ 
+Contact 
+Resolution
+Resolves the incoming call 
+identifier to Azure AD
+Pre-requisite: 
+UCM 12.5 SU7 or 14 SU3 or 15 SU1
+CUC – 12.5 / 14 SU3 / 15 orr 15 SU1
+On-premises: Webex Cloud-Connected UC (CCUC)
+Call Forwarding 
+See your call forwarding status at a single glance
+Presence Sync
+User presence kept consistent between 
+MS teams and Webex Available 
+Now
+Call History
+See history of 
+incoming/outgoing/missed 
+calls
+Also shows if the call comes 
+from a Hunt Group or Call 
+Queue (MT)
+Multi-line visibility 
+(CUCM only)
+Call Queues /
+Hunt Groups 
+visibility
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 38 ---
+Cisco Confidential
+© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+What’s available on Cisco Call for MSFT Teams
+Click to Call from 
+MSFT Teams 
+Support 
+audio/video calls
+Make a call by 
+keying in the number 
+in the dial pad
+Make 1:1 calls from  
+MSFT Teams Chat 
+and Channels
+See Call History  
+Search contacts 
+from Outlook/Azure
+Listen to voicemails 
+Use your existing 
+Calling infrastructure 
+Webex Calling or CUCM
+Available on 
+Desktop
+Windows and Mac
+Webex app can be 
+deployed in Calling 
+Only mode
+Call Forwarding 
+status
+Available on Mobile
+Hide Webex App 
+option keeps the 
+Webex App hidden
+Bidirectional 
+Presence status 
+sync
+Use Calling Dock
+VDI support
+Login enhancements
+NEW!
+Attendant Console 
+access
+NEW!
+38
+Multi-line visibility
+for CUCM
+NEW!
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 39 ---
+Cisco Confidential
+© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+SpeechView Voicemail Transcription - CUC
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 40 ---
+Cisco Confidential
+© 2022 Cisco and/or its affiliates. All rights reserved. Cisco Confidential
+Cisco Unity Connection SpeechView – Migration 
+to Webex in-house Transcription Service
+Webex CloudCUC
+With SpeechView, users can receive both voice mail and its 
+transcript in their email. This feature is useful when users cannot 
+listen to voice mail but have access to email. 
+The 3rd party service used for transcription was shut down in 
+Dec 2024.
+Solution:
+• Migration of SpeechView transcription service from third 
+party service to Webex in-house transcription service.
+• Enable Cisco to continue the service, reduce the complexity 
+of configuring SMTP and leverage the capabilities of Webex.
+• Integration through CCUC
+Transcription available for English and specific foreign 
+languages.
+Supported Releases:
+CUC 14SU4 and 15SU2 onwards
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 41 ---
+Cisco Confidential
+Enable CCUC in CH
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 42 ---
+Cisco Confidential
+Cloud-Connected UC: Enable from Control Hub
+Cloud-Connected UC Standard 
+level
+• Analytics dashboards with drill 
+down and reports – historical 
+with up to 13 months included
+• Certificate management
+• Operations (includes CCUC 
+RTMT)
+• Troubleshooting
+• Deployment insights
+* CCUC Pro level features planned in future
+Existing Control Hub Org
+• Enable CCUC from an existing 
+Control Hub Org
+• Note this will not appear by 
+default for UCM Cloud or HCS 
+partner/customers
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 43 ---
+Cisco Confidential
+Cloud Connected UC: Flex 3.0 Standalone option
+Available globally, except for US federal embargo countries and China
+Cloud-Connected UC Standard level
+1. Analytics
+2. Operational Metrics
+a) Operations Dashboard ,Troubleshooting ,Web RTMT
+3. Certificate Management
+4. Rich Presence for Webex App
+5. Borderless CTI
+6. Touchless Provisioning for Webex App
+7. CCUC Directory Service - Azure AD
+8.  Microsoft Teams Integration
+a) Call History,Presence Sync – Webex <-> Microsoft,Voicemail (CUC)
+9. Migration
+10. SpeechView Voicemail Transcription
+CCUC-STD
+Eligibility: Any customer 
+(including perpetual calling)
+Top level Add—on to A-FLEX-3
+At $0
+• This could be ordered for 
+CCUC only i.e. no other service 
+options required
+• When moving your other 
+services to FLEX, cancel this 
+standalone subscription and 
+add it as part of those services.
+FLEX 3.0 only
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 44 ---
+Cisco Confidential
+CCUC: Flex 3.0 ordering details – standalone option
+Select Cloud connected UC
+Select CCUC Standalone option
+Start at the A-FLEX-3
+Under “Options and add-ons”
+Fill in the quantity (Note: this is not 
+used for charging; it is a $0 SKU)
+(For package option you may select “other 
+option only” or add any other service option 
+if adding it along with CCUC stand alone)
+https://www.cisco.com/c/en/us/products/collateral/unified-communications/cisco-collaboration-flex-
+plan/datasheet-c78-744220.html   
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 45 ---
+Cisco Confidential
+CCUC: Flex 3.0 ordering details – standalone option 
+contd.
+Make sure CCUC $0 SKU is included
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 46 ---
+Cisco Confidential
+CCUC Flex 3.0 ordering details: ordering along with Premises Calling option
+Select Cloud connected UC
+Start at the A-FLEX-3
+Under “Options and add-ons”
+(Select Premises Calling Option 
+as needed)
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 47 ---
+Cisco Confidential
+Additional resources
+For customers: 
+visit cisco.com
+For partners: 
+visit SalesConnect
+© 2025 Cisco and/or its affiliates. All rights reserved. Cisco Confidential.
+
+--- PAGE 48 ---

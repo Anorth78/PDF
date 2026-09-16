@@ -1,0 +1,606 @@
+--- PAGE 1 ---
+#CiscoLive
+Jerson Gamboa
+LT de Leon
+Telepresence Technical Consulting Engineers
+TACCOL-2011
+Unlocking Mobile & Remote Access: 
+Conquering Expressway Certificates
+
+--- PAGE 2 ---
+Agenda
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+•Introduction
+•Reading Certificates
+•MRA Certificates
+•Troubleshooting 
+Scenarios
+TACCOL-2011 3
+
+--- PAGE 3 ---
+Introduction
+
+--- PAGE 4 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Acronym Glossary Slide
+•MRA = Mobile and Remote Access
+•PKI = Public Key Infrastructure
+•CSR = Certificate Signing Request
+•CA = Certificate Authority
+•CUCM = Cisco Unified Communications Manager
+•TLS = Transport Layer Security
+5TACCOL-2011
+
+--- PAGE 5 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Public Key Infrastructure and Expressways
+6TACCOL-2011
+Private key: Used to 
+decrypt the data sent to a 
+server. (Decrypt CSR)
+Signatures of data: 
+The file received from the 
+CA is checked against the 
+existing private key.
+Certificate: X.509 Base64 
+encoded (PEM, CER, CRT 
+for file extension)
+Certificate chain: Checks 
+the certificate received 
+against the Certificate 
+Authority.
+
+--- PAGE 6 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Certificate Types
+Default certificates are already installed on Expressway no changes are required. (It 
+shows a temporary authorityas the CA) and this is what you get when the server is a 
+brand-new install.
+Self signed certificates, there are usually created within the Expressway using 
+OpenSSL. Not supported by TAC, however it works fine in lab environments.
+3rd party certificates will include a certificate chain with Root CA and Intermediate 
+CA. This is the case for internal CA’s (Like a Windows Server with CS Role) or public 
+CA’s (Like GoDaddy, DigiCert, etc.)
+TACCOL-2011 7
+
+--- PAGE 7 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+CA Signed Examples (supported)
+8TACCOL-2011
+
+--- PAGE 8 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Temporary and Self-Signed Examples (unsupported)
+9
+TACCOL-2011
+
+--- PAGE 9 ---
+Reading
+Certificates
+
+--- PAGE 10 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+What’s in a certificate? – Serial Number
+11
+TACCOL-2011
+
+--- PAGE 11 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+What’s in a certificate? – Signature Algorithm
+12
+TACCOL-2011
+
+--- PAGE 12 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+What’s in a certificate? - Issuer
+13
+TACCOL-2011
+
+--- PAGE 13 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+What’s in a certificate? – Valid From/To
+14
+TACCOL-2011
+
+--- PAGE 14 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+What’s in a certificate? - Subject
+15
+TACCOL-2011
+
+--- PAGE 15 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+What’s in a certificate? – Subject Alternative Name
+16
+TACCOL-2011
+
+--- PAGE 16 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+What’s in a certificate? – Enhanced Key Usage
+17
+TACCOL-2011
+
+--- PAGE 17 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+What’s in a certificate? – Authority/Subject Key Identifier
+18
+TACCOL-2011
+
+--- PAGE 18 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+What’s in a certificate? - Certificate Chain
+19TACCOL-2011
+Server Certificate
+Intermediate Certificate
+Root Certificate
+
+--- PAGE 19 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+What’s in a certificate? – Chain verification
+20
+TACCOL-2011
+Server Intermediate Root
+
+--- PAGE 20 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+What’s in a certificate? – Chain verification
+21
+TACCOL-2011
+Server Intermediate
+
+--- PAGE 21 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+What’s in a certificate? – Chain verification
+TACCOL-2011 22
+Intermediate Root
+
+--- PAGE 22 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Extracting Certificates – Extract from Certificate
+23
+TACCOL-2011
+
+--- PAGE 23 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Navigate to Tandberg/Persistent/Certs, collect certificates as required
+Extracting Certificates - WinSCP
+TACCOL-2011 24
+
+--- PAGE 24 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Extracting Certificates – Web Interface
+1.Navigate to the expressway web interface
+2.Click on the padlock icon next to the URL
+3.Select the certificate option
+TACCOL-2011 25
+
+--- PAGE 25 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Extracting Certificates – Web Interface
+4. While on details, select the server 
+certificate
+5. Click export
+ 
+6. Browse and download the file on your 
+desired folder
+TACCOL-2011 26
+
+--- PAGE 26 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Extracting Certificates – Command Line (CLI)
+27
+1.Log into the Expressway CLI with admin 
+credentials
+2.Run the command 'xCommand Certs 
+Command: cert_get'
+3.Copy the certificate output from ----
+BEGIN CERTIFICATE----- through -----
+END CERTIFICATE-----
+TACCOL-2011
+
+--- PAGE 27 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Extracting Certificates – Command Line (CLI)
+28
+4. Paste the certificate into a notepad 
+application like Notepad++
+5. Make sure that there is a carriage return 
+after -----END CERTIFICATE-----
+6. Save file as <certname>.pem*
+  * When saving make sure the Save as type
+   is set to All types (*.*)
+TACCOL-2011
+
+--- PAGE 28 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Extracting Certificates – Log Bundle
+29
+1.Log into the web UI
+2.Navigate to Maintenance > Diagnostics > 
+Diagnostic Logging
+3.Click Start new log > Stop logging > 
+Collect log > Download log
+4.The server .pem certificate file will be 
+included in the tar.gz log bundle
+TACCOL-2011
+
+--- PAGE 29 ---
+MRA Certificates
+
+--- PAGE 30 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Significant Certificates in an MRA Deployment
+31
+IM and Presence
+ * tomcat
+ * cup-xmpp
+    (if usingxmpp)
+Expressway Eand Expressway C
+   * Server Certificate
+Cisco Unified 
+Communications Manager
+ *CallManager
+ * tomcat
+TACCOL-2011
+
+--- PAGE 31 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Expressway SAN Requirements
+32
+TACCOL-2011
+
+--- PAGE 32 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+UC Certificate Exchange: Establishing Trust
+33
+-Expressway C signing CA certificate installed in Expressway E Trusted CA list
+-Expressway E signing CA certificate installed in Expressway C Trusted CA list
+TACCOL-2011
+
+--- PAGE 33 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+-Expressway C signing CA certificate installed in CUCM tomcat-trust and CallManager-trust
+-CallManager and tomcatsigning CA certificate installed in Expressway C Trusted CA list
+*CA signed certificates are recommended.
+*Expressway only recognizes one self-signed certificate per Common Name so only one of Tomcat or 
+CallManager can be self-signed.
+UC Certificate Exchange: Establishing Trust
+34
+TACCOL-2011
+
+--- PAGE 34 ---
+Troubleshooting 
+Scenarios
+
+--- PAGE 35 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+TLS handshake failures and verification
+36TACCOL-2011
+TCP Handshake
+TLS Handshake
+
+--- PAGE 36 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+TLS handshake failures and verification
+37
+TACCOL-2011
+TCP Handshake
+TLS Handshake Invalid Certificate
+
+--- PAGE 37 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+TLS handshake failures and verification
+38
+TACCOL-2011
+TCP Handshake
+TLS Handshake
+Invalid Certificate Authority
+
+--- PAGE 38 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Expressway C Traffic Server 
+Enforces CertificateVerification
+39
+As of x14.0.2, Expressway will send its client certificate whenever a 
+server (CUCM) requests it, for services running on ports other than 
+8443 (e.g. 6971,6972) even if CUCM is in non-secure mode.
+Expressway C:
+CA Certificates
+(root and all intermediates)
+Call Manager Trust Stores:
+CallManager-trust
+tomcat-trust
+TACCOL-2011
+
+--- PAGE 39 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive 40
+The identifying signature for this issue isthe Expressway’s connections to CUCM over port 6972 
+failing with "tlsv1 alert unknown ca" and "502 connect failed" response.
+In the client logs if you filter for 'HTTP response codes you will see 200 OK responses to the 
+initial HTTP messages and then a 502 when the client requests the CSF configuration file:
+2023-12-12 18:05:24,011 INFO [0x00006d3c] [ls\src\http\BasicHttpClientImpl.cpp(675)] [csf.httpclient] 
+[csf::http::performRequest] - *-----* HTTP response code 200 connect code 0 for request #13 to 
+https://jabber.clus2024.com:8443/Y2x1czIwMjQuY29tCg/get_edge_config?service_name=_cisco-uds
+2023-12-12 18:05:24,359 INFO [0x00006d3c] [ls\src\http\BasicHttpClientImpl.cpp(675)] [csf.httpclient] 
+[csf::http::performRequest] - *-----* HTTP response code 200 connect code 0 for request #14 to 
+https://jabber.clus2024.com:8443/Y2x1czIwMjQuY29tL2h0dHBzL2NsdXNwdWIuY2lzY28udGVzdC84NDQz/cucm-uds/version
+2023-12-12 18:05:24,493 INFO [0x00006d3c] [ls\src\http\BasicHttpClientImpl.cpp(675)] [csf.httpclient] 
+[csf::http::performRequest] - *-----* HTTP response code 200 connect code 0 for request #16 to 
+https://jabber.clus2024.com:8443/Y2x1czIwMjQuY29tL2h0dHBzL2NsdXNwdWIuY2lzY28udGVzdC84NDQz/cucm-uds/servers
+2023-12-12 18:05:24,843 INFO [0x00006d3c] [ls\src\http\BasicHttpClientImpl.cpp(675)] [csf.httpclient] 
+[csf::http::performRequest] - *-----* HTTP response code 502 connect code 0 for request #19 to 
+https://jabber.clus2024.com:8443/Y2x1czIwMjQuY29tL2h0dHBzL2NsdXNwdWIuY2lzY28udGVzdC82OTcy/CSFuser.cnf.xml
+TACCOL-2011
+Expressway C Traffic Server 
+Enforces CertificateVerification
+
+--- PAGE 40 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive 41
+Looking at the Expressway C logs we see the Expressway C sending the CSFuser.cnf.xml 
+configuration request to the CUCM on port 6972 used for TFTP:
+2023-12-12T11:14:56.307-07:00 clus2024expc traffic_server[22698]: UTCTime="2023-12-12 18:14:56,307" 
+Module="network.http.trafficserver" Level="DEBUG": Detail="Sending Request" Txn-id="1410111" 
+TrackingID="8d1b73e1-cfee-4066-8432-be78a1d1c000"Dst-ip="0.0.0.8" Dst-port="6972"
+HTTPMSG:
+|GET /CSFuser.cnf.xml HTTP/1.1
+Host: 0.0.0.8:6972
+Accept: */*
+Cookie:<CONCEALED>
+User-Agent: WebEx/1.0.0.2 (Windows;)
+TrackingID: 8d1b73e1-cfee-4066-8432-be78a1d1c000
+Client-ip: 0.0.0.3
+X-Forwarded-For: 0.0.0.3, 127.0.0.1
+Via: https/1.1 vcs[793cc42c-a89c-4d85-bfac-abef6ee56000] (ATS), http/1.1 vcs[e00de37e-99fa-4ea8-aad9-
+f92e1b306000] (ATS)
+|
+TACCOL-2011
+Expressway C Traffic Server 
+Enforces CertificateVerification
+
+--- PAGE 41 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+2023-12-12T11:14:56.345-07:00 clus2024expc traffic_server[22698]: [ET_NET 1]ERROR: SSL connection failed 
+for '0.0.0.8': error:14094418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca
+2023-12-12T11:14:56.382-07:00 clus2024expc traffic_server[22698]: UTCTime="2023-12-12 18:14:56,382" 
+Module="network.http.trafficserver" Level="DEBUG": Detail="Sending Response" Txn-id="1410111" TrackingID="" 
+Dst-ip="127.0.0.1" Dst-port="32794"
+HTTPMSG:
+|HTTP/1.1502 connect failed
+Date: Tue, 12 Dec 2023 18:14:56 GMT
+Connection: keep-alive
+Server: CE_C
+Cache-Control: no-store
+Content-Type: text/html
+Content-Language: en
+Content-Length: 247
+|
+42
+We then see the SSL connection to the CUCM fail with the tlsv1 alert unknown ca failure 
+followed by the 502 connect failed response:
+TACCOL-2011
+Expressway C Traffic Server 
+Enforces CertificateVerification
+
+--- PAGE 42 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive 43TACCOL-2011
+Expressway C Traffic Server 
+Enforces CertificateVerification
+Confirm the serial number of the problematic certificate from the Expressway C packet capture.
+
+--- PAGE 43 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive 44TACCOL-2011
+Expressway C Traffic Server 
+Enforces CertificateVerificationCheck the installed Expressway C certificate and check the serial number to make sure it matches the 
+serial number identified in the logs
+
+--- PAGE 44 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive 45TACCOL-2011
+Expressway C Traffic Server 
+Enforces CertificateVerificationCheck the installed Expressway C certificate and check the serial number to make sure it matches the 
+serial number identified in the logs
+
+--- PAGE 45 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+ 46TACCOL-2011
+Expressway C Traffic Server 
+Enforces CertificateVerificationOpen the certificate and use the “Certification Path” to view the Intermediate and Root certificates and 
+confirm their respective serial numbers
+
+--- PAGE 46 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive 47TACCOL-2011
+Expressway C Traffic Server 
+Enforces CertificateVerificationOpen the certificate and use the “Certification Path” to view the Intermediate and Root certificates and 
+confirm their respective serial numbers
+
+--- PAGE 47 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+ 48TACCOL-2011
+Expressway C Traffic Server 
+Enforces CertificateVerificationOpen the certificate and use the “Certification Path” to view the Intermediate and Root certificates and 
+confirm their respective serial numbers
+
+--- PAGE 48 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive 49TACCOL-2011
+Expressway C Traffic Server 
+Enforces CertificateVerificationCheck the CUCM CallManager-trust and tomcat-trust stores to confirm the Expressway C Intermediate 
+and Root CAcertificates are installed
+
+--- PAGE 49 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive 50TACCOL-2011
+Expressway C Traffic Server 
+Enforces CertificateVerificationIf the Expressway C Intermediate and Root CA certificates are already installed, check the Serial Number of 
+the certificates in CUCM to confirm they are the same as identified from the Expressway C certificate chain
+
+--- PAGE 50 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+ 51TACCOL-2011
+Expressway C Traffic Server 
+Enforces CertificateVerificationIf the Expressway C CA certificates are uploaded to the CUCM trust stores and the serial numbers have 
+been validated, then the next step would be to restart CallManager, TFTP, and tomcat services
+CallManager and TFTP can be restarted from the web UI.
+Tomcat can only be restarted from the CLI
+
+--- PAGE 51 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Expressway C Traffic Server 
+Enforces CertificateVerification
+52
+This improvement requires the Expressway-C certificate signing CAs 
+(root and intermediates)to be added in CUCM tomcat-trust and 
+CallManager-trust list. After adding these certificates, you must also 
+restart TFTP, CallManager and Tomcat services on each CUCM node 
+in the cluster.
+Expressway C:
+CA Certificates
+(root and all intermediates)
+Call Manager Trust Stores:
+CallManager-trust
+tomcat-trust
+TACCOL-2011
+
+--- PAGE 52 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Expressway prevents duplicate self-signed 
+certificates with the same Common Name
+•Expressway previously allowed the upload of 
+two self-signed certificates with identical 
+Common Names (CN) to its trusted CA store, 
+despite the underlying restriction preventing the 
+use of two self-signed certificates with the 
+same CN. This behavior could potentially lead to 
+confusion or misconfiguration.
+•However, this limitation has been addressed in 
+subsequent versions, including x14.2 and 
+x14.0.7 and upwards. Expressway now 
+prevents the upload of a second self-signed 
+certificate if a certificate with a matching CN 
+already exists in the trusted CA store. This 
+enhancement aims to ensure more consistent 
+and secure certificate management practices.
+53
+TACCOL-2011
+
+--- PAGE 53 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Expressway C Certificate Validation Change
+Expressway C:
+CA Certificates
+(root and all intermediates)
+Call Manager Trust Stores:
+CallManager-trust
+tomcat-trust
+Starting with version x14.2, Expressway now prioritizes cipher lists 
+differently. This change may lead to unexpected TLS connections following 
+a software upgrade. Prior to the upgrade, it may have been configured to 
+request the Cisco Tomcat or Cisco CallManagerRSA certificate from CUCM 
+(or any other product with a separate certificate for the ECDSA algorithm). 
+However, post-upgrade, it might prioritize the ECDSA variant, which is 
+more secure than RSA.
+TACCOL-2011 54
+
+--- PAGE 54 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Expressway C Certificate Validation Change
+55
+The identifying signature for this issue isExpressway connections to CUCM fails after establishing a TLS 
+connection with errors “self signed certificate server” and “502 connect failed”
+TACCOL-2011
+2024-01-05T12:33:14.901-05:00 clus2024expresswayc traffic_server[10907]: [ET_NET 2] WARNING: Core server 
+certificate verification failed for (cucm.clus2024). Action=Terminate Error=self signed certificate 
+server=cucm.clus2024(0.0.0.10) depth=0
+2024-01-05T12:33:14.901-05:00 clus2024expresswayc traffic_server[10907]: [ET_NET 2] ERROR: SSL connection 
+failed for 'cucm.clus2024': error:1416F086:SSL routines:tls_process_server_certificate:certificate verify 
+failed
+2024-01-05T12:33:14.902-05:00 clus2024expresswayc traffic_server[10907]: UTCTime="2024-01-05 17:33:14,902" 
+Module="network.http.trafficserver" Level="INFO": Detail="Sending Response" Txn-id="56" TrackingID="" Dst-
+ip="127.0.0.1" Dst-port="32790" Msg="HTTP/1.1 502 connect failed"
+2024-01-05T12:33:14.902-05:00 clus2024expresswayc traffic_server[10907]: UTCTime="2024-01-05 17:33:14,902" 
+Module="network.http.trafficserver" Level="DEBUG": Detail="Sending Response" Txn-id="56" TrackingID="" Dst-
+ip="127.0.0.1" Dst-port="32790" 
+HTTPMSG:
+|HTTP/1.1 502 connect failed
+Date: Fri, 05 Jan 2024 17:33:14 GMT
+Connection: keep-alive
+Server: CE_C
+Cache-Control: no-store
+Content-Type: text/html
+Content-Language: en
+Content-Length: 247
+
+--- PAGE 55 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Expressway C Certificate Validation Change
+Expressway C:
+CA Certificates
+(root and all intermediates)
+Call Manager Trust Stores:
+CallManager-trust
+tomcat-trust
+Cisco Tomcat-ECDSA and Cisco CallManager-ECDSA certificates need to 
+be signed by a distinct CA. Uploading self-signed certificates to the 
+Expressway-C Trusted CA database isn't feasible due to identical common 
+names.
+TACCOL-2011 56
+
+--- PAGE 56 ---
+Upcoming!
+
+--- PAGE 57 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Cisco Support Assistant – Certificates Walk Through
+58TACCOL-2011
+
+--- PAGE 58 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Cisco Support Assistant – Certificates Walk Through
+59TACCOL-2011
+Email generated with 
+PDF attached
+PDF with Contents
+
+--- PAGE 59 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Continue 
+your education
+•Visit the Cisco Showcase 
+for related demos
+•Book your one-on-one
+Meet the Engineer meeting
+•Attend the interactive education 
+with DevNet, Capture the Flag, and 
+Walk-in Labs
+•Visit the On-Demand Library for 
+more sessions at 
+www.CiscoLive.com/on-demand
+Contact us at: 
+jgamboag@cisco.com|ldeleoni@cisco.com
+60TACCOL-2011
+
+--- PAGE 60 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Upcoming
+TAC Mini
+-
+Sessions
+61TACCOL-2011
+
+--- PAGE 61 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public#CiscoLive
+Complete Your Session Evaluations
+62TACCOL-2011
+Complete a minimum of 4 session surveys and the Overall Event Survey to be 
+entered in a drawing to win 1 of 5 full conference passes to Cisco Live 2025.  
+Earn 1 0 0  p o int s per survey completed and compete on the Cisco Live 
+Challenge leaderboard. 
+Level up and earn exclusive prizes!
+Complete your surveys in the Cisco Live mobile app.
+Session IDTACCOL-2011
+
+--- PAGE 62 ---
+Thank you
+#CiscoLive
+
+--- PAGE 63 ---
+Q & A
+64TACCOL
+-2011
