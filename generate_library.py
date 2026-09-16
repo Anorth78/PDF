@@ -23,6 +23,11 @@ TEXT_OUTPUT = ROOT / "text"
 LIBRARY_JSON = ROOT / "library.json"
 AI_TXT = ROOT / "ai.txt"
 INDEX_HTML = ROOT / "index.html"
+LLMS_TXT = ROOT / "llms.txt"
+ROBOTS_TXT = ROOT / "robots.txt"
+SITEMAP_XML = ROOT / "sitemap.xml"
+API_DIR = ROOT / "api"
+API_LIBRARY_JSON = API_DIR / "documents.json"
 
 
 def load_config():
@@ -156,6 +161,7 @@ def build_library(source, config):
             "A searchable collection of PDF knowledge resources."
         ),
         "owner": config.get("owner_name", ""),
+        "site_url": config.get("site_url", "").rstrip("/"),
         "generated": generated,
         "document_count": len(documents),
         "documents": documents
@@ -167,6 +173,8 @@ def build_library(source, config):
     )
 
     create_ai_txt(library)
+    create_llms_txt(library)
+    create_sitemap(library)
     create_html(library)
 
     return library
@@ -202,6 +210,64 @@ def create_ai_txt(library):
         ])
 
     AI_TXT.write_text("\n".join(lines), encoding="utf-8")
+
+
+def create_llms_txt(library):
+    base = library.get("site_url", "").rstrip("/")
+    def absolute(path):
+        return f"{base}/{path}" if base else path
+
+    lines = [
+        f"# {library['name']}",
+        "",
+        library["description"],
+        "",
+        "This site is an AI-readable PDF knowledge base.",
+        "START HERE: use library.json (or api/documents.json) to enumerate every document.",
+        "Do not rely on search-engine indexing or directory browsing.",
+        "For each document, fetch its extracted text_url for searchable text; use pdf_url for the original PDF.",
+        "",
+        f"Document count: {library['document_count']}",
+        "",
+        "## Machine-readable resources",
+        f"- Catalogue: {absolute('library.json')}",
+        f"- API catalogue: {absolute('api/documents.json')}",
+        f"- AI guide: {absolute('ai.txt')}",
+        "",
+        "## Documents",
+        ""
+    ]
+    for doc in library["documents"]:
+        lines.extend([
+            f"### {doc['title']}",
+            f"- ID: {doc['id']}",
+            f"- Text: {absolute(doc['text_url'])}",
+            f"- PDF: {absolute(doc['pdf_url'])}",
+            ""
+        ])
+    LLMS_TXT.write_text("\n".join(lines), encoding="utf-8")
+
+
+def create_sitemap(library):
+    base = library.get("site_url", "").rstrip("/")
+    if not base:
+        # A relative sitemap is not useful to crawlers, but keeping the file generated
+        # makes the project ready once site_url is configured.
+        base = "."
+    urls = [f"{base}/", f"{base}/index.html", f"{base}/library.json", f"{base}/ai.txt", f"{base}/llms.txt", f"{base}/api/documents.json"]
+    for doc in library["documents"]:
+        urls.extend([f"{base}/{doc['pdf_url']}", f"{base}/{doc['text_url']}"])
+    body = "\n".join(f"  <url><loc>{html.escape(u)}</loc></url>" for u in urls)
+    SITEMAP_XML.write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + body + '\n</urlset>\n', encoding="utf-8"
+    )
+    ROBOTS_TXT.write_text(
+        "User-agent: *\nAllow: /\n\n" + f"Sitemap: {base}/sitemap.xml\n", encoding="utf-8"
+    )
+    API_DIR.mkdir(exist_ok=True)
+    API_LIBRARY_JSON.write_text(json.dumps(library, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
 def create_html(library):
@@ -427,6 +493,8 @@ def main():
     print(f"HTML: {INDEX_HTML}")
     print(f"JSON: {LIBRARY_JSON}")
     print(f"AI guide: {AI_TXT}")
+    print(f"LLM index: {LLMS_TXT}")
+    print(f"Sitemap: {SITEMAP_XML}")
     print("----------------------------------------------")
     print()
 

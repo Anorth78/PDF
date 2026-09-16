@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anorth78.github.io/PDF/sitemap.xml

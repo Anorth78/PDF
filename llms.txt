@@ -1,0 +1,62 @@
+# PDF Knowledge Library
+
+A searchable collection of PDF knowledge resources.
+
+This site is an AI-readable PDF knowledge base.
+START HERE: use library.json (or api/documents.json) to enumerate every document.
+Do not rely on search-engine indexing or directory browsing.
+For each document, fetch its extracted text_url for searchable text; use pdf_url for the original PDF.
+
+Document count: 9
+
+## Machine-readable resources
+- Catalogue: https://anorth78.github.io/PDF/library.json
+- API catalogue: https://anorth78.github.io/PDF/api/documents.json
+- AI guide: https://anorth78.github.io/PDF/ai.txt
+
+## Documents
+
+### Cisco UCM 15 TDM
+- ID: cisco-ucm-15-tdm
+- Text: https://anorth78.github.io/PDF/text/cisco-ucm-15-tdm.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cisco-ucm-15-tdm.pdf
+
+### CST UC Release 15
+- ID: cst-uc-release-15
+- Text: https://anorth78.github.io/PDF/text/cst-uc-release-15.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cst-uc-release-15.pdf
+
+### CUC15 DataSheet
+- ID: cuc15-datasheet
+- Text: https://anorth78.github.io/PDF/text/cuc15-datasheet.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cuc15-datasheet.pdf
+
+### Design and Deployment of Unified Communication Services
+- ID: design-and-deployment-of-unified-communication-services
+- Text: https://anorth78.github.io/PDF/text/design-and-deployment-of-unified-communication-services.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/design-and-deployment-of-unified-communication-services.pdf
+
+### Jabber to WebexApp
+- ID: jabber-to-webexapp
+- Text: https://anorth78.github.io/PDF/text/jabber-to-webexapp.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/jabber-to-webexapp.pdf
+
+### On Prem Content Strategy
+- ID: on-prem-content-strategy
+- Text: https://anorth78.github.io/PDF/text/on-prem-content-strategy.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/on-prem-content-strategy.pdf
+
+### One Cisco Deck
+- ID: one-cisco-deck
+- Text: https://anorth78.github.io/PDF/text/one-cisco-deck.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/one-cisco-deck.pdf
+
+### SIP troubleshooting
+- ID: sip-troubleshooting
+- Text: https://anorth78.github.io/PDF/text/sip-troubleshooting.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/sip-troubleshooting.pdf
+
+### Strategy Ropadmap
+- ID: strategy-ropadmap
+- Text: https://anorth78.github.io/PDF/text/strategy-ropadmap.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/strategy-ropadmap.pdf

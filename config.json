@@ -4,5 +4,6 @@
   "site_description": "A searchable collection of PDF knowledge resources.",
   "owner_name": "Your Organization",
   "repository_url": "",
-  "include_subfolders": true
+  "include_subfolders": true,
+  "site_url": "https://anorth78.github.io/PDF/"
 }

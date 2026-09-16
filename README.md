@@ -98,3 +98,23 @@ The extracted text is intended to make document retrieval easier for systems tha
 GitHub Pages is public unless your GitHub setup provides an access-controlled publishing method. Do not place confidential, personal, proprietary, or restricted documents in a public repository.
 
 For a private corporate knowledge base, use an authenticated hosting/storage solution instead.
+
+
+## AI Agent access — important
+
+The site is designed so an AI Agent does **not** need search-engine indexing or directory browsing. The generated catalogue explicitly lists every document and its direct text/PDF URLs.
+
+Machine-readable entry points:
+
+```text
+library.json
+api/documents.json
+ai.txt
+llms.txt
+sitemap.xml
+robots.txt
+```
+
+Give the Agent the root GitHub Pages URL and instruct it to start with `llms.txt` or `library.json`. For relevant documents, it should retrieve the linked `text/*.txt` file for searchable text and use the `pdfs/*.pdf` file when the original PDF is required.
+
+Set `site_url` in `config.json` to the final GitHub Pages URL before publishing.
