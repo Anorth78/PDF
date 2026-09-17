@@ -1,0 +1,216 @@
+--- PAGE 1 ---
+Cisco Blogs Artificial Intelligence - AI
+June 2, 2026 Leave a Comment
+Artificial Intelligence - AI
+Inside Cisco Cloud Control: Building
+the AI-Native Platform of Record for
+Cross-Domain Operations
+9 min read
+Balaji Venkatraman
+How weʼre building the secure harness for the agentic era — converging data, identity, topology, authorization, workflows, and agentic AI across
+every operational domain.
+Why the single pane of glass was never
+enough
+The industry has tried to solve operational fragmentation many times, and most attempts failed for the same structural reason: they unified the
+interface without converging the data. What looked like a single pane of glass was usually multiple sign-ins across a dozen dashboards — every
+product still querying its own silo, maintaining its own inventory, enforcing its own permissions, and largely unaware of adjacent domains.
+So, when a cross-domain issue hit, teams still ended up on a bridge call. Someone copied device names from one console into another. Someone
+else checked whether an alert mapped to a known site, a vulnerable asset, a routing change, or a workload migration. The portal looked unified.
+The operating model was still fragmented underneath.
+This is fundamentally a data, identity, authorization, and topology problem. A portal that federates queries at runtime can display information side
+by side, but it cannot reliably reason across domains, correlate cause and impact, or govern action between products. True cross-domain
+intelligence requires converged context as an architectural prerequisite.
+That premise is what Cisco Cloud Control is built on.
+At Cisco Live Americas, weʼll begin rolling it out to customers via Controlled Availability in the U.S.: a converged operations platform that brings
+every Cisco domain into one environment, with one operating model for every team — and every agent — working across the estate. Essential to
+Cisco Blogs
+Share
+Read aloud Menu
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 2 ---
+the platform will be AI Canvas, a multiplayer agentic workspace, and Cloud Control Studio, a governed environment for building, customizing, and
+managing AI agents. Also essential will be extensibility for the development and customization of apps, agents and third-party products.
+This is the secure harness DJ Sampath describes in his Cisco Live blog — the governed control surface that lets agents and operators act on real
+infrastructure without breaking it, exposing it, or taking it somewhere it shouldnʼt go. This post goes under the hood on how that harness is built.
+The homepage
+The platform, and the workspace inside it
+Itʼs worth being precise about the relationship up front, because it shapes everything else in this post.
+Cisco Cloud Control is the platform — the secure harness. It converges identity, assets, topology, authorization, telemetry, and workflow across
+every Cisco domain, and exposes them as governed services that humans, applications, and agents all reason over.
+AI Canvas is the multiplayer workspace that lives natively inside Cisco Cloud Control. Itʼs where operators and agents investigate, reason, and
+act together — grounded in the same shared identity, durable context, normalized assets, connected topology, least-privilege authorization, and
+agent-ready services the platform provides.
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 3 ---
+An example AI Canvas workspace
+That distinction matters because itʼs also the draw. AI Canvas is a multiplayer agentic workspace where operators and AI agents investigate issues
+together, across domains, in real time. Every UI component it generates, every agent it runs, every action it takes is already governed by Cisco
+Cloud Controlʼs substrate. Thatʼs why the experience feels different from a chat box layered over dashboards: the workspace and the harness
+were built together, and one is only as trustworthy as the other.
+Convergence without flattening product depth
+The strategic goal is straightforward but technically demanding: make the Cisco portfolio operate as one platform while preserving the depth of
+every domain and the autonomy of every product team. Customers still need the rich capabilities of Meraki, Catalyst Center, Nexus,
+ThousandEyes, Security Cloud Control, Webex, and the rest. Product teams still need room to innovate. Convergence will come through reusable
+platform services.
+Cisco Cloud Control uses an open, federated architecture with common services for identity, tenancy, authorization, assets, topology, telemetry,
+search, navigation, audit, workflow, and agent actions. Domain products and their operators maintain the depth and specialization of their
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 4 ---
+respective areas. The platform provides the cross-domain substrate that makes them interoperable.
+If a system of record is where authoritative domain data lives, Cisco Cloud Control is designed to be the platform of record for cross-domain
+operations — where identity is resolved, context is assembled, decisions are made, and actions are governed across domains.
+Topology correlation
+The architecture, in principle
+A few principles shape everything:
+Convergence happens below the UI. Identity, assets, topology,
+alerts, and authorization must converge before any interface, dataBy continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 5 ---
+layer or AI layer can deliver cross-domain value.
+Federation protects autonomy. Domain controllers will contribute
+data and intelligence to the centralized platform while maintaining
+autonomy and depth for persona-based specialization.
+Context must be coherent and consistent. The platform must
+consistently reference data and assets, what theyʼre related to and
+their dependencies—so that context remains the same across
+pages, changes, escalations, and agent handoffs.
+Authorization is least-privilege by design. A cross-product
+platform must hold the line on access, never widen it.
+Humans and agents share the same source of truth. The AI
+Assistant, AI Canvas, Cloud Control Studio, and cross-domain apps
+all reason over the same governed context.
+Extensibility is a primitive. SDKs, contribution contracts, and
+agent-friendly APIs let teams build safely at scale.
+What convergence actually looks like
+Cisco Cloud Control ingests signals from across the portfolio into the Cisco Data Fabric. Data is normalized and converged where correlation,
+search, and AI reasoning require it, and federated where live product context or domain-specific action requires direct interaction. That hybrid
+model lets us reason across domains while preserving the fidelity of each one.
+Three structural problems had to be solved first.
+Identity and tenancy. Every cross-domain workflow depends on knowing who the user is, which tenants they can reach, and what scope theyʼre
+operating in. Built on Cisco Unified Identity, tenant linking turns a set of domain-specific relationships into one organizational experience — so
+users carry preserved context as they move between products and into AI-assisted investigation.
+Assets and topology. Inventory had to be truly converged. The Unified Asset Inventory brings assets from connected domains into a searchable,
+normalized view with live operational, compliance, and reachability signals. Topology uses the relationship of those assets into a coherent end-to-
+end visualization. This allows operators to see the impact that changes, issues and incidences have on their operating environment.
+Navigation. UI federation, micro front ends, and a common Cisco design system let product experiences load in a unified shell while keeping
+product autonomy. Identity, tenant scope, navigation state, and AI context travel with the user.
+The normalized cross-product control planeBy continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 6 ---
+The heart of Cisco Cloud Control is a normalized control plane that gives the platform and its applications a shared operating language — assets,
+topology, authorization, search, alerts, catalog context, navigation, audit, workflows, and AI action context.
+This is what lets domain products stay autonomous while becoming interoperable through reusable services. A cross-domain app doesnʼt have to
+reinvent tenancy, authorization, asset lookup, topology enrichment, alert context, or navigation. An agent doesnʼt have to guess whether a device
+name, site, tenant, or alert maps to the same object in another product. The platform assembles and governs that context.
+Least-privilege authorization across product
+boundaries
+Cross-domain action is powerful only if itʼs safe. Cisco Cloud Control includes a fast inline Role Based Access Control (RBAC) translation layer that
+is agnostic to each productʼs permission model. As context moves across boundaries, the layer preserves, reduces, or constrains access based on
+the user, tenant, product, resource, and action — so a workflow can correlate broadly while acting only where the user is authorized.
+This matters most for agents. Relevance alone never grants action. Agents need scoped tools, bounded skills, runtime policy checks, full
+auditability, and human-in-the-loop gates for higher-impact work.
+AI-ready context for agents, assistants, and
+apps
+Grounded, authorized, cross-product context is what turns AI from another interface into a real operational partner. With it, AI can enrich,
+disambiguate, summarize, and recommend next-best actions across Ciscoʼs operational model.
+AI Canvas is a good illustration. It assembles product, tenant, asset, topology, alert, and action context that AI Canvas and agents reuse to
+understand what an operator is asking, which assets are involved, and which actions are permitted. Gateway and protocol-based patterns —
+including Model Context Protocol and agent-to-agent integration — let agents reach first- and third-party sources in a governed way, fully within
+platform policy.
+From signal to remediation
+Picture an operator logging in at 7:14 AM. The home view shows Dallas amber on the Site Health Map. They click in: two switches with elevated
+errors, an AP cluster with intermittent disconnects, and recommended next steps already surfaced.
+Overnight, a scheduled agent ran a compliance scan and flagged the same switches running firmware affected by a critical vulnerability. It
+prepared a remediation runbook, validated the plan against current topology, checked policy boundaries, and queued an approval. The operator
+opens the AI Canvas investigation, reviews asset history, topology, and the alert timeline, and approves. The agent executes within policy. The site
+returns to green.
+What makes that workflow possible is the shared substrate behind it. Health, compliance, topology, authorization, remediation, and human
+approval all operate on the same platform. No bridge call. No copy-paste. No lost context.
+Why cross-domain reasoning has to be in the
+platform
+The most valuable insights live between domains. A videoconferencing quality issue across several branches can show healthy local metrics in
+every tool — collaboration sees degraded calls, networking sees no failures, compute sees a routine workload migration, security sees no blocks.
+Each domain looks fine on its own, while the customer experience suffers.
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 7 ---
+With converged telemetry, topology, and event context, the platform can identify the chain: a workload migration shifts traffic patterns, a routing
+reconvergence affects WAN utilization, and Webex media degrades at branches using that path. That class of insight depends on normalized
+cross-domain signals already being available — which is why one click should open an AI Canvas investigation with everything preassembled.
+Making the platform extensible
+A cross-domain platform of this scope can only scale through contribution. Developer experience is part of the architecture itself. SDKs,
+contribution contracts, publishing patterns, and agent-friendly APIs let Cisco teams, customers, and partners build applications that inherit
+platform services theyʼd otherwise have to recreate.
+The same principle extends to engineers who prefer automation-first workflows. Headless modes, CLIs, APIs, and AI-assisted development
+environments — including Codex — meet engineers where they already work. The same coding harness that helps engineers build software can
+help an admin compose a Cisco Cloud Control app that brings new devices, SaaS apps, or partner systems under Ciscoʼs governed control
+surface in hours, not quarters.
+The point isnʼt to force every user into the same UI. Itʼs to provide one governed context that can be consumed through whatever surface fits the
+work: UI, natural language, automation, CLI, or agent. Same identity, same context, same policy, regardless of how the operator chooses to
+engage.
+Where agents live: AI Canvas, Cloud Control
+Studio, and governed autonomy
+Because AI Canvas lives inside Cisco Cloud Control, the full agent lifecycle — authoring, testing, deploying, executing, observing, escalating —
+runs inside the platform itself.
+AI Canvas is the multiplayer workspace where operators and agents collaborate in real time. Dynamic sub-agents focus on discovery, compliance,
+topology, vision analysis, and other specialized areas. Cards are created when they serve an outcome, and every card links back to the prompt
+and context that produced it.
+Cloud Control Studio is where operational knowledge becomes executable and the Cisco Cloud Marketplace is where customers can connect to
+third—party ecosystem tools— for Cisco teams, customers, and partners alike. Builders upload SOPs, runbooks, and policies; AI extracts decision
+logic and thresholds and turns them into bounded, reusable skills like pre-change validation, failover readiness, or compliance checks. The
+intuition of experienced engineers becomes an agent that runs continuously and escalates when human judgment is required.
+Governance runs through the entire lifecycle. Published apps and agents are versioned, immutable, and rollback-ready. Build-time checks evaluate
+integrations and adversarial content. Runtime protections intercept LLM calls and tool invocations to block unauthorized usage, prompt injection,
+and sensitive data exposure. Platform RBAC governs what every agent can see and do.
+Where this leads
+When an entire estate shares one operational context, and agents execute inside governed policy, the system begins to participate in its own
+resilience. Agents detect drift, correlate incidents, prepare runbooks, validate risk, and execute approved actions. Humans move higher in the loop
+— toward judgment, strategy, and design — and away from the repetitive, cross-tool assembly work that consumes their attention today.
+This is the shift DJ Sampath, SVP of AI Software and Platform Group describes in his Cisco Live blog from dashboards to agentic workflows, from
+infrastructure as code to infrastructure as a harness, from fixed product features to customer-built infrastructure apps, from static controls to
+custom runtime shields. The architecture addressed herein is what makes that shift real.
+Cisco is uniquely positioned across networking, security, observability, compute, collaboration, and AI infrastructure. When those capabilities
+operate as one, customers get compound value from the portfolio they already own.
+That is what Cisco Cloud Control is built to deliver: the platform of record for cross-domain operations, and the secure, governed harness for the
+agentic era — with AI Canvas as the workspace where that harness comes to life every day.
+Some products or features described may be in various stages of development and offered on a when-and-if available basis.
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 8 ---
+Authors
+Balaji Venkatraman
+VP, Product Management
+AI Software & Platform
+Quick Links -
+Resources and Legal -
+About Cisco
+Contact Us
+Careers
+Connect with a partner
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 9 ---
+©2026 Cisco Systems, Inc.
+Feedback
+Help
+Terms & Conditions
+Privacy
+Cookies / Do not sell or share my personal data
+Accessibility
+Trademarks
+Supply Chain Transparency
+Newsroom
+Sitemap
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings

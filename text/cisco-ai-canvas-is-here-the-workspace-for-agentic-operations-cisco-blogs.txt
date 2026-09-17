@@ -1,0 +1,141 @@
+--- PAGE 1 ---
+Cisco Blogs Artificial Intelligence - AI
+June 2, 2026 Leave a Comment
+Artificial Intelligence - AI
+Cisco AI Canvas is here: the
+workspace for agentic operations
+5 min read
+Rohit Bakshi, Colby Philbin
+A year ago, at Cisco Live, we previewed Cisco AI Canvas, an agentic workspace where IT teams and AI agents investigate and resolve issues
+across every domain. It was built for teams that need to move from alert to evidence, from evidence to decision, and from decision to resolution
+faster.
+During beta testing, AI Canvas was available in Meraki and Splunk. Today, Cisco AI Canvas is moving into Controlled Availability as an
+integrated part of Cisco Cloud Control rather than in the individual products themselves. This release reflects months of beta feedback from
+operators, architects, and IT leaders across industries who have used AI Canvas in real environments. 
+What AI Canvas was built to solve
+Cisco has spent four decades building category-defining products across networking, security, compute, observability, and collaboration. Each
+product is powerful on its own. The next opportunity is what becomes possible when they work together as one operational platform.
+A single operational question often spans many domains. Why is an application slow? Why is call quality poor? Did a recent firewall change affect
+user experience? Operators often become the integration layer, moving across tools and assembling the incident story by hand. The signal is
+usually there. The challenge is correlation, not data, which is why mean-time-to-resolution (MTTR) gets stretched to hours and sometimes days.
+Cisco Cloud Controlprovides the foundation that brings Cisco products into one operational environment, giving teams a shared way to view their
+environment, get correlated alerts across products, and take action with AI assistance. AI Canvas is built on that foundation, as a workspace where
+the shared context becomes agentic action.
+Cisco Blogs
+Share
+Read aloud Menu
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 2 ---
+Inside an AI Canvas investigation
+AI Canvas changes the operating model from manual investigation to agent-led investigation, with the operator in control.
+Operators ask questions in natural language. From a single prompt, AI Canvas runs a structured multi-agent investigation. It reads the
+question, identifies the domains involved, builds a plan, and dispatches specialized agents to gather evidence in parallel. AI Canvas synthesizes
+the findings into one sourced answer, with the reasoning trail visible so operators can defend the conclusion or hand it off cleanly.
+Default Mode powers the day-to-day experience. When operators need to check the health of a site, look at recent activity, or pull a quick view of
+an asset, Default Mode returns answers quickly with the relevant context. Most operational questions live here.
+For more complex incidents, this Controlled Availability release brings something new.
+What is new in Controlled Availability
+This release introduces capabilities that make AI Canvas more useful for daily operations and more trusted for complex investigations.
+1. Deep Reasoning Mode is built for harder, multi-domain problems where teams need a clear, defensible answer. AI Canvas creates a full
+troubleshooting plan up front, grounded in best practice. The operator reviews, revises, or approves the plan before any agent runs. As the
+investigation proceeds, every step, finding, and conclusion is sourced and supported by evidence. Operators end up with an investigation that is
+easy to follow, easy to defend, and easy to hand off, especially when getting the answer right matters most.
+Default Mode keeps everyday operations moving. Deep Reasoning Mode steps in when issues require deeper analysis.
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 3 ---
+2. Interactive generated widgets give operators the exact view they need for the question they asked, including topology maps, performance
+charts, summaries, and reports drawn from live data. Operators can click in, drill down, export, or push a widget into the next step of the
+investigation.
+3. Multimodal context lets operators bring in the visual evidence they already rely on. Screenshots, dashboards, RF heatmaps, topology diagrams,
+and error images can become part of the investigation alongside live telemetry. The result is more complete investigations because AI Canvas
+reasons over the same evidence the operator is looking at.
+4. Knowledge base built in lets teams bring runbooks, SOPs, and policies directly into AI Canvas. AI Canvas starts with Cisco best practice and
+becomes more specific to each customerʼs environment as approved knowledge is added. The result is AI that follows the teamʼs standards, with
+investigations aligned to how the organization actually operates.
+5. Board Library gives operators Cisco-curated starting boards for common scenarios, including security posture reviews, wireless
+troubleshooting, compliance checks, and application performance investigations. Each board is structured so teams can run a meaningful
+investigation immediately rather than start from a blank page.
+Each of these capabilities exists because operators told us what an agentic workspace really needed.
+Shaped by operators across industriesBy continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 4 ---
+This release has been shaped by alpha and beta customers across industries – financial services, healthcare, retail, manufacturing, technology
+and more. Their teams ran AI Canvas against real environments, real incidents, and real operational patterns. They helped us refine what operators
+need from an agentic workspace: clear plans, sourced findings, useful visualizations, persistent context, faster investigation, and human control.
+That feedback is visible throughout this release. We are grateful to every customer and operator who helped shape this milestone.
+Designed for how teams work
+AI Canvas is designed for how operators actually work. It is where humans and AI agents come together in one shared workspace, working from
+the same evidence, the same context, and the same proposed actions. Multiple teammates can join the same investigation in real time, while AI
+agents handle the heavy lifting of gathering context, correlating signals, and proposing next steps across domains.
+Findings, decisions, uploaded files, and approved actions stay with the investigation across handoffs, shift changes, and escalations, so the next
+operator picks up where the last one left off rather than starting cold.
+That continuity is what helps reduce MTTR. Instead of repeating work or rebuilding context, teams keep the work moving across people, shifts,
+and the AI agents working alongside them.
+Customize & extend with Cloud Control Studio
+Agent Builder in Cisco Cloud Control Studio was also announced at this yearʼs Cisco Live. It is a new part of Cisco Cloud Control, designed for
+customers and partners who want to extend the platform with their own tools, agents, and operational knowledge.
+In Agent Builder, customers can do three things:
+Connect third-party tools. Through native integrations or open
+Model Context Protocol connectivity, tools beyond Cisco can
+become part of how AI Canvas reasons across the environment.
+Build custom agents. Customers can build agents tailored to their
+own operational needs, such as configuration drift monitoring,
+compliance checks, escalation workflows, or recurring incident
+investigations. Agents join investigations live inside AI Canvas.
+Turn knowledge into reusable skills. Runbooks, SOPs, and
+procedures become reusable agent skills that any authorized agent
+can call during an investigation.
+Teams can also discover, share, and adopt agents and integrations through the Cloud Control Marketplace, the third-party ecosystem inside Cloud
+Control. Marketplace gives teams a curated way to extend the platform with capabilities built by Cisco and partners.
+Anything connected, built, or adopted through Cloud Control Studio and the Marketplace is usable in AI Canvas. The more tools, agents, and skills
+added, the more capable the workspace becomes for the customerʼs specific environment.
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 5 ---
+Come see it at Cisco Live
+Cisco AI Canvas, alongside Cisco Cloud Control, is entering Controlled Availability for United States commercial customers. If you are at Cisco
+Live, come see Cisco Cloud Control with AI Canvas at the booth for a live demo, or in sessions throughout the conference. Session catalog for AI
+Canvas here.
+If you are not attending, visit the Cisco AI Canvas webpage to stay up to date on the latest product innovations.
+Some products or features described may be in various stages of development and offered on a when-and-if available basis.
+Authors
+Rohit Bakshi
+Director, Product
+Management
+AI Software &
+Platform
+Colby Philbin
+Engineering
+Product
+Manager
+AI Software & Platform
+Tags: AI SecurityArtificial Intelligence (AI)
+Quick Links -
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 6 ---
+Resources and Legal -
+©2026 Cisco Systems, Inc.
+About Cisco
+Contact Us
+Careers
+Connect with a partner
+Feedback
+Help
+Terms & Conditions
+Privacy
+Cookies / Do not sell or share my personal data
+Accessibility
+Trademarks
+Supply Chain Transparency
+Newsroom
+Sitemap
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings

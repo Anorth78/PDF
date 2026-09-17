@@ -1,0 +1,1338 @@
+--- PAGE 1 ---
+Cisco Cloud Control with AI Canvas FAQs 
+This article addresses common questions regarding Cisco Cloud Control, AI Canvas, Cloud 
+Control Marketplace and Cloud Control Studio. Last updated: August 20, 2026. 
+Note: Do not share this externally with customers. This document is for internal use only.  
+To search this document: Use Circuit or CTRL+F. 
+Popular links: 
+• Sales 
+resources: https://salesresources.cisco.com/Link/Content/DCPRq9gcFP6PF8QTW
+QFJm3MF47PB 
+• Onboarding customers: https://cisco.sharepoint.com/sites/CiscoCloudControl-
+ControlledAvailability/SitePages/Home.aspx 
+• Latest roadmap (INTERNAL ONLY): 
+https://cisco.sharepoint.com/:p:/s/AISoftwareandPlatformTeam/IQCLYUPvCgRNQb
+v6s3plSoAGAQW-AOO6S0i85Uq4vINHULE?e=IVWCSw 
+• Ask questions: 
+o ASK Cisco Cloud Control team: Join at https://eurl.io/#Q9x8Xqd2f 
+o ASK AI Canvas team: Join at https://eurl.io/#j0G9a-x7k 
+Strategic Visions and AgenticOps 
+Why did Cisco build Cisco Cloud Control? 
+Cisco Cloud Control is Cisco’s strategic response to one of enterprise IT’s most persistent 
+challenges: fragmented operations across disconnected management planes. 
+Customers manage increasingly complex environments spanning networking, security, 
+observability, collaboration, compute, and cloud. Operational teams often have to move 
+between multiple consoles to understand inventory, correlate events, troubleshoot 
+incidents, enforce policy, and demonstrate compliance. This fragmentation slows 
+response, increases operational risk, creates inconsistent visibility, and makes it harder for 
+IT teams to deliver predictable outcomes. 
+Cisco Cloud Control establishes a unified operational layer across Cisco’s portfolio. It 
+provides a single starting point for visibility, insights, workflows, and agentic operations 
+while preserving customers’ investments in the purpose-built controllers used within each 
+domain. By connecting portfolio context, identity, data, and workflows, Cloud Control
+
+--- PAGE 2 ---
+helps customers reduce complexity, improve time to insight and resolution, and establish a 
+governed foundation for agentic operations. 
+Why Cisco? What makes us different in comparison to our competitors? 
+Cisco brings decades of product depth across networking, security, compute, 
+observability, and collaboration. Cisco Cloud Control connects that depth so products can 
+contribute context, intelligence, and action to a broader operational environment. 
+Each product retains its specialized capabilities and management experience. Cisco Cloud 
+Control adds the shared foundation needed to work across them. Supported partner and 
+third-party systems extend that environment without requiring customers to replace the 
+tools that already meet their needs. 
+What makes it different is: 
+• Portfolio depth becomes a cross-domain advantage: Cisco Cloud Control connects 
+context and action across networking, security, compute, observability, and 
+collaboration, helping teams understand dependencies, find cause and impact 
+faster, and resolve issues that span IT domains. 
+• The foundation is connected, not just the interface: Shared identity, inventory, 
+topology, telemetry, policy, and action create a consistent operational foundation. 
+Products, apps, and agents can build on it without recreating core services or 
+operational context. 
+• Product depth is preserved: Teams keep the specialized capabilities and 
+management experiences they rely on while gaining shared context across 
+products. 
+• It is built for teams and AI agents: Operators and agents work from the same trusted 
+context, permissions, and tools, helping teams investigate faster, reduce handoff 
+friction, and act with appropriate oversight. 
+• It adapts to the customer: Organizations can build custom apps and agents and 
+connect supported third-party systems, adding capabilities around their needs 
+without replacing existing tools and investments. 
+What does "platform" mean in the context of Cisco Cloud Control? 
+Cisco Cloud Control is more than a navigation portal.
+
+--- PAGE 3 ---
+A portal primarily helps users move between tools. Cloud Control adds shared platform 
+services such as identity and tenant context, normalized inventory and topology, cross-
+domain operational context, and AI-assisted workflows. 
+This gives NetOps, SecOps, infrastructure, and platform teams a common operating layer 
+for understanding what they have, how it is connected, what is changing, what needs 
+attention, and what action to take next. Purpose-built controllers retain their domain depth, 
+while Cloud Control reduces the need to connect their data and workflows manually. 
+How is AgenticOps different from traditional AIOps? 
+Traditional AIOps focuses on detection and insight with AI to correlate events, reduce 
+noise, and surface recommendations. In practice, it often stops at alerts or suggested 
+actions, which leaves teams to manually coordinate next steps across tools and domains. 
+AgenticOps goes further by coordination of the full operational workflow. AI agents actively 
+gather evidence, maintain context, and help drive work end-to-end—from investigation 
+through approved action and validation, while humans retain control at all times. The result 
+is faster, more continuous operations with governance, accountability, and auditability 
+built in. 
+How do Cisco Cloud Control and AI Canvas fit together? 
+Think of Cloud Control as the harness and AI Canvas as the situation room inside it. Cloud 
+Control provides the foundation every team works from with one login, unified inventory, 
+shared topology, correlated alerts, and governed identity. AI Canvas is where agents 
+operate: a collaborative workspace where operators and AI agents investigate and resolve 
+cross-domain issues together. You always start in Cloud Control. When an issue needs 
+deeper investigation or team collaboration, you open Canvas and it inherits all of Cloud 
+Control's context automatically. Cloud Control without Canvas is a unified platform. 
+Canvas without Cloud Control is a clever workspace. Together, they're an operating agentic 
+workspace. 
+Is AI Canvas a standalone product? 
+No, AI Canvas is not a standalone product. It is an experience within Cisco Cloud Control. 
+What is the pitch to a customer who only has one Cisco domain today? 
+Even for a single domain, Cisco Cloud Control can create value when the customer 
+operates that domain at scale. 
+If a customer has multiple environments, tenants, regions, or operating teams within one 
+domain, they still need a unified management plane. Cisco Cloud Control gives them a
+
+--- PAGE 4 ---
+shared workspace through AI Canvas where operators and AI agents can investigate issues 
+together using natural language, persistent context, and agentic execution across that 
+environment. That improves collaboration, reduces handoffs, supports consistent identity 
+and access, and gives teams a single place to coordinate operational work. 
+If the footprint stays single-domain, the value remains in day-to-day operations and better 
+coordination at scale. If the customer later adopts more Cisco products, that same 
+foundation expands naturally with more telemetry, broader context, and cross-domain 
+reasoning. " 
+How do we pitch the high-level vision without indication of a future promise or 
+"vaporware"? 
+Position Cisco Cloud Control and AI Canvas as the "Present" chapter of IT evolution. The 
+past was Manual Operations (fragmented tools). The future is Ambient Proactive Action 
+(fully autonomous AI). Today, we deliver Governed Agentic Operations or AI agents that can 
+execute complex workflows alongside humans with full governance and oversight. 
+Doing a live demo of Cloud Control, hosted in dCloud, is the best way to dispel any 
+skepticism about the capabilities and value of Cloud Control. 
+Understand Cisco Cloud Control, AI Canvas, AI Assistant, Cloud Control Studio and 
+Cloud Control Marketplace 
+Cisco Cloud Control 
+What is Cisco Cloud Control? 
+Cisco Cloud Control is the unified operations platform for AgenticOps. It brings the Cisco 
+estate and connected third-party systems into one operational environment, giving teams 
+and AI agents the context and control to manage infrastructure, resolve issues across IT 
+domains, and extend the platform with custom apps, agents, and integrations. 
+All of the experiences live within Cisco Cloud Control – including but no limited to: Cisco AI 
+Canvas, Cisco AI Assistant, Cloud Control Studio, and Cloud Control Marketplace. 
+What key pain points does Cisco Cloud Control solve? 
+• Management is fragmented. Teams work across separate sign-ins, inventories, 
+interfaces, and operating processes. 
+• Context breaks at product boundaries. Identity, assets, topology, telemetry, and 
+investigation history do not consistently follow the operator, creating context dead 
+zones.
+
+--- PAGE 5 ---
+• Cross-domain issues take too long to resolve. Teams must manually connect 
+symptoms, dependencies, and ownership across products and IT domains. 
+• AI agents lack operational grounding. Without trusted access, live context, 
+authorized tools, and safeguards, agents cannot safely help with real infrastructure. 
+• Customizing operations takes too much work. Building tailored capabilities and 
+connecting existing tools often requires separate development and integration 
+efforts. 
+What are the key, high-level features of Cisco Cloud Control? 
+• One login and seamless navigation: A consistent way to move across connected 
+Cisco products without reauthentication or losing operational context. 
+• Unified control plane: One operational layer for managing inventory, topology, 
+identity, and policy across the Cisco estate. 
+• Cross-domain context: Connected signals, assets, health, and dependencies 
+across products and IT domains. 
+• Operational harness: Trusted access, authorized tools, policy boundaries, and 
+safeguards for AI agents working with real infrastructure. 
+• Built-in extensibility: Cloud Control Studio for custom apps, agents, and tool 
+connections, plus Cloud Control Marketplace for Cisco and ecosystem capabilities. 
+What are the key outcomes to expect from Cisco Cloud Control? 
+• Move across products more easily. Spend less time signing in, switching tools, and 
+rebuilding context. 
+• Manage with greater consistency. Work from shared inventory, topology, identity, 
+and policy across the Cisco estate. 
+• Resolve issues faster. Understand how signals, assets, and dependencies connect 
+so teams can focus on the underlying problem. 
+• Put AI agents to work with confidence. Let agents investigate and carry out 
+authorized actions with shared context, clear controls, and appropriate oversight. 
+• Adapt without replacing what works. Customize the platform around organizational 
+needs while preserving existing tools and technology investments. 
+AI Canvas
+
+--- PAGE 6 ---
+What is AI Canvas? 
+AI Canvas is the multiplayer, agentic workspace within Cisco Cloud Control where 
+operators and AI agents investigate, decide, and act together. It keeps evidence and 
+context in one place so teams can find cause and impact faster, continue across handoffs 
+without starting over, and move from investigation to approved action. 
+What key pain points does AI Canvas solve? 
+• Investigations are scattered. Evidence, findings, decisions, and actions are spread 
+across different tools and conversations. 
+• Cause and impact stay hidden. Individual products may show symptoms without 
+revealing dependencies across IT domains. 
+• Handoffs reset the work. Teams lose investigation history when an issue moves 
+between operators, shifts, or specialized teams. 
+• Action stalls after investigation. Teams lack a clear path from findings and 
+recommendations to approved action. 
+What are the key, high-level features of AI Canvas? 
+• Multiplayer workspace: One live environment where operators and AI agents work 
+together from the same evidence and operational context. 
+• Cross-domain investigation: Agent-led analysis and correlation across products and 
+IT domains. 
+• Persistent context: A durable record of evidence, findings, decisions, and actions 
+across sessions and handoffs. 
+• Governed action: A controlled path for reviewing recommendations, approving next 
+steps, and carrying out authorized actions. 
+What are the key outcomes to expect from AI Canvas? 
+• Bring investigations together. Spend less time switching tools, gathering evidence, 
+and coordinating separate conversations. 
+• Find cause and impact faster. Reveal relationships across products and IT domains 
+that individual tools may not show. 
+• Keep work moving through handoffs. Continue across teams and shifts without 
+repeating work or rebuilding the investigation.
+
+--- PAGE 7 ---
+• Reach resolution with control. Move from findings to approved actions while 
+keeping operators involved in important decisions. 
+What does it mean that AI Canvas is a "multiplayer" workspace? 
+AI Canvas provides a shared, synchronized workspace where operators and AI agents can 
+work from the same evidence, findings, notes, and investigation history. The workspace 
+preserves context across collaboration and handoffs so another operator can continue the 
+investigation without reconstructing the work from the beginning. 
+What are widgets in AI Canvas and how are they organized? 
+Widgets are the visual building blocks on the AI Canvas workspace. Each widget represents 
+a specific piece of operational information such as a network overview, a device detail 
+view, a topology map, a health assessment, or a compliance report. Widgets are color-
+coded by type (for example, networks, topologies, health assessments, security) to help 
+operators quickly identify and organize them. Widgets can be collapsed, stacked by 
+category, extracted from stacks, resized to full screen, and arranged on the canvas. 
+Operators choose which items to promote to widgets on the canvas with a plus-sign 
+control, in order to keep the workspace focused on what matters for the current 
+investigation rather than automatic population of it with every query result. 
+Can customers bring their own knowledge documents into AI Canvas? 
+Yes. AI Canvas supports customer-uploaded knowledge sources that can be referenced 
+during investigations. Customers can upload documents such as network contact lists, 
+outage histories, SLA details, ISP information, or operational runbooks. These documents 
+are then available to be pulled into any prompt using a hashtag command, which allows 
+the AI to incorporate the customer's own organizational context when it answers questions 
+or during performance analysis. 
+What is deep thinking mode in AI Canvas? 
+Deep thinking is an investigation mode in AI Canvas that performs a thorough, multi-step 
+analysis of a problem. When invoked, it creates a dedicated investigation environment, 
+builds an execution plan, gathers evidence across available data sources, writes and runs 
+analytical code, and produces a comprehensive report which includes primary cause, 
+contributing factors, impact assessment, and an evidence trail. Deep thinking takes longer 
+than a quick analysis (typically a few minutes) but provides significantly more depth and 
+rigor. Operators can choose between deep reason and quick analysis based on the 
+complexity of the issue. 
+Does AI Canvas support multimodal input such as images?
+
+--- PAGE 8 ---
+AI Canvas includes a vision analysis agent that can interpret images. Operators can 
+capture a screenshot, such as a topology map or a dashboard view, and drop it into the AI 
+Canvas chat. The vision analysis agent inventories the contents of the image, creates 
+metadata, compares it with known network context, and provides an analysis. For 
+example, an operator could screenshot a topology and ask "Do we have any problems in 
+this network?" and receive an informed response based on both the image and live 
+platform data. 
+Does AI Canvas generate downloadable reports and artifacts? 
+Yes. AI Canvas supports artifacts downloads such as topology maps as PDFs, compliance 
+audit reports, and other investigation outputs. Operators can export these for 
+documentation, share with stakeholders, or offline review. 
+AI Assistant 
+What is AI Assistant? 
+AI Assistant is the context-aware, natural-language assistant within Cisco Cloud Control 
+that helps operators get answers and complete everyday tasks. It combines product 
+knowledge with operational context to help teams understand issues, identify next steps, 
+and continue complex investigations in AI Canvas without starting over. 
+What key pain points does AI Assistant solve? 
+• Answers are difficult to find. Operators spend time searching across 
+documentation, interfaces, and information sources. 
+• Answers lack operational context. Generic responses do not reflect the assets, 
+events, and conditions affecting the environment. 
+• Everyday tasks take too many steps. Routine work requires unnecessary navigation 
+and manual coordination. 
+• Escalations start over. Context is lost when an everyday question becomes a more 
+complex investigation. 
+What are the key, high-level features of AI Assistant? 
+• Natural-language access: A conversational way to ask questions and request help 
+across Cisco Cloud Control. 
+• Context-aware answers: Responses grounded in product knowledge and relevant 
+operational information.
+
+--- PAGE 9 ---
+• Everyday task assistance: Guidance, recommended next steps, and support for 
+completing common work. 
+• AI Canvas handoff: A direct path into deeper investigation with the relevant 
+conversation and operational context intact. 
+What are the key outcomes to expect from AI Assistant? 
+• Find answers faster. Spend less time searching through documentation, interfaces, 
+and information sources. 
+• Make better-informed decisions. Use answers grounded in the environment and 
+issue at hand. 
+• Move everyday work forward. Complete common tasks with fewer steps and less 
+manual navigation. 
+• Escalate without repeating yourself. Continue complex work in AI Canvas with the 
+relevant context intact. 
+Is the AI Assistant across all Cisco platforms? 
+Yes. Cisco Cloud Control includes a Unified AI Assistant—a global, natural language 
+interface that works across every integrated Cisco product. It uses a federated approach 
+that connects to each product's native intelligence and skills, allowing it to answer 
+questions and take action across Cisco's entire portfolio from a single, persistent chat 
+experience within Cloud Control. 
+When should I tell my customer to use AI Assistant vs. AI Canvas? 
+Use AI Assistant for quick, single-player questions, such as "What's the health of my 
+Chicago branch?" or "Show me devices approaching end-of-support. " Use AI Canvas for 
+deeper, multi-step, or multi-team investigations, such as "Why is our finance app slow 
+today, and what do we do about it?" If an operator starts in Assistant and realizes they need 
+more, one click escalates into Canvas with full context preserved. Assistant is for seconds-
+to-minutes conversations while Canvas is for minutes-to-hours investigations. Both use 
+the same reasoning engine, so answers stay consistent regardless of where the question is 
+asked. 
+Cloud Control Marketplace 
+What is Cloud Control Marketplace? 
+Cloud Control Marketplace is the ecosystem within Cisco Cloud Control where 
+organizations discover and adopt apps, agents, and integrations from Cisco, partners, and
+
+--- PAGE 10 ---
+third parties. It helps teams add capabilities faster, bring supported non-Cisco tools and 
+context into Cisco Cloud Control, and continue using the specialized products they already 
+rely on. 
+What key pain points does Cloud Control Marketplace solve? 
+• Vendor lock-in limits choice. Teams may be forced to stay within one ecosystem or 
+replace tools that already meet their needs. 
+• Integrations take too much work. Connecting systems often requires custom 
+development and ongoing maintenance. 
+• Disconnected systems limit cross-domain operations. Capabilities available in one 
+tool may not be accessible where broader operational work happens. 
+• Tools do not share context. Important data, tools, and actions remain isolated from 
+teams and AI agents. 
+What are the key, high-level features of Cloud Control Marketplace? 
+• Cisco and multi-vendor ecosystem: Additional apps, agents, and integrations from 
+Cisco, partners, and third parties. 
+• Central discovery and adoption: One place to find and add available capabilities to 
+Cisco Cloud Control. 
+• Ecosystem integrations: Available connections that reduce the need to build every 
+integration from the beginning. 
+• In-platform access: Adopted capabilities available within Cisco Cloud Control and 
+AI Canvas where supported. 
+What are the key outcomes to expect from Cloud Control Marketplace? 
+• Preserve technology choice. Continue using specialized tools that already meet the 
+organization’s needs. 
+• Add capabilities faster. Reduce the time and effort required to find, evaluate, and 
+adopt new solutions. 
+• Connect more of the environment. Bring supported partner and third-party 
+capabilities into Cisco Cloud Control and AI Canvas. 
+• Work with broader context. Give teams and AI agents more of the relevant data, 
+tools, and actions needed to understand and resolve issues.
+
+--- PAGE 11 ---
+Cisco Cloud Control Studio 
+What is Cloud Control Studio? 
+Cloud Control Studio is the build environment within Cisco Cloud Control where 
+organizations create custom apps and agents for the way they operate. Teams can connect 
+existing systems, equip apps and agents with reusable skills drawn from runbooks and 
+policies, and test capabilities before deployment. 
+What key pain points does Cloud Control Studio solve? 
+• Generic automation does not fit every organization. Standard tools cannot reflect 
+every team’s systems, policies, runbooks, and operating practices. 
+• Operational expertise stays trapped. Important knowledge remains in documents, 
+manual processes, and individual teams. 
+• Connections must be rebuilt. Teams repeatedly integrate the same data, tools, and 
+automation for different use cases. 
+• Custom apps and agents are difficult to operationalize. Teams need a consistent 
+way to build, test, deploy, and manage them. 
+What are the key, high-level features of Cloud Control Studio? 
+• App Builder and Agent Builder: Dedicated environments for creating custom apps 
+and agents. 
+• Reusable skills: Organizational runbooks, procedures, and policies packaged for 
+use by apps and agents. 
+• Tool connections: Supported integrations with data, third-party systems, APIs, MCP 
+services, and existing automation. 
+• Development lifecycle: Testing, refinement, versioning, publishing, and deployment 
+within Cisco Cloud Control. 
+What are the key outcomes to expect from Cloud Control Studio? 
+• Build faster for specific needs. Create capabilities that reflect the organization’s 
+systems, processes, and ways of working. 
+• Scale expertise beyond individual teams. Make proven knowledge and operating 
+practices available wherever they are needed.
+
+--- PAGE 12 ---
+• Reduce repeated integration work. Reuse existing data, tools, and automation 
+across apps, agents, and use cases. 
+• Move into operations with confidence. Validate and refine custom capabilities 
+before making them available to operators. 
+What if I have further questions about Studio, App Builder or Agent Builder? 
+Visit the Ask Cisco Cloud Control space: https://eurl.io/#X1dt23319 
+App builder in Cloud Control Studio 
+What is App Builder in Cloud Control Studio? 
+App Builder is one of two builder environments inside Cloud Control Studio. It lets 
+customers and partners build and publish apps and workflows for Cisco Cloud Control 
+from natural-language prompts, with built-in agentic coding assistants starting with OpenAI 
+Codex. Users describe what they need in plain language, and App Builder creates the 
+application. 
+What makes App Builder different from other AI coding tools? 
+Most AI coding tools stop at code generation — they hand you files and leave the hard part 
+to you. An application built in App Builder is "born deployed": it is automatically 
+authenticated with Cisco identity, registered, hosted, and ready to distribute the moment it 
+is created. The agent is the engine; App Builder is everything Cisco layers around it — 
+identity, services, hosting, governance, and distribution. 
+How does App Builder work? Do I need development experience to use App Builder? 
+Tell it what you want in plain language, and it builds the application, lets you preview it, and 
+ships it as a working app that runs directly inside Cisco Cloud Control. There is no 
+infrastructure to provision, no build tools to install, and no plumbing to learn. 
+The intended experience is natural-language app creation. Users describe what they need, 
+and App Builder creates the app. No coding is required. 
+What can I build with App Builder? 
+The range is wide, including: 
+Custom operational views: A single screen combining alerts, device health, and fix-it 
+actions during an outage, instead of clicking across separate consoles. Data and tools for 
+the AI assistant: Connect your own workflows (e.g., change-approval) to Cisco's AI 
+assistant so engineers can issue natural-language commands that route through proper
+
+--- PAGE 13 ---
+approvals. Unified integrations: Pull third-party data into Cloud Control or push Cisco 
+signals out to external systems. Partner-built customer experiences: Branded experiences 
+that run directly in Cloud Control, extending Cisco's platform to serve a partner's own 
+customers. " 
+Is this the same as a Codex Plugin? 
+No. Do not describe the capability as a Codex Plugin. The approved framing is App Builder 
+powered by OpenAI Codex inside Cisco Cloud Control. 
+Can I build external to Cisco Cloud Control and then bring it into the platform? 
+App Builder is the ‘no code’ way of building apps. For individuals who are comfortable 
+writing their own code or using a dedicated coding agent, there are other experiences 
+planned for the future for building and deploying apps on Cisco’s platform. 
+Can I use App Builder with AI models other than OpenAI Codex? 
+Currently, only OpenAI Codex models are provided. 
+Can App Builder work beyond Cisco products? 
+Cisco Cloud Control is expanding to third parties so apps can run actions across the 
+customer's broader ecosystem. At launch, keep expectations high-level unless a specific 
+third-party workflow has been confirmed. 
+How are product-level permissions handled when the app creator is different from the 
+end-user? 
+Applications typically access Cisco product data on behalf of the user logged into Cloud 
+Control, following industry standard OAuth patterns. This ensures that the application 
+cannot see or access data that the logged in user cannot. 
+What are the fees for using App Builder? 
+Pricing and packaging information is not yet available. 
+How does governance work for apps built in App Builder? 
+Cloud Control is the governance and access surface. Apps use Cisco's unified identity and 
+operate through the Cloud Control experience, with telemetry, permissions, logging, and 
+compliance controls built in rather than creating unmanaged paths around Cisco controls. 
+Once I build an app, how do I distribute it?
+
+--- PAGE 14 ---
+Apps built in Studio can be published to Cloud Control Marketplace, where they become 
+visible and available to Cisco Cloud Control users. Apps are ready to distribute the 
+moment they are created. 
+When will App Builder be available? 
+Cisco will work closely with design partners prior to kicking off a formal beta program. If you 
+have a customer that you would like to nominate to be a design partner, reach out to the 
+App Builder product management team with details on specific customer use cases. 
+Agent Builder in Cloud Control Studio 
+What is Agent Builder? 
+Agent Builder is the second builder environment inside Cloud Control Studio. It lets 
+customers build customer agents in natural language tailored to their own policies and 
+workflows. Customers can connect agents to third-party tools and create custom agent 
+skills from operational knowledge resources (like SOPs or runbooks). 
+How do agents that are built in Agent Builder run in Cisco Cloud Control? 
+Agents built in Cloud Control Studio run in one of two modes, chosen by the publisher 
+when the agent is configured. 
+Ambient agents run continuously in Cisco Cloud Control. They operate in the background, 
+monitoring data, watching for conditions, and acting or alerting when something happens. 
+Ambient agents run on their own schedule or in response to events. Operators don't need 
+to be in a session for them to work and will be notified if the agent requires input or 
+approval from them. Live agents are invoked during sessions in Cisco AI Canvas. They work 
+alongside operators in real time on active investigations. Live agents respond to the work 
+happening in the session and exit when the work is done. 
+Who builds agents in the Agent Builder? 
+Studio is for Cisco Cloud Control users including IT admins, network operations teams, and 
+partners who need custom workflows, dashboards, agents, operational apps, or action-
+oriented experiences that reflect their business environment, without requiring them to 
+write code. 
+The intent is that the people closest to the operational problem, not specialized AI 
+engineers, build the agents that solve it. A network operator who knows the right way to 
+triage a Wi-Fi outage can encode that knowledge into an agent. A SecOps lead who knows 
+their organization's incident response sequence can build that into an ambient agent.
+
+--- PAGE 15 ---
+Cisco Cloud Control Studio is designed for the operators who run the environment, not for 
+a separate AI development team. 
+How is Agent Builder in Cloud Control Studio different from building AI agents with 
+LangChain or a custom framework? 
+Generic AI agent frameworks give developers raw tools. Building production-ready agents 
+on those frameworks means assembling integrations, governance, observability, 
+evaluation, deployment, and version control from separate components, then maintaining 
+all of it. 
+Cisco Cloud Control Studio includes those layers natively: 
+Built-in governance. Cisco AI Defense enforces policy at runtime. Approval gates and 
+human-in-the-loop are first-class. Built-in observability. Splunk AI Agent Monitoring traces 
+every agent execution. No separate monitoring stack to deploy. Built-in evaluation. Splunk 
+AI Agent Monitoring (via Galileo) automatically scores output quality and flags 
+hallucinations. No separate eval pipeline. Built-in deployment. Sandbox, version control, 
+and publish workflows are part of the platform. Native data and tool access. Agents reach 
+the customer's Cisco environment, third-party tools, and custom skills without custom 
+integration code. 
+A team building on LangChain might spend months assembling all of this before their first 
+agent goes to production. In Cisco Cloud Control Studio, the platform is the assembly. 
+Builders focus on the agent logic, not the infrastructure underneath it. 
+Which third-party tools can I connect to Agent Builder? 
+Cisco Cloud Control Studio offers native integrations for common enterprise tools, such as 
+ServiceNow. Native integrations are pre-built, validated, and configured through a guided 
+setup, so customers don't write integration code. You can read the current list at 
+www.cisco.com/go/CloudControlStudio in the FAQ 
+For any tool that doesn't have a native integration, Cisco Cloud Control Studio would 
+support connecting to Application Programming Interface (API) or open Model Context 
+Protocol (MCP). Customers and partners can build MCP connectors themselves or use 
+connectors built by others. 
+Once connected, a tool's data and actions become available to AI agents working across 
+Cisco Cloud Control, including inside Cisco AI Canvas. When an operator investigates an 
+issue, AI agents can pull context from connected tools, correlate it with Cisco's own data, 
+and propose remediations that reach across the customer's full environment.
+
+--- PAGE 16 ---
+What is an "agent skill" in Agent Builder? 
+A skill is a piece of operational logic an AI agent can call, such as a runbook procedure, a 
+remediation step, a diagnostic check, or a policy validation. Skills can be simple (run a 
+specific check, return a status) or complex (execute a multi-step procedure with 
+conditional logic). 
+Skills are reusable across agents. Encoding a procedure once makes it available to every 
+agent that needs it. A skill that captures the customer's standard approach to firewall rule 
+validation can be called by a security agent, a compliance agent, and a network change 
+agent. The same logic, called from different agents in different contexts. 
+Skills are managed in Cloud Control Studio with version control. As the customer's 
+operational practices evolve, skills are updated centrally, and every agent that uses them 
+inherits the change. 
+How are agents built in Agent Builder monitored and evaluated? 
+Every agent run, trace, failure, and quality score is powered by Splunk AI Agent Monitoring 
+and Galileo, both included with Cisco Cloud Control Studio. No separate tools or 
+subscriptions required. 
+Splunk AI Agent Monitoring captures execution data: every agent run, with outcome 
+(success, warning, failed), duration, and trigger source. Builders can drill into traces 
+showing each LLM call, tool invocation, and skill execution, with inputs and outputs. 
+Failures (error codes, authorization issues, tool timeouts) surface in context on the agent's 
+detail page. 
+Splunk AI Agent Monitoring (via Galileo) evaluates output quality: it scores agent outputs 
+for accuracy, relevance, and correctness using LLM-as-a-judge methodology. It flags 
+hallucinations, where agents fabricate information or cite unsupported data. It also detects 
+drift, alerting builders when an agent's quality degrades over time. 
+Together, observability and evaluation give builders a closed loop: see what agents did, see 
+how well they did it, and improve them. 
+How are agents built in Agent Builder governed and controlled? 
+Every agent runs under policy enforcement through Cisco AI Defense at both build time 
+and runtime. Customers define what each agent can do, when it can act, and what actions 
+require human approval. Agents propose actions; humans approve before anything 
+changes on production. 
+Can I get deeper analytics across my agents beyond what's included in Agent Builder?
+
+--- PAGE 17 ---
+Yes. Customers can cross-launch directly into Splunk for the full monitoring experience: 
+fleet-wide dashboards across all agents, custom queries and alerting rules, long-term 
+trace retention for compliance and auditing, and correlation with infrastructure metrics 
+(network, compute, application) already in Splunk. 
+The cross-launch is one click from Cloud Control Studio. For customers who already use 
+Splunk, agent telemetry becomes part of the broader operational picture. For customers 
+without a Splunk subscription, the in-platform observability included with Cloud Control 
+Studio covers the essentials. 
+How are agents tested before they go live in Agent Builder? 
+Agents go through a draft, sandbox, and publish lifecycle before they can act on 
+production. 
+Draft. The agent is being built. The builder describes what it should do, configures its tools 
+and skills, and iterates on its logic. Sandbox. The agent runs against real data in a sandbox 
+environment. Builders can simulate scenarios, observe the agent's behavior, review traces, 
+and verify that outputs meet quality expectations. Publish. Once the builder is satisfied, the 
+agent is published with a version number. Publishing requires an approval gate. From there, 
+the agent is available to run in its configured mode (ambient or live). 
+Version control tracks every change. Customers can roll back to a prior version if a new 
+version causes issues, and full execution history is preserved across versions for auditing 
+and comparison. 
+How is Agent Builder relate to Cloud Control Marketplace? 
+Agent Builder is the second builder environment inside Cloud Control Studio. It lets 
+customers build custom agents in natural language tailored to their own policies and 
+workflows. Customers can connect agents to third-party tools and create custom agent 
+skills from operational knowledge resources (like SOPs or runbooks). 
+Can I upload my runbooks and operational knowledge to Agent Builder? 
+Yes. Customers can upload runbooks, SOPs, policies, and operational knowledge to a local 
+knowledge base inside Cisco Cloud Control Studio. Supported formats include common 
+document types (PDF , Word, Markdown, plain text) and structured formats. Once 
+uploaded, content is indexed and converted into reusable agent skills. 
+Skills derived from uploaded knowledge work the same way as any other skill: AI agents 
+can call them during investigations and remediations in Cisco AI Canvas, and they can be 
+reused across multiple agents. The customer's operational expertise becomes executable.
+
+--- PAGE 18 ---
+The knowledge base is local to the customer's tenancy. Uploaded content stays within the 
+customer's environment and is not shared with other customers or used to train external 
+models. 
+Does my data leave my environment when I use Agent Builder? 
+Customer-uploaded knowledge stays within the customer's tenancy in Cisco Cloud 
+Control and is governed by Cisco's enterprise security and privacy controls. Customers 
+control what data is accessible to which agents. 
+How is Agent Builder licensed? 
+Cisco Cloud Control Studio is not yet available. Licensing and packaging have not yet been 
+announced. 
+How is Agent Builder different from a workflow automation tool? 
+Workflow automation tools execute predefined steps. Given a trigger, they run a script that 
+has been written in advance. The logic is static. If conditions change, the script either fails 
+or produces the wrong result. 
+Cisco Cloud Control Studio builds AI agents that reason across data, decide what to do, 
+and propose actions to humans for approval. The work is dynamic and context-aware, not 
+script-based. 
+A concrete example: a workflow automation tool can be configured to restart a service 
+when CPU exceeds a threshold. An AI agent can investigate why CPU is high, correlate it 
+with recent deployments, network conditions, and security events, identify the root cause, 
+and propose either a service restart or a different remediation depending on what the data 
+actually shows. The agent reasons about the situation. The workflow tool just runs. 
+Agents and workflows are complementary. Workflows are still the right answer for fully 
+predictable, low-variance tasks. Agents are the right answer when the work requires 
+judgment, cross-domain context, or adaptation to conditions that weren't known when the 
+logic was written. 
+., eligibility, and commercials 
+How will licensing and pricing work? 
+At Launch, licensing for Cisco Cloud Control with AI Canvas is included with your 
+subscription license for eligible Cisco products at no additional cost. Customers who 
+maintain active subscriptions to any one of Cisco's integrated products receive full access 
+to Cloud Control once it's available to that customer.
+
+--- PAGE 19 ---
+While the Advantage tier includes all functionality found in Essentials, it is designed to 
+house additional high-value features. Currently, core capabilities are available in both tiers; 
+however, future advanced capabilities will be bundled exclusively into the Advantage tier. 
+Customers pay for the products they use (Meraki, Nexus, Security, etc.), and Cloud Control 
+unifies them at no extra charge. 
+Cisco reserves the right to adjust Cloud Control platform pricing in the future. 
+What is the token consumption model and pricing for AI Canvas usage? 
+At U.S General Availability (August 25, 2026), every customer receives an included 
+allocation of AI Canvas tokens at no additional cost, enabling their teams to begin using AI 
+Canvas immediately and demonstrate value quickly. This included allocation is part of the 
+platform feature set bundled with your subscription licenses for eligible Cisco products. 
+Expansion pricing for token usage beyond the included allocation is currently being 
+finalized and will be communicated as it becomes available. 
+Cisco reserves the right to adjust platform usage pricing in the future, but there is no plan to 
+monetize AI Canvas or Cisco Cloud Control at launch. For the most current information on 
+token allocation details and expansion pricing, check SalesConnect or contact your Cisco 
+Sales representative. 
+What qualifies as an "eligible Cisco product" for Cisco Cloud Control and AI Canvas 
+entitlement? 
+Eligibility is tied to active subscription licenses on integrated Cisco products. A customer 
+with an active subscription to any one of these products is entitled to Cloud Control at no 
+additional cost. Perpetual-only customers without active subscriptions are not currently 
+eligible. For specific SKU-level eligibility, contact your Cisco Sales representative. 
+Are there plans to offer AI Canvas as a standalone product? 
+Currently, AI Canvas is bundled with Cisco platform subscriptions. There are no plans to 
+offer it as a standalone product. 
+What is the licensing model for AI Canvas? 
+All AI Canvas "skills" are currently included with existing product subscriptions (Essentials 
+and Advantage). Cisco reserves the right to monetize advanced skills in the future. 
+Architecture, integrations, and data flow 
+Where can I find the list of products integrated into Cisco Cloud Control? 
+You can find it here. This is INTERNAL ONLY .
+
+--- PAGE 20 ---
+Link: 
+https://cisco.sharepoint.com/:p:/s/AISoftwareandPlatformTeam/IQCLYUPvCgRNQbv6s3pl
+SoAGAQW-AOO6S0i85Uq4vINHULE?e=rscc1r 
+This document can also be found under “Ideal Customer Profiles (ICP)” on the Cisco Cloud 
+Control with AI Canvas SalesConnect page. 
+What is Cisco Cloud Control not? 
+Cloud Control is not an ITSM platform and it doesn't replace ServiceNow or Jira. It is not a 
+SIEM and it doesn't replace Splunk. It is not a SOAR tool, although it complements one. It is 
+not a replacement for individual Cisco product controllers and those remain fully 
+functional. It is the operations layer that unifies and adds agentic intelligence on top of all 
+of these. 
+Is Cisco Cloud Control just a redesigned UI or another portal on top of Cisco's current 
+tools? 
+No. While Cloud Control provides a modern, unified navigation experience, it also includes 
+platform-layer services such as unified identity, normalized inventory, an AI Assistant that 
+provides consistent, context-aware guidance across every domain, and AI Canvas. Cisco 
+Cloud Control therefore lets you operate as if the tools were one system, a fundamentally 
+different category. See "What does "platform" mean in the context of Cisco Cloud 
+Control?" for more background. 
+How does Cisco Cloud Control get data from the individual products? 
+Cloud Control uses a combination of push and pull mechanisms based on the product. 
+Some products push data proactively to Cloud Control, while others require Cloud Control 
+to pull data via APIs. The platform uses Cisco Unified Identity-based tokens to authenticate 
+and authorize these data exchanges. In order to continually reduce time to insight and 
+resolution, the goal is for all data to flow as close to real-time as possible and to enable 
+meaningful cross-domain correlation. 
+How does Cisco Cloud Control keep inventory and operational data current? 
+Synchronization varies by source and generally occurs from every few minutes to once an 
+hour. Most products push data to Cloud Control. If connectivity is lost, Cloud Control 
+retains the last-synchronized inventory but cannot update it until connectivity returns. 
+Decommissioned devices must be removed from the source controller before they 
+disappear from Cloud Control. 
+What does "log in once" actually mean?
+
+--- PAGE 21 ---
+Single sign-on; Customers authenticate once using Cisco's unified identity services and 
+can move across integrated Cisco products in Cloud Control without repeated logins, while 
+still honoring entitlements and product-level role-based access controls. 
+What is tenant linking and why does it matter to my customer? 
+Most customers have multiple Cisco product tenants, such as one for Meraki, one for 
+Security Cloud Control, one for ThousandEyes, and so on. Tenant linking is how an 
+administrator connects those tenants into a single unified Cloud Control experience. An 
+admin does this once. From that point forward, every user in the organization gets single 
+sign-on, one unified inventory, one topology, and one alerting view across every linked 
+product without each user configuring anything individually. It's the foundational step that 
+turns a collection of Cisco products into a unified operations environment. 
+How can an existing tenant-group link be changed? 
+File a TAC case from within Cisco Cloud Control. TAC will coordinate with engineering to 
+change or remove the existing tenant-group linking. 
+What network access is required to open an on-premises controller from Cisco Cloud 
+Control? 
+The user’s browser must be able to reach the controller’s private management address. 
+This typically requires being on the same customer network or connected through VPN. 
+Cloud Control does not make a private controller address publicly reachable. 
+How does Cisco Cloud Control’s data enhance AI Canvas? 
+Cloud Control aggregates and normalizes inventory, topology, and telemetry from across 
+Cisco's portfolio. This data is exposed to AI Canvas through Model Context Protocol 
+services, which gives AI Canvas rich, cross-domain context about every asset in a 
+customer's environment which includes other devices, relationships, and topology. This 
+means when AI Canvas investigates an issue, it already understands the full operational 
+landscape, which enables faster and more accurate cross-domain reason without the 
+requirement of operators to manually provide context. 
+Does every connected controller expose the same inventory, advisory, topology, and 
+action data? 
+No. Data depth and supported actions vary by controller, product release, entitlement, and 
+integration. Cloud Control can unify the available information, but it cannot expose data or 
+actions that the source system does not provide. 
+What do you mean by "zero ingestion overhead"?
+
+--- PAGE 22 ---
+AI Canvas doesn't copy or store your live operational data. When it needs to answer a 
+question like "what's happening on this switch right now?" , it queries the source system in 
+real time and generates the result when the investigation ends. That means no duplicated 
+data, no extra storage costs, and no lag. The exception is inventory and topology, which 
+Cloud Control does normalize and store at the platform level because that data is most 
+valuable when unified across domains. The live telemetry is pulled on demand; inventory 
+and topology are always-on, always-unified. 
+Does AI Canvas support push notifications from downstream applications? 
+No. AI Canvas pulls data when needed, as directed by its AI agents. It leverages Model 
+Context Protocol connections to supported platforms. AI Canvas does not passively collect 
+or ingest data. 
+What is Model Context Protocol (MCP) and why is it important? 
+Model Context Protocol is a standards-based protocol that enables communication 
+between AI agents and tools (like Meraki or Splunk). It creates an abstraction layer, which 
+allows Cisco to rapidly onboard new products and expand the ecosystem of tools that can 
+be integrated into AI Canvas without the design process of custom, proprietary APIs for 
+each one. 
+How do specialized Cloud Control agents interact with product MCP servers? 
+Cisco Cloud Control defines specialized agents for particular operational scopes. 
+Integrated products expose tools and endpoints through their Model Context Protocol 
+servers, which the agents use to retrieve information and perform permitted operations. 
+Are Cisco's Model Context Protocol servers open source? Can customers extend 
+them? 
+Currently, Cisco's official Model Context Protocol servers are not open source. However, 
+there is strong interest from the field for reference servers that customers and partners can 
+extend and customize. The Cisco DevNet team tracks both community and official servers 
+at: developer.cisco.com/codeexchange/ai. Future plans around open extensibility are 
+under evaluation. 
+Will the Deep Network Model (DNM) be available on GitHub? 
+No. The focus is on integrating DNM into AI Canvas to power troubleshooting and reasoning 
+rather than providing direct model access. 
+Technical product questions
+
+--- PAGE 23 ---
+What is the uptime guarantee as a percent of total available service time? 
+99.9% 
+What is the Recovery Time Objective (RTO) in hours? 
+36 hours 
+What is the Recovery Point Objective (RPO) in hours? 
+24 hours 
+Can your service meet its SLA if the primary hosting region is completely down? 
+Yes, if multiple regions are available within the customer's country. This currently includes 
+the US, EU, Australia, Japan, and India. 
+Which browsers support Cisco Cloud Control? 
+Cisco Cloud Control supports Google Chrome, Microsoft Edge, Mozilla Firefox, and Apple 
+Safari. If cross-launching Intersight, Meraki, or ThousandEyes from Firefox causes issues, 
+use a private window. 
+Can users add serial numbers and other fields to the Cloud Control Inventory table? 
+Yes. Open the Inventory column selector using the gear icon and select fields such as 
+serial number to add them to the table. 
+Cisco integrated product-specific questions 
+Meraki 
+How many Meraki organizations can be linked to a single Cisco Cloud Control tenant? 
+Cisco Cloud Control supports a 1:many tenant linking model that will allow multiple Meraki 
+organizations to be associated with a single Cloud Control tenant.  
+If a customer uses Infrastructure-as-Code (e.g., Meraki-as-Code), how does AI Canvas 
+interact with that? 
+AI Canvas focuses on operational and telemetry aspects of how to identify problems and 
+identify root causes. It does not make configuration changes that would bypass an as-Code 
+workflow. If a customer uses Infrastructure-as-Code, the single source of truth for 
+configuration remains the code repository. Whether AI Canvas could in the future interact 
+with an as-Code system (rather than direct changes) is an area of active discussion but not 
+a current capability.
+
+--- PAGE 24 ---
+How does Meraki Dashboard integration work with Cisco Cloud Control? 
+Cisco Cloud Control sits above Meraki Dashboard as the unified operational front door, 
+bringing Dashboard's capabilities into a broader, cross-domain experience. Meraki 
+Dashboard serves as the cloud gateway for managing Meraki devices. This integration 
+enables visibility across multiple Meraki organizations while providing the same 
+capabilities and control as in the individual Meraki Dashboard experience including unified 
+AI Assistant and Ai Canvas. 
+Customers who access Cisco products through Cisco Cloud Control gain seamless 
+navigation to Meraki's functionality. For non-Meraki customers, Cisco Cloud Control 
+provides equivalent experiences through alternative cloud gateways such as Intersight for 
+data center products. 
+How does Cisco Cloud Control differ from Meraki - Catalyst Center Global Overview? 
+Cisco Cloud Control sits above the Meraki–Catalyst Center Global Overview as the unified 
+operational front door and main point of entry. It brings the Global Overview into a broader, 
+cross-domain experience with a consistent way to access and operate Cisco products 
+from one place. Customers get capability parity through Cloud Control, which means they 
+can access the same Meraki and Catalyst Center Global Overview capabilities through the 
+Cloud Control experience. The vision is that Cloud Control becomes the single place to 
+manage Cisco products. 
+Catalyst Center 
+What does the current Catalyst Center integration provide? 
+The current integration provides inventory, topology, and P1/P2 issue information. AI 
+Canvas, AI Assistant, and direct navigation to Catalyst Center are not currently included in 
+the integration. 
+Will third-party devices managed by Catalyst Center appear in Cisco Cloud Control? 
+Yes. If a third-party device is represented in Catalyst Center inventory, it can be included in 
+the inventory synchronized with Cloud Control. Cloud Control topology can also 
+accommodate devices received through this integration. 
+Does Cisco Cloud Control provide vulnerability information for third-party devices 
+discovered through Catalyst Center? 
+Not through the Catalyst Center integration. Catalyst Center does not provide third-party 
+vulnerability-scan information to Cloud Control. A separate supported vulnerability-
+management integration is required for that information.
+
+--- PAGE 25 ---
+How will Catalyst Center be integrated into AI Canvas and Cisco Cloud Control? 
+Catalyst Center integration will initially occur through Meraki Dashboard's Global Overview 
+and Cloud Connect. A simplified integration path with additional feature sets is planned. 
+CCGM is an on-premises Manager of Managers solution and is connected to Cisco Cloud 
+Control today. Customers would need to use the Global Overview capability in Meraki 
+Dashboard to connect Catalyst Centers as mentioned above. 
+How do on-prem controllers (Catalyst Center, Nexus Dashboard) connect? 
+Via cloud tethers. Nexus Dashboard connects through Intersight, and Catalyst Center 
+connects through Meraki (Global Overview). 
+Can on-prem Catalyst switches and routers (without Catalyst Center or Meraki 
+Dashboard) use AI Canvas? 
+Not at initial release. AI Canvas currently requires a cloud-managed platform (Meraki 
+Dashboard, ThousandEyes, or Splunk Cloud) as the launch point. Catalyst switches 
+managed in Meraki mode (via Meraki Cloud Connect) are included in AI Canvas responses, 
+but on-prem-only Catalyst Center deployments do not have a direct path to AI Canvas at 
+this time. 
+Catalyst SD-WAN 
+Does Cisco Cloud Control support Catalyst SD-WAN Manager Cloud Pro? 
+No. Cisco Cloud Control currently supports Catalyst SD-WAN Manager Cloud, not Catalyst 
+SD-WAN Manager Cloud Pro. 
+ThousandEyes 
+What Cisco ThousandEyes capabilities are available in Cisco Cloud Control at launch? 
+At launch, eligible ThousandEyes customers can access ThousandEyes directly through 
+the Cisco Cloud Control experience, view supported Enterprise Agents in Cloud Control 
+Inventory, and surface supported Cloud and Enterprise Agent alerts in Notification Feed. 
+Major and critical alerts will also appear in Actions. ThousandEyes intelligence is also 
+available in AI Assistant and AI Canvas workflows, helping teams bring network and 
+application performance context into broader Cisco operational investigations. Customers 
+retain access to the full ThousandEyes experience for deeper analysis and workflows. 
+How does the ThousandEyes integration with Cisco Cloud Control help NetOps 
+teams?
+
+--- PAGE 26 ---
+The integration brings ThousandEyes assurance intelligence into context alongside data 
+from other supported Cisco products. NetOps teams can more easily identify issues that 
+may require attention, understand where ThousandEyes assurance is deployed, and use AI 
+Assistant and AI Canvas to investigate performance across enterprise networks and 
+external dependencies. This reduces the need to manually move between tools and 
+reconstruct context during an investigation. It also provides a more context-rich analysis so 
+NetOps teams can see the full end-to-end picture in a single view. 
+Who can use the ThousandEyes’ integration with Cisco Cloud Control? 
+The initial integration is available to eligible ThousandEyes organizations hosted in the US1 
+or US2 regions that use Cisco Unified Identity (CUI). An administrator must connect the 
+ThousandEyes organization to the appropriate Cisco Cloud Control tenant group and have 
+the required permissions in both products. Managed service provider organizations are not 
+supported at initial availability. Once connected, access to ThousandEyes information 
+continues to respect the user’s existing organization, account-group, and role-based 
+permissions. 
+Webex Control Hub 
+Which collaboration devices are included through the Webex Control Hub integration? 
+The integration includes devices displayed in the Webex Control Hub Devices tab, 
+including Webex Edge-connected devices. On-premises CUCM-registered devices that do 
+not appear in Control Hub are not included. 
+Cisco IQ 
+Does Cisco Cloud Control get its inventory and advisory information from Cisco IQ? 
+Not necessarily. Cisco Cloud Control primarily receives operational data from its 
+connected Cisco product controllers and other supported sources. 
+For example, inventory, last-date-of-support information, PSIRT or security advisory 
+information, firmware versions, and affected-device details may come from controller-side 
+inventory and advisory data, Cisco advisory or CVE sources, or other sources connected to 
+Cloud Control. The presence of this information in Cloud Control does not by itself indicate 
+that it came from Cisco IQ. 
+Cisco IQ has a different data path and value model. It can receive data through sources 
+such as CX Collector and adds lifecycle, entitlement, assessment, support-posture, 
+advisory-prioritization, and services context. 
+What is synchronized between Cisco IQ and Cisco Cloud Control today?
+
+--- PAGE 27 ---
+The synchronization currently being discussed is focused on inventory and asset 
+alignment. It should not be described as a complete bidirectional synchronization of 
+metadata, advisories, assessments, recommendations, or operational insights. 
+The longer-term relationship between IQ-derived context and Cloud Control insights still 
+needs to be defined more explicitly. For example, future integration could determine 
+whether IQ-derived advisory metadata appears in Cloud Control or whether Cloud Control-
+generated operational insights appear in Cisco IQ. Sellers should not position those flows 
+as available unless they have been specifically confirmed. 
+What is the difference between Cisco Cloud Control inventory and Cisco IQ inventory? 
+Cisco Cloud Control provides an operational view of assets known through its connected 
+controllers and supported data sources. It helps operators understand the current 
+environment, including inventory, status, relationships, topology, and other operational 
+context exposed by those sources. 
+Cisco IQ provides a lifecycle- and services-oriented asset view. It can add context such as: 
+• Assets discovered through CX Collector 
+• Support and contract entitlement 
+• Lifecycle and end-of-support information 
+• Cisco IQ assessments 
+• Support posture 
+• Advisory prioritization 
+• CX advisory context 
+• Cross-asset recommendations generated through the Cisco IQ data model 
+The two platforms may contain overlapping assets and information, but they organize and 
+enrich that information for different operational jobs. 
+If Cisco IQ and Cisco Cloud Control connect to the same controllers, can they show 
+similar information? 
+Yes. If Cisco IQ and Cisco Cloud Control are independently connected to the same 
+controllers or underlying data sources, they may derive similar or overlapping inventory, 
+lifecycle, or advisory information.
+
+--- PAGE 28 ---
+That does not mean Cisco IQ is consuming Cloud Control insights or that Cloud Control is 
+consuming Cisco IQ insights. Directly using one platform’s insights within the other 
+requires an explicit integration or linking model. 
+Without that integration, each platform works from the sources and context it can access 
+independently. 
+What can Cisco Cloud Control show if it is not integrated with Cisco IQ? 
+Cisco Cloud Control can still show information available natively from connected 
+controllers, CX Collector where supported, and other connected sources. Depending on 
+the source and integration, this may include: 
+• Inventory and affected devices 
+• Last-date-of-support information 
+• Firmware versions 
+• PSIRT or other security advisory information 
+• Controller health, status, and topology 
+• Operational alerts and telemetry 
+The exact information available depends on what each connected source exposes. Sellers 
+should avoid implying that every controller provides the same fields or depth of context. 
+What additional value does Cisco IQ integration provide? 
+Cisco IQ integration becomes additive when it contributes context that Cloud Control 
+would not otherwise have. Examples may include: 
+• CX Collector-discovered assets not already known to Cloud Control 
+• Support and contract entitlement context 
+• Cisco IQ assessments 
+• Lifecycle risk prioritization 
+• CX advisory context 
+• Services engagement context 
+• Cross-asset recommendations generated from the Cisco IQ data model
+
+--- PAGE 29 ---
+This is the stronger differentiation: Cisco IQ enriches the operational view with lifecycle, 
+support, services, and prioritization context rather than simply duplicating controller data. 
+How do Cisco IQ and Cisco Cloud Control complement each other? 
+Cisco IQ and Cisco Cloud Control are complementary, AI-native experiences with different 
+primary jobs. 
+Cisco Cloud Control is the unified operations platform. It helps teams understand and 
+operate the live environment using data and capabilities exposed by connected controllers 
+and supported sources. 
+Cisco IQ is the digital experience for Cisco Support and Professional Services. It helps 
+customers understand lifecycle position, support posture, assessments, entitlements, 
+services engagements, and prioritized risk across their technology estate. 
+Together, the intended value is to connect lifecycle intelligence with operational execution. 
+However, sellers should distinguish the intended complementary experience from 
+integrations that are confirmed and available today. 
+Nexus Dashboard 
+When we talk about Nexus Dashboard connecting to Cisco Cloud Control, is that for 
+both LAN and SAN? 
+Currently, it is LAN. The SAN integration is on medium term roadmap. 
+Can standalone NX-OS switches be onboarded directly without Nexus Dashboard? 
+No. Cisco Cloud Control onboards supported controllers rather than unmanaged devices 
+directly. Standalone NX-OS environments require a supported controller or aggregation 
+path, such as Nexus Dashboard. 
+Can Cisco Cloud Control connect directly to APIC for ACI visibility? 
+No. ACI is brought into Cisco Cloud Control through Nexus Dashboard, with Nexus 
+Dashboard connected through Intersight. Direct APIC onboarding is not supported. 
+Security Cloud Control 
+How does Cisco Cloud Control differ from and overlap with Security Cloud Control? 
+Will they merge? 
+Cisco Cloud Control is the natural evolution and expansion of Security Cloud Control's 
+success. While Security Cloud Control focused specifically on security products, Cisco 
+Cloud Control extends unified management capabilities across your entire Cisco
+
+--- PAGE 30 ---
+portfolio—networking, security, observability, and collaboration—in a single environment 
+with one login, one inventory, and one topology. 
+Security Cloud Control operates as a partner controller within this architecture and will not 
+merge with Cisco Cloud Control at this time. This means Security Cloud Control remains 
+fully functional for specialized security work, and operators can seamlessly navigate 
+between Cisco Cloud Control (the unified front door) and Security Cloud Control for deeper 
+security-specific operations. Security is fully represented and accessible within the Cloud 
+Control dashboard, so you get both the unified cross-domain view and the ability to access 
+specialized security capabilities when needed. 
+Why was Cisco Cloud Control created instead of just expanding Security Cloud 
+Control (SCC)? 
+Cisco Cloud Control was created because the customer problem is broader than security. 
+Security Cloud Control is the security operating plane. It is built for security personas and 
+security workflows: firewall and policy management, security device onboarding, zero-trust 
+segmentation, application protection, tenant/customer security operations, and security-
+specific automation. 
+Cloud Control addresses the cross-portfolio operations problem. Customers need a 
+unified way to manage identity, tenant context, inventory, topology, workflows, AI, and 
+operational insights across Networking, Security, Observability, Compute, Collaboration, 
+and other Cisco domains. 
+So the answer was not to expand SCC into everything. That would risk turning a security-
+focused platform into a generic portfolio layer. Instead, CCC provides the broader One 
+Cisco operating model, while SCC retains the depth needed for security use cases." 
+Splunk 
+Where can I view the complete, detailed Splunk and Cisco Cloud Control FAQ? 
+You can access it here: Splunk and Cisco Cloud Control FAQ. 
+When will the Splunk integration be available for Cisco Cloud Control? 
+Today, Splunk Cloud 10.5 is available in Cloud Control and AI Canvas (CA). 
+Coming September 14th: 
+• Splunk Cloud 10.6 in Cloud Control and AI Canvas GA 
+• Splunk ITSI and Splunk Observability in Cloud Control and AI Canvas GA
+
+--- PAGE 31 ---
+• Splunk Enterprise Security in Cloud Control and AI Canvas Beta 
+Does Cloud Control with AI Canvas replace Splunk? 
+No. Cisco Cloud Control with AI Canvas and Splunk perform different, complementary 
+roles. 
+Splunk provides the data foundation for collecting, retaining, searching, and correlating 
+telemetry across Cisco and third-party environments. It helps teams understand what 
+happened over time, identify patterns, and connect events across applications, 
+infrastructure, security, and business services. 
+Cisco Cloud Control provides a unified operational experience across supported Cisco 
+products. It brings together live controller context such as inventory, topology, health, 
+policy, and configuration state. 
+AI Canvas operates within Cisco Cloud Control. It brings relevant controller context and, 
+where integrated, Splunk data into a collaborative workspace where operators and AI 
+agents can investigate issues, determine next steps, and carry out supported actions with 
+appropriate controls. 
+In simple terms: 
+• Splunk provides broad, historical, and cross-environment data context. 
+• Cisco Cloud Control provides a unified view of the current Cisco operational 
+environment. 
+• AI Canvas helps teams investigate, decide, and act using the available context. 
+Customers can use Cisco Cloud Control without Splunk for supported built-in use cases. 
+Splunk becomes especially valuable when the customer needs deeper historical analysis, 
+high-volume data retention, service-level correlation, or broader multivendor context. 
+Does Cloud Control leverage the Cisco Data Fabric (powered by Splunk)? 
+Cisco Data Fabric can complement Cisco Cloud Control in two ways. 
+First, Splunk and Cisco Data Fabric can provide data, analytics, correlation, and historical 
+context for supported Cloud Control and AI Canvas workflows. 
+Second, Cisco Cloud Control can provide a unified operational experience through which 
+users access relevant Splunk context alongside live information from connected Cisco 
+controllers. 
+The result is a complementary architecture:
+
+--- PAGE 32 ---
+• Cisco Data Fabric helps unify, manage, and analyze operational data at scale. 
+• Cisco Cloud Control provides the operational context and experience across 
+supported Cisco products. 
+• AI Canvas uses the available context to support investigation, collaboration, and 
+governed action. 
+The exact Cisco Data Fabric capabilities used by Cisco Cloud Control will depend on the 
+workflow, integration, entitlement, and product release. 
+Are FedRAMP customers eligible for Cisco Cloud Control Controlled? 
+No, FedRAMP customers are not eligible for the Cisco Cloud Control at this time. We are 
+working towards to required certifications.  
+How can I get access to Cisco Cloud Control as a Splunk customer? 
+All users in the Splunk – Cisco Cloud Control (US AWS Commercial) Cohort are enrolled in 
+Cisco Identity when the stack is updated to Splunk 10.5. On first login, users are prompted 
+to verify their email address. Email verification is required for Cisco Cloud Control access, 
+but users can continue using Splunk normally if they skip it.  
+A Splunk administrator must request a demo through cloud.cisco.com or contact their 
+account team. Once the demo request is approved, the onboarding team will schedule a 
+call and enable access. The administrator must then complete the Cisco Cloud Control 
+onboarding process and accept the Cisco General Terms on behalf of the organization.   
+ End users do not complete onboarding and cannot accept terms on behalf of the 
+organization. Until an admin completes onboarding and accepts the Cisco General Terms, 
+non-admin users will not see the Cisco Cloud Control logo and will not be able to navigate 
+to Cloud Control. After onboarding is complete, Cisco Cloud Control is available to users 
+who have verified their email. For more questions about onboarding, check the full FAQ 
+linked above.  
+Why are users being prompted to verify their email address? 
+Email verification is a mandatory security prerequisite for cross-product authorization. 
+Because Cisco Cloud Control and Splunk share data and resources, Cisco Identity requires 
+a verified, stable identifier (email) to ensure that your permissions and Role-Based Access 
+Controls (RBAC) are correctly applied across the entire Cisco ecosystem. For more 
+information, check out this blog.   
+Talk tracks for Splunk Field
+
+--- PAGE 33 ---
+“Why do I have to sign up for another Cisco platform just to use an AI feature?” 
+Cisco Cloud Control is not just another portal. It is, and will be, the place to operate and 
+manage your Cisco portfolio. It includes single sign-on, so you sign in once to manage all of 
+your Cisco products from one place. AI Canvas is the big opportunity here: it lets your 
+teams and AI agents work together across every domain, and it brings AI to all of your Cisco 
+investments, not just Splunk. Sign-up is a one-time process for your organization. 
+“We only have Splunk. Why do we need Cloud Control?” 
+All US commercial customers are now eligible for Cloud Control, even if you only have 
+Splunk. You will get AI Canvas to query your Splunk data in natural language. And as Cisco 
+expands Cloud Control, you will be positioned to benefit from future cross-product 
+capabilities with no additional setup. Your Splunk tenant works standalone, so you do not 
+have to link it to other products to get value today. 
+“The approval process is too slow. We want access now. ” 
+The controlled rollout ensures a quality experience for every customer. Single-product 
+Splunk customers are being considered for fast-tracking. If this is a strategic or time-
+sensitive situation, we can escalate through the account team to request prioritized 
+approval. Reach out to the Splunk and Cisco Cloud Control Product teams with any 
+requests. 
+“Will this change how my Splunk works? Is Splunk changing?” 
+No. Splunk continues to work exactly as it does today. In fact, Cloud Control enhances the 
+value of your Splunk investment and the rest of your Cisco investments. The only visible 
+change is a new navigation icon for Cloud Control and AI Canvas after your admin 
+completes onboarding. All your existing workflows, dashboards, alerts, and permissions 
+are unchanged. 
+“What if we don’t want Cloud Control?” 
+Cloud Control is how Cisco is delivering AI Canvas and future cross-product experiences. If 
+a customer does not wish to use Cloud Control, they can continue using Splunk as-is; the 
+core Splunk product is unaffected. 
+Identity in Cisco Cloud Control 
+What is Cisco Identity? 
+Cisco Identity brings all customer-facing identity capabilities together in the “Identity” tab 
+within Cisco Cloud Control. Cisco Identity gives teams a unified experience and visibility
+
+--- PAGE 34 ---
+into their human identities, agents, endpoints, and service accounts. Teams can monitor 
+identity activity, identify suspicious behavior, investigate anomalies, and take action – all 
+from one experience. 
+What is included in Cisco Identity today? 
+Cisco Identity provides unified visibility across all human and non-human identities 
+(employees, contractors, devices, AI agents, service accounts). Capabilities include: 
+• Real-time anomaly detection for suspicious behavior 
+• Identity risk analytics and reporting for compliance and audits 
+• Correlation of identity data across connected systems to show who has access to 
+what 
+• Historical access timelines and activity tracking 
+• Monitoring and detection of suspicious identity behavior 
+Cisco Identity is natively integrated into Cisco Cloud Control. It connects with Cloud 
+Control platform services, such as unified inventory, and agentic capabilities like AI 
+Canvas. This provides identity visibility in the context of a customer's entire security 
+posture rather than a separate, siloed identity tool. 
+How do ISE customers benefit from Cisco Identity today? 
+For ISE customers, Cisco Identity unlocks cloud-based monitoring and analytics that 
+weren't available with on-prem-only ISE deployments. Customers do not need to buy 
+additional hardware or host the service in their own cloud. Customers have a centralized 
+view of all ISE deployments with cross-deployment visibility. It also provides customers 
+with the latest features without needing to manually upgrade. 
+What is included with Cisco Identity, and what requires an additional license? 
+Identity in Cisco Cloud Control for Cisco products is included at no additional cost. To add 
+non-Cisco integrations, customers need Duo Advantage or ISE Advantage. 
+Included with Cisco Cloud Control, for all customers: 
+• Integrations with supported Cisco products, including ISE, Duo, Splunk, Secure 
+Access and Webex 
+• Identity visibility across Cisco security portfolio: 
+o Cloud Control Inventory integration
+
+--- PAGE 35 ---
+o AI Canvas integration 
+o Notifications via Webex and Splunk 
+o Basic analytics and monitoring 
+Requires Duo Advantage or ISE Advantage: 
+• Non-Cisco integrations (Okta, Active Directory, GitHub, etc.) 
+• Advanced analytics and anomaly detection across all integrated systems 
+What is the difference between Cisco Unified Identity and Cisco Identity? 
+Cisco Unified Identity (CUI) is a feature for admins who manage Cisco products. It provides 
+federated login and tenancy management in Admin Console for Cloud Control. CUI is an 
+internal term, not a customer-facing product term. 
+Cisco Identity is the customer-facing capability you sell. It is the solution customers buy 
+and use to monitor all identities (human and non-human) across their organization. 
+Do all integrated products follow the same Cisco Unified Identity onboarding process? 
+No. Cisco Unified Identity readiness and onboarding steps vary by product and region. 
+Customers should follow the current product-specific prerequisites rather than assume 
+one migration process applies across the portfolio. 
+Security, governance, and AI trust 
+How does Cisco Cloud Control with AI Canvas ensure privacy and protect customer 
+data? 
+AI Canvas is designed so telemetry stays where it lives. The platform queries live data 
+directly from source systems rather than a copy of or relocation of it, reduction in 
+compliance risk and preservation of data ownership. Access controls and permissions 
+from the source platforms are enforced, and all actions and decisions are captured in 
+audit-ready records with clear provenance. Check the Cisco Cloud Control offer document 
+for more details on data residency. 
+Where can customers find security, privacy, and compliance information for Cisco 
+Cloud Control and AI Canvas? 
+Customers can find current security, privacy, compliance, and data-handling information in 
+the Cisco Trust Portal. Consult the offer disclosures for both Cisco Cloud Control and AI 
+Canvas.
+
+--- PAGE 36 ---
+How does role-based access control (RBAC) work? 
+Cloud Control with AI Canvas honor each user's entitlements and permissions based on 
+what is configured on the underlying integrated platforms (Meraki, Security Cloud Control, 
+ThousandEyes, etc.). A user's ability to view data or execute changes is determined by their 
+existing permissions in the source platforms. If a user lacks access to a data source, they 
+will not be able to view the corresponding data within the workspace. Unless they are a full 
+tenant admin... in which case they can see the data in the workspace but cannot open any 
+of the products they are not part of. 
+How does role-based access control work if an administrator has different permission 
+levels across different Cisco platforms? 
+Role-based access control is respected across the board. For example, if you enter a 
+colleague's shared workspace and they have widgets for a platform you don't have access 
+to (e.g., Nexus Dashboard), you will not be able to view the data for those widgets. Your 
+access level is always governed by the source platform's permissions. 
+Exception for full tenant administrators: If you are a full tenant administrator, you can see 
+all data within the Cloud Control workspace. However, you cannot open or access any 
+individual product dashboards (Meraki, Intersight, etc.) for which you do not have explicit 
+permissions in that product. This ensures that administrative visibility within Cloud Control 
+does not inadvertently grant access to underlying product consoles. 
+For Read-only users: If you have read-only access, you will be able to view data across all 
+products you have permissions for, but you cannot execute configurations. Your access 
+level is always determined by your entitlements in the source platforms—Cloud Control 
+enforces these permissions at all times. 
+How is role-based access control (RBAC) implemented, and does it support multi-
+tenancy for MSPs? 
+For Managed Service Providers (MSPs), Cisco Cloud Control's multi-tenancy capabilities 
+are on the roadmap for FY2027, enabling MSPs to securely manage highly distributed 
+customer environments. MSP-specific features currently in development include improved 
+multi-tenancy controls and role-based visibility isolation. 
+How does AI Canvas ensure its recommendations are safe and accurate? 
+AI Canvas prioritizes safety and accuracy through an "Operator-first" model and its 
+ensemble of specialized AI: Cisco Deep Network Model: When networking expertise is 
+required, guidance is grounded in decades of Cisco engineering expertise, validated 
+designs, and real operational data (not generic public models). Ensemble Intelligence: The
+
+--- PAGE 37 ---
+platform selects the best-fit model for each task and specialized accuracy across different 
+problem types. Explainable Reasoning: Every recommendation shows the telemetry 
+evaluated, the checks performed, and what remains uncertain. Governed Execution: 
+Supported actions require explicit human approval, respect existing role-based access 
+controls, and produce audit-ready records. Where applicable, workflows include validation 
+steps and rollback guidance. 
+How is user feedback incorporated into the model? 
+The models use a multi-step training pipeline incorporating Cisco documentation, expert 
+feedback, support (TAC) data, and continual retraining based on new data and user input. 
+Expert feedback, especially from CCIEs, is central to model improvement. Feedback is 
+reviewed, gaps are identified, and updates are made to the training and evaluation 
+pipelines. 
+How does the Cisco Deep Network Model ensure the privacy and quality of its training 
+data? 
+The model uses a multi-step training pipeline which incorporates Cisco documentation, 
+expert feedback, support (TAC) data, and continual retraining based on new data and user 
+input. Data governance practices are applied throughout the pipeline to ensure quality and 
+protect privacy. 
+How do I reassure a security or IT leader worried about AI making autonomous 
+changes? 
+Tell them the customer stays in control by design. Cloud Control supports two modes they 
+can set per agent and per task: Approval required (human-in-the-loop) is used when the 
+agent proposes and the human approves each action. Use for high-risk or sensitive 
+changes. Monitored autonomy (human-on-the-loop) is used when the agent acts on 
+routine tasks, while the human monitors and can override. Use for well-defined operational 
+work. Every agent action is scoped by the customer's existing RBAC, logged with full 
+provenance, and auditable end-to-end. Cisco AI Defense enforces data policy at every 
+model interaction; Splunk AI Agent Monitoring traces every execution. Customer data is 
+never used to train foundation models. Customers decide what AI is permitted to do, and 
+the platform enforces it with no exceptions. 
+How does Cisco Cloud Control help with CVE and vulnerability management at scale? 
+AI Canvas on Cisco Cloud Control is how defenders fight AI with AI: a program built to 
+match Glasswing's pace, turning manual CVE triage into an automated, governed 
+Vulnerability Management Program.
+
+--- PAGE 38 ---
+Your CVE war room can be converted to a Vulnerability Management Program in a single 
+afternoon. Rather than replacing existing CVE tools or CX platforms, Cloud Control 
+integrates data from your current sources and layers on intelligent correlation and 
+orchestration. The out-of-the-box Vulnerability Management board automates the workflow 
+end-to-end: 
+Auto-ingests every new CVE in real time Enriches findings with KEV (Known Exploited 
+Vulnerabilities), EPSS scores, and exploit-in-the-wild intelligence Correlates each 
+vulnerability to your live assets and real exposure via Cloud Control telemetry Provides AI-
+recommended actions with full rationale for every decision Orchestrates fixes end-to-
+end—in minutes 
+Demonstration and integration: 
+The pre-built Vulnerability Management board is ready out-of-the-box for customer demos, 
+showcasing live CVE ingestion, asset correlation, and AI-recommended remediation 
+workflows. Cisco IQ integration is a planned fast-follow, adding lifecycle context so 
+customers know not just which vulnerabilities to fix, but when and how each asset fits into 
+their broader lifecycle and support roadmap. For a demo tailored to your Catalyst Center 
+environment or to discuss integration with your current processes, contact your regional SE 
+Champion. " 
+Roadmap, deployment, and getting started 
+Is Cisco Cloud Control available globally at launch? 
+No. For the General Availability (GA) in August 2026, it is regionally hosted in the United 
+States only. Customers with US-based infrastructure can participate.  
+Where will a user access AI Canvas? 
+AI Canvas is accessible only through Cisco Cloud Control. Cisco Cloud Control is the main 
+point of entry. It can be cross-launched via Splunk Dashboard. 
+Can customers access Cisco Cloud Control if they are not in the USA? 
+Yes, but this is currently limited by data sovereignty requirements. If the customer does not 
+have data sovereignty requirements, the platform is accessible. Support for additional 
+geographic regions is planned. 
+Where can I learn how to onboard my customer?
+
+--- PAGE 39 ---
+You can learn on the Onboarding SharePoint site here: 
+https://cisco.sharepoint.com/sites/CiscoCloudControl-
+ControlledAvailability/SitePages/Home.aspx 
+When will Cisco Cloud Control be available in specific regions (EU, APJ, LATAM)? 
+Cisco Cloud Control launches in the United States with General Availability on August 25, 
+2026. Expansion to additional regions is driven by market demand and data sovereignty 
+requirements. 
+Will there be on-premises or air-gapped deployments of Cisco Cloud Control? 
+Cisco Cloud Control is delivered as a SaaS solution in the cloud with immediate focus on 
+global, multi-region cloud availability. For customers with on-premises data sources, Cisco 
+Cloud Control uses a gateway/tether approach to bring required visibility into the cloud 
+management plane—for example, on-premises Catalyst Center connects via Meraki 
+Dashboard, on-premises Nexus Dashboard via Intersight, and on-premises SD-WAN via 
+Security Cloud Control. Support for on-premises deployments and eventually air-gapped 
+environments are on the product roadmap. Immediate focus is on expanding multi-region 
+cloud availability and on-premises "on-net" (customer private datacenter) connectivity 
+before tackling fully air-gapped solutions. A strategy for air-gapped deployments is under 
+development, but no committed timeline has been announced. 
+Can AI Canvas run on something like the Cisco AI Pod? 
+The idea of exposing AI Canvas via Cisco AI Pod has been raised and is being tracked, but 
+there is no confirmed plan at this time. The initial focus remains on cloud-based delivery. 
+Who is the target audience for Cisco Cloud Control? 
+Cisco Cloud Control is designed for IT and security operations teams who manage Cisco 
+environments across network operations, network observability, security and 
+collaboration. This especially includes customers who operate at scale and need a unified 
+operational experience. 
+  
+What qualifies as a "high-probability" Cisco Cloud Control opportunity? 
+Strong indicators of a high-probability customer for Cloud control include: Two or more 
+Cisco domains deployed (e.g., Meraki + Security Cloud Control, or Catalyst Center + 
+Intersight) Active complaints about tool fragmentation, alert overload, or slow cross-team 
+investigations Existing interest in AI or automation for IT operations Cloud-managed 
+architecture preference (or migration in progress) An operations leader (VP I&O, CIO, Head
+
+--- PAGE 40 ---
+of NetOps) sponsoring modernization A customer with even one of these signals is worth a 
+Cloud Control conversation. 
+What disqualifies a customer today? 
+Customers whose environments are exclusively on-prem with no cloud-managed footprint 
+have limited launch-day value. Customers with no controller managed devices or strict air-
+gapped requirements and no acceptable SaaS path are not a current fit. Customers with no 
+subscription-eligible Cisco products won't gain entitlement. These aren't permanent 
+disqualifiers, just roadmap gaps. 
+What kind of training will be required for IT teams to use AI Canvas effectively? 
+The design emphasizes an intuitive user experience powered by a natural language AI 
+Assistant, with the goal of reducing the learning curve. Enablement resources will be 
+provided to help teams adapt to the new collaborative, cross-domain workflow. A formal 
+training curriculum will be detailed as the platform matures. 
+Is there a demo environment available for Cisco Cloud Control? 
+Yes. You can demo through dCloud today. It is a live environment. Link: https://dcloud2-
+sjc.cisco.com/content/instantdemo/agenticops-with-cisco-cloud-control 
+  
+  
+Can Cisco Cloud Control open integrated product dashboards in separate browser 
+tabs? Can a user have multiple dashboards open at once without closing tabs? 
+No. That is not currently possible. The only way is to currently duplicate the tab and then 
+open a different dashboard in each. 
+Where can I ask more questions? 
+Post all questions about Cisco Cloud Control including AI Canvas in the Ask Cisco Cloud 
+Control space: https://eurl.io/#Q9x8Xqd2f 
+How can I arrange a customer discovery session with the product team? 
+Reach out to your regional Champion to coordinate a customer conversation. You can find 
+your champion at the SE Champions SharePoint site: 
+https://cisco.sharepoint.com/sites/CiscoAICanvasChampions 
+Is there a central resource for information?
+
+--- PAGE 41 ---
+You can view the official SalesConnect: 
+https://salesresources.cisco.com/Link/Content/DCPRq9gcFP6PF8QTWQFJm3MF47PB

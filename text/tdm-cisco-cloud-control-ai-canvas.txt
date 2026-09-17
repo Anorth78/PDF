@@ -1,0 +1,1933 @@
+--- PAGE 1 ---
+Any information provided in this document regarding future functionalities is for informational 
+purposes only and is subject to change including ceasing any further development of such 
+functionality. 
+Many of these future functionalities remain in varying stages of development and will be offered on 
+a when
+ -
+ and
+ -
+ if available basis, and Cisco makes no commitment as to the final delivery of any of 
+such future functionalities. 
+Cisco will have no liability for Cisco's failure to deliver any or all future functionalities and any such 
+failure would not in any way imply the right to return any previously purchased Cisco products.
+This is not a commitment to deliver any material, code or functionality and should not be relied 
+upon in making purchasing decisions.
+Cisco Systems confidential information
+TDM August 2026
+
+--- PAGE 2 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Cloud Control with AI Canvas
+The unified operations platform for AgenticOps
+
+--- PAGE 3 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Best in class. 
+Four decades running.
+Networking
+Collaboration
+Compute
+Security
+Observability
+Services
+
+--- PAGE 4 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+When the enterprise 
+operates as one, 
+everything changes
+See everything in one place
+Your entire IT estate in a single view
+Understand what’s really happening
+Connected signals reveal cause, not just symptoms
+Act faster across domains
+Investigation and action, in one place
+
+--- PAGE 5 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+The power of one
+Cisco Cloud Control
+One login
+Sign in once. See everything.
+One inventory and topology
+Every asset. See how it all connects, in real time.
+One view for alerts
+Actions correlates alerts across every product.
+One assistant
+Quick answers and tasks with AI Assistant.
+One agentic workspace
+Investigate, execute and resolve with AI Canvas.
+
+--- PAGE 6 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Cloud Control
+Meraki
+ Catalyst Center
+Security
+ Identity
+SD
+ -
+WAN
+ Nexus Dashboard
+Intersight
+ Nexus Hyperfabric
+Splunk
+ ThousandEyes
+IQ
+ Collaboration 
+Control Hub
+Cisco Products
+Assistant
+Individual assistant
+Canvas
+Multiplayer workspace
+AgenticOps
+•
+ Identity
+•
+ Actions
+•
+ Inventory
+•
+ Topology
+•
+ Licensing
+•
+ Workflows
+Platform services
+Customize & extend
+Studio
+Build custom apps & 
+agents
+Marketplace
+Discover new capabilities
+The platform
+The foundation everything is built on.
+
+--- PAGE 7 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Same incident, different operating model
+Users report poor call quality
+Login, collaboration 
+experience  management
+Login, check observability tool
+Login, check networking tool
+Manually correlate timestamps
+Escalate, war room, coordination
+Resolved, 
+ hours later
+Before
+Multiple consoles, scattered context
+Related alerts are surfaced as one 
+correlated incident in Cloud Control
+From the alert, AI Canvas launches 
+an investigation across domains
+Operator resolves 
+ in minutes
+AI Canvas suggests a fix. Operator 
+approved. Agents executes and 
+confirms.
+With Cloud Control
+One platform, shared operational context
+A day in the NOC
+
+--- PAGE 8 ---
+Meraki 
+  
+Catalyst Center 
+  
+SD
+ -
+ WAN 
+  
+Nexus Dashboard 
+  
+Nexus Hyperfabric 
+  
+Intersight 
+  
+Security 
+  
+Identity 
+  
+Collaboration Control Hub 
+  
+Splunk 
+  
+IQ 
+  
+ThousandEyes
+Cisco Cloud Control
+One platform. Every domain. The foundation IT runs on.
+
+--- PAGE 9 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Log in once across every Cisco product
+One login
+Sign
+ -
+ in once
+One authentication across connected 
+Cisco products.
+Session continuity
+Move between products without re
+ -
+authenticating.
+Continuous flexibility
+Add or remove products under one 
+tenancy anytime.
+
+--- PAGE 10 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+One tenant, many product instances
+1:Many product (tenant) linking
+Connect multiple product instances
+Link multiple instances per product and manage 
+connections as the environment changes.
+Define scope with Tenant Groups
+Group instances by region, team, or workload to 
+match operational responsibilities.
+Aggregate across the active scope
+Cross
+ -
+ product views include linked instances, 
+while actions target the correct instance.
+Switch and launch in context
+Change scope without signing out and open the 
+appropriate product instance.
+
+--- PAGE 11 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Role based access control
+Three roles
+Full Tenant Admin, Read Only, Integration
+Inherited permissions
+Members keep their product
+ -
+ native 
+access automatically.
+No escalation
+Never exceeds source
+ -
+ product access.
+Auto
+ -
+ admin
+Admin on any integrated product would 
+automatically get tenant full admin role.
+Audit logs
+Role and action events exportable to SIEM.
+Full tenant admin
+Full CRUD across the platform
+Read only admin
+Tenant
+ -
+ wide view access
+Integration admin
+Manage integrations
+
+--- PAGE 12 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Every asset, normalized and searchable
+Unified inventory
+All products
+Devices across all domain controllers
+Auto
+ -
+ refresh
+Every 24 hours and on change events.
+Filter by risk
+Use AI
+ -
+ powered search to find devices 
+impacted by PSIRT, 
+ EoS
+ , version drift, 
+compliance.
+Summary cards
+Total assets, critical PSIRTs, 
+ EoS
+ , stale.
+Role
+ -
+ scoped export
+CSV or PDF based on user permissions.
+
+--- PAGE 13 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified inventory
+Product
+ Connector
+ Asset family
+ Data supplied by product
+Secure Access ​
+Security 
+Cloud Control
+Network tunnel groups, Resource connector groups, 
+Resource connectors, Private resource groups, Private 
+resources ​
+Supported identity, region, status, routing mode, software version, 
+addresses, protocol/port context, group association and associated hubs 
+where available. ​
+SD
+ -
+ WAN ​
+ Secure routers, Catalyst routers, Aggregation routers, 
+Integrated services routers ​
+Health, reachability, software, IOS XE, location, anomaly, advisory, and 
+source
+ -
+ navigation data when supplied. ​
+Firewall / CDO ​
+ Firewall inventory exposed through SCC/CDO ​
+ stable identity, correct family, software, health, reachability, lifecycle, and 
+source
+ -
+ navigation data.
+Meraki ​
+--
+ Switching, Security and Branch appliances, Wireless, 
+Cellular, IoT ​
+Location, lifecycle, advisory, compliance, and reachability ​
+Cat C: Catalyst site hierarchy, site IDs, assignments, device identity, health, 
+software, lifecycle, and source navigation. ​
+Catalyst Center ​
+Meraki Global 
+Overview
+Nexus
+Dashboard ​
+Intersight 
+Device 
+Connector
+ACI, NX
+ -
+ OS, IOS XE, IOS XR, and generic Nexus 
+families ​
+S/controller identity, model, serial, status, fabric, and advisory context
+ ​.
+Hyperfabric ​
+--
+ Fabric, tier, node, interface, logical
+ -
+ link, and 
+discovered
+ -
+ neighbor references
+ ​.
+Stable identity, unambiguous classification, fabric membership, and 
+supported metadata
+ ​.
+Intersight ​
+--
+ Compute servers, Chassis and Unified Edge, Fabric 
+Interconnect and eCMC, I/O and fabric modules, 
+Fabric Extender, PCIe node
+ ​.
+Device registration, reachability, compliance, advisory, and health data
+ ​.
+ThousandEyes ​
+--
+ ThousandEyes Enterprise Agent, ThousandEyes 
+Enterprise Cluster Agent.
+Polls APIs and publishes supported Enterprise Agent and Enterprise Cluster 
+Agent assets. ​
+State, hostname, location, network/IP, coordinates, account groups, cluster 
+members, last seen, reachability, source errors, and derived status where 
+available. ​
+
+--- PAGE 14 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+AI
+-
+ powered inventory insights
+See which assets needs attention
+Search like you think 
+Plain
+ -
+ language NLP search built in, no 
+query syntax required.
+Know what's wrong, instantly 
+Compliance signals (
+ EoX
+ , PSIRTs, Field 
+Notices), config changes, asset class, 
+ownership, and operational metadata, all 
+per asset.
+Trustworthy by design 
+Rules
+ -
+ based and grouped into Security & 
+Compliance, Operations & Health, and 
+Inventory & Administration.
+*Standard, out-of-the-box compliance policies only
+
+--- PAGE 15 ---
+AI
+-
+ powered inventory insights
+How insights are generated
+1 2 3
+A new validated insight is itself an LLM trigger 
+ — 
+it does not wait for a later severity or metric change.
+1
+ 2
+Collection starts
+3
+Inventory & 
+Topology Rendered
+SOURCE DEPENDENT
+4
+Rules Engine
+First insight is created
+5
+AFTER STEP 4
+Tenant linked
+ LLM Enrichment
+Asset Scope & Context
+Inventory, topology, health, 
+compliance, PSIRT and source 
+metadata
+Detect Signal & Run Rules 
+Signals are aggregated; a 
+documented rule threshold 
+must be satisfied
+LLM enrichment
+Summary, contextual 
+description, findings, 
+recommendation and priority 
+order
+
+--- PAGE 16 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Nexus 
+Hyperfabric
+BGP Peers; Config Phase; Config Sync Status; Ipv 4 Routes; Ipv 6 Routes
+Nexus 
+Dashboard
+Hardware Conformance; Software Conformance
+Intersight
+ Cooling Mode; CPU Capacity; Distinguished Name; Enabled CPU Cores; Address 1; Address 2; Location City; Location Country; 
+Location Name; Location Postal Code; State/Province; Operational Power State; Total Adapters; Total CPU Cores; Total CPUs; To
+ tal 
+Ethernet Host Interfaces; Total Fibre Channel Host Interfaces; Total Memory; Total Threads; Vendor
+Security Cloud 
+Control
+Chassis Serial; Config State; Conflict Detection State; Connectivity State; Connector Type; Connector Uid; Container UUID; Do
+ mai
+ n 
+UUID; Redundancy Mode
+Secure Access
+ Connected Connectors Count; Connectors Count; Disconnected Connectors Count; Environment; Location; Need Update 
+Connectors Count; Provisioning Key Expires At; Resource IDs; Status; Status Updated At; Unable To Sync Connectors Count
+Meraki 
+Dashboard
+Advisory Level; Anomaly Level; Latitude; Longitude; MAC Address; Status
+SD
+ -
+WAN
+ Latitude; Longitude; Org Name; Last Scan Date Time; Scan Interval; Scan Status
+Collaboration 
+Control Hub
+Active Interface; Calling Device ID; Connection Status; Created; Device Platform; Error Codes; First Seen; Last Seen; Lifecyc
+ le; 
+MAC; 
+Managed By; Place ID; Planned Maintenance; Primary Sip Url; Sip Urls; Tags; Type; Upgrade Channel; Webex Asset Category; Webe
+ x 
+Classification Source; Webex Device ID
+AI
+-
+ powered inventory insights
+Available data
+Standard asset 
+details
+Asset Type; Asset Class; Serial; Model; Created At; Updated At; Last Collected At; Name; Source; Product Tenant; Realm; Site;  
+Re
+ alm 
+Type; Site Type; Asset Role; Asset Owner; Asset Hostname; Asset IP Address; Asset Environment; Asset Operating System; Asset 
+Software Version
+
+--- PAGE 17 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Unified topology
+See every site, branch and device in one view
+*Overlay (BGP-EVPN, SDA, ACI) coming soon.
+T
+opology  
+types
+Physical (L1), Logical (L2/L3), and Overlay*, with 
+wireless and tunnels included.
+Three zoom levels
+Global overview, correlated mid
+ -
+ level, and controller 
+deep
+ -
+ dive.
+Real
+ -
+ time updates
+Push APIs and Pub
+ -
+ Sub deliver state changes in 
+seconds, no polling.
+Your hierarchy, inherited
+Tenant 
+ → Region → Site → Device Group, with 
+attributes flowing down the tree.
+
+--- PAGE 18 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Your alerts, now correlated and actionable
+Actions
+Group related alerts
+Signals from connected products become 
+one issue with shared evidence.
+Prioritize the queue
+Severity, status, and ownership show 
+teams where to start.
+Start troubleshooting on open
+Opening an action passes its context to 
+the Assistant and relevant agents.
+Manage the issue lifecycle
+Assign, troubleshoot, dismiss, or resolve 
+from one queue.
+
+--- PAGE 19 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Alerts and notifications
+Correlated alerts, ownership and action tracking
+Correlated by what matters
+IP, site, MAC, time, device serial, 
+and CVE/PSIRT ID.
+Lifecycle states
+The same across every controller 
+ — 
+New, 
+Read, Active, Snoozed, Dismissed, Resolved
+Investigate instantly
+Click on an action and Assistant 
+will begin the investigation
+Filter & sort
+By alert severity 
+and assignee. 
+Trouble
+ shoot in AI Canvas
+Bring alert context into a workspace. Begin investigating.
+Ask follow
+ -
+ ups
+Ask questions, for clarifications or 
+explanations of the alert.
+
+--- PAGE 20 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Ask, investigate, and act from anywhere
+Assistant
+Ask from anywhere in Cloud Control
+The same assistant appears throughout 
+integrated product experiences.
+Use the current context
+The active product, tenant, and 
+conversation scope each response.
+Route to the right expertise
+Select agents automatically or call 
+specific agents by name.
+Move from answer to action
+Recommend next steps, call a 
+ Workflow
+ , 
+or continue in 
+ Canvas
+ .
+
+--- PAGE 21 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Run deterministic IT automation
+Workflows
+Define the steps once
+Chain API calls and product actions into 
+an ordered, no
+ -
+ code workflow.
+Trigger work when needed
+Run manually, on a schedule, from an 
+alert, or through Assistant and Canvas.
+Follow the same path every time
+The same inputs follow the same 
+sequence, reducing variation.
+Review and audit every run
+Record inputs, step results, outputs, and 
+final status.
+
+--- PAGE 22 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Example use cases
+Workflows
+Provision and onboard networks
+Discover devices, validate readiness, build profiles, 
+and onboard Catalyst devices into Meraki.
+Configure and maintain at scale
+Create SSIDs, copy port settings, manage 
+VLANs, and schedule firmware upgrades.
+Respond to events automatically
+Process webhooks, restore offline devices, rotate 
+PSKs, and block unwanted traffic.
+Govern multi
+ -
+ organization operations
+Copy administrators, move networks, apply rules, 
+and coordinate changes across organizations.
+
+--- PAGE 23 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco AI Canvas
+The industry’s first multiplayer workspace for cross
+ -
+ domain agentic operations
+
+--- PAGE 24 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Third
+ -
+ party 
+Ecosystem 
+Compute
+ Observability
+Networking
+ Security
+ Collaboration
+“Why is my application so slow?”
+IT operations today
+You see the symptom. The cause could be anywhere.
+
+--- PAGE 25 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Third
+ -
+ party 
+Ecosystem 
+Compute
+ Observability
+Networking
+ Security
+ Collaboration
+Every domain. One agentic workspace.
+Describe the problem. AI Canvas reasons across your entire environment to deliver the answer.
+“Why is my application so slow?”
+
+--- PAGE 26 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Where work gets done
+Cisco AI Canvas
+See the whole issue
+Across your entire Cisco portfolio and 
+beyond.
+Put AI agents to work
+Agents gather data, reason across 
+domains, and recommend next steps.
+Work together in real time
+Teams collaborate on one Canvas with 
+the same live context.
+Carry context through resolution
+Handoffs, shift changes, and 
+escalations keep the work intact.
+
+--- PAGE 27 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Conversational interface 
+•
+ Ask questions in natural 
+language
+•
+ Watch agents reason live 
+Agentic Modes
+•
+ Default for fast answers
+•
+ Reasoning for deep 
+investigations
+Widgets
+•
+ Visualize topologies, charts, summaries, reports
+•
+ Drill into supported widgets to investigate further 
+•
+ Export widgets as PDF 
+Usability
+•
+ Annotate, generate reports, 
+activity timelines, group 
+widgets, and more
+Multiplayer
+•
+ Share the board via link 
+•
+ Everyone sees the same 
+view 
+Bring your context
+•
+ #  
+to reference your upload 
+docs
+•
+ +  
+to attach an image for 
+multi
+ -
+ modal reasoning
+Board Organization
+•
+ Widgets color coded by 
+category
+•
+ Mini
+-
+ map for ease of 
+navigation
+Inside AI Canvas
+Purpose
+ -
+ built for the operator
+
+--- PAGE 28 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Inside a multi-agent investigation
+Understand
+AI Canvas reads your question, identifies the domains 
+involved, and plans the investigation.
+Delegate
+The Canvas supervisor agent dispatches the right 
+domain agents through their MCP servers.
+Investigate in parallel
+Every agent works simultaneously, querying its product, 
+gathering evidence, and reporting findings.
+Bring it all back
+The supervisor synthesizes every finding into a 
+single answer, with the full reasoning trail visible to 
+you.
+
+--- PAGE 29 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+From quick questions to deep investigations
+Default mode for quick answers. Reasoning mode for full plans, deeper evidence, 
+and complete coverage.
+Default mode
+•
+ Built for the everyday.  
+Low
+ -
+ latency 
+answers to the questions your team asks 
+every day.
+Deep Reasoning mode
+•
+ Plans the investigation up front.  
+Builds a 
+comprehensive troubleshooting plan 
+grounded in best practice.
+•
+ You approve before anything runs.  
+Review, revise, or approve. Nothing runs 
+until you say so. 
+•
+ An answer you can defend.  
+Every step is 
+shown, every finding is sourced, every 
+conclusion is backed by evidence.
+
+--- PAGE 30 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Remediate in 
+ Canvas remediation
+Agentic Workflows in AI Canvas
+Resolve issues with workflows
+After troubleshooting, Canvas can recommend a 
+workflow for review and execution.
+Call a workflow directly
+Use the word “workflow” in the prompt to request 
+a specific automation.
+Use managed or generated workflows
+Call available Cisco or non
+ -
+ Cisco workflows, or 
+generate one for review.
+Keep production changes controlled
+Confirm inputs before execution. Rollback is 
+available when built into the workflow.
+
+--- PAGE 31 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+1 Ask
+ 2 Investigate
+ 3 Pinpoint
+ 4 Next Step
+“Why is our finance app slow today?”
+“Why is our internal app slow for users at HQ?”
+“Why can’t users at our Chicago branch
+reach internal apps?”
+“Why is our team seeing poor Webex call
+quality?”
+“Did our recent firewall change break user 
+productivity?”
+Networking
+Security
+Data Center
+Observability
+Networking
+Security
+Data Center
+Networking
+Security
+Data Center
+Observability
+Networking
+Security
+Data Center
+Observability
+Networking
+Security
+Data Center
+Observability
+Find where the problem is and where it isn’t
+AI Canvas reasons across every domain, isolates the cause, and suggests the next step.
+ThousandEyes:  
+SaaS BGP issue
+ Reroute to backup
+Nexus: 
+Fabric leaf congestion
+ Rebalance load across leaf
+Secure Access: 
+ZTNA DNS misconfig
+ Apply DNS policy fix
+Meraki: 
+Wi
+-
+ Fi interference 
+Enable AI
+ -
+ RRM
+Secure Firewall: 
+Policy blocking traffic 
+Roll back policy
+
+--- PAGE 32 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Knowledge Base
+•
+ AI Canvas can apply your team's playbook in 
+every investigation.
+•
+ Upload any text
+ -
+ based file: PDF, TXT, MD, 
+DOCX (coming soon: logs, PCAP, JSON)
+Multi
+ -
+ modal context
+•
+ AI Canvas can analyze any images you upload 
+charts, dashboards, emails, diagrams, etc.
+•
+ Supports JPEG and PNG up to 5 MB. Up to 
+four images per conversation. 
+Tenant
+ -
+ isolated and identity
+ -
+ governed
+•
+ Uploaded context is scoped to your org, 
+encrypted at rest, accessible only to users via 
+RBAC.
+Bring your own context 
+AI Canvas starts with best practice. Your docs and images make it yours.
+
+--- PAGE 33 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Widgets you can act on
+Generated for the question you just asked.
+A custom view for every question
+AI Canvas builds the exact view you need on 
+the fly so you can resolve issues faster 
+Live from your environment
+Every widget pulls real
+ -
+ time data from the 
+actual systems you operate
+Interactive, not just visual 
+Click in, hover for context, drill down, and hit 
+“Investigate” to pass back context for further 
+analysis
+
+--- PAGE 34 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Direct tasks to selected agents
+Manual agent invocation
+Select agents with @
+Choose available Cisco product, third
+ -
+ party, or 
+custom agents from the composer.
+Route directly to their domains
+Manual selection skips automatic classification 
+while preserving conversation history.
+Combine agents in one turn
+Invoke up to four agents. Canvas routes each 
+part of a cross
+ -
+ domain question.
+Keep the selection through follow
+ -
+ ups
+Selected agents remain active until cleared. 
+New conversations return to automatic routing.
+Manually invoking product agents directly skips automatic orchestration. 
+This reduces routing latency and improves accuracy
+
+--- PAGE 35 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Keep every query in the correct scope
+1:Many product (tenant) 
+One tenant per product
+If a question matches multiple tenants, Canvas 
+asks which one to query.
+Proceed when scope is clear
+Named devices or sites can resolve directly to 
+a tenant through Inventory.
+Carry product scope into Canvas
+Cross
+ -
+ launching from a product adds its 
+tenant to the context pill. It remains through 
+follow
+ -
+ ups until the user removes it.
+Keep each product query contained
+Canvas queries only the selected tenant and 
+identifies the scope in its response.
+
+--- PAGE 36 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Don’t start from scratch
+Turn your team's best investigations into reusable boards 
+Quick start
+•
+ Pre
+ -
+ built investigations.
+ Cisco
+ -
+ curated 
+boards for common operator scenarios, 
+ready to launch.
+•
+ Repeat what works. 
+ Re
+ -
+ run any board 
+with new context, every run is 
+independent and your library stays clean.
+•
+ Custom boards, coming soon.  
+Save and 
+share your own as a team template.
+
+--- PAGE 37 ---
+Leverage your entire environment
+Bring complete context in Canvas
+Cisco first
+ -
+ party products*
+ Third
+ -
+ party ecosystem via Marketplace*
+& many more
+Note: Not all Cisco products will be available from Day 1; availability will be phased. Not all third-party integrations referenced are committed integrations.
+Meraki
+ Catalyst Center
+ SD
+ -
+ WAN
+ Duo
+Splunk
+ Cisco Identity Intelligence
+ IQ
+Security Cloud Control
+ ThousandEyes
+ ISE
+Nexus Dashboard
+ Collaboration Control Hub
+AI Defense
+ Nexus Hyperfabric
+ Intersight
+& many more
+Click here for the comprehensive list later in the deck.
+Click here for the 
+comprehensive list later in 
+the deck.
+
+--- PAGE 38 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Operations outgrow standard tools
+Extending Cloud Control
+Teams maintain the missing pieces
+Scripts, integrations, and manual 
+processes require ongoing support.
+Every environment works differently
+Teams have their own policies, 
+knowledge, and workflows.
+Operations span disconnected 
+systems
+Teams have different operational 
+requirements.
+What works can be hard to scale
+Useful solutions are difficult to govern 
+and reuse.
+
+--- PAGE 39 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Build what your operations need
+Cloud Control Studio 
+Create your operating experience
+Build 
+ the 
+ app you  
+need or  
+an agent for 
+background work.
+Connect the systems behind the work
+Bring approved Cisco, third
+ -
+ party, and 
+homegrown data and actions into the app.
+Move from idea to working capability
+Describe the outcome, preview 
+behavior, and refine before publishing.
+Scale with control
+Publish approved versions with defined 
+identity, access, and dependencies.
+Beta
+
+--- PAGE 40 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Build the view your teams need
+Cloud Control Studio | Apps
+Start with the outcome
+Tell Studio who the app is for, what it 
+should show, and what users should do.
+Let Codex build the view
+Codex creates the app and navigation 
+entry.
+Bring in the right systems
+Connect the data, tools, and workflows 
+the view needs.
+Preview, refine, and publish
+Test the experience and access before 
+making it available.
+
+--- PAGE 41 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Put operational expertise to work
+Cloud Control Studio | Agent
+Describe the job
+Define what the agent should do, 
+know, and produce.
+Create focused agent skills
+Studio turns the job into skills, tools, 
+example prompts, and outputs.
+Choose when and how it runs
+Start it on a schedule or product event 
+with only the access it needs.
+Test, publish, and monitor
+Check results and permissions, then track 
+its runs in Cloud Control.
+
+--- PAGE 42 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Four apps for operational needs
+Studio application examples
+Scheduled operations briefing
+Collects health, capacity, and compliance data across connected systems. 
+Prioritizes exceptions and delivers a recurring operational briefing.
+Incident triage and handoff
+Combines alerts, assets, topology, identity, and ticket context.
+Summarizes impact and attaches evidence to the incident.
+Guided network upgrade
+Assesses prerequisites, explains blockers, guides the approved change, 
+and verifies the environment afterward.
+Configuration compliance
+Compares current state with approved policies and runbooks. Identifies 
+drift, prepares corrections, and validates the result.
+
+--- PAGE 43 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+One app through its lifecycle
+Create, publish, install, and manage
+1
+Create and validate the definition
+Define the application and its capabilities. Customer settings and secrets remain outside the 
+published definition.
+2
+ Publish an approved version
+Each published version is checked, auditable, and protected from later modification.
+3
+ Install with customer settings
+Install the complete app, then configure its connections, settings, and access grants.
+4
+ Manage the application as one unit
+Update, suspend, resume, or remove the application without managing each capability separately.
+
+--- PAGE 44 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Every action has a clear identity
+Identity and authority
+User actions use user 
+permissions
+When an operator starts a 
+task, the app uses that 
+person’s existing access 
+and cannot exceed it.
+Automated work uses 
+app access
+Background work uses 
+the installed 
+application’s identity and 
+only the access granted 
+to it.
+Read and write 
+access stay separate
+Permission to view 
+information does not 
+automatically include 
+permission to change it.
+Every action remains 
+traceable
+Records show which 
+identity acted, what it 
+was authorized to do, and 
+the resulting outcome.
+
+--- PAGE 45 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Extend Cisco Cloud Control
+Cloud Control Marketplace
+Expand what the platform can do
+Adopt apps from Cisco and its 
+ecosystem.
+Connect the tools you already use
+Bring more of your existing 
+environment into one platform.
+Support more team needs
+Add capabilities for specific workflows 
+and use cases.
+Adopt with control
+Give the right teams access to 
+approved capabilities.
+
+--- PAGE 46 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco
+ -
+ built apps in Marketplace
+Built by Cisco
+Unified Fabric app
+Manage EVPN fabrics across 
+campus and data center, from 
+setup to connectivity and 
+health.
+Agentic Security app
+Discover AI assets, govern 
+agent behavior and access, 
+and monitor security activity 
+across your AI environments.
+Multicloud  
+Fabric app
+Connect sites to clouds and 
+across clouds with built
+ -
+ in 
+security and visibility, ready to 
+scale AI workloads.
+Note: Not all experiences are available today or represent committed integrations. Roadmap is subject to change.
+
+--- PAGE 47 ---
+Leverage an open ecosystem
+Cloud Control Marketplace
+Note: Not all Cisco products will be available from Day 1; availability will be phased. Every logo does not represent committ ed integrations.
+
+--- PAGE 48 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Security is built in, not bolted on
+P
+ rotected  
+by Cisco AI Defense at every stage of the agent lifecycle.
+MCP integrations scanned
+Unsafe third
+ -
+ party integrations are blocked before 
+Builders see them.
+Agent configs scanned
+Drafts must pass AI Defense checks before testing.
+Skills scanned
+Uploaded skills are checked for risks before 
+deployment.
+Runtime checks enforced
+Every agent action inspected, blocked, and logged in 
+real time.
+Cisco AI Defense
+Build time
+•
+ MCP server scanner
+•
+ Agent config 
+scanner
+•
+ Skill scanner
+Cloud Control Studio
+Runtime
+•
+ Agent runtime 
+protection
+Build 
+ → Test → Deploy → Run
+
+--- PAGE 49 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Built
+ -
+ in agent observability and evaluation
+Powered by Splunk AI Agent Monitoring and Galileo
+Splunk AI Agent Monitoring
+Execution History
+Every agent logged with outcome, 
+duration, and trigger source
+Trace Drill
+ -
+ down
+Step
+ -
+ by
+ -
+ step view of each LLM 
+call, tool invocation, and skill 
+execution
+Failure Surfacing
+Error codes, authorization failures, 
+and tool timeouts show in
+ -
+ context
+Galileo
+Automated Quality Scoring
+LLM
+ -
+ as
+ -
+ a
+-
+ judge evaluation of 
+agent outputs
+Hallucination Detection
+Flags when agents fabricate 
+information or cite unsupported 
+data
+Drift Alerts
+Detects when agent quality 
+degrades over time
+
+--- PAGE 50 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco product integrations
+Meraki
+Intersight
+Nexus 
+Hyperfabric
+Security Cloud 
+Control
+Splunk
+IQ
+Collaboration 
+Control Hub
+Nexus 
+Dashboard
+Via Intersight
+Catalyst
+SD
+ -
+ WAN
+Via Security Cloud 
+Control
+Catalyst Center
+Via Meraki Global 
+Overview
+ThousandEyes
+As of August 2026
+
+--- PAGE 51 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Cloud Control
+Platform services
+ AI Services
+ Integrations
+Architecture | System context
+Domain 
+management
+Data normalization, correlation and intelligence
+Cisco products
+Cloud products
+ On
+ -
+ premise 
+products
+Provides 
+domains
+Ingests data 
+& signals
+Receive 
+federated 
+actions
+Cisco 
+Identity
+Uses
+Binds identity & 
+authorization
+
+--- PAGE 52 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Core 
+services
+Unified orchestrator
+AI 
+Gateway
+Architecture | AI Canvas orchestration
+Canvas 
+UI
+Supervisor agent (plan & execute)
+1. Understand 
+intent & scope
+2. Build & adapt 
+the plan
+3. Select context, 
+agents, skills & tools
+4. Assign scoped 
+tasks & coordinate
+Executor agents (perform work)
+1. Receive scoped task
+ 2. Call selected MCP capability
+ 3. Return product data
+Investigation context
+User
+Context search & updates
+Supervisor synthesizes evidence and updates plan
+Agent 
+skills 
+and 
+tools 
+MCP 
+servers 
+registry
+CUI / token 
+exchange
+User/tenant 
+management
+Collaboratio
+n service
+Feedback / 
+telemetry
+MCP Servers
+Cisco 
+product 
+MCP 
+servers
+Partner & 
+3
+ rd 
+party 
+MCP 
+servers
+Knowledge
+Docs, runbooks, skills, organizational expertise
+Working memory
+Prompts, plans, evidence, decisions, history
+Operational context 
+Inventory, topology, alerts, telemetry
+Skill, agent and tool mapping
+Agent / 
+tools 
+execution
+
+--- PAGE 53 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+One pane for every Cisco license
+Unified licensing
+All in one place
+Covers SaaS subscriptions, Meraki co
+ -
+ term, 
+and on
+ -
+ prem Smart Licensing 
+ — 
+all in one 
+inventory.
+Posture is auto
+ -
+ classified 
+Underused, Fully Used, Overused, or Unknown.
+Filter by what's expiring 
+30, 60, or 90 days. Drill into entitled vs. 
+consumed quantities.
+Clean tenant separation
+Scoped per organization. You see only your 
+licenses.
+
+--- PAGE 54 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Enterprise
+ -
+ grade trust, built into the foundation
+US hosted at launch
+Initial release operates from U.S. 
+data centers. Additional regions on 
+the roadmap.
+Encrypted everywhere
+All data encrypted at rest and in 
+transit with industry
+ -
+ standard 
+cryptography.
+Tenant isolation
+Every customer's data, identity, and 
+configuration strictly segregated. No 
+cross
+ -
+ tenant access.
+Full audit trail
+Every login, role change, integration 
+action, and alert state captured. 
+Exportable to your SIEM.
+Compliance
+ -
+ aligned
+SOC 2 and ISO 27001 alignment, with 
+continuous auditability.
+
+--- PAGE 55 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco reserves the right to adjust monetization, pricing and packaging in the future. Usage and rate limits may apply.
+Included with your subscription license for
+eligible Cisco products.
+1
+Base usage and base rate limits included. 
+2
+Included in all license tiers. 
+3
+No new license.
+
+--- PAGE 56 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+What changes 
+for your team
+Make investments work harder
+An extensible foundation connects existing tools, data, 
+and expertise.
+Increase operational capacity
+AI agents use shared context to plan and move work 
+forward, with people in control.
+Protect customer confidence
+Cross
+ -
+ domain intelligence reveals risks and impact 
+that siloed tools miss.
+Turn operational speed into an advantage
+One connected platform unifies visibility, intelligence, 
+and action.
+
+--- PAGE 57 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+To request access, go to: 
+cisco.com/go/CloudControlSignup
+Next steps
+Learn more
+›› 
+Cisco Cloud Control
+ :
+http://cisco.com/go/CiscoCloudControl
+›› 
+Canvas:
+http://cisco.com/go/AICanvas
+›› 
+Studio
+https://cisco.com/go/cloudcontrolstudio
+›› 
+Shareable overview video: 
+https://www.youtube.com/watch?v=BlyNwKSpxn4
+
+--- PAGE 58 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+
+--- PAGE 59 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Additional slides
+
+--- PAGE 60 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Two surfaces. One intelligence.
+AI Canvas vs AI Assistant
+Feature
+ Cisco AI Assistant
+ Cisco AI Canvas
+What’s it for
+ Investigate, ask, and resolve
+ Investigate, ask, and resolve
+How you use it
+ Conversational chat
+ Visual interactive workspace
+Collaboration
+ Single player, private
+ Multiplayer, shareable
+Typical 
+session
+ Seconds to minutes
+ Minutes to hours
+Output
+ Text answers:
+summaries, recommendations, answers
+Interactive widgets:
+Visualized data, topologies, timelines, reports 
+Where it 
+shines
+ Speed. Move through your day faster.
+ Context. Explore the “why” behind the data
+
+--- PAGE 61 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Built for different jobs. Designed to work together
+Cloud Control vs IQ (1/2) 
+Cloud Control
+AI-powered operations
+• Live telemetry across your IT 
+estate
+• Cross-domain visibility
+• Real-time action & 
+remediation
+• AI Canvas collaborative 
+workspace
+• Automated resolution 
+workflows
+IQ
+AI-powered services
+• Lifecycle visibility & planning
+• Assessments & compliance 
+gaps
+• Expert-informed guidance
+• Benchmarking & risk 
+prioritization
+• Support & Professional 
+Services
+Same asset truth 
+across both experience
+
+--- PAGE 62 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+How they are complementary
+Cloud Control vs IQ (2/2)
+Scenario B
+Start with incident
+1. Cisco Cloud Control 
+telemetry flags a memory 
+leak on 5 firewalls
+2. Mitigate immediately via AI 
+Canvas
+3. Move to IQ → find every 
+affected device → build 
+upgrade
+Scenario A
+Start with insight
+1. IQ flags 3 branches out of 
+compliance
+2. Step-by-step remediation 
+blueprint generated
+3. Move to Cisco Cloud Control 
+→ push fix → validate in real-
+time
+IQ shows me risks I haven't hit yet. Cisco Cloud Control shows me patterns I wouldn't 
+have found anywhere else. Together, they keep me ahead of the problem.
+
+--- PAGE 63 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Function
+ AI Canvas
+ Splunk
+Primary role
+ Creates the shared investigation and coordinates the 
+response
+ Analyzes data across systems and over time
+Explaining the 
+issue
+Brings findings from Cisco products, tools, agents, 
+and teams into one view
+Finds patterns and connections that confirm or 
+challenge the diagnosis
+Supporting 
+action
+Connects the investigation to Cisco capabilities and 
+keeps teams aligned
+Provides deeper findings and can trigger configured 
+automation
+Preserving work
+ Keeps the evidence, decisions, and actions together 
+as one case
+Keeps data, searches, detections, and dashboards 
+for future use
+Distinct value
+ Gives teams and agents one place to investigate and 
+respond
+Finds issues that individual products or short
+ -
+ term 
+data may miss
+AI Canvas coordinates; Splunk deepens the analysis.
+AI Canvas & Splunk
+AI Canvas turns connected evidence into a coordinated response. Splunk provides the analytical depth to validate the 
+diagnosis, expose wider impact, and confirm recovery.
+
+--- PAGE 64 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Relationship
+ Direct claim
+ Customer impact
+Complementary
+Cloud Control connects Cisco operations. AI Canvas 
+and Assistant coordinate the investigations. Splunk 
+adds deeper evidence across systems and time.
+Customers connect broad analytical insight directly 
+to the affected Cisco environment and the response.
+Supplementary
+Cloud Control delivers investigation and response 
+value on its own. Splunk expands that value with 
+historical context, cross
+ -
+ system correlation, and 
+reusable analytics.
+Customers gain more confidence in the diagnosis, 
+see wider impact, and verify that the response 
+worked.
+Redundant
+Canvas and Splunk may both query data, explain 
+findings, visualize results, recommend actions, or 
+start workflows. The overlap supports flexibility, but it 
+requires clear ownership.
+Customers can work in the experience that best fits 
+the task without creating conflicting answers or 
+duplicate actions.
+Strong independently, more powerful together.
+Cisco Cloud Control & Splunk
+
+--- PAGE 65 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+What Use Cases AI Canvas assists with
+Product
+ What AI Canvas Can Do
+Catalyst Center
+ Assurance and client troubleshooting, Wi
+ -
+ Fi and RF health, switching and routing status, compliance, 
+topology, software images and versions, device replacement, AI
+ -
+ RRM checks, documentation search
+Catalyst SD
+ -
+WAN
+Network and application health, circuit utilization and WAN capacity, VPN and tunnel health, security events, 
+connected clients, BFD and path diagnostics, application QoE, certificate and license insights, security 
+posture, alerts and rule
+ -
+ impact analysis
+Intersight
+Compute and storage inventory and health, fabric ports, VLANs, uplinks, vNIC and vHBA configuration, 
+managed
+ -
+ object queries, audit history, account and domain context, profiles, templates, policies and pools, 
+faults and jobs, topology, troubleshooting and risk analysis, search and export
+Meraki
+Wireless and client health, switching, firewall and security policies, VPN and routing, clients and topology, 
+performance, device inventory and firmware, alerts and events, organization configuration, Access Manager 
+policies
+Nexus Dashboard
+Fabric anomalies and root cause, AI and ML workload health, GPU health, fabric and interface health, network 
+analytics, unified topology, connectivity analysis, security contracts, congestion analysis, fabric software 
+lifecycle
+Nexus Hyperfabric
+Fabric, switch, server, port, VRF, BGP and LLDP discovery, fabric health, reachability and path diagnosis, 
+configuration
+ -
+ mismatch analysis, endpoint search, VLAN and BGP
+ -
+ peer visibility, traceroute, TCPing, ARPing, 
+TCP traceroute, MAC
+ -
+ move visibility
+Secure Access
+Application
+ -
+ access troubleshooting, activity and rules monitoring, resource and tunnel
+ -
+ state visibility, 
+roaming
+ -
+ computer and internal
+ -
+ network visibility, Talos domain intelligence, security reporting, access rules 
+and destination lists, alerting, threat intelligence, application discovery, identity and resource configuration
+As of July 2026
+
+--- PAGE 66 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+What Use Cases AI Canvas assists with
+Product
+ What AI Canvas Can Do
+Secure Firewall
+Site
+ -
+ to
+-
+ site VPN investigation and diagnosis, firewall inventory and health, versions, licenses and EOL status, 
+routing and BGP visibility, VPN health, FMC health and search, change history, access policies, CPU and 
+memory telemetry
+ThousandEyes
+Root
+ -
+ cause analysis across tests and targets, health and issue monitoring, outage detection, performance and 
+metric analysis, agent and test discovery, endpoint
+ -
+ agent metrics, Internet Insights details, alert suppression, 
+maintenance windows, notification history, agent, label and role inventory
+Splunk Cloud 
+Platform
+Index discovery, natural
+ -
+ language questions over Splunk data, SPL query generation, SPL query explanation, 
+SPL query execution
+Splunk 
+Observability 
+Cloud
+Automated network and application root
+ -
+ cause analysis, application
+ -
+ impact assessment, likely
+ -
+ cause 
+identification using ThousandEyes degradation alerts
+Splunk ITSI
+ Episode discovery, episode details and summaries, impacted service and entity identification, similar
+ -
+ episode 
+discovery, runbook and reference
+ -
+ link retrieval
+Collaboration 
+Control Hub
+Meeting and call search, audio and video quality analysis, root
+ -
+ cause analysis, join and service health, 
+participant and endpoint details, cloud meeting and call troubleshooting, on
+ -
+ premises call troubleshooting, 
+video
+ -
+ endpoint visibility
+Identity 
+Intelligence
+Authentication troubleshooting, access validation, identity
+ -
+ incident investigation, authentication
+ -
+ event and 
+policy correlation, identity
+ -
+ security posture, application and device information, data summarization
+
+--- PAGE 67 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Matching the right intelligence to the right problem
+Incoming task 
+or question
+Domain
+ -
+ specific models
+Built for a specialized field or data type.
+General
+ -
+ purpose models
+Designed for broad, flexible reasoning.
+Task
+ -
+ specific models
+Optimized for a well
+ -
+ defined task.
+Model 
+selection
+Purpose
+ -
+ built models
+Ex: Deep Network model, Deep Time Series model
+Ex: Antares, Galileo evaluation 
+ m
+odel
+Ex: Claude, GPT, etc.
+
+--- PAGE 68 ---
+No common language
+Agents can’t share context or coordinate.
+Fragmented integrations
+Each agents reinvents connections which is fragile.
+Lack of visibility
+No way to track what agents or tools are doing.
+
+--- PAGE 69 ---
+MCP Server
+MCP Client
+Initialization
+Capabilities exchange
+An open protocol designed to securely connect AI agents to tools, data, and enterprise systems. MCP provides a 
+standardized way for agents to discover, invoke, and govern external capabilities.
+►  
+Core capabilities:
+ (1) 
+Decouple agents from tool/resources      
+ (2) 
+ Standardize context
+       
+ (3) 
+ Scalability
+Requests
+“Get Networks”
+Response
+“You have network XX”
+Notifications
+“Network XX health changed:
+Data layer
+JSON
+ -
+ RPC 2.0
+Transport layer
+Stdio  
+– 
+Standard Input Output
+HTTP + SSE 
+ – 
+Service
+ -
+ side Events
+Streamable  
+HTTP
+
+--- PAGE 70 ---
+Client
+MCP
+Protocol
+ REST API
+File System
+DB 
+ – 
+SQL/ODBC
+Client
+Client
+MCP
+Protocol
+MCP
+Protocol
+Tools
+Resources
+Prompt Templates
+Tools
+Resources
+Prompt Templates
+Tools
+Resources
+Prompt Templates
+REST API
+File System
+DB 
+ – 
+SQL/ODBC
+Host
+LLM/App/Agent
+ MCP Server
+ Tool Resources
+
+--- PAGE 71 ---
+Agent Card
+Security
+Agent
+Task 
+executor
+A2A Server 
+Module
+Network
+Agent
+A2A Client 
+Module
+Task 
+manager
+Agent 2
+Discovery
+Notifications
+Authentication
+Task
+An open standard designed to enable seamless communication and collaboration between AI agents. A2A provides a 
+standardized way for agents to talk to other agents
+►  
+Core capabilities:
+ (1) 
+Capability discovery      
+ (2) 
+ Collaboration
+       
+ (3) 
+ Task management      
+ (4) 
+ User experience navigation
+
+--- PAGE 72 ---
+Security
+Agent
+Task 
+executor
+A2A Server 
+Module
+Network
+Agent
+A2A Client 
+Module
+Task 
+manager
+Discovery
+Authentication
+Task
+A2A and MCP are open standards that let AI agents interoperate end
+ -
+ to
+-
+ end
+ —
+A2A for agent
+ -
+ to
+-
+ agent coordination and 
+MCP for consistent, secure access to tools and data. Together they reduce bespoke integrations and make multi
+ -
+ agent 
+systems easier to connect, scale, and govern.
+MCP client
+MCP server
+Agent 1
+ Agent 2
+MCP Protocol
+Notifications
+Agent Card

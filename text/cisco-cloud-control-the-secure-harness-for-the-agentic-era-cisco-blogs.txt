@@ -1,0 +1,168 @@
+--- PAGE 1 ---
+Cisco Blogs Artificial Intelligence - AI
+June 2, 2026 1 Comment
+Artificial Intelligence - AI
+Cisco Cloud Control: The Secure
+Harness for the Agentic Era
+5 min read
+DJ Sampath
+Every few decades, infrastructure gets a new abstraction. We went from racking hardware to virtualizing it, then from clicking through consoles
+to writing infrastructure as code. Each shift changed who could build, how fast they could move, and what was possible to defend.
+The next abstraction isnʼt coming. Itʼs already here.
+As Jeetu Patel captured, agentic AI is kicking off a networking supercycle — the era of managing critical infrastructure at human scale is over.
+What comes next has to be built for a workforce that is no longer entirely human.
+Agents are about to become a permanent part of how enterprises run. Real, capable, reasoning agents that observe infrastructure, modify it,
+defend it, and extend it. The real question: is your infrastructure ready to let them in safely?
+Thatʼs the question Cisco Cloud Control was built to answer. 
+Cisco Blogs
+Share
+Read aloud Menu
+
+--- PAGE 2 ---
+Above: Cisco Cloud Control homepage ▶  Watch video
+From infrastructure as code to infrastructure
+as a harness
+Think about what made Codex and Claude Code feel like a step change for software developers. It wasnʼt just the model, but the
+harness around the model: the repo, the terminal, the tests, the permissions, the feedback loop. The model was powerful, but the harness is
+what made it useful.
+Infrastructure needs the same thing.Terraform, Ansible, and Python scripts made infrastructure programmable, but they all assumed a human was
+writing the logic, stitching the systems together, and deciding what to change. That assumption no longer holds. Agent-native
+infrastructure demands a different abstraction. It needs its own harness: a safe, governed, observable control surface that lets agents act on
+real systems without breaking them, exposing them, or taking them somewhere they shouldnʼt go.
+That is what Cisco Cloud Control was made to do: the unified operations platform that brings every Cisco domain (Networking, Security, AI
+Infrastructure, Observability, and Collaboration) and your third-party tools into one environment, with one login, one view, and one operating
+model for every team and every agent working across your estate. This isnʼt a single pane of glass; glass is passive. Cisco Cloud
+Control is active execution, with policy and identity built into the control path itself.
+What the harness actually does
+A harness is a concrete set of capabilities that must be real, or none of this works.
+Cisco Cloud Control gives agents — and the humans who direct them — six things at once:
+Trusted access to routers, switches, controllers, firewalls, clients,
+users, workloads, and applications that make up the modern
+
+--- PAGE 3 ---
+enterprise.
+Normalized APIs and MCPs for observing and managing every
+domain.
+Identity, policy, and zero trust built directly into the control
+path, rather than bolted on top.
+Telemetry and operational context that show what is actually
+happening on the ground, in real time.
+Enforcement points that can block, isolate, reconfigure, or
+remediate at runtime.
+Governance that makes every agentic action transparent,
+auditable, bounded, reversible, and subject to human approval.
+This is what “real” looks like. Six capabilities, working as one — the harness that makes agents safe to deploy, and powerful enough to matter.
+Dive deeper intohow weʼve built the secure harness for the agentic era.
+Where the work happens: AI Canvas
+The harness is the engine. The workspace is where you actually drive. Cisco Cloud Controlʼs workspace is AI Canvas — the multiplayer,
+generative environment where human operators and AI agents investigate, correlate, and resolve complex issues together in real time.
+Operators see the same live evidence that agents do. Agents build investigation plans, pull data across domains, and drive resolution end to end.
+Context persists across shifts and escalations, so nothing is lost and nothing is repeated. What used to require a war room now happens in a
+workspace.
+Cisco Cloud Control is the platform; AI Canvas is where the work happens — learn how it has evolved since we first unveiled it last year.
+
+--- PAGE 4 ---
+Above: AI Canvas workspace
+Where customers build: The Studio in Cloud
+Control
+AI Canvas makes agents useful. Cloud Control Studio is where you build them. 
+Cloud Control Studio is the design space — the factory floor — where customers and partners build and
+secure the agents, applications, and workflows their business depends on, on top of a substrate thatʼs already wired into Ciscoʼs data, policy, and
+control plane. Inside Studio, two capabilities do the heavy lifting:
+
+--- PAGE 5 ---
+App Builder — where custom apps and workflows are
+developed for Cloud Control. Users build and publish from
+natural-language prompts, with built-in agentic coding
+assistants including OpenAI Codex.
+Agent Builder — where AI agents for Cloud Control are created.
+Customers and partners can build, train, bring, and secure their
+own agents. 
+Everything built in Cloud Control Studiocan be discovered in the Cloud Control Marketplace: the open catalog where customers and
+partners find and extend whatʼs possible, so teams can find the right tools for the right task.Customers can build their own applications and
+agents using natural language directly within the platform, which also connects to a large partner ecosystem including AWS, Google
+Cloud, Linear and ServiceNow.Discover the new partner opportunity presented by Cisco Cloud Control.
+
+--- PAGE 6 ---
+Above: Cisco Cloud Control Marketplace
+The customer unlock
+Picture this. An IT admin walks in on Monday morning to discover that the operations team has begun rolling out a new class of AI-enabled
+inspection cameras across the manufacturing floor. The devices are already on the network, but they sit outside every existing management tool.
+The vendor has an API, but no integration exists yet.
+In the old world, the safe answer was no – wait for the roadmap, wait for the connector, wait for someone else to build it. In the new world, the
+answer changes. The admin opens a coding harness, builds a small Cisco Cloud Control application, connects to the device API, maps each
+camera to network location and identity context, pulls telemetry, and exposes policy actions through Ciscoʼs governed control surface. In
+hours, not quarters, those devices become observable, manageable, and defensible — under the same policy model as everything else in the
+estate.
+That same pattern works for a new SaaS app, a custom internal system, a factory controller, a medical device, or a partner-managed appliance.
+Anything the business throws at IT before the vendor catalog catches up. The real unlock: customers can build their own workflows and inherit
+
+--- PAGE 7 ---
+Ciscoʼs APIs, policy model, observability, enforcement, and governance for free.
+Why this matters now
+Powerful models are making software creation faster than it has ever been, and that is a gift for productivity. It also reshapes risk. If models can
+generate code at this speed, they can generate vulnerable code at this speed – new applications, new attack surfaces, and new runtime behaviors
+that traditional security workflows werenʼt designed to catch in time. The window between vulnerability discovery and exploitation has collapsed
+from weeks to minutes.
+What customers need is the ability to build custom shields around their own applications and infrastructure: agentic defenses
+that observe behavior, understand context, detect exploit patterns, reconfigure controls dynamically, block attacks at runtime, and verify the
+mitigation actually worked. This is where Cisco Cloud Control becomes more than an operations platform — itʼs the command center for a post-
+Mythos security posture, the place where Live Protect, unified policy, and full vulnerability visibility come together. 
+Cisco can deliver this because Cisco owns the control points that matter – network, security, identity, clients, firewalls, controllers, telemetry, and
+policy boundaries – and the harness sits on top of all of them.
+The superhuman admin
+Letʼs be clear: none of this is about replacing the people who run infrastructure. Itʼs about making them dramatically better at
+it. Thatʼs what AgenticOps means in practice — Ciscoʼs operational system for the AI era, where governed AI agents monitor, reason, and act
+across your infrastructure with humans firmly in the loop. AgenticOps is the capability. Autonomous infrastructure is the outcome. Cisco Cloud
+Control is where it all comes to life.
+In practice, that means coding tools help the admin write the custom app, Cisco Cloud Control gives that app secure access to the
+infrastructure, Cisco APIs and MCPs expose the operational capabilities, Cisco policy and identity govern what the app can do, and Cisco
+enforcement points make the app useful in the real world. The IT admin becomes a builder. The security admin becomes a rock star. The platform
+team starts shipping at the speed of the business. Thatʼs what it looks like when strategy turns into reality. 
+The shift is happening now
+Cisco has spent four decades building best-in-class solutions across every domain that matters in enterprise IT. Meraki. ThousandEyes. Security
+Cloud Control. Nexus. Intersight. Webex. Each one a leader. Our depth is unmatched — and thereʼs more to come. 
+We innovate from the silicon to the application — making our own chips, building the systems they power, writing the software that runs on them,
+and providing the security and observability that watches all of it. The opportunity lives in what becomes possible when every domain works
+together — when shared inventory, unified topology, and a single environment turn the portfolio into a platform.
+Thatʼs the architectural choice underneath Cisco Cloud Control: tightly integrated, loosely coupled, and built for an open ecosystem. The more
+Cisco you run, the more powerful the platform becomes — and the heterogeneous environment you already have keeps working alongside it.
+Weʼre building the secure harness that lets every customer connect agents to their infrastructure, build their own applications on top of it, and
+defend their environments at the speed AI is moving.
+Thatʼs the shift. Dashboards giving way to agentic workflows. Infrastructure as code evolving into infrastructure as a harness. Fixed product
+features expanding into customer-built infrastructure apps. Static controls becoming custom runtime shields. Cisco evolving from a portfolio of
+products into the secure harness for enterprise infrastructure in the agentic era.
+This is Ciscoʼs next big thing. Weʼre glad youʼre here for it.
+Some products or features described may be in various stages of development and offered on a when-and-if available basis.
+Authors
+
+--- PAGE 8 ---
+DJ Sampath
+SVP/GM
+AI Software and Platform
+Tags: AI SecurityArtificial Intelligence (AI)
+1 Comment
+Balaji Venkatramansays:
+Jun 2, 2026
+Cisco Cloud Control + AI Canvas + Marketplace is going to transform how
+customers manage and interact with their infrastructure, this is amazing.
+Comments are closed.
+Quick Links -
+About Cisco
+Contact Us
+Careers
+Connect with a partner
+
+--- PAGE 9 ---
+Resources and Legal -
+©2026 Cisco Systems, Inc.
+Feedback
+Help
+Terms & Conditions
+Privacy
+Cookies / Do not sell or share my personal data
+Accessibility
+Trademarks
+Supply Chain Transparency
+Newsroom
+Sitemap

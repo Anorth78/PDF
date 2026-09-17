@@ -1,0 +1,175 @@
+--- PAGE 1 ---
+Cisco Blogs Artificial Intelligence - AI
+February 5, 2026 Leave a Comment
+Artificial Intelligence - AI
+Cisco Deep Network Model: Purpose
+built intelligence for networking
+6 min read
+Vincent Manna, Puneet Kamal
+This blog was written in collaboration with Yuqing Gao, Jian Tan, Fan Bu, Ali Dabir, Hamid Amini, Doosan Jung, Yury Sokolov, Lei Jin, and Derek
+Engi.
+LLMs can sound very convincing, but in network operations, sounding right isnʼt enough.
+Network operations are dominated by structured telemetry, long configuration states, time series at scale, and investigations that sprawl across
+devices, sites, and domains. The practical constraint is not whether an AI model can answer a networking question in isolation. Itʼs whether the AI
+system can reason over real operational data, understand the context of your network and business, preserve the details that change outcomes,
+and remain reliable across multi-turn interactions—including troubleshooting.
+That establishes a clear requirement for technical and business decision makers: if you want AI to support network operations, it must be
+engineered for networking data and networking workflows, not adapted after the fact.
+The Cisco Deep Network Model is fine-tuned and trained for that reality. It is a networking-specialized model designed to reason like an
+experienced operator. In deployment, it can be paired with Analytics Context Engineering (ACE) and Lightweight Autonomous Program Synthesis
+and Execution (LAPSE), two model-agnostic innovations that scale context and machine-data handling. Together, they support operator-grade
+reasoning at enterprise scale, delivering faster, responses grounded in evidence with context preserved across turns so investigations donʼt
+degrade into truncation, looping, or guesswork.
+After reading this post, youʼll scroll away knowing (1) what the Cisco Deep Network Model is, (2) why general-purpose models struggle in network
+operations, and (3) the two breakthroughs that make it practical at scale: ACE and LAPSE.
+Cisco Blogs
+Share
+Read aloud Menu
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 2 ---
+Off the shelf LLMs donʼt hold up in networking
+workflows
+General-purpose models are strong at summarization, conversation, and broad knowledge retrieval. Network operations stress a different set of
+constraints.
+The data does not fit. Even routine investigations involve long time-series windows, lots of counters, packet loss and latency across locations, big
+config sections, and logs from many devices. Off-the-shelf models hit context limits fast, then start dropping information or relying on shortcuts.
+Mixed data gets mangled.  Networking work is rarely just text. It is telemetry, JSON, syslog, CLI output, config snippets, and ticket context
+together. Even with massive context windows, many frontier models are optimized for human language, not machine data, so they can lose track
+of the exact timestamp, interface, policy, or metric change that makes the root cause obvious.
+The Cisco Deep Network Model starts with a different assumption: donʼt force the model to read everything. Instead, build a system that can
+handle machine data at scale, preserve investigative context without bloat, and move through troubleshooting like an expert would.
+So, what is the Cisco Deep Network Model?
+The Cisco Deep Network Model is a purpose-built model for networking, designed to support troubleshooting, configuration, and automation with
+higher precision than general-purpose models. The intent is not to create a better chatbot. The intent is to create a model that behaves like a
+seasoned network operator: grounded in evidence, disciplined in troubleshooting, and able to converge on root cause and remediation with clear
+traceability.
+Benchmark results for the Cisco Deep Network model reflect this specialization. On a CCIE-style multiple choice benchmark, Ciscoʼs model
+outperforms general-purpose models by up-to-20 percent.
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 3 ---
+At first glance, some of these differences may appear incremental. In practice, they are not. Once a model surpasses roughly 85 percent, the
+remaining errors tend to concentrate in rare, complex edge cases rather than common patterns. Improving performance at that level requires
+addressing the long tail of networking scenarios that general-purpose models often miss.
+An analogy is useful here: each additional point beyond that threshold is comparable to an elite athlete shaving fractions of a second off a world
+record. The effort increases sharply because the work shifts from broad capability improvements to resolving the hardest, least frequent cases.
+This is where domain-specific training, expert vetting, and operational grounding make a meaningful difference.
+Trusted training and continuous learning
+The model is built on a foundation of Cisco U courseware and expert-level knowledge representing more than 40 years of operational insight. The
+model has been trained on nearly 100 million tokens, and Cisco experts have contributed thousands of reasoning traces, meticulously annotating
+and validating each layer of logic so the model learns not just the answer, but the operator-grade path to get there.
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 4 ---
+Networks also evolve continuously, and the Cisco Deep Network Model is designed to evolve with them. Through reinforcement learning, it adapts
+using new data and non-public, real-world Technical Assistance Center (TAC) and Customer Experience (CX) insights only available within Cisco,
+so the model improves as operational patterns, software, and environments change.
+Optimizing LLM performance for machine data:
+ACE and LAPSE
+The Cisco Deep Network Model is more than a trained model. It is delivered as a system that combines domain reasoning with context
+management and machine-data execution—built to overcome the two constraints that break most deployments: (1) context scale and (2) machine
+data scale.
+Analytics Context Engineering (ACE)
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 5 ---
+ACE transforms a dense prompt into compact canonical views and reconstructs it using the fewest possible tokens. The goal is not summarization
+that discards detail. The goal is to reduce the number of tokens the LLM has to process without losing what matters, so it can maintain context
+across data-heavy, multi-turn investigations and keep the working prompt within the modelʼs context window. Practically, this means normalizing
+mixed inputs such as telemetry summaries, log excerpts, config deltas, and ticket notes into a consistent investigation record that stays usable
+over time.
+This matters because investigations naturally snowball. Every turn adds repeated history, partial artifacts, mixed-format evidence, and competing
+hypotheses. Over time, even a correct model can become less reliable because the input becomes less usable. ACE is designed to keep the
+investigation compact, stable, and faithful to the underlying evidence.
+Cisco reports that ACE can reduce prompt size by roughly 20 to 90 percent while preserving the information the model needs to stay accurate.
+Off-the-shelf approaches typically manage only about 0 to 30 percent reduction before critical details start to drop. In practical terms, this is what
+keeps multi-turn work consistent rather than fragile. 
+Want the technical details behind Analytics Context Engineering? This blog goes deeper.
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 6 ---
+Lightweight Autonomous Program Synthesis and
+Execution (LAPSE)
+LAPSE takes a different approach to scale. When the input is large machine data, the system performs on-demand tool creation and execution to
+transform data from a source schema into a target schema optimized for the task. The model receives task-ready outputs rather than raw
+telemetry dumps, which keeps the workflow fast and reduces the risk of missing critical signals.
+This is a pragmatic design choice. Time series and high-volume telemetry are better handled by tools that aggregate, filter, reshape, and compute.
+The model should guide what needs to be computed and how to interpret it, not act as the compute engine itself.
+LAPSE enables the model to handle practically unlimited machine data, by accelerating machine data processing for interactive operational tasks,
+turning raw telemetry into structured, task-ready. Reported comparisons show roughly 3–5 seconds of latency (vs. 27–200 seconds for off-the-
+shelf solutions) for tasks such as machine-data schema transformation. Reported transformation accuracy is near 100% (vs. 0–70%).
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 7 ---
+The point for decision makers is straightforward. This is the difference between an AI system that can keep up with an operator and one that turns
+every investigation into a waiting game.
+How it works in practice
+ACE and LAPSE are complementary by design.
+LAPSE handles the heavy lift of machine data transformation
+quickly and deterministically.
+ACE keeps the investigation state compact, stable, and usable
+across multi-turn work.
+Together, they enable a workflow that is difficult for generic systems to sustain: (1) start with intent, (2) pull the minimum relevant evidence, (3)
+maintain a consistent record of what is known, and (4) produce outputs that are fast enough and grounded enough to trust in production.
+The model also supports a “next best action” troubleshooting loop so investigations progress like expert work: hypothesis, evidence, refinement,
+and convergence on root cause.
+Brought to life in Cisco products
+It is brought to life through Cisco AI products that operators use day to day. In Cisco AI Canvas, it helps teams investigate across domains with a
+coherent evidence record, generate structured outputs from large telemetry, and move from suspicion to validated root cause faster. In Cisco AI
+Assistant experiences, it turns natural-language intent into operator-grade reasoning and actionable next steps, grounded in the telemetry and
+context available to the user.
+Whatʼs actually different
+Many vendors claim AI for networking. The Cisco Deep Network Model differentiates on specific operational properties.
+1. Purpose-built training and expert vetting for networking accuracy
+2. Engineering for machine data scale through Lightweight Autonomous
+Program Synthesis and Execution
+3. Lossless context optimization for long investigations through Analytics
+Context Engineering
+4. A roadmap to adaptive troubleshooting through the Next Best Action (NBA)
+loop.
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 8 ---
+For technical leaders, this is about correctness, auditability, and reliability at production scale. For business leaders, it is about faster
+convergence on root cause, fewer dead ends, and a more credible foundation for agentic operations that can execute with discipline instead of
+guesswork.
+Authors
+Vincent Manna
+Senior Product Marketing
+Manager, AI Canvas
+AI Software & Platform
+Puneet Kamal
+Leader, Product Management
+AI Software & Platform
+Tags: AI CanvasAI SecurityArtificial Intelligence (AI)Cisco Deep Network Model
+Quick Links -
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 9 ---
+Resources and Legal -
+©2026 Cisco Systems, Inc.
+About Cisco
+Contact Us
+Careers
+Connect with a partner
+Feedback
+Help
+Terms & Conditions
+Privacy
+Cookies / Do not sell or share my personal data
+Accessibility
+Trademarks
+Supply Chain Transparency
+Newsroom
+Sitemap
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings

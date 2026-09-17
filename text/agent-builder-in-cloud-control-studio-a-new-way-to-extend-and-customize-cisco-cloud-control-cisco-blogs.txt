@@ -1,0 +1,128 @@
+--- PAGE 1 ---
+Cisco Blogs Artificial Intelligence - AI
+June 2, 2026 Leave a Comment
+Artificial Intelligence - AI
+Agent Builder in Cloud Control
+Studio: A new way to extend and
+customize Cisco Cloud Control
+3 min read
+Vimarsh Puneet, Naveen Elango
+Today at Cisco Live, we are announcing Agent Builder in Cisco Cloud Control Studio, a new way to customize and extend Cisco Cloud Control with
+AI agents. Agent Builder is a key capability for making agents work the way teams operate.
+What is Agent Builder?
+Agent Builder is where teams bring their tools, knowledge, and operational expertise into Cisco Cloud Control. It brings together three of the most
+important parts of building agentic operations: connecting third-party products, building AI agents, and creating reusable agent skills. Builders
+describe what an agent should do in natural language, connect the tools and knowledge it needs, test it in a sandbox, and publish it through a
+versioned lifecycle.
+Agent Builder is one of the capabilities being announced inside Cisco Cloud Control Studio, the new part of Cisco Cloud Control built for
+customizing and extending the platform with custom agents.
+Cisco Blogs
+Share
+Read aloud Menu
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 2 ---
+A single view of every agent built or deployed in Agent Builder.
+Connect your tools
+Most IT organizations run a mix of Cisco and third-party tools. Tickets live in ServiceNow. DNS, DHCP and IPAM live in Infoblox or
+BlueCat. Incident management runs through PagerDuty. Documentation is spread across Confluence and other wikis. Each system holds part of
+the operational picture—and none of them hold all of it.
+Thatʼs why we unveiled Agent Builder, with more than 50 ecosystem integrations planned, so you can connect those systems directly to
+your agents. Native integrations are pre-built, validated, and configured through a guided flow. No custom code required. For systems without a
+native integration, Agent Builder supports Model Context Protocol (MCP), an open standard that lets AI agents securely access tools, data, and
+enterprise systems beyond Cisco. In the future, customers and partners will be able to build their own MCP connectors for any tool with an API.
+Once connected, a toolʼs data and actions are available to every authorized agent. Agents can pull context, correlate signals, and propose
+remediation, all from inside one investigation.
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 3 ---
+Extending AI agents to third-party tools through Model Context Protocol in Agent Builder.
+Build agents tailored to how you operate
+Build AI agents that fit the work your teams do every day, including agents for compliance audits, morning health checks, incident triage,
+configuration drift monitoring, and more.
+Customers also choose how each agent runs.
+Ambient agents operate continuously in Cisco Cloud Control. They monitor data, watch conditions, and act or alert when something happens. An
+ambient compliance agent, for example, checks device configurations against company policy on a daily schedule and generates a report.
+Operators do not need to be in a session. The agent works in the background and notifies the team when it completes or needs approval.
+Live agents are invoked during sessions in Cisco AI Canvas. They join active investigations alongside operators in real time, pulling context,
+correlating data, and proposing next steps as the work unfolds.By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 4 ---
+The two modes work together: ambient agents keep the environment monitored, and live agents step in when complex work needs extra
+reasoning. Together, they let teams use AI in the way that fits the work, whether that is monitoring quietly in the background or thinking alongside
+operators during a live investigation.
+Encode operational knowledge as skills
+Agent Builder turns runbooks, SOPs, and procedures into reusable skills that agents can call when relevant. A skill might be a DNS troubleshooting
+procedure, a firewall validation step, or a compliance review checklist.
+Because skills are reusable, any authorized agent can call them, turning institutional knowledge into something that the platform actively uses, not
+something buried in documents. Ovder time, your teamʼs standards shape how AI agents operate.
+Governed, observed, and evaluated
+Building an agent is the easy part. Trusting one in production takes governance, observability, evaluation, and a clean lifecycle. Cloud Control
+Studio delivers all four.
+Governance. Every agent runs under policy enforcement through
+Cisco AI Defense. Customers define what each agent can do, when
+it can act, and what actions require human approval. Agents
+propose. Humans approve before anything changes in production.
+Observability. Splunk AI Agent Monitoring captures
+every agentʼs execution, including outcome, duration, trigger, and a
+full trace of every LLM call, tool invocation, and skill execution.
+Operators can drill into exactly what happened and why.
+Evaluation. Splunk AI Agent Monitoring, powered by Galileo,
+scores agent outputs for accuracy, relevance, and correctness. It
+flags hallucinations and detects drift when agent quality degrades
+over time.
+Lifecycle. Agents go through a draft, sandbox, and publish
+lifecycle. Builders verify behavior against real data before agents
+touch production. Version control tracks every change, with full
+rollback support.
+The result is an agent platform that is auditable, traceable, and trusted in production.
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 5 ---
+Get started
+Agent Builder in Cisco Cloud Control Studio is being announced at Cisco Live. If you are at the conference, come see it at the booth or in sessions
+throughout the week.
+If you are not attending, visit Cisco Cloud Control webpage to stay up to date on the latest product innovations and partner integrations.
+Thank you to: Airtable, Aisera, AWS, Anomali, AppOmni, Arctic Wolf, Atlassian, Automation Anywhere, Auvik, BigID, BlueCat, Coralogix, Corelight,
+Cycode, Cyware, Datadog, Elotl, Endace, Forward Networks, Gluware, Google Cloud including Wiz, Harmonic Security, InfluxData, Infoblox, IP
+Fabric, Jamf, Komodor, Kong, Linear, Microsoft, NetBox Labs, NetBrain, NinjaOne, Okta, Oligo, Opal Security, Ordr, PagerDuty, Ping Identity, Port,
+PowerDMARC, Qualys, RunReveal, Slack from Salesforce, Semgrep, ServiceNow, Snowflake, SpecterOps, Tenable, Token Security, Torq, Upwind,
+Workato
+Some products or features described may be in various stages of development and offered on a when-and-if available basis.
+Authors
+Vimarsh Puneet
+Director of Product
+Management
+AI Software &
+Platform
+Naveen Elango
+Senior Product Manager
+AI Software & Platform
+Tags: AI SecurityArtificial Intelligence (AI)
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 6 ---
+Quick Links -
+Resources and Legal -
+©2026 Cisco Systems, Inc.
+About Cisco
+Contact Us
+Careers
+Connect with a partner
+Feedback
+Help
+Terms & Conditions
+Privacy
+Cookies / Do not sell or share my personal data
+Accessibility
+Trademarks
+Supply Chain Transparency
+Newsroom
+Sitemap
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings

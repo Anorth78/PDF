@@ -1,0 +1,88 @@
+--- PAGE 1 ---
+Cisco Blogs Artificial Intelligence - AI
+June 2, 2026 Leave a Comment
+Artificial Intelligence - AI
+From an Idea to a Live App on Cisco,
+in Minutes
+2 min read
+Travis Sugarbaker
+App Builder brings OpenAI Codex directly into Cisco Cloud Control, so customers and partners can build customized applications in natural
+language for their unique environments.
+Cisco was OpenAIʼs earliest design partner for Codex, an agentic platform that helps you build and ship with AI. Since then, our engineering teams
+have used it daily to accelerate our own product development, building the developer foundations behind this announcement in just four monthsʼ
+time. We are now bringing that same speed and capability set to our own customers and partners so they can build their own applications on top
+of the Cisco platform to customize it to their exact needs. Meet App Builder, where users can now use Codex directly inside of Cisco Cloud
+Control, powered by the Codex SDK.
+Build in plain language
+App Builder is simple to describe. Tell it what you want to be able to do in plain language, and it builds the application, lets you preview it, and
+ships it as a working app that runs directly inside Cisco Cloud Control Studio, the new part of Cisco Cloud Control built for customizing and
+extending the platform with applications and workflows. There is no infrastructure to provision, no build tools to install, and no plumbing to learn.
+Cisco Blogs
+Share
+Read aloud Menu
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 2 ---
+More than code
+Most AI coding tools stop at code generation. They hand you files and leave the hard part to you: getting something to run and reach people. App
+Builder is different.
+An application built here is “born deployed”. It is automatically authenticated with Cisco identity, registered, hosted, and ready to distribute the
+moment it is created. From a single description to a running, governed enterprise application, with nothing left to wire up.
+It also explains why building here is not the same as pointing a coding agent at the problem yourself. The agent is the engine. App Builder is
+everything Cisco puts around it. On its own, a coding agent produces code that knows nothing about Ciscoʼs identity, services, hosting, or how to
+make something run and distributable inside the platform. Inside App Builder, the agent has all of it from the start, so what comes out is not a
+project to finish. It is an app that works.
+What you can build
+The range is wide. Among the things customers and partners can build:
+Custom operational views. A network operations team builds one
+screen that brings the alerts, device health, and the few fix-it
+actions it reaches for during an outage into a single place, instead
+of clicking across separate consoles.
+Data and tools for the AI assistant. A team connects its own
+change-approval workflow to Ciscoʼs AI assistant, so an engineer
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 3 ---
+can say “roll out this config change to the lab switches” and have
+the assistant route it for approval and apply it once it clears.
+Unified integrations. A team pulls a third-party data source into
+Cloud Control or pushes a Cisco signal out to an external system,
+instead of wiring up one-off connections by hand.
+Partner-built customer experiences. A partner builds a branded
+experience that runs directly in Cloud Control, extending Ciscoʼs
+platform to serve its own customers.
+Why it matters
+We built App Builder on a simple conviction: the distance between an idea and a working product should be measured in days, not quarters. That
+speed now belongs to the customers and partners who build on Cisco.
+Some products or features described may be in various stages of development and offered on a when-and-if available basis.
+Authors
+Travis Sugarbaker
+Principal Product
+Management Engineer
+AI Software and Platform
+Tags: AI SecurityArtificial Intelligence (AI)
+Quick Links -
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings
+
+--- PAGE 4 ---
+Resources and Legal -
+©2026 Cisco Systems, Inc.
+About Cisco
+Contact Us
+Careers
+Connect with a partner
+Feedback
+Help
+Terms & Conditions
+Privacy
+Cookies / Do not sell or share my personal data
+Accessibility
+Trademarks
+Supply Chain Transparency
+Newsroom
+Sitemap
+By continuing to use our website, you acknowledge the use of cookies.
+Privacy Statement Change Settings

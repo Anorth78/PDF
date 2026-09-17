@@ -1,0 +1,411 @@
+--- PAGE 1 ---
+Cisco Agentic Ops 
+Solution Overview 
+for Partners
+
+--- PAGE 2 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Networking Security Compute Observability Collaboration
+
+--- PAGE 3 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+How do we evolve so
+humans and agents 
+can work together?
+
+--- PAGE 4 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Cisco Cloud Control
+AgenticOps
+Unified cross-domain platform
+
+--- PAGE 5 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Cisco Cloud Control
+Cross-domain
+telemetry
+Purpose-built
+ models
+Trusted 
+agents
+AgenticOps
+
+--- PAGE 6 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Cross
+-
+Domain 
+Telemetry
+Products.
+Platform Services.
+Agents.
+One destination for all domains
+Agents
+
+--- PAGE 7 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Meraki
+Catalyst Center
+Catalyst SD-WAN
+ThousandEyes
+Secure Firewall
+Secure Access
+Splunk Cloud
+Nexus Dashboard
+Nexus Hyperfabric
+Intersight
+Collaboration Control Hub
+IQ
+Cross
+-
+Domain 
+Telemetry
+Agents
+
+--- PAGE 8 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Platform 
+Services
+Unified Identity
+Unified Inventory
+Unified Topology
+Event Correlation
+Agents
+
+--- PAGE 9 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Unified Identity
+Unified Inventory
+Unified Topology
+Event Correlation
+One sign on, one time.
+anorth@cisco.com
+
+--- PAGE 10 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+All your assets in one place.
+Unified Identity
+Unified Inventory
+Unified Topology
+Event Correlation
+
+--- PAGE 11 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Topology unified in one view.
+Unified Identity
+Unified Inventory
+Unified Topology
+Event Correlation
+
+--- PAGE 12 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+From visibility to action.
+Unified Identity
+Unified Inventory
+Unified Topology
+Event Correlation
+
+--- PAGE 13 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+“Why is site-7 WAN flaky?”
+Networking domain expertise
+“Summarize this RFP”
+General reasoning, long context
+Cisco Domain Models
+Networking · Security · Applications
+Best for: Infrastructure-specific expertise
+Process
+Purpose
+-
+Built Models
+Matching the right intelligence to the right problem
+“Classify this packet”
+Narrow, high-throughput task
+Task-Specific Models
+Purpose-Built · Efficient
+Best for: Narrow, high-volume tasks
+Frontier Models
+GPT · Claude · Others
+Best for: Broad reasoning, general Q&A
+
+--- PAGE 14 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco 
+Agents
+Trusted Agents
+Working with live telemetry and model intelligence
+Secure
+Security telemetry and policy so every agent action 
+is inspected, authorized, and auditable by default.
+Everywhere
+Agents run where the work happens — on Cisco 
+hardware, software, and throughout the cloud.
+Smarter
+Agents reason against live telemetry and select the 
+right model for each task.
+
+--- PAGE 15 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Cloud Control
+Cross-domain
+telemetry
+Purpose-built
+ models
+Trusted 
+agents
+
+--- PAGE 16 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Cloud Control
+Cross-domain
+telemetry
+Purpose-built
+ models
+Trusted 
+agents
+AI Assistant
+ AI Canvas
+ Cloud Control 
+Studio
+
+--- PAGE 17 ---
+AI Assistant
+Ask about your 
+infrastructure, anywhere
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+
+--- PAGE 18 ---
+AI Canvas
+Controlled Availability 2026 
+The industry’s first agentic, 
+generative workspace for 
+cross-domain IT operations
+Deep Reasoning Mode
+Enterprise Memory
+Safe and Secure Operation
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Team Collaboration
+
+--- PAGE 19 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+AI Canvas surfaces cross-domain telemetry for agentic action
+Cisco products & beyond Correlate, reason, plan, act 
+Meraki
+Nexus
+Splunk
+ServiceNow
+AI Canvas
+Supervisor 
+Agents
+Meraki MCP
+Nexus MCP
+Splunk MCP
+ServiceNow MCP
+Product MCPs
+
+--- PAGE 20 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Generative UI
+A custom dashboard for every question
+AI Canvas builds the exact view you need, on the fly, 
+based on your context
+Widgets you can act on
+Widgets are interactive: hover for context, click in, 
+and drill down to investigate
+Live from your environment
+Widgets pull real-time data from your systems
+Turn off the noise 
+Focus on the information you need to resolve 
+incidents faster
+
+--- PAGE 21 ---
+"I have vendors 
+other than 
+Cisco."
+"My AI doesn't 
+know my 
+network."
+"I can't make 
+agents do what I 
+actually need."
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Enterprise networks are complex and multi-vendor
+
+--- PAGE 22 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Browse the marketplace
+Build your own agents
+Connect your own agents
+Cloud Control Studio
+
+--- PAGE 23 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+S E C U R I T Y
+C O L L A B O R A T I O N
+A I  &  C L O U D  
+I N F R A S T R U C T U R E
+C l o u d  
+C o n t r o l  
+S t u d i o
+A I  N A T I V E
+I D E N T I T Y ,  A C C E S S ,  
+D E V I C E  M A N A G E M E N T
+N E T W O R K
+M O N I T O R I N G  &  
+A U T O M A T I O N
+I T  S E R V I C E  
+M A N A G E M E N T
+I N F R A S T R U C T U R E  
+O B S E R V A B I L I T Y
+&  A U T O M A T I O N
+Note: Third-party logos shown here represent 
+integrations that are in progress as of the 
+publication of this content.
+Integrating your 
+ecosystem
+
+--- PAGE 24 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Included with subscription licenses for eligible 
+Cisco products.
+Included in both Essential and Advantage 
+tiers. 
+No new license.
+No new cost.
+Applies to Controlled Availability period starting June 2, 2026. Cisco reserves the right to adjust monetization, pricing, and packaging in the future.  Usage and rate limits may apply.
+Base usage and base rate limits are included.
+
+--- PAGE 25 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Shift from selling to co-creating. 
+Build custom agents — your unique IP — to bring your vendor 
+ecosystem together and help your customers adopt agentic 
+ops across their entire estate
+Boost operational KPIs.
+Improve MTTD, MTTR, and Service Availability with agent-
+assisted, collaborative cross-domain troubleshooting
+Grow & accelerate multi-domain deals. 
+Unified, cross-domain agentic ops adds differentiated value 
+to your offers
+A unified, governed path to agentic IT. 
+One platform for management, visibility, and governance — 
+with an easy on-ramp to AI-driven operations
+What’s in it for you
+& your customers?
+
+--- PAGE 26 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Cisco IQ + Cloud Control
+Cisco IQ
+AI-powered services
+Cisco Cloud Control
+AI-powered operations
+
+--- PAGE 27 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Cisco IQ + Cloud Control
+Cisco IQ
+AI-powered services
+Cisco Cloud Control
+AI-powered operations
+For planners & decision makers
+• Support & professional services
+• Lifecycle visibility & planning
+• Compliance assessments
+• Benchmarking & risk 
+prioritization
+• Expert-informed guidance
+
+--- PAGE 28 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Cisco IQ + Cloud Control
+Cisco Cloud Control
+AI-powered operations
+• Day-to-day operations
+• Live, cross-domain telemetry 
+• AI Canvas collaborative 
+workspace
+• Real-time action & remediation
+• Automated workflows
+For operators & daily drivers
+Cisco IQ
+AI-powered services
+• Support & professional services
+• Lifecycle visibility & planning
+• Compliance assessments
+• Benchmarking & risk 
+prioritization
+• Expert-informed guidance
+For planners & decision makers
+
+--- PAGE 29 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Cisco IQ + Cloud Control
+Unified asset 
+management
+Cross-platform 
+workflows
+Cisco Cloud Control
+AI-powered operations
+Cisco IQ
+AI-powered services
+For operators & daily driversFor planners & decision makers
+• Support & professional services
+• Lifecycle visibility & planning
+• Compliance assessments
+• Benchmarking & risk 
+prioritization
+• Expert-informed guidance
+• Day-to-day operations
+• Live, cross-domain telemetry 
+• AI Canvas collaborative 
+workspace
+• Real-time action & remediation
+• Automated workflows
+
+--- PAGE 30 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Sales resources and live demo now available!
+Sales Resources
+salesresources.cisco.com/
+Link/Content/DCPRq9gcF
+P6PF8QTWQFJm3MF47PB
+Management Plane Consolidation
+Addressing the silo problem
+Agentic Operations 
+Cross-domain troubleshooting and correlation
+Lifecycle Management
+Unified inventory, topology, licensing, alerting
+Demo Experience
+dcloud2.cisco.com/instant
+demo/agenticops-with-
+cisco-cloud-control
+
+--- PAGE 31 ---
+Thank you

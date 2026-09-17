@@ -7,182 +7,77 @@ Use library.json for structured metadata.
 Use the linked text_url for extracted document text.
 Use the linked pdf_url for the original PDF.
 
-Document count: 25
-Generated: 2026-09-16T15:20:11.068991+00:00
+Document count: 10
+Generated: 2026-09-17T16:39:42.694549+00:00
 
 ## Documents
 
-### ai 1 agenda   mc v1 en US
-- ID: ai-1-agenda-mc-v1-en-us
-- Original filename: ai_1_agenda_-_mc_v1-en-US.pdf
-- PDF: pdfs/ai-1-agenda-mc-v1-en-us.pdf
-- Extracted text: text/ai-1-agenda-mc-v1-en-us.txt
-- Pages: 27
+### Agent Builder in Cloud Control Studio  A new way to extend and customize Cisco Cloud Control   Cisco Blogs
+- ID: agent-builder-in-cloud-control-studio-a-new-way-to-extend-and-customize-cisco-cloud-control-cisco-blogs
+- Original filename: Agent Builder in Cloud Control Studio_ A new way to extend and customize Cisco Cloud Control - Cisco Blogs.pdf
+- PDF: pdfs/agent-builder-in-cloud-control-studio-a-new-way-to-extend-and-customize-cisco-cloud-control-cisco-blogs.pdf
+- Extracted text: text/agent-builder-in-cloud-control-studio-a-new-way-to-extend-and-customize-cisco-cloud-control-cisco-blogs.txt
+- Pages: 6
 
-### Cisco Calling
-- ID: cisco-calling
-- Original filename: Cisco Calling.pdf
-- PDF: pdfs/cisco-calling.pdf
-- Extracted text: text/cisco-calling.txt
-- Pages: 101
+### BDM   Cisco Cloud Control & AI Canvas
+- ID: bdm-cisco-cloud-control-ai-canvas
+- Original filename: BDM - Cisco Cloud Control & AI Canvas.pdf
+- PDF: pdfs/bdm-cisco-cloud-control-ai-canvas.pdf
+- Extracted text: text/bdm-cisco-cloud-control-ai-canvas.txt
+- Pages: 37
 
-### Cisco Meeting Servers
-- ID: cisco-meeting-servers
-- Original filename: Cisco Meeting Servers.PDF
-- PDF: pdfs/cisco-meeting-servers.pdf
-- Extracted text: text/cisco-meeting-servers.txt
-- Pages: 32
+### Cisco Agentic Ops Solution Preview v0.1 (1)
+- ID: cisco-agentic-ops-solution-preview-v0-1-1
+- Original filename: Cisco Agentic Ops Solution Preview v0.1 (1).pdf
+- PDF: pdfs/cisco-agentic-ops-solution-preview-v0-1-1.pdf
+- Extracted text: text/cisco-agentic-ops-solution-preview-v0-1-1.txt
+- Pages: 31
 
-### Cisco UCM, OnPremises and Dedicated Instance from on premises to the cloud and all things in between CLS 2267 slides
-- ID: cisco-ucm-onpremises-and-dedicated-instance-from-on-premises-to-the-cloud-and-all-things-in-between-cls-2267-slides
-- Original filename: Cisco UCM, OnPremises and Dedicated Instance from on-premises to the cloud and all things in between CLS-2267-slides.pdf
-- PDF: pdfs/cisco-ucm-onpremises-and-dedicated-instance-from-on-premises-to-the-cloud-and-all-things-in-between-cls-2267-slides.pdf
-- Extracted text: text/cisco-ucm-onpremises-and-dedicated-instance-from-on-premises-to-the-cloud-and-all-things-in-between-cls-2267-slides.txt
-- Pages: 122
+### Cisco AI Canvas is here  the workspace for agentic operations   Cisco Blogs
+- ID: cisco-ai-canvas-is-here-the-workspace-for-agentic-operations-cisco-blogs
+- Original filename: Cisco AI Canvas is here_ the workspace for agentic operations - Cisco Blogs.pdf
+- PDF: pdfs/cisco-ai-canvas-is-here-the-workspace-for-agentic-operations-cisco-blogs.pdf
+- Extracted text: text/cisco-ai-canvas-is-here-the-workspace-for-agentic-operations-cisco-blogs.txt
+- Pages: 6
 
-### Cisco UCM 15 TDM
-- ID: cisco-ucm-15-tdm
-- Original filename: Cisco_UCM_15_TDM.pdf
-- PDF: pdfs/cisco-ucm-15-tdm.pdf
-- Extracted text: text/cisco-ucm-15-tdm.txt
-- Pages: 53
+### Cisco Cloud Control with AI Canvas FAQs
+- ID: cisco-cloud-control-with-ai-canvas-faqs
+- Original filename: Cisco Cloud Control with AI Canvas FAQs.pdf
+- PDF: pdfs/cisco-cloud-control-with-ai-canvas-faqs.pdf
+- Extracted text: text/cisco-cloud-control-with-ai-canvas-faqs.txt
+- Pages: 41
 
-### CMS Architecture and Troubleshooting   PPT
-- ID: cms-architecture-and-troubleshooting-ppt
-- Original filename: CMS Architecture and Troubleshooting - PPT.pdf
-- PDF: pdfs/cms-architecture-and-troubleshooting-ppt.pdf
-- Extracted text: text/cms-architecture-and-troubleshooting-ppt.txt
-- Pages: 111
+### Cisco Cloud Control  The Secure Harness for the Agentic Era   Cisco Blogs
+- ID: cisco-cloud-control-the-secure-harness-for-the-agentic-era-cisco-blogs
+- Original filename: Cisco Cloud Control_ The Secure Harness for the Agentic Era - Cisco Blogs.pdf
+- PDF: pdfs/cisco-cloud-control-the-secure-harness-for-the-agentic-era-cisco-blogs.pdf
+- Extracted text: text/cisco-cloud-control-the-secure-harness-for-the-agentic-era-cisco-blogs.txt
+- Pages: 9
 
-### CMS
-- ID: cms
-- Original filename: CMS.pdf
-- PDF: pdfs/cms.pdf
-- Extracted text: text/cms.txt
-- Pages: 102
+### Cisco Deep Network Model  Purpose built intelligence for networking   Cisco Blogs
+- ID: cisco-deep-network-model-purpose-built-intelligence-for-networking-cisco-blogs
+- Original filename: Cisco Deep Network Model_ Purpose built intelligence for networking - Cisco Blogs.pdf
+- PDF: pdfs/cisco-deep-network-model-purpose-built-intelligence-for-networking-cisco-blogs.pdf
+- Extracted text: text/cisco-deep-network-model-purpose-built-intelligence-for-networking-cisco-blogs.txt
+- Pages: 9
 
-### CST UC Release 15
-- ID: cst-uc-release-15
-- Original filename: CST-UC_Release_15.pdf
-- PDF: pdfs/cst-uc-release-15.pdf
-- Extracted text: text/cst-uc-release-15.txt
-- Pages: 170
+### From an Idea to a Live App on Cisco, in Minutes   Cisco Blogs
+- ID: from-an-idea-to-a-live-app-on-cisco-in-minutes-cisco-blogs
+- Original filename: From an Idea to a Live App on Cisco, in Minutes - Cisco Blogs.pdf
+- PDF: pdfs/from-an-idea-to-a-live-app-on-cisco-in-minutes-cisco-blogs.pdf
+- Extracted text: text/from-an-idea-to-a-live-app-on-cisco-in-minutes-cisco-blogs.txt
+- Pages: 4
 
-### CUC15 DataSheet
-- ID: cuc15-datasheet
-- Original filename: CUC15_DataSheet.pdf
-- PDF: pdfs/cuc15-datasheet.pdf
-- Extracted text: text/cuc15-datasheet.txt
-- Pages: 8
+### Inside Cisco Cloud Control  Building the AI Native Platform of Record for Cross Domain Operations   Cisco Blogs
+- ID: inside-cisco-cloud-control-building-the-ai-native-platform-of-record-for-cross-domain-operations-cisco-blogs
+- Original filename: Inside Cisco Cloud Control_ Building the AI-Native Platform of Record for Cross-Domain Operations - Cisco Blogs.pdf
+- PDF: pdfs/inside-cisco-cloud-control-building-the-ai-native-platform-of-record-for-cross-domain-operations-cisco-blogs.pdf
+- Extracted text: text/inside-cisco-cloud-control-building-the-ai-native-platform-of-record-for-cross-domain-operations-cisco-blogs.txt
+- Pages: 9
 
-### CUCM troubleshooting
-- ID: cucm-troubleshooting
-- Original filename: CUCM troubleshooting.pdf
-- PDF: pdfs/cucm-troubleshooting.pdf
-- Extracted text: text/cucm-troubleshooting.txt
-- Pages: 60
-
-### Design and Deployment of Unified Communication Services
-- ID: design-and-deployment-of-unified-communication-services
-- Original filename: Design_and-Deployment_of_Unified_Communication_Services.pdf
-- PDF: pdfs/design-and-deployment-of-unified-communication-services.pdf
-- Extracted text: text/design-and-deployment-of-unified-communication-services.txt
-- Pages: 173
-
-### Expressway certificates
-- ID: expressway-certificates
-- Original filename: Expressway certificates.pdf
-- PDF: pdfs/expressway-certificates.pdf
-- Extracted text: text/expressway-certificates.txt
-- Pages: 63
-
-### Expressway
-- ID: expressway
-- Original filename: Expressway.pdf
-- PDF: pdfs/expressway.pdf
-- Extracted text: text/expressway.txt
-- Pages: 77
-
-### Jabber to WebexApp
-- ID: jabber-to-webexapp
-- Original filename: Jabber_to_WebexApp.pdf
-- PDF: pdfs/jabber-to-webexapp.pdf
-- Extracted text: text/jabber-to-webexapp.txt
-- Pages: 174
-
-### Learning and Support Resources   CUCM
-- ID: learning-and-support-resources-cucm
-- Original filename: Learning and Support Resources - CUCM.pdf
-- PDF: pdfs/learning-and-support-resources-cucm.pdf
-- Extracted text: text/learning-and-support-resources-cucm.txt
-- Pages: 5
-
-### On Prem Content Strategy
-- ID: on-prem-content-strategy
-- Original filename: On-Prem-Content-Strategy.pdf
-- PDF: pdfs/on-prem-content-strategy.pdf
-- Extracted text: text/on-prem-content-strategy.txt
-- Pages: 5
-
-### One Cisco Deck
-- ID: one-cisco-deck
-- Original filename: One-Cisco-Deck.pdf
-- PDF: pdfs/one-cisco-deck.pdf
-- Extracted text: text/one-cisco-deck.txt
-- Pages: 19
-
-### Phone migration
-- ID: phone-migration
-- Original filename: Phone migration.pdf
-- PDF: pdfs/phone-migration.pdf
-- Extracted text: text/phone-migration.txt
-- Pages: 85
-
-### SIP troubleshooting
-- ID: sip-troubleshooting
-- Original filename: SIP-troubleshooting.pdf
-- PDF: pdfs/sip-troubleshooting.pdf
-- Extracted text: text/sip-troubleshooting.txt
-- Pages: 144
-
-### Strategy Ropadmap
-- ID: strategy-ropadmap
-- Original filename: Strategy-Ropadmap.pdf
-- PDF: pdfs/strategy-ropadmap.pdf
-- Extracted text: text/strategy-ropadmap.txt
-- Pages: 98
-
-### UCM15 Data Sheet
-- ID: ucm15-data-sheet
-- Original filename: UCM15 Data Sheet.pdf
-- PDF: pdfs/ucm15-data-sheet.pdf
-- Extracted text: text/ucm15-data-sheet.txt
-- Pages: 8
-
-### Unified CM Security Architecture
-- ID: unified-cm-security-architecture
-- Original filename: Unified CM Security Architecture.pdf
-- PDF: pdfs/unified-cm-security-architecture.pdf
-- Extracted text: text/unified-cm-security-architecture.txt
-- Pages: 108
-
-### Upgrading to CUCM version 15
-- ID: upgrading-to-cucm-version-15
-- Original filename: Upgrading to CUCM version 15.pdf
-- PDF: pdfs/upgrading-to-cucm-version-15.pdf
-- Extracted text: text/upgrading-to-cucm-version-15.txt
-- Pages: 90
-
-### Webex Cloud Connected UC   BDM
-- ID: webex-cloud-connected-uc-bdm
-- Original filename: Webex Cloud Connected UC - BDM.pdf
-- PDF: pdfs/webex-cloud-connected-uc-bdm.pdf
-- Extracted text: text/webex-cloud-connected-uc-bdm.txt
-- Pages: 48
-
-### Webex Cloud Connected UC TDM Presentation
-- ID: webex-cloud-connected-uc-tdm-presentation
-- Original filename: Webex Cloud-Connected UC TDM Presentation.pdf
-- PDF: pdfs/webex-cloud-connected-uc-tdm-presentation.pdf
-- Extracted text: text/webex-cloud-connected-uc-tdm-presentation.txt
-- Pages: 251
+### TDM   Cisco Cloud Control & AI Canvas
+- ID: tdm-cisco-cloud-control-ai-canvas
+- Original filename: TDM - Cisco Cloud Control & AI Canvas.pdf
+- PDF: pdfs/tdm-cisco-cloud-control-ai-canvas.pdf
+- Extracted text: text/tdm-cisco-cloud-control-ai-canvas.txt
+- Pages: 72
