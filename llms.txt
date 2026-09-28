@@ -7,7 +7,7 @@ START HERE: use library.json (or api/documents.json) to enumerate every document
 Do not rely on search-engine indexing or directory browsing.
 For each document, fetch its extracted text_url for searchable text; use pdf_url for the original PDF.
 
-Document count: 10
+Document count: 15
 
 ## Machine-readable resources
 - Catalogue: https://anorth78.github.io/PDF/library.json
@@ -21,15 +21,15 @@ Document count: 10
 - Text: https://anorth78.github.io/PDF/text/agent-builder-in-cloud-control-studio-a-new-way-to-extend-and-customize-cisco-cloud-control-cisco-blogs.txt
 - PDF: https://anorth78.github.io/PDF/pdfs/agent-builder-in-cloud-control-studio-a-new-way-to-extend-and-customize-cisco-cloud-control-cisco-blogs.pdf
 
+### AI Canvas Transcript
+- ID: ai-canvas-transcript
+- Text: https://anorth78.github.io/PDF/text/ai-canvas-transcript.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ai-canvas-transcript.pdf
+
 ### BDM   Cisco Cloud Control & AI Canvas
 - ID: bdm-cisco-cloud-control-ai-canvas
 - Text: https://anorth78.github.io/PDF/text/bdm-cisco-cloud-control-ai-canvas.txt
 - PDF: https://anorth78.github.io/PDF/pdfs/bdm-cisco-cloud-control-ai-canvas.pdf
-
-### Cisco Agentic Ops Solution Preview v0.1 (1)
-- ID: cisco-agentic-ops-solution-preview-v0-1-1
-- Text: https://anorth78.github.io/PDF/text/cisco-agentic-ops-solution-preview-v0-1-1.txt
-- PDF: https://anorth78.github.io/PDF/pdfs/cisco-agentic-ops-solution-preview-v0-1-1.pdf
 
 ### Cisco AI Canvas is here  the workspace for agentic operations   Cisco Blogs
 - ID: cisco-ai-canvas-is-here-the-workspace-for-agentic-operations-cisco-blogs
@@ -51,6 +51,16 @@ Document count: 10
 - Text: https://anorth78.github.io/PDF/text/cisco-deep-network-model-purpose-built-intelligence-for-networking-cisco-blogs.txt
 - PDF: https://anorth78.github.io/PDF/pdfs/cisco-deep-network-model-purpose-built-intelligence-for-networking-cisco-blogs.pdf
 
+### Cisco Live Keynote Transcript
+- ID: cisco-live-keynote-transcript
+- Text: https://anorth78.github.io/PDF/text/cisco-live-keynote-transcript.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cisco-live-keynote-transcript.pdf
+
+### Cloud Control Partner Enablement Plan
+- ID: cloud-control-partner-enablement-plan
+- Text: https://anorth78.github.io/PDF/text/cloud-control-partner-enablement-plan.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cloud-control-partner-enablement-plan.pdf
+
 ### From an Idea to a Live App on Cisco, in Minutes   Cisco Blogs
 - ID: from-an-idea-to-a-live-app-on-cisco-in-minutes-cisco-blogs
 - Text: https://anorth78.github.io/PDF/text/from-an-idea-to-a-live-app-on-cisco-in-minutes-cisco-blogs.txt
@@ -60,6 +70,21 @@ Document count: 10
 - ID: inside-cisco-cloud-control-building-the-ai-native-platform-of-record-for-cross-domain-operations-cisco-blogs
 - Text: https://anorth78.github.io/PDF/text/inside-cisco-cloud-control-building-the-ai-native-platform-of-record-for-cross-domain-operations-cisco-blogs.txt
 - PDF: https://anorth78.github.io/PDF/pdfs/inside-cisco-cloud-control-building-the-ai-native-platform-of-record-for-cross-domain-operations-cisco-blogs.pdf
+
+### Learning Map
+- ID: learning-map
+- Text: https://anorth78.github.io/PDF/text/learning-map.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/learning-map.pdf
+
+### Partner Summit   Cisco Cloud Control Executive Brief
+- ID: partner-summit-cisco-cloud-control-executive-brief
+- Text: https://anorth78.github.io/PDF/text/partner-summit-cisco-cloud-control-executive-brief.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/partner-summit-cisco-cloud-control-executive-brief.pdf
+
+### Specialist Master Transcript
+- ID: specialist-master-transcript
+- Text: https://anorth78.github.io/PDF/text/specialist-master-transcript.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/specialist-master-transcript.pdf
 
 ### TDM   Cisco Cloud Control & AI Canvas
 - ID: tdm-cisco-cloud-control-ai-canvas

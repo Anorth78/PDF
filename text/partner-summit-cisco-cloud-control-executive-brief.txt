@@ -1,0 +1,639 @@
+--- PAGE 1 ---
+Cisco Cloud Control  |  Partner Summit Executive Talk Track    Cisco Internal 
+Cisco Internal  ·  Page 1 
+Cisco Confidential 
+Cisco Cloud Control — Partner Summit Messaging Guide 
+What this is: An internal messaging guide for Cisco speakers and for the teams working the showcase and demo 
+areas. It is reference material to prepare from, not a script to be read. 
+Audience: Mixed partner executive audience — C-level, practice and business owners, sales leadership 
+Purpose: What's in it for partners — and what we're asking them to do about it 
+Status: Post CA. U.S. general availability, August 25, 2026 
+Messaging authority: GTM Messaging - Cloud Control with AI Canvas (Cisco Cloud Control Messaging Guide, 
+September 2026 — pending final approval) 
+Partner economics: The Partner Opportunity with Cisco Cloud Control - PSOAI-1825 (Cisco Live 2026 Las Vegas) 
+Partner Value Proposition and GA Announcement: Partner Value — Cisco Cloud Control and the U.S. general 
+availability announcement (Cisco Blogs, August 25, 2026) 
+How to use this document. Blockquotes are the argument written out in full — lift the language, then say it in 
+your own words. Everything else is direction for the speaker. Start with the Executive Brief, which is the 
+distributable one-page summary and the Hot Topics submission; Partner value on a page is the speaker's version 
+of the same argument. Whatever you cut, keep Beat 3 and Beat 8. 
+Executive Brief — Cisco Cloud Control 
+The Strategic Context: The Operating Model is Changing 
+Customers' work is growing faster than the teams they can staff for it, and product-by-product management 
+no longer scales. Cisco Cloud Control introduces a unified, AI-native operating model — AgenticOps — where 
+people and AI agents work across product boundaries under clear human accountability. It aggregates the 
+controllers customers already run rather than replacing them. 
+Where we are: GA in the United States since August 25, 2026 — more than 300 customers in production, 
+and a global waitlist that passed 5,000 before launch. This is a deployment conversation, not a launch 
+announcement. 
+Value to the Customer: Unified, AI-Native Operations at Scale 
+• Structural Advantage: Alerts aggregated and correlated, cross-domain visibility, and AI-assisted 
+investigation across Networking, Collaboration, Compute, Security, Observability, and Services — 
+while each product keeps its specialized controls. 
+• Rapid Resolution: AI Canvas puts specialists and AI agents in one multiplayer workspace. In a live 
+session, a global supply chain software company resolved in under ten minutes what had taken over 
+ten hours. 
+• No New License, No New Cost: Included in the Essential and Advantage tiers of eligible Cisco 
+subscriptions, so customers start without a separate budget cycle or business case. 
+• The CIO Hook: "How quickly can you move from alert to resolution across your entire Cisco estate?"
+
+--- PAGE 2 ---
+Cisco Cloud Control  |  Partner Summit Executive Talk Track    Cisco Internal 
+Cisco Internal  ·  Page 2 
+Cisco Confidential 
+Value to the Partner: From Resale to Co-Creation and High-Margin Services 
+• Elevate the Conversation: "Why is this application slow" gets answered once across networking, 
+security, and observability — a question that today costs three teams a morning. That gets you in 
+earlier, with a broader buyer group. 
+• Recurring Revenue: Every connected product makes the platform worth more and gives you a reason 
+to expand the footprint. One identity and connection model also cuts your cost to serve. 
+• Operational Leverage: Operating-model advisory, managed agentic operations, workflow design and 
+workflow packs on Cisco Workflows, cross-domain expansion, and competitor platform migration — 
+priced against the six-stage adoption lifecycle for billable milestones. 
+• Where the Margin Sits: Cloud Control does not transact, so there is no platform margin. Revenue 
+comes from portfolio expansion, services, IP, and managed operations; incentives land on the 
+products that close alongside it. 
+• The Partner Hook: "Do you want to sell isolated products, or become indispensable by delivering 
+packaged operational outcomes and IP?" 
+What is Available Today (Day 1 Readiness) 
+• Cloud Control, AI Canvas, and Cisco Workflows are GA in the U.S., as SaaS from U.S.-hosted 
+infrastructure. On-premises, sovereign cloud, and air-gapped are not supported. 
+• Connected at GA: Meraki, Catalyst Center, Catalyst SD-WAN, Nexus Dashboard and Hyperfabric, 
+Intersight, Identity, Security Cloud Control, ThousandEyes, Splunk, Collaboration Control Hub, and 
+Cisco IQ. 
+• Third-party ecosystem: 60-plus integration commitments; ServiceNow, BlueCat, Infoblox, and 
+Atlassian are already built. 
+• Not yet: Cloud Control Studio is in Beta, and Marketplace partner terms are unannounced. Workflow 
+design and workflow packs on Cisco Workflows are sellable today. 
+• Onboarding is Cisco-led today. Cisco performs customer onboarding; partner-led onboarding is not 
+supported. The two motions to drive now are enabling your teams and making your own production IT 
+estate customer zero, with dCloud for hands-on training and demos. 
+Momentum 
+• Ecosystem growth against the 60-plus third-party integration commitments. 
+• Geographic expansion to EMEA and APJC as data sovereignty work completes. 
+• All Cisco product development is consolidated under a single leader, with Cloud Control as the top 
+architectural priority. 
+How Cisco Is Enabling Partners 
+• Role-based enablement for sales, architects, and services teams — SalesConnect for assets, dCloud for 
+labs and demos. 
+• A six-stage adoption lifecycle to price and package services against measurable milestones, plus 
+partner economics guidance. 
+• Direct co-development: early partner use cases and feedback influence what ships next.
+
+--- PAGE 3 ---
+Cisco Cloud Control  |  Partner Summit Executive Talk Track    Cisco Internal 
+Cisco Internal  ·  Page 3 
+Cisco Confidential 
+Partner Call to Action: Start the Journey 
+To lead the market, we ask our top partners to take these four steps: 
+1. Enable your teams on Cloud Control, AI Canvas, and Studio as one story — SalesConnect for assets, 
+dCloud for hands-on. 
+2. Be customer zero on your own production IT estate, so teams learn the platform by operating it at real 
+scale. 
+3. Qualify accounts and bring them to Sales for onboarding readiness — Cisco performs the onboarding 
+— and identify the next Cisco product area to connect. 
+4. Bring us a use case to co-develop, and pick the one runbook per account you would turn into an agent 
+first. 
+We are live in the U.S. and building this with you. The partners who move first won't just sell this platform; 
+they'll help shape it. 
+Partner value on a page 
+Start here. This is the executive summary, ordered around the partner business. Use it for a five-minute hallway 
+or showcase conversation. 
+"Cloud Control changes what you sell, not just what you resell. 
+It is included with eligible Cisco subscriptions — no new license, no new cost — so there is no margin on 
+the platform itself. Removing a separate purchase lowers the barrier to adoption. Partner revenue comes 
+from portfolio expansion, services, IP, and managed operations." 
+Revenue play What it means for your business 
+Lead the unified operations conversation Tool sprawl and manual coordination create a business-level 
+problem, bringing you into the account earlier and with a 
+broader buyer group. 
+Drive pull-through across the Cisco portfolio Every product a customer connects makes the platform 
+worth more to them — and gives you a reason to expand 
+the footprint. One connection model across domains also 
+takes cost out of your side of the deal. 
+Build services around agentic operations Professional services and workflow packs today; custom 
+apps, agents, and agent skills built from customer runbooks 
+as Studio access expands. 
+Extend value through the Marketplace Intended distribution route for partner IP. Partner access 
+and commercial terms have not been announced. 
+  
+The market is already moving this way. Cisco's 2026 Global AI Partner Study surveyed 1,702 partners across 30 
+countries. Consulting and advisory services jumped from 12% to 50% as a leading growth opportunity — the 
+largest increase of any category in the study. At the same time 92% of partners say customers have raised
+
+--- PAGE 4 ---
+Cisco Cloud Control  |  Partner Summit Executive Talk Track    Cisco Internal 
+Cisco Internal  ·  Page 4 
+Cisco Confidential 
+concerns about AI running costs, and only 43% say customer ROI is meeting or exceeding expectations. Customers 
+increasingly need operating advice alongside infrastructure. These services address that need. 
+Where to start. Cloud Control is a long-term platform play. Partner onboarding of customers is not supported 
+today, so the two motions to drive now are enablement and customer zero: enable your teams on SalesConnect 
+and dCloud, and onboard your own production IT estate so they learn the platform by operating it at real scale. 
+Then qualify customer accounts and bring them to Sales for onboarding readiness, which Cisco performs. The 
+services engagement builds as those customers move through adoption. 
+Beat 1 — Open on the operating-capacity question 
+Open cold. No agenda slide, no product introduction. Name the pressure your partners' customers live with, 
+so the room knows you understand the business they have been running. 
+"Your customers' work is growing faster than the teams they can staff for it. So how do they get more 
+operating capacity without more headcount? 
+Every one of you has answered that question. You've built the integrations, written the runbooks, staffed 
+the bridge calls, and absorbed the operational cost of Cisco's own fragmentation. You made it work. 
+Since August 25, that question has a different answer. Cisco Cloud Control is generally available in the 
+United States. More than 300 customers are onboarded and in production. The global waitlist passed 5,000 
+sign-ups before we shipped. 
+So this is a deployment conversation now. And that changes what your teams need to be ready for." 
+Why this matters: it starts with the customer's operating-capacity problem and recognizes the work partners 
+already do to manage fragmentation. 
+Beat 2 — Reframe: this is a change in the operating model, not a product launch 
+Partner executives invest behind a durable operating-model change, not an individual feature. 
+"I want to be precise about what shipped, because if you hear this as 'Cisco released another management 
+console,' you will underinvest. 
+The operating model for running IT has been rebuilt for the AI era, and Cisco calls it AgenticOps — people 
+and AI agents working together across product boundaries, with clear human accountability for what those 
+agents do. Cloud Control is the operational harness that puts it into practice: it gives agents trusted access 
+to infrastructure, live operational context, and explicit guardrails for action. 
+Seven layers make that real. AgenticOps is the operating model across all of them." 
+Name the layer model, then keep it brisk — name the layer, say what it does, move on. On stage, focus on 
+Platform Services, AI Canvas, and Cloud Control Studio; leave the full table in the annex for the technical 
+track. 
+Layer Role 
+Cisco product experiences Retain the specialized tools and controls for each IT domain. 
+Simple without losing the sophistication of the domain 
+controllers.
+
+--- PAGE 5 ---
+Cisco Cloud Control  |  Partner Summit Executive Talk Track    Cisco Internal 
+Cisco Internal  ·  Page 5 
+Cisco Confidential 
+Platform Services Foundational apps that deliver cross-domain services across 
+the environment — Identity, Inventory, and Topology; Cisco 
+Workflows, Licensing, and Policy. Cisco Workflows is an AI-
+powered network automation capability that turns 
+repetitive actions into deterministic outcomes. 
+Actions Aggregates, correlates, and prioritizes alerts with affected 
+assets and ownership. Issues can escalate into AI Assistant 
+or AI Canvas. 
+AI Assistant Supports focused investigation and action with an individual 
+operator anywhere in Cloud Control. 
+AI Canvas Gives specialists and AI agents a multiplayer workspace for 
+complex resolution. 
+Cloud Control Studio Builds custom operational apps and ambient agents from 
+natural-language descriptions. 
+Cloud Control Marketplace Opens Cloud Control to apps, agents, and integrations from 
+Cisco and third parties, and brings third-party context into 
+investigations. 
+  
+Terminology: IT domains are functional areas such as Networking and Security. Meraki, Intersight, and Nexus 
+Dashboard are Cisco products that contribute to those domains. Cloud Control unifies operations across products 
+and IT domains — it does not replace specialized product controls. 
+If someone pushes back — "does this replace the domain controllers I've built a practice on?" Answer it 
+immediately and plainly. Cloud Control does not flatten product depth. The product experiences still own 
+specialized management and execution. Cloud Control connects the work between them. Every hour of Meraki, 
+Intersight, or Nexus expertise your teams hold is still billable — it now plugs into a larger conversation. 
+Beat 3 — What's in it for partners: four ways to make money on this 
+Spend most of the time here. State the headline first, then cover the four revenue plays. 
+"So — what's in it for you. 
+The headline is that Cloud Control changes what you sell, not just what you resell. It gives you a platform-
+led motion: helping customers move from fragmented, product-by-product operations to a unified, AI-
+native operating model across Networking, Collaboration, Compute, Security, Observability, and Services. 
+There are four ways to make money on that, and they stack." 
+One — lead the unified operations conversation 
+"Cloud Control is a strategic entry point into accounts where the customer is losing time to tool sprawl, 
+operational silos, and manual coordination. What makes it a boardroom conversation is what unification 
+makes possible: a question like 'why is this application slow' gets answered once, across networking, 
+security, and observability together. Today that same question costs three teams a morning of
+
+--- PAGE 6 ---
+Cisco Cloud Control  |  Partner Summit Executive Talk Track    Cisco Internal 
+Cisco Internal  ·  Page 6 
+Cisco Confidential 
+reconstructing context. Cross-domain issues stop being coordination projects — and that gets you in front 
+of a different buyer, earlier, with a bigger problem to solve." 
+Two — drive pull-through across the entire Cisco portfolio 
+"Because Cloud Control is included with eligible Cisco subscriptions, you can use it to show customers what 
+the broader Cisco estate is actually worth when it works together. Every product a customer connects 
+makes the platform more valuable to them — and gives you a reason to expand the footprint. 
+It also takes cost out of your side of the deal. Bringing a customer onto several Cisco domains runs through 
+one identity and connection model instead of a separate onboarding project per product. A multi-domain 
+deal gets easier for you to land and cheaper for you to support, which is the difference between a bigger 
+deal and a better one. 
+Use it three ways: expand in accounts where Cisco owns only one or two product areas; displace 
+competitors in accounts where fragmentation is the pain point; and accelerate multi-product deals by 
+showing unified value from day one. 
+At GA, Cloud Control connects Meraki, Catalyst Center through Meraki Global Overview, Catalyst SD-WAN, 
+Nexus Dashboard, Nexus Hyperfabric, Intersight, Identity, Security Cloud Control, ThousandEyes, Splunk, 
+Collaboration Control Hub, and Cisco IQ and services. And it goes beyond Cisco. The third-party ecosystem 
+is backed by more than 60 integration commitments, spanning the categories customers already run: ITSM, 
+DNS/DHCP/IPAM, network monitoring, identity and device management, collaboration, AI and cloud 
+infrastructure, and infrastructure knowledge. The first of those — ServiceNow, BlueCat, Infoblox, and 
+Atlassian — are already built." 
+Programs and incentives. Cloud Control itself does not transact, so there is no incentive on the platform. 
+Incentive value lands on the products, subscriptions, and renewals that close alongside it, under existing 
+programs. Specific program names and rates are TBC with partner programs and should not be quoted until 
+confirmed. 
+Three — build services around agentic operations 
+"Partner margin begins with the operating model: AgenticOps advisory, managed agentic operations, 
+workflow design and workflow packs, integration design, and cross-domain expansion. Studio creates an 
+additional opportunity for custom apps and agents, but it remains in Beta. 
+AI Canvas is the multiplayer workspace inside Cloud Control — specialists and AI agents investigating a 
+cross-domain issue together, in parallel, in one place. For you it is where you sell resolution outcomes: 
+troubleshooting that cuts MTTR, with context that survives shifts and handoffs. 
+Cloud Control Studio is designed for custom apps, ambient agents, and agent skills built from customer 
+runbooks and organizational knowledge. It is in Beta. Cisco Workflows is generally available, so workflow 
+design and workflow packs are services you can deliver today. 
+Your services attach around the operating model, workflow and integration design, and managed 
+operations — followed by custom agent development as Studio access expands. These are partner-built 
+and partner-run services on top of the platform.
+
+--- PAGE 7 ---
+Cisco Cloud Control  |  Partner Summit Executive Talk Track    Cisco Internal 
+Cisco Internal  ·  Page 7 
+Cisco Confidential 
+A practical Studio opportunity is converting customer runbooks and specialist knowledge into reusable 
+agent skills. Partners can begin by identifying the accounts and runbooks with the clearest operational 
+value. 
+The four things you actually build — domain agents, workflow packs, integration apps, and design services 
+— are in Annex A2 if you want the taxonomy after the session." 
+Four — extend value through the Cisco Cloud Control Marketplace 
+"The Marketplace is intended to help customers discover and manage apps, agents, integrations, and skills 
+— and to provide a distribution route for partner IP. Cisco has not announced partner access or 
+commercial terms." 
+Then give them the customer-facing language for each footprint, so they can leave the room and use it: 
+Customer situation The line to use 
+One Cisco product area "Get value from the product area you already run — and 
+add cross-domain context as you expand." AI Canvas 
+delivers intelligent troubleshooting within the connected 
+product area. 
+Two or more Cisco product areas "Get more value from what you already own." Unified 
+operations across the existing footprint spanning IT 
+domains. No new license, no new cost. 
+Net-new IT leadership "A unified, governed path to agentic IT." One platform for 
+management, visibility, and governance, with a practical on-
+ramp to AI-driven operations. 
+Operators "From alert to resolution, faster." Alerts arrive with answers. 
+Agents investigate alongside the team. Context survives 
+shifts and handoffs. 
+  
+Land the beat with the reframe: 
+"That is the shift from resale to co-creation. You help customers consume Cisco innovation faster, integrate 
+the connected third-party systems they already run, and eventually package your own expertise as 
+repeatable, scalable offerings." 
+Beat 4 — Handle the money question before they ask it 
+Address the commercial model early. Cloud Control has no separate price, so explain where partner revenue 
+attaches. 
+"Cloud Control is included in the Essential and Advantage tiers of eligible Cisco subscriptions. There is no 
+separate Cloud Control transaction or platform margin. 
+Removing a separate purchase lowers the barrier to adoption. Partner revenue attaches to portfolio 
+expansion, services, IP, and managed operations.
+
+--- PAGE 8 ---
+Cisco Cloud Control  |  Partner Summit Executive Talk Track    Cisco Internal 
+Cisco Internal  ·  Page 8 
+Cisco Confidential 
+Customers can begin without a separate budget cycle or business case for Cloud Control. Connecting 
+products still has technical prerequisites, creating a paid readiness and implementation opportunity for 
+partners." 
+Then give them the packaging model, because "sell services" is not a plan until it maps to billable stages: 
+"You can build and price an engagement against the customer's progress through the Cloud Control 
+adoption lifecycle: Onboard, Implement, Use, Engage, Adopt, Optimize. Each stage is defined by 
+measurable customer activity — logins, tenants linked, features used, AI Assistant and AI Canvas queries, 
+workflows executed. That creates a measurable services structure with clear billable milestones." 
+Three horizons, said out loud. Only the first one is sellable today: 
+Horizon What you sell 
+Today Operating-model and AgenticOps advisory, managed agentic 
+operations, workflow design and workflow packs on Cisco 
+Workflows, integration design, cross-domain expansion, 
+competitor platform migration, adoption acceleration 
+Next Custom apps, agents, and agent skills as Cloud Control 
+Studio opens to partners 
+Marketplace Intended distribution route for partner apps, agents, 
+workflows, integrations, and reusable IP. Partner access, 
+monetization, certification, and listing models have not been 
+announced 
+  
+"So: recurring, high-margin services revenue today, and a path to scalable, platform-based IP through the 
+Marketplace." 
+Beat 5 — The conversation no competitor can have 
+Keep this short. Explain Cisco's differentiation without turning it into a feature comparison. 
+"For the first time, you can demonstrate the full Cisco portfolio working as one system — Networking, 
+Collaboration, Compute, Security, Observability, and Services. 
+Specialized depth in every IT domain. Each product retains the capabilities and controls its operators 
+depend on. 
+Cross-domain visibility across Cisco and third parties. First-party and third-party context in one 
+operational picture for operators and agents. 
+A governed path to AgenticOps. The operational harness gives agents defined access and authority under 
+human oversight. 
+Open by design. Integrations connect the systems customers already run, and the Marketplace is built to 
+extend that to apps and agents from Cisco and third parties. 
+Capabilities built for the organization. In Cloud Control Studio, you build custom apps and ambient agents; 
+agent skills draw from runbooks and specialist knowledge.
+
+--- PAGE 9 ---
+Cisco Cloud Control  |  Partner Summit Executive Talk Track    Cisco Internal 
+Cisco Internal  ·  Page 9 
+Cisco Confidential 
+No competing platform can offer that combination across Networking, Collaboration, Compute, Security, 
+Observability, and Services in one governed, agentic operating environment. This gives partners an opening 
+to lead the cross-domain operations conversation." 
+Beat 6 — Proof 
+An executive audience discounts capability claims and remembers customer outcomes. Choose two or three. 
+Prefer NTT DATA for a partner-heavy room and AMD when a named customer matters. 
+"This is already working in production. 
+From more than ten hours to under ten minutes. In a live session, a global supply chain and commerce 
+software company used AI Canvas to resolve a recurring site issue in under ten minutes. Their previous 
+manual investigations took over ten hours. 
+A direct answer with no custom code. At a leading investment management firm, a ThousandEyes 
+specialist answered a question with a single AI Canvas prompt — a question that had previously required a 
+custom Python workaround. 
+Problems found before users complain. At a higher education technology provider, a network engineer 
+now logs into Cloud Control daily and tells us it is already surfacing real issues before users can report 
+them. 
+NTT DATA, on the platform. Dilip Kumar, President and Global Head of Technology Solutions: Our joint 
+integration of Cisco AI Canvas and Cloud Control demonstrates the power of platform-level orchestration 
+across multi-domain environments. The flexibility and API-driven architecture enabled seamless integration 
+into our AI-native SDI Services model, accelerating operational efficiency and scalability. This reinforces the 
+strength of our partnership and sets a strong foundation for next-generation, outcome-driven services. 
+AMD, on the customer side. Hasmukh Ranjan, CIO and SVP: AMD uses Cisco technology, including Cloud 
+Control and Defense Claw, to streamline operations and focus resources on managing AI infrastructure. 
+AMD IT, in strong partnership with Cisco, is addressing key areas including tokenomics, AI compute, and 
+infrastructure innovation. This is the best time to be in IT, as hardware operators are back and 
+infrastructure is at the center of every enterprise's AI journey." 
+If the room includes technically skeptical leadership, add the model strategy — it is the answer to "is this just 
+a chatbot on top of my network?": 
+"And on accuracy: Cloud Control routes each task to the right intelligence. Cisco domain models where 
+infrastructure-specific expertise matters — the Cisco Deep Network Model for networking, the Deep Time 
+Series model for telemetry and trend analysis. Cisco task-specific models like Antares for narrow, high-
+volume work. Frontier models — GPT, Claude, and others — for broad reasoning and general questions. 
+Nobody else can bring a purpose-built network model to this problem, because nobody else has four 
+decades of network data to train it on. Accuracy improves without sacrificing speed." 
+Beat 7 — Set expectations clearly 
+Give partners an accurate account of availability, access, and regional limits. 
+"Here is the current availability and access model.
+
+--- PAGE 10 ---
+Cisco Cloud Control  |  Partner Summit Executive Talk Track    Cisco Internal 
+Cisco Internal  ·  Page 10 
+Cisco Confidential 
+GA is the United States, delivered as SaaS from U.S.-hosted infrastructure. EMEA and APJC follow as data 
+sovereignty work completes. On-premises, sovereign cloud, and air-gapped environments are not currently 
+supported. 
+Partner onboarding of customers is not supported today. Cisco runs customer onboarding itself. Sales 
+qualifies and prepares the customer, and Cisco confirms the dates. Your role is to qualify the account and 
+lead the readiness conversation — not to perform the onboarding. 
+So there are two motions to drive right now: get your teams enabled, and make your own production IT 
+estate customer zero. Everything else follows from those. 
+Be customer zero on your own production IT estate. That gives teams the device count, live traffic, and 
+cross-domain activity needed to experience the platform at real scale. Solution labs and center-of-
+excellence environments do not provide enough operational activity to demonstrate that value. 
+For hands-on training and demos, use dCloud. Use your own production estate to experience the platform 
+under real operating conditions. Training and customer-ready assets are on SalesConnect. 
+Cloud Control Studio is in Beta. Partners can identify candidate accounts and runbooks, but Studio-based 
+engagements cannot yet be committed. Marketplace partner access and commercial terms remain 
+unannounced. Cisco Workflows is generally available, so workflow design and workflow packs can be sold 
+today. 
+Confirm before you demo. Verify the connected products, integrations, subscriptions, permissions, 
+configuration, and region for the account. 
+Base usage and base rate limits are included today, and Cisco reserves the right to adjust monetization, 
+pricing, and packaging as usage scales." 
+Beat 8 — The ask 
+Close with five specific partner actions. 
+"Here is what I'm asking you to do. 
+One — enable your teams on the unified narrative — Cloud Control, AI Canvas, and Cloud Control Studio 
+as one story. SalesConnect for the assets, dCloud for the hands-on. This is the one you can start tomorrow. 
+Two — be customer zero on your own production IT estate. Operate the platform on your own network, 
+at your own scale. That is how your teams learn it, and it is what makes them credible in front of a 
+customer. With partner onboarding of customers not yet supported, this and the first ask are the two 
+motions you can actually drive today. 
+Three — qualify accounts and bring them to Sales for onboarding readiness. You qualify and lead 
+readiness; Cisco performs the onboarding. Access is guided and capacity is finite. The waitlist is 5,000 deep. 
+Where your accounts sit in that line is largely up to how fast you move. 
+Four — expand the connected Cisco footprint. Identify the next relevant Cisco product area in each 
+account and show the cross-domain value it adds. 
+Five — bring us a use case. Engage the Cisco team to co-develop vertical or customer-specific use cases. 
+Pick the one runbook per account you would turn into an agent first, so you are ready when Studio opens. 
+And if you operate outside the U.S., start preparing your teams now for when your geography opens." 
+Close on the one-line message. Say it slowly, then stop.
+
+--- PAGE 11 ---
+Cisco Cloud Control  |  Partner Summit Executive Talk Track    Cisco Internal 
+Cisco Internal  ·  Page 11 
+Cisco Confidential 
+"Cisco Cloud Control is live in the U.S., and partners have a direct role in how it develops. 
+Early partner use cases and feedback will influence what comes next." 
+Soundbites for the hallway and the press gaggle 
+• "AgenticOps is the operating model. Cloud Control is the operational harness that makes it safe." 
+• "Cloud Control has no separate platform margin. Partner revenue comes from portfolio expansion, 
+services, IP, and managed operations." 
+• "Ten hours to ten minutes. Real customer, live session." 
+• "We connect the work between products without dumbing any of them down." 
+• "Customer runbooks are the starting point for reusable agent skills." 
+• "300 customers in. 5,000 waiting. Where are your accounts in that line?" 
+• "This is the shift from resale to co-creation." 
+Anticipated executive questions 
+Rehearse these. In a mixed partner executive audience, the first three are near-certain. 
+"If it's included at no cost, where is my revenue?" 
+Partner revenue attaches to services and IP around the platform. Today that includes operating-model and 
+AgenticOps advisory, managed agentic operations, workflow design and workflow packs on Cisco Workflows, 
+integration design, cross-domain expansion, and competitor migration. Custom agent development follows 
+as Studio access expands. Price the engagement against the six-stage adoption lifecycle to create 
+measurable, billable milestones. Existing incentives continue to apply to the products, subscriptions, and 
+renewals that Cloud Control helps pull through. (Specific program names and rates remain TBC.) 
+"Which tier do I need?" 
+Cloud Control is included in the Essential and Advantage tiers of eligible Cisco subscriptions. Entitlement 
+follows the subscription the customer already holds for each connected product. Confirm the account's 
+specific footprint with offer management before providing a use-case-by-tier comparison. 
+"Does this cannibalize the managed services I run on domain controllers today?" 
+No. Product experiences keep specialized management and execution. Cloud Control connects the work 
+between them. It raises the ceiling on what you can manage and takes cost out of the coordination your 
+teams currently absorb for free. 
+"Cisco has promised unified management before. Why is this different?" 
+Start with the architecture, because that is the part that did not hold last time: Cloud Control aggregates the 
+controllers you already run up into a management plane, rather than trying to rebuild every controller 
+underneath it. Nothing has to be replaced for this to work. Then the structural reasons: all product 
+development is consolidated under a single leader for the first time in Cisco's history; the President and 
+Chief Product Officer is driving it personally as the top architectural priority; and it is generally available with 
+300-plus customers in production, not on a slide. 
+"What if my customers aren't in the U.S.?"
+
+--- PAGE 12 ---
+Cisco Cloud Control  |  Partner Summit Executive Talk Track    Cisco Internal 
+Cisco Internal  ·  Page 12 
+Cisco Confidential 
+Cloud Control is U.S.-hosted and delivered as SaaS at GA. EMEA and APJC follow as data sovereignty work 
+completes. Use the time — train your teams on dCloud now so you are ready on day one in your geography 
+instead of starting from zero. 
+"What about my customers with on-premises or air-gapped requirements?" 
+On-premises, sovereign-cloud, and air-gapped deployments are not currently supported. Position Cloud 
+Control for U.S.-hosted SaaS environments and keep the existing customer motion for other deployment 
+models. 
+"Can I really build IP on this, or am I building free features for Cisco?" 
+Cloud Control Studio is designed for custom apps, ambient agents, and agent skills built on customer 
+operational context and organizational knowledge. That work remains partner IP. Studio is in Beta. Partners 
+can identify candidate accounts and runbooks now, and can already build workflow packs on Cisco 
+Workflows. Marketplace partner access and its monetization, certification, and listing models have not been 
+announced. 
+"When can I get Studio access?" 
+Studio is in Beta. Cisco has not announced general partner access or licensing. Capture the partner, account, 
+and proposed use case for consideration; use dCloud for hands-on Cloud Control in the meantime. 
+"Can I onboard my own customers?" 
+Not today. Cisco performs customer onboarding, and partner-led onboarding is not supported. You qualify 
+the account, lead the readiness conversation, and Cisco confirms the date. The two motions you can drive 
+now are enabling your teams and running Cloud Control on your own production IT estate as customer zero 
+— which is what makes your teams credible in front of a customer. Point the services conversation at 
+AgenticOps advisory, managed operations, workflow design, and cross-domain expansion. 
+"Can I get Cloud Control in my lab or my center of excellence?" 
+A lab typically lacks the devices and live traffic needed for cross-domain correlation, so it cannot 
+demonstrate the platform's operational value. Use dCloud for training and demos; use your own production 
+IT estate to experience Cloud Control under real operating conditions. 
+"How many tenants can a customer link?" 
+Cloud Control supports one-to-many tenants and orgs linked to a single tenant group for Meraki, Intersight, 
+Nexus Dashboard, Collaboration Control Hub, Nexus Hyperfabric, and Catalyst Center through Meraki Global 
+Overview. For the remaining connected products, the customer chooses which tenant or org links to the 
+main tenant group and which they navigate to individually. That is multiple product tenants for that one 
+customer — their own Meraki, Intersight, Nexus, and so on, under one tenant group. It is not hierarchical 
+multi-tenancy for a partner or a multi-customer MSP portal. The MSP service motion is a separate, forward-
+looking conversation (Annex A3).
+
+--- PAGE 13 ---
+Cisco Cloud Control  |  Partner Summit Executive Talk Track    Cisco Internal 
+Cisco Internal  ·  Page 13 
+Cisco Confidential 
+Partner Economics Annex 
+Speaker backup, not stage material and not a handout. The eight beats stay the spoken track. Use this annex 
+to answer questions from the floor, in hallway conversations, or in a follow-up if someone asks for the 
+numbers. Do not read A1 from the stage — if a market figure is said out loud it will be quoted back, and the 
+caveat will not travel with it. 
+A1 — Market context 
+Backup for questions. Market values are public third-party estimates; the Cloud Control opportunity is 
+inferred from adjacent markets. Forecast periods differ; see A5. 
+Use the partner study first. Unlike the market table below, Cisco's 2026 Global AI Partner Study is first-party, 
+public, partner-specific, and safe to quote from the stage — 1,702 partners across 30 countries, published 
+September 2026. Consulting and advisory services jumped from 12% to 50% as a leading growth opportunity, the 
+largest increase of any category. 92% of partners report customers raising concerns about AI running costs, while 
+only 43% say customer ROI is meeting or exceeding expectations. Nearly half of customers are piloting or scaling 
+agentic AI, and multi-agent orchestration ranked as the weakest capability measured across customer readiness, 
+partner capability, knowledge, and hands-on experience. Roughly a quarter of partners say AI already makes up 
+more than half their revenue, and 55% expect to be there within five years. 
+Market Cloud Control 
+mapping 
+2025 2030 CAGR 
+Enterprise agentic AI Agent marketplace — 
+domain agents for 
+troubleshooting, 
+config validation, 
+remediation, lifecycle 
+actions, compliance 
+checks 
+$3.67B $24.50B 46.2% 
+AI orchestration Workflow / 
+orchestration packs — 
+prebuilt runbooks 
+across networking, 
+security, observability, 
+ITSM, MSP operations 
+$11.02B $30.23B 22.3% 
+Cloud professional 
+services 
+Design and 
+architecture — 
+normalized API 
+strategy, operating 
+model, workflow 
+design, governance, 
+MSP tenant design 
+$35.04B $75.80B 16.7% 
+ITSM ITSM / AIOps 
+integrations 
+$15.30B $29.93B 14.4%
+
+--- PAGE 14 ---
+Cisco Cloud Control  |  Partner Summit Executive Talk Track    Cisco Internal 
+Cisco Internal  ·  Page 14 
+Cisco Confidential 
+Network automation Cross-domain 
+automation 
+$7.88B $12.38B 9.4% 
+  
+The blended partner opportunity spans large, durable markets like MSP and ITSM plus fast-growing markets 
+like AI orchestration and agentic AI. The five-year view is a portfolio of growth curves, 9–46% CAGR. 
+A2 — What partners build 
+The four revenue plays in Beat 3 are go-to-market motions. These are the four things partners build. The 
+most attractive partner motion is packaged operational outcomes delivered as apps, agents, integrations, 
+and workflow packs. 
+This table describes the target state. Workflow packs, integration apps, and design services are sellable now — 
+Cisco Workflows is generally available. Domain agents depend on Cloud Control Studio, which is in Beta; 
+Marketplace partner access and commercial terms have not been announced. See Beat 7. 
+What you build Adjacent market Concrete examples 
+Domain agents Enterprise agentic AI Troubleshooting, config validation, 
+remediation, lifecycle actions, 
+compliance checks 
+Workflow / orchestration packs AI orchestration, ITSM, workflow 
+automation 
+Prebuilt runbooks across networking, 
+security, observability, ITSM, MSP 
+operations 
+Integration apps API management, ITSM, AIOps Connectors into Splunk ITSI, 
+ServiceNow, Jira, PagerDuty, CMDBs, 
+SIEM/SOAR, partner NOC tools 
+Design / architecture services Cloud professional services Normalized API strategy, operating 
+model, workflow design, governance, 
+MSP tenant design 
+  
+A3 — What MSP partners can package and sell 
+The GA Ideal Partner Profile includes single-tenant MSPs. Cloud Control aligns with recurring managed 
+operations for that profile: delegated tenancy, co-managed NOC/SOC, managed automation, compliance, 
+lifecycle assurance, and vertical service packs. 
+These are services a partner packages and sells around Cloud Control — not Cloud Control features. Like the ISV 
+motion in A4, treat this as forward-looking. The GA tenant capability is multiple product tenants for a single 
+customer (see the tenant Q&A), not partner multi-tenancy. 
+Partner service What you sell 
+Managed operations Controller consolidation, operational workflows
+
+--- PAGE 15 ---
+Cisco Cloud Control  |  Partner Summit Executive Talk Track    Cisco Internal 
+Cisco Internal  ·  Page 15 
+Cisco Confidential 
+Co-managed NOC/SOC Shared customer / MSP operations 
+Managed automation Repeatable remediation, compliance checks, policy 
+workflows 
+Vertical service packs Compliance for healthcare, retail, manufacturing, SLED, 
+financial services 
+Premium assurance SLA reports, incident prevention, lifecycle risk, Cisco IQ / 
+Cloud Control insights 
+  
+A4 — ISV motion, adjacent to the Ideal Partner Profile 
+ISVs are not in the GA Ideal Partner Profile. The profile remains U.S.-based Cisco Preferred Partners (PVI 
+7.5+) — VARs, SIs, GSIs, and single-tenant MSPs. The ISV motion is a strong current opportunity adjacent to 
+that gate, and it is forward-looking. 
+Build: Cloud Control-aware agents, workflow packs, integrations, and domain apps. 
+Sell: architecture and design services around data models, RBAC, governance, and workflows. 
+A5 — Attribution 
+Market sources: Grand View Research, MarketsandMarkets / PRNewswire, Technavio. Forecast periods 
+differ, and the specific citations sit in the session appendix. 
+Partner survey figures — the 12% to 50% shift in consulting and advisory services, the 92% running-cost and 
+43% ROI findings, the agentic adoption and multi-agent orchestration readings, and the AI share-of-revenue 
+numbers — come from Cisco's 2026 Global AI Partner Study, From Adoption to Accountability: How Partners 
+Can Close AI's Value Gap (Cisco Blogs, September 21, 2026). That study is Cisco first-party and public, so 
+unlike A1's market table it can be said out loud. 
+Market values are public third-party estimates; the Cloud Control opportunity is inferred from adjacent 
+markets. Market context (slide 20), the build taxonomy (slide 19), the MSP services table (slides 21 and 31 — 
+adapted; the multi-customer visibility item is deliberately omitted, since the GA tenant capability is multiple 
+product tenants for a single customer, not partner multi-tenancy), the ISV motion (slide 21), and the AMD 
+(slide 22) and NTT DATA (slide 23) quotes all come from The Partner Opportunity with Cisco Cloud Control - 
+PSOAI-1825, Cisco Live 2026 Las Vegas. The portfolio areas — Networking, Collaboration, Compute, Security, 
+Observability, and Services — follow the BDM and TDM decks (slide 3). The GA date, the customer and 
+waitlist figures, the integration commitments, and the three customer proof points are stated publicly in the 
+U.S. general availability announcement (Cisco Blogs, August 25, 2026). The four revenue plays, the two ideal 
+profiles, the commercial model, and the six-stage adoption lifecycle follow the Partner Value Proposition. 
+Messaging follows GTM Messaging - Cloud Control with AI Canvas, the Cisco Cloud Control Messaging Guide, 
+September 2026, pending final approval. 
+Prepared by Joel Jose (joeljos@cisco.com) and Thunaiselvam Ramasamy (thunai@cisco.com). Sources: GTM 
+Messaging - Cloud Control with AI Canvas, The Partner Opportunity with Cisco Cloud Control - PSOAI-1825, the
+
+--- PAGE 16 ---
+Cisco Cloud Control  |  Partner Summit Executive Talk Track    Cisco Internal 
+Cisco Internal  ·  Page 16 
+Cisco Confidential 
+Partner Value Proposition, and the U.S. general availability announcement — all linked in the header and in A5. 
+Cisco Internal.

@@ -1,0 +1,779 @@
+--- PAGE 1 ---
+======================================================================
+TRANSCRIPT WITH SPEAKER IDENTIFICATION
+======================================================================
+Source file    : 
+                 SpecialistMasterClassCiscoCloudControlwithAICanvas.mp4
+Duration       : 00:47:37
+Language       : en (confidence 1.00)
+Model          : small
+Speakers found : 4
+Generated      : 2026-09-28 09:53
+Please note    : This file was produced automatically by speech
+                 recognition and, where a visual description is
+                 included, by an image model. Both make mistakes. Check
+                 every figure, name and job title against the recording
+                 before relying on it. Each timecode points at the
+                 moment in the video where the statement can be
+                 verified.
+======================================================================
+[00:00:01] Speaker1:
+    Good morning everyone and welcome to our specialist masterclass first look at 
+Cisco cloud control with AI canvas. We're thrilled to have you with us today as we 
+pull back the curtain on a major milestone in our transformation. To kick things off
+we are honored to have a special message from our SDP of global specialist Dave 
+West.
+[00:00:22] Speaker2:
+    Thanks everyone for joining I have to say it's an honor to kick off this 
+session. You know we're stepping into a new era, the agentic era. We move beyond 
+chatbots that just answer questions to agents that take real action. Our customers 
+face new challenges, infrastructure limits, trust issues, data trapped in silos. And
+I think we can help solve that. That's what Cisco Cloud Control with AI Canvas is 
+about. It marks a milestone in how we serve our customers. Whether you're in an 
+architecture, Splunk, or in a geo team, You're the front line of this 
+transformation. Challenges don't live in silos and neither can our solutions. We 
+used to be seen as powerful, but powerful in separate parts. Now it's one Cisco 
+bringing things together, delivering platforms and new capabilities. Cisco Cloud 
+Control is a game changer in making that real. Our customers are overwhelmed. 
+fragmented tools, fragmented data, all while trying to build AI-ready foundations. 
+They don't want more point products. They want integrated systems. Cisco Cloud 
+Control with AI Canvas is that system. The connective tissue turning one Cisco from 
+vision to reality. Now we're moving from a reactive networking approach to a 
+unified, agentic operations approach. And every one of you is how we get there. You 
+know, in the past, we've talked about networking, security, AI infrastructure, 
+observability and collaboration, all as separate parts, separate pieces. Now with 
+Cisco Cloud Control, We now have the engine that unites them all. It gives operators
+a single surface across our portfolio. And AI Canvas puts teams and agents side by 
+side in a shared workspace to investigate, resolve, and act with cross domain 
+context that only Cisco can deliver. Now, whether you're a customer that's buying 
+and building AI ready data centers or future proof workplaces or just trying to
+
+--- PAGE 2 ---
+boost digital resilience. This is what makes our portfolio one cohesive system. You 
+all have been asking for this. You've been begging for it quite honestly to help 
+compete and take out the competition. And now we have an opportunity to go big. Now 
+we're still in controlled availability. We're gonna try to go big in the US market. 
+And I have to say a big shout out to the field teams who brought 39 customers into 
+early access. And hopefully we can showcase many of them at Cisco Live. That's your 
+early mover advantage. Take advantage of it. So I want you to cement your role as 
+trusted advisors by helping customers Unify their IT stack. Success isn't about 
+selling a single domain anymore. It's about orchestrating a cohesive AI ready 
+operation. Today you'll see the platform live. You'll hear about the competition and
+how you should be positioning Cisco Cloud Control with AI Canvas and get the door 
+openers to win in Q4, I believe to really start this journey and build your FY27 
+pipeline. I ask you all to lean in, listen to the connect training, find the threads
+between your expertise and customer outcomes. The tech is ready and gets better and 
+better every time one of you engages with it with your customer. Our strategy is 
+aligned and the market is just waiting. They're just waiting for us to deliver. So 
+my ask of all of you is lean in on this training, learn, get context from Sales 
+Connect if you need more, ask the experts, but let's be bold. Let's show the market 
+what Cisco can do. And I know if we do that, we will be incredibly successful. So 
+thank you for all you do and let's enjoy the day.
+[00:05:13] Speaker3:
+    Thank you, Dave.
+[00:05:14] Speaker1:
+    I would now like to introduce DJ Sanpath, our SVP GM of AI software and 
+platform. DJ, over to you. Hey, thanks so much, Sean. And thanks, everybody, for 
+having me here. And super excited to tell you what the team has been working on in 
+the past eight months at this point in time.
+[00:05:36] Speaker4:
+    But more importantly, you heard what Dave just said. This is something that we 
+know is
+[00:05:44] Speaker1:
+    going to make a massive difference when we go out to our customers and start to 
+explain to them
+[00:05:51] Speaker4:
+    what it is that we're trying to accomplish. So let me give you a little bit of 
+context
+[00:05:54] Speaker1:
+    about what it is that we're doing, what it is that we're built, and you're going
+to see a live demo
+[00:06:01] Speaker2:
+    that you at the end of this call
+[00:06:03] Speaker4:
+
+--- PAGE 3 ---
+should be able to go out and try out for yourselves and experience exactly what 
+we're about to ship
+[00:06:10] Speaker1:
+    and what our customers today.
+[00:06:12] Speaker4:
+    Dave mentioned 39, I believe we're already at 50 from the time that he mentioned
+this And that's how quickly we're moving to be able to go out and get these 
+customers lined
+[00:06:21] Speaker1:
+    up for us to be able to work with them, to onboard them and get them all excited
+about Cisco Cloud Control and Canvas.
+[00:06:30] Speaker4:
+    So let's get into it, right? And you heard Dave talk about this. You said, 
+listen, over the years at Cisco, we have done a phenomenal job of building the best 
+in class capabilities across every single one of these domains, networking, AI 
+infrastructure, observability and collaboration. Each one of these things right now 
+is a pull out of strength for us. Now, when you start to think about what's really 
+happening from an inflection point perspective, you know, is that the world kind of 
+fundamentally changed, right? And so what we have to do is we think about each and 
+every single one of these pillars is for us to start thinking about how do we evolve
+so that humans and agents can collectively work together. So the question we asked 
+ourselves before we got into this was to say, hey, what does it look like when 
+humans and agents can actually
+[00:07:24] Speaker1:
+    collaboratively start to work together?
+[00:07:25] Speaker4:
+    This is not, you know, agents just running in the background,
+[00:07:28] Speaker1:
+    doing a bunch of different things that you cannot see.
+[00:07:30] Speaker4:
+    It's not just humans constantly just clicking through, you know, dashboards, 
+scrolling through all of these notifications. But truly what would it mean to have a
+collaborative operating model where the agents are doing a lot of the heavy lifting 
+and humans are staying in control of what matters. Now, we call this framework 
+agentic ops, right? We call this, what we saw from a paradigm shift perspective was 
+the ability to start to use agents
+[00:08:05] Speaker1:
+    to be able to redefine your operating model
+[00:08:08] Speaker4:
+    and we carved the term out called agentic ops and we're starting to see it, you
+
+--- PAGE 4 ---
+know, start to pop up in the industry,
+[00:08:15] Speaker1:
+    the rest of the industry is now following us.
+[00:08:19] Speaker4:
+    What we did was we basically took this notion of agentic ops and we made sure 
+that agentic ops lives inside of cloud control. Cisco cloud control is the 
+management experience where all of agentic ops comes to life. Now, when you ask me 
+what Cisco cloud control is, you know, and what agentic ops is, Let me start to 
+define this by giving you three core tenets that is absolutely important and making 
+sure agentic ops become successful. For agents to effectively operate, they need to 
+have access to cross-domain telemetry. That is the number one thing. They need to be
+able to seamlessly access things
+[00:09:02] Speaker1:
+    from collaboration to observability,
+[00:09:08] Speaker4:
+    to like networking, to like security. So cross-domain telemetry is super 
+important. The second big thing is really all about purpose-built models. And the 
+third is trusted agents
+[00:09:19] Speaker3:
+    that serve as your additional coworkers.
+[00:09:22] Speaker4:
+    And I want to be able to spend time on each and every single one of these 
+things. What do I mean by purpose-built models?
+[00:09:29] Speaker4:
+    Is this sort of where we're training these models with 40 years of data that we 
+have or in what does trusted agents really mean? So let's go into each one of these 
+really quickly so that you have an understanding of what these core pieces mean. Now
+when we talk about cross-domain telemetry, you'll notice that, you know, when 
+Robert's going to walk you through the demo, you're going to realize that we've 
+broken some of these things down into the product surfaces that you are very 
+familiar with, the platform services that connect these product surfaces in a 
+systematic way, where you start to see pieces that are core to the platform that 
+simplifies how quickly we take these products to market. And then finally, you're 
+going to see us realize these capabilities with the help of agents that cut across 
+all the domains in a seamless fashion. So it's absolutely important to get the 
+cross-domain telemetry right for these agents to be effective. Now the second thing 
+I want to touch upon over here is specifically hopping into what we call 
+purpose-built models. Now the cross-domain telemetry piece is your first building 
+block, but beyond that We're training our own domain specific models. We've got 
+models like deep network model. Now we also know that in addition to deep network 
+model,
+[00:10:46] Speaker1:
+
+--- PAGE 5 ---
+we also have a foundation set model
+[00:10:48] Speaker4:
+    that is public and available and it's open source. We've got a time series 
+model. But we also know that there are times where the frontier model might be a 
+better option. There are times where task specific model
+[00:10:59] Speaker1:
+    might be a better option.
+[00:11:01] Speaker4:
+    And so you'll notice that based on the incoming task, we have the ability to 
+seamlessly route these tasks to each one of these models so that you get the right 
+type of response from, you know, from whichever model you're picking to be able to 
+go out and do these tasks. But it's really important to have, you know, a purposeful
+model that we have built based on data that we have that's unique to us, but also 
+leverage models that are task-specific and models that are, you know, the latest and
+greatest and the frontier models that are out there. Now the other very core 
+ingredient here is when you evolve into you you know from from like just humans 
+interacting to like humans plus agents coming together what is really important at 
+this point in time is to ensure that you are able to trust these models when you 
+give them specific tasks you know you have to you know make sure you're inspecting 
+all of these models you're inspecting these agents from a supply chain perspective 
+you know you're making sure that these are not compromised you have to observe every
+single action that these agents take and you have to ensure that these agents are 
+doing the right types of things. All of these things become incredibly important for
+us to be able to get right and that's really a core part of why our agentic ops 
+story is better than anything else that's out there because we can do this. Now, I 
+want you all to meet Cisco Cloud Control when Robert walks you through the demo, 
+you're going to see that this is the place where all of these things happen, right? 
+It is AI native by design. I hope you all appreciate the work that has gone into it 
+from a design perspective. We've gone ahead and said, listen, everybody is familiar 
+with a text box that allows you to chat and that allows you to work with these 
+agents. We've fundamentally reimagined exactly what that experience looks like, and 
+I can't wait to walk you through those details in a second. Now, what we have also 
+done is we have systematically brought together a single sign-on for all of these 
+products so that you're signing in one time,
+[00:13:06] Speaker1:
+    not signing each and every single time into every single one of these products.
+[00:13:10] Speaker4:
+    What we've also done is we have systematically and seamlessly brought together 
+all of your assets in one place. Now this is not just, you know, assets from one 
+part of the products or another, we're bringing all of the assets across all of 
+Cisco's surface area in a single place so
+[00:13:27] Speaker1:
+    so you have one source of truth.
+
+--- PAGE 6 ---
+[00:13:30] Speaker4:
+    We also brought together your topology view, which tells you exactly how these 
+systems are connected and in which geos are they at. And last but not the least, we 
+brought all of these pieces together inside of our AI Canvas, which allows you to go
+from just visibility into being able to take actions.
+[00:13:49] Speaker3:
+    So you're not just looking and observing things.
+[00:13:53] Speaker4:
+    Now I'll say this though, most customers wanna be able to start with read only 
+before they move into the ability to start taking actions. And so we are 
+prioritizing the ability to increase the confidence that customers have
+[00:14:06] Speaker1:
+    with using what we're shipping to them.
+[00:14:09] Speaker4:
+    Now with AI Canvas, this is one of the coolest things where AI Canvas is 
+natively part of Cisco Cloud Control. And I want you to be extremely clear about 
+this. You know, I know that there are questions come up saying, hey, what is Cloud 
+Control? What is Canvas? How do all of these pieces work together? Guess what? I 
+want to make this super simple. AI Canvas will exist inside of Cisco Cloud Control 
+and will be synonymous in providing some of these
+[00:14:38] Speaker1:
+    agentic ops capabilities that we're talking about.
+[00:14:40] Speaker4:
+    It's the industry's first generative AI workspace and we're adding amazing 
+capabilities to it
+[00:14:48] Speaker1:
+    almost on a weekly, monthly basis, right?
+[00:14:51] Speaker4:
+    We're adding enterprise memory, we're adding deep reasoning mode, we're adding 
+safe and secure operations And I know I've talked to you about this before, but I 
+just want you to make sure that you understand that this is seamlessly baked into 
+Cisco Cloud Control. I'm coming up on time, so I just wanna be, I just wanna hit one
+point, right? All of these products that you see on the screen are available inside 
+of Cisco Cloud Control. We're talking about, you know, Meraki, when you click into 
+Meraki, you get all of Meraki. You're not getting one part of Meraki. You're not 
+getting like, you know, one window.
+[00:15:25] Speaker3:
+    You're getting all of Meraki.
+[00:15:26] Speaker4:
+    You're getting the full experience. You're not separately logging in here.
+
+--- PAGE 7 ---
+You're not switching between portals. It's a unified platform that starts to render 
+each and every single one of these pieces. You get 1,000 ICE. You're going to start 
+to see this in a Splunk Cloud, Secure Access, Hyperfabric, Datanexus, InnerSight, 
+Catalyst, WebEx Control Hub, and IQ is going to start to come seamlessly into this 
+whole context together. And that's really what we're trying to accomplish. Let me 
+just take a few extra minutes and I know I'm going a little bit longer. I want to 
+give you one important perspective of how we have picked our initial customer 
+profile, our ICP, our ideal customer profile for this whole thing. We want it to be 
+very thoughtful around who are the ones that are most likely to be successful. We 
+looked at the entire customer population. We understood the eligible customers. We 
+picked the regions. We picked the primary segment. The ones that are in commercial 
+selected enterprises
+[00:16:24] Speaker1:
+    over public sector and over service providers.
+[00:16:27] Speaker4:
+    And because it is easier for us to be able to go to market with these folks 
+quicker and faster. And we also made sure that we're picking specifically customers 
+that have more than two Cisco products because that's where the power of the 
+platform becomes even more compelling. And as we continue going forward, those 
+customers that have more than two products are likely to be a lot more excited about
+what we have to offer, right? And then we picked out of that the top 2,500 accounts,
+We picked the 600 of them where we know that the accounts were present, some of the 
+majority of our bookings. And then we said, okay, let's maniacally focus on this set
+of customers over here. Because these are going to, these customers are going to 
+experience the fact that we're bringing the platform together and they can then 
+start to recognize that, you know, they start to become mega champions, mega 
+promoters of what we are going out and giving to them. And that's really what we're 
+aiming to accomplish. we want referenceable customers that you can take to the back,
+each and every single time that you're having conversations with your customers to 
+say, hey, this thing works. It is the best thing since life spread. Now, we are 
+already actively working with a large group of customers, as you all know, and 
+thanks to a lot of you all who have helped nominate these customers and are working 
+very closely with the team to make these successful. And we're working actively to 
+make sure that these customers are experiencing Cisco Cloud Control. Now, I'll be 
+honest with you. We're not perfect. There are things that we have to get better and 
+we're learning constantly from the customers. When they come back and say, hey, you 
+need to make this better. But what you know from our team and the product teams and 
+our field and engineering teams, we will move incredibly fast when we get that so 
+that we can go back to them with the feedback and then make sure that they're having
+an amazing experience. I do wanna talk about, one of the interesting things that we 
+have been learning
+[00:18:14] Speaker1:
+    is we have gone to customers and we showed them
+[00:18:17] Speaker4:
+    Exactly, you know, what customers feedback has been the most interesting one 
+that we got, you know, we've been closely working with room and board and G2 has
+
+--- PAGE 8 ---
+been having conversations with the teams that are implementing this. And we've 
+gotten consistent feedback from the operator that works with room and board that 
+their experience with cloud control has been nothing short of impressive, right? G2 
+always asks a score. He says, hey, give me a score from 1 to 10. where one is fail, 
+object failure, 10 is success. And the score that we got was seven.
+[00:18:52] Speaker1:
+    And the repeated questions we asked,
+[00:18:55] Speaker4:
+    Mark is to say, hey, tell us exactly, how do we get to 10? And systematically, 
+we've improved week over week. We've gone from seven to eight. And we're very close 
+to improving that score from eight to nine and get it all the way to 10. So we're 
+systematically working with each and every single one of these folks. We're tennis, 
+they are shouting off the rooftops, they're that excited. We've been working closely
+with Nutrient, we've been working closely with AMD, and we've also been working 
+really closely with Tenaska
+[00:19:24] Speaker1:
+    where the feedback was, again, absolutely remarkable.
+[00:19:28] Speaker4:
+    I want you all to know that we're going in a controlled availability for both 
+Cisco Cloud Control and AI Canvas at Cisco Live US in two weeks from now. By 
+controlled availability, what I mean is exactly what you saw in terms of how we've 
+defined the initial, the ideal customer profile, and you have a lot of these 
+resources available to you today. You'll see the QR code again in a bit where we 
+spend a little bit of time
+[00:19:54] Speaker1:
+    giving you a call to action to be able to use the D-CLAD demo,
+[00:19:56] Speaker4:
+    but with no further ado, let me hand this off to Rob to be able to walk you 
+through this. You will notice that these demos are available instantly, and more 
+additional sandbox and lab environments are being planned for Q1. But know that 
+these demos will evolve very, very rapidly as we evolve security cloud.
+[00:20:16] Speaker1:
+    I mean, Cisco cloud control in Canvas,
+[00:20:17] Speaker4:
+    but with that over to you, Rob.
+[00:20:20] Speaker1:
+    So as DJ said, we will be announcing this at Cisco Live and going CA, but we 
+wanted to give you guys a very special preview. So this is actually in Dcloud. So as
+of today, you guys will have access to what we're showing you and we wanna get you 
+exposed to it, start using it as soon as possible. We really believe this is 
+probably one of the most exciting things that Cisco has ever come up with. I've been
+
+--- PAGE 9 ---
+at Cisco for a long time and this is the moment we've been waiting for, where we 
+bring our platforms together to a single unified platform. We give a completely new 
+AI-first, natural language-first experience to people. So what we're gonna come up 
+with is going to make massive headlines in two weeks at Cisco Live. This is to give 
+you guys the heads up what's coming out first. So what we're looking at is the 
+decloud instance here of cloud control. So this is what the homepage looks like. And
+immediately you notice we've got a nice natural language chat interface right on the
+front page. You can ask any kind of question. And what's cool about this, it lets 
+you ask across any Cisco platform that you might have, not just one, but it could be
+anything the customer has entitlement for.
+[00:21:33] Speaker4:
+    You notice on the top,
+[00:21:34] Speaker1:
+    you'll see that there's a Meraki intersite and security tab. The reason these 
+are here is because I have added these to my favorites. If I pull down this little 
+waffle menu, this nine-dot menu, you'll notice that I have access to Maraki, to 
+InterSite, to HyperFabric, Security, WebEx Control Hub. This unifies all these 
+platforms into a single place. So this is bringing these all together under a single
+Cisco experience, a single console. So I wanted to show you a little bit what this 
+looks like. From here, I can click under Meraki and it's going to, it's one of those
+days. Here we go. We're going to Intersite and it takes me directly into Intersite. 
+No need to re-login, no need to put in my identity. Immediately, I have access to 
+see my entire server infrastructure, all the UCL servers. I can get into anything I 
+would do into the Intersite world. Here's an example of a UCS server. It gives me 
+access directly to these things. If I wanna go to try Meraki again, see if it's 
+going to let me, there seems to be an issue at the moment, but maybe it's a login, 
+try one more time. Okay, anyways, we will, there it goes. It's logging into Meraki. 
+So it's pulling me into the Meraki dashboard, gives me full access to everything in 
+the Meraki world. Everything you would have access to is here. There's no need to go
+again, re-log in from one different to the next. So what we're gonna see in time 
+will be the entire Cisco SaaS portfolio is exposed here through Cloud Control. So 
+there really only will be one place that customers need to go to. And again, this is
+available for customers at our CA.
+[00:23:31] Speaker1:
+    Let's take you back to the home menu here. When we go to this nine-dot menu, 
+You'll notice that the products here on the left, and there's gonna be a lot more as
+we go. But on the platform column here to the left, you see there's global 
+inventory, topology. These are sort of like a common services layer so every product
+in the Cisco world of course has the ability to do some topology, it has its own 
+identity. It has an inventory when you start to bring these together as a unified 
+platform. What you can do is you can offer these as a common service. So, for 
+example, if I was to click on inventory, this is not just going to show me the 
+inventory of a product division, but it will be my entire portfolio of products that
+I have entitled to across whatever I might have. as a customer. So here I've clicked
+on it and it gives me this inventory screen which is showing me not just a list but 
+it's things I need to care about, things that might be critical alerts, things that 
+could be problems, the inventory where I quickly can start to assess and triage some
+
+--- PAGE 10 ---
+issues. If I wanted to see the actual inventory, here I can list it and it's giving 
+me everything, literally everything the customer has from Maraki to HyperFabric to 
+my firewalls. And we've actually in AI enabled pretty much everything in this 
+platform, but if I want to just search my inventory, like show my firewalls, and 
+it's going to go and search through all my firewalls, say show switches, and it will
+be able to pull up all my switches, whether it's Nexus switches, whether it's 
+Catalyst switches, I can dig into any type of switch I want and get very, very rich 
+information about that particular product. And you can see, it gives me information,
+which ones might have some P certs, some different issues that I need to be aware 
+of. So now I have a single place to do inventory search across everything I have.
+[00:25:31] Speaker4:
+    Similar thing for topology.
+[00:25:32] Speaker1:
+    So I could click into topology. And instead of showing the topology of the data 
+center or of the SD-WAN or of the campus network, what this will allow me to do is 
+show unified topology that's stitched across domains across the entire portfolio I 
+might have. So this is a very early preview. This is going to be, of course, 
+dependent on what the customer has, but I can click into, let's say, the Mexico City
+Network. I wanna see the view of the topology here. And in this case, it's the data 
+center. And it will show me, I've got, sorry, the CAT 9300s. It can show me the 
+Nexus switches and will pull these together as a single unified topology experience.
+So what we're starting to see is a real cohesion of services that's not per product,
+but it's across the entire Cisco experience. And that's gonna be very different for 
+customers. Even for sellers, the selling motion becomes different because now you're
+selling from a unified platform as opposed to doing trench warfare product by 
+product across our entire portfolio. Let's just go back home for a second. And I 
+want to just take you through one of the real centerpiece features here of Cloud 
+Control, and that is AI Canvas. So again, Canvas is not something that's really 
+separate from Cloud Control. These are deeply intertwined capabilities of the 
+underlying platform. Cloud Control is what brings things together. Canvas is that 
+natural language co-pilot for the entire experience. So I'll just take you through a
+few examples. So for example, here in the homepage, you'll see that Canvas is here 
+along with actions. Actions allows you to aggregate all the events that are coming 
+in and start to look at these and assess them, but it organizes them and understands
+them from an AI perspective. So for example, it's starting to see different related 
+events that might be from the Maraki and it's telling you that you need to pay 
+attention to these as a network operator. And if I want to investigate this further 
+and go deeper into it, I can go directly into AI Canvas. And Canvas is a very, very 
+rich, agentic experience that allows you through natural language to start to 
+troubleshoot, to ask questions of the network, to do a lot of different things. 
+Let's just go into here for a little shortcut. And what I'm going to do is create a 
+Canvas board. And of course, this was announced last summer at Cisco Live, but we 
+have gone a lot, a lot further since then. What you see here is a canvas. It's kind 
+of like a workspace. This is where the network operator or security operator will do
+a lot of their day-to-day work. And you'll notice immediately here, there's a little
+bubble here that shows you what it can connect to. So it's able to talk to Meraki, 
+to WebEx, to Firewall, to HyperFabric. And there's going to be a lot more here by 
+the time we get to Cisco Live in two weeks. You're going to see Catalyst Center here
+
+--- PAGE 11 ---
+listed as a thing that we can connect to. On the left here, this is our chat panel. 
+So this is where you can ask questions. You can start to do some troubleshooting, 
+some triaging. So for example, using this prompt grammar, I can quickly get to 
+prompts that are meaningful. For example, to show me an organizational summary. What
+this is gonna do is gonna go out to the network. It's going to look at all the 
+different assets you have and it's going to try to summarize what's happening.
+[00:29:00] Speaker4:
+    And you notice this box here,
+[00:29:01] Speaker1:
+    this says routing to network intelligence to results on the bottom left. This is
+showing that it's a multi-agent system. So it's using AI agents to talk to cloud 
+control, to talk to different aspects of like inventory, to looking at the assets 
+and how they're performing. And it will immediately tell me overall health score, 
+because this is in Dcloud, I've got 100% because everything's up and running. But if
+it wasn't, I would now have something in the knock where the operator can quickly 
+use as a reference point to track how the network's performing and where it might 
+have issues.
+[00:29:34] Speaker4:
+    These are interactive.
+[00:29:35] Speaker1:
+    I can look at what networks I might have, what clients are connected. And we'll 
+go back to the chat and start to pull this information and provide these details for
+the user. So hopefully you guys can all start to play with this a little bit later 
+today. But again, you can see that it's going to its multi-agent system. It's going 
+to inventory to pull this out. And in just a couple of seconds, we will start to see
+this information start to appear and it's pulled the networks. So here's the six 
+different networks that we have in this DCloud network here. And if there's any 
+detail concerns I have, I can start to dig into these a little more. Let's say, San 
+Francisco might be a network, the operator wants to do some investigation on, that's
+pretty cool. So let's pull this on and it'll put a network card that gives me 
+details of the network. Let's go look at one more. Let's say Singapore, that could 
+be another network, that there could be some issues that the operator needs to go 
+and deal with. It gives a little pop-up. It's trying to pull live information, 
+pulling it to see if there's any alerts. Of course, this one is okay, but we're 
+going to put this onto the canvas as well. And very quickly, we start to get these 
+useful cards here. This closes up. And I'm just going to do a quick organization. 
+Now you can see that these different cards are here. This is where the operator is 
+going to start to dig in a little deeper, start to troubleshoot, try to figure out 
+the issues and what's going on. Now, just as a little treat for you guys, I want to 
+give you one more little sneak peek into what's coming at Cisco Live. So what we 
+showed you is D-Cloud. What I'm showing you here is the one that's going to go to 
+production at CA at Cisco Live. So this is still in development, but this is gonna 
+show some of these even further improvements that are coming by Cisco lifetime. 
+You'll notice this one here, when I do the hover over, it's got even more 
+connections to products. So we see things like ServiceNow, we see the Nexus. And 
+again, you will see a catalyst center showing up here very, very quickly. Do you
+
+--- PAGE 12 ---
+remember I showed you the topology? Well, here from AI Canvas, we can directly 
+connect to the topology agent. So I can pull up local network topologies. I can pull
+up the topology of SD-WAN as an example. And again, do you notice it's going to a 
+topology agent. So it's actually routing to the topology agent trying to figure out 
+more. We've added some pretty cool capabilities like what I'm gonna do in these 
+topology cards. I'm just gonna take a little screenshot of this image here, this 
+network image connecting to the internet. And what I'm going to do is just take a 
+picture of this and I'll drop it into the chat and I'm gonna put it here and can you
+tell me about this network? And what it's going to do, it's going to analyze the 
+image and it's going to parse it out and tie it back to what the customer actually 
+has in their network. And if any part of this had issues, it would immediately start
+to identify these and help me to start to triage and troubleshoot them. So we've 
+really taken this natural, not just language, but image capability where it can dig 
+in. This is the SD1 network here we have in our lab test network, and you can see 
+it's a very rich topology, and some of these alerts here tell me that there's a 
+problem in the network. I could click on any one of these and start to investigate. 
+We see that there's a critical alert here. And what this will allow me to do is 
+start to go into a deeper analysis and investigation to try to figure out what's 
+happening here. So, over here, we can see that that image seems to have already been
+processed and it did a pretty good job. I did one last thing before I passed it back
+to DJ. I'm going to go to something called the reasoning mode. And this is one of 
+the most exciting things that we have done. This is, this is way ahead of what 
+anyone at Juniper HP is doing with Marvis. This is really about using something 
+called a deep agent technology where when I do an investigation, let's kick it off. 
+This deep investigation is going to actually spin up dynamic agents for problem 
+solving. It's going to pull content. It's going to pull data. It's going to actually
+write Python code that it teaches it how to solve this problem in a very iterative 
+way using this deep agent methodology. And it takes a little bit of time, so we left
+it to the end. But it's essentially going to give an answer to the user after four 
+to five minutes that you would never get from any other type of analysis, and it's 
+really going to be one of the real centerpiece aspects that we have in AI Canvas. 
+And when we've done our beta customer trials, this is a thing that really popped for
+them. They were solving problems that almost impossible to solve any other way. And 
+I think it's got some of the most exciting interactions we've had with this product.
+[00:34:29] Speaker4:
+    But that just gives you a little sneak peek.
+[00:34:31] Speaker1:
+    This is all that's coming in two weeks. So there's a huge package here that's 
+coming. Hopefully that gets excited. And we really encourage you to go to DCloud 
+today, They start playing with it and start testing it. And hopefully you guys are 
+pretty amazed and can start selling this. All right, DJ, back to you.
+[00:34:46] Speaker4:
+    All right, thank you so much, Rob.
+[00:34:48] Speaker1:
+    That was a fantastic demo.
+
+--- PAGE 13 ---
+[00:34:50] Speaker4:
+    I think one of the few things I wanna be able to take of it,
+[00:34:54] Speaker1:
+    before I go into the call to action,
+[00:34:55] Speaker4:
+    I'm gonna take a few extra minutes
+[00:34:57] Speaker1:
+    and I know Sean's gonna be very excited about this, the fact that I'm gonna run 
+over.
+[00:35:02] Speaker4:
+    But folks, let me just answer a few of the common
+[00:35:05] Speaker1:
+    themes of questions that I'm starting to see over there.
+[00:35:08] Speaker4:
+    Cisco IQ and Cisco Cloud Control, what is the overlap? Let me make this super 
+clear. You will be able to access Cisco IQ from Cisco Cloud Control seamlessly with 
+a single login. We're bringing those two platforms together and if you have 
+entitlements to Cisco IQ, your inventory that you see from Cloud Control which is 
+controller managed and non-controller managed will start to bring all of that 
+information together. you will be able to, these are not going to be two separate 
+things. These are going to be one thing from a customer's point of view. Second 
+question, is security cloud control going to be subsumed by Cisco cloud control? The
+answer is yes. There's just a single Cisco cloud control and you will be able to 
+click in a security inside of Cisco cloud control and you will get all of the 
+capabilities of security cloud control that people love is going to show up right 
+there, right? But now with Cisco cloud control, you get all of the other 
+capabilities as well, topology, inventory, canvas, those things come together. The 
+third common question that I saw was, hey, if we are having, you know, some of these
+things start to come together, can I pick and choose the things that I want on the 
+top? Yes, of course, you can toggle them on and off. You're gonna play with this in 
+D-Cloud and you can understand this. Speaking of D-Cloud, you're spot on. We need to
+put more resources in a D-Cloud to be able to make it capable and make it more 
+functional. So you're not tripping over as you're doing some of these demos. Now for
+the on-prem controllers, we are connecting them using the tethers. Catalyst, Nexus, 
+Firewall, all of these on-prem controllers will come in and you will be able to 
+manage them using Cloud Control. The key part over here is that those tethers will 
+be slightly different for each one of those, right? Some of these will require you 
+to do the extra provisioning, but guess what? We're gonna make that seamless as 
+well. So the customers do not have to be actively thinking about, oh, do I have to 
+provision global overview? That will be provisioned automatically to be able to 
+manage a catalyst environment so that you can just, you know, you can use cloud 
+control, get the benefits of Canvas, get the benefits of inventory and make this all
+work together. Last piece I'll leave you with is I know that there's a question 
+about FedRAMP and then how we're thinking about market access. For those of you who
+
+--- PAGE 14 ---
+missed it, please go back to the recording. I showed you how we're thinking about 
+customer profiles and we're focusing primarily on, you know, commercial select, and 
+the enterprise side of the house right now, right? Those are the ones that we're 
+focused in North America and we're going to primarily deliver those capabilities 
+before we start to expand the market access to outside more globally and then make 
+it available for federal and government side of the houses. So just make sure that 
+you take a quick look at that slide. That's how we're expanding and that's naturally
+how we will do this because we want to make sure we're getting all of the feedback 
+and expanding our capabilities. Now, Sean, I know that we wanted to put up a slide, 
+which is going to be the call to action slide. Is that something that I'm doing?
+[00:38:09] Speaker1:
+    We're going to, before we jump into call for action, we've got a special message
+from Chris Naderos, one of our sponsors.
+[00:38:18] Speaker4:
+    Let's do it.
+[00:38:19] Speaker1:
+    Team, that was an awesome demo and I couldn't be more excited to put
+[00:38:25] Speaker3:
+    a bit of a sales point of view on Cisco Clock Control and how we think about how
+we leverage this post Cisco Live. So for those of you who haven't met, my name is 
+Chris Medeiros, a work in security organization. I lead our velocity and incubation 
+teams. We've brought a lot of different technologies to market over the past couple 
+of years in security. And so it has to be the exact sponsor from a sales perspective
+for Cisco Cloud Control. And so I'm really excited to chat with all of you. I think 
+we have a really unique moment in time to go think about how we've leveraged this 
+launch and have a great Q4 and build also pipeline for FY 27. So first, the market 
+is flooded with agentic ops and AI ops. You're hearing all that noise right now. 
+You're hearing the things about Mithos. Every competitor claims to have the silver 
+bullet. Our job as the trusted advisor at our accounts is to go cut through that 
+noise and expose the gap between marketing slides and reality. And so I'm really 
+excited to share with you today a few thoughts that we can have as a sales 
+organization. And again, how we think about this announcement and how we take it to 
+market. So first, you just saw an amazing demo. What Cloud Control actually does is 
+built on a unified correlated telemetry foundation, giving agents and humans full 
+operational context
+[00:39:39] Speaker4:
+    across every domain.
+[00:39:41] Speaker3:
+    And so what that means for us at Cisco, we've got breadth and depth. We've got a
+number of different architectures and technologies. This brings all of that 
+together. I'm gonna say that again. This brings all of our architectures together. 
+and there's two key products that bring this to life. One of which is our AI 
+Assistant, which actively investigates and takes action on your behalf. And the 
+second is AI Canvas, which is a shared workspace where agents visualize, data and
+
+--- PAGE 15 ---
+execute tasks across team. This isn't just a standard chatbot. AI Canvas is 
+multiplayer. Context never gets lost across handoffs, escalations or team 
+transitions, so your customers are always in a good spot. And what you're gonna hear
+too is how we think about competitors as it relates to Cisco Cloud Control. You've 
+probably already heard this in the market and HP talking a big game, talking about 
+how they can go and solve for these problems. The reality is their customers still 
+have to log into multiple different UIs just to do basic operations. For Juniper, 
+they're pushing a large experience model that's really very generic and lacks domain
+specific precision that we have with our deep network model. They can't compete on 
+that front. Arista is a formidable competitor, but their reservability is still 
+trapped in the data center. Their AI assistant is a marketing layer, and it's not an
+engineering-led, eugenic solution like ours. Palo is probably the closest to where 
+we are, but their internal fracture creates a situation where they've got two 
+separate AI stories, one via Cortex, one via Strata, that they're doubling customer 
+complexity with and not simplifying. And that's where Cisco comes in. We have the 
+common thread, right? None of our competitors have the portfolio of breadth and 
+depth that we do to unify the full experience and especially the way the cloud 
+control does. And so why this matters for your deals? The first thing is this is a 
+fantastic conversation starter and we'll talk about the different scenarios for Q4 
+in particular in a second, but beyond that, there's no budget that's required. This 
+is included with all eligible Cisco licenses. And so you don't have to worry about 
+your customer going off and finding a way to fund this in Q4. This is a way for you 
+to differentiate with customers and prospects in Q4. And this is really a true 
+cross-domain troubleshooting as a strategic watch type moment for customers that we 
+should think about. This allows us to surface visibility gaps that are single domain
+competitors simply can't address. And I want that to sink in for a second. This is 
+something that our competitors really can't address. And this should open doors and 
+accounts where we've had challenges getting footprints
+[00:42:13] Speaker4:
+    in the past.
+[00:42:14] Speaker3:
+    And I'll talk about that in a second as well in terms of how we think about 
+prospecting and leveraging this to get into non-Sysco accounts in the future. Beyond
+that, this will help you build and improve your land and expand motion, right? And 
+so more domains feeding into AI Canvas means more value for customers. And so if 
+you've got a Meraki customer that doesn't have Thousand Eyes or a Thousand Eyes 
+customer doesn't have security, right? There are ways that we can go and get those 
+customers bought in and bring this together, which only adds and multiplies the 
+value that they're going to see from Cisco Cloud Control. And this also shifts the 
+conversation from feature to feature on a siloed perspective to true business 
+outcomes for our customer. We've all heard of MGTR, right, or mean time to resolve. 
+That's how long it takes your customers to identify, diagnose, and fix an issue. 
+This helps improve operational efficiency and reduce risk for our customers while 
+helping them to also do that in the most efficient and effective way. And so as it 
+pertains to Q4 specifically, there's really three key ways I want you to think about
+how you can leverage this. And so if you've got solidified deals in Q4, Cisco Cloud 
+Control is gonna allow you to go strengthen those relationships and strengthen those
+deal cycles by showing them the future of state vision and where we're going. I
+
+--- PAGE 16 ---
+think it's really gonna help you to build confidence with those customers. The 
+second is if you're still looking for Q4 deals and you need to go work on your 
+pipeline, This is a amazing way for you to go again, take that Meraki customer and 
+think about how do we position Cisco cloud control to then get them interested in 
+security cloud control or thousand eyes, for example, right? And so this is a true 
+one plus one equals three. If you can go position the power of Cisco cloud control, 
+this is a way for you to go think about how you get more products and obviously more
+spend with your customers in Q4. And then lastly, this is a way that we can 
+enlighten non-Sysco accounts.
+[00:44:11] Speaker1:
+    I talked about this earlier.
+[00:44:13] Speaker3:
+    You have prospects, people that haven't been bought into Cisco or the Vision. 
+This is a lot of the feedback that we've gotten.
+[00:44:19] Speaker4:
+    There are, our solutions are desperate.
+[00:44:21] Speaker3:
+    They're not tied together. This changes the game in that regard. And I want you 
+to really think about how you can prospect in Q4 to go tell this story, educate the 
+market to not probably only close deals perhaps in Q4, but certainly strengthen your
+FY 27
+[00:44:36] Speaker1:
+    opening day pipeline as well.
+[00:44:39] Speaker3:
+    And so in closing, I'm really, really excited for this announcement. I think we 
+have the portfolio, we have the unified platform, and this is built into our 
+expansion story. None of our competitors can say that. And I think if we truly lead 
+with value, right, be a trusted advisor to our customers, this is an amazing wedge 
+that we can use strategically in all of our accounts to go move the business 
+forward. I wanna thank you all so much for the time today
+[00:45:04] Speaker1:
+    and let's go ahead and move to our call to action. Awesome, DJ now back over to 
+you to help us out.
+[00:45:11] Speaker4:
+    All right, folks, you know, here's the thing. This is a, this has been a labor 
+of love. And this is not just a single team, you know, the cloud control team, the 
+canvas team have been working maniacally, but it's also every single one of the 
+teams
+[00:45:26] Speaker1:
+    that come together, the product organizations,
+
+--- PAGE 17 ---
+[00:45:28] Speaker4:
+    whether it's the Meraki, the Catalyst,
+[00:45:30] Speaker3:
+    the, you know, the Nexus teams, the Splunk teams,
+[00:45:33] Speaker4:
+    every single one of the teams have basically said,
+[00:45:35] Speaker1:
+    hey, listen, we're going to prioritize this.
+[00:45:37] Speaker4:
+    We're going to make sure that we start coming across as a platform organization,
+and it's absolutely remarkable. Every single GM, every single SVP, everybody's 
+thinking about this as,
+[00:45:46] Speaker1:
+    hey, we're going to now enable our field to maximally succeed.
+[00:45:51] Speaker4:
+    We are going to enable our sellers to be able to get out there and talk about 
+this in a way that is a compelling show of force. Please take the time to take a 
+look at our D-Cloud demos. Those are the links. Grab the QR codes if you want. 
+There's really good amount of resources that we're starting to put together inside 
+of SalesConnect or the sales resources at Cisco.com, you should be able to find the 
+FAQs. A lot of the questions that you've asked over here have already been answered 
+from a positioning perspective from like being able to communicate very crisply and 
+the timelines are right there. You know exactly when each of these capabilities are 
+dropping and will you make sure that we're correct and if there are things that you 
+want us to upgrade and improve just let us know the teams on standby to be able to 
+make sure that you have the right types of resources. There are two other things at 
+the bottom. You'll notice that these are the WebEx spaces. They're called Ask Cisco 
+Cloud Control and Ask AI Canvas. We're going to try and merge these at some point, 
+but you know, these are the two WebEx spaces where you can jump in, sign up, and ask
+the questions. You've got product managers, TMEs, engineering leaders, everybody's 
+in that space, and we have already thousands of you all from the field that are in 
+those spaces asking these questions and you expect us to rapidly respond to these 
+things. Some of these might be coming from an AI agent, so don't be surprised. But 
+we made sure that we put all of these things together for you all. Just make sure 
+you take a look at these resources and give us feedback. All right, with that, thank
+you so much, everybody. Back to you, Sean. I really appreciate you all joining and 
+tuning in. Let's have an amazing Cisco Live. We're going to really light the whole 
+thing up on fire. It's going to be fantastic. I'm
+[00:47:26] Speaker1:
+    really pumped about this. Thank you, DJ, and thank you to all of our presenters 
+and and panelists for answering your questions today. We look forward to seeing the 
+impact you make. Have a great rest of your day.

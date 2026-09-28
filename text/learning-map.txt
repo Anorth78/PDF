@@ -1,0 +1,352 @@
+--- PAGE 1 ---
+Cisco Cloud Control
+Black Belt Stage 1 Learning Maps
+Sales (Business Seller)  ·  Pre-Sales (Technical Seller)  ·  September 2026
+Joel Jose (joeljos@cisco.com), Dave Liebman (dliebman@cisco.com)
+
+--- PAGE 2 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Sales Stage 1 overview
+• Black Belt Cisco Cloud Control Sales Stage 1 (Sep 2026)
+• Cisco Cloud Control-Sales-Stage 1   ·   88 min   ·   9 modules   ·   4 shared
+• A Business Seller can open on operating capacity, tell the Cloud Control story in 30 seconds / 3 minutes / 30 minutes, handle packaging and 
+adjacency, and leave a next step on one of the four money plays.
+• Modules
+• S1  Why AgenticOps, why now  (8 min)  [Shared]
+• S2  What is Cisco Cloud Control  (10 min)  [Shared]
+• S3  AI Canvas — the customer story  (12 min)  [Shared]
+• S4  Packaging, entitlement, no new license  (8 min)  [Shared]
+• S5  The power of one — capability tour  (12 min)
+• S6  Studio and Marketplace — partner IP  (8 min)
+• S7  Adjacency — Assistant, IQ, and Splunk  (8 min)
+• S8  Four money plays — what's in it for partners  (12 min)
+• S9  Pitch practice — 30 seconds, 3 minutes, 30 minutes  (10 min)
+• Assessment: 10-question knowledge check, 80% pass
+
+--- PAGE 3 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Sales Stage 1  ·  S1–S3
+ID Module Min Learning objectives Source files
+S1 Why AgenticOps, why now  ·  
+Shared
+8 min • Open on operating capacity, not consoles: more work than 
+headcount, and partners already paid the coordination tax
+• State GA facts: U.S. GA 25 Aug 2026, 300+ customers in production, 
+5,000+ waitlist — this is a deployment conversation
+• Position AgenticOps as the operating model and Cloud Control as the 
+operational harness with human accountability
+Partner Summit - Cisco Cloud Control Executive Brief.pdf (Beat 1)
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slides 2–4)
+Cisco Live Keynote Transcript(KN1 00:00:00–00:07:20)
+Specialist Master Transcript(MC1 00:00:00–00:12:00)
+S2 What is Cisco Cloud Control  ·  
+Shared
+10 min • Draw the three-layer commercial story: Cloud Control / AI Canvas / 
+Studio + Marketplace
+• Name the seven-layer operating model and land Platform Services, 
+Canvas, and Studio on stage
+• Handle the replacement objection: Cloud Control connects work 
+between controllers; it does not flatten Meraki, Intersight, or Nexus 
+expertise
+Partner Summit - Cisco Cloud Control Executive Brief.pdf (Beat 2)
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slides 5–7, 37)
+TDM - Cisco Cloud Control & AI Canvas.Pdf(slides 5–8)
+Cisco Live Keynote Transcript(KN1 00:04:00–00:07:20)
+AI Canvas Transcript(DD1 00:00:00–00:10:00)
+Specialist Master Transcript(MC2 00:12:00–00:20:30)
+S3 AI Canvas — the customer story  ·  
+Shared
+12 min • Tell the 'why is my application so slow?' story: symptom anywhere, 
+answer in one workspace
+• Describe multiplayer, supervisor + domain agents, and human 
+approval before action
+• Know when to stay in Assistant (seconds) vs open Canvas (minutes to 
+hours)
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slides 14–20, 30)
+Cisco Live Keynote Transcript(KN3–KN4 00:16:00–00:36:30)
+Specialist Master Transcript(MC4 00:28:30–00:38:00)
+Cloud Control Partner Enablement Plan.pdf (p. 12)
+
+--- PAGE 4 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Sales Stage 1  ·  S4–S6
+ID Module Min Learning objectives Source files
+S4 Packaging, entitlement, no new 
+license  ·  Shared
+8 min • State: included in Essential and Advantage tiers of eligible 
+subscriptions — no new license, no margin on the platform itself, by 
+design
+• Price services against the six-stage adoption lifecycle: Onboard, 
+Implement, Use, Engage, Adopt, Optimize
+• Flag that base usage is included today and monetization, pricing, 
+packaging, and rate limits may change
+Partner Summit - Cisco Cloud Control Executive Brief.pdf (Beat 4)
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slides 25, 36)
+TDM - Cisco Cloud Control & AI Canvas.Pdf(slides 53, 55)
+Cloud Control Partner Enablement Plan.pdf (p. 9)
+S5 The power of one — capability tour 12 min • Walk a buyer through one login, unified inventory, connected 
+topology, correlated Actions, Assistant, and Workflows
+• Connect each capability to a business outcome (faster MTTR, less 
+swivel-chair, reuse of existing Cisco spend)
+• Keep the tour commercial: what the customer sees, not how the 
+pipeline works
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slides 8–13)
+Cisco Live Keynote Transcript(KN2 00:07:20–00:16:00)
+S6 Studio and Marketplace — partner 
+IP
+8 min • Explain Studio (App Builder + Agent Builder) as the partner 
+differentiation layer — awareness only in Stage 1
+• Position Marketplace as services on the platform today and the path 
+to publish partner IP later
+• Name sellable services from the A2 taxonomy: domain agents, 
+workflow packs, integration apps, design services
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slides 21–24)
+Partner Summit - Cisco Cloud Control Executive Brief.pdf (Beat 3 play 4 
++ Annex A2)
+Cisco Live Keynote Transcript(KN5 00:36:30–00:43:03)
+Cloud Control Partner Enablement Plan.pdf (pp. 14–15, 47)
+
+--- PAGE 5 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Sales Stage 1  ·  S7–S9
+ID Module Min Learning objectives Source files
+S7 Adjacency — Assistant, IQ, and 
+Splunk
+8 min • Differentiate AI Canvas vs AI Assistant (workspace vs chat, 
+multiplayer vs private)
+• Position Cloud Control vs IQ as complementary: live ops vs 
+lifecycle/risk; same asset truth
+• Position AI Canvas + Splunk: Canvas coordinates; Splunk deepens 
+historical analysis
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slides 30–34)
+TDM - Cisco Cloud Control & AI Canvas.Pdf(slides 60–64)
+S8 Four money plays — what's in it for 
+partners
+12 min • Lead the unified operations conversation (boardroom, not BOM)
+• Drive pull-through: expand, displace, accelerate the second and third 
+product; value compounds with each connected product
+• Build services around agentic operations: Canvas = resolution; Studio 
+= build (domain agents, workflow packs, integration apps, design)
+• Extend value through Marketplace: services today, publish IP over 
+time — resale to co-creation
+Partner Summit - Cisco Cloud Control Executive Brief.pdf (Beat 3 + 
+Annex A2)
+Cloud Control Partner Enablement Plan.pdf (pp. 10–12, 15)
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slide 26)
+Specialist Master Transcript(MC5 00:38:00–00:47:37)
+S9 Pitch practice — 30 seconds, 3 
+minutes, 30 minutes
+10 min • Deliver a 30-second elevator using: AgenticOps is the model; Cloud 
+Control is the harness
+• Close with the five asks: qualify and bring to Sales; enable the unified 
+narrative; land 2nd/3rd product; one Studio play; bring a use case
+• Use two proof points (prefer NTT DATA in a partner room; AMD if 
+they want a named customer) and never end on caveats
+Partner Summit - Cisco Cloud Control Executive Brief.pdf (Beats 6, 8, 9)
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slides 2–27)
+
+--- PAGE 6 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Pre-Sales Stage 1 overview
+• Black Belt Cisco Cloud Control Pre-Sales Stage 1 (Sep 2026)
+• Cisco Cloud Control-Pre-Sales-Stage 1   ·   128 min   ·   13 modules   ·   4 shared
+• A Technical Seller can white-board the platform architecture, qualify identity/tenancy/integration prerequisites, narrate a multi-agent Canvas 
+investigation, run the dCloud AgenticOps in Action path, and avoid overselling Studio or uncommitted integrations.
+• Modules
+• P1  Why AgenticOps, why now  (8 min)  [Shared]
+• P2  What is Cisco Cloud Control  (10 min)  [Shared]
+• P3  AI Canvas — the customer story  (12 min)  [Shared]
+• P4  Packaging, entitlement, no new license  (8 min)  [Shared]
+• P5  Architecture, identity, RBAC, and tenancy  (10 min)
+• P6  Inventory, insights, and topology  (10 min)
+• P7  Actions, Assistant, and workflows  (10 min)
+• P8  Multi-agent investigation, MCP, and A2A  (12 min)
+• P9  Working in Canvas — modes, widgets, knowledge base, boards  (12 min)
+• P10  Integration coverage and customer prerequisites  (8 min)
+• P11  Studio apps, agents and lifecycle  (10 min)
+• P12  Agent security, observability and trust  (8 min)
+• P13  dCloud demo orientation  (10 min)
+• Assessment: 15-question knowledge check, 80% pass, plus a demo-orientation checklist
+
+--- PAGE 7 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Pre-Sales Stage 1  ·  P1–P3
+ID Module Min Learning objectives Source files
+P1 Why AgenticOps, why now  ·  
+Shared
+8 min • Open on operating capacity, not consoles: more work than 
+headcount, and partners already paid the coordination tax
+• State GA facts: U.S. GA 25 Aug 2026, 300+ customers in production, 
+5,000+ waitlist — this is a deployment conversation
+• Position AgenticOps as the operating model and Cloud Control as the 
+operational harness with human accountability
+Partner Summit - Cisco Cloud Control Executive Brief.pdf (Beat 1)
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slides 2–4)
+Cisco Live Keynote Transcript(KN1 00:00:00–00:07:20)
+Specialist Master Transcript(MC1 00:00:00–00:12:00)
+P2 What is Cisco Cloud Control  ·  
+Shared
+10 min • Draw the three-layer commercial story: Cloud Control / AI Canvas / 
+Studio + Marketplace
+• Name the seven-layer operating model and land Platform Services, 
+Canvas, and Studio on stage
+• Handle the replacement objection: Cloud Control connects work 
+between controllers; it does not flatten Meraki, Intersight, or Nexus 
+expertise
+Partner Summit - Cisco Cloud Control Executive Brief.pdf (Beat 2)
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slides 5–7, 37)
+TDM - Cisco Cloud Control & AI Canvas.Pdf(slides 5–8)
+Cisco Live Keynote Transcript(KN1 00:04:00–00:07:20)
+AI Canvas Transcript(DD1 00:00:00–00:10:00)
+Specialist Master Transcript(MC2 00:12:00–00:20:30)
+P3 AI Canvas — the customer story  ·  
+Shared
+12 min • Tell the 'why is my application so slow?' story: symptom anywhere, 
+answer in one workspace
+• Describe multiplayer, supervisor + domain agents, and human 
+approval before action
+• Know when to stay in Assistant (seconds) vs open Canvas (minutes to 
+hours)
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slides 14–20, 30)
+Cisco Live Keynote Transcript(KN3–KN4 00:16:00–00:36:30)
+Specialist Master Transcript(MC4 00:28:30–00:38:00)
+Cloud Control Partner Enablement Plan.pdf (p. 12)
+
+--- PAGE 8 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Pre-Sales Stage 1  ·  P4–P6
+ID Module Min Learning objectives Source files
+P4 Packaging, entitlement, no new 
+license  ·  Shared
+8 min • State: included in Essential and Advantage tiers of eligible 
+subscriptions — no new license, no margin on the platform itself, by 
+design
+• Price services against the six-stage adoption lifecycle: Onboard, 
+Implement, Use, Engage, Adopt, Optimize
+• Flag that base usage is included today and monetization, pricing, 
+packaging, and rate limits may change
+Partner Summit - Cisco Cloud Control Executive Brief.pdf (Beat 4)
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slides 25, 36)
+TDM - Cisco Cloud Control & AI Canvas.Pdf(slides 53, 55)
+Cloud Control Partner Enablement Plan.pdf (p. 9)
+P5 Architecture, identity, RBAC, and 
+tenancy
+10 min • White-board Cloud Control as platform services sitting under 
+products, Assistant, Canvas, Studio, Marketplace
+• List the three Cloud Control roles and the no-escalation rule (never 
+exceeds source-product access)
+• Explain 1:many product-instance linking; do not promise an MSP 
+multi-customer portal
+TDM - Cisco Cloud Control & AI Canvas.Pdf(slides 5–8, 9–11, 35, 44, 
+51)
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slides 5–8, 36)
+Partner Summit - Cisco Cloud Control Executive Brief.pdf (Q&A tenant 
+linking)
+AI Canvas Transcript(DD2–DD3 00:10:00–00:29:00)
+Cloud Control Partner Enablement Plan.pdf (p. 46)
+P6 Inventory, insights, and topology 10 min • Describe normalized, searchable inventory across domain controllers 
+with 24h / on-change refresh, NLP search, and EoX/PSIRT/Field 
+Notices
+• Walk the insights pipeline: collect to render to rules engine to LLM 
+enrichment
+• Name topology types (Physical L1, Logical L2/L3, Overlay coming 
+soon), three zoom levels, and real-time push not polling
+TDM - Cisco Cloud Control & AI Canvas.Pdf(slides 12–17)
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slide 10)
+Cisco Live Keynote Transcript(KN2 ~00:11:00–00:15:00)
+AI Canvas Transcript(DD3 00:17:30–00:29:00)
+Specialist Master Transcript(MC3 00:20:30–00:28:30)
+
+--- PAGE 9 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Pre-Sales Stage 1  ·  P7–P9
+ID Module Min Learning objectives Source files
+P7 Actions, Assistant, and workflows 10 min • Explain how related alerts become one Action with shared evidence, 
+and list lifecycle states
+• Position Assistant as the always-present, context-scoped, single-
+player surface
+• Explain Workflows as no-code, ordered, auditable API/action chains 
+(manual, schedule, alert, Assistant, Canvas)
+TDM - Cisco Cloud Control & AI Canvas.Pdf(slides 18–22, 30)
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slides 11–13)
+Cisco Live Keynote Transcript(KN3 00:16:00–00:17:30)
+Cisco Live Keynote Transcript(KN4 ~00:30:00–00:32:00)
+P8 Multi-agent investigation, MCP, and 
+A2A
+12 min • Narrate Understand to Delegate to Investigate in parallel to 
+Synthesize, with the reasoning trail visible
+• Contrast Default mode vs Deep Reasoning; white-board supervisor + 
+MCP domain agents
+• Define MCP (agents to tools) and A2A (agents to agents) as the 
+interoperability story
+TDM - Cisco Cloud Control & AI Canvas.Pdf(slides 19, 23–31, 52, 68–
+72)
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slides 14–19)
+Cisco Live Keynote Transcript(KN4 00:24:30–00:32:30)
+AI Canvas Transcript(DD4–DD5 00:29:00–00:52:00)
+P9 Working in Canvas — modes, 
+widgets, knowledge base, boards
+12 min • Operate the Canvas UX: natural language, live agent reasoning, 
+color-coded widgets, mini-map, multiplayer share link
+• Use knowledge base uploads (PDF/TXT/MD/DOCX) and multimodal 
+images (JPEG/PNG, 5 MB, up to four)
+• Invoke agents with @ (up to four), reuse Cisco-curated boards, keep 
+tenant scope in the context pill
+TDM - Cisco Cloud Control & AI Canvas.Pdf(slides 27, 32–36)
+Cisco Live Keynote Transcript(KN3–KN4 00:17:30–00:36:30)
+
+--- PAGE 10 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Pre-Sales Stage 1  ·  P10–P12
+ID Module Min Learning objectives Source files
+P10 Integration coverage and customer 
+prerequisites
+8 min • Quote the GA connected-product set from the Partner Summit brief 
+(Meraki through IQ, including via-Meraki GO and via-controller paths)
+• Name live third-party today: ServiceNow, BlueCat, Infoblox, Atlassian 
+— plus 60+ integration commitments
+• Confirm the customer's connected products with Sales before you 
+demo; Marketplace logos are not the integration list
+Partner Summit - Cisco Cloud Control Executive Brief.pdf (Beat 3 + Beat 
+8)
+TDM - Cisco Cloud Control & AI Canvas.Pdf(slides 37, 50, 65–66)
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slide 20)
+Cloud Control Partner Enablement Plan.pdf (p. 11)
+P11 Studio apps, agents and lifecycle 10 min • Describe App Builder (Codex builds the view) and Agent Builder 
+(skills, schedule/event triggers, monitor)
+• Walk create to validate to publish (immutable version) to install with 
+customer settings to manage as one unit
+• Give the four example apps and Cisco-built Marketplace apps as 
+roadmap-flagged
+TDM - Cisco Cloud Control & AI Canvas.Pdf(slides 38–47)
+BDM - Cisco Cloud Control & AI Canvas.Pdf(slides 21–24)
+AI Canvas Transcript(DD6 00:52:00–00:57:04)
+Cloud Control Partner Enablement Plan.pdf (p. 47)
+P12 Agent security, observability and 
+trust
+8 min • Map AI Defense across the agent lifecycle: MCP scanner, config 
+scanner, skill scanner, runtime protection
+• Describe Splunk AI Agent Monitoring and Galileo (quality, 
+hallucination, drift)
+• State the trust posture: U.S. SaaS at GA; EMEA/APJC follow; no on -
+prem, sovereign, or air-gapped Cloud Control
+Partner Summit - Cisco Cloud Control Executive Brief.pdf (Beat 8)
+TDM - Cisco Cloud Control & AI Canvas.Pdf(slides 48–49, 53, 54)
+
+--- PAGE 11 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Pre-Sales Stage 1  ·  P13
+ID Module Min Learning objectives Source files
+P13 dCloud demo orientation 10 min • Launch the AgenticOps in Action instant demo and complete the 
+Stage 1 path: inventory/topology → Actions → Canvas
+• Use the Masterclass fireside chat as the talk-track source: Parts 2, 3, 
+5, 6 are required; Parts 1, 4, 7 are optional; bonus troubleshooting is 
+optional
+• State the demo caveat: it evolves toward GA — do not freeze 
+screenshots into LMS content; confirm access before a customer 
+demo
+demo-dcloud.md (AgenticOps in Action instant demo)
+demo-dcloud.md (Masterclass Parts 2, 3, 5, 6 (12:16 + 9:12 + 9:51 + 
+9:09))
+demo-dcloud.md (Bonus 1–3 Nexus / SD-WAN / Secure Firewall)
+AI Canvas Transcript(DD3–DD4 00:17:30–00:41:00)

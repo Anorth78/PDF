@@ -1,0 +1,1151 @@
+--- PAGE 1 ---
+Cisco Cloud Control
+FY27 Partner Enablement Plan
+Last updated: September 20, 2026
+
+--- PAGE 2 ---
+Executive Summary
+
+--- PAGE 3 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Partner Strategy & Journey Alignment
+Cloud Control
+Cross-Domain Operations
+Unified operating layer
+One login, inventory, topology, alerts
+AI Canvas
+Cross-Domain Agentic Ops
+Multiplayer agentic workspace
+Cross-domain investigation
+Cloud Control Studio
+Custom IP & Services
+App Builder, Agent Builder, Marketplace
+Governed agents, custom workflows
+Awareness Adoption Portfolio
+Pull-Through
+Services
+Development IP Development
+PRODUCT
+STRATEGY
+JOURNEY
+Platform Activation Customer Value Realization Partner Differentiation1 2 3
+
+--- PAGE 4 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Partner Enablement & Sales Assets
+Sales Foundational
+Stage 1 Black Belt
+Awareness Adoption Portfolio
+Pull-Through
+PARTNER ENABLEMENT  (CISCO → PARTNER)
+PARTNER ASSETS  (PARTNER → CUSTOMER)
+Partner Summit Showcase
+Solution Preview Training✓
+Partner Launch Toolkit✓
+Live dCloud Demo✓
+Platform Activation Customer Value Realization1 2
+Cloud Control AI Canvas
+Competitive Battlecards✓
+Presales Foundational
+Stage 1 Black Belt
+PIW, PSW, VoAM/SE
+
+--- PAGE 5 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+FY27
+Q1 Q2 Q3
+Partner Enablement Timeline FY27
+Cisco Live EMEA
+February 8
+Partner Summit
+October 26
+Partner Summit Payload
+Sales Stage 1 Black Belt
+Presales Stage 1 Black Belt
+Solutions Showcase
+Cisco Live APJC
+November 9
+GSX
+August 24
+GA announcement email 
+to all N. AMER partners
+Potential CLEMEA Payload (TBC)
+Cisco –> Partners (scaled):
+• Presales Stage 2 Black Belt
+• Operations Stage 1-2 Black Belt
+Cisco –> Partners (high-touch):
+• Agentic Ops Service Creation Workshop
+
+--- PAGE 6 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Partner Enablement Dependencies
+Deliverables Deliverable Dependencies (Owner) Funding Dependencies
+Customer Onboarding Guide Onboarding documentation (BE) – for partners who are onboarding 
+customers $5K
+Sales Stage 1 Black Belt Updated BDM decks (PMM) n/a
+Presales SE Stage 1 Black Belt Updated TDM decks (PMM), updated dCloud lab (dCloud) n/a
+Operations Stage 1 Black Belt Updated product documentation (BE), updated live lab environment 
+(dCloud) $175K for Learning Partner to develop content
+Sales Stage 2 Black Belt CC Studio availability and documentation (BE) $75K for Learning Partner
+Presales SE Stage 2 Black Belt CC Studio availability and documentation (BE), live dCloud lab with 
+CC Studio access $125K for Learning Partner
+Operations Stage 2 Black Belt Updated product documentation (BE), updated live lab environment 
+(dCloud) tbd
+Agentic Ops Service Creation Workshop tbd tbd
+Agentic Ops Customer Discovery Workshop tbd tbd
+Partner Summit Showcase Live demo environment w/ platform integrations – specific 
+requirements TBD tbd
+
+--- PAGE 7 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Partner GTM 
+Strategy Practice Building Behavior 
+Programs 
+Comms 
+Awareness
+Global  Partner GTM Framework  
+Strategy & Planning
+Partner Strategy Plan
+• Partner Value Proposition
+• Partner Stratification
+• TAM by RTM
+• Solution Offer, X-Arch Selling 
+Offer, Use Cases
+• Buying Programs, Pricing, 
+Profitably
+Success Metrics & Goals
+• Sales scope & success 
+metrics, $ impact
+• ELT consensus & agreement
+• Strategic investments, 
+reporting process
+• Dashboards, performance 
+tracking
+Practice Enablement 
+Content Development
+• Persona Based
+• Competitive
+• Cisco Events (Partner Summit, CL)
+• Landing Pages (Networking for 
+Partners, Secure Networking for 
+Partners)
+• Campaigns (Partner/Customer, 
+Ecosystem ISV, Cloud, GSI 
+alignment)
+Training Enablement
+• On-Demand (Blackbelt, QDF, 
+Partner Tech Elevate, dCloud, Cisco 
+U)
+• Virtual (#60, PIWs, VoE, VoAM, 
+IDEA)
+• Onsite (PVT, ILT, Roadshows) 
+• High Touch (MINT)
+• Competitive (Competitive Takeout)
+Specializations Content & Design 
+• Next Gen, Competencies
+Cisco 360 Program 
+Partner GTM Alignment 
+Backend Rebates Alignment 
+• Lifecycle Incentives (CPI)
+• Demand Gen Incentives (DGI, 
+MOUs)
+• Seller Incentives (Assessments, 
+Seller Rewards)
+• X-Arch Incentives (Cross Sell 
+Bonus) 
+Upfront Discounts Alignment 
+• Architectures Offers 
+• Hunting/Teaming
+• FastTrack
+• NFR
+Comms & Awareness 
+Comms Content Development 
+• Internal Newsletter (Take 5, The 
+Set List)
+• External Newsletter (Networking 
+for Partners Newsletter) 
+• Marketing Landing Pages (Partner 
+Hub, Launch Hub)
+• Tailored GTM messaging to 
+audience (TE, Security, IoT, 
+Distribution, Managed Services; 
+ISV, Cloud, GSI)
+• Prepare internal sales readiness to 
+Partner Sales
+Announcement
+• EVP/SVP Announcement Emails & 
+cascade comms e.g. newsletters, 
+blogs, social media
+• Integrate into Cisco & industry 
+events; sessions and stage 
+announcements
+Field Sales 
+Execution
+Field Sales Deliver to Partners
+Sales & Technical Readiness
+• Partner Sales leadership 
+alignment on strategy & success 
+goals | Leader All Hands
+• Partner Networking Sales All 
+Hands  Readiness training 
+Executive Alignment I Industry Events
+• Partner business interlocks 
+     (PGBs, EBCs, PAWs)
+• Partner executive touchpoints 
+(CL, Partner Summit, PECs, PVT, 
+Cloud & Industry Events, Gartner, 
+IDC)
+Field Execution | Performance
+• PAE / partner enablement 
+execution | Managed in region
+• Partner Performance:
+• Pipeline / Deal Reg; Growth; 
+enablement report
+• Sales sprints; discretionary $ 
+• Co-sell cloud and ISV sales
+Individual Workstreams Strategy Plan & ExecutionUber Strategy Plan       
+1 2 3 4 5
+5 Phases of Strategy & Execution
+
+--- PAGE 8 ---
+Enablement Framework (Needs update)
+
+--- PAGE 9 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Where We Are
+Controlled Availability: Cisco Cloud Control is live and partners are already onboarded
+Co-led program: Thunai and Joel lead the CA partner program, Dave leads enablement
+Multi-domain platform: Networking, Security, Compute, Observability, Collaboration
+Platform-first: partners engage multi-domain from day 1 — the platform's power is cross-domain
+Today's goal: align on the enablement approach and refine multi-domain plays together
+THE PARTNER PROMISE
+Exclusive Influence Dedicated Support Flexible Engagement
+
+--- PAGE 10 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+What Is Cloud Control
+A unified operating layer — not a portal. Platform services span identity, inventory, topology, correlation, and AI.
+Cloud Control
+One login, inventory, 
+topology, alerts
+Unified AI Assistant
+Quick answers; escalates 
+to Canvas with context
+AI Canvas
+Multiplayer agentic 
+workspace for cross-
+domain investigation
+Cloud Control 
+Studio
+Agent Builder, App 
+Builder, Marketplace
+Included with eligible subscriptions — partner value is pull-through + services.
+
+--- PAGE 11 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Start at the Platform — Multi-Domain from Day 1
+Multi-domain platform
+DAY 1
+3+ linked domains: one inventory, 
+topology, alert view
+Cross-domain AgenticOps
+CORE VALUE
+"Why is our finance app slow?" in AI 
+Canvas
+Partner IP & services
+DIFFERENTIATE
+Governed agents, custom 
+workflows, managed ops
+Platform-first: no single-domain on-ramp — qualify for 3+ domains
+Anchor, not ceiling: lead with the strongest domain into a multi -domain engagement
+
+--- PAGE 12 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Anchor → Multi-Domain Plays — For Discussion
+Anchor domain Anchor products Multi-domain play the partner leads with
+Networking Meraki, Catalyst SD-WAN Branch experience across Net + Security + Observability
+Security Security Cloud Control, Secure Access Governed vuln mgmt across Security + Networking + Compute
+Compute Intersight, Nexus Dashboard, HyperFabric DC health + fabric congestion across Compute + Observ. + Net
+Observability Splunk Cloud, ThousandEyes Historical + live + action across all domains
+Collaboration Webex Control Hub Call-quality root cause across Collab + Networking + Observ.
+Each partner leads from its anchor domain into a multi-domain engagement — input welcome.
+
+--- PAGE 13 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cross-Domain & AgenticOps
+"Why is our finance app slow?"
+Net + Security + Compute + Observability
+"Did our firewall change break 
+productivity?"
+Security + Networking
+"Poor Webex quality at HQ"
+Collaboration + Networking + 
+Observability
+AgenticOps — beyond AIOps
+Agents gather evidence, maintain context, and drive governed workflows end -to-end
+AI Canvas : a supervisor agent delegates to domain agents; humans stay in control
+Cloud Control Studio: custom agents, runbooks as skills, ecosystem integrations , Marketplace
+
+--- PAGE 14 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+CAFE Framework & Partner Journey
+CAFE — shared enablement structure
+Roles
+Business Seller  ·  Technical Seller  ·  Deployment Engineer
+Stages
+Foundational  →  Proficient  →  Focus & Depth
+Partner maturity (BU model)
+Level 1  — domain on 3+ platforms
+Level 2  — workflows, automation, integration services
+Level 3  — Marketplace, agents, ecosystem (Agent / App 
+Builder)
+LEARNING JOURNEY
+Awareness Technical
+confidence Go-to-market Services
+depth CA co-dev
+Delivered via Black Belt (on-demand, PVI-linked) + high-touch workshops — see next slide.
+
+--- PAGE 15 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+How Partners Learn — On-Demand + High-Touch
+PROPOSED DIRECTION — NOT COMMITTED
+Black Belt — on-demand
+Scalable baseline for all partners  ·  self -serve  ·  PVI-linked  ·  
+certification gate
+Tracks = CAFE roles:  Sales · Pre -Sales · Deployment
+Each Stage 1 → 2 → 3  ·  multi -domain by design
+High-touch workshops
+Accelerators layered on the on -demand baseline
+For the CA cohort + Level 2 –3 partners
+PARTNER ENABLEMENT  (CISCO → PARTNER)
+Joint Business
+Planning
+Hands-on
+dCloud Lab
+Developer
+Deep-Dive
+Service
+Creation
+PS Solutions
+Showcase
+PARTNER-DELIVERED  (→ CUSTOMER, “IN-A-BOX”)
+Agentic Ops Discovery
+Workshop-in-a-Box Health Check Readiness Assessment
+Phasing:  Solution Preview live today  →  Stage 1 → 2 → 3 phased CA → GA (aligned to Quarterly Development Focus).
+
+--- PAGE 16 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Building the Plan Together
+Woven journey: multi-domain plays and labs mapped into the partner learning journey
+Delivered via: Black Belt on-demand + high-touch workshops (enablement and partner-delivered)
+Shared workspace: a team space and regular touchpoints to iterate
+Team review: partner-facing content gets a review before it ships
+Deeper reference: the full enablement plan is available for review
+SERVICES PARTNERS CAN SELL
+Assessment Onboarding Workflow design Custom agents Managed ops
+
+--- PAGE 17 ---
+Workstreams
+
+--- PAGE 18 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Partner Workstreams
+Workstream Deliverables GPS Lead Key Collaborators Timeframe
+Partner Adoption, Experience & 
+AgenticOps Solutions
+• AgenticOps & cross-domain use cases (AI Canvas, Splunk, ServiceNow, ThousandEyes..etc)
+• Partner integrations with Agent Studio (partner -built agents, partner IP)
+• Solution IP & technical-depth SME (reference architectures, Level 2 design)
+• Onboarding motion, Alpha/Beta/CA → GA at scale (Partner run, PSE -supported by GA)
+• Voice of the Partner → product & roadmap input (AgenticOps Partner Community)
+• Experience, adoption & outcomes; repeatable motion with GEOs
+• Partner references, testimonials & partner -led pipeline
+Joel J
+• BE Partner GTM
+• GPS Architecture Sales & PGA
+• GEOs
+• Product Marketing
+• CCC Field and BE Champions 
+Ongoing
+Partner Enablement Plan
+(Cloud Control)
+• Partner Enablement Plan
+• Role-based training
+• Live workshops
+• Services assets
+• Partners update vehicles (#30/60 webinars, PIW, PVT, Insider series , )
+• Alignment with one Cisco messaging & partner maturity
+Sandhan
+• BE Partner GTM
+• GSS Sales Enablement
+• GSS Engineering 
+• Product Marketing
+• GPE Architecture Workstreams
+Ongoing
+Partner Enablement Plan for 
+integration of CC into architecture 
+enablement portfolios
+GPE & PGA
+(Workstream)
+Reporting & metrics • Reporting & metrics Tracy T
+• BE Partner GTM
+• GPS Architecture Sales & PGA
+• GEOs
+Ongoing
+Comms Planning
+• Partner messaging
+• Email campaigns
+• CA Partner success stories & Updates 
+Rudy A • BE Partner GTM
+• Workstream leads Ongoing
+GTM Strategy
+• Partner landing page
+• Partner Announce Guide & FAQ
+• Partner Campaign Assets
+• Channel Attribution (operational solution for establishing Partner of Record status for activated 
+customers (e.g. zero-dollar deal registration))
+• Incentives (seller rewards, CPI rebates (PVI alignment), LCI/Assessments incentives, MOUs)
+Victoria V
+• BE Partner GTM
+• Product Marketing 
+• Partner Marketing
+• SalesConnect publishing team
+• GRS Sales Operations 
+Q4
+Partner Summit
+• Solutions Showcase
+• BI sessions
+• Partner & executive comms
+Greg G
+• BE Partner GTM 
+• Partner Marketing
+• One Cisco marketing 
+• Event Marketing
+Q1
+
+--- PAGE 19 ---
+
+
+--- PAGE 20 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Archive
+
+--- PAGE 21 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Post-GA
+• APO – GA – exclusive sessions for top partners – architecture leads, SREs – internal TTT
+• AM & SE = same content – not deep dive, no partner onboarding
+• APO – all partners 
+• Geo webinars
+• Newsletters
+• RoW – all partners - similar content as APO
+• Geo webinars
+• Newsletters
+• Questions
+• Who will coordinate the webinar schedules – Sandhan, Ashley?
+• WHEN will BU be ready to deliver awareness webinars
+• HOW much can they scale
+• WHO is developing the content
+• Newsletter should have link to scheduled webinars, so these need to be scheduled
+• Sandhan will:
+• Find out who for each top 12 account we will coordinate with (PAE, architecture lead)
+• Dave will:
+• Reach out to Stephen Colucci (scolucci ) for Presidio
+
+--- PAGE 22 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Open issues
+• Partner onboarding support
+• Nihar has a team of Solution Readiness Engineers (SREs) that could help
+• Cisco Communities
+• Need to address difference between:
+• (a) enablement on CC itself — onboarding, cross-domain features, reporting, troubleshooting 
+with AI Canvas, Agent and App Builder
+• (b) convergence of CC into the architectures – how you use CC to manage networking, 
+compute etc
+
+--- PAGE 23 ---
+
+
+--- PAGE 24 ---
+Slides for July 8 EC
+
+--- PAGE 25 ---
+
+
+--- PAGE 26 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Partner Journey & Strategy Alignment
+Cloud Control
+Cross-Domain Operations
+Unified operating layer
+One login, inventory, topology, alerts
+AI Canvas
+Cross-Domain Agentic Ops
+Multiplayer agentic workspace
+Cross-domain investigation
+Cloud Control Studio
+Custom IP & Services
+App Builder, Agent Builder, Marketplace
+Governed agents, custom workflows
+Platform Activation Customer Value Realization Partner Differentiation
+Awareness Adoption Portfolio
+Pull-Through
+Services
+Development IP Development
+PRODUCT
+JOURNEY
+STRATEGY
+
+--- PAGE 27 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Partner Enablement & Assets for GA Q1 -FY27
+Live dCloud Demo Partner Campaign Assets Agentic Ops 
+Discovery Workshop
+Partner Launch Toolkit
+Customer Onboarding Guide
+Operations Tutorials
+Competitive Battlecards
+Solution Preview Training
+Sales & Presales Training
+(Stage 1 Black Belts)
+Awareness Adoption Portfolio
+Pull-Through
+PARTNER ENABLEMENT  (CISCO → PARTNER)
+PARTNER ASSETS  (PARTNER → CUSTOMER)
+Platform Activation Customer Value Realization
+Partner Summit Showcase✓
+✓
+✓
+Future – aligned with Cloud Control Studio
+
+--- PAGE 28 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+FY27
+Q1 Q2
+Partner Enablement GA Timeline
+Cisco Live EMEA
+February 8
+Partner Summit
+October 26
+Partner Summit Payload
+Solutions Showcase
+BI Sessions
+Partner & Exec Comms
+Operations Tutorials
+Agentic Ops Discovery Workshop (?)
+Cisco Live APJC
+November 9
+Q4
+CA Launch
+@Cisco Live US
+June 1
+Cisco Live Partner Payload
+Partner Solution Preview
+Partner SalesConnect Page
+Partner Announce Guide
+Partner FAQ
+GSX
+August 24
+GSX Payload
+Sales & Presales Stage 1 
+Black Belts
+Customer Onboarding Guide
+Competitive Battlecards
+Partner Campaign Assets
+
+--- PAGE 29 ---
+Cisco Cloud Control
+Internal Sales & Partner Enablement Operational Plan - Awareness
+GLOBAL PARTNER ENABLEMENT TEAM
+
+--- PAGE 30 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+PARTNER LIFECYCLE ROADMAP
+Cisco Cloud Control: Partner Enablement Progression Model
+STAGE 1: AWARE STATE
+Awareness & Strategic Alignment
+Build partner executive awareness, communicate value 
+positioning, and broad ecosystem engagement.
+• Target Audience: Partner Leadership, PAMs, and 
+Regional/National Partner Teams
+• Key Focus: Positioning Cisco Cloud Control value 
+proposition and identifying GTM opportunities
+• APO 1:1 National Series: Exclusive 1:1 sessions 
+(2-hr min) for 12 Top Partners (WWT, Presidio, 
+CDW, Computacenter, Insight, HSI)
+• APO Newsletter: Broad outreach to 10,000+ subscribers 
+across Partner Org (in transition due to LFG)
+• Regional Broadcasts: Voice of Engineer (VoE) & Voice of 
+Partner SE (VoPSE) broadcasts for all regional partners (Can 
+be done in Aug) & PIW.
+• EMEA & APJC: PIW can be done as per availability
+• Programmatic Scale: Global #60PartnerSuccess campaign 
+planned for Q1 execution based on resource availability
+• Blackbelt Stage 1 : Scale content for Partner 
+Enablement
+STAGE 2: Demonstrate
+Deep-Dive & Hands-On
+Deliver high-touch presales technical validation and 
+interactive hands-on lab experiences.
+• Target Audience: Partner Pre-Sales Engineers (PSE) & 
+Technical Practice Leads
+• 1:1 National Series: Exclusive 1:1 sessions (2 -hr min) for 
+12 Top Partners (WWT, Presidio, CDW, Computacenter, 
+Insight, HSI)
+• Interactive Enablement: dCloud Demos & Capture The 
+Flag (CTF) for deeper technical engagement
+• APJC Regional PIW: TBD (3-4 weeks notice for ANZ, SG, 
+Thailand)
+• Blackbelt Stage 2 & 3 :Scale for Partner Enablement
+STAGE 3: Delivery
+Deployment & White-Glove Support
+Accelerate customer deployment, eliminate technical 
+adoption blockers, and scale partner success.
+• Target Audience: Partner Deployment Engineers & 
+Alpha/Beta Stage Partners.
+• Key Focus: Achieving operational readiness and 
+production deployment velocity across top partner 
+accounts
+• BE-Led White Glove: Help drive onboarding for the 
+customers.
+• SRE White-Glove: Dedicated Solution Readiness 
+Engineering (SRE) White-Glove services for partners stuck in 
+Alpha/Beta stages
+• Adoption Acceleration: Hands-on engineering triage to 
+ensure seamless transition from pre -sales to active cloud 
+deployment
+• Partner Support Space:Dedicated Webex Support Space for 
+real-time queries related to Cisco Cloud Control or Community 
+Page.
+
+--- PAGE 31 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+APO REGIONAL STRATEGY
+AMER: Partner Awareness
+National Partners (High-Touch 1:1)
+• Target Scale Partners: Focusing on top-tier partners: WWT, Presidio, 
+CDW, Computacenter, Insight, HIS etc.
+• High-Touch Engagement: Exclusive 1:1 sessions organized for 12 key 
+partners to ensure complete individual alignment. Session Length: 2hrs.
+• Continuous Series: Structured back-to-back weekly series running 
+through the target August window.
+• Technical Preference: Heavy focus on interactive components, 
+integrating Cisco dCloud Demos and Capture-The-Flag (CTF) 
+environments (Specifically for Pre and Post Sales Engineer)
+• Timing & Cadence: Target dates set for weeks of August 3rd, 
+10th, and 17th. Tuesday/Thursday slots reserved exclusively.
+Regional Partners & Mass Scale
+• Regional Broadcast Channels: Delivery via 'Voice of Engineer' and 'Voice 
+of Partner SE' broadcasts during the September timeline.
+• Ecosystem Support Space: Establishing a persistent Webex Space 
+dedicated to unblocking partner queries regarding Cisco Cloud Control.
+• Mass Messaging Scale: Leveraging programmatic emails/newsletters 
+sent to 10,000+ subscribers across partner organizations.
+
+--- PAGE 32 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+APJC: Internal Sales & Partner Channels
+APJC REGIONAL STRATEGY
+Internal Sellers
+• Briefing Timeline: On-demand webinars
+• Optimized Format: Condensed, high-impact 1 to 1.5-hour sessions 
+targeting core value propositions.
+• Collaboration Spaces: Persistent internal Webex Space established and 
+maintained specifically for AMs and SEs.
+• Readiness Check: Focused on sales qualification rules, pricing, and 
+collateral positioning on SalesConnect.
+Partners
+• On-Demand Partner SE PIW: Partner Innovation Workshops (PIW) 
+• Early Notice Requirement: Early campaign planning is critical. Australia, 
+Singapore, and Thailand require 3 to 4 weeks advanced notice.
+• CAI SEVT Integration: Can target CAI SEVT technical conference in 
+September to launch Cisco Cloud Control (CCC) awareness
+• Engineering Mindshare: Scaling content delivery through highly 
+structured technical tracks targeting regional partner engineers like 
+Blackbelt
+
+--- PAGE 33 ---
+PARTNER LIFECYCLE ROADMAP
+Cisco Cloud Control: Partner Enablement Execution Rollout plan
+Internal rollout plan ( Completed and Planned )  
+External rollout plan
+
+--- PAGE 34 ---
+GLOBAL SCALE GTM
+Global Initiatives: Sales & Partner Channels
+Global Internal Sales Channels
+• Cisco Insider Series: Primary GTM vehicle for global sales, presenting 
+the overall Cloud Control business case.
+• Networking Need to Know (NN2K): Specialized internal alignment call 
+engineered specifically for sales counterparts within the Networking 
+group.
+• EngiLive Platform: Global broadcasts focused on internal engineering 
+field readiness and architecture.
+Global External Partner Channels
+• Global Partner Newsletter: Currently in a strategic optimization and 
+structural transition phase due to LFG reorganization.
+• Mass Communication Scale: Will broadcast unified messaging to over 
+10,000+ partner subscribers post-transition.
+• #60PartnerSuccess Campaign: Targeting high-velocity external success 
+tracks for full execution in Q1 based on resource availability.
+
+--- PAGE 35 ---
+STRATEGIC TIMELINE MATRIX
+Global & Regional Readiness Checklist
+REGION * INTERNAL SALES FOCUS  PARTNER FOCUS  - GPE TARGET TIMELINE
+APO Region 12 National Partners 1:1 (dCloud/CTF)
+VoPAM & VoPSE Regional Broadcasts
+September, Date : TBD
+APJC Region On-Demand Webinars (1-1.5 hrs)
+Internal AM/SE Webex Spaces
+On-Demand Partner SE PIW
+CAI SEVT Partner Content Drive
+ODW – Date,TBD
+Mid-August PIW (ANZ/SG/TH)
+Sept (CAI SEVT)
+Global Initiatives Partner Insider Series (Broad Sales)
+Networking Need to Know (NN2K)
+EngiLive
+Global Newsletter Redesign
+#60PartnerSuccess Campaign Program
+Q1 Readiness Focus (Post LFG)
+Support Setup Internal Webex space setup & triaging Create dedicated Webex query space Immediate Execution
+Engineering Sync SRE Readiness alignment SRE White-Glove (Alpha/Beta stage) Continuous Monitoring
+
+--- PAGE 36 ---
+Winning with Agentic Platforms:: Cisco Cloud Control
+Project name? 60K Account Contacts
+Voice of the Account Manager – Bi-Weekly – Series Based – 30Min
+Opportunity to drive Services
+Future for managed services
+How to identify Customers (domains)
+Opportunity to drive renewals
+Inclusion of CiscoIQ
+Driving PQC compliance
+Driving post-Mythos era / LiveProtect
+Driving Secure Access / Zero Trust
+Cyber defense with Security Cloud Control
+Voice of the Systems Engineer – Bi-Weekly –Series Based - 1 hour
+Demo and Design Overview (baseline)
+Prompt Demos with AI Canvas (advanced)
+Assets Available
+New features, key requirements, safe upgrading, on-boarding, tokenomics, 
+datacompliance, unified identity .
+Target for 201 Session (Informed)
+• Cat Center / Global Overview
+• ThousandEyes
+• Meraki
+• DataCenter / Intersight
+• SD-WAN / SCC
+Workflow and Troubleshooting focused (Sales highlights)
+Solutions Readiness Engineering
+Design and Deploy Workshops
+Safe upgrade process
+On-boarding
+Cisco Learning Network:: Knowledge Article Series
+https://learningnetwork.cisco.com/s/article/cisco-cloud-fabric-overview
+AI Canvas Champion : Continuous Series for Regular Updates (TBD)
+Internal
+Identify and build Champions community
+https://cisco.sharepoint.com/sites/CiscoAICanvasChampions
+Needs2Know session (5 min updates)
+MasterClass session (30-60 min session)
+GPRS Insider series – Tim's All Hands – 
+Cisco Insider Series : Partners & Customers : 
+https://community.cisco.com/t5/cisco-insider/ct-p/insider 
+AI validated Pitch : TBD --- Bring it in the BB LP .
+
+--- PAGE 37 ---
+
+
+--- PAGE 38 ---
+1. What is process for the new partner request ? Is it routed to Partner account team ? Sara Tim coogans Approval 
+2. Current Partner list on Cisco Cloud control Controlled Availability ? #832
+3. We have onboarded Top 20 Partners and deferred 3 
+4. What is advise to Partner on Domain controllers to transition Cisco Cloud control ? 
+5. Product is GA , every partners to be enablement 
+6. Focused should be on Top 10-15 partners ( prioritize ) 
+7. Plan to activate the rest of the partners.. 
+8. Customer Onboarding through partners , What is the tenant onboarding ? RBAC access ? Partner entitlement ? 
+9. What if customer purchases more tokens ? 
+10. Sara helping on the cross domain onboarding process , ( Conversation / Documentation on Partner onboarding )
+11. What types of partners ? Professional , Adisors , consultijng partnesr.. ? 
+12.
+
+--- PAGE 39 ---
+
+
+--- PAGE 40 ---
+A concentrated partner landscape
+The top 10 partners cover more than half of ICP customers, with CDW leading across 12 of 14 controllers.
+PARTNER UNIVERSE
+659
+Unique partners represented across 
+the landscape of customers in the ICP
+CUSTOMER SCOPE
+5,040
+customers in scope – meeting the 
+criteria set out in the ICP
+TOP 10 COVERAGE 52%
+2,610
+customers covered by the top 10 
+partners
+CDW AS PRIMARY 19%
+956
+customers with CDW as their primary 
+partner
+CDW LEADERSHIP
+12 / 14
+controllers led by CDW
+Broad-based dominance
+CDW leads across the landscape—not only in the 
+largest controller categories.
+NEXUS ONE
+47 vs 42
+WWT                 CDW
+A close second
+In the second-smallest controller, CDW trails WWT 
+by only five customers.
+HYPERFABRIC
+3 / 2 / 2
+Presidio  •  Insight  •  Trace3
+Low-volume outlier
+Current volumes are too small to indicate a stable 
+partner hierarchy.
+CISCO PARTNER VIEW
+
+--- PAGE 41 ---
+Top partners by controller
+• Color identifies recurring partners across different controllers  
+• Counts represent unique customers where the listed partner is the primary
+Meraki
+1 1,325
+CDW
+2 494
+SHI International
+3 422
+Presidio
+Catalyst
+1 1,101
+CDW
+2 430
+Presidio
+3 415
+SHI International
+Catalyst SDWAN
+1 633
+CDW
+2 293
+Presidio
+3 210
+World Wide 
+Technology
+Security Cloud 
+Control
+1 1,004
+CDW
+2 415
+Presidio
+3 398
+SHI International
+Security 
+Dashboard
+1 1,007
+CDW
+2 414
+SHI International
+3 381
+Presidio
+Nexus One
+1 47
+World Wide 
+Technology
+2 42
+CDW
+3 33
+Presidio
+Intersight
+1 321
+CDW
+2 190
+Presidio
+3 128
+AHEAD
+Hyperfabric
+1 3
+Presidio
+2= 2
+Insight Direct
+2= 2
+Trace3
+Thousand Eyes
+1 474
+CDW
+2 194
+Presidio
+3 190
+SHI International
+Webex Control 
+Hub
+1 739
+CDW
+2 388
+Presidio
+3 197
+SHI International
+Splunk Cloud
+1 119
+CDW
+2 117
+Amazon.com
+3 70
+SHI International
+Meraki MX
+1 904
+CDW
+2 304
+SHI International
+3 268
+Presidio
+Secure Firewall
+1 811
+CDW
+2 302
+Presidio
+3 294
+SHI International
+Secure Access
+1 120
+CDW
+2 64
+Presidio
+3 49
+SHI International
+Consistent colour denotes the same partner across controllers  •  ‘2=’ denotes a joint second-place tie CISCO PARTNER VIEW
+
+--- PAGE 42 ---
+Critical Asset Bundles Content Elements Published Tracking GTM 
+Milestone Owner Contributors
+Standalone
+Messaging Brief | Competitive Landscape 
+for Enablement teams only SharePoint Self-reported Pre-Announce • TME
+• Competitive
+• Product 
+Manager
+• Product Mktg.
+SalesConnect – new or update existing SalesConnect SalesConnect Announce Product Mktg.
+• Product 
+Manager
+• GPS
+Seller Awareness Seller Announcement Guide | Ideal Customer Profile | Seller FAQ | 
+dCloud Click-Through Demo SalesConnect SalesConnect Announce • Product Mktg. 
+• dCloud
+• Product 
+Manager
+• TME
+Partner Awareness Partner Announcement Guide | Ideal Partner Profile | Partner FAQ SalesConnect SalesConnect Announce GPS
+• Product 
+Manager 
+• Product Mktg
+Seller Engagement Prospecting Guide | Ordering Guide | Competitive Comparison Guide | SE 
+Competitive Differentiation Cheat Sheet SalesConnect SalesConnect Launch
+• Architecture 
+Enablement
+• Competitive
+• Product 
+Manager
+Partner Engagement Partner Prospecting Guide | Ordering Guide | Competitive Resources for 
+Partners | Partner Enablement Plan SalesConnect SalesConnect Launch GPS • Product Mktg.
+Customer 
+Engagement Toolkit
+At-a-Glance | Data Sheet | Business Decision Maker Deck | Technical 
+Decision Maker Deck SalesConnect SalesConnect Launch Product Mktg.
+• Product 
+Manager
+• TME 
+Technical Resources Solution Design Guide | Cisco Validated Designs (if applicable) | dCloud Live 
+Demo | CPOC and Workshop Guides
+SalesConnect
+dCloud
+SalesConnect
+dCloud Launch • TME
+• dCloud
+• Product 
+Manager
+Sales & Partner 
+Training & Enablement
+Persona-based enablement (awareness & knowledge)
+Mindtickle
+SalesConnect Self-reported
+Launch • Sales 
+Enablement*
+• GPS
+• Sales 
+Acceleration
+• Sales Leaders
+• Geos
+• Product 
+ManagerPersona-based enablement (skill & activation) GTM 
+Acceleration
+Product Level Tier 1 Sales Enablement Minimum Deliverables
+Additional Seller / Partner 
+Best practices
+• Deal Strategy
+• Sales Engagement Process 
+• Compensation Guide
+• Sizing & Pricing Calculators 
+• Partner Profitability Analysis 
+*Enablement owners vary by Seller Profile: SEA – AE & SE Portfolio; Specialists – AE Architecture; Splunk – Splunk Sellers; GPS – Partner Sellers
+
+--- PAGE 43 ---
+Critical Seller Bundles Asset Definition Best Practice GTM 
+Milestone
+Standalone
+Messaging Brief
+for Enablement teams only
+Internal summary of the new product and approved messaging used to brief sellers before 
+enablement assets are available. Cloud Control  + AI Canvas
+Pre-Announce
+Competitive Landscape 
+for Enablement teams only Internal view of the market, competitors, Cisco’s position, and key differentiation. Agentic AI Landscape
+SalesConnect – new or update 
+existing
+Centralized landing page for approved product information, enablement content, and 
+customer-shareable assets. Announce
+Seller Awareness
+Seller Announcement Guide
+Consolidated seller reference covering the product, customer value, target customers, timing, 
+seller actions, and FAQs. Unified Edge
+Announce
+Ideal Customer Profile Profile of the customers most likely to achieve value from the product, used to guide product-
+market fit, sales and marketing focus, and customer adoption. CSF6100
+Seller FAQ Approved answers to common seller and customer questions about the product. Cisco Secure AI Factory 
+with NVIDIA
+dCloud Click-Through Demo Guided, self-paced walkthrough of the solution experience and key capabilities. Agentic Ops
+Partner Awareness
+Partner Announcement Guide Partner reference covering the product, its fit within Cisco’s portfolio, its relevance to 
+customers, and the partner opportunity.
+Cisco Cloud Control with AI 
+Canvas
+AnnounceIdeal Partner Profile Profile of the partners most aligned to strategic fit and mutual value creation, used to guide 
+partner strategy, joint development, and go-to-market focus.
+Partner FAQ Approved answers to common partner questions about the product and go-to-market 
+approach. Cisco AI PODs
+Seller Engagement
+Prospecting Guide Guidance on target buyers, customer pain points, use cases, conversation starters, discovery 
+questions, market insights, and objections. AI Defense
+Launch
+Ordering Guide Guidance on configurations, SKUs, licensing, pricing considerations, and ordering steps. Cisco Catalyst 9300
+Competitive Comparison Guide Comparison of Cisco and a named competitor, including capabilities, gaps, differentiation, and 
+customer implications. Meraki + Thousand Eyes
+SE Competitive Differentiation 
+Cheat Sheet
+Quick technical reference for Cisco differentiators, proof points, and competitive objection 
+handling. Catalyst 9000
+Asset Definitions
+
+--- PAGE 44 ---
+Asset Definitions (continued)
+Critical Seller Bundles Asset Definition Best Practice GTM Milestone
+Partner Engagement
+Partner Prospecting Guide Partner guidance on target customers, pain points, use cases, discovery questions, and 
+positioning. Unified Branch
+Launch
+Ordering Guide Partner guidance on product  configurations, SKUs, licensing, pricing considerations, and 
+ordering steps. Cisco Catalyst 9300
+Competitive Resources for 
+Partners Partner-ready comparisons, differentiation, proof points, and competitive objection guidance.Netskope SASE
+Partner Enablement Plan Plan defining partner audiences, learning objectives, content, delivery, milestones, and 
+ownership.
+Customer-
+Engagement Toolkit
+At-a-Glance Brief overview of the product’s key capabilities, customer benefits, and value. Cisco C9000 Smart 
+Switches
+Launch
+Data Sheet Comprehensive product reference covering technical capabilities, specifications, 
+requirements, and compatibility. Cisco Nexus One
+Business Decision Maker Deck Customer presentation explaining business value, expected outcomes, ROI, and strategic 
+benefits. Cisco AI Defense
+Technical Decision Maker Deck Customer presentation explaining architecture, integration, scalability, security, and technical 
+proof points.
+Cisco Cloud Control & AI 
+Canvas
+Technical Resources
+Solution Design Guide Step-by-step guidance for designing the solution to customer requirements and Cisco best 
+practices. Cisco SASE
+Launch
+Cisco Validated Designs (if 
+applicable) 
+Tested architectures and design guidance demonstrating solution performance, security, and 
+interoperability. CVDs
+dCloud Live Demo Interactive environment used to demonstrate solution capabilities and customer use cases. AgenticOps in Action
+CPOC and Workshop Guides Guidance for planning and delivering customer workshops and proof-of-concept activities. Cisco SASE
+Sales & Partner 
+Training & 
+Enablement
+Persona-based enablement 
+(awareness & knowledge)
+Role-specific learning that builds foundational product, customer, positioning, and use-case 
+knowledge. Launch
+Persona-based enablement 
+(skill & activation)
+Role-specific practice that builds customer-conversation, demonstration, opportunity-
+development, and execution skills. GTM Acceleration
+
+--- PAGE 45 ---
+CISCO CLOUD CONTROL
+Engagement Snapshot
+24
+Partners in program
+11
+Beta customers
+9
+External calls completed
+3
+Calls scheduled
+8
+In progress
+4
+Deferred
+US GA: 24 Aug 2026 (US-only)   |   EMEA controlled availability ~Feb   |   EMEA GA ~Apr-Jun
+
+--- PAGE 46 ---
+CISCO CLOUD CONTROL
+Where We Are Today
+Completed & active WWT, CDW , NTT Data, Insight Direct, Computacenter, Accenture, Gruve, Ingram Micro, Wipro (Trace3 paused)
+Recurring cadence set WWT (bi-weekly), CDW (bi -weekly), NTT Data (weekly)
+Scheduled / upcoming ANM (Aug 10), EnterOne (Sep, post -GSX)
+Waiting list Sentinel, GDT, NWN, NTS
+Deferred / stalled SHI (SE handoff), Logicalis, ePlus, Compunet, Dustin, CoreBTS, PeopleDriven; Avanade folded under Accenture
+Anchor dates US GA 24 Aug 2026 (US -only); EMEA controlled availability ~Feb, EMEA GA ~Apr -Jun
+
+--- PAGE 47 ---
+Learnings from Partners Cisco Cloud control onboarding 
+• Partners consistently view Cloud Control as a promising, well-designed unifying platform - cross-launch and global 
+inventory/topology are standout strengths (WWT; Computacenter fully committed to the vision).
+• AI Canvas is showing real utility - it solved an actual network bug for Accenture, and there is strong interest in agentic 
+ops (NTT building custom agents; CDW and WWT into Studio alpha).
+• Partners are Cisco Cloud control studio with Agent / APP builders is a great opportunity for the ecosystem and Agentic 
+workflow automation 
+• Need to update Ideal partner profile with minimum 3+ domains 
+• Documentation on product capabilities , integration and supported platforms 
+• Clarity on Customer engagement through partners, partner entitlements on domain controllers 
+• Concept of single super admin / read only access is a big operating model change for partners & customers.
+
+--- PAGE 48 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Cloud Control AgenticOps Plan
+Stage 0 : Onboarding guide for Partners, FAQ (Commercial..etc)
+Stage 1 ( Awareness, Demo and Pitch)
+Stage 2 (Practice Building for AgenticOps) 
+• Day 0, Day 1, Day 2, Day N :  Parallel Tracks
+• Day 0,1,N : Cisco First Party Apps, Cisco Agentic Workflows, Cisco IQ
+• Day 2 : Troubleshooting/RCA best practices using AI Canvas
+Stage 3 (Build IP and Services)
+• Cloud Control Studio
+• Agent & App Builder
+• Marketplace
+Joel Draft

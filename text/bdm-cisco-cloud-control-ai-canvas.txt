@@ -136,10 +136,10 @@ Investigate and resolve together with AI Canvas.
 
 --- PAGE 8 ---
 © 2026 Cisco and/or its affiliates. All rights reserved.
-Log
+Sign
  -
  in once, access your Cisco products
-Unified inventory
+One login
 
 --- PAGE 9 ---
 © 2026 Cisco and/or its affiliates. All rights reserved.
@@ -387,65 +387,84 @@ Teams maintain the
 missing pieces
 Operations span 
 disconnected systems
-What works can be 
-hard to scale
+Solutions are hard to 
+scale
 Every environment 
 works differently
-Operations outgrow 
-standard tools
+Operational needs 
+keep evolving
 
 --- PAGE 22 ---
 © 2026 Cisco and/or its affiliates. All rights reserved.
-Build what your operations need
+Build for your operations
+Meet each operational need
+Create applications around your 
+environment, teams, and way of working.
+Put expertise to work
+Bring runbooks, procedures, and specialist 
+knowledge into daily operations.
+Extend team capacity
+Assist operators directly or keep work 
+moving ambiently.
+Increase platform value
+Use Cloud Control context, integrations, 
+identity, and governance in every application.
 Cloud Control Studio 
-Fit your specific operations
-Create apps & agents around your 
-teams, workflows, and priorities.
-Connect your full environment
-Bring Cisco, third
- -
- party, and 
-homegrown context into one.
-Move from need to working app
-Describe, preview, and refine before 
-publishing.
-Scale solutions with control
-Share approved apps across teams 
-while keeping governance intact.
-Build an app
-Beta
-Build an agent
+ Beta
 
 --- PAGE 23 ---
 © 2026 Cisco and/or its affiliates. All rights reserved.
-Extend Cloud Control beyond
-Cloud Control Marketplace
-Fast time to value
-Pre
- -
- built, ready
+Tailored user interfaces
+Custom views unifying context, 
+capabilities, and actions.
+Agent Skills
+Runbooks and expertise brought to life 
+through agents.
+Workflows
+Deterministic execution of end
  -
  to
 -
- deploy solutions. ​
-Go live in minutes, not months. ​
-Work with your existing tools
-ServiceNow, Azure, Slack, Webex, and 
-many more. ​
-Meet more operational needs
-Solutions tailored for Network Admins, 
-IT Ops, 
- ​MSPs, and System Integrators​
-Expand access with control
-Make approved capabilities available 
-to the right teams.
+end IT processes.
+Agents
+Custom agents for operations, assisting 
+users or working ambiently.
+External Integrations
+Non
+ -
+ Cisco context and actions for 
+applications and agents.
+Persistent storage
+Application context retained across 
+runs.
+One application, multiple capabilities
+One Studio application combines capabilities for an operational outcome.
 
 --- PAGE 24 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Discover applications
+Browse apps from Cisco, partners, and 
+approved third
+ -
+ party vendors.
+Connect the tools you already use
+ServiceNow, Azure, Slack, Webex, and 
+many more. ​
+Add capabilities fast
+Use published applications for 
+common operational needs.
+Adopt with confidence
+Understand each application’s purpose, 
+capabilities, access, publisher, and support.
+Expand Cisco Cloud Control
+Cloud Control Marketplace
+
+--- PAGE 25 ---
 Leverage an open ecosystem
 Cloud Control Marketplace
 Note: Not all Cisco products will be available from Day 1; availability will be phased. Every logo does not represent committ ed integrations.
 
---- PAGE 25 ---
+--- PAGE 26 ---
 © 2026 Cisco and/or its affiliates. All rights reserved.
 Cisco reserves the right to adjust monetization, pricing and packaging in the future. Usage and rate limits may apply.
 Included with your subscription license for
@@ -457,7 +476,7 @@ Base usage and base rate limits included.
 3
 No new license.
 
---- PAGE 26 ---
+--- PAGE 27 ---
 © 2026 Cisco and/or its affiliates. All rights reserved.
 What changes 
 for your team
@@ -476,7 +495,7 @@ Turn operational speed into an advantage
 One connected platform unifies visibility, intelligence, 
 and action.
 
---- PAGE 27 ---
+--- PAGE 28 ---
 © 2026 Cisco and/or its affiliates. All rights reserved.
 To request access, go to: 
 cisco.com/go/CloudControlSignup
@@ -496,14 +515,14 @@ https://cisco.com/go/cloudcontrolstudio
 Shareable overview video: 
 https://www.youtube.com/watch?v=BlyNwKSpxn4
 
---- PAGE 28 ---
+--- PAGE 29 ---
 © 2026 Cisco and/or its affiliates. All rights reserved.
 
---- PAGE 29 ---
+--- PAGE 30 ---
 © 2026 Cisco and/or its affiliates. All rights reserved.
 Additional slides
 
---- PAGE 30 ---
+--- PAGE 31 ---
 © 2026 Cisco and/or its affiliates. All rights reserved.
 Two surfaces. One intelligence.
 AI Canvas vs AI Assistant
@@ -533,7 +552,7 @@ shines
  Speed. Move through your day faster.
  Context. Explore the “why” behind the data
 
---- PAGE 31 ---
+--- PAGE 32 ---
 © 2026 Cisco and/or its affiliates. All rights reserved.
 Built for different jobs. Designed to work together
 Cloud Control vs IQ (1/2) 
@@ -582,7 +601,7 @@ Same asset truth
 across both 
 experience
 
---- PAGE 32 ---
+--- PAGE 33 ---
 © 2026 Cisco and/or its affiliates. All rights reserved.
 How they are complementary
 Cloud Control vs IQ (2/2)
@@ -623,7 +642,7 @@ validate in real
 IQ shows me risks I haven't hit yet. Cisco Cloud Control shows me patterns I wouldn't 
 have found anywhere else. Together, they keep me ahead of the problem.
 
---- PAGE 33 ---
+--- PAGE 34 ---
 © 2026 Cisco and/or its affiliates. All rights reserved.
 Function
  AI Canvas
@@ -661,7 +680,7 @@ AI Canvas & Splunk
 AI Canvas turns connected evidence into a coordinated response. Splunk provides the analytical depth to validate the 
 diagnosis, expose wider impact, and confirm recovery.
 
---- PAGE 34 ---
+--- PAGE 35 ---
 © 2026 Cisco and/or its affiliates. All rights reserved.
 Relationship
  Direct claim
@@ -693,7 +712,7 @@ duplicate actions.
 Strong independently, more powerful together.
 Cisco Cloud Control & Splunk
 
---- PAGE 35 ---
+--- PAGE 36 ---
 © 2026 Cisco and/or its affiliates. All rights reserved.
 Matching the right intelligence to the right problem
 Incoming task 
@@ -722,7 +741,7 @@ Ex: Antares, Galileo evaluation m
  odel
 Ex: Claude, GPT, etc.
 
---- PAGE 36 ---
+--- PAGE 37 ---
 © 2026 Cisco and/or its affiliates. All rights reserved.
 Manage many product instances in one place
 1:Many product (tenant) linking
@@ -739,7 +758,7 @@ Switch scope without losing control
 Move between contexts while access and 
 product boundaries stay intact.
 
---- PAGE 37 ---
+--- PAGE 38 ---
 © 2026 Cisco and/or its affiliates. All rights reserved.
 Cisco Cloud Control
 The platform

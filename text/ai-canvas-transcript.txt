@@ -1,0 +1,726 @@
+--- PAGE 1 ---
+======================================================================
+TRANSCRIPT WITH SPEAKER IDENTIFICATION
+======================================================================
+Source file    : CiscoCloudControlAICanvasDeepDivenew.mp4
+Duration       : 00:57:04
+Language       : en (confidence 1.00)
+Model          : small
+Speakers found : 2
+Generated      : 2026-09-28 09:43
+Please note    : This file was produced automatically by speech
+                 recognition and, where a visual description is
+                 included, by an image model. Both make mistakes. Check
+                 every figure, name and job title against the recording
+                 before relying on it. Each timecode points at the
+                 moment in the video where the statement can be
+                 verified.
+======================================================================
+[00:00:01] Speaker1:
+    Hey everyone Marcus here. I'm going to keep this short because I know your time 
+is super valuable But I had to record this myself Because what I'm hearing from 
+customers right now is too good to not directly share with you Since we launched 
+cloud control last week customer response has been remarkable I'd say super 
+remarkable one customer told me this is the first Cisco product that felt like it 
+was built for the operator Not the engineer that stopped me cold. That's kind of 
+feedback that tells you we built something real So we're talking about ICP 
+qualification, this is where I need you to be the filter, and this is where I need 
+your help. We have really, really strong momentum, and we want each one of these 
+early customers
+[00:00:42] Speaker2:
+    to have a great experience.
+[00:00:43] Speaker1:
+    So we have a clear, ideal customer profile for cloud control. I need each of you
+to know what code and use it as your compass for every customer conversation. Ask 
+the right questions early. Does this customer meet the regional and environment they
+fit? Are they struggling with visibility and control across their infrastructure? Do
+they have the operational maturity to move quickly? If the answer is yes, accelerate
+hard. If the signals aren't there, that's okay too. Continue to nurture as the 
+platform evolves. You are the most trusted technical voice in the room with our 
+customers. Your qualification instincts matter more than anything else. And look, 
+DeCloud is your secret weapon. Now, I need every one of you to get into DeCloud. 
+this week. We have a world-class demo environment built specifically for you, it's 
+ready, it isn't a placeholder, it's polished, it's powerful, and it tells the Cisco 
+Cloud Control story better than any slide deck ever could. Book the time, walk 
+through the full demo, get comfortable with the flow so that when you're in front of
+a customer, you're not presenting, you're showing them the future. Now look, we have
+the right product, we're in the right market window, and we have the best SE 
+community in the industry. I believe that completely. Stay sharp on the ICP, master
+
+--- PAGE 2 ---
+the demo and keep sharing what you're hearing in the field because your feedback is 
+making this product better every single day. Thank you for what you do. Now let's go
+show what customers as possible. Thanks all. All right.
+[00:02:24] Speaker2:
+    That was a great message for us. I'm going to be from here and I will go 
+straight into Cloud Control, very quick introduction. My name is Amit Dutta. I'm one
+of the product management directors in Cloud Control.
+[00:02:39] Speaker1:
+    I lead the platform.
+[00:02:41] Speaker2:
+    And let me quickly go ahead and share my screen
+[00:02:47] Speaker1:
+    and presentation. And I also have Rajat with me. Hello, everyone. Rajat. Yeah, 
+thanks. Thanks, Amit. Rajat Gulatti, Director of Product Management for AI Canvas 
+and Unified AI Assistant. So nice to be here. Thank you for the opportunity to 
+present and let's get started. Awesome.
+[00:03:14] Speaker2:
+    All right, thank you. All right, so the way we have divided this very quickly. 
+So I'm going to, out of it, Cloud Control, provide some deep dive information and a 
+quick demo and then we'll continue to demo with Rajat into AI Canvas and then 
+provide some deep information on Canvas as well.
+[00:03:37] Speaker2:
+    All right, so we'll start with the overview and one of the things that we wanted
+to kind of just start off with was primarily the system portfolio priorities. And 
+you have seen this earlier as well. We are from a Cisco perspective working on the 
+IIT data centers, feature proof workplaces and digital religion residents and 
+everything is accelerated by Cisco AI. And so here is something that Cloud Control 
+is embracing fully. So these are the use cases that we will have to support and 
+resolve and Cloud Control provides that foundation. So that's where we're just going
+to stop there. OK, so I was assuming that you've already seen. So we are not going 
+to go over the high level use cases. So we'll go a little bit deep today. So just to
+very quick recap, there are three major use cases that Cloud Control and AI Canvas 
+is trying to solve for. So the first one is we have built a lot of depth in our 
+vertical solutions in our domains. The connective tissue is missing, and Cloud 
+Control aims to create that connective tissue. We have heard this from our customers
+multiple times. And what that means, it primarily means that being the front door to
+all our products, so you come into cloud control, you get access to your Cisco 
+portfolio. So that's number one. The second was providing platform services and 
+certain, I would say, capabilities within the platform, which allows for operation, 
+day-to-day operations to be easier for our customers, and then providing the 
+agenting operation surface, which is then surface by canvas for deeper 
+troubleshooting and multiplayer collaborative experience, right? So those were kind 
+of the three use cases that we like very highly will use cases we started with. So 
+let's start off with the platform. So the platform, this is where most of the
+
+--- PAGE 3 ---
+foundation has been built on. On the left hand side, what you're seeing are the 
+products which are already integrated today in control availability, as we know 
+cloud control is already in CA, it was launched in Cisco Live. And all of these are 
+already connected today, which means you can utilize any of these platforms to come 
+onto Cloud Control, log into Cloud Control and start using it. I'll not go through 
+all of them, but primarily all of the major controller and the domain architectures 
+are already available, right? And we have also integrated with IQ. So we're cross 
+launching into IQ as well to support. There is different, there's still work on 
+going there for deeper integration, but we have connected it, let's put it that way.
+And then from the platform services perspective, the platform provide few things. So
+these are out of the box. If you get long control, you will get access to all of the
+services and it will go through most of these. So you get a singular identity, the 
+platform. So there is a backend service called a Cisco Unified Identity. It allows 
+for when a user logs into the platform for seamless movement between different 
+platforms rather than doing multiple logins. So it's beyond, it's what I said. So 
+it's actually a lot of the token. So this is basically done through tokens. So we 
+utilize CUI tokens in which the other systems understand and it allows us to not 
+only transfer identity but also transfer context. That's which is why RBAC for 
+example, is very easily managed. we honor the RBAC in the product and the token 
+provides us with that context so that we don't do any kind of privilege excavation. 
+So we'll talk about that a little more. Then of course, full inventory is provided. 
+The inventory is connected across all of our controllers and all the inventory is in
+one place. Same thing for topology, topology is end to end. Right now in control 
+availability, we are providing the physical and the end to topology. We will be 
+working on the L3 as we talk.
+[00:07:58] Speaker2:
+    But it's one of those first time where you can see an end to a fully connected 
+topology inside the network across multiple controller types across multiple domains
+all stitched together. We are also providing alerts and notifications. So this 
+alerts are coming from all our controllers. We do correlation on those alerts to 
+provide if they're in the same balance going from the controller we can kind of plug
+them to it, show it to the customer. And alerts is one of our job points into 
+Canvas. So you look at an alert and you want to troubleshoot. That's where you 
+generally will start with Canvas. And then there is licensing. We provide licensing 
+information. Now, we are showing some forward-looking information here as well. Some
+of the things that you're seeing, like for example, the Cloud Control Studio, it got
+launched in CL, but it's still not available. It's still in the works. It's in 
+alpha. But the CloudNATO Studio provides a marketplace, an agent builder and an app 
+builder. And this is what the future is going to look like, particularly for 
+operations standpoint. We'll talk a little bit about it. And the CloudNATO Studio 
+obviously is powered by the agentic backend and the AI models which are providing 
+powering of the agentic backend, which obviously is visualized through AI Canvas and
+AI Assistant. AI Canvas being the collaborative workspace where you troubleshoot 
+where you learn more about your network, very, very generative, very intuitive, 
+flexible troubleshooting tool. So that's kind of all over the entire platform in a 
+nutshell. So we will go a little bit into knock model that we kind of look at. We 
+have seen this happen over and over again in our customers networks, in our own 
+knocks, we see multiple console scatter context across various different things. We 
+see customers, I have done it myself, log into multiple different, try to figure
+
+--- PAGE 4 ---
+things out, you know, stitch everything manually. However, the whole point of cloud 
+control is the power of one, which is you create, you have one platform at 
+correlated context across everything. So that that is the specific reason for kind 
+of building this platform. So not to time on the slide, but it's just to provide 
+that contact where we are coming from. And what we're trying to do is make sure that
+we can surface all of the relevant information in the customer.
+[00:10:44] Speaker2:
+    So primarily I'm hoping the slides are showing up. So if you look at cloud 
+control, cloud control is divided in three major buckets. On the right hand side, 
+what you're seeing is Cisco Unified Identity. The Cisco Unified Identity is, as I 
+said, the author and the odzy, which binds the identity of a user into the platform.
+On the top, what you're seeing is primarily the, and I've not gone too much detail 
+into it, but try to keep it a little bit high level. It's primarily the engine 
+behind Cloud Control and Canvas. There are three major buckets. So the first one is 
+the experience and the identity context. So when you log into Cloud Control for the 
+first time, when you connect the tenant, when you're connecting your IDP, you're 
+managing your users, all of that is provided by the experience and the identity 
+context. So when you're doing RBAC, when you're what is seeing on the top nav, all 
+of this is managed by this kind of the box on the left experience and I did. So we 
+are running multiple microservices, right now we are on AWS, Cisco's AWS VPC and 
+everything is guys we are running EKS, primarily a lot of the, a lot, all of our, 
+all of our services is on EKS and we are using Kubernetes. We have a bunch of other 
+things that we are using, but primarily allows us to scale very easily a lot of this
+elastic in nature because depending on scale we want to go up and down as well as go
+in-breath depending how much devices are coming on board. So the experience and 
+identity context provides you with that information. So now that you've logged in 
+the platform services that we're talking about particularly domain management, 
+topology, unified inventory, search notifications. All of those contribute the 
+second bucket of services that we are running and a lot of the databases are 
+utilized here as well, particularly for inventory, which is more of a relational DB 
+that we are using, mostly our Postgres, and then topology is a little bit more of 
+blob use elastic search for it as well and some dynamo to make sure that we have 
+elasticity again flexibility in finding things and connecting things. And then 
+finally we have the AI services. AI services is where we have we talked a little bit
+about it in studio. We have AI gateway, agent orchestration, primarily what our 
+canvas is using. Most of the data in AI services is actually real time. So when you 
+actually make a query, the information is pulled. The only thing that we have in the
+back end is the network models or the LLNs which are running. We use, there are 
+multiple contexts and I know Rajat will go deep into it. But primarily, there are 
+two types. There are multiple models, I would say. There are two or three types of 
+models and the models of purpose built for certain things. For example, the Cisco 
+network model it's primarily for deep troubleshooting, for reasoning. We are also 
+using some frontier models today to do very quick kind of responses in Canvas. 
+Again, we'll go deep into that, but those are to provide certain context services. 
+So those are the things that is kind of running in the back end, powering the 
+platform. Now, the orange that you're seeing, the product integrations part inside 
+the architecture provides primarily four major things. So I'm going top down here, 
+but the product integration element provides with the API and the MCB context. And 
+this is super important. The MCB context allows not only the platform to connect to
+
+--- PAGE 5 ---
+Cisco controllers, but if there are other, for example, that's why the integration 
+and the third party context is becoming a little bit more easier for us because if 
+there is tools which are opening up MCPs towards the platform, we can pull data 
+there, including third-party services. We are looking at Splunk and Thousand Eyes 
+and IQ for third-party today, but for example, if there is CMDB like ServiceNow and 
+they provide the MCP, we can pull from there. So again, by taking advantage of this 
+technologies, we can actually now kind of connect and take, I would say, ingest data
+in a much easier fashion than before, actually. So the API NCV context provides that
+connectivity, token exchange is utilized for, again, exchanges this tokens for the 
+identity context. We collect event and logs. We also generate event and logs. 
+Primarily, these are used by our, not just engineering, but also tag teams to if 
+something does go wrong while if they want to troubleshoot. So we have audit logs as
+well as a lot of the system logs available for our troubleshooting teams. And then 
+we also have security services. Security services is beyond our work. So these are 
+actually running, making sure data at rest and data in transit are fully encrypted. 
+We are adhering to very strict protocols, particularly since data is going to be 
+traveling between on-prem and cloud. And also we will have devices connected in this
+controllers will have issues and so alerts coming in. So we need tenant isolation. 
+We need to make sure that all the data is very, very secure. So the security 
+services are utilized for that. And then below, of course, we have all the 
+on-premise and the cloud products provides information in this data. There is a down
+arrow which says receive federated actions right now. The only federated action is 
+or Z kind of a request. We will, there are certain exceptions to that. We will talk 
+about it, but write back generally is not there today. We are working through that 
+when we, so right now the system operates more as an aggregation visibility layer as
+well as an agentic ops layer. We don't write back into the network
+[00:17:08] Speaker1:
+    at this point of time, right?
+[00:17:09] Speaker2:
+    But we do have the pipe as we evolve this platform in the future.
+[00:17:17] Speaker2:
+    So what I'm gonna do now is while I have all the slides, but I'll take you 
+through the demo rather than through the slides. So what I'm gonna take you through 
+is we'll talk about the login, we'll talk about a bit of RBAC, which kind of, we 
+will see how RBAC operates within the platform. We'll talk about unified inventory 
+and how all of this information is correlated and how we generate insights within 
+inventory. Then we'll talk about primarily topology, the end-to-end topology and how
+topology is actually available and then alerts and notifications. And then from that
+point onward, we will actually jump into Canvas and then Reset
+[00:18:05] Speaker1:
+    will take over. So let me go ahead and share very quickly the demo.
+[00:18:21] Speaker2:
+    All right, so like Marcus mentioned, please familiarize yourself with the 
+D-Cloud. We are all using D-Cloud for all our demos. D-Cloud is sort of here with us
+has been instrumental working with the D-Cloud team, particularly with Dustin to
+
+--- PAGE 6 ---
+bring this up. It's fully production ready. All our whatever you see in production 
+is available in D-Cloud. It has a full backend with multiple things connected, and 
+I'll show you what things are connected because that is the first use case. You are 
+coming into Cloud Control for being the front door into Cisco's product portfolio 
+and in DCloud, all of these products are already connected. So we have Veracruz, 
+Interstate Hyperfabric, Security, Pram, Thousand Eyes, and Nexus Dashboard and IQ, 
+everything integrated into the DCloud instance. So if you come into DCloud, you will
+be able to play with all of them. So the primary point here is that whenever you 
+click, you automatically launch into that controller without having to do another 
+login. So that's primarily benefit of, again, we're talking about the token exchange
+part of it, the CUI part of it. So it allows you to log it. Okay. Then primarily 
+we've talked about a few things. So before I go into the each of, I just want to 
+talk about RBAC a little bit. So you can see users are very easily managed here. We 
+have a bunch of users. When you add a user, for example, in Cloud Control, you 
+provide an email. The email will automatically be resolved by the IDP that you have 
+connected. You can see here, you can connect multiple things. You can connect your 
+tenants, domains, and identity providers. Once the identity provider is connected, 
+you provide an email. For example, in this case, I can just put my email here. And 
+if I click Next, it will say the user details are found because it's connected to 
+Cisco IDP. And when you click Next, I can now select a role. So this was the very 
+point of showing this. There are three roles available. We have Tenantful Admin, 
+Tenantread-Only Admin, and an Integration Admin. The Tenantful Admin obviously has 
+access to everything. The Tenantread-Only Admin can see everything and then 
+integration admin are the ones who can actually connect various pieces, things, 
+other things into cloud control, right? But these are the kind of the roles that 
+comes out of the box. It's important to provide Tenantful admin to only a few people
+because you get access to all the data which is coming. But generally, the 
+Tenantread-only admin is good primarily for L1 companies and we'll show how from a 
+Canvas perspective. One of the things to kind of think about a little bit is that we
+are adding, because the context is across the network and we know that our customers
+may have different teams. It's important that the customer understands that the 
+access to these different parts of the network needs to be provided, at least for L1
+as a lead only so that Canvas can be utilized. The AI part of the system can be 
+fully utilized because we honor the RBAC in the controller. So if you don't have 
+access to it
+[00:21:39] Speaker1:
+    and you're trying to troubleshoot,
+[00:21:41] Speaker2:
+    you'll not be able to get full access to it. So there is a balance to that, 
+obviously. You could have L1 as full read only and as you go up, the RBAC actually 
+collapses and becomes more in-depth, but having access to a different system is 
+becoming a bit more critical because that's how you can actually learn and get more 
+data about AI pieces. But there is good thing about that. Even if you don't have 
+access to it, Canvas does allow you to invite users into your dashboard and Rajat 
+will show us that. But it's an easier way. But if you do have access, the 
+troubleshooting becomes much faster. Anyway, so our back is important because the 
+system, all of the context, whatever you can access, whatever you can run on is 
+dependent on this context. So I'm going to get out of this one and so, okay. So now
+
+--- PAGE 7 ---
+very quickly, I'll take you through three of the platform services. So the one being
+inventory. Inventory is fully AI powered. So what I mean by that, so couple of 
+things. One, we all know about an inventory table, but this table is completely 
+enabled by AI search. So you can run NLP on this rather than standard Regist query. 
+There are multiple filters which are available that you can also select and you can 
+check for as you are trying to sort the table through. But one of the things that 
+you will see here is that this is a fully, I would say,
+[00:23:19] Speaker1:
+    a table with primary movement,
+[00:23:21] Speaker2:
+    all of the controllers are sending all of the data, right? So the sources are 
+everything. So you can see next is that World Web X of fabric in the site. Every 
+single controller which is connected is sending inventory information to us and that
+is what inventory is shown. And then we also have AI sites on top of the data that 
+is coming to us. The cards that you are seeing, we are not crunching the numbers, 
+but this is coming from the controllers. Controllers send us this information, we 
+correlate. So for example, active network animal is need investigation. this card 
+with we see that there are anomalies because the controllers are telling anomalies 
+what the intelligence we use this if the animal if the anomalies are the same and in
+this case whatever you're seeing 23 from Nexus dashboard 9 from hyper fabric 5 from 
+Intel in the side are all afflicted with the same animal so when you look at that 
+device will go ahead and filter There are many other insights which are available 
+that you can go ahead, they are color coded based on severity, red is obviously more
+severe than orange or blue, but we continuously are generating these insights from 
+inventory. The other thing about inventory primarily is that you get a lot of 
+visibility, one One of the good things that I like is the asset class mix. It's like
+a mini-CMDB inside of the platform. You get to see about everything within like the 
+entire estate very easily have more complex queries in a CMDB anymore. If it is 
+under controller control and cloud control can see it, we will report it, right? So 
+it's a very easy way to look at it. Now there are various other things within 
+inventory cannot go into all of them due to time, but please do log into dCloud, 
+play with this, and provide feedback that will be very valuable for us. Then the 
+next one I'll very quickly show is topology. As I mentioned, topology is again 
+end-to-end. We are looking at physical and L2 links. Everything that you are seeing 
+here is live. All of the links here are SDYN, live links take multiple sites across 
+the board. across the board. The left panel that you can see here is dynamic. So as 
+you change views within the topology, the left panel will change. So for example, 
+right now if I go into Mexico City here and I go into topology, you can see that the
+panel changes now into Mexico City providing information about any devices on any 
+issues within that site. You can go ahead and you can look into the topology with a 
+much more granular look. And as soon as you go into a site construct, the topology 
+changes to a much more physical view. And this is how exactly it is kind of 
+connected, right? This is, and when you go and click on any of the elements, for 
+example, For example, you will get information on how they are connected, which 
+devices are connected where, and all of this information right now is actually 
+coming from three different controllers. So we are getting the firewall information 
+coming from SCC. We are getting some of them from Cloud One and a lot of the 
+wireless coming from M4. Actually, this data is coming from three different places
+
+--- PAGE 8 ---
+which is being stitched together. you know, just please do keep in mind. We provide 
+information about pretty much all devices, so it's not tied to just campus, but this
+is a very quick example that I wanted to show. But we are collecting all the data 
+and showing all the data from a technology perspective. Again, you can go back and 
+forth from topology and inventory. So for example, if I click back, it will take me 
+back into inventory and provide me with information about that device
+[00:27:36] Speaker1:
+    that I had just clicked on.
+[00:27:37] Speaker2:
+    There is a lot of metadata, you can also do product, which means if you click 
+open in product, it will take you to SCC and provide you with the information about 
+that specific FTV
+[00:27:49] Speaker1:
+    that I had clicked on.
+[00:27:51] Speaker2:
+    And the final thing that I wanted to show from a platform service perspective is
+primarily the adults. So let me cancel, move. So what we have is Action Center and 
+this is where all the alerts are coming from all our controllers. We make sure that 
+we correlate all the alerts if the same alert is coming from the same controller. We
+correlated make sure that we show you one single place where everything is there. 
+And this is one of the places where we jump off to Canvas. So Canvas can be 
+automatically enabled. You can create a new Canvas, but generally we are seeing a 
+lot of the utilization is coming from actions. There's a lot of other things to talk
+about. Unfortunately, we are a little bit short on time. We have only one hour. So 
+please play with the Cloud and we'll also have some call to actions for you. So with
+that, I'm going to hand it over to Rajat, who is going to take us through Canvas. 
+Rajat, all yours. Thank you.
+[00:28:59] Speaker1:
+    Awesome. Thanks, Amit. thanks for the really good introduction. So what I want 
+to do is I actually wanted to start off with you know just an overview of Canvas and
+Assistant. So you know I'm in the same DeCloud instance, I think we posted the link 
+in your chat so you should have that. So I'm in the same DeCloud instance and you 
+see you have the Assistant and the Canvas here. Now I think most of you you are 
+aware of this, but the assistant and the canvas share a common backend. So I'll show
+the architecture in a bit, but the AI gateway that various MCP servers or agents use
+for registering their tools and skills, it's a common backend. The difference 
+between assistant and canvas is, assistant is more chat style. It's more for 
+single-term conversations, whereas canvas is for more complex from the shooting, and
+then Assistant is a single user tool. So, and Assistant is private to one 
+individual, whereas Canvas can be shared across individuals. Now, you see Assistant 
+and Canvas here, but I just wanna really quickly show you. The Assistant and Canvas 
+is, you know, I'm right now, I just switched to the Nexus dashboard, and you see 
+this Assistant and Canvas here as well. And the idea here is you could start off 
+their conversation or a, you know, a investigation in the assistant, in the Nexus 
+dashboard, it'll
+
+--- PAGE 9 ---
+[00:30:30] Speaker2:
+    get aware, it'll be aware of the page that you're on, it'll have some page 
+context, user
+[00:30:33] Speaker1:
+    context, and that same conversation carries you, carries with you or you can 
+carry it with you as you go to Cisco Cloud Control. Not only Cisco Cloud Control, as
+you go to any of the integrated products within your Cisco Cloud Control, that same 
+thread is available with you as you go across all of this. And then obviously once 
+you go to Cisco Cloud Control, you have that here in the Assistant and you can see 
+those threads will actually follow you and all those threads are here right here 
+with you in the Assistant. Now what you can do is once you do an investigation and 
+you see it's a little more involved and you want a larger screen, if you will, or an
+infinite board to actually carry that investigation out, that's when you go into 
+Canvas. And of course, you can then invite folks to that particular Canvas that 
+you're doing. Now, I just launched into Canvas and you saw that there's some quick 
+start boards. So these are boards for just health and availability, wireless, van 
+health, data center and computer operations, security policy and access, and 
+discovery and inventory. So these are kind of boards that have predefined set of 
+prompts that you can already start off with by asking you know you click on that 
+board five or six prompts will prompts will just get queued and you can start asking
+those prompts but what you can also do is you can actually start an absolutely new 
+canvas so you know you can come here you can start a new canvas and you see you land
+up in this board right in this canvas board and you have that same kind of you know 
+prompts here, right? So you can see health and availability, what is the overall 
+health of my Maraki organization, you know, gets running for you, showing you the 
+routing, it's taking you to, you know, your network intelligence router, and you can
+see immediately it produced that card for your Maraki health. So essentially what 
+you can do is you can start from either one of those boards or the cards. The other 
+way to start, and I think I've it spoke to this was through actions. So in actions 
+what you'll see is, you know, in some cases there's a single notification that's in 
+actions and in some cases there's more than one like related alerts when they're 
+related in time, they actually put together in the same site and you can actually go
+and collaborate in Canvas right here, right? So you can say, hey I want to 
+collaborate in Canvas because I think, you know, there's something happening here. 
+And for example, I'm only a network operator, and I probably need a data center 
+admin as well to collaborate with to try and find out is the problem on the access 
+side or is it on the data center side. Or potentially I also need, you know, an SD 
+van or a thousand eyes administrator to try and find out if that's where the problem
+is. So you can actually go and collaborate in Canvas. The other thing that I just 
+want to show you is, you know, in the home screen you actually see this prompt here 
+it's kind of like the Google type search bar this is the assistant search bar as 
+well so anything that you ask here is also connected to the same backend that you 
+have in the assistant and in Canvas so you can start a thread from here you can 
+certainly start it you know from by clicking on the assistant here or you can start 
+it in Canvas and that's it that's how you actually go go ahead and do an 
+investigation So I'm going to now quickly show you a little more around some of the 
+things that you can do in Canvas. So when you start off in Canvas, a couple of 
+things you want to know. You have everything here in terms of topology, in terms of
+
+--- PAGE 10 ---
+performance, incidents and anomalies. So I could go into topology and say, show me 
+my SD-WAN VPN topology. It's again going to reach out to a topology agent. I'll show
+you in the architecture how that actually happens. So we start with a topology agent
+and it actually pulled up the SDVAM topology for you. Now, this is a live view, 
+right? So it's not static. You can actually go and see, you know, Stockholm, 
+Singapore. You can actually see where all of this is happening. And you can actually
+then also see that, hey, you know what? There are some issues here. I can go ahead 
+and investigate these issues in this place. So that's certainly one way to do it. 
+But let's assume that you don't have access to this. someone just sent you a 
+screenshot off a outage. And so let me take a screenshot of this for you, right? So 
+you capture this in a document and let's say somebody sent that to you. So you can 
+actually come here and you can say, hey, add an image or a file, right? And I'm 
+gonna go to my documents and I'm gonna go to that screenshot that I just created. 
+I'm gonna add that. And you see it's upload the screenshot And I could say 
+investigate this for me, very chat style, right? And if I can actually spell 
+investigate, that'll be great. And you'll see it'll immediately go ahead and start 
+investigating everything that's happening in that environment. It's not to the 
+Canvas agent. So you have multiple ways of actually investigating things. You can 
+also include knowledge bases. So a lot of enterprises have their own run books, 
+right? They have policies, they have network standards. All of those can be actually
+put in right here through knowledge bases. And of course, then you have prompts that
+you could have saved, et cetera. The other thing I wanna show you is the modes of 
+operation. So we spoke about this a little earlier. There is a default mode that 
+provides you answers right away. And then there's a reasoning mode for more complex 
+queries. And what the reasoning mode really does is it actually produces a plan for 
+you. And it asks you to approve that plan. Once you approve that plan, it actually 
+goes and does the collection of the data in multiple steps, and potentially the 
+output of one of the steps will become an input for the other step. So the reasoning
+mode actually does a lot more conversations or it just doesn't go once and get the 
+data. It'll go multiple times and it'll actually go and find out the data for you, 
+go multiple steps and do that for you. So this is something that's also available 
+for you. We have in the future, you know, the potential of doing a auto mode where 
+you let the intelligence of Canvas decide whether it should go to the answer right 
+away or the complex queries. But I mean, for now, we are asking the user to select 
+one mode of the or the other. All right. And then finally, I want to go here to the 
+share button. So, you know, you can actually see that you can invite the 
+collaborators to your Canvas through the share button. So anything that you do in 
+Canvas, even though all of these products are connected to Cisco Cloud Control, and 
+Canvas has access to those, but the responses of Canvas will be restricted to the 
+role and the access level of the user. And what I mean by that is, let's assume I am
+a Meraki administrator, right? The Meraki administrator will only be able to ask 
+questions around the Meraki network, or I guess you can ask questions for anything, 
+but access for that user is based or specific only to the Meraki network. And so 
+what's gonna happen is, if they're trying to say troubleshoot an application access 
+issue, they're gonna ask a Meraki, they're gonna ask a question, it's only gonna 
+respond with Meraki, but if they wanna invite others, for example, a data center 
+admin, that's when you actually go and invite the data center admin and the data 
+center admin will then come and be able to ask questions around data center and then
+the board get populated with that. And so all of this then allows the user to 
+actually go ahead and do multi-domain and multiplayer investigations. And then
+
+--- PAGE 11 ---
+finally, you can actually go and create a report. You can export as PDF, a 
+particular card, or you can actually do it for the entire board. So you can generate
+a summary for the entire board. You can stack the cards, You can do auto layout. You
+can add images. You can annotate texts. You can lock some cards. If you say, you 
+know what, this card is locked. I don't want this to be deleted, etc., etc. So 
+there's a lot of things that you can do here. This is a limitless board. 
+Potentially, you can have 50, 100, 200 cards here. Obviously, it depends on how much
+you want to investigate. The last thing I'll say about these cards is these cards 
+are being produced on the fly. And what I mean by that is this is making use of 
+generative UI and generative UI essentially is, you know, as the agent launches the 
+investigation, reaches out to the product, gets data back. That data is then 
+analyzed by what we call the widget agent and the response agent. And it looks at, 
+hey, should I produce only text for this? Should I produce text annotable? Or should
+I produce text table card? you see that there's a topology here, there's a table 
+here, what should I produce? And it does so on the fly. It generates the UI on the 
+fly. So potentially you may not have this view anywhere in any dashboard, but it's 
+been produced here because of the shape of the data and the amount of data that was 
+returned to the user. And so that's how you can actually see that we generate UI on 
+the fly for you. So it's quite possible that you ask the same question you know, one
+week apart and you'll see a different view, you'll potentially even see, you know, a
+different modality of that view. For example, if there are no outages that might 
+just show you had their own outages, right? Here's the topology, everything's green,
+you know, you'll see absolutely nothing, but if there are outages that might go and,
+you know, highlight those for you. So this is not deterministic because this is 
+actually generating it on the fly. All right, so this was a really quick demo of AI 
+Canvas and DeCloud. I'm actually using the DeCloud instance that is available to 
+everybody within Cisco. So I think in the Q&A, we've posted the DeCloud link. You 
+can actually go there and do everything that I did. Everything is absolutely 
+available to you. So please go ahead, get yourself familiar with everything that is 
+here, and use this for pitching Cisco Cloud Control and AI Canvas to your prospects.
+One last thing I'll speak to before I actually jump to the slides and show you a 
+little bit of the architecture because I know all the ICs are very, very keen on how
+does this work. One last thing I'll say is that you do not need to do any extra 
+steps to integrate AI Canvas with any of the products. So basically, as in when you 
+bring a product and integrate it into Cisco Cloud Control, AI Canvas inherits that 
+integration. Now, there are few nuances. Like for example, you see Cisco IQ here, 
+right? Cisco IQ is not yet integrated into AI Canvas. In fact, even I would argue 
+for Cisco Cloud Control, Cisco IQ is more like a cross launch. It's not really fully
+integrated, not discovering inventory, all of that is coming. But as these 
+integrations come into Cisco Cloud Control, all of the others that you see here, 
+Meraki, InterSight, Cisco Hyper Fabric, through security, you've got secure access, 
+you've got secure firewall, the cloud delivered FMC, You've got SD-WAN, Cisco 
+Managed Cloud Delivered SD-WAN, Catalyst SD-WAN coming through security. That's all 
+available to Collaboration Control Hub, Thousand Eyes, Nexus Dashboard. All of these
+integrations, as they come to Cisco Cloud Control, AI Canvas inherits those, and it 
+has access to those MCP servers. So a user does not need to stand up any new APIs, 
+do any more connections, new connections, doesn't need to stand up the MCP servers. 
+This is all seamless for the user. All right, with that I'm just gonna quickly go 
+and jump back into slide mode because I wanna speak a little bit to the architecture
+of AI Canvas because I know all the SES on the call are really keen on understanding
+
+--- PAGE 12 ---
+how does this work. So if you think about, let me turn this off, give me a second, 
+okay. So if you think about the AI Canvas architecture, the part of it or the 
+nucleus of this is the AI Canvas Orchestrator, right? And that's why I have a deep 
+dive slide on the orchestrator. So when you input a prompt, the orchestration agent 
+actually receives that, it selects the right agents, it defines the scope. There's 
+actually a semantic agent that breaks your prompt down into individual tasks. And 
+then it goes ahead and launches it into this manifest of specialized agents. And you
+saw some of this, right? When I asked a topology question and went to the topology 
+agent, there's a security agent, there's a wireless agent, blah, blah, blah, there's
+a docs agent. We'll actually go and give you documentation. So that happens when 
+you're in the default mode. In the reasoning mode, what happens is the reasoning 
+mode acts like a deep agent. So it actually takes your prompt and it breaks it down 
+and it actually discovers all of the tools and all of the skills that have actually 
+been already loaded up into the system. And then it actually provides you a 
+stepwise, plan or phase plan of actually executing that. And then it goes and does 
+that for you. Now, obviously on the right, see that we have all of the Cisco 
+products, but through Cloud Control Studio, we will have access to third-party MCP 
+servers and agents. For those of you who saw the keynote at Cisco Live, we announced
+Agent Builder, and there are already 56 vendors, and the big names are all there, 
+the three hyperscalers, AWS, Azure, GCP, ServiceNow, Jira, Infoblox, NetBrain, And 
+they're all there. They've all signed contracts with us already. 56 of them have 
+already signed contracts with us to code develop agents and provide MCP servers that
+we will then register in our own AI gateway. And so Canvas would be able to now 
+respond for Cisco infrastructure, right? Through what I just showed you. And for 
+third-party infrastructure or third-party services, if you will, CMDBs, ticketing 
+agents, et cetera, through that entire ecosystem. So really, really valuable. We 
+heard loud and clear that, you know, and notices go only shop. And that's where this
+Cloud Control Studio is coming in. So really quick, I know I'm gonna run out of 
+time, so I'm gonna go a little quick. So here you see, you know, there's a developer
+piece. This is where we have Cloud Control Studio playing, but an end user can 
+actually come in and the orchestration agent has a supervisory agent that can either
+go in the React mode, which is the default mode or the plan and execute mode, which 
+is the reasoning mode and does dynamic planning. And then the executor agent 
+actually sends it down to the AI gateway. And that's where you see you have the 
+entire registry, MCP server registry, as well as the agents registry. Now the agents
+registry is likely future looking where we support the A to A protocol. For now 
+we're supporting only the MCP protocol. So is the MCP server registry that you 
+register your MCP tools. even if there's an agent at the back end, you wrap it 
+around your MCP tools and you register it there. And that's where you launch your 
+queries
+[00:45:55] Speaker1:
+    to the underlying products, get the data back and then present it through some 
+of your core services. And you see here there's a Canvas board manager, there's 
+collaborative services, there's observability stack services. And so this is kind of
+like an overview of the architecture. So really quickly, what can Canvas do? So you 
+can see I've listed all the products here and this is gonna be available to you. And
+these are the services that have been exposed by the underlying products to Canvas. 
+So let me just take Secure Firewall for example. Secure Firewall right now is 
+exposed side to side VPN tunnel status, VPN diagnostics. They have focused on VPN
+
+--- PAGE 13 ---
+initially, but you'll see on a rolling basis, more and more skills will start or 
+tools will start getting registered with the AI gateway. for example, inventory, 
+policy discovery. So my main kind of Uber point here is today, not everything that 
+is available in the dashboard is available in the iCanvas. Now that is irritating. I
+know it's a bit of a irritant for users when they go and try and ask Canvas 
+something and Canvas says I don't have access to this data. But as we march towards 
+general availability in the first quarter of FY 27, you'll see all of these product 
+teams will register more and more tools with AI Canvas. And so the not start or the 
+intention is if you can do something in the dashboard, you can actually do it 
+through AI Canvas. And then of course you can do a lot more, you can do cross 
+domain. So I actually already showed you this workspace, so I'm gonna skip over 
+this. I'm gonna show you the value candidly of cross domain analysis. So if you see 
+here, you know, why is my finance apps low? The problem could be networking, it 
+could be a security issue, it could be the data center, or you could actually just 
+go to observability through ThousandEyes or observability cloud through Splunk and 
+try and find out why is the finance apps low, right? So for each one of these 
+questions that you ask, a user does not even actually need to know where the problem
+lies, which domain that problem lies in. Just think about this for a moment, right? 
+Like invariably, we had domain experts or domain admins that would go and 
+investigate their domain. But now a user, imagine if they have access to all 
+domains, they could actually come and ask a very, very open and a question, like for
+example, why is the Chicago branch not able to reach internal apps? Or why are my 
+users having problems reaching Salesforce? And it'll actually go across your entire 
+digital stack and try and find out where the problem is, right? Very, very powerful 
+cross-domain tool. All right. With that I think for the last kind of five minutes I 
+want to quickly touch upon the roadmap of where we are and what's coming next 
+because this is going to be important I just want to caveat here you know we have 
+just gone through Cisco live and everything that our engineering teams had committed
+to was delivered at Cisco live so you'll see that in the slide and we'll speak about
+future you know I saw a lot of questions in the chat about Catalyst Center and about
+and about Cisco IQ. So this is where we'll speak about those, but these can change. 
+We've not yet gone through a joint commit with those teams. This is intentional. 
+This is kind of forward-looking, but we want to share this with you because we want 
+to arm you with that data to be able to provide back to your users when they ask you
+about, you know, what about this? What about that? So the first thing we'll just say
+is controlled availability was announced at Cisco LiveUS and you see all the 
+products there. You know, I'm not going to drain the slide, but you can see all the 
+products that are integrated there. The region is U.S. only, right? And we have a 
+number of certifications, SOC2 type II and ISO 27001 are the first ones that are 
+going to actually come. And all those services are available. What we're aiming for 
+for the first quarter of FY 27 is actually a general availability, where Splunk 
+Cloud, right, is going to become a first-class citizen. And the intention is to 
+bring it with not only Splunk Cloud but even Splunk Observability Cloud as well as 
+ITSI to bring them into the AI Canvas and Cisco Cloud Control AI ecosystem. The 
+identity fabric which is Identity Services Engine and Cisco Identity Intelligence is
+probably slightly further out in Q1 or potentially even Q2. Like I said this is 
+forward-facing but we certainly want to give you this view. Slightly further out 
+Splunk will come earlier but this is the way we are actually looking at doing it. 
+And the other thing that's also going to happen is Catalyst Center. I know this is 
+absolutely essential for everyone. So Catalyst Center today, you can register
+
+--- PAGE 14 ---
+Catalyst Center through the Meraki Global Overview and can register it with Cisco 
+Cloud Control. In fact, some of the inventory items that you saw in DCloud was 
+coming through that manner, but we're going to simplify the onboarding tremendously.
+And AI Canvas will also start supporting Catalyst Center. So you could ask queries 
+today if you ask queries about your access network, your campus branch, et cetera. 
+It is only reaching out to the Meraki network because that's all it has access to. 
+But AI Canvas will also get supported in the first quarter of FY 27. What's also 
+going to come is multi-tenant mapping. This is extremely important. So today, within
+one tenant group of Cisco Cloud Control, which is where you see the boundaries for 
+your inventory, topology or AI Canvas operates within one tenant group. Within one 
+tenant group, you can only bring one instance of a product. So for example, you can 
+only bring one Meraki organization tenant. You can only bring one inter-site 
+instance, etc. What we'll allow in the future is multiple Meraki tenants and 
+multiple instances of other products coming in, what we're calling the one-to-many 
+mapping. So that's going to come. The Q3 and Q4 is a little further out, so I won't 
+drain that, but you can see we've got Splunk Enterprise Security on-prem SD-WAN and 
+all those Cisco cross-work etc available as well as regional expansion starting with
+Frankfurt in Sydney and then going on to Tokyo and Mumbai India. Anything to add 
+there, Amit, on the roadmap? No, I think you covered it all. This is great. Awesome,
+fantastic. We are three minutes out, I do want to provide a little bit of a view on,
+you know, the more forward-looking Cloud Control Studio, which was announced at 
+Cisco Live, and you'll see it'll start coming into Alpha and Beta. The aim is for 
+Beta in the first half of Q1 of FY27, so August-September timeframe. And Cloud 
+Control Studio will have three components. I'm showing two components here, which 
+are the developer tools, agent builder and app builder. Agent builder is for 
+building and designing agents. Now, it's a little bit of a misnomer. Agent builder 
+is also going to allow users to bring their own agents. So for example, if they've 
+already designed agents in their own platforms or, you know, they've subscribed to 
+third-party agents, they'll be able to bring those agents and register the tools and
+skills of those agents with our gateway, as well as is then have the AI canvas 
+respond with tools from there. And then the app builders to actually build app using
+a OpenAI Codex to build apps on the platform. I spoke to this. There are 50 vendors.
+The slide is going to be available to you that have already signed on. In fact, 56 I
+think to be fair. And they've already signed on. And we will continue to expand the 
+footprint. The idea is to try and expand the reach of Cisco Cloud control and AI 
+canvas to the entire digital footprint of customers. And then the next kind of thing
+I want to touch on is this compliance agent. So we're working on a deep agent called
+a compliance agent. Oftentimes, we hear about, hey, I want to know, are there any 
+piece outs in my organization? Assess my vulnerabilities and recommend any 
+compensating controls or where patches are available. So the compliance agent was 
+also announced at Cisco Live US, but you'll see over the next quarter or two, will 
+bring a compliance agent to run compliance checks on your Cisco and third-party 
+network as required. And then the last thing I'll leave you with is the models. So 
+today AI Canvas uses both frontier models as well as Cisco domain models. Today we 
+have the deep network model. You may have heard of it as DNM. We use the deep 
+network model for deep network troubleshooting because, standardly, nobody has 
+better information about network troubleshooting than we do. And we've trained that 
+model, things been in V21 now, 20 iterations of training that model based on all of 
+that data. So really it does networking better than any other Frontier model can. 
+But there are still some tasks that Frontier models can do better than a deep
+
+--- PAGE 15 ---
+network model, especially if it's not a network troubleshooting task. So we send the
+data or we send the query to both kind of like deep network model and Frontier model
+as needed. But you'll see in the future, we'll start leaning more and more on our 
+own proprietary models. We are working on, you know, secure deep security models, 
+deep application models. We'll start leaning more and more heavily on our own 
+proprietary models and less on, you know, the deep models itself. All right. So 
+finally, call to action and resources. Call to action. Please tell your customers to
+log on to cloud.sysco.com. It's very simple. Cisco Cloud Control is available to 
+cloud.sysco.com. They'll see a request form there. They can fill the request form 
+out, and that request form goes into our queue because we are in control of 
+availability right now. We're controlling the pipeline for enabling Cisco Cloud 
+Control for the customers who are signing on. I think we already have close to what 
+I think as of yesterday was about 1,567 customers that have signed on for Cisco 
+Cloud Control. We'll be opening the flood gates slow and steady, but obviously as 
+when we go to general availability, Anybody is going to be able to self-serve onto 
+Cisco Cloud Control. But please tell your customers to sign on to Cisco Cloud 
+Control and register for their interest to get Cisco Cloud Control and control 
+availability. And finally, some resources for you, the decloud demo instance that I 
+used and even I met used for the demos. Sales Connect, really, really good 
+resources. I think the marketing team has just outdone themselves. I really like the
+amount of detail that they've included in the BDM-TDM. you actually have gifts that 
+you can see how the operations happen. There's the AC Champion SharePoint, Charles 
+Duffy and team have done an awesome job of putting that SharePoint together and 
+there's a WebEx Ask Suspoke Now Control channel. And with that, I think we're one 
+minute over. I'm gonna pass it back to the host.

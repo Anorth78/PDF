@@ -7,8 +7,8 @@ Use library.json for structured metadata.
 Use the linked text_url for extracted document text.
 Use the linked pdf_url for the original PDF.
 
-Document count: 10
-Generated: 2026-09-17T16:39:42.694549+00:00
+Document count: 15
+Generated: 2026-09-28T14:00:21.778587+00:00
 
 ## Documents
 
@@ -19,19 +19,19 @@ Generated: 2026-09-17T16:39:42.694549+00:00
 - Extracted text: text/agent-builder-in-cloud-control-studio-a-new-way-to-extend-and-customize-cisco-cloud-control-cisco-blogs.txt
 - Pages: 6
 
+### AI Canvas Transcript
+- ID: ai-canvas-transcript
+- Original filename: AI Canvas Transcript.pdf
+- PDF: pdfs/ai-canvas-transcript.pdf
+- Extracted text: text/ai-canvas-transcript.txt
+- Pages: 15
+
 ### BDM   Cisco Cloud Control & AI Canvas
 - ID: bdm-cisco-cloud-control-ai-canvas
 - Original filename: BDM - Cisco Cloud Control & AI Canvas.pdf
 - PDF: pdfs/bdm-cisco-cloud-control-ai-canvas.pdf
 - Extracted text: text/bdm-cisco-cloud-control-ai-canvas.txt
-- Pages: 37
-
-### Cisco Agentic Ops Solution Preview v0.1 (1)
-- ID: cisco-agentic-ops-solution-preview-v0-1-1
-- Original filename: Cisco Agentic Ops Solution Preview v0.1 (1).pdf
-- PDF: pdfs/cisco-agentic-ops-solution-preview-v0-1-1.pdf
-- Extracted text: text/cisco-agentic-ops-solution-preview-v0-1-1.txt
-- Pages: 31
+- Pages: 38
 
 ### Cisco AI Canvas is here  the workspace for agentic operations   Cisco Blogs
 - ID: cisco-ai-canvas-is-here-the-workspace-for-agentic-operations-cisco-blogs
@@ -61,6 +61,20 @@ Generated: 2026-09-17T16:39:42.694549+00:00
 - Extracted text: text/cisco-deep-network-model-purpose-built-intelligence-for-networking-cisco-blogs.txt
 - Pages: 9
 
+### Cisco Live Keynote Transcript
+- ID: cisco-live-keynote-transcript
+- Original filename: Cisco Live Keynote Transcript.pdf
+- PDF: pdfs/cisco-live-keynote-transcript.pdf
+- Extracted text: text/cisco-live-keynote-transcript.txt
+- Pages: 65
+
+### Cloud Control Partner Enablement Plan
+- ID: cloud-control-partner-enablement-plan
+- Original filename: Cloud Control Partner Enablement Plan.pdf
+- PDF: pdfs/cloud-control-partner-enablement-plan.pdf
+- Extracted text: text/cloud-control-partner-enablement-plan.txt
+- Pages: 48
+
 ### From an Idea to a Live App on Cisco, in Minutes   Cisco Blogs
 - ID: from-an-idea-to-a-live-app-on-cisco-in-minutes-cisco-blogs
 - Original filename: From an Idea to a Live App on Cisco, in Minutes - Cisco Blogs.pdf
@@ -74,6 +88,27 @@ Generated: 2026-09-17T16:39:42.694549+00:00
 - PDF: pdfs/inside-cisco-cloud-control-building-the-ai-native-platform-of-record-for-cross-domain-operations-cisco-blogs.pdf
 - Extracted text: text/inside-cisco-cloud-control-building-the-ai-native-platform-of-record-for-cross-domain-operations-cisco-blogs.txt
 - Pages: 9
+
+### Learning Map
+- ID: learning-map
+- Original filename: Learning Map.pdf
+- PDF: pdfs/learning-map.pdf
+- Extracted text: text/learning-map.txt
+- Pages: 11
+
+### Partner Summit   Cisco Cloud Control Executive Brief
+- ID: partner-summit-cisco-cloud-control-executive-brief
+- Original filename: Partner Summit - Cisco Cloud Control Executive Brief.pdf
+- PDF: pdfs/partner-summit-cisco-cloud-control-executive-brief.pdf
+- Extracted text: text/partner-summit-cisco-cloud-control-executive-brief.txt
+- Pages: 16
+
+### Specialist Master Transcript
+- ID: specialist-master-transcript
+- Original filename: Specialist Master Transcript.pdf
+- PDF: pdfs/specialist-master-transcript.pdf
+- Extracted text: text/specialist-master-transcript.txt
+- Pages: 17
 
 ### TDM   Cisco Cloud Control & AI Canvas
 - ID: tdm-cisco-cloud-control-ai-canvas
