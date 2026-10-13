@@ -4,191 +4,55 @@
   "description": "A searchable collection of PDF knowledge resources.",
   "owner": "Your Organization",
   "site_url": "https://anorth78.github.io/PDF",
-  "generated": "2026-10-07T13:20:43.857211+00:00",
-  "document_count": 15,
+  "generated": "2026-10-13T19:10:09.207555+00:00",
+  "document_count": 11,
   "documents": [
     {
-      "id": "agent-builder-in-cloud-control-studio-a-new-way-to-extend-and-customize-cisco-cloud-control-cisco-blogs",
-      "title": "Agent Builder in Cloud Control Studio  A new way to extend and customize Cisco Cloud Control   Cisco Blogs",
-      "original_filename": "Agent Builder in Cloud Control Studio_ A new way to extend and customize Cisco Cloud Control - Cisco Blogs.pdf",
-      "source_relative_path": "Agent Builder in Cloud Control Studio_ A new way to extend and customize Cisco Cloud Control - Cisco Blogs.pdf",
-      "pdf_url": "pdfs/agent-builder-in-cloud-control-studio-a-new-way-to-extend-and-customize-cisco-cloud-control-cisco-blogs.pdf",
-      "text_url": "text/agent-builder-in-cloud-control-studio-a-new-way-to-extend-and-customize-cisco-cloud-control-cisco-blogs.txt",
+      "id": "bonus1nexusdashboarddatacenterfabric-transcript",
+      "title": "Bonus1NexusDashboardDataCenterFabric transcript",
+      "original_filename": "Bonus1NexusDashboardDataCenterFabric transcript.pdf",
+      "source_relative_path": "Bonus1NexusDashboardDataCenterFabric transcript.pdf",
+      "pdf_url": "pdfs/bonus1nexusdashboarddatacenterfabric-transcript.pdf",
+      "text_url": "text/bonus1nexusdashboarddatacenterfabric-transcript.txt",
       "type": "PDF",
-      "pages": 6,
-      "bytes": 1098722,
-      "sha256": "fc49fc1c94fb938eb8a391d9e3cee3964e1a3e3e34b3ca316902858c9cba3fd2",
-      "modified": "2026-09-17T16:36:48.478685+00:00",
+      "pages": 3,
+      "bytes": 62207,
+      "sha256": "74f8430eefcc72ce71ee197c91e626ee59bfd63c128ccfbc119aae80b46124c8",
+      "modified": "2026-10-13T19:07:09.567879+00:00",
       "text_extraction": {
         "success": true,
         "error": null
       }
     },
     {
-      "id": "ai-canvas-transcript",
-      "title": "AI Canvas Transcript",
-      "original_filename": "AI Canvas Transcript.pdf",
-      "source_relative_path": "AI Canvas Transcript.pdf",
-      "pdf_url": "pdfs/ai-canvas-transcript.pdf",
-      "text_url": "text/ai-canvas-transcript.txt",
+      "id": "bonus2catalystsdwanbranchconnectivity-transcript",
+      "title": "Bonus2CatalystSDWANBranchConnectivity transcript",
+      "original_filename": "Bonus2CatalystSDWANBranchConnectivity transcript.pdf",
+      "source_relative_path": "Bonus2CatalystSDWANBranchConnectivity transcript.pdf",
+      "pdf_url": "pdfs/bonus2catalystsdwanbranchconnectivity-transcript.pdf",
+      "text_url": "text/bonus2catalystsdwanbranchconnectivity-transcript.txt",
       "type": "PDF",
-      "pages": 15,
-      "bytes": 129360,
-      "sha256": "81236cf1f563de10213dd7a5a03c886d67f71e54bfe57d0785a21b9b5d60056d",
-      "modified": "2026-09-28T13:45:51.735558+00:00",
+      "pages": 2,
+      "bytes": 58337,
+      "sha256": "be1d00cb4faaf7b72abb2a5229453b940a955651cc2adb9a0b8a5235efac7419",
+      "modified": "2026-10-13T19:07:26.853732+00:00",
       "text_extraction": {
         "success": true,
         "error": null
       }
     },
     {
-      "id": "bdm-cisco-cloud-control-ai-canvas",
-      "title": "BDM   Cisco Cloud Control & AI Canvas",
-      "original_filename": "BDM - Cisco Cloud Control & AI Canvas.pdf",
-      "source_relative_path": "BDM - Cisco Cloud Control & AI Canvas.pdf",
-      "pdf_url": "pdfs/bdm-cisco-cloud-control-ai-canvas.pdf",
-      "text_url": "text/bdm-cisco-cloud-control-ai-canvas.txt",
+      "id": "bonus3securefirewallsitetositevpn1-transcript",
+      "title": "Bonus3SecureFirewallSitetoSiteVPN1 transcript",
+      "original_filename": "Bonus3SecureFirewallSitetoSiteVPN1 transcript.pdf",
+      "source_relative_path": "Bonus3SecureFirewallSitetoSiteVPN1 transcript.pdf",
+      "pdf_url": "pdfs/bonus3securefirewallsitetositevpn1-transcript.pdf",
+      "text_url": "text/bonus3securefirewallsitetositevpn1-transcript.txt",
       "type": "PDF",
-      "pages": 38,
-      "bytes": 6984564,
-      "sha256": "c75e6a07b97d3ac6b07049d2c1ac3a630132ea055255eb2fe59502ae113e205d",
-      "modified": "2026-09-28T13:03:07.871341+00:00",
-      "text_extraction": {
-        "success": true,
-        "error": null
-      }
-    },
-    {
-      "id": "cisco-ai-canvas-is-here-the-workspace-for-agentic-operations-cisco-blogs",
-      "title": "Cisco AI Canvas is here  the workspace for agentic operations   Cisco Blogs",
-      "original_filename": "Cisco AI Canvas is here_ the workspace for agentic operations - Cisco Blogs.pdf",
-      "source_relative_path": "Cisco AI Canvas is here_ the workspace for agentic operations - Cisco Blogs.pdf",
-      "pdf_url": "pdfs/cisco-ai-canvas-is-here-the-workspace-for-agentic-operations-cisco-blogs.pdf",
-      "text_url": "text/cisco-ai-canvas-is-here-the-workspace-for-agentic-operations-cisco-blogs.txt",
-      "type": "PDF",
-      "pages": 6,
-      "bytes": 1239797,
-      "sha256": "c672bc073a86c4cc567bde8a03ad662463310737c38543cab21503146167b5ae",
-      "modified": "2026-09-17T16:36:34.421713+00:00",
-      "text_extraction": {
-        "success": true,
-        "error": null
-      }
-    },
-    {
-      "id": "cisco-cloud-control-with-ai-canvas-faqs",
-      "title": "Cisco Cloud Control with AI Canvas FAQs",
-      "original_filename": "Cisco Cloud Control with AI Canvas FAQs.pdf",
-      "source_relative_path": "Cisco Cloud Control with AI Canvas FAQs.pdf",
-      "pdf_url": "pdfs/cisco-cloud-control-with-ai-canvas-faqs.pdf",
-      "text_url": "text/cisco-cloud-control-with-ai-canvas-faqs.txt",
-      "type": "PDF",
-      "pages": 41,
-      "bytes": 285134,
-      "sha256": "a84074f194ae9ceddd84920b47fce9f9221c9307fd366fc03c06b6457794586c",
-      "modified": "2026-09-17T16:24:24.868107+00:00",
-      "text_extraction": {
-        "success": true,
-        "error": null
-      }
-    },
-    {
-      "id": "cisco-cloud-control-the-secure-harness-for-the-agentic-era-cisco-blogs",
-      "title": "Cisco Cloud Control  The Secure Harness for the Agentic Era   Cisco Blogs",
-      "original_filename": "Cisco Cloud Control_ The Secure Harness for the Agentic Era - Cisco Blogs.pdf",
-      "source_relative_path": "Cisco Cloud Control_ The Secure Harness for the Agentic Era - Cisco Blogs.pdf",
-      "pdf_url": "pdfs/cisco-cloud-control-the-secure-harness-for-the-agentic-era-cisco-blogs.pdf",
-      "text_url": "text/cisco-cloud-control-the-secure-harness-for-the-agentic-era-cisco-blogs.txt",
-      "type": "PDF",
-      "pages": 9,
-      "bytes": 992742,
-      "sha256": "235784d3dac8458c03f63957b3c22b7d472afa5001e603c648d6492dc46ffa35",
-      "modified": "2026-09-17T16:36:01.008205+00:00",
-      "text_extraction": {
-        "success": true,
-        "error": null
-      }
-    },
-    {
-      "id": "cisco-deep-network-model-purpose-built-intelligence-for-networking-cisco-blogs",
-      "title": "Cisco Deep Network Model  Purpose built intelligence for networking   Cisco Blogs",
-      "original_filename": "Cisco Deep Network Model_ Purpose built intelligence for networking - Cisco Blogs.pdf",
-      "source_relative_path": "Cisco Deep Network Model_ Purpose built intelligence for networking - Cisco Blogs.pdf",
-      "pdf_url": "pdfs/cisco-deep-network-model-purpose-built-intelligence-for-networking-cisco-blogs.pdf",
-      "text_url": "text/cisco-deep-network-model-purpose-built-intelligence-for-networking-cisco-blogs.txt",
-      "type": "PDF",
-      "pages": 9,
-      "bytes": 1183771,
-      "sha256": "807fcdc5ce42f83f6d33ff51bd5767f7e35208e09dcff01edc17cad979ed293d",
-      "modified": "2026-09-17T16:37:39.125034+00:00",
-      "text_extraction": {
-        "success": true,
-        "error": null
-      }
-    },
-    {
-      "id": "cisco-live-keynote-transcript",
-      "title": "Cisco Live Keynote Transcript",
-      "original_filename": "Cisco Live Keynote Transcript.pdf",
-      "source_relative_path": "Cisco Live Keynote Transcript.pdf",
-      "pdf_url": "pdfs/cisco-live-keynote-transcript.pdf",
-      "text_url": "text/cisco-live-keynote-transcript.txt",
-      "type": "PDF",
-      "pages": 65,
-      "bytes": 207721,
-      "sha256": "772018e99f90233f3a5b08a3f18876da5fa3a5df506dd4a46de5eeb0474826ec",
-      "modified": "2026-09-28T13:04:24.477531+00:00",
-      "text_extraction": {
-        "success": true,
-        "error": null
-      }
-    },
-    {
-      "id": "cloud-control-partner-enablement-plan",
-      "title": "Cloud Control Partner Enablement Plan",
-      "original_filename": "Cloud Control Partner Enablement Plan.pdf",
-      "source_relative_path": "Cloud Control Partner Enablement Plan.pdf",
-      "pdf_url": "pdfs/cloud-control-partner-enablement-plan.pdf",
-      "text_url": "text/cloud-control-partner-enablement-plan.txt",
-      "type": "PDF",
-      "pages": 48,
-      "bytes": 5445926,
-      "sha256": "95437df54071caab486b39f34b83510cd1ee59a0931f592abef293670cf1a95f",
-      "modified": "2026-09-28T13:01:21.366004+00:00",
-      "text_extraction": {
-        "success": true,
-        "error": null
-      }
-    },
-    {
-      "id": "from-an-idea-to-a-live-app-on-cisco-in-minutes-cisco-blogs",
-      "title": "From an Idea to a Live App on Cisco, in Minutes   Cisco Blogs",
-      "original_filename": "From an Idea to a Live App on Cisco, in Minutes - Cisco Blogs.pdf",
-      "source_relative_path": "From an Idea to a Live App on Cisco, in Minutes - Cisco Blogs.pdf",
-      "pdf_url": "pdfs/from-an-idea-to-a-live-app-on-cisco-in-minutes-cisco-blogs.pdf",
-      "text_url": "text/from-an-idea-to-a-live-app-on-cisco-in-minutes-cisco-blogs.txt",
-      "type": "PDF",
-      "pages": 4,
-      "bytes": 774755,
-      "sha256": "d5bc8db943286aa5ad8d5234963205b457617627e76d124040aec5e0665d037c",
-      "modified": "2026-09-17T16:37:05.219756+00:00",
-      "text_extraction": {
-        "success": true,
-        "error": null
-      }
-    },
-    {
-      "id": "inside-cisco-cloud-control-building-the-ai-native-platform-of-record-for-cross-domain-operations-cisco-blogs",
-      "title": "Inside Cisco Cloud Control  Building the AI Native Platform of Record for Cross Domain Operations   Cisco Blogs",
-      "original_filename": "Inside Cisco Cloud Control_ Building the AI-Native Platform of Record for Cross-Domain Operations - Cisco Blogs.pdf",
-      "source_relative_path": "Inside Cisco Cloud Control_ Building the AI-Native Platform of Record for Cross-Domain Operations - Cisco Blogs.pdf",
-      "pdf_url": "pdfs/inside-cisco-cloud-control-building-the-ai-native-platform-of-record-for-cross-domain-operations-cisco-blogs.pdf",
-      "text_url": "text/inside-cisco-cloud-control-building-the-ai-native-platform-of-record-for-cross-domain-operations-cisco-blogs.txt",
-      "type": "PDF",
-      "pages": 9,
-      "bytes": 1178307,
-      "sha256": "c91eae058f32700b631b99fe96b083de3c65671f68310d81e23ae4515b16e638",
-      "modified": "2026-09-17T16:36:20.538158+00:00",
+      "pages": 2,
+      "bytes": 59398,
+      "sha256": "6c67e53572e6511a25ae21707b14b2c990072e2235e0aaa83f8a2595601cad7c",
+      "modified": "2026-10-13T19:07:48.689707+00:00",
       "text_extraction": {
         "success": true,
         "error": null
@@ -212,51 +76,119 @@
       }
     },
     {
-      "id": "partner-summit-cisco-cloud-control-executive-brief",
-      "title": "Partner Summit   Cisco Cloud Control Executive Brief",
-      "original_filename": "Partner Summit - Cisco Cloud Control Executive Brief.pdf",
-      "source_relative_path": "Partner Summit - Cisco Cloud Control Executive Brief.pdf",
-      "pdf_url": "pdfs/partner-summit-cisco-cloud-control-executive-brief.pdf",
-      "text_url": "text/partner-summit-cisco-cloud-control-executive-brief.txt",
+      "id": "part1introwhycloudcontrolaicanvas-transcript",
+      "title": "Part1IntroWhyCloudControlAICanvas transcript",
+      "original_filename": "Part1IntroWhyCloudControlAICanvas transcript.pdf",
+      "source_relative_path": "Part1IntroWhyCloudControlAICanvas transcript.pdf",
+      "pdf_url": "pdfs/part1introwhycloudcontrolaicanvas-transcript.pdf",
+      "text_url": "text/part1introwhycloudcontrolaicanvas-transcript.txt",
       "type": "PDF",
-      "pages": 16,
-      "bytes": 474195,
-      "sha256": "5dcb7d6fe02a601e7e0a5f5b6a50d5734b409ce0caeea8e7c7bf10876242482f",
-      "modified": "2026-09-28T13:01:21.262087+00:00",
+      "pages": 3,
+      "bytes": 63631,
+      "sha256": "a7645cab1f90c2abb2956c7fb874761731ced1460c9e8060051f8ed338c6db61",
+      "modified": "2026-10-13T19:08:10.163096+00:00",
       "text_extraction": {
         "success": true,
         "error": null
       }
     },
     {
-      "id": "specialist-master-transcript",
-      "title": "Specialist Master Transcript",
-      "original_filename": "Specialist Master Transcript.pdf",
-      "source_relative_path": "Specialist Master Transcript.pdf",
-      "pdf_url": "pdfs/specialist-master-transcript.pdf",
-      "text_url": "text/specialist-master-transcript.txt",
+      "id": "part2demounifiedinventorytopology-transcript",
+      "title": "Part2DemoUnifiedInventoryTopology transcript",
+      "original_filename": "Part2DemoUnifiedInventoryTopology transcript.pdf",
+      "source_relative_path": "Part2DemoUnifiedInventoryTopology transcript.pdf",
+      "pdf_url": "pdfs/part2demounifiedinventorytopology-transcript.pdf",
+      "text_url": "text/part2demounifiedinventorytopology-transcript.txt",
       "type": "PDF",
-      "pages": 17,
-      "bytes": 126080,
-      "sha256": "7eefbd5bdaee6a42a76cf8a66022b409b7b8a4c67e72d7a1857e67c658fd32c9",
-      "modified": "2026-09-28T13:54:26.850381+00:00",
+      "pages": 5,
+      "bytes": 73504,
+      "sha256": "1e02a4bff8b98a8f9e403d3b614736b349ca84790b5ca24e6cb2d2d90e77d8b9",
+      "modified": "2026-10-13T19:08:29.814182+00:00",
       "text_extraction": {
         "success": true,
         "error": null
       }
     },
     {
-      "id": "tdm-cisco-cloud-control-ai-canvas",
-      "title": "TDM   Cisco Cloud Control & AI Canvas",
-      "original_filename": "TDM - Cisco Cloud Control & AI Canvas.pdf",
-      "source_relative_path": "TDM - Cisco Cloud Control & AI Canvas.pdf",
-      "pdf_url": "pdfs/tdm-cisco-cloud-control-ai-canvas.pdf",
-      "text_url": "text/tdm-cisco-cloud-control-ai-canvas.txt",
+      "id": "part3demounifiedalertmanagementhandofftoaicanvas-transcript",
+      "title": "Part3DemoUnifiedAlertManagementHandofftoAICanvas transcript",
+      "original_filename": "Part3DemoUnifiedAlertManagementHandofftoAICanvas transcript.pdf",
+      "source_relative_path": "Part3DemoUnifiedAlertManagementHandofftoAICanvas transcript.pdf",
+      "pdf_url": "pdfs/part3demounifiedalertmanagementhandofftoaicanvas-transcript.pdf",
+      "text_url": "text/part3demounifiedalertmanagementhandofftoaicanvas-transcript.txt",
       "type": "PDF",
-      "pages": 72,
-      "bytes": 14382517,
-      "sha256": "526dac5de20ae26b976a2a947fdec9204a03408bb6aefd3054eb1d5412fe9963",
-      "modified": "2026-09-28T13:02:40.085833+00:00",
+      "pages": 4,
+      "bytes": 68338,
+      "sha256": "4c1633b01117b6b8dde566240fb2ed1a451730378fb05b7d0888a3ea660a8d48",
+      "modified": "2026-10-13T19:08:45.833758+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "part4overviewarchitecture-transcript",
+      "title": "Part4OverviewArchitecture transcript",
+      "original_filename": "Part4OverviewArchitecture transcript.pdf",
+      "source_relative_path": "Part4OverviewArchitecture transcript.pdf",
+      "pdf_url": "pdfs/part4overviewarchitecture-transcript.pdf",
+      "text_url": "text/part4overviewarchitecture-transcript.txt",
+      "type": "PDF",
+      "pages": 4,
+      "bytes": 65333,
+      "sha256": "7734da7f39331ff8e244f4a3c8729b0a07ffdfa28199b5e5e0353b8fc7aeeb62",
+      "modified": "2026-10-13T19:09:05.980887+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "part5demopromptlibrarywidgets-transcript",
+      "title": "Part5DemoPromptLibraryWidgets transcript",
+      "original_filename": "Part5DemoPromptLibraryWidgets transcript.pdf",
+      "source_relative_path": "Part5DemoPromptLibraryWidgets transcript.pdf",
+      "pdf_url": "pdfs/part5demopromptlibrarywidgets-transcript.pdf",
+      "text_url": "text/part5demopromptlibrarywidgets-transcript.txt",
+      "type": "PDF",
+      "pages": 6,
+      "bytes": 73165,
+      "sha256": "aa133a05ef3bb701d385b9e353a8c54d8a814b2f3ce20afac33d087f2134d113",
+      "modified": "2026-10-13T19:09:21.968889+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "part6demodeepreasoningmode-transcript",
+      "title": "Part6DemoDeepReasoningMode transcript",
+      "original_filename": "Part6DemoDeepReasoningMode transcript.pdf",
+      "source_relative_path": "Part6DemoDeepReasoningMode transcript.pdf",
+      "pdf_url": "pdfs/part6demodeepreasoningmode-transcript.pdf",
+      "text_url": "text/part6demodeepreasoningmode-transcript.txt",
+      "type": "PDF",
+      "pages": 4,
+      "bytes": 69697,
+      "sha256": "9085ddd44deca056e624a809cf41b28c4faf9da237fe3ff3c694cca3a6e02785",
+      "modified": "2026-10-13T19:09:36.552529+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "part7demoknowledgebase-transcript",
+      "title": "Part7DemoKnowledgeBase transcript",
+      "original_filename": "Part7DemoKnowledgeBase transcript.pdf",
+      "source_relative_path": "Part7DemoKnowledgeBase transcript.pdf",
+      "pdf_url": "pdfs/part7demoknowledgebase-transcript.pdf",
+      "text_url": "text/part7demoknowledgebase-transcript.txt",
+      "type": "PDF",
+      "pages": 3,
+      "bytes": 63339,
+      "sha256": "e0570c2ccd76eda32964c6255eb07fd3c3430935c4f7f9ede43d7a646a965ca5",
+      "modified": "2026-10-13T19:09:54.982575+00:00",
       "text_extraction": {
         "success": true,
         "error": null

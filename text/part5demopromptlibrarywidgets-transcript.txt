@@ -1,0 +1,239 @@
+--- PAGE 1 ---
+======================================================================
+TRANSCRIPT WITH SPEAKER IDENTIFICATION
+======================================================================
+Source file    : Part5DemoPromptLibraryWidgets.mp4
+Duration       : 00:09:51
+Language       : en (confidence 1.00)
+Model          : small
+Speakers found : 2
+Generated      : 2026-10-13 13:59
+Please note    : This file was produced automatically by speech
+                 recognition and, where a visual description is
+                 included, by an image model. Both make mistakes. Check
+                 every figure, name and job title against the recording
+                 before relying on it. Each timecode points at the
+                 moment in the video where the statement can be
+                 verified.
+======================================================================
+[00:00:04] Speaker1:
+    All right, so now that we have an overview about, you know, Canvas, the problem 
+statement, the backend architecture, let's go a little bit into the actual demo 
+itself. So you know, we saw actions earlier. I want to go in, go step by step and 
+talk about some of the key things that I think always resonate incredibly well at 
+customer demos. So the first thing people want to see is like, well, what is Canvas?
+Like how does it work? Like, you know, kind of just give me some quick things I can 
+understand right away. Perfect place is going to the prompt library. I just clicked 
+on this forward slash right here and it brings up a prompt library. I'm going to go 
+ahead and click on this very first one. How is the overall health of my Maraki 
+catalyst center network slash sites. And you can see right away, very, very quickly,
+we're able to generate this interactive visualization directly in the workspace, as 
+well as give you a direct natural language response. And the paradigm about Canvas 
+again, is that we're generating these widgets whenever it supplements additionally 
+to the response that we're getting from the assistant, we're not generating anything
+needlessly unless we believe that actually has that value.
+[00:01:04] Speaker2:
+    So if you can click into here, right, I'm, I'm able to get a further
+[00:01:08] Speaker1:
+    breakdown of what the, you know, if there are any issues, right? And it seems 
+like right now we're not having any issues, but off the bat,
+[00:01:15] Speaker2:
+    you can see that the visualization right here is much easier to read for
+[00:01:18] Speaker1:
+    this type of a output than if it was just purely in text. So this is a, this is 
+a situation where I would do so. Now a second thing that I would do is also click 
+directly into some of these widgets right here. For example, I'm clicking on 
+networks, right? Which it goes ahead and directly launches a prompt into here. I
+
+--- PAGE 2 ---
+says list all my, unless all my networks. And then I clicked on to connect the 
+clients. This is also, she launches a prompt that says show me all my connected 
+clients
+[00:01:44] Speaker2:
+    across my networks.
+[00:01:45] Speaker1:
+    So right off the bat, one thing we can emphasize is that campus is not just 
+about printing, say a JPEG on a workspace.
+[00:01:52] Speaker2:
+    It can be interactive.
+[00:01:53] Speaker1:
+    It allows you to be able to click directly into it. And in fact, I, for example,
+I'm listing all my networks right here.
+[00:01:59] Speaker2:
+    and it came back really fast, right?
+[00:02:01] Speaker1:
+    I can click directly into one that perhaps, Hey, I'm the network admin for this 
+is my particular preview.
+[00:02:06] Speaker2:
+    And I can say, Hey,
+[00:02:07] Speaker1:
+    I want to go ahead and add this one specifically to the board because I care 
+about this one the most.
+[00:02:11] Speaker2:
+    Or you know what, down here,
+[00:02:13] Speaker1:
+    I'm showing all my connected clients across my networks.
+[00:02:16] Speaker2:
+    I'm seeing all these right here
+[00:02:17] Speaker1:
+    and what I care about this, I'm going to click add this entire thing to the 
+board as well. And as you can see, along the way it generated my devices by type. So
+a very visual way to start off your demo is using prompt library and clicking some 
+of those things that I had done just right there. Now, another thing I would also 
+recommend for the purpose of Dcloud right now, and I'll preface that this is not 
+currently in control availability yet, but this is something for the future, but 
+you'll be able to also generate an entire topology view directly in Dcloud as well. 
+And there's a couple of options that you can see directly here in the topology
+
+--- PAGE 3 ---
+prompt library. And what this is gonna do right now is grabbing information from 
+Maraki and generates an entire SD-WAN topology. But the cool part that what you can 
+really showcase the customer is that the canvas is going to be able to expand this 
+into a full screen view,
+[00:03:05] Speaker2:
+    allowing you to troubleshoot exactly and even click onto individual sites in
+[00:03:09] Speaker1:
+    this case, or products in this case, or links in this case to showcase what 
+exactly is that additional information. And we want to hone in probably on that red 
+exclamation mark. We're all about finding issues here.
+[00:03:20] Speaker2:
+    And we're going to click there. That that's the interesting part of the devil, 
+of course.
+[00:03:25] Speaker1:
+    Exactly.
+[00:03:26] Speaker2:
+    I'm hoping everyone here is the first instinct.
+[00:03:27] Speaker1:
+    Let's click on a red exclamation. Yeah. And, you know, obviously I was, what we 
+want to do is like narrate, Hey, what's the problem? Right? It says unreachable 
+right there. Pretty straightforward VPNs, unreachable. What do we do? Also only one 
+option to do, right? Click investigate. So, you know, what we can emphasize on is 
+that, Hey, generative UI is really just a very powerful thing.
+[00:03:46] Speaker2:
+    And what does that investigate do? It just disappeared. So what you can say now 
+is that, you know what? Remember what we just did
+[00:03:52] Speaker1:
+    there for actions and brought the context of a problem that over-colded
+[00:03:56] Speaker2:
+    alerts into Canvas, the troubleshoot, it's doing the exact same thing here for
+[00:04:03] Speaker1:
+    that particular issue for the two, the links that are having some problems with 
+reachability. So you can see right here, it's going ahead and routing that problem 
+to the Meraki agent, because this is related to Meraki data.
+[00:04:14] Speaker2:
+    And then we'll give it like a minute or two, it'll be able to come back
+[00:04:16] Speaker1:
+    and give us some additional information about what's going on.
+
+--- PAGE 4 ---
+[00:04:20] Speaker2:
+    But that's how you can marry that box where it says Meraki agent to the slide 
+that we showed before. of the routing is kind of the orchestrator agent and then we 
+can see that the agents change depending on what prompt we are giving and that is 
+the agent system that is where in the back end the system is deciding hey what's the
+best agents from the ones that I have or the most suitable agent to solve the 
+problem at hand and that change is based on every single question that you have and 
+that's something that you can share with your customers and you will see eventually,
+maybe with this query or not, we won't see, but if there's a widget... to be made, 
+you might actually see the widget agent. So it's interesting to cover those while 
+your query is in process, so you don't start there just waiting. There we go. So now
+we have the canvas agent. We see that the agent changed because we are giving a 
+response. Absolutely. So yeah, if you're querying any questions about Nexus 
+dashboard, you'll see Nexus dashboard agent, hyper fabric
+[00:05:24] Speaker1:
+    agent, right? Later on when we're bringing in third party ecosystem, service now
+agent, right?
+[00:05:31] Speaker1:
+    Exactly. You'll see all that's very visual and it's really just trying to give 
+our customers a visualization into how we're doing routing in the back end, right? 
+Which place is it actually going? So, you know, while we're waiting for this to 
+actually fully load, a few things that can bring up is that there's a bunch of 
+usability features here as well, right? You're going to be able to do things such as
+grouping by category, right? I can go ahead and sort the fit to the view of the 
+board so I can better sort it. We only have a couple of widgets here,
+[00:05:58] Speaker2:
+    but imagine you have 15, 20 of them
+[00:06:00] Speaker1:
+    get absolutely out of control.
+[00:06:01] Speaker2:
+    And there's an entire section here that I won't go into too much detail on
+[00:06:05] Speaker1:
+    because we want to focus a little bit more on the troubleshooting aspects of the
+usability aspects of Canvas, such as even being able to see that there's color coded
+categories for each one of these widgets. So the you as a user can better organize 
+your mind around exactly what it is that you should be going for which widgets, 
+right? So so many different things, adding images, so on and so forth.
+[00:06:25] Speaker2:
+    For me, what works is that I usually cover those usability elements while the 
+prompt is going. If I run out of things to say, that's a good moment to cover these 
+things. I feel.
+
+--- PAGE 5 ---
+[00:06:38] Speaker1:
+    Oh yeah, absolutely. The prompt loaded a little fast than I thought, which is a 
+great problem to have. I was expecting a load for maybe a couple more seconds, but 
+you know what? That's perfect, right? People are saying, you know what? I'm getting 
+an output right away.
+[00:06:48] Speaker2:
+    And I would tell you this, you know, when it comes to demoing
+[00:06:52] Speaker1:
+    canvas, you want to show the first couple of times doing a live loading. Later 
+on when you're doing deeper investigations, it's likely that you don't want to have 
+to have the customer wait for the entire thing to help put
+[00:07:01] Speaker2:
+    because it could take, you might not have enough time, right?
+[00:07:04] Speaker1:
+    So do some level of prepping beforehand for certain flows that maybe take a 
+little bit longer and just have a preloaded board. But when you start the demo, 
+showcase it being loaded live time. If you see right here, right? The cool part is 
+that we can say, Hey, like we just loaded this investigation within in a minute, 
+minute and a half, we were able to get this outcome right here. And it tells you 
+exactly what the problem is. It tells you in Buena Ares that, Hey, look, do you look
+at all these different scores in particular VP and hell score is at 33%. Right. So 
+it calls out exactly what problem that we're seeing directly in
+[00:07:35] Speaker2:
+    that widget right there beyond that, right? It tells you what other symptoms are
+there, right? It tells you, Hey, you know what? It's, you know,
+[00:07:40] Speaker1:
+    there's, you know, the vice health is a hundred percent, right? There's no 
+configuration changes. So let's go to the next part and then talks about the 
+reachability, right? It tells you about, Hey, look, you You know, between Toronto 
+and Buenos Aires and it's unreasonable, right? So basically telling you the entire 
+blast radius now, right? So we're going one level lower and then, right? Going all 
+the way down to the bottom here, it tells you, Hey, these, this is going to be your 
+primary blast radius that you should be worrying about.
+[00:08:03] Speaker2:
+    And it tells you the recommendations of exactly what you should do,
+[00:08:06] Speaker1:
+    but not just that it tells you in priority order so that you can, you know, 
+figure out exactly what you'd be doing first versus second versus third. That's 
+really the power of canvas here being able to just summarize that and being able to 
+kind of just divide and help people, help you to divide it into chunks of what I do 
+actionably next.
+
+--- PAGE 6 ---
+[00:08:27] Speaker2:
+    So in order to summarize, you started with the backslash with the pre-created 
+queries. You asked for a general query. You showed, as you say, live a query live so
+we can see how we are invoking the agents, how the charts are being loaded. You then
+show the SD-WAN topology We found exclamation mark in red. You click on that, 
+investigate it. While doing this investigation, we went through the auto layout and 
+the start cards and eventually we went back to explain what happened with the VPN 
+problem that we identify. So this is a really good flow to replicating customer 
+demos.
+[00:09:12] Speaker1:
+    Exactly, and you can always mention that, hey, you wanna get more information 
+before you follow these recommended next steps. It's a natural language experience, 
+right? You just ask additional questions here, anything you want.
+[00:09:21] Speaker2:
+    Yeah.
+[00:09:21] Speaker1:
+    Deep dive further. Exactly. All right. So I think we give a high level, right? 
+So customers at this point are saying, OK, cool. I'm able to see some nice visuals. 
+I can see an outcome already.
+[00:09:32] Speaker2:
+    You know what? But I want to do some very deep investigation.
+[00:09:36] Speaker1:
+    So what I would do at this point in time is I would showcase, hey, you have a 
+high level now. Let's talk about how we can go into a deeper investigation flow. And
+I would do exactly this by going into something called the reasoning mode.

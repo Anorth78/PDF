@@ -1,0 +1,77 @@
+--- PAGE 1 ---
+======================================================================
+TRANSCRIPT WITH SPEAKER IDENTIFICATION
+======================================================================
+Source file    : Bonus2CatalystSDWANBranchConnectivity.mp4
+Duration       : 00:03:21
+Language       : en (confidence 1.00)
+Model          : small
+Speakers found : 2
+Generated      : 2026-10-13 13:52
+Please note    : This file was produced automatically by speech
+                 recognition and, where a visual description is
+                 included, by an image model. Both make mistakes. Check
+                 every figure, name and job title against the recording
+                 before relying on it. Each timecode points at the
+                 moment in the video where the statement can be
+                 verified.
+======================================================================
+[00:00:03] Speaker1:
+    Right. So catalyst SD when I'm starting off here and asking the question, hey, 
+summarize my catalyst SD one deployment. And as you expect, that's exactly what it's
+doing. It tells you exactly what sites or routers, well, how many circuits there are
+here. But ultimately speaking, it's killing you where we're seeing any sort of 
+particular issue. Right. We're seeing that there's a low availability here. Right. 
+And that's probably one of the things that I would like to most focus on. Right. If 
+I go down to the bottom right here, it says, in fact, the action item section tells 
+you exactly this zero availability. That's a very, very tellable thing that you're 
+going to be able to see and catalyst SD when, right? So based off of this, what I 
+can go ahead and do, what I did was I, Hey, you know what? I'm just a follow up on 
+that action item at it's get canvas is telling me directly here. So Hey, site one on
+one is showing 0% availability, but actually it seemed like the circuits are up.
+[00:00:51] Speaker2:
+    What should I do?
+[00:00:53] Speaker1:
+    What do I, what's going on here? So canvas will be able to take that context. 
+And again, to follow up, it's a multi turn, you know, conversation here takes that 
+context and tells you, Hey, you know what? This is what I've been able to see from 
+that particular site, right? And candle is SD when agent does an incredible job at 
+being able to find out what that root causes is that there's a BFT failure, right? 
+BFT for those who are not familiar, it's like the heartbeat that helps us to 
+understand that both sides are actually up.
+[00:01:16] Speaker2:
+    Right.
+[00:01:17] Speaker1:
+    And it tells you, Hey, why circuits are showing up, but availability is at zero.
+Hey, BFT sessions are down, data plans down, site availability is down, and it talks
+
+--- PAGE 2 ---
+about, it gives you an overview about what that means. And then it tells you, Hey, 
+this is what I believe that you should be doing to actually fix the problem, right? 
+Gives you some, uh, show commands that you can even run on your devices as well and 
+tells you what things to check and what things to do next. So first of all, this, 
+this is already somewhere you can probably end the demo. You just show that, Hey, I 
+was able to go from a top down view all the way down to where I should, what I 
+should do next step to solve a problem. What you can even do as just a plus one is I
+can, you know what, I want to go ahead and write this into a ticket service now 
+ticket, whatever ticket and they'll tell you exactly that is summarized that exactly
+how it believes that you should be able to format that into a ticket and all the 
+information. And so all that information for remediation is there. And in fact, for 
+Canvas, you can even go ahead and export this to a PDF and just upload it yourself 
+if you like to as well. So this right here just, you know, is one other flow that I 
+would say that, hey, allows you to troubleshoot site to site to site using Catalyst 
+SD-WAN agents as well.
+[00:02:24] Speaker2:
+    Yeah. And I like the fact that we are starting with a general question. We all 
+know that prompt engineering is important and asking the specific is important but 
+sometimes we don't know what we don't know so start with the how is my environment 
+doing and then once that bubbles up something that we need to investigate that's 
+where you went with more accurate or more precise I should say not accurate more 
+precise prompts so showing those elements are also very useful because customers are
+asking what are the new skills that my network engineers will need to have and 
+prompting is one of those. We are seeing that as well. So I really like this.
+[00:03:04] Speaker1:
+    Absolutely. I think it's just a no-brainer for how we should be doing these kind
+of demos. It just resonates so well with customers when they see that top-down view 
+and have all the context into where the problems is and what exactly they should be 
+caring about and looking at.

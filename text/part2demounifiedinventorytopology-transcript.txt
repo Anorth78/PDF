@@ -1,0 +1,217 @@
+--- PAGE 1 ---
+======================================================================
+TRANSCRIPT WITH SPEAKER IDENTIFICATION
+======================================================================
+Source file    : Part2DemoUnifiedInventoryTopology.mp4
+Duration       : 00:12:16
+Language       : en (confidence 1.00)
+Model          : small
+Speakers found : 2
+Generated      : 2026-10-13 13:56
+Please note    : This file was produced automatically by speech
+                 recognition and, where a visual description is
+                 included, by an image model. Both make mistakes. Check
+                 every figure, name and job title against the recording
+                 before relying on it. Each timecode points at the
+                 moment in the video where the statement can be
+                 verified.
+======================================================================
+[00:00:03] Speaker1:
+    I want to make sure that everyone here is very familiar with how exactly we can 
+go through the flow and give a compelling demo to anybody, but either whether it's a
+single customer or on a larger stage, DeCloud definitely has a number of things that
+you can showcase that's very compelling today. So what I would say, first of all, is
+that we're landing here in the home page of Cloud Control. We can see a number of 
+things off the bat, such as our unified assistant sitting in the very center that 
+allows you to reach every single product that's provisioned to Cloud Control, our 
+Canvas tab, Actions tab.
+[00:00:33] Speaker2:
+    But what I want to first go to right away
+[00:00:36] Speaker1:
+    is this 9.menu, which allows us to see everything that we bring here as terms of
+capabilities from Cloud Control. And what I would first highlight is, hey, we are 
+able to see three things, right, products. What all products have you provisioned to
+Cloud Control? The platform services that really allows us to be able to see 
+additional information about every single one of these products and more, as well as
+our applications. Now, off the bat, you can also mention that at the top, It's 
+pretty empty at the, when you first launched log into cloud control and we can talk 
+about how we're able to actually, you know, customize the top bar so that it's based
+off exactly what you as the end user would utilize on a day-to-day basis. Now, I 
+would, I would go here first. I would go ahead and talk about, Hey, let's talk about
+being able to go into a singular product. Right. I want to showcase right off the 
+bat that cloud control allows you to be able to access any single one of your 
+products incredibly easy without having to re-sign in earlier. I just clicked on 
+Maraki dashboard and as you can see, I'm logged into the entirety of Maraki without 
+having to do a single sign on. And in fact, I can also see the cloud control header 
+at the very top with all my pinned items, AI canvas, as well as assistant at the 
+top. And I like to mention this is the entirety of the Maraki dashboard. It's not a 
+small sub dashboard. It's really in the entire product. And that's one of the
+
+--- PAGE 2 ---
+powerful things about cloud control.
+[00:02:03] Speaker2:
+    That's a very important point. So we are not recreating dashboard inside of 
+Cloud Control. The customer doesn't lose any capabilities. They actually gain that 
+seamless navigation that Cloud Control provides. So this is a very good point, 
+Richard, that you are making and we need to emphasize in those customers 
+conversations, I think.
+[00:02:27] Speaker1:
+    Exactly. And let's just go for one more just to prove the point because, you 
+know, Meraki is one SSO. InterSite is one entirely separate one. So let me try 
+clicking on InterSite right here. And as you can see within just a couple of seconds
+has brought me into the entirety of InterSite and I can click on any single one of 
+these tabs and expand on any of these things and it'll be able to let me get there. 
+Really a game changer from anything that we had in the past.
+[00:02:54] Speaker1:
+    Now that's speaking the obvious. I think that first off all the bad, this is 
+something that customers are already going to have a wow moment. They don't have to 
+log in a second time before we all know how much of a pain that could be. Not even 
+just for when we're operating in IT, but just for anything, any multiple logins, you
+have to remember passwords, you have to go through multiple MFA's, so on and so 
+forth. So that's the first point we want to get across. The second point is that we 
+want to talk about platform services. How are we really getting all this data from 
+all these different products and really just making the most of it? Now, the lowest 
+hang fruit here is going to be inventory. We can, for the very first time, without 
+using REST APIs and building our own dashboards, see one singular view across every 
+single one of our platform controllers. As you can see right here, I'm going to the 
+list view of inventory. And off of the bat, we can showcase right here, there's a 
+source column that shows us every single one of our hardware assets. And we can see 
+Nexus dashboard, Cloud Control Hub, Security Cloud Control, SD-WAN, Meraki, Security
+Cloud Control, everything all in just one singular view. And not even just that, it 
+also allows us to see insights that's based off all the different attributes of 
+every single one of these hardware assets, such as, for example, it says, oh, 
+there's devices affected by known Cisco piece or advisories or Hey, active network 
+anomalies needed an investigation. So these, for example, are not actually even 
+static. These are dynamic insights that are there based off whatever attributes are 
+there for every single one of these products. So they can change, in fact, on a day 
+to day basis to give you as a user the latest and greatest of what you should
+[00:04:27] Speaker2:
+    be paying attention to across every single one of your platform controllers. I 
+think this is a pretty game changer. This is very game changer. This is very 
+powerful in the world where we are going to see methods results. Having centralized 
+inventory of all our assets in a single place and being able to track those assets 
+is absolutely key. So Cisco Cloud Control is a very, very important a component for 
+this as well or anything, Glasswood and Mythos, Project Beacon, et cetera. So this 
+is, don't discount the value of this. Not every customer is really tracking assets 
+as they should. So this is going to be very powerful for those customers.
+
+--- PAGE 3 ---
+[00:05:15] Speaker1:
+    Absolutely.
+[00:05:15] Speaker2:
+    And you know what?
+[00:05:16] Speaker1:
+    Just to throw in a little bit of flair, we've even gone ahead and put in a 
+little bit of generative AI in here as well. We're allowed to now not just be able 
+to search up keywords, which we're all used to when it comes to filtering anything, 
+you could type in actual full sentences here now as well to search up your within 
+your assets. And we know what you're going to be able to see here is that it's not 
+only showing me my network firewalls, my secure firewalls on security cloud control,
+but it'll also be able to show me things like my MX's here as well. So really just 
+one singular view and you can now do everything in more of an intent based fashion 
+by telling it what you want.
+[00:05:52] Speaker2:
+    And you can export from there. So customers that like their report situation and
+they're always asking, how can I get a report of this on that? Then you can generate
+a report from there and get whatever assets you're looking for. So again, very, very
+powerful.
+[00:06:08] Speaker1:
+    Exactly. And, you know, it's not even just that, if you go back to the, back to 
+this page here, you can also see additional insights, like a full breakdown of your 
+Cisco platforms or your security exposures, compliance postures. And this is just 
+really the tip of the iceberg. We're only currently in controlled availability, 
+going into general availability soon for the U.S. This is going to, you can expect 
+this to massively expand every single one of these metrics. All the intelligence is 
+going to be significantly more as we just go upon the next couple of months. Now 
+this is a high level when it comes to the inventory. You guys can play around with 
+it and get a lot more deeper into every single one of these different widgets. Now I
+want to go one step further. We have all this information from all these different 
+hardware assets. Now as a customer what I want to do is I want to be able to 
+visualize this in not just a 30,000 feet but a 300,000 feet going down to be able to
+see all my different sites, both campus branch, all the way to over the WAN into my 
+data centers, and that's exactly what this topology view is going to be able to do 
+by aggregating all that information from my platform controllers as well. So, you 
+know, Leela, I think that the one thing that customers first of all would care about
+is, hey, if I'm looking across all my sites, which ones actually need attention? 
+Wouldn't
+[00:07:28] Speaker2:
+    you agree? A hundred percent. So I think these kids have a visual representation
+of what's that's going on from that perspective, from a health perspective. So how 
+do you show that? How do you explain this to the customer? What would be your top 
+tracking topology?
+
+--- PAGE 4 ---
+[00:07:47] Speaker1:
+    Yeah, absolutely. So, you know, beyond the fact that it's bring, bring all that 
+information through the platform controllers to visualize such a thing in a very 
+intuitive way is that off the bat, it's very simple.
+[00:07:58] Speaker2:
+    I can see exactly which one of my sites are poor, have a warning or a healthy.
+[00:08:04] Speaker1:
+    And as always, we care about the ones that are poor because we need to take 
+action right away. And it's very visual. As you can see off the bat in the map, 
+there's clearly an area right here. There are six sites and it has a red area. So 
+let's click directly into here and let's click onto one of these right here. Let's 
+say click on view topology. And you can see we're able to go from this entire globe 
+view all the way down to a very specific site. This one's called RTP, NXOS, and you 
+know, it shows you exactly how everything is connected. border gateways. I can see 
+these other spines, right? And I can click into individual. This is even and it 
+shows me exactly what's going on. It says, Hey, like there's a traffic score that's 
+now healthy, right? There's some additional device information. So this is what I 
+would be able to showcase that. Hey, I'm able to go from any sort of view all the 
+way down into a very intricate device level view to see exactly what's wrong with my
+network and be able to understand perhaps what should I do next? what should I 
+troubleshoot next? If I didn't have this view, I'd have to go into multiple 
+platforms, the multiple different products to be able to find this information. And 
+it's not very easy for me to be able to connect it from one particular product to 
+another. But now it gives me that full comprehensive visibility view.
+[00:09:21] Speaker2:
+    So what are those blue lines? So how do you explain those blue lines there?
+[00:09:26] Speaker1:
+    Yeah. These are data connections between, for example, the RTP and XLS leaf all 
+the way to this switch, for example. Right. So it tells you exactly how the data is 
+flowing across every single one of these. So like, for example, a hardware 
+connection. So before, again, like it's complete. It's someone black box unless 
+you're really just at specific admin for that product, but now you see how 
+everything is connected across the board. All right. For, for example, just for this
+site.
+[00:09:52] Speaker1:
+    Now, what else you can do here is that, you know, say, say, for example, this 
+particular device, I can even click on view and inventory. it'll bring me back to 
+the inventory so that I can see the additional information about this as well, along
+with the rest of my different devices. So you can see this really interconnected 
+experience that allows us to be able to view whatever we want very, very easily. 
+Now, I will even give a hint here that in the near future, we're also planning to 
+make it so that majority of context that you're seeing here in Cloud Control, if you
+see an issue, right, right now today, it's going to be within actions. You can pass 
+it in the canvas to do some deeper investigation, you'll be able to pass it from the
+apology as well, right? You'll be able to pass things from inventory as well. So all
+
+--- PAGE 5 ---
+these things will be on the horizon to make it so that when it comes to 
+investigation, it's no longer just a pure dashboard play, a pure dashboard 
+experience, but being able to pass context so that agents are able to do
+[00:10:50] Speaker2:
+    those things for you going forward. And I have a question for you. So how do 
+you, this is not for customer, this is for the accountings demoing this, How do you 
+get this better view of topology? Are you using full screen? Because sometimes when 
+you don't use whatever you're using, you might see a reduced view. So what would be 
+your recommendations for account teams to properly demo topology? You know, 
+absolutely full screen. You know,
+[00:11:19] Speaker1:
+    I would say that this applies to just demo in general. I'm hoping everybody here
+is just full screen. In fact, you should even use something like this where you're 
+clicking view and just hiding the entire full screen toolbar. Like that's just even 
+that's even a better
+[00:11:33] Speaker2:
+    that's even better. That's a great recommendation and I wanted to point it at 
+that out because if not sometimes you see a reduced view of topology and you can you
+can be jumping around and struggling a little bit. So this view that Richard shows 
+it's the best way to show topology. So I wanted to point that out, to point that 
+out. Yeah, absolutely.
+[00:11:55] Speaker1:
+    Full view, yeah. Absolutely. Yeah, we don't want to miss a single pixel of this 
+very beautiful user experience right here, right? All right, so I think overall this
+is a pretty solid overview of topology, right Lila?
+[00:12:10] Speaker2:
+    Yes, yes, that's awesome.

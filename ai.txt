@@ -7,87 +7,31 @@ Use library.json for structured metadata.
 Use the linked text_url for extracted document text.
 Use the linked pdf_url for the original PDF.
 
-Document count: 15
-Generated: 2026-10-07T13:20:43.857211+00:00
+Document count: 11
+Generated: 2026-10-13T19:10:09.207555+00:00
 
 ## Documents
 
-### Agent Builder in Cloud Control Studio  A new way to extend and customize Cisco Cloud Control   Cisco Blogs
-- ID: agent-builder-in-cloud-control-studio-a-new-way-to-extend-and-customize-cisco-cloud-control-cisco-blogs
-- Original filename: Agent Builder in Cloud Control Studio_ A new way to extend and customize Cisco Cloud Control - Cisco Blogs.pdf
-- PDF: pdfs/agent-builder-in-cloud-control-studio-a-new-way-to-extend-and-customize-cisco-cloud-control-cisco-blogs.pdf
-- Extracted text: text/agent-builder-in-cloud-control-studio-a-new-way-to-extend-and-customize-cisco-cloud-control-cisco-blogs.txt
-- Pages: 6
+### Bonus1NexusDashboardDataCenterFabric transcript
+- ID: bonus1nexusdashboarddatacenterfabric-transcript
+- Original filename: Bonus1NexusDashboardDataCenterFabric transcript.pdf
+- PDF: pdfs/bonus1nexusdashboarddatacenterfabric-transcript.pdf
+- Extracted text: text/bonus1nexusdashboarddatacenterfabric-transcript.txt
+- Pages: 3
 
-### AI Canvas Transcript
-- ID: ai-canvas-transcript
-- Original filename: AI Canvas Transcript.pdf
-- PDF: pdfs/ai-canvas-transcript.pdf
-- Extracted text: text/ai-canvas-transcript.txt
-- Pages: 15
+### Bonus2CatalystSDWANBranchConnectivity transcript
+- ID: bonus2catalystsdwanbranchconnectivity-transcript
+- Original filename: Bonus2CatalystSDWANBranchConnectivity transcript.pdf
+- PDF: pdfs/bonus2catalystsdwanbranchconnectivity-transcript.pdf
+- Extracted text: text/bonus2catalystsdwanbranchconnectivity-transcript.txt
+- Pages: 2
 
-### BDM   Cisco Cloud Control & AI Canvas
-- ID: bdm-cisco-cloud-control-ai-canvas
-- Original filename: BDM - Cisco Cloud Control & AI Canvas.pdf
-- PDF: pdfs/bdm-cisco-cloud-control-ai-canvas.pdf
-- Extracted text: text/bdm-cisco-cloud-control-ai-canvas.txt
-- Pages: 38
-
-### Cisco AI Canvas is here  the workspace for agentic operations   Cisco Blogs
-- ID: cisco-ai-canvas-is-here-the-workspace-for-agentic-operations-cisco-blogs
-- Original filename: Cisco AI Canvas is here_ the workspace for agentic operations - Cisco Blogs.pdf
-- PDF: pdfs/cisco-ai-canvas-is-here-the-workspace-for-agentic-operations-cisco-blogs.pdf
-- Extracted text: text/cisco-ai-canvas-is-here-the-workspace-for-agentic-operations-cisco-blogs.txt
-- Pages: 6
-
-### Cisco Cloud Control with AI Canvas FAQs
-- ID: cisco-cloud-control-with-ai-canvas-faqs
-- Original filename: Cisco Cloud Control with AI Canvas FAQs.pdf
-- PDF: pdfs/cisco-cloud-control-with-ai-canvas-faqs.pdf
-- Extracted text: text/cisco-cloud-control-with-ai-canvas-faqs.txt
-- Pages: 41
-
-### Cisco Cloud Control  The Secure Harness for the Agentic Era   Cisco Blogs
-- ID: cisco-cloud-control-the-secure-harness-for-the-agentic-era-cisco-blogs
-- Original filename: Cisco Cloud Control_ The Secure Harness for the Agentic Era - Cisco Blogs.pdf
-- PDF: pdfs/cisco-cloud-control-the-secure-harness-for-the-agentic-era-cisco-blogs.pdf
-- Extracted text: text/cisco-cloud-control-the-secure-harness-for-the-agentic-era-cisco-blogs.txt
-- Pages: 9
-
-### Cisco Deep Network Model  Purpose built intelligence for networking   Cisco Blogs
-- ID: cisco-deep-network-model-purpose-built-intelligence-for-networking-cisco-blogs
-- Original filename: Cisco Deep Network Model_ Purpose built intelligence for networking - Cisco Blogs.pdf
-- PDF: pdfs/cisco-deep-network-model-purpose-built-intelligence-for-networking-cisco-blogs.pdf
-- Extracted text: text/cisco-deep-network-model-purpose-built-intelligence-for-networking-cisco-blogs.txt
-- Pages: 9
-
-### Cisco Live Keynote Transcript
-- ID: cisco-live-keynote-transcript
-- Original filename: Cisco Live Keynote Transcript.pdf
-- PDF: pdfs/cisco-live-keynote-transcript.pdf
-- Extracted text: text/cisco-live-keynote-transcript.txt
-- Pages: 65
-
-### Cloud Control Partner Enablement Plan
-- ID: cloud-control-partner-enablement-plan
-- Original filename: Cloud Control Partner Enablement Plan.pdf
-- PDF: pdfs/cloud-control-partner-enablement-plan.pdf
-- Extracted text: text/cloud-control-partner-enablement-plan.txt
-- Pages: 48
-
-### From an Idea to a Live App on Cisco, in Minutes   Cisco Blogs
-- ID: from-an-idea-to-a-live-app-on-cisco-in-minutes-cisco-blogs
-- Original filename: From an Idea to a Live App on Cisco, in Minutes - Cisco Blogs.pdf
-- PDF: pdfs/from-an-idea-to-a-live-app-on-cisco-in-minutes-cisco-blogs.pdf
-- Extracted text: text/from-an-idea-to-a-live-app-on-cisco-in-minutes-cisco-blogs.txt
-- Pages: 4
-
-### Inside Cisco Cloud Control  Building the AI Native Platform of Record for Cross Domain Operations   Cisco Blogs
-- ID: inside-cisco-cloud-control-building-the-ai-native-platform-of-record-for-cross-domain-operations-cisco-blogs
-- Original filename: Inside Cisco Cloud Control_ Building the AI-Native Platform of Record for Cross-Domain Operations - Cisco Blogs.pdf
-- PDF: pdfs/inside-cisco-cloud-control-building-the-ai-native-platform-of-record-for-cross-domain-operations-cisco-blogs.pdf
-- Extracted text: text/inside-cisco-cloud-control-building-the-ai-native-platform-of-record-for-cross-domain-operations-cisco-blogs.txt
-- Pages: 9
+### Bonus3SecureFirewallSitetoSiteVPN1 transcript
+- ID: bonus3securefirewallsitetositevpn1-transcript
+- Original filename: Bonus3SecureFirewallSitetoSiteVPN1 transcript.pdf
+- PDF: pdfs/bonus3securefirewallsitetositevpn1-transcript.pdf
+- Extracted text: text/bonus3securefirewallsitetositevpn1-transcript.txt
+- Pages: 2
 
 ### Learning Map
 - ID: learning-map
@@ -96,23 +40,51 @@ Generated: 2026-10-07T13:20:43.857211+00:00
 - Extracted text: text/learning-map.txt
 - Pages: 11
 
-### Partner Summit   Cisco Cloud Control Executive Brief
-- ID: partner-summit-cisco-cloud-control-executive-brief
-- Original filename: Partner Summit - Cisco Cloud Control Executive Brief.pdf
-- PDF: pdfs/partner-summit-cisco-cloud-control-executive-brief.pdf
-- Extracted text: text/partner-summit-cisco-cloud-control-executive-brief.txt
-- Pages: 16
+### Part1IntroWhyCloudControlAICanvas transcript
+- ID: part1introwhycloudcontrolaicanvas-transcript
+- Original filename: Part1IntroWhyCloudControlAICanvas transcript.pdf
+- PDF: pdfs/part1introwhycloudcontrolaicanvas-transcript.pdf
+- Extracted text: text/part1introwhycloudcontrolaicanvas-transcript.txt
+- Pages: 3
 
-### Specialist Master Transcript
-- ID: specialist-master-transcript
-- Original filename: Specialist Master Transcript.pdf
-- PDF: pdfs/specialist-master-transcript.pdf
-- Extracted text: text/specialist-master-transcript.txt
-- Pages: 17
+### Part2DemoUnifiedInventoryTopology transcript
+- ID: part2demounifiedinventorytopology-transcript
+- Original filename: Part2DemoUnifiedInventoryTopology transcript.pdf
+- PDF: pdfs/part2demounifiedinventorytopology-transcript.pdf
+- Extracted text: text/part2demounifiedinventorytopology-transcript.txt
+- Pages: 5
 
-### TDM   Cisco Cloud Control & AI Canvas
-- ID: tdm-cisco-cloud-control-ai-canvas
-- Original filename: TDM - Cisco Cloud Control & AI Canvas.pdf
-- PDF: pdfs/tdm-cisco-cloud-control-ai-canvas.pdf
-- Extracted text: text/tdm-cisco-cloud-control-ai-canvas.txt
-- Pages: 72
+### Part3DemoUnifiedAlertManagementHandofftoAICanvas transcript
+- ID: part3demounifiedalertmanagementhandofftoaicanvas-transcript
+- Original filename: Part3DemoUnifiedAlertManagementHandofftoAICanvas transcript.pdf
+- PDF: pdfs/part3demounifiedalertmanagementhandofftoaicanvas-transcript.pdf
+- Extracted text: text/part3demounifiedalertmanagementhandofftoaicanvas-transcript.txt
+- Pages: 4
+
+### Part4OverviewArchitecture transcript
+- ID: part4overviewarchitecture-transcript
+- Original filename: Part4OverviewArchitecture transcript.pdf
+- PDF: pdfs/part4overviewarchitecture-transcript.pdf
+- Extracted text: text/part4overviewarchitecture-transcript.txt
+- Pages: 4
+
+### Part5DemoPromptLibraryWidgets transcript
+- ID: part5demopromptlibrarywidgets-transcript
+- Original filename: Part5DemoPromptLibraryWidgets transcript.pdf
+- PDF: pdfs/part5demopromptlibrarywidgets-transcript.pdf
+- Extracted text: text/part5demopromptlibrarywidgets-transcript.txt
+- Pages: 6
+
+### Part6DemoDeepReasoningMode transcript
+- ID: part6demodeepreasoningmode-transcript
+- Original filename: Part6DemoDeepReasoningMode transcript.pdf
+- PDF: pdfs/part6demodeepreasoningmode-transcript.pdf
+- Extracted text: text/part6demodeepreasoningmode-transcript.txt
+- Pages: 4
+
+### Part7DemoKnowledgeBase transcript
+- ID: part7demoknowledgebase-transcript
+- Original filename: Part7DemoKnowledgeBase transcript.pdf
+- PDF: pdfs/part7demoknowledgebase-transcript.pdf
+- Extracted text: text/part7demoknowledgebase-transcript.txt
+- Pages: 3

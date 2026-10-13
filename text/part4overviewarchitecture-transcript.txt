@@ -1,0 +1,147 @@
+--- PAGE 1 ---
+======================================================================
+TRANSCRIPT WITH SPEAKER IDENTIFICATION
+======================================================================
+Source file    : Part4OverviewArchitecture.mp4
+Duration       : 00:06:03
+Language       : en (confidence 1.00)
+Model          : small
+Speakers found : 2
+Generated      : 2026-10-13 13:58
+Please note    : This file was produced automatically by speech
+                 recognition and, where a visual description is
+                 included, by an image model. Both make mistakes. Check
+                 every figure, name and job title against the recording
+                 before relying on it. Each timecode points at the
+                 moment in the video where the statement can be
+                 verified.
+======================================================================
+[00:00:03] Speaker1:
+    The key thing I want to talk about with Canvas to get across the point to 
+customers is number one, your IT operations today, you can see symptoms, but the 
+issue can be anywhere, right? We all know this. People like to blame the Wi-Fi for 
+everything. That's an example I love to give, but it might not be a Wi-Fi problem. 
+It could be a switch problem, right? It could be a routing problem. It could be an 
+ISD problem. It could be anything else. So we're here now having to figure out 
+exactly which segment the problem is in. So in this particular scenario in the 
+slide, we're saying, hey, why is my application slow? Could be any one of these 
+things. In fact, I don't even know where to start. And the beauty of CAM is that it 
+can go ahead and do that all for you. You tell it your intent, it looks across every
+domain for you, and says, hey, the problem is here in observability. We're here. The
+problem is in networking, whatever it is. So that's one thing you really want to get
+across is that you can this. Ultimately, it can do all these beautiful things, 
+generating visualizations. but ultimately we're trying to make it so that 
+investigation is just much faster for you across the entire landscape of where you 
+operate as a customer. Now, last thing I want to mention, and we can jump right back
+into the demo, is that this is a very useful slide here when it
+[00:01:10] Speaker2:
+    comes to architecture to make sure that your customers, it's not just saying, oh
+yeah,
+[00:01:14] Speaker1:
+    look, I don't know what's happening in the backend and somehow data comes back 
+to me. We want to ground them in the reality of how things all work. And that really
+helps them to understand and also ultimately trust Canvas to provide them with the 
+best data and reasoning output that they could probably expect. So this architecture
+right here, I'm going to give a very high level just understanding so how you can 
+narrate it. The ultimate way of how it works is that when a user enters their 
+prompts, it goes into what we call our orchestrator agent.
+
+--- PAGE 2 ---
+[00:01:42] Speaker2:
+    And ultimately what this is doing is it's understanding that prompt, right? And 
+understand what your intent is and also ultimately decides, Hey, which all products 
+should I go and grab data
+[00:01:52] Speaker1:
+    from? And the way that these different products across Cisco and even beyond, 
+which we're gonna, you're gonna be able to see very shortly, is through registering 
+their various tools, which can be APIs or agents directly in their respective MCP 
+servers. So as you can see right here, there's a Meraki MCP, 1000 IS MCP, Splunk MCP
+and which they've all registered either their tools through APIs or agents directly 
+into here. And that's connected to to our AI cams backend. Now, when it comes to 
+ecosystem later on,
+[00:02:20] Speaker2:
+    which is out of the scope of this particular session,
+[00:02:23] Speaker1:
+    it'll be the same thing. We have third-party vendors also bringing MTP servers, 
+registering their read and write operation tools directly in there as well.
+[00:02:32] Speaker2:
+    So going back to it,
+[00:02:33] Speaker1:
+    when the user types in their prompt, yeah, go ahead, Lila.
+[00:02:36] Speaker2:
+    One good thing. So all of this is done by the intelligence of the system. So the
+orchestrator will choose the proper agent and that happens automatically with the 
+backend, what MCP server to use. So based on the prompt, there's a lot of 
+intelligence in the backend. Does it make sense to get information from Meraki? Or 
+it makes sense to get information from Intrasight depending on what problem that is 
+going to be decided automatically. Then when Richard goes into the demo, we might 
+see actually Canvas deciding between one agent to the other and that information is 
+shown. So that is pretty cool and the customers appreciate when they see those 
+things that happen in the backend.
+[00:03:20] Speaker1:
+    That's a great point. In fact, one point I didn't bring up earlier was that when
+we're actually reaching out to these MCP servers,
+[00:03:27] Speaker2:
+    there's also an aspect of entitlement and
+[00:03:29] Speaker1:
+    also RBAC that's being taken into consideration as well. So, yeah. So as a user,
+if I only have access to Maraki and thousand eyes,
+[00:03:37] Speaker2:
+
+--- PAGE 3 ---
+the AI cam is back and we'll know this.
+[00:03:39] Speaker1:
+    It won't allow me to be able to go and grab information from slunk, for example.
+So that all that's going to be taken into consideration. So you can rest, you can 
+tell your customers to rest assure whatever they have today with regards to our 
+back, when they tie the cloud control, it is all 100% respected. And that was, is a 
+paradigm. It'll continue to always be it.
+[00:03:58] Speaker1:
+    So one more thing to mention is that, Hey, how are we going from here to here, 
+right? So, you know, when it, after it figures out what exactly you want to do
+[00:04:06] Speaker2:
+    from your intent perspective, it then goes into our different specialized sub 
+agents
+[00:04:10] Speaker1:
+    that live in the back of AI canvas, because many of these right here would make 
+it so that they're very much in tuned in refine to better understand, for example, 
+wireless agent, better understand Meraki data when it comes to access points and RF,
+right? Or security agents better when it comes to understanding things like secure 
+access
+[00:04:25] Speaker2:
+    firewall data. So that ultimately when it goes through, it goes through these 
+specialized
+[00:04:30] Speaker1:
+    agents to go reach out to these Maraki, thousand eyes, Splunk, Cisco MCP, or 
+third party MCP servers, it's able to grab the relevant information, execute the 
+right tools, bring it back, do additional reason over the top, and then presented to
+the user as one single comprehensive and unified view that they can now consume and 
+understand what had happened for next steps. Ultimately, MCP is really how we're now
+able to scale and get data across
+[00:04:57] Speaker2:
+    all these different products across the board.
+[00:05:02] Speaker1:
+    So hopefully this is something that will help you to be able to explain to your 
+customers
+[00:05:06] Speaker2:
+    how we're generally working in the back end
+[00:05:08] Speaker1:
+    so that they have a better understanding when we're actually running any of 
+these prompts later
+
+--- PAGE 4 ---
+[00:05:11] Speaker2:
+    or what I'm gonna show you on DCloud. And I like the fact that you're having 
+some slides separate and going back and forth it makes a lot, it's very useful I 
+should say when customers ask a question. So having the TDM deck, the VDM deck open 
+and you obviously have to know what your slides are, could be very useful to answer 
+those questions and in this case, explain the architecture. So that's a good way of 
+combining slides with the actual demo.
+[00:05:45] Speaker1:
+    Absolutely. I always say that although the key thing is going to be the demo, it
+is incredibly important to ground people in the factual things that the TDM really 
+does a fantastic job at.
+[00:05:57] Speaker2:
+    100%.
+[00:05:58] Speaker1:
+    Yeah.

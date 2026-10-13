@@ -1,0 +1,116 @@
+--- PAGE 1 ---
+======================================================================
+TRANSCRIPT WITH SPEAKER IDENTIFICATION
+======================================================================
+Source file    : Part1IntroWhyCloudControlAICanvas.mp4
+Duration       : 00:06:12
+Language       : en (confidence 1.00)
+Model          : small
+Speakers found : 2
+Generated      : 2026-10-13 13:54
+Please note    : This file was produced automatically by speech
+                 recognition and, where a visual description is
+                 included, by an image model. Both make mistakes. Check
+                 every figure, name and job title against the recording
+                 before relying on it. Each timecode points at the
+                 moment in the video where the statement can be
+                 verified.
+======================================================================
+[00:00:04] Speaker1:
+    So, Declore is a very powerful environment to demo cloud control and AI Canvas, 
+but we've been getting questions on what's the best way to demo how to uncover AI 
+Canvas use case. So, Richard, I wanted to partner with you. You have a lot of 
+experience in, you know, demoing AI Canvas, you've been on stage at Cisco Live. 
+live. So today I wanted to ask you how you demo, how you explain the solution to 
+your customers. So I'm Lila Rousseau, Principal Solutions Engineer and Richard, if 
+you want to introduce yourself.
+[00:00:42] Speaker2:
+    Absolutely. Thanks for having me, Lila. My name is Richard Jiang for those who 
+know me, and I'm a Senior Product Manager on the AI Software and Platform team, 
+specialized specifically in AI Canvas, but also Cloud Control as well. So incredibly
+happy to walk everyone here through exactly how we would talk about the solution in 
+DeCloud.
+[00:00:59] Speaker1:
+    Yes, and the plan for today is to, we are going to talk about technology. 
+Obviously, we need to explain what the solution is about, but the focus is going to 
+be on the demo, what to demo and how to demo. So with that all yours, how do you 
+start the conversation?
+[00:01:16] Speaker2:
+    Yeah, absolutely. You know, what I would actually recommend the team to do, 
+first of of all is make sure you've not already down that TDM on sales connect. We 
+have a lot of great content there. And I would always say to base the foundation 
+about why we're building the solution off here first, but at least the first couple 
+of slides. So the way I would talk about is that, Hey, we're here to talk about 
+cloud control and you know, why are we building cloud control? Why are we building 
+canvas? It's the big new shiny object. It's the platform, right? But the foundation 
+about why we're doing any of this is because number one, we all know that Cisco is 
+that beast that's building products and solutions across the IT domain, across
+
+--- PAGE 2 ---
+networking, security, compute, observability, collaboration, all these different 
+things, right? We are the best in market to be able to now unify it all, all 
+together because we have all these different solutions that we can and have the 
+additional insights to do so. And you know, we want to get across to the field, to 
+the customers that, Hey, it's really a no brainer that we want to do these things, 
+right? Why would we want to unify? Because if you can see all the data all in one 
+place, it allows you to be able to act more intelligently act faster and ultimately 
+get your customer to a resolution better than before. And then the question is, Hey,
+why do we need cloud control? Right? We, what about just a genetic AI? The point of 
+it is, is that ultimately if you want everything to work together, you need 
+everything to be under one roof. You need a platform that handles everything from 
+authentication to everything else with data. So that's what cloud control is, right?
+This is the part you want to really anchor on that cloud control is that one 
+singular platform that will allow us to be able to bring every single one of your 
+products and everything that a customer would use in their daily operations into one
+single place.
+[00:02:53] Speaker1:
+    And that's what customers have been asking about for a long time, right? They 
+even say, saying, hey, you have a lot of great... controllers and dashboards, but we
+are drowning and going from one place to the other. So I think by bringing all these
+domains together, we are actually giving what the customers have been asking for for
+a long time.
+[00:03:18] Speaker2:
+    For a very long time, Lila. It's about time we're doing this and we're doing it 
+correctly this time. So as you can see right here, we're starting off strong, we're 
+bringing on many of these core products with so many more, just coming in the next 
+couple of months. And it's not even just about bringing in products, and especially 
+it's not about bringing a small chunk of the product, it's about bringing the 
+entirety of each and every one of these products while tying that authentication to 
+a single sign-on in which you're able to just log in once and have access to every 
+single one of these things, but not even just that, right? Big part of it is also 
+that we're able to take the data from all these different platform controllers and 
+different observability products and be able to reason on top of that and and bring 
+it all together. So you have one inventory, one topology, one alert notification 
+system, one place to manage licensing. So then that's just a foundation of the 
+platform itself. Now, on top of that, that centerpiece right here with the GentikOps
+with AI Canvas is really what's gonna let this really just fly. Because as we all 
+know, we're in the age of a Gentik AI. I can now utilize that power of agents, MCP 
+servers and so on to allow me as a user to be able to reason across my entire 
+ecosystem. In fact, not just with Cisco, but beyond as well. Now, this is a little 
+bit out of the scope for today's content, what, which is going to be about 
+marketplace agent builder and app builder, but we're going to be able and very soon 
+allow you as a user and especially us here at Cisco to demo it, to be able to reach 
+across to things like serve service now info blocks, blue cat, everything that would
+really just make it so that from the platform here in cloud control, so we can 
+access 100% of everything that a customer would use in their operations. What do you
+think about that, Leela?
+
+--- PAGE 3 ---
+[00:05:03] Speaker1:
+    I think it's awesome, and I think that's going to really complement a lot of the
+things that we are already doing with Cisco products. We need those extra elements 
+to provide a complete solution for the customers. Now, the question that I have for 
+you is that how do you transition from the slides to the demo? How do you pivot for 
+the, when you are in a customer session.
+[00:05:28] Speaker2:
+    You know, my suggestion is that we always want to make it so it's demo first. So
+typically what I would do is that I go through these couple of slides first, just to
+set the stage problem statement, what's the obvious about building a platform and a 
+Gentigov solution like Cloud Control and Canvas. And then from here, I would 
+directly just transition into our DCloud tenant where it allows us to be able to go 
+and demo everything live.
+[00:05:51] Speaker1:
+    And I think it's very important you are mentioning This is D-Cloud, so what 
+Richard is showing is not a separate instance that he has somewhere hidden. This is 
+actually D-Cloud and we all at sales and our partners actually, we have access to 
+this exact environment.

@@ -1,0 +1,162 @@
+--- PAGE 1 ---
+======================================================================
+TRANSCRIPT WITH SPEAKER IDENTIFICATION
+======================================================================
+Source file    : Part3DemoUnifiedAlertManagementHandofftoAICanvas.mp4
+Duration       : 00:09:12
+Language       : en (confidence 1.00)
+Model          : small
+Speakers found : 2
+Generated      : 2026-10-13 13:57
+Please note    : This file was produced automatically by speech
+                 recognition and, where a visual description is
+                 included, by an image model. Both make mistakes. Check
+                 every figure, name and job title against the recording
+                 before relying on it. Each timecode points at the
+                 moment in the video where the statement can be
+                 verified.
+======================================================================
+[00:00:03] Speaker1:
+    So I think we talked really, you know, we give an overview about your, your 
+aggregated hardware assets and overview about how everything's actually connected. I
+want to talk about the next thing, which is really where a good number of, you know,
+admins are actually starting off with, which is going to be actions. So most people,
+they, they don't, they want to go ahead and start off with an issue that has been 
+reported somewhere either with a platform controller or of course we also know 
+service now for ITSM. But importantly, from a platform controller, we all know that 
+every single one of our hardware controllers or platform controllers are sending 
+alerts, right? There's some sort of issues that's able to report, whether it's going
+to be critical, like severe, medium, critical, whatever it is, right? And the cool 
+part about all this is that every single one of these platform controllers is 
+sending alerts to Cisco cloud control. And what happens with Cisco cloud control is 
+that we're actually aggregating related alerts together and forming something called
+actions so that we're able to see an aggregated view across every single one of 
+these hardware controllers. Now the thing about it is that I'm sure we're all here 
+about this time and time again. I'm sure you witnessed this Lila and the concept I'm
+about to talk about is alert fatigue, right? We hear about us time and time again. 
+I'm getting hundreds and not thousands of alerts from all my different sites. And I 
+don't even know where to start at this point. You know, in the past minute, I got 
+just 20 of them. What do I do? So, you know, the cool part about all this is that 
+cloud control helps to solve this directly for you. Now, as you can see right here, 
+I'm going to click on just a random one right now. Look at this. I'm able to see 
+that from Nexus dashboard, there are, I don't know how many are right here, right? 
+One, two, three, four, five, like so many of them just happening within the span of 
+four minutes. And you can see it says bgp pure connection down and it's been 
+reporting for a number of different IP addresses right here. So cloud control as you
+can see actually brings them all together says, Hey, this is these are related and 
+gives you a symptom right here that tells you exactly what's happening for all these
+different related alerts. And the cool part beyond that is that it immediately 
+starts to trigger the AI assistant, which is utilizing the same backend as canvas to
+start investigating the problem to help you understand recommendations for the next
+
+--- PAGE 2 ---
+steps of what to do here. So instead of having to go into the dashboard.
+[00:02:25] Speaker2:
+    One of the things that I want to make sure we highlight is that we are receiving
+these alarms from all the platforms that are onboarded in Cisco Cloud Control. So 
+it's one place for us to aggregate this information. In the past, we needed to go to
+Moraki dashboard and then IntraSide and the Nexus dashboard and Catalyst Central now
+everything is in one place. We never had that before. So this is the power of one of
+the powers I would say of Cisco Cloud Control and bringing all these domains 
+together.
+[00:02:58] Speaker1:
+    Exactly. The intent ultimately is to not just aggregate for one product but for 
+multiple that are related as well. So the ultimately you can just really see, get a 
+cross product, cross domain experience across the board and really simplify having 
+to do exactly what Lila is saying like going to multiple products to find the issues
+and find where the correlations at.
+[00:03:18] Speaker2:
+    And right now, if you go to the, you see in the left-hand side, the first ones 
+they say they come from Nexo's dashboard and then we have alarms that are from 
+Maraki, the three at the bottom. So we are getting all this information from the 
+different controllers. The one thing a little bit, the elephant in the room and we 
+need to have this in the back of our minds is that, yes, in this particular deep 
+cloud environment, we have a ton of alarms. And the reason for that is that no one 
+is solving the problems. In real life, you will not see all these alarms here. In 
+these environments, we are continuing generating problems and alarms. In real life, 
+those actions would have been resolved. So things are resolved, and we clean them up
+in DCloud. We don't, so that you have them for demo purposes. So if you get that 
+question from the answer, that's the reason. Demo environment, all these actions on 
+purpose. We are generating them on purpose. and not be resolving them on purpose.
+[00:04:17] Speaker1:
+    Yeah, exactly. But you can mention though that, hey, you know, in Cloud Control 
+there's an entire process for you to be able to assign it to somebody as like one of
+the higher level admins of Cloud Control. I'm gonna assign it to somebody else to go
+solve the problem. And they can go in, for example, market has resolved, right, 
+market has dismissed. right? Depending on what the evaluation is after you gone 
+ahead and done a little bit of troubleshooting. So there is that whole aspect of 
+alert management that you're able to do directly
+[00:04:43] Speaker2:
+    here inside of cloud control as well. Exactly. And that's how we expect it to be
+used in real life, but you know, in demo environment, no one is cleaning up these 
+things or properly disnessing or resolving the issues. Exactly. Going back to our 
+original action from Nexus
+[00:05:00] Speaker1:
+    dashboard, you're able to see that our output from the assistant actually came 
+back and it's providing us with analysis. But you know what, beyond being able to
+
+--- PAGE 3 ---
+see this analysis and some additional information that it was able to get from in 
+this case, the Nexus dashboard agent, we can even click on collaborating canvas to 
+bring this over to a collaborative multi space, a multi player workspace. And as you
+can see, as you can see the entire assistant chat has gone over here. So for 
+example, I just take a look at the actual content here, right? it's able to go ahead
+and do some additional deep dive to understand what exactly is an issue with the 
+multiple bgb peer connection failures across these different devices. So it tells 
+you that analysis right here. And that's what you want to talk about with the 
+audience that it tells you what kind of evidence is able to get from Nexus dashboard
+because one of the paradigms that we always mention when it comes to canvas is that 
+it's not a black box experience. We'll never just tell you a recommendation or next 
+step without telling you why we're thinking this way.
+[00:05:55] Speaker2:
+    One quick thing. So for people demoing, I hope you realize the flow. So Richard 
+was in action, so that came proactively from the controller. He was able to look at 
+an action, got some information from there. We are launching in Canvas and all the 
+information that was part of the alarm and the analysis is auto-populated. None of 
+these he prompted anything manually. we went from one to the other automatically and
+what I like is that he has a chat window expanded. So again, from a demo 
+perspective, I would recommend you do the same thing because it shows better when 
+you have the chat window a little bit more open. So that flow, it's a very good flow
+to use in your demos. Sorry, go, go continue. No, absolutely. Those are incredibly 
+good tips.
+[00:06:48] Speaker1:
+    And I also want to make sure that everyone here calls it a very key thing, 
+right? cams is all about deeper investigation. So make sure you're calling out 
+exactly what is a problem that we're solving here and what's the next steps that 
+it's recommending. So in this case, you could see that, Hey, we're, there's a, 
+there's a, there's an insights able to figure out that there's a strong correlation 
+with the interface down for, for these two particular interfaces. Right. And it says
+that, Hey, there's a correlation with BGB session drops. That's a big insight right 
+here that's helping us to understand what exactly the problem may be coming from. 
+And then we talk about, Hey, what are, what's the that's the blast radius right 
+here, right? What are the things that are actually affected by that particular 
+alerts that's being shown from Nexus dash or being sent from Nexus dashboard to 
+cloud control that shows you all these different things. And then ultimately it 
+tells you exactly what is going wrong and what you should be doing next to do is the
+actual effective troubleshooting. Now, beyond that, you'll also see that we have a 
+paradigm now to make it so that the widgets are actually generated directly in the 
+chat experience. And the reason why and how we can explain this is that we wanna 
+make sure that you as a user are fully in control of your workspace. When it comes 
+to these larger visualizations, we give you the option to see if you wanna actually 
+share in the workspace, that common workspace where somebody else can see it as 
+well, or if you feel like it maybe it's not something that is relevant to you at the
+time, you can continue to keep it in the chat. So that level of versatility and 
+usability is completely there in Canvas, even just as of today. So this right here, 
+overall is how actions works at a high level. We highly suggest you to go and make 
+sure that you understand which ones you should want to select and, you know,
+
+--- PAGE 4 ---
+[00:08:23] Speaker2:
+    do a little bit of prep work
+[00:08:24] Speaker1:
+    before any of your demos to customers, right? Make sure you really understand 
+the flows. And I'm going to show you a number more and you're going to see how that 
+prep work going into Canvas really is going to help you and making sure that your 
+demo is just the best possible here in DCloud.
+[00:08:38] Speaker2:
+    Rachel, you make a good point. So for myself, I always schedule like 30 minutes 
+before each customer demo to log in into DCloud look what's going on at that time, 
+look for the things. Most of the issues are constant, so you will find them, but I 
+like to look and prepare so all the things that Richard is calling out that he preps
+beforehand, we strongly recommend that you do. That will make a more successful 
+demo, so great call out.
