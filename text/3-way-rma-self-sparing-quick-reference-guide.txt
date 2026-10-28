@@ -1,0 +1,418 @@
+--- PAGE 1 ---
+3-Way RMA – Self Sparing 
+Quick Reference Guide
+Last Updated On: January 2026
+
+--- PAGE 2 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Version Modified by Modified on Page Number & Title Summary (what was changed)
+1 Commerce 
+Operations 
+Enablement Team ​
+Jan 28, 2026 Page number New Document 
+Page Title: New Document
+The 3-Way RMA – Self Sparing helps internals and external understand on the 3 
+Way RMA –Self Sparing, when and how to create RMA orders
+Note: Partner Operational Resource links and tools are available for CISCO Partners on Seismic. The information contained in this 
+document may be updated based on new enhancements and updates to tools and operational processes.
+Change Log- Revision History
+
+--- PAGE 3 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Table of Contents
+1. 3 Way RMA – Self Sparing – Overview, 
+Prerequisites
+2. Return Material Authorization (RMA) Flow
+3. Enablement of 3 Way RMA
+4. 3-Way RMA – Self Sparing (High level process 
+flow)
+5. Access Request for Product Return & 
+Replacement (PRR) Tool
+6. RMA creation process (Partners)
+
+--- PAGE 4 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Overview
+Prerequisites
+Overview, Prerequisites
+What is 3 Way RMA: 
+The 3-Way RMA enables Partners to use spare 
+inventory in their depot during RMA 
+replacements. When a device becomes faulty at 
+the customer site, the Partner can replace the 
+faulty device with their spare part, and Cisco will 
+provide a replacement for the failed part, which 
+can then be kept as a spare again.
+How to register? 
+Benefits of 3 Way RMA sparing process: 
+• Allows undisrupted service for end customer 
+without any delays with the spare item 
+available in partner depot
+• Automated RMA process supporting 3 Way 
+RMA transactions
+• Minimize / eliminate partner overhead to 
+monitor and coordinate contract swaps.
+Pre-conditions for successful 3 Way / Self-
+Sparing RMA processing:
+• This applies only for partner branded 
+services. 
+• Partner needs to be registered for 3 Way 
+RMA / Self-Sparing transactions
+• Defective SN (Serial Number) matches the 
+Product ID (PID) and is actively covered on 
+a Partner branded service contract.
+Partners- 
+• Partner needs to be registered for 3 Way RMA / Self-Sparing transactions using the link 
+• Partner need to work with respective Cisco contacts (POM’s, Service entitlement leader, Sales or any of the Cisco contacts) for details on the 
+registration process (Bill to ID, customer name, cco id details, Partner BEGEO ID etc)
+
+--- PAGE 5 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+CCW Order Returns:
+The Cisco Returns Portal is designed to facilitate the return of Cisco products. It provides a streamlined process for obtaining aReturns, arranging pick-
+up, packing shipments, and tracking the status of returns. This portal is accessible to Cisco customers who need to return products, whether for recycling 
+or due to end-of-use. Users can raise a Returns request through the Portal.
+Return Material Authorization (RMA) Flow
+Request Return 
+of a Product
+Approve 
+RRA?
+RMA 
+Number 
+Generated
+Denied
+Approved
+Login to Returns Portal with valid 
+Cisco Credentials.
+Choose Options under step 1 to 
+Arrange Pick up, Pack Shipment & 
+Track Status
+Get the 
+Replacement
+Auto 
+Cancelled
+Yes
+RMA 
+Extension 
+needed?
+No
+Return to Cisco 
+by given date?
+No
+Yes
+Returns Process
+(PRR Tool)
+CCW
+Lifecycle PhasesCCW, SFDC CCW CCW CCW CCW SBP,ARCCW CCW/CCWRCCW, CCWR
+Opportunity Estimates Quoting
+Subscription 
+ManagementOrdering & Booking Renewals
+Deal 
+Creation
+Create 
+Estimate
+Add SKUs / 
+import an 
+estimate
+Booking Billing & 
+Invoicing
+Fulfillment 
+& 
+Entitlement
+RenewalsAdd items 
+and 
+Configure 
+CSSM,CCW, 
+CCWR
+Subscription & 
+Contract
+Management
+& License 
+Management
+Product 
+Delivery
+Supply Chain 
+Management
+* If Reopen option is not available, then AAR is not eligible for a re-submission
+Verify the 
+return request
+
+--- PAGE 6 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Registering for 3 Way RMA Program
+PartnerCisco
+Partner contacts 
+Cisco contact for 
+enabling 3 Way 
+RMA 
+1
+Request rejected 
+and 
+communicated 
+to requestor
+Cisco contact 
+submits the “3 
+Way RMA” 
+request 
+(Microsoft form)
+2
+Start
+Partner 
+branded 
+services?
+4
+Yes CXPM team 
+reviews the 
+request
+CXPM enables 
+RMA and 
+notifies 
+requestor
+5 73
+Yes
+No
+Approved 
+by CXPM 
+team ?
+6
+****Note: Cisco contact should verify if the request is related to partner branded services/engagement
+Partner will be 
+notified by 
+Cisco contact
+8
+
+--- PAGE 7 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+CustomerPartnerCisco
+Identifies the 
+device as 
+defective
+1
+Reports that 
+their network 
+has a problem 
+2
+Troubleshoots 
+the network 
+3
+Continues with 
+services
+Start
+Device 
+working?
+Swapped with 
+spare part
+5
+4
+Yes
+No
+No
+Raises 3-Way 
+RMA request 
+for spare
+Cisco Ships SN 
+“ABC” to 
+Partner to 
+replenish their 
+spare stock
+Spare device 
+received
+6
+6a
+7
+6b
+****Note: Cisco is not aware of the part being swapped until step 6a.
+3-Way RMA – Partner process for  swapping Cisco Product - Self Sparing (High level process 
+flow)
+PRR
+Automatically 
+completes the 
+SN swap on 
+contract
+6c
+Partner need to 
+return 
+defective Serial 
+Number “A”
+6d
+
+--- PAGE 8 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+3-Way RMA – Partner process for  swapping Cisco Product - Self Sparing 
+(Process Overview – Sample Scenario)
+Customer Partner
+• Partner troubleshoot and identifies the 
+product as defective
+• Swap the product with the spare item 
+available in the inventory
+• Raise an RMA request for replacement of the 
+defective products
+• Keeps the replacement spare item in the 
+depot
+• Process the RMA request
+• Ships the replacement product to partner
+• Return the defective serial number
+• Swap the defective serial number available 
+in contract with the new spare serial 
+number
+Cisco
+• Customer Identifies the product as faulty 
+and reports to partner
+Process steps Customer Partner Cisco
+1. Customer identifies the 
+defective item
+Defective Serial Number XYZ23 
+(Contract) Spare Serial Number ABC43 Replacement Serial Number MNO54
+2. Partner swaps the 
+spare item. Spare Serial Number ABC43 Defective Serial Number 
+XYZ23 Replacement Serial Number MNO54
+3. Partner raise RMA 
+replacement request 
+with Cisco
+Spare Serial Number ABC43 
+(Contract)
+Replacement Serial Number 
+MNO54
+Defective Serial Number XYZ23
+
+--- PAGE 9 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Access Request for Product Return & 
+Replacement (PRR) Tool
+
+--- PAGE 10 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Partner informs Cisco on Product return and 
+replacement process (PRR). 
+Go to link (https://ibpa-
+gssc.cisco.com/rma/home/?N
+ame=FeedBack)
+1
+2 Fill in request form:
+• Tool: Select “Product Return and 
+Replacement (RMA)’ from the 
+dropdown list.
+• Category: Select “Access 
+Request”
+• Other fields: based on user profile
+2
+1
+
+--- PAGE 11 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Partner informs Cisco on Product return and 
+replacement process (PRR). 
+Update “Contract Preference” and 
+click on “Submit”3
+Note: Team responsible for granting access 
+will contact requester via email with info 
+about actions to be completed to obtain 
+access.
+3
+3
+
+--- PAGE 12 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+3 Way RMA creation process
+(Partners)
+
+--- PAGE 13 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Steps to create 3 Way RMA (Partners) 
+Log in with credential using the link 
+(https://ibpa-
+gssc.cisco.com/rma/home)
+1
+2 Click on “Create New RMA”
+Note: If users do not have access to create a 
+New RMA they will see “Create New Service 
+Request” option instead of “Create New 
+RMA” and the request will be redirected to 
+TAC support engineer for RMA creations.
+2
+
+--- PAGE 14 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Steps to create 3 Way RMA (Partners) 
+Provide part information details under 
+“Part Information” tab. 
+3
+4 Add 3-way RMA serial number-
+If Serial Number of the defective 
+device is entitled and covered by 
+contract enabled for 3-Way RMA, 
+“Add 3-Way RMA Serial Number” 
+field will be enabled.
+5 Click on “Add 3-Way RMA Serial 
+Number” option and enter the spare 
+serial number
+Note: Spare Serial Number – Serial 
+Number of the part that partner has 
+shipped to the end user/customer.
+6 Enter the “Serial Number” under the 
+“Add 3-way RMA Serial Number” 
+field and click on Continue button.
+3
+4
+5
+6
+
+--- PAGE 15 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Steps to create 3 Way RMA (Partners) 
+“Select Reason” from the 
+dropdown list. 
+7
+Click on “Complete RMA for the 
+Customer” button.
+8
+7
+8
+
+--- PAGE 16 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Steps to create 3 Way RMA (Partners) 
+Click on “Site information” to 
+validate the “Shipping 
+Address”.
+9
+Click on “Next” button.10
+9
+10
+
+--- PAGE 17 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Steps to create 3 Way RMA (Partners) 
+Click on “Delivery Details” to 
+validate the product information 
+and click on “Next” button.
+11
+Click on “Review and Submit” 
+button.
+System will display Serial#, 
+Product ID, 3-Way RMA serial 
+number details.
+12
+11
+12
+
+--- PAGE 18 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Steps to create 3 Way RMA (Partners) 
+Scroll down and click on 
+“Submit” button, once clicked 
+on Submit button RMA will be 
+generated.
+13
+13
+
+--- PAGE 19 ---
+© 2026  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Steps to create 3 Way RMA (Partners) 
+Partner can choose “Edit 3-Way 
+RMA Serial Number” to modify the 
+provided serial number
+14
+14
+
+--- PAGE 20 ---

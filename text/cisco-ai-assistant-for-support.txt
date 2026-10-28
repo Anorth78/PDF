@@ -1,0 +1,801 @@
+--- PAGE 1 ---
+https://supportassistant.cisco.com/
+Cisco Customer Experience
+February 2026
+Cisco AI Assistant 
+for Support
+
+--- PAGE 2 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public© 2025  C isco and/or its affiliates. All rights reserved.   Cisco Public
+Agenda
+Introduction 
+How to access?
+Conversations
+Help, Commands & Feedback
+
+--- PAGE 3 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+• Easy to access
+• Easy to use
+• Seamlessly connect to an Engineer
+• No need to call 1-800
+Cisco AI Assistant for Support offers 
+customers and partners a self -service 
+experience for common case, bug, RMA 
+inquiries and basic transactions. It even 
+can connect customers with case owners,
+managers
+and TAC duty managers.
+BenefitsWhat is it?
+Ask a Question
+Get a Response
+Customers 
+and
+Partners
+Cisco AI Assistant 
+for Support
+
+--- PAGE 4 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. C isco Public    4
+Self-Service Experience for TAC Engagements
+Get Things Done Quicker Without Waiting in Queue
+Case, Bug, RMA
+Get status
+Update case, Upload files and Request update (GenAI based real-time summary)
+Update
+Case summary updates, case severity, status changes, Proactive TAC Alerts
+Subscribe
+Engineer via Virtual Spaces, Virtual Meeting or Phone Callback
+Connect
+Request new engineer, Schedule dispatch, Raise severity, Reduce severity
+Escalate case, Close case, Add Contract
+Initiate
+Proactive TAC Alerts, Bug Applicability Checks & IOS XE SW Hardening Assessments
+Be Proactive 
+Natural language and text commands
+
+--- PAGE 5 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. C isco Public    5
+Cisco AI Assistant for Support was formerly known as 
+“Cisco Support Assistant” and “TAC Connect Bot”. 
+The screenshots in this slide deck may reference former names.
+
+--- PAGE 6 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+How to access?
+
+--- PAGE 7 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. C isco Public    7
+Multiple ways to interact with the Assistant
+Virtual SpacesSupport Case Managerhttps://supportassistant.cisco.com
+Use @(AI Assistant for Support) to 
+interact with the assistant in virtual 
+spaces created in the context of a case
+
+--- PAGE 8 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. C isco Public    8
+Multi-Language Support: Japanese
+Start the interaction here
+
+--- PAGE 9 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. C isco Public    9
+Converse with the Assistant in Japanese
+
+--- PAGE 10 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. C isco Public    10
+Converse with the Assistant in Japanese
+
+--- PAGE 11 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. C isco Public    11
+Seamlessly switch between English and Japanese
+
+--- PAGE 12 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. C isco Public    12
+How to escalate a technical support case 
+If you have opened a service request and are not satisfied with the progress, use the following 
+procedure to escalate and connect directly to a resolution owner 
+Escalate using Cisco AI Assistant for Support at https://supportassistant.cisco.com/escalate,
+via Webex App, on Support Case Manageror Virtual Spaces
+Enter case number
+Provide escalation reason 
+Choose “Escalate to TAC Manager”
+Severity 1
+Critical impact on business 
+operations. Cisco hardware, software, 
+or as-a-service product is down.
+Severity 2
+Substantial impact on business 
+operations. Cisco hardware, software, 
+or as-a-service product is degraded. 
+Severity 3
+Minimal impact on business operations. 
+Cisco hardware, software or as a 
+service product is partially degraded.
+Severity 4
+No impact on business operations. 
+Features, implementation, or 
+configuration assistance. 
+Severity Definitions 
+Provide phone number for S1/S2 case or email address for S3/4 case
+© 2025 Cisco and/or  its affiliates. A ll right s reser ved. Cisco P ublic.  .   
+-
+
+--- PAGE 13 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Demo
+YouTube
+
+--- PAGE 14 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Support Case 
+Manager
+
+--- PAGE 15 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Start the interaction in the context of a case
+
+--- PAGE 16 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Start the interaction in the context of a RMA
+
+--- PAGE 17 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+“Floating icon” – Start the interaction!
+
+--- PAGE 18 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Chat in Webex
+Click to create a 1:1 space 
+with the assistant.
+
+--- PAGE 19 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Chat in Webex
+
+--- PAGE 20 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Welcome Message Has Everything to Get StartedWelcome Message Has Everything to Get Started
+
+--- PAGE 21 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Change SCM Language preference to converse in Japanese
+
+--- PAGE 22 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Webex Interface
+
+--- PAGE 23 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+• What – The email address that is used to login to Webex MUST be the primary 
+email address associated with your Cisco.com profile. 
+https://rpfa.cloudapps.cisco.com/rpfa/profile/profile_management.do
+• Why – To protect customer data. 
+• How – The email address of Webex user account is mapped to Cisco.com user -
+id. This user-id is used to authorize case, bug and RMA data access.
+Prerequisite
+
+--- PAGE 24 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Prerequisite
+If access to bot is disabled in your Webex site, please allow access to
+tac.connect@webex.botand ciscotacspark@webex.botfor Cisco TAC interactions.
+
+--- PAGE 25 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+• Login to https://supportassistant.cisco.com/ .
+• Click “Chat in Webex App” button.                              
+• You will be invited to a 1:1 Virtual space. That’s it!
+Note: The email address associated with your Cisco.com user ID will be used to create the 1:1 Webex space.
+Steps to Get Started
+
+--- PAGE 26 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Steps to Get Started
+1 2 3
+
+--- PAGE 27 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+• who are you
+• what is the status of 689644400
+• status CSCtz27004
+• 88238608
+• /help
+• connect me to engineer
+• /feedback <message>
+Sample Questions
+
+--- PAGE 28 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Web Interface
+
+--- PAGE 29 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+• Login to https://supportassistant.cisco.com/
+• Click “Chat right here” button. 
+Steps to Get Started
+
+--- PAGE 30 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+• who are you
+• what is the status of 690833877
+• status CSCtz27004
+• 88238608
+• /help
+• connect me to engineer
+• /feedback <message>
+Sample Questions
+
+--- PAGE 31 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Enhanced Web Interface with Clickable Intents
+
+--- PAGE 32 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Conversations: 
+Status view and 
+Case Updates
+
+--- PAGE 33 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Prioritized View of Your Cases
+
+--- PAGE 34 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Get Case Status: Case Summary
+Interim contact is displayed if 
+the case owner is out of the office.
+Note: External users can access the
+case data only if there are authorized.
+This requires the user to have the
+service contract used to open the case
+to be associated with their Cisco.com
+profile.
+Adding the user’s email address in the
+CC Recipients field at the time of case
+open in Support Case Manager does
+not enable case data access.
+
+--- PAGE 35 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. C isco Public    35
+Get Case Status: Proactive TAC Alerts
+Device specific S1 and S2 Bugs detected from 
+log files attached to the case
+(Experimental feature: Available for IOS XE, UCS, ASA, ISE WLC, 
+NXOS, VCS-C, VCS-E, Jabber, UCCE))
+
+--- PAGE 36 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. C isco Public    36
+Get Case Status: Proactive TAC Alerts
+Recent High Impact issues observed in the 
+Field and relevant to the product / solution
+handled in the case
+
+--- PAGE 37 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. C isco Public    37
+Get Case Status: Proactive TAC Alerts
+Recent Tool updates that are relevant to the 
+product / solution handled in the case
+
+--- PAGE 38 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. C isco Public    38
+Get Case Status: Proactive TAC Alerts
+Recent Articles and Bulletins that are relevant 
+to the product / solution handled in the case
+
+--- PAGE 39 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Get Case Status: Contextual Tasks
+
+--- PAGE 40 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Mark Cases as Favorite
+Automatic notifications in Webex App when
+1. Case status changes
+2. Case severity changes
+3. Problem description, Current Status or Action 
+Plan is updated
+
+--- PAGE 41 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Webex App Notifications for Favorite Cases
+
+--- PAGE 42 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Get Bug Status
+
+--- PAGE 43 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Get RMA Status
+Track RMA Shipment 
+using Search URL 
+and Tracking number
+Field Engineer details 
+are included here if 
+available.
+
+--- PAGE 44 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Get RMA Return Status
+Return Parts Details
+
+--- PAGE 45 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Update a Case
+
+--- PAGE 46 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Update a Case and Upload Files in Webex App
+
+--- PAGE 47 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Add Participants to CC-list of the Case
+
+--- PAGE 48 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Request Latest Case Update
+GenAI based real-time 
+case summary
+
+--- PAGE 49 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Request Latest Case Update
+Select Need More Information if 
+more details are needed from 
+case owner
+
+--- PAGE 50 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Provide Case Closure Confirmation
+Notification to Engineer
+
+--- PAGE 51 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Get Case Status: ThousandEyes Case Summary
+Problem Description is the initial email 
+sent to support@thousandeyes.com by 
+customer or the transcript of the initial 
+chat session with ThousandEyes 
+support engineer.
+Prerequisite: External users must 
+have their Cisco.com account and 
+ThousandEyes account with the same 
+primary email address.
+
+--- PAGE 52 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Get Case Status: Duo Case Summary
+Prerequisite: External users must 
+have their Cisco.com account and Duo 
+account with the same primary email 
+address.
+
+--- PAGE 53 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Proactive TAC Alerts
+
+--- PAGE 54 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Proactive TAC Alerts Based on My Products of Interest
+Product list determined 
+based on cases opened 
+in the last 12 months
+
+--- PAGE 55 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Proactive TAC Alerts Based on My Products of Interest
+Alerts relevant to you!
+
+--- PAGE 56 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Proactive TAC Alerts Based on My Products of Interest
+Subscribe to automatically 
+receive relevant alerts via 
+email on a bi-weekly basis
+
+--- PAGE 57 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Proactive TAC Alerts Based on My Products of Interest
+
+--- PAGE 58 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Proactive TAC Alerts Based on My Products of Interest
+Click ”Review & Manage” to 
+go right to the PTA email 
+subscription option
+
+--- PAGE 59 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Proactive TAC Alerts Based on My Products of Interest
+
+--- PAGE 60 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Proactive TAC Alerts Based on My Products of Interest
+Share your subscription with 
+your colleagues easily!
+
+--- PAGE 61 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Proactive TAC Alerts Delivered Right To Your Email Inbox
+
+--- PAGE 62 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Conversations: 
+Engineer 
+Communication
+
+--- PAGE 63 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Connect to Engineer - Phone Callback
+Engineer is available
+
+--- PAGE 64 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Connect to Engineer – Join a Virtual Meeting
+Engineer is available
+
+--- PAGE 65 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Connect to Engineer
+Current time is outside
+Engineer’s working hours
+
+--- PAGE 66 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Connect to Engineer
+Engineer isn’t available
+
+--- PAGE 67 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Connect to Engineer
+Engineer isn’t available 
+right now, but will callback in 
+15 / 30  / 60 minutes
+
+--- PAGE 68 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Connect to TAC Frontline
+Select this option for 
+non-case related questions. 
+Example: Contracts
+
+--- PAGE 69 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Conversations: 
+Virtual Spaces
+
+--- PAGE 70 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Use Virtual Space as the Communication Preference
+Webex Virtual Space 
+with case contacts and owner
+
+--- PAGE 71 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Assistant is automatically added to external virtual space 
+Assistant performs tasks in the 
+context of the TAC case associated 
+with the external virtual space
+
+--- PAGE 72 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Automatic Diagnostics Data Collection Suggestions
+
+--- PAGE 73 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Virtual Space Features
+• Case owners are added as moderator. 
+• Files up to 300MB can be shared in the space 
+and are transferred to case.
+• When the case is closed
+All Cisco human participants are removed
+Automatic import of text messages
+Virtual space is deleted after 14 days
+• Conversation Transcript is available in Support 
+Case Manager
+• Customers can add authorized participants using
+@(AI Assistant for Support) add-participant <email-addr>
+
+--- PAGE 74 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Change Case Status to Cisco Pending
+Customers can provide the 
+requested information and 
+change the case status to 
+Cisco Pending.
+
+--- PAGE 75 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Participant Authorization Checks
+Email addresses in the CC-List of the case are automatically added to the Virtual space 
+at the time of external space creation. Customer is informed of the list of participants who 
+are in the CC-list but don’t have access to the case.
+
+--- PAGE 76 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Add Yourself to the Virtual Space If Authorized
+Users can add themselves to the external virtual space if 
+they are authorized to access the case
+
+--- PAGE 77 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Participant Authorization Checks
+Case owner can add participants using “Add People” button in Webex app. Case owner is 
+informed if the participant being added doesn’t have access to the case.
+
+--- PAGE 78 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Add Authorized Participants to the Virtual Space
+Cisco employees who already have 
+access to the case can add another 
+participant. The new participant is 
+allowed if they have case access.
+
+--- PAGE 79 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Add Authorized Participants to the Virtual Space
+Customers who already have access to the 
+case can add another participant. If the new 
+participant doesn’t have case access, they 
+will be requested for explicit approval.
+
+--- PAGE 80 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Conversation Messages
+Click 
+“View Transcript”
+
+--- PAGE 81 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Conversations: 
+Case Handling 
+Tasks
+
+--- PAGE 82 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Raise Case Severity
+Engineer isn’t available
+
+--- PAGE 83 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Raise Case Severity
+Engineer is available
+
+--- PAGE 84 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Reduce Case Severity
+
+--- PAGE 85 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Requeue a Case
+
+--- PAGE 86 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Schedule Dispatch a Case
+
+--- PAGE 87 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Escalate Case
+Cisco AI Assistant for Support informs High Touch 
+Operations Managers (HTOM) when a case is escalated 
+by SP Advantage, TS Advantage or High Touch Expert 
+Care customers.
+
+--- PAGE 88 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Escalate Case
+Cisco AI Assistant for Support connects you with the 
+case owner’s manager or the interim manager who 
+will reach out to you regarding the escalation 
+request.
+
+--- PAGE 89 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Escalate Case
+Cisco AI Assistant for Support connects you with TAC 
+Duty Manager if the case owner’s manager, or the 
+interim manager contact is not available.
+
+--- PAGE 90 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Reopen a Case
+Cases that are closed within the last 14 days 
+can be reopened.
+
+--- PAGE 91 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Conversations: 
+Bug Applicability 
+Checks
+
+--- PAGE 92 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Get Bug Status
+
+--- PAGE 93 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Contextual Task: Check Bug Applicability 
+Click the task to 
+get started
+
+--- PAGE 94 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Check Bug Applicability: Upload Diagnostic Logs
+
+--- PAGE 95 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Check Bug Applicability: View Results and Options
+
+--- PAGE 96 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Check Bug Applicability: Software Upgrade Suggestion
+
+--- PAGE 97 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Check Bug Applicability: View Fixed Releases
+
+--- PAGE 98 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Check Bug Applicability: RADKit Based Data Collection
+
+--- PAGE 99 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Check Bug Applicability: RADKit Based Data Collection
+
+--- PAGE 100 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+List of Supported Bugs
+
+--- PAGE 101 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Run Bug Applicability Checks in Bug Search Tool
+https://bst.cisco.com/bugsearch/bug/CSCwd08098
+
+--- PAGE 102 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Run Bug Applicability Checks in Bug Search Tool
+
+--- PAGE 103 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Run Bug Applicability Checks in Bug Search Tool
+
+--- PAGE 104 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Run Bug Applicability Checks in Cisco Field Notice Page
+https://www.cisco.com/c/en/us/support/docs/field-notices/742/fn74214.html
+
+--- PAGE 105 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+IOS XE Software 
+Hardening 
+Assessment
+
+--- PAGE 106 ---
+© 2023  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential 106
+Cisco Confidential
+Software Hardening Assessment – File Upload Option
+Demo Video
+
+--- PAGE 107 ---
+© 2023  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential 107
+Cisco Confidential
+Software Hardening Assessment – RADKit Option
+
+--- PAGE 108 ---
+© 2023  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential 108
+Cisco Confidential
+Assessment: Not Entitled Scenario
+
+--- PAGE 109 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Conversations: 
+Contract 
+Association
+
+--- PAGE 110 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Add Contract To Your Cisco.com User Account Profile
+
+--- PAGE 111 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.  
+Add Contract To Your Cisco.com User Account Profile
+
+--- PAGE 112 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Dialog Handling
+
+--- PAGE 113 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Dialog Response Timeout
+Assistant waits for 10 minutes 
+for a dialog response
+
+--- PAGE 114 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Cancel In-Progress Requests
+
+--- PAGE 115 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Connect to Duo
+
+--- PAGE 116 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Connect to Duo Support
+Assistant calls Duo support 
+number, informs customer’s 
+account ID to engineer and then 
+connects to customer via callback.
+
+--- PAGE 117 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Help, Commands 
+Q&A, Feedback
+
+--- PAGE 118 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Help
+
+--- PAGE 119 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Command List
+
+--- PAGE 120 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Simple Case Management Related Q&A
+
+--- PAGE 121 ---
+© 2024  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Cisco Confidential
+Q&A: Support, Contracts, Subscriptions & Certifications
+
+--- PAGE 122 ---
+© 2024  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Cisco Confidential
+Q&A: Support, Contracts, Subscriptions & Certifications
+
+--- PAGE 123 ---
+© 2024  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Cisco Confidential
+Q&A: Support, Contracts, Subscriptions & Certifications
+
+--- PAGE 124 ---
+© 2024  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Cisco Confidential
+Q&A: Support, Contracts, Subscriptions & Certifications
+
+--- PAGE 125 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Case Open Access Validation
+When a user says that they can’t open a case,  the assistant automatically 
+validates user’s Cisco.com profile and suggests steps to get access.
+
+--- PAGE 126 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Share Feedback
+Assistant Feedback Case Feedback
+
+--- PAGE 127 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Notifications
+
+--- PAGE 128 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Latest Release-Notes in Web Interface
+Red dot (if present) 
+indicates new features 
+and bug fixes!
+
+--- PAGE 129 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Latest Release-Notes in Web Interface
+
+--- PAGE 130 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Automatic Release Notifications in Webex App
+Notifications are sent during your local day time
+
+--- PAGE 131 ---
+© 2025  Cisco and/or its affiliates. All rights reserved. Cisco Public
+Unsubscribe Release Notifications
+
+--- PAGE 132 ---
+Please visit Cisco.com pageand contact support-assistant@cisco.comfor questions and feedback.

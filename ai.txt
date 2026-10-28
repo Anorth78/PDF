@@ -7,84 +7,147 @@ Use library.json for structured metadata.
 Use the linked text_url for extracted document text.
 Use the linked pdf_url for the original PDF.
 
-Document count: 11
-Generated: 2026-10-13T19:10:09.207555+00:00
+Document count: 20
+Generated: 2026-10-28T14:44:20.448473+00:00
 
 ## Documents
 
-### Bonus1NexusDashboardDataCenterFabric transcript
-- ID: bonus1nexusdashboarddatacenterfabric-transcript
-- Original filename: Bonus1NexusDashboardDataCenterFabric transcript.pdf
-- PDF: pdfs/bonus1nexusdashboarddatacenterfabric-transcript.pdf
-- Extracted text: text/bonus1nexusdashboarddatacenterfabric-transcript.txt
-- Pages: 3
+### 3 Way RMA   Self Sparing Quick Reference Guide
+- ID: 3-way-rma-self-sparing-quick-reference-guide
+- Original filename: 3-Way RMA - Self Sparing Quick Reference Guide.pdf
+- PDF: pdfs/3-way-rma-self-sparing-quick-reference-guide.pdf
+- Extracted text: text/3-way-rma-self-sparing-quick-reference-guide.txt
+- Pages: 20
 
-### Bonus2CatalystSDWANBranchConnectivity transcript
-- ID: bonus2catalystsdwanbranchconnectivity-transcript
-- Original filename: Bonus2CatalystSDWANBranchConnectivity transcript.pdf
-- PDF: pdfs/bonus2catalystsdwanbranchconnectivity-transcript.pdf
-- Extracted text: text/bonus2catalystsdwanbranchconnectivity-transcript.txt
+### Asset Management   License Tagging transcript
+- ID: asset-management-license-tagging-transcript
+- Original filename: Asset Management - License Tagging_transcript.pdf
+- PDF: pdfs/asset-management-license-tagging-transcript.pdf
+- Extracted text: text/asset-management-license-tagging-transcript.txt
+- Pages: 0
+
+### Best Practice Smart Accounts,Virtual Accounts and license tagging transcript
+- ID: best-practice-smart-accounts-virtual-accounts-and-license-tagging-transcript
+- Original filename: Best Practice Smart Accounts,Virtual Accounts and license tagging_transcript.pdf
+- PDF: pdfs/best-practice-smart-accounts-virtual-accounts-and-license-tagging-transcript.pdf
+- Extracted text: text/best-practice-smart-accounts-virtual-accounts-and-license-tagging-transcript.txt
+- Pages: 0
+
+### Bug Search Tool transcript
+- ID: bug-search-tool-transcript
+- Original filename: Bug Search Tool transcript.pdf
+- PDF: pdfs/bug-search-tool-transcript.pdf
+- Extracted text: text/bug-search-tool-transcript.txt
+- Pages: 0
+
+### Cisco AI Assistant for Support Overview transcript
+- ID: cisco-ai-assistant-for-support-overview-transcript
+- Original filename: Cisco AI Assistant for Support Overview_transcript.pdf
+- PDF: pdfs/cisco-ai-assistant-for-support-overview-transcript.pdf
+- Extracted text: text/cisco-ai-assistant-for-support-overview-transcript.txt
+- Pages: 0
+
+### Cisco AI Assistant for Support
+- ID: cisco-ai-assistant-for-support
+- Original filename: Cisco AI Assistant for Support.pdf
+- PDF: pdfs/cisco-ai-assistant-for-support.pdf
+- Extracted text: text/cisco-ai-assistant-for-support.txt
+- Pages: 132
+
+### Cisco RadKit ( Rapid Adoption Kit ) transcript
+- ID: cisco-radkit-rapid-adoption-kit-transcript
+- Original filename: Cisco RadKit ( Rapid Adoption Kit ) transcript.pdf
+- PDF: pdfs/cisco-radkit-rapid-adoption-kit-transcript.pdf
+- Extracted text: text/cisco-radkit-rapid-adoption-kit-transcript.txt
+- Pages: 0
+
+### Cisco TAC Best Practices & Innovations  TAC Workflow, Case Lifecycle and Modern Support Strategies transcript
+- ID: cisco-tac-best-practices-innovations-tac-workflow-case-lifecycle-and-modern-support-strategies-transcript
+- Original filename: Cisco TAC Best Practices & Innovations  TAC Workflow, Case Lifecycle and Modern Support Strategies_transcript.pdf
+- PDF: pdfs/cisco-tac-best-practices-innovations-tac-workflow-case-lifecycle-and-modern-support-strategies-transcript.pdf
+- Extracted text: text/cisco-tac-best-practices-innovations-tac-workflow-case-lifecycle-and-modern-support-strategies-transcript.txt
+- Pages: 0
+
+### Cisco TAC Best Practices & Innovations   Technical Support Excellence Guide
+- ID: cisco-tac-best-practices-innovations-technical-support-excellence-guide
+- Original filename: Cisco TAC Best Practices & Innovations - Technical Support Excellence Guide.pdf
+- PDF: pdfs/cisco-tac-best-practices-innovations-technical-support-excellence-guide.pdf
+- Extracted text: text/cisco-tac-best-practices-innovations-technical-support-excellence-guide.txt
+- Pages: 42
+
+### Customer File Uploads to Cisco Technical Assistance Center   Cisco
+- ID: customer-file-uploads-to-cisco-technical-assistance-center-cisco
+- Original filename: Customer File Uploads to Cisco Technical Assistance Center - Cisco.pdf
+- PDF: pdfs/customer-file-uploads-to-cisco-technical-assistance-center-cisco.pdf
+- Extracted text: text/customer-file-uploads-to-cisco-technical-assistance-center-cisco.txt
+- Pages: 13
+
+### Field Notice Adendum
+- ID: field-notice-adendum
+- Original filename: Field Notice Adendum.pdf
+- PDF: pdfs/field-notice-adendum.pdf
+- Extracted text: text/field-notice-adendum.txt
 - Pages: 2
 
-### Bonus3SecureFirewallSitetoSiteVPN1 transcript
-- ID: bonus3securefirewallsitetositevpn1-transcript
-- Original filename: Bonus3SecureFirewallSitetoSiteVPN1 transcript.pdf
-- PDF: pdfs/bonus3securefirewallsitetositevpn1-transcript.pdf
-- Extracted text: text/bonus3securefirewallsitetositevpn1-transcript.txt
-- Pages: 2
+### How to Engage with TAC New transcript
+- ID: how-to-engage-with-tac-new-transcript
+- Original filename: How to Engage with TAC New_transcript.pdf
+- PDF: pdfs/how-to-engage-with-tac-new-transcript.pdf
+- Extracted text: text/how-to-engage-with-tac-new-transcript.txt
+- Pages: 0
 
-### Learning Map
-- ID: learning-map
-- Original filename: Learning Map.pdf
-- PDF: pdfs/learning-map.pdf
-- Extracted text: text/learning-map.txt
+### Limited Use Smart Account transcript
+- ID: limited-use-smart-account-transcript
+- Original filename: Limited Use Smart Account_transcript.pdf
+- PDF: pdfs/limited-use-smart-account-transcript.pdf
+- Extracted text: text/limited-use-smart-account-transcript.txt
+- Pages: 0
+
+### Meet the Cisco Technical Assistance Center transcript
+- ID: meet-the-cisco-technical-assistance-center-transcript
+- Original filename: Meet the Cisco Technical Assistance Center transcript.pdf
+- PDF: pdfs/meet-the-cisco-technical-assistance-center-transcript.pdf
+- Extracted text: text/meet-the-cisco-technical-assistance-center-transcript.txt
+- Pages: 0
+
+### Partner Support Automation   RADKit & AutoRCA Overview and demo transcript
+- ID: partner-support-automation-radkit-autorca-overview-and-demo-transcript
+- Original filename: Partner Support Automation - RADKit & AutoRCA Overview and demo_transcript.pdf
+- PDF: pdfs/partner-support-automation-radkit-autorca-overview-and-demo-transcript.pdf
+- Extracted text: text/partner-support-automation-radkit-autorca-overview-and-demo-transcript.txt
+- Pages: 0
+
+### Smart licenseing troubleshooting and Case Studies transcript
+- ID: smart-licenseing-troubleshooting-and-case-studies-transcript
+- Original filename: Smart licenseing troubleshooting and Case Studies_transcript.pdf
+- PDF: pdfs/smart-licenseing-troubleshooting-and-case-studies-transcript.pdf
+- Extracted text: text/smart-licenseing-troubleshooting-and-case-studies-transcript.txt
+- Pages: 0
+
+### SOftware licensing guide
+- ID: software-licensing-guide
+- Original filename: SOftware licensing guide.pdf
+- PDF: pdfs/software-licensing-guide.pdf
+- Extracted text: text/software-licensing-guide.txt
+- Pages: 10
+
+### Support   Bug Search Tool Help   Cisco
+- ID: support-bug-search-tool-help-cisco
+- Original filename: Support - Bug Search Tool Help - Cisco.pdf
+- PDF: pdfs/support-bug-search-tool-help-cisco.pdf
+- Extracted text: text/support-bug-search-tool-help-cisco.txt
 - Pages: 11
 
-### Part1IntroWhyCloudControlAICanvas transcript
-- ID: part1introwhycloudcontrolaicanvas-transcript
-- Original filename: Part1IntroWhyCloudControlAICanvas transcript.pdf
-- PDF: pdfs/part1introwhycloudcontrolaicanvas-transcript.pdf
-- Extracted text: text/part1introwhycloudcontrolaicanvas-transcript.txt
-- Pages: 3
+### Support   Product Field Notice Summary   Cisco
+- ID: support-product-field-notice-summary-cisco
+- Original filename: Support - Product Field Notice Summary - Cisco.pdf
+- PDF: pdfs/support-product-field-notice-summary-cisco.pdf
+- Extracted text: text/support-product-field-notice-summary-cisco.txt
+- Pages: 11
 
-### Part2DemoUnifiedInventoryTopology transcript
-- ID: part2demounifiedinventorytopology-transcript
-- Original filename: Part2DemoUnifiedInventoryTopology transcript.pdf
-- PDF: pdfs/part2demounifiedinventorytopology-transcript.pdf
-- Extracted text: text/part2demounifiedinventorytopology-transcript.txt
-- Pages: 5
-
-### Part3DemoUnifiedAlertManagementHandofftoAICanvas transcript
-- ID: part3demounifiedalertmanagementhandofftoaicanvas-transcript
-- Original filename: Part3DemoUnifiedAlertManagementHandofftoAICanvas transcript.pdf
-- PDF: pdfs/part3demounifiedalertmanagementhandofftoaicanvas-transcript.pdf
-- Extracted text: text/part3demounifiedalertmanagementhandofftoaicanvas-transcript.txt
-- Pages: 4
-
-### Part4OverviewArchitecture transcript
-- ID: part4overviewarchitecture-transcript
-- Original filename: Part4OverviewArchitecture transcript.pdf
-- PDF: pdfs/part4overviewarchitecture-transcript.pdf
-- Extracted text: text/part4overviewarchitecture-transcript.txt
-- Pages: 4
-
-### Part5DemoPromptLibraryWidgets transcript
-- ID: part5demopromptlibrarywidgets-transcript
-- Original filename: Part5DemoPromptLibraryWidgets transcript.pdf
-- PDF: pdfs/part5demopromptlibrarywidgets-transcript.pdf
-- Extracted text: text/part5demopromptlibrarywidgets-transcript.txt
-- Pages: 6
-
-### Part6DemoDeepReasoningMode transcript
-- ID: part6demodeepreasoningmode-transcript
-- Original filename: Part6DemoDeepReasoningMode transcript.pdf
-- PDF: pdfs/part6demodeepreasoningmode-transcript.pdf
-- Extracted text: text/part6demodeepreasoningmode-transcript.txt
-- Pages: 4
-
-### Part7DemoKnowledgeBase transcript
-- ID: part7demoknowledgebase-transcript
-- Original filename: Part7DemoKnowledgeBase transcript.pdf
-- PDF: pdfs/part7demoknowledgebase-transcript.pdf
-- Extracted text: text/part7demoknowledgebase-transcript.txt
-- Pages: 3
+### Upgrading Limited Use Smart Accounts transcript
+- ID: upgrading-limited-use-smart-accounts-transcript
+- Original filename: Upgrading Limited Use Smart Accounts_transcript.pdf
+- PDF: pdfs/upgrading-limited-use-smart-accounts-transcript.pdf
+- Extracted text: text/upgrading-limited-use-smart-accounts-transcript.txt
+- Pages: 0

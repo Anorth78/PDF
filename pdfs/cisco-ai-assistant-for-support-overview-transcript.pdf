@@ -1,0 +1,59 @@
+﻿======================================================================
+TRANSCRIPT WITH SPEAKER IDENTIFICATION
+======================================================================
+Source file    : Cisco AI Assistant for Support Overview.mp4
+Duration       : 00:04:08
+Language       : en (confidence 1.00)
+Model          : small
+Speakers found : 2
+Generated      : 2026-10-28 09:51
+Please note    : This file was produced automatically by speech
+                 recognition and, where a visual description is
+                 included, by an image model. Both make mistakes. Check
+                 every figure, name and job title against the recording
+                 before relying on it. Each timecode points at the
+                 moment in the video where the statement can be
+                 verified.
+======================================================================
+
+[00:00:00] Speaker1:
+    Hi, the objective of this demo is to show you how to interact with Cisco AI Assistant for support to perform common case management tasks and get proactive tack alerts to mitigate potential issues. The first step is to log in to supportassistant.sysco.com and click the chat right here option. This opens a chat window in which the assistant introduces itself on what it can and it can't do and the knowledge domain in which it is operating. You can click the common tasks button to see the most popular task that you can
+
+[00:00:36] Speaker2:
+    perform using the assistant. You can also interact with the assistant in
+
+[00:00:49] Speaker1:
+    natural language. For example, you can ask the assistant, what commands do you
+
+[00:00:55] Speaker2:
+    support? And it'll show the list of commands for your easy reference. When you ask show my cases, it'll show the list of cases that you have opened with Cisco TAC. Let's take a look at how to get a status of a case. You can either click the case link in this list or simply enter the Cisco TAC case number. The assistant will provide
+
+[00:01:50] Speaker1:
+    a quick summary and relevant proactive TAC alerts. The summary contains key details such as case severity, status, contact details of the owner and the case owner's manager. It also provides the latest technical information. such as the problem description, the current status, action plan, and the resolution summary if the problem is resolved.
+
+[00:02:14] Speaker2:
+    The Proactive Tack Alerts section displays trending issues,
+
+[00:02:20] Speaker1:
+    tool updates, and articles that are relevant to the Cisco product or solution that is handled in the case. In this example, the Assistant provides information relevant to the Cisco Unified Border Element. Specifically, the Log Advisor for cube and the SIP profile tester tools created by TAC for you. The Assistant also presents a list of contextual tasks for each case. You can update the case by using the Add Case Notes option. You can raise the case severity. You can request a new engineer. You can escalate a case. Or you can even connect to the engineer without having to call the Cisco TAC toll-free numbers. You can also provide confirmation
+
+[00:03:03] Speaker2:
+    to close the case by clicking the close case option.
+
+[00:03:07] Speaker1:
+    At any time, you can request the latest update for a case by using the request update followed by the case number.
+
+[00:03:14] Speaker2:
+    And the assistant will provide a real-time Genai-based summary.
+
+[00:03:22] Speaker1:
+    The summary contains key details such as the problem description, technical details, current status, and the action plan. If you need additional information from the case owner, you can use the need more option. We're good with what the case summary has provided. So in this case, we're gonna simply select
+
+[00:03:41] Speaker2:
+    got what I needed.
+
+[00:03:45] Speaker1:
+    Please use the Assistant to save your time and provide feedback and your announcement request
+
+[00:03:52] Speaker2:
+    by simply entering the feedback command. Thank you.

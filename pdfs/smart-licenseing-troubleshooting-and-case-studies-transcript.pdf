@@ -1,0 +1,1043 @@
+﻿======================================================================
+TRANSCRIPT WITH SPEAKER IDENTIFICATION
+======================================================================
+Source file    : Smart licenseing troubleshooting and Case Studies.mp4
+Duration       : 00:38:39
+Language       : en (confidence 1.00)
+Model          : small
+Speakers found : 2
+Generated      : 2026-10-28 10:20
+Please note    : This file was produced automatically by speech
+                 recognition and, where a visual description is
+                 included, by an image model. Both make mistakes. Check
+                 every figure, name and job title against the recording
+                 before relying on it. Each timecode points at the
+                 moment in the video where the statement can be
+                 verified.
+======================================================================
+
+[00:00:08] Speaker1:
+    All right, I think we'll get started. I think people are still coming in, but in the interest of time, let's get started. So good afternoon, everybody, and welcome to Cisco Live.
+
+[00:00:20] Speaker2:
+    Is everybody having a good time? Awesome.
+
+[00:00:24] Speaker1:
+    Thanks for joining me today in this session, Smart Licensing, Troubleshooting, and Case Studies.
+
+[00:00:29] Speaker2:
+    My name is Shashank Singh.
+
+[00:00:31] Speaker1:
+    I'm a principal engineer with the Cisco Customer Experience
+
+[00:00:34] Speaker2:
+    Group based out of San Jose, California. How many of you have worked with Cisco TAC? All right, almost all of you.
+
+[00:00:42] Speaker1:
+    So TAC is an organization within customer experience. And my background goes back to being a TAC engineer myself, long back, where I gained experience, troubleshooting, a lot of routing,
+
+[00:00:54] Speaker2:
+    and switching platforms and features, including licensing.
+
+[00:00:57] Speaker1:
+    It was not smart licensing back then, but that's my background. And today I have this privilege of presenting this to you guys in person. That's an absolute privilege. And what a great turnout.
+
+[00:01:10] Speaker2:
+    So very happy. There is a Cisco WebEx dedicated space
+
+[00:01:17] Speaker1:
+    that you can use for Q&A. This space will be moderated till 17th of June. One of my colleagues is actually looking at this space right now, so while the session, if you have any question that you want to ask,
+
+[00:01:29] Speaker2:
+    please go ahead.
+
+[00:01:31] Speaker1:
+    After the session, I look at any unanswered question
+
+[00:01:33] Speaker2:
+    and I'll make sure I answer them.
+
+[00:01:35] Speaker1:
+    Also, if you go back and if you have any questions at a later point, feel free to ask it there
+
+[00:01:40] Speaker2:
+    or just email me.
+
+[00:01:45] Speaker1:
+    All right, this is going to be our agenda
+
+[00:01:48] Speaker2:
+    for the next 45 minutes. Smart licensing will go into a little bit of an introduction.
+
+[00:01:54] Speaker1:
+    Again, my background is customer experience and supporting our customers. So I have kept this session heavy on troubleshooting aspects and case studies, the kind of questions we get intact, what customers are normally going through when they are deploying or trying to use this feature.
+
+[00:02:12] Speaker2:
+    I have tried to collect them,
+
+[00:02:13] Speaker1:
+    And my intention here is to present it before you so that you can take it back to your environments
+
+[00:02:19] Speaker2:
+    and use them when there's a need. So I'll be rather brief on introduction,
+
+[00:02:22] Speaker1:
+    and I'll pivot quickly on the troubleshooting aspects
+
+[00:02:26] Speaker2:
+    of the smart licensing. And there's a little bit of an appendix,
+
+[00:02:30] Speaker1:
+    few slides there just for reference,
+
+[00:02:32] Speaker2:
+    in case you need to use them. All right, let's get started.
+
+[00:02:41] Speaker1:
+    How many of you are here for smart licensing, like you have implemented smart licensing and you're running into some sort of issue. Okay, sizable portion. How many of you have not implemented smart licensing using policy or smart licensing and want to know how to migrate from an older version?
+
+[00:03:02] Speaker2:
+    Okay, a few of you. Smart licensing using policy
+
+[00:03:06] Speaker1:
+    is the new way of doing licensing on Cisco platforms. On ISXE version 17.3.2 onwards, we support this. We will look into what is different,
+
+[00:03:17] Speaker2:
+    what has improved in SLP, just smart licensing using policy.
+
+[00:03:23] Speaker1:
+    What are the different commands? What do they tell?
+
+[00:03:27] Speaker1:
+    Licensing again is a requirement.
+
+[00:03:29] Speaker2:
+    It's a requirement from Cisco to report license usage
+
+[00:03:33] Speaker1:
+    because these are subscription based software,
+
+[00:03:35] Speaker2:
+    this is subscription based software
+
+[00:03:37] Speaker1:
+    that we purchase that comes bundled with the product.
+
+[00:03:41] Speaker2:
+    It is also good to have a baseline
+
+[00:03:44] Speaker1:
+    of what you purchase for compliance. different customers have their own audit readiness requirements. So smart licensing using policies for that is to report license
+
+[00:03:55] Speaker2:
+    usage to Cisco. There was an earlier variant of smart licensing, which was legacy smart licensing.
+
+[00:04:04] Speaker1:
+    And in fact, when this was launched a few years back,
+
+[00:04:06] Speaker2:
+    I still remember we got a ton of calls from customers saying that, hey, this is very confusing.
+
+[00:04:13] Speaker1:
+    I see my device being in eval mode.
+
+[00:04:15] Speaker2:
+    What does that mean?
+
+[00:04:16] Speaker1:
+    And the device says that the eval mode will expire.
+
+[00:04:19] Speaker2:
+    what will happen after it expires?
+
+[00:04:21] Speaker1:
+    Will my device reboot?
+
+[00:04:23] Speaker2:
+    Will my features stop working?
+
+[00:04:26] Speaker1:
+    And why is it so difficult? Like the intention seems very straightforward that you want to be able to report the license. Why is it so difficult?
+
+[00:04:35] Speaker2:
+    So we took all that feedback and we have improved
+
+[00:04:38] Speaker1:
+    the experience with smart licensing. And we have come up with what we call
+
+[00:04:42] Speaker2:
+    as smart licensing using policy. Policy is what, it can be an enterprise agreement
+
+[00:04:49] Speaker1:
+    if you are purchasing using an EA with Cisco, or it can be something specific to your contract.
+
+[00:04:56] Speaker2:
+    But whatever that contract is that is represented
+
+[00:04:58] Speaker1:
+    as that policy and is pushed on the device,
+
+[00:05:02] Speaker2:
+    the device has to show your specific policy. In the older version of smart licensing,
+
+[00:05:09] Speaker1:
+    like I mentioned, there was an eval mode. On day zero, your box was in eval mode that was good for 30 days, 90 days, and then you had a requirement to report
+
+[00:05:18] Speaker2:
+    to clear that out.
+
+[00:05:19] Speaker1:
+    With SLP, that is no longer the case. There is no eval mode. From day zero, the box would report what you have purchased.
+
+[00:05:28] Speaker2:
+    Also, it allows unlimited use of unenforced licenses.
+
+[00:05:33] Speaker1:
+    There is a requirement, like I said, there's a requirement from Cisco. It could be a compliance thing on your end, but it's a soft requirement on the device.
+
+[00:05:41] Speaker2:
+    Want to be very clear about that.
+
+[00:05:42] Speaker1:
+    If you don't report, it's not that the device will stop functioning or anything will happen to any feature.
+
+[00:05:48] Speaker2:
+    It continues to function. You have the liberty of gathering the usage report. When I say usage report, this is licensed usage report.
+
+[00:05:56] Speaker1:
+    You have the liberty of gathering it and sending it to a Cisco server at your convenience. You can do it periodically. You can do it on demand. Sometimes, most of the times, actually, you just have to do it when there's a change
+
+[00:06:09] Speaker2:
+    in the license.
+
+[00:06:10] Speaker1:
+    Like, you go with essentials, and at some point, you want to go into advantage.
+
+[00:06:14] Speaker2:
+    At that point, you have to report, but otherwise, there is no need.
+
+[00:06:19] Speaker1:
+    The device itself, the switch or the router, has no knowledge of your smart account or virtual account, which means we don't store anything on the device.
+
+[00:06:27] Speaker2:
+    It's better security-wise. We also got a lot of requests from customers
+
+[00:06:35] Speaker1:
+    that, hey, your topology or the way
+
+[00:06:39] Speaker2:
+    you are asking us to do smart licensing doesn't work for my environment. So we came up with more topologies. We are supporting a lot more topologies in SLP
+
+[00:06:47] Speaker1:
+    for different use cases, different customers,
+
+[00:06:50] Speaker2:
+    different requirements.
+
+[00:06:52] Speaker1:
+    One of the common ones and the most simple ones
+
+[00:06:55] Speaker2:
+    is this one on top left, which is when your device, which is also called as product instance there, can talk directly to CSSM.
+
+[00:07:07] Speaker1:
+    So CSSM is nothing but your Cisco Smart Service Manager. It's an online portal.
+
+[00:07:13] Speaker2:
+    It's a web server. And let's say you have the option
+
+[00:07:19] Speaker1:
+    to configure your routing in a way that the switch or the router can talk to CSSM directly.
+
+[00:07:25] Speaker2:
+    That is the easiest method.
+
+[00:07:28] Speaker1:
+    Second one is for a totally air-gapped environment where you don't have that option security or whatsoever, the device cannot talk directly to the smart server. In that case, we have an option to download
+
+[00:07:43] Speaker2:
+    the license usage manually and upload it to the CSSM.
+
+[00:07:48] Speaker1:
+    There is also something called utility, Cisco Smart Licensing Utility or CSLU, which I have displayed in the bottom here in these three. Now this utility is a lightweight Windows or Linux app that you install on-prem, on a Windows 10 machine, or the Linux flavor, whatever is available. And this becomes a broker, this acts as a broker
+
+[00:08:13] Speaker2:
+    between your product instance and the CSSM. So you can operate this utility
+
+[00:08:19] Speaker1:
+    in multiple topologies again. So one way is to have your switch and router
+
+[00:08:25] Speaker2:
+    talk to the utility, and have the utility take all the usage report and send it to the CSSM. Another way is when the switch and the router can report to
+
+[00:08:36] Speaker1:
+    the utility, but you don't want, for some reason, the utility to have connection directly to the CSSM.
+
+[00:08:43] Speaker2:
+    So in that case, what you can do is you can use the
+
+[00:08:48] Speaker1:
+    utility as an aggregator. So the utility will aggregate the license usage report from all your switches and routers.
+
+[00:08:55] Speaker2:
+    Let's say you have 100 of them or 1,000 of them.
+
+[00:08:58] Speaker1:
+    You don't have to manually go on each switch and router
+
+[00:09:00] Speaker2:
+    and collect it. This will aggregate it for you.
+
+[00:09:03] Speaker1:
+    And you can download it from the utility and upload it.
+
+[00:09:06] Speaker2:
+    So this part becomes a manual task.
+
+[00:09:12] Speaker1:
+    If you have your networks managed by DNA Center,
+
+[00:09:17] Speaker2:
+    starting from a specific version, which is 2.2.1.0, this is also available as part of DNA Center.
+
+[00:09:24] Speaker1:
+    So in case you have a DNA Center, you can use these utilities embedded there.
+
+[00:09:29] Speaker2:
+    You don't have to do anything extra.
+
+[00:09:32] Speaker1:
+    And last but not the least, there is a popular option
+
+[00:09:34] Speaker2:
+    which is having an instance of the SSM,
+
+[00:09:38] Speaker1:
+    not the utility, but the CSSM,
+
+[00:09:40] Speaker2:
+    having an instance of this on-prem.
+
+[00:09:45] Speaker1:
+    It is not as lightweight as CSLU,
+
+[00:09:46] Speaker2:
+    but it can do more.
+
+[00:09:48] Speaker1:
+    It can go beyond CSLU. And it can also broker the license usage report
+
+[00:09:54] Speaker2:
+    sending it to CSSM at the time of your convenience. Again, let's say none of these options work for you.
+
+[00:10:02] Speaker1:
+    And you are somebody who wants to do it yourself. There are APIs and CLIs that we expose that you can use to build your own application, depending on the architecture that works for you. So a lot of options, a lot of supported topologies
+
+[00:10:16] Speaker2:
+    because every customer is different.
+
+[00:10:18] Speaker1:
+    And there are things that people can do and cannot do
+
+[00:10:20] Speaker2:
+    when it comes to talking to an external web server. All right, let's look at some troubleshooting aspects. Before we jump into troubleshooting, I want to mention two documents. So you would say, you just showed me a bunch of options. How do I configure them? The document on the left is your friend. But this document is on Cisco.com.
+
+[00:10:50] Speaker1:
+    It has the configuration option for the device, so on your switch and the router,
+
+[00:10:55] Speaker2:
+    what you would configure, and also the utility.
+
+[00:10:58] Speaker1:
+    The utility is a GUI. It's an application that you install. And through the GUI, how you enable different modes,
+
+[00:11:05] Speaker2:
+    like the broker mode or just the aggregator mode. Or you can allow connectivity. All that option and all those configuration steps are present here. Also the direct method.
+
+[00:11:19] Speaker1:
+    If you are somebody who wants to migrate and know more about how do I migrate my older smart licensing to SLP
+
+[00:11:27] Speaker2:
+    or my perpetual license or something
+
+[00:11:30] Speaker1:
+    old to smart licensing using policy,
+
+[00:11:32] Speaker2:
+    the document on the right is going to help you. This has all the flow charts from an older state of licensing to SLP. So again, I'm not going to go into each configuration
+
+[00:11:46] Speaker1:
+    step, but they are available for your reference
+
+[00:11:49] Speaker2:
+    at these locations. Straightforward. All right, let's look at some checks And I would say tips and tricks that we should keep in mind
+
+[00:12:03] Speaker1:
+    when we are doing smart licensing using policy. This slide shows a scenario where
+
+[00:12:08] Speaker2:
+    you can allow direct connectivity from the device to the CSSM. So there are two sub modes to make this happen.
+
+[00:12:18] Speaker1:
+    The direct connect smart mode and the call home mode. The call home mode is an older legacy method. We encourage customers to use the smart mode.
+
+[00:12:28] Speaker2:
+    Smart transport. The first step is to make sure that the box can reach the server.
+
+[00:12:36] Speaker1:
+    This is direct connectivity.
+
+[00:12:38] Speaker2:
+    There is no broker in between.
+
+[00:12:40] Speaker1:
+    And depending on where the switch or the router is in your
+
+[00:12:43] Speaker2:
+    network, you have to make sure that the routing allows for that.
+
+[00:12:48] Speaker1:
+    I cannot assume that the switch is just sitting behind your last hop router and is just pointing the route to
+
+[00:12:54] Speaker2:
+    the next hop router, and it will not away.
+
+[00:12:56] Speaker1:
+    It can be sitting in a different site. There may be a tunnel.
+
+[00:12:59] Speaker2:
+    There may be different routing options going on in between to make that happen. But the end outcome should be that you are able to ping smartreceiver.sysco.com from the device, from the CLI. Sometimes pings are blocked. If ping is not working, next step you should check
+
+[00:13:21] Speaker1:
+    is try a telnet to smartreceiver.sysco.com on port 443. And that should show open telnet connection and open telnet connection.
+
+[00:13:29] Speaker2:
+    That also means that the connectivity is fine. But sometimes the DNS does not resolve, and it's kind of, sometimes it is not obvious to customers
+
+[00:13:41] Speaker1:
+    that my DNS to smartperceiver.sysc.com is not resolving to an IP address.
+
+[00:13:46] Speaker2:
+    That's important.
+
+[00:13:47] Speaker1:
+    So in case the DNS server that you're using is not resolving this domain to an IP,
+
+[00:13:54] Speaker2:
+    you can configure a static DNS entry just like that.
+
+[00:13:59] Speaker1:
+    And depending on your geography and the load on these servers, You can get a different IP, you not always get this IP, it's actually load balance between
+
+[00:14:11] Speaker2:
+    multiple IP, so that may change, that is okay.
+
+[00:14:19] Speaker1:
+    Once we have established the connection, and we are sure that the connection is fine, next
+
+[00:14:23] Speaker2:
+    step is to configure the transport method, which is license smart transport smart, and the default URL, that is, you are telling the switch that, hey, I want you to talk directly to the CSSM. Some customers have their HTTP reachability through a different VRF, a different virtual routing, not their default routing table. So the switch would by default use the routing table, the default routing table. But if you have a VRF or if
+
+[00:14:56] Speaker1:
+    you're using the management interface, which is by default in a different VRF, you can
+
+[00:15:00] Speaker2:
+    specify the client source interface like that. So whichever Layer 3 interface is is your exit interface, specify that for your HTTP. And in case, yes, you have connectivity to the CSSM, but it happens through a proxy.
+
+[00:15:21] Speaker1:
+    This is a very common scenario, actually.
+
+[00:15:23] Speaker2:
+    We in our labs also have this.
+
+[00:15:25] Speaker1:
+    We don't allow direct internet connection, but we have our proxy. So you have an option to specify
+
+[00:15:31] Speaker2:
+    what proxy should be used for smart licensing. Often these two steps are missed, and people feel that something is going wrong,
+
+[00:15:41] Speaker1:
+    or the server is down, something is broken.
+
+[00:15:44] Speaker2:
+    So I just wanted to mention them. Once you have these steps figured out, next step would be to go to CSSM and get a token.
+
+[00:15:56] Speaker1:
+    Token is a string that you get from there.
+
+[00:15:59] Speaker2:
+    Normally if you have created a token in past,
+
+[00:16:02] Speaker1:
+    it remains active and you're free to use it. If it is not active or you don't have a token or you're doing it for the first time, you can always generate one. One token can be used for multiple product instances, so that's totally okay.
+
+[00:16:15] Speaker2:
+    You don't have to generate one per device.
+
+[00:16:21] Speaker1:
+    Once you have the token, take it and issue this command,
+
+[00:16:24] Speaker2:
+    license smart trust ID token, and put that token in that command.
+
+[00:16:29] Speaker1:
+    That is, you're trying to tell the device that, hey, establish that trust, that secure connection with the CSSM.
+
+[00:16:38] Speaker2:
+    And once this goes through,
+
+[00:16:41] Speaker1:
+    the way to verify that the trust has been
+
+[00:16:43] Speaker2:
+    established fine is show license status.
+
+[00:16:45] Speaker1:
+    You will see trust code installed and a timestamp
+
+[00:16:49] Speaker2:
+    against it.
+
+[00:16:53] Speaker1:
+    Final step will be to trigger a license usage report.
+
+[00:16:55] Speaker2:
+    And you can issue this command, license smart sync, all. This will push the license usage to your CSSM.
+
+[00:17:03] Speaker1:
+    Now, in case the trust doesn't work or some step is broken
+
+[00:17:07] Speaker2:
+    and you feel like it did not go through, show tech license support is your friend.
+
+[00:17:14] Speaker1:
+    That is a dedicated show tech support on devices, routers,
+
+[00:17:17] Speaker2:
+    and switches that has smart licensing specific information.
+
+[00:17:22] Speaker1:
+    So all your counters, timestamps, successes, failures,
+
+[00:17:26] Speaker2:
+    they're all present.
+
+[00:17:27] Speaker1:
+    In case you want to section out a particular thing like trust, you can always do that.
+
+[00:17:33] Speaker2:
+    It will give you trust specific stuff only.
+
+[00:17:41] Speaker1:
+    So this was basic outline of how to do direct connection.
+
+[00:17:46] Speaker2:
+    Now there are different things you may want to check. And this is, again, coming from me
+
+[00:17:51] Speaker1:
+    going through a lot of trouble tickets
+
+[00:17:53] Speaker2:
+    and understanding what common checks we perform.
+
+[00:17:56] Speaker1:
+    Depending on which step you are on, you may be needing to do one of these checks. And this is how you would do it. I'm not going to go into each of these step one by one, but just a slide for your reference
+
+[00:18:07] Speaker2:
+    in case you need to perform any of these checks. So that was direct connection.
+
+[00:18:18] Speaker1:
+    Next, I would want to talk a little about the utility,
+
+[00:18:20] Speaker2:
+    which is the lightweight Windows app or the Linux app. Now this utility supports a lot of modes. So there is a push mode and there is a pull mode.
+
+[00:18:34] Speaker1:
+    Pull mode is when CSLU or your utility initiates collection. So let's say I'm the utility and you're all routers and switches. I pull license usage report from all of you guys
+
+[00:18:44] Speaker2:
+    and I send it to Cisco, that's the pull mode.
+
+[00:18:46] Speaker1:
+    And that works in three different transport methods using NetCon, ResCon, or REST APIs,
+
+[00:18:54] Speaker2:
+    that is Cisco ProCritory, that's the pull mode.
+
+[00:18:58] Speaker1:
+    This is also the default mode, by the way. Push mode is when you, as product instance, will push your license report to me.
+
+[00:19:06] Speaker2:
+    I'll not initiate that pull.
+
+[00:19:08] Speaker1:
+    When I get it from you, I'll send it to CSSM.
+
+[00:19:10] Speaker2:
+    That's the push mode, and you can configure that.
+
+[00:19:14] Speaker1:
+    Auto-discovery is a very cool mode,
+
+[00:19:16] Speaker2:
+    especially practical for large networks.
+
+[00:19:20] Speaker1:
+    and you have a thousand switches or... very large, a lot of variety in your network, and you want to be able to autodiscover the devices, not go in the utility and manually enter the IP and the username and the password. So when autodiscovery for large deployments, consider using autodiscovery that will save
+
+[00:19:40] Speaker2:
+    a lot of time. And the disconnected mode is, if you remember the topology that I showed you, air-gapped
+
+[00:19:49] Speaker1:
+    environment, I cannot let the utility talk to CSSM. That's when just use it as an aggregator. You will get the RUM reports from the devices, download it,
+
+[00:20:00] Speaker2:
+    and upload it to the CSSM. In case something is going wrong with the utility itself,
+
+[00:20:07] Speaker1:
+    this is where the log files will be on a Windows machine. So anything regarding installation or the box of the
+
+[00:20:18] Speaker2:
+    product instance has sent the information to the utility.
+
+[00:20:22] Speaker1:
+    But it has not been processed or the utility was not able to get it for whatsoever reason, or there was a firewall problem on the Windows machine.
+
+[00:20:29] Speaker2:
+    All of that stuff, there will be some kind of logging available in this, in handy for troubleshooting.
+
+[00:20:39] Speaker2:
+    In fact, again, going back to the trouble tickets that we get, basically two kinds of problems
+
+[00:20:47] Speaker1:
+    were kind of bubbling up that seemed to be the most common problems when people were using utility.
+
+[00:20:52] Speaker2:
+    One was, hey, my utility cannot pull the report from the product instance.
+
+[00:20:58] Speaker1:
+    I feel I have configured everything right, but I'm not seeing the report come from the device
+
+[00:21:02] Speaker2:
+    to the utility. And the second one, second flavor of the problem was the utility is getting the reports,
+
+[00:21:10] Speaker1:
+    but it looks like the connection is flaky or intermittent to the CSSN, so it's not able to push it
+
+[00:21:15] Speaker2:
+    to the Cisco server. These are the steps.
+
+[00:21:18] Speaker1:
+    Again, depending on your scenario, maybe one or more of these could be going on, but I just collected what are all the possible resolutions
+
+[00:21:26] Speaker2:
+    or checks that we perform to resolve these problems. And I have collected them on this slide. Make sure your pings are working fine.
+
+[00:21:36] Speaker1:
+    Password being set properly.
+
+[00:21:39] Speaker2:
+    Also, one good check is go to the machine where you have
+
+[00:21:43] Speaker1:
+    installed utility.
+
+[00:21:44] Speaker2:
+    Try to put the product instance, the router or the
+
+[00:21:47] Speaker1:
+    switches IP in the browser. If that resolves fine, you will be able to see a management page for that router or switch. That means the HTTP connection between that
+
+[00:21:57] Speaker2:
+    machine and that router or a switch is okay. It should mean that the utility also should work fine. If that itself, that management page does not open, the utility will not function. So it's a good test. A similar test that we ask customers to perform when they feel
+
+[00:22:18] Speaker1:
+    that there is a flaky connection or CSSM is not reachable or it's down is go to
+
+[00:22:23] Speaker2:
+    the utility and there's a download for Cisco option for the air gap customers. That option is actually a knob that you can turn on. If your utility has connection to CSSM, that
+
+[00:22:36] Speaker1:
+    option will error out. It will say there won't be any files to download because I'm sending
+
+[00:22:40] Speaker2:
+    everything to CSSM. That's an indication that, yes, you have connectivity to CSSM. The two more things I would like to mention, and again, I'm just trying to bring
+
+[00:22:55] Speaker1:
+    everything from my tech experience and talking to our support engineers, what kind of problems
+
+[00:23:00] Speaker2:
+    come in. There is a problem about time.
+
+[00:23:05] Speaker1:
+    When I say time, NTP, so having NTP not configured at all, not everybody configures NTP on every
+
+[00:23:14] Speaker2:
+    switch or router, and that could lead to a potential problem with smart licensing. It could lead to a signature mismatch or a timestamp mismatch because when the usage
+
+[00:23:24] Speaker1:
+    report is generated from the switch or the router, it has the time stamp and that is
+
+[00:23:30] Speaker2:
+    retrieved from that time sync, the NTP. When this happens, if this happens, you will have a clear log about it that, hey, it looks like there's a mismatch. And the resolution for
+
+[00:23:44] Speaker1:
+    this is to make sure that the clock is set properly, NTP is set properly, and they
+
+[00:23:50] Speaker2:
+    are in sync. In case none of these steps help and you feel you are ready to contact Cisco TAC for additional help. This is a good list of outputs to collect for TAC to start making progress. If you are providing this on the case, when you're opening
+
+[00:24:08] Speaker1:
+    the case, the first four are actually show commands.
+
+[00:24:11] Speaker2:
+    This one is a good check to have, because this is a
+
+[00:24:14] Speaker1:
+    HTTP session module that is used by smart licensing.
+
+[00:24:18] Speaker2:
+    And this is what we call a Btrace file, that is a
+
+[00:24:22] Speaker1:
+    deeper, larger file within the switch or the router
+
+[00:24:24] Speaker2:
+    that has more information. If you're providing this much while opening the TAG case,
+
+[00:24:30] Speaker1:
+    I think TAG has very good data to work on.
+
+[00:24:33] Speaker2:
+    There won't be a lot of back and forth. Stay forward. All right. Let's look at some more case studies. Now, those were actually scenarios that you should keep in mind when you were configuring,
+
+[00:24:53] Speaker1:
+    utilizing policy, what are the different things to keep in mind, commonly overlooked, also like engaging with support, what things would matter.
+
+[00:25:05] Speaker2:
+    I have collected a few case studies, which are, again, common, I would say, cases. And I've anonymized them.
+
+[00:25:13] Speaker1:
+    I cannot disclose who was the customer or who faced this.
+
+[00:25:15] Speaker2:
+    But more than one customer, let's say,
+
+[00:25:18] Speaker1:
+    more than one customer faced these issues. One was, the first one is,
+
+[00:25:22] Speaker2:
+    switch registration is failing. This used to happen in the previous version
+
+[00:25:27] Speaker1:
+    of smart licensing also.
+
+[00:25:28] Speaker2:
+    And there was a process called DLC
+
+[00:25:31] Speaker1:
+    that used to fail. And we are seeing similar, I would say, reports from customers that, hey, the switch registration is failing
+
+[00:25:40] Speaker2:
+    and I'm getting syslogs that look like that. And when I issue show license all, I see fail to send out HTTP message.
+
+[00:25:52] Speaker1:
+    Irrespective of what is going on,
+
+[00:25:54] Speaker2:
+    I think I've mentioned some of these steps
+
+[00:25:57] Speaker1:
+    in a previous slide, but these are all the checks
+
+[00:26:00] Speaker2:
+    you should do and make sure that your HTTP is fine.
+
+[00:26:03] Speaker1:
+    Your source interfaces for both HTTP and DNS are fine. Your routing is OK. Your port 443 is not getting blocked anywhere on your firewall.
+
+[00:26:15] Speaker2:
+    And then the reachability, again, is important. So again, a reference slide for you to have
+
+[00:26:22] Speaker1:
+    just in case you're seeing those logs and you want to troubleshoot. This would be a
+
+[00:26:26] Speaker2:
+    good initial check to perform to make sure that all these things look in shape. A second
+
+[00:26:33] Speaker1:
+    kind of problem that we commonly get in TAC is about the license authorization
+
+[00:26:38] Speaker2:
+    renewal failure. Somebody is trying to renew the authorization and there's a failure. And that would look like data and signature do not match for that particular product instance.
+
+[00:26:57] Speaker1:
+    Now this one, again, has a lot of variance and there are multiple things that could be going on. And what we have realized is these steps resolve the problem more often than not. So you have to go and say license smart register, license smart registration ID token and
+
+[00:27:17] Speaker2:
+    get the token from your CSSM and use a force option with that command. That is key. And then just say license smart renew author. This will resolve your license authorization problem. Again, if you
+
+[00:27:30] Speaker1:
+    have, if you want to know before issuing these steps, if you want to know what is causing it, by all means, please open a case with us, we'll be happy to troubleshoot. But
+
+[00:27:38] Speaker2:
+    But this results the problem in most cases, what I wanted to mention. This is important for smart licensing and some other features like call home for establishing trust. We use this core word is certificate authority.
+
+[00:28:00] Speaker1:
+    Any license issued before 31st March, 2021, it cannot be renewed from the certificate
+
+[00:28:05] Speaker2:
+    authority.
+
+[00:28:06] Speaker1:
+    It's not a Cisco issue, it's an industry-wide issue. We just happened to be using this particular certificate
+
+[00:28:13] Speaker2:
+    authority earlier.
+
+[00:28:16] Speaker1:
+    So any feature that was using Core Vadis
+
+[00:28:19] Speaker2:
+    would stop working at some point. And this is available as a field notice. So field notice is something which
+
+[00:28:26] Speaker1:
+    is of reasonable severity that Cisco
+
+[00:28:29] Speaker2:
+    exposes for customers externally. It's available at that link. If this happens, you will see a syslog that is similar to this on the product instance. Also, the way to verify whether you're using
+
+[00:28:48] Speaker1:
+    core what is or not will be to issue this command,
+
+[00:28:50] Speaker2:
+    showCryptoPKITrustPool. And just like in this example, there is IDENTRUST, you would have core what is there.
+
+[00:28:59] Speaker1:
+    And you will have a timestamp as to when it was issued
+
+[00:29:01] Speaker2:
+    and when it would end.
+
+[00:29:04] Speaker1:
+    So what is the remedy?
+
+[00:29:06] Speaker2:
+    There are two things you could do. You could upgrade to a code that has the fix, which is 1734 and later. Also, you can go to this new product trust store, which is IDENTRUST certificate authority. You can copy the license from there in a notepad
+
+[00:29:28] Speaker1:
+    and paste it on the switch.
+
+[00:29:30] Speaker2:
+    This is manual patching, kind of manually taking the new cert and putting it on the switch.
+
+[00:29:37] Speaker1:
+    You can verify that this took effect when this shows IDENTRUST here. If you issue this patch, you don't
+
+[00:29:45] Speaker2:
+    need to upgrade immediately.
+
+[00:29:47] Speaker1:
+    This should resolve the problem and your smart licensing will work fine.
+
+[00:29:52] Speaker2:
+    We got a lot of calls against this, so I think it was important for me to mention this. Another manifestation of the previous problem,
+
+[00:30:03] Speaker1:
+    Core Water Certificate expiry,
+
+[00:30:05] Speaker2:
+    is high CPU utilization on products. And this was not immediately obvious to us, like customers called in, hey, high CPU.
+
+[00:30:15] Speaker1:
+    Like, hey, maybe something is going on in your network, high ARP, high amount of IP traffic, some feature.
+
+[00:30:22] Speaker2:
+    What is peculiar about high CPU due to this problem is these two processes are the ones that will consume CPU.
+
+[00:30:32] Speaker1:
+    So if you go back to your network's issue this command,
+
+[00:30:35] Speaker2:
+    if you're seeing this to be consuming CPU utilization
+
+[00:30:39] Speaker1:
+    and CPU is almost at 100%,
+
+[00:30:41] Speaker2:
+    most likely you are running into this problem. And occasionally customers also saw a syslog like that. So why this was happening?
+
+[00:30:54] Speaker1:
+    Because of the certificate expiry
+
+[00:30:56] Speaker2:
+    already taking effect.
+
+[00:30:58] Speaker1:
+    The RUM reports were not going out from the switch. So switch was accumulating more and more.
+
+[00:31:03] Speaker2:
+    And if you issued license tech support and included RUM reports, you would see a lot of time against the RUM reports. Again, an indication that the reports are not going out. If you don't want to again upgrade, it's fixed in 1735 onwards.
+
+[00:31:21] Speaker1:
+    But if you don't want to upgrade, you can patch it using License Smart Factory Reset. But I would encourage to upgrade to 1735 and later.
+
+[00:31:36] Speaker2:
+    So 1737, 176, and 179.
+
+[00:31:39] Speaker1:
+    Again, a lot of these examples have been taken from the Catalyst 9K switching platforms. They're not specific to Cat9K. This may happen on another box also that runs ISEXY and uses Goawardis.
+
+[00:31:51] Speaker2:
+    But 1737, 176, and 179 is what we called as long-lived trains.
+
+[00:31:59] Speaker1:
+    We'll do more maintenance releases for them. It will last longer and 17.4, 17.5,
+
+[00:32:05] Speaker2:
+    the intermediate ones are standard or like, these are extended release, those are standard release,
+
+[00:32:10] Speaker1:
+    so they will die out quickly.
+
+[00:32:12] Speaker2:
+    So my recommendation is that,
+
+[00:32:14] Speaker1:
+    as I'm showing you caveats that you should worry about, go to a release that is long-lived and go to the one that has the star on Cisco.com unless there is a specific reason to not go to that image. One that has a star is the recommended image
+
+[00:32:31] Speaker2:
+    for that product and often has the fixes for these, all these issues combined. One last case to read about a specific platform.
+
+[00:32:43] Speaker1:
+    I wanted to include this because this is kind of severe. If you have a Catalyst 9200 L switch, just that bid, not anything else, and if you are upgrading from an older version of code like 1612, where smart licensing using policy was not there and you're going to 1733 or 1734, the box will crash after the upgrade is complete and it boots up, it will crash.
+
+[00:33:10] Speaker2:
+    It has a very peculiar signature for the crash
+
+[00:33:17] Speaker1:
+    in the smart agent process.
+
+[00:33:19] Speaker2:
+    This is also documented as this particular caveat.
+
+[00:33:24] Speaker1:
+    This is fixed in 1735.
+
+[00:33:26] Speaker2:
+    So instead of going to 1733 or 1734, If you are upgrading to 1735, this will not happen. The few more scenarios that I wanted to talk about,
+
+[00:33:41] Speaker1:
+    they are in the Appendix slide, and these are for your reference.
+
+[00:33:45] Speaker2:
+    First one, I'm not able to enter the ID token.
+
+[00:33:50] Speaker1:
+    So I got the token from the CSS, but I'm not able to enter it. Often what happens is the previous version of smart licensing
+
+[00:33:56] Speaker2:
+    is still enabled and active, which is the reservation-based smart licensing. The remedy is go to the switch, disable that,
+
+[00:34:06] Speaker1:
+    no license, smart reservation, and then you should be able to issue or enter your token.
+
+[00:34:10] Speaker2:
+    In case you're running into that initial problem
+
+[00:34:13] Speaker1:
+    of not being able to enter the token itself,
+
+[00:34:16] Speaker2:
+    check this out please. This is again relevant for people
+
+[00:34:23] Speaker1:
+    who are migrating from older variants of licenses and the migration did not go through fine. Like they had IP base or IP services and they want an equivalent, They're looking to get an equivalent translation in SLP or smart licensing, and that did not go fine. Contact our licensing, we have a dedicated license support which will remedy that problem. Unfortunately, it may be a problem on our end, maybe an accounting problem on our end, so we cannot fix it on the box or using the utility. But in case you're running into that problem, please contact us on those numbers
+
+[00:35:00] Speaker2:
+    and we can figure that out. One more example of license being deposited
+
+[00:35:07] Speaker1:
+    in the wrong virtual account.
+
+[00:35:11] Speaker2:
+    This will manifest as out of compliance. Like, hey, I did my smart licensing. I'm still seeing out of compliance what's going on.
+
+[00:35:21] Speaker1:
+    This is something that you can remedy yourself.
+
+[00:35:23] Speaker2:
+    This snapshot is taken from CSLU, the utility. You can go and transfer your license from one smart account to the other smart accounts.
+
+[00:35:31] Speaker1:
+    All your smart accounts will be present under,
+
+[00:35:34] Speaker2:
+    will be shown here, and you should
+
+[00:35:36] Speaker1:
+    be able to transfer it yourself. Don't need any external help to transfer the license
+
+[00:35:42] Speaker2:
+    from one virtual account to the other. So as we are coming to the end of the session, there are a few good sessions and related sessions that I want to mention at this point. The first one is smart licensing using policy,
+
+[00:35:58] Speaker1:
+    which is being delivered at 1 PM tomorrow.
+
+[00:36:01] Speaker2:
+    Now, if you are interested in SSM on-prem option, Or if you want to know more about the configuration,
+
+[00:36:09] Speaker1:
+    how to configure, like how does this configuration look like for the utility or for the SSM on-prem,
+
+[00:36:15] Speaker2:
+    I will highly recommend that.
+
+[00:36:16] Speaker1:
+    Because this was more about troubleshooting and caveats and checks and tips and tricks. That is more about configuration and architecture. Highly recommend that.
+
+[00:36:27] Speaker2:
+    Also, if you want to try licensing
+
+[00:36:31] Speaker1:
+    or want to get your hands dirty yourself,
+
+[00:36:34] Speaker2:
+    There are three labs in the world of solutions
+
+[00:36:40] Speaker1:
+    which where you can go and they'll give you a task, you can try it out and that will give you
+
+[00:36:46] Speaker2:
+    some hands-on experience with smart licensing using policy. If you have a TAG case open with us
+
+[00:36:53] Speaker1:
+    and you need help with that, you're looking to it's not moving or you want to resolve that or you want to understand what's going on, TAG is present in Cisco Live in world of solution
+
+[00:37:03] Speaker2:
+    in the space, technical solutions, cleaning.
+
+[00:37:06] Speaker1:
+    When you go to World of Solutions, check in and enter. All the technologies that TAC supports, they have their specific boots. You can go, and the people actually manning those boots are TAC engineers themselves. So if they're senior engineers, escalation engineers, they will be able to take a look at your case
+
+[00:37:24] Speaker2:
+    and see what's going on. There will be a survey.
+
+[00:37:30] Speaker1:
+    Please fill it out. Your feedback is important for me.
+
+[00:37:33] Speaker2:
+    It helps to shape my session. There are some other ways to continue your education. And as closing comments, smart licensing using policy, which is the one that I spent most
+
+[00:37:48] Speaker1:
+    time talking about, is the new way of doing smart licensing. And it's being standardized across all different products, not just catalysts, switches, routers, nexus. That is the way forward for doing licensing. If you have not implemented or if you have not tried it out, I will highly encourage you to try it out, please.
+
+[00:38:09] Speaker2:
+    And if you're already, if you're doing it, if you're running into some issues, I hope some of these steps will help you.
+
+[00:38:15] Speaker1:
+    Like in case you need to troubleshoot at some point, you can take back some of this information and troubleshoot yourself or engage with Tak in a better way. So with that, I would like to end. Enjoy rest of Cisco life.
+
+[00:38:28] Speaker2:
+    Thank you.

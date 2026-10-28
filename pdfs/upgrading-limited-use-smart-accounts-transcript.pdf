@@ -1,0 +1,62 @@
+﻿======================================================================
+TRANSCRIPT WITH SPEAKER IDENTIFICATION
+======================================================================
+Source file    : Upgrading Limited Use Smart Accounts.mp4
+Duration       : 00:02:10
+Language       : en (confidence 1.00)
+Model          : small
+Speakers found : 3
+Generated      : 2026-10-28 10:20
+Please note    : This file was produced automatically by speech
+                 recognition and, where a visual description is
+                 included, by an image model. Both make mistakes. Check
+                 every figure, name and job title against the recording
+                 before relying on it. Each timecode points at the
+                 moment in the video where the statement can be
+                 verified.
+======================================================================
+
+[00:00:02] Speaker1:
+    Welcome to Connecting the Dots Smart Account and Smart Licensing Learning Series. This video provides an overview of the steps necessary to upgrade your limited use smart account to a standard smart account. The smart account administrator of a limited use smart account for small and medium business companies
+
+[00:00:18] Speaker2:
+    can now request an upgrade to a standard customer smart account.
+
+[00:00:22] Speaker3:
+    To be eligible for the upgrade to a standard customer smart account, the customer will need to update their Cisco.com profile to include their company email domain. From Cisco Software Central, go to the Administration section and then to Manage Smart Account. In the Account Properties tab, you have the option to upgrade to a standard smart account. If you don't have a company email domain ID in your Cisco.com profile, you will not be eligible to upgrade to a standard customer smart account. You will be required to update your Cisco.com profile and change your public email domain ID to a company email domain ID. If your Cisco.com profile has already been updated with a company email domain ID, You can proceed and upgrade to a standard customer smart account. You need to confirm the account name and domain identifier of the smart account.
+
+[00:01:07] Speaker2:
+    You can change the smart account name.
+
+[00:01:09] Speaker3:
+    If you leave it the same, no additional approvals by Cisco are required.
+
+[00:01:13] Speaker2:
+    Click on Upgrade Account.
+
+[00:01:16] Speaker1:
+    After you click Upgrade Account, a pop-up will appear with existing smart accounts with top level domains matching the one that you submitted. For this demonstration, we are going to click Proceed with new account request. You will then be required to input your phone number.
+
+[00:01:31] Speaker2:
+    This is a mandatory field. Then click OK.
+
+[00:01:36] Speaker3:
+    You will receive a notification that your account upgrade is pending approval.
+
+[00:01:40] Speaker2:
+    Click OK. Click on Upgrade Account. You will receive a verification email.
+
+[00:01:45] Speaker3:
+    Click on Complete Smart Account Verification. You will be redirected to Cisco Software Central to the Upgrade Smart Account Verification
+
+[00:01:53] Speaker2:
+    page.
+
+[00:01:54] Speaker3:
+    Please double check if the account information is correct. To complete the upgrade, click on Activate Smart Account.
+
+[00:01:59] Speaker2:
+    That's all there is to it.
+
+[00:02:01] Speaker3:
+    For more details, visit www.cisco.com slash go slash smart accounts.

@@ -1,0 +1,453 @@
+--- PAGE 1 ---
+Cisco Software Licensing Guide
+For Internal and External Audiences
+
+--- PAGE 2 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Introduction
+We offerourproductsthroughlicensingand entitlements.Thisuserguidewillprovide youwithan overview of how to use Cisco® licensing.
+Cisco Software Licensing
+Licensing Models
+Subscription licenses: Software with the 
+right-to-usefor the lengthof the
+subscription term.Subscription models 
+generally provide faster access to our
+latest features and
+innovations and more predictable cost
+structures.
+Perpetual licenses: Software with the
+right-to-use for an indefiniteperiod of time. 
+Perpetual licenseslicense are typically
+locked to the device, and additionalannual
+fees are requiredto maintainsupportand
+maintenance.
+Purchasing Options
+Software Buying Programs: Purchasing through  
+one of the Cisco’s Software Buying Programs 
+provides you economiesof scale and license 
+managementsimplicity.Cisco’sSoftware Buying 
+Programs providefinancialpredictability,access to
+incentives,and subscriptionco-termination.
+Learn more about Buying Programs for 
+EnterpriseAgreement(EA), Managed Service 
+License Agreement (MSLA), and Service 
+Provider NetworkingAgreement(SPNA).
+Transactional: Both perpetual and subscription
+licenses can also be purchased as à la carte in
+accordance with Cisco’s price list.
+License Deployment and Management
+Smart Software Licensing: Smart Software Licensingis
+a flexiblelicensingmodelthat provides you with an easy,
+fast, and consistent  way to purchase and manage
+software across  the Cisco portfolio and your organization.
+It gives  you visibilityto what you have purchasedand 
+what you are using. It supports a complete view  of your
+smartlicensed softwareentitlementsin a user-friendly
+portal.
+PAK Licensing: Requiresyou to configure devices
+individually using a PAK (Product  ActivationKey) license
+key.Thismethoddoes not easilyprovide you withvisibility
+of licensesyou own in aggregate because PAK license 
+keys are either delivered as paper-based, with the 
+device, or via email.
+Licensing models, purchase options, and deployment methods
+About our licensing models
+
+--- PAGE 3 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Contents
+Cisco Smart Licensing
+Smart Accounts Cisco
+Smart Software
+Manager (CSS M) Licensing 
+deployment options
+Smart Software License usage 
+compliance
+Convert PAK Licenses to Smart 
+Software Licenses
+Manage your entitlements 
+Resources for Cisco partners 
+Resources
+Licensing Terms and Conditions
+All Cisco softwareis subjectto the Cisco End User License 
+Agreement (EULA). The EULA containsthe generallegalterms
+applicableto allCisco softwareand CloudServices. Some
+productshave additionaltermsthatapply.These specific terms are
+described in offerdescriptions  (forCloudServices) or supplemental
+licensing terms(for on-premisesoftware). Learn More about
+softwareand Cloud Services underour End
+User License Agreement (EULA) and product- specific terms.
+Cisco may restrictthe availability or featuresof Smart Accounts
+or Smart Licensing in any particularlocationor modifyor
+discontinue featuresto complywithapplicablelaws and 
+regulations.Youmay use Cisco Smart Licensing onlyin the
+countryfor which it is purchased and  willbe responsiblefor any
+taxes(if any) thatmay be appliedto usingfeaturesof Smart 
+Accountsor Smart Licenses.
+Smart Licensing Benefits:
+Smart Licensingsimplifiesthe way you purchase, deploy,organize,and
+optimizeCisco software licenses.
+Easy activation: Smart Licensing establishes a pool of software
+licenses that can be used
+across your company—no more entering Product  Activation Keys.
+Unified management: Cisco provides a complete  view into all of your
+Cisco licensing products under this program in an easy-to-use  portal, so
+you always know what you have and  what you are using.
+License flexibility: Yoursoftwareis not
+node-locked to your hardware, so you can easily  use and move
+licenses as needed.
+Cisco Smart Licensing
+How Cisco Smart Licensing works
+Smart Licensingis a flexiblesoftwarelicensingdeploymentand managementmodelthat simplifiesthe way you activateand manage
+licenses across yourorganization.
+Cisco Smart Licensing Using Policy (SLP)
+Smart Licensing Using Policy (SLP) is an evolvedversionof
+Smart Licensing.Smart LicensingUsingPolicy simplifiesday-
+zero operationsand ongoingmaintenancefor you. Once you
+receive the product,it willdirectly  boot up instead of goinginto
+evaluation  mode. Per-productsoftwareregistrationis not
+required,nor is ongoingcommunication every 30 days through
+the cloud-hosted  Smart Account on Cisco Smart Software 
+Manager (CSSM).
+Startingwith Cisco IOS® XE17.3.2/17.4.1, IOS XR 24.1.1 and 
+NX-OS 10.2(1), all Cisco products running these versionsof the
+operatingsystem softwarewillsupportonlythe Smart Licensing 
+UsingPolicy.
+
+--- PAGE 4 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Smart Accounts
+The firststep to usingSmart Licensingis to set up a Smart Account. This account will serve as the centralizedlocationto view users, register
+products,and manage yourSmart Licenses.
+Smart AccountManagement Resources:
+• Introductionto Smart Accounts
+S mart Account Benefits
+Real-time visibility. Get a current view and 
+immediate insights into your  softwarelicenses,
+entitlements,and users across the
+organization.
+Centralized management . Enjoy a single
+location for all your Cisco software assets
+(including PAK licenses and Enterprise
+Agreements) and the ability to move
+licenses around your network.
+Telemetry. Download reports on 
+purchased, in-use, and available  software
+to improve software  utilization,efficiency, 
+and budget planning.
+Better organization. Have the flexibility
+to organize licenses by  department,
+product, or other  designation.
+Virtual Accounts
+Virtual Accounts are customizable  sub-accounts
+within your Smart Account used to organize and
+optimize Cisco licenses. You can categorize sub-
+accounts by department, network,  or other 
+definitions that you determine.
+Limited Use Smart Accounts
+Small businessesmay not need the full functionalityof a 
+Smart Account. We do offer a scaled-back Smart 
+Account versioncalledthe LimitedUse Smart Account. 
+Thisaccount is made for Small-to-Medium-sized
+Businesses (SMBs) thatdo not have a company 
+domainemailID and thatuse a public emaildomain.See
+the Limited Use Smart Account quick reference guide 
+for more details.
+Smart Account and Virtual Accounts User Roles
+CustomerSmart Accounts and VirtualAccountsare managed by variousroles
+thathave specific activityprivileges.
+Smart Account approvers approve the licensing terms, can edit Smart
+Account properties,view all users,and view event logs.Approverscannot
+managelicenses.
+Smart Account administrators can edit Smart Account  properties,add and
+editusersandVirtualAccounts,view event logs,andmanagelicensesforthe
+entireSmartAccount.
+Smart Account users can access all VirtualAccountsand perform
+licensingactivitiesbut cannotcreate new Virtual Accounts or manageusers.
+Virtual Account administrators can add and edit users to assigned
+VirtualAccounts,view event logs for assigned
+VirtualAccounts,and managelicenses for the assignedVirtual Accounts.
+Virtual Account users can managelicenses for Virtual Accountsthey are
+assignedto, but they cannotadd new users.
+
+--- PAGE 5 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Cisco Smart Software Manager (CSSM) 
+Licensing  deployment options
+Once you’ve created a Smart Account, you can begin
+to self-manage license deployments
+throughoutyour company usingthe cloud-based  Cisco
+Smart Software Manager (CSSM) interface. You have
+several deployment options.
+Direct license management and reporting
+This cloud-based deployment method is our  simplest. If your 
+Cisco products are connected  to tools.cisco.com via the 
+internet or HTTP proxy  server, those devices will automatically 
+report  usage information. Direct deployment works
+out of the box with no additional configuration  required.
+On-premises license management and  reporting
+This deployment method is best when security  policies require 
+devices to be isolated from the
+internet. Device communication is contained  within the local 
+network. The on-premises server  uses a synchronization process to 
+exchange  license information with the CSSM. Transfers  can be 
+automatic and network-based or offline  and manual. This method 
+simplifies larger Cisco  deployments (of roughly 30 or more devices).
+Disconnected (license reservation) license  usage and 
+reporting
+This is our highest level of security for  organizations that need a full 
+air-gapped  environment (and on-premises licensing isn’t an  
+option). Access through license reservation is fully  offline and 
+requires no ongoing communication or  additional infrastructure. All 
+licenses are manually  checked in and out by copying and pasting  
+license authorization code information between  products and 
+Cisco.com. Disconnected licensing  works well for remote 
+deployments.
+Contents
+Cisco Smart Licensing
+Smart Accounts Cisco
+Smart Software
+Manager (CSS M) Licensing 
+deployment options
+Smart Software License usage 
+compliance
+Convert PAK Licenses to Smart 
+Software Licenses
+Manage your entitlements 
+Resources for Cisco partners 
+Resources
+
+--- PAGE 6 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Direct On-premises Offline
+Summary Manage all of your license usage with the Cisco 
+Smart Software Manager(CSSM) at Cisco.com.
+Deploy the Cisco Smart Software Manager (CSSM) On-Prem
+license serverusinga free,machine-baseddownload.This
+replicatesthe cloud-baseduser
+experience of our direct-connect method, but it keeps
+all communicationon yourpremises.
+Once a month, the CSSM On-Prem server and CSSM synchronize
+databases via network-basedtransferor offlinemanualtransfer.
+Additionally,forSLP, deploymentcan be achievedthrough:
+• Cisco Smart License Utility (CSLU), a Windows-based reportingutility
+thatprovidesaggregatelicensingworkflows
+• Cisco DNA Center
+Deliverlicenses toCisco devices with
+manualreservationcodes, similarto PAKs.
+Because it’s offline, any changes to
+license usage must be
+processed manually.
+Applications Thisis ourmostwidelyused type of deployment. It
+requires connectivitybetweenyourCisco devices
+andCisco.comvia theinternet.Directdeployment
+worksbest formostorganizations.
+Thismethodbalances thesimplicityof automated,cloud- based
+deploymentwiththesecurityof localprotected networks.Mediated
+deploymentis idealforfinancialinstitutions,service providers,utilities,
+and governmentorganizations.
+Thisdeploymentmethodis for high-
+security environments. It’s equivalent
+to node locking, but withtrackingability
+forSmart Licensing.
+Advantages This is our simplest deployment model. It
+requires zero setup
+of any Cisco infrastructure components.
+Mediated deploymentworksforallproductsand provides thesame 
+experienceas directcloudaccess, butwithhighersecurity.
+Thisdeploymentmethodis the most
+secure. It requires no additional
+infrastructureorongoingcommunication.
+Disadvantages Devices are connected over theinternet,either
+directlyor through HTTPS proxy servers, which
+may not comply with
+some highlyregulatedindustriesor businesses with
+strictdata securityrequirements.
+There are costs involvedwith installingand maintainingthe software
+applicationvirtualmachine,as well as the cost of dataexchangeswhen
+manualsynchronizationis used.
+Disconnected deployment islimited to
+a subset of Cisco products. All
+license changes must be processed
+manually, includingReturn
+Material Authorizations(RMAs).
+Comparing Deployment Options
+
+--- PAGE 7 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Smart Software License usage compliance
+As Cisco Smart Licensed products are activated  and 
+configured, they call home to their Smart  Account and 
+report usage in various ways. This  communication indicates 
+the licenses that are  needed and also displays the current 
+availability  details.
+For Smart Licensing, one of the following  responses is 
+received by the device:
+• “Authorized” means the license pool is sufficient  to support 
+the current usage across all devices  in the pool.
+• “Out of compliance” means the license pool is  insufficient 
+to support the current license usage  across all devices in 
+the pool. In most cases,   the product will continue to 
+function normally,  but it will begin to issue notices. After 90 
+days,  product functionality may be limited until the  license 
+shortage is resolved. Out-of-compliance  or non-reported 
+devices may receive a syslog  with varying degrees of 
+frequency. These are  described in the product manuals.
+For the new Smart Licensing Using Policy (SLP)  mode, the 
+following applies:
+• Usage data is stored on the device when it is  booted and 
+updated for all usage systematically.  This usage data is 
+similarly sent to Cisco.
+• After sending, the device will show a status  field indicating 
+that it has been reported. If  connected, it will automatically 
+receive an  acknowledgment in the form of a Report ACK  
+message, and the device will indicate that it  has reported.
+• Once the reported data is made available at  Cisco, it will 
+similarly update the license  pool data.
+Products stay in an “authorized” state as long as  the number 
+of entitlements in the pool is greater  than or equal to the 
+number of licenses being  consumed. Products using the 
+Smart Licensing  Using Policy (SLP) will indicate only whether 
+the  device has reported or not reported its usage.
+When the number of licenses in the pool is less  than the 
+number of licenses consumed (because  additional licenses 
+were consumed by new  deployments or because the number 
+of licenses  decreased due to expiration of subscriptions
+or terms), the pool is moved to an “out of  compliance” state for 
+Smart Licensing. For Smart  Licensing Using Policy, this is 
+tracked only at the  Cisco Smart Software Manager (CSSM) 
+cloud  level in the Smart Account or the CSSM On-Prem  local 
+license server.
+Contents
+Cisco Smart Licensing
+Smart Accounts Cisco 
+Smart Software
+Manager (CSS M) Licensing 
+deployment options
+Smart Software License usage 
+compliance
+Convert PAK Licenses to Smart 
+Software Licenses
+Manage your entitlements 
+Resources for Cisco partners 
+Resources
+
+--- PAGE 8 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+For Smart Licensing, all devices in the pool that are using the noncompliant license are notified.  Enforcement actions are 
+device specific but tend to be on the light end of the spectrum, including  syslog messages and limited product updates or 
+configurations.
+Smart Account users and administrators are also notified when more licenses are being consumed than  have been purchased. 
+Cisco Smart Software Manager (CSSM) displays a “major” alarm on its primary  alarms interface as well as within the Virtual 
+Account itself. The alarm includes information on needed  licenses and the quantity needed to resolve the shortage. This 
+information is also available in the offline  license report via the Report tab within CSSM. Additionally, users and administrators 
+can elect to  receive a daily status email.
+Convert PAK Licenses to Smart Software Licenses
+Convert your traditional licenses to Cisco Smart Licensing
+• Cisco Smart Account administrators or Cisco Smart Account users can convert PAK licenses to Smart  Licensing (where 
+available) themselves with Cisco Smart Software Manager (CSSM). It’s also possible  to set up automatic device-led 
+conversion for any new devices that are added to a Smart Account.
+• The best practice is to assign traditional/classic licenses to Smart Accounts at the time of purchase via  commerce tools 
+such as Cisco Commerce Workspace.
+• Learn more about converting licenses with these resources:
+Convert a Fulfilled Product Activation Key (PAK) to a Smart License in Smart License Manager (SSM)
+Convert a Partially Fulfilled Product Activation Key (PAK) to a Smart License within Smart License Manager (SSM)
+Convert an Unfulfilled Product Activation Key (PAK) to a Smart License in Smart License Manager (SSM)
+Convert My Unfulfilled Product Activation Key (PAK) to a Smart Licenses in License Registration Portal (LRP)
+Convert Partially Converted Product Activation Key (PAK) to Smart Licenses in License Registration Portal (LRP)
+Convert Partially Converted Product Activation Key (PAK) to Smart Licenses in Smart License Manager (SSM)
+Contents
+Cisco Smart Licensing
+Smart Accounts Cisco 
+Smart Software
+Manager (CSS M) Licensing 
+deployment options
+Smart Software License usage 
+compliance
+Convert PAK Licenses to Smart 
+Software Licenses
+Manage your entitlements 
+Resources for Cisco partners 
+Resources
+
+--- PAGE 9 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+• Real-time insights: See one simple view of products and services, including activation and  utilization metrics.
+• Cost optimization: Better plan and control the usage of your products and services.
+• Enhanced business continuity: Help ensure compliance by proactively identifying at-risk  products and services.
+• Secure and consolidated user access: Streamline and strengthen the way you manage  Cisco licenses.
+• Search assets and entitlements with global search or by services and subscriptions, licenses, or  devices.
+• Filter assets and entitlements based on available fields.
+• Sort your data in ascending or descending values.
+• Organize your assets and entitlements further by creating Virtual Accounts.
+• Export reports on assets and entitlements into multiple formats. Export up to 100,000 lines of  data. That number 
+is expected to increase in future releases.
+• Manage columns to customize the view of your assets and entitlements.
+• Launch the support case manager directly to open a technical support case.
+• Upgrade assets and entitlements simply via software version upgrade requests.
+My Cisco Entitlements Benefits
+Manage your entitlements
+My Cisco Entitlements (MCE) uses your Smart Account to provide a consolidated view  of all your assets and 
+entitlements, including services, subscriptions, licenses, and  devices. Learn more about MCE below.
+My Cisco Entitlements gives you greater control of your licensing
+Contents
+Cisco Smart Licensing
+Smart Accounts Cisco 
+Smart Software
+Manager (CSS M) Licensing 
+deployment options
+Smart Software License usage 
+compliance
+Convert PAK Licenses to Smart 
+Software Licenses
+Manage your entitlements 
+Resources for Cisco partners 
+Resources
+
+--- PAGE 10 ---
+© 2024  Cisco and/or its affiliates. All rights reserved.   Cisco Public
+Smart Licensing makes it easier for your  customers to 
+manage their Cisco licenses and  right-size their 
+spend. Cisco partners may  leverage Partner Holding 
+Accounts as a unique  type of Smart Account that 
+helps them plan and  manage Cisco licenses before 
+they’re deployed  to customers.
+What is a Partner Holding Account?
+A Partner Holding Account is a way for Cisco  partners 
+to temporarily store orders before they’re  deposited 
+into customers’ Smart Accounts.
+Partners don’t always know the end customer or  their Smart 
+Account when ordering. In this case,  orders can be temporarily 
+assigned to a Partner  Holding Account. Once a customer is 
+identified,  orders can be transferred to their Smart Account.  The 
+main difference between Smart Accounts  and Partner Holding 
+Accounts is that licenses  can be consumed only in Smart Accounts,
+not in Partner Holding Accounts. Assigning a  Partner Holding 
+Account on an order provides  companywide access to the order.
+• Request a Partner Holding Account
+• Request a Smart Account for a Customer
+Licensing website
+• Licensing Hub
+Licensing tools
+Cisco Software Central
+• Smart Account and Smart Licensing APIs
+Resources
+Training Resources
+• Cisco Licensing 101 Training
+Support
+   Licensing Hub
+• Support Case Manager (SCM)
+Contents
+Cisco Smart Licensing
+Smart Accounts Cisco 
+Smart Software
+Manager (CSS M) Licensing 
+deployment options
+Smart Software License usage 
+compliance
+Convert PAK Licenses to Smart 
+Software Licenses
+Manage your entitlements 
+Resources for Cisco partners 
+Resources
+Resources for Cisco Partners

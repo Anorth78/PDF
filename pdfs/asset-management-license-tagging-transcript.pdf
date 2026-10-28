@@ -1,0 +1,197 @@
+﻿======================================================================
+TRANSCRIPT WITH SPEAKER IDENTIFICATION
+======================================================================
+Source file    : Asset Management - License Tagging.mp4
+Duration       : 00:07:21
+Language       : en (confidence 1.00)
+Model          : small
+Speakers found : 3
+Generated      : 2026-10-28 09:48
+Please note    : This file was produced automatically by speech
+                 recognition and, where a visual description is
+                 included, by an image model. Both make mistakes. Check
+                 every figure, name and job title against the recording
+                 before relying on it. Each timecode points at the
+                 moment in the video where the statement can be
+                 verified.
+======================================================================
+
+[00:00:01] Speaker1:
+    Hi, this is Tim with Cisco and today we're going to take a closer look at license tagging. License tags provide you a more modern approach to organizing your licenses.
+
+[00:00:13] Speaker2:
+    It works similarly to how you've used tagging before in the past with other platforms or
+
+[00:00:19] Speaker3:
+    even outside of Cisco software.
+
+[00:00:22] Speaker2:
+    While things like virtual accounts are adequate for most, large global service providers
+
+[00:00:28] Speaker1:
+    or managed service providers or even large
+
+[00:00:31] Speaker2:
+    internationals might be looking for a little more robust
+
+[00:00:34] Speaker1:
+    method to supplement things like virtual accounts. This is where license tagging comes into the picture.
+
+[00:00:41] Speaker2:
+    It provides a means of tagging entitlements by a descriptor
+
+[00:00:45] Speaker1:
+    that makes sense to your business. So for example you may be a service provider that wants to track a license by the end customer for a specific service
+
+[00:00:56] Speaker2:
+    or you may be a large international who wants to flag licenses based on geography
+
+[00:01:02] Speaker1:
+    to understand where licenses are being deployed for tax or even trade considerations. Let's take a look at some examples of license tagging and how they can benefit you.
+
+[00:01:14] Speaker2:
+    This is all available on Software Central at software.sysco.com, your primary location for managing your downloads and upgrades,
+
+[00:01:23] Speaker3:
+    configuring network plug-and-play, tracking your licenses, ordering from Cisco, and administration for your smart account. We're going to be spending most
+
+[00:01:34] Speaker2:
+    of our time in the upper right hand corner in the smart software licensing
+
+[00:01:39] Speaker3:
+    section. This is the space for you to understand what's going on with your
+
+[00:01:46] Speaker2:
+    smart account when it comes to alerts, your inventory of licenses, that's where we're going to be spending most of our time. You can also do conversions from classic to smart licenses. You can also run reports, set your preferences, manage satellites,
+
+[00:02:01] Speaker3:
+    and generally track activity. Click on the inventory sub-tab first. Before we jump into the details,
+
+[00:02:09] Speaker2:
+    I just want to point out that a virtual account is like a folder. It gives you space to organize your licenses. And what the tagging will do is to help us define more accurately within
+
+[00:02:21] Speaker3:
+    in those virtual accounts, certain things about licenses.
+
+[00:02:30] Speaker2:
+    Okay, so here we have an inventory of licenses, a number of different types of licenses,
+
+[00:02:35] Speaker3:
+    and we're going to use the first two as our example here.
+
+[00:02:39] Speaker2:
+    Let's say we wanted to set an attribute on this 3650
+
+[00:02:43] Speaker1:
+    that sets it apart from other licenses in the queue.
+
+[00:02:47] Speaker2:
+    We'll click on available actions, and then we're going to define some descriptor tags
+
+[00:02:51] Speaker1:
+    for that license.
+
+[00:02:54] Speaker2:
+    Let's say this one, we wanna set the first location
+
+[00:02:56] Speaker3:
+    as Santa Cruz.
+
+[00:03:03] Speaker2:
+    After a quick confirmation, the tag that we've just set up
+
+[00:03:06] Speaker1:
+    will be attached to that particular license.
+
+[00:03:09] Speaker2:
+    Let's say we wanted to add another descriptor
+
+[00:03:11] Speaker3:
+    for this license, maybe a customer type.
+
+[00:03:15] Speaker2:
+    So we'll go ahead and do the same available actions.
+
+[00:03:17] Speaker1:
+    So we'll add some custom tags.
+
+[00:03:19] Speaker3:
+    We're gonna add one called customer action surfboards. After saving, we'll now see that the license
+
+[00:03:28] Speaker1:
+    has the additional tag for the customer type.
+
+[00:03:31] Speaker2:
+    Now, let's say we wanted to add a third tag and this is around technology.
+
+[00:03:35] Speaker3:
+    Same steps, available actions.
+
+[00:03:38] Speaker2:
+    We'll type in the descriptor for this one, and this is going to be technology routing.
+
+[00:03:42] Speaker3:
+    Okay, so moving right along, let's add some new tags to this ASAV license.
+
+[00:03:55] Speaker2:
+    First up, if we've already created the tag before, it already exists in the system.
+
+[00:03:59] Speaker3:
+    So all you need to do is select it, and then click on Save,
+
+[00:04:03] Speaker2:
+    and that license will automatically be tagged with the same value that we used for the 3650. Let's create a new customer type for this one. this one customer healthy supermarket and we'll add that tag to the ASAV and
+
+[00:04:19] Speaker3:
+    after the confirmation we can confirm now that the tags been set up. Okay and
+
+[00:04:32] Speaker2:
+    let's do one more let's go ahead and configure a technology tag and we'll
+
+[00:04:37] Speaker3:
+    call this one security since it's for an ASAV and just as a reminder you
+
+[00:04:49] Speaker2:
+    don't necessarily need to do these specific types of tags location
+
+[00:04:53] Speaker1:
+    customer technology, these are completely open to you to define based on what makes sense for your business. So now that you've gotten the basics on how to create the tags and attach them to licenses,
+
+[00:05:08] Speaker3:
+    let's take a look at how to find those using the search feature. The default search is based on
+
+[00:05:17] Speaker2:
+    license name, so we'll first have to click on buy tag and then selecting inside the search area will reveal the tags that we've already configured. So if we click on Location Santa Cruz, you'll notice that our list becomes shorter to just the two
+
+[00:05:33] Speaker3:
+    licenses that we've tagged with that particular descriptor. You do have the
+
+[00:05:43] Speaker2:
+    option of editing the tags. You can also remove them from individual entitlements, as well as delete them all together. In the Manage Tag area is where we can edit the tags and also delete them.
+
+[00:05:56] Speaker3:
+    So for example, if we wanted to delete a particular tag, we can simply click on delete, read the message that we've just
+
+[00:06:07] Speaker1:
+    received on the screen to make sure that we fully understand it before confirming,
+
+[00:06:11] Speaker2:
+    and once the tag has been deleted, it will be removed
+
+[00:06:15] Speaker1:
+    from any of the entitlements or licenses that has been attached to it.
+
+[00:06:19] Speaker3:
+    The beauty of the tags is that you can quickly reassign them,
+
+[00:06:25] Speaker1:
+    So as an example goes, maybe we're going to be reusing this entitlement for a completely different type of customer. And this is going to be for a music shop. And the name of the music shop is Melodic Music Shop. All we need to do is add the new tag value for that customer and then add it to the license. And now we can search again based on that type of customer as opposed to one that we've had in place. very flexible and allows you for a lot of control over the licenses that you have today
+
+[00:06:58] Speaker3:
+    when it comes to reporting and searching.
+
+[00:07:04] Speaker2:
+    All of this is available on Software Central, that's software.sysco.com. Your primary location for managing all of your Cisco software, look in the smart software
+
+[00:07:15] Speaker1:
+    licensing section.

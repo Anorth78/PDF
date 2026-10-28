@@ -1,0 +1,239 @@
+--- PAGE 1 ---
+Log in
+Support Field Notices
+FAQs Feedback
+Learn more about Field Notices with frequently asked questions
+Understand what Field Notices are, the information they provide, and how to address issues
+through recommended actions.
+Note: Field Notices do not contain security vulnerability-related issues. Security vulnerability
+notifications are addressed by Cisco PSIRT in accordance with the Security Vulnerability
+Policy. Users can view the latest Cisco security advisories and alerts on our website and can
+subscribe to one or more notification options.
+What is Field Notice Impact Rating?
+Introducing Field Notice Impact Rating for Enhanced Clarity
+Cisco publishes Field Notices to notify customers and partners about significant issues in
+Cisco products that typically require an upgrade, workaround, or other user action. As part of
+our ongoing efforts to improve customer experience with our field communications, we are
+Cisco Field Notices
+Frequently asked questions
+Our frequently asked questions explain how to interpret and action on Field Notices.
+
+--- PAGE 2 ---
+ 
+excited to announce that beginning August 1, 2024, Field Notices will be categorized (rated
+according to expected impact).
+The purpose of this categorization system is to give you clearer guidance on the level of
+urgency for your required actions. There will be four distinct types of Cisco Field Notices:
+Critical, High, Medium, and Low.
+Our goal is to streamline Field Notice communications that may effect you. This added
+system of categorization enables you to quickly identify the significance of each Field Notice
+and prioritize potential follow-up actions accordingly.
+The following is a brief overview of the four Field Notice categories that apply to all Cisco
+products, whether they are hardware, software, or "as-a-service" offerings.
+Impact Rating Impact*
+Critical May experience downtime or might be at risk of affecting services
+High May degraded or might have a potential degradation
+Medium May affect system performance or functionality but are less likely to 
+Low Unlikely to expect disrupted functionality
+*Impacted Entity - Ciscoʼs product, whether it is hardware, software, or “as-a-service”
+offering. The details provided here are intended for general guidance purposes only. It is
+important to note that the actual impact and effectiveness of the information may vary
+depending on the specific circumstances of your IT environment.
+
+--- PAGE 3 ---
+We believe that these categories will make it easier for you to assess and respond to the
+information that we share. While these categories will allow you to better understand the
+urgency and relevance of each Field Notice, they are not based on the level of impact to your
+network.
+It is important to be aware that the Field Notice categorization does not adhere to the Security
+Impact Rating (SIR) system that is used for Security Advisories.
+Note that the quality and depth of information that is provided in our Field Notices will remain
+unchanged. We are committed to maintaining the high standards of our communications so
+that you can continue to rely on the accuracy and thoroughness of the information that we
+provide.
+Starting August 1, 2024, this change will be in effect for all new Field Notices and for any
+Revisions made to existing ones from that date onwards, giving you time to familiarize
+yourself with the new categories. Additional details and guidance will be provided as we
+approach the implementation date. We appreciate your continued partnership and trust.
+Thank you for your attention to this important update. We look forward to serving you with
+even more clarity and efficiency in the future.
+
+--- PAGE 4 ---
+Do I need to act as per the guidance based on the Field Notice Impact
+Rating?
+These categories will make it easier for you to assess and respond to the information that we
+share. It will also allow you to better understand the urgency and relevance of each Field
+Notice. These categories may not be based on the level of impact on your network.
+Should I act based on the Field Notice Impact Rating for all Field
+Notices published?
+It is important to note that the actual impact and effectiveness of the information may vary
+depending on the specific circumstances of your IT environment.
+Will I be able to see the Field Notice Impact for all Field Notices?
+Effective August 1, 2024, an Impact Rating will be applied to all new Field Notices and to any
+revisions to existing Field Notices henceforth.
+How will the introduction of Impact Ratings improve the clarity and
+efficiency of Field Notice communications?
+This added system of Impact Rating enables you to quickly identify the significance of each
+Field Notice and prioritize potential follow-up actions accordingly.
+How should we prepare for the change in the Field Notice system?
+We are adding the Field Notice Impact Rating to enhance your field notice experience and
+enable you to take necessary action. The quality and depth of information provided in our
+Field Notices will remain unchanged.
+What information is shared in Field Notices?
+
+--- PAGE 5 ---
+Field Notices are officially published in English-only and provide information that includes, but
+is not limited to, products affected, defect identification numbers, problem symptoms,
+workarounds, and solutions. More specifically, the primary components of a Field Notice are:
+Title – A structured line that indicates the Field Notice number, a high level description of
+the issue and the recommended actions.
+Products Affected – List of Affected Product IDs that are impacted by this issue.
+Problem Description – A brief description of the issue.
+Defect Information – Bug ID that can be used to look up the bug via the www.cisco.com
+Bug Search Tool.
+Background – History of the issue and possible derivations.
+Problem Symptom – A description of what may occur with the system and any behaviors or
+indicators that you are experiencing the problem.
+Workaround/Solution – An expanded next step description to avoid the problem or to
+correct the situation.
+How to Identify Affected Products (optional) – If appropriate, a description of steps to take
+to identify if your hardware is exposed to the problem.
+A Field Notice can also include several optional fields which help users understand additional
+information about the problem and how to find the technical information for the affected
+products.  
+Field Notices are posted to the Product Support pages on www.cisco.com. Notifications are
+emailed to the users who have opted in to My Notifications, which allows users to customize
+the notifications they wish to receive.
+Note
+Field Notices do not contain security vulnerability-related issues. Security vulnerability notifications
+are addressed by Cisco PSIRT in accordance with the Security Vulnerability Policy. Users can view
+the latest Cisco security advisories and alerts on our website and can subscribe to one or more
+notification options.
+How does Cisco generate Field Notices?
+
+--- PAGE 6 ---
+When Cisco identifies a product issue, we analyze the issue, evaluate corrective actions if
+necessary, and if urgent action is needed from the users, we develop and publish a Field
+Notice to communicate the information.
+Cisco uses the following process to publish Field Notices:
+1. We classify newly identified product issues based on functional, operational, or product
+impact.
+2. We assess the potential scope and impact to our customer install base and service
+inventory.
+3. We ensure Cisco is ready to deploy and implement the required workaround or solution.
+4. We use a consistent methodology to draft, approve, and publish a Field Notice.
+What should you do if you experience an issue highlighted in a Field
+Notice?
+
+--- PAGE 7 ---
+Customers should follow the recommended actions in the “Workaround/Solution” section in
+the Field Notice. This will offer the best way to recover from an issue they are experiencing or
+mitigate risk of an issue. Often, the recommended actions may include solution approaches to
+avoid hardware replacement (RMA) or hardware upgrades. Recommended actions that
+involve these approaches include, but are not limited to:
+Configuration changes
+Software upgrades
+Firmware upgrades
+Some Field Notice solutions guide customers to perform hardware replacements as the best
+way to resolve an issue. Recommended actions that involve these approaches include actions
+such as hardware replacements. Customers can request replacements through an upgrade
+form available at the end of the Field Notice when it applies.
+When considering configuration changes, software and/or firmware upgrades, customers
+must make their own determinations regarding implementing any recommendations in Field
+Notices. In all cases, customers should ensure that the devices to be upgraded contain
+sufficient memory and confirm that current hardware and software configurations will
+continue to be supported properly by the new release or solution. If the information is not
+clear, customers are advised to contact the Cisco Technical Assistance Center (TAC) or their
+contracted maintenance providers.
+How do Field Notices differ from other Cisco product and product
+issue notifications?
+Cisco uses several methods to deliver product and issue related information to our
+Customers and Partners, such as Security Advisories, Software Advisories, End of Life
+Notices, etc. Each form of communication serves a specific purpose, but may overlap from
+time-to-time. Field Notices are structured so that they can be used as a stand-alone
+document and/or in conjunction with other customer-facing documents.
+Security Advisories
+Software Advisories
+End-of-Life Notices
+
+--- PAGE 8 ---
+What is the purpose of the Serial Number Validation (SNV) Tool?
+Field Notices provide information on known issues for Cisco products identified by a list or
+range of serial numbers. The SNV Tool provides the ability to determine whether the serial
+number(s) of your product is “Affected” or “Not Affected” by the Field Notice by inputting a
+serial number(s) into the tool. The results of the tool are returned in a tabular format, with an
+indication displaying “Affected” or “Not Affected” in front of each of the serial numbers.
+Where can the Serial Number Validation (SNV) Tool link be found?
+The SNV Toolʼs link can be found within the Field Notice document, in either of these
+sections: Workaround/Solution, How to Identify Affected Products, or Serial Number
+Validation.
+The SNV Tool link is mentioned in a Field Notice only upon availability of the
+affected range of product information in the SNV Tool.
+How do I use the Serial Number Validation (SNV) Tool?
+If the Field Notice has a SNV Tool link included, complete these steps:
+1.  Click the Serial Number Validation Tool link within the Field Notice to access the tool.
+2.  Enter the serial number(s), separated by comma or space, in the search box and click
+Submit to verify whether or not the unit(s) is affected by the Field Notice.
+3.  If the list you are entering exceeds 100 serial numbers, complete these steps to upload
+the list in the tool:
+     a.  Create an Excel file (or generic CSV format) and enter the list of serial numbers in a
+single column. Save the file on your local computer.
+     b.  In the SNV Tool, click Browse and choose the Excel file with the list of serial
+numbers.
+     c.  Click Upload and wait for the upload to complete.
+     d.  Click Submit and wait for the results to populate.
+4.  Click Download to export the result into a spreadsheet.
+Note
+If the serial number entered shows up as affected, refer to the Field Notice and follow the directions
+in the Workaround/Solution section.
+
+--- PAGE 9 ---
+How can customers request a replacement for a unit affected by a
+Field Notice?
+Once the user verifies their unit is affected by an issue described in a particular Field Notice,
+use the following steps to request a replacement:
+1. Open the Field Notice and use the Products Affected table and/or Serial Number
+Validation Tool and additional conditions mentioned in the Field Notice to determine
+whether the unit is affected by the issue.
+2. If the unit is affected, go to the Upgrade Program Information section of the Field Notice,
+and click the provided link to request an upgrade.
+Upgrade requests must be submitted through the specific Support Case Manager
+(SCM) link provided within the Field Notice.
+How can customers use the Upgrade Program?
+To submit an Upgrade request, follow these steps:
+1. Open the Field Notice that describes the issue affecting your unit. (You will be required to
+log in to cisco.com.)
+2. Verify whether the Products Affected and Problem Description mentioned in the Field
+Notice match the issue.
+3. Use the Serial Number Validation Tool as described in "How do I use the Serial Number
+Validation (SNV) Tool?" FAQ to confirm if your unit is affected or not
+Note: The Serial Number Validation (SNV) link is mentioned in a Field Notice only upon
+availability of the affected range of product information. If the SNV link is not available in
+the Field Notice, move to step #4.
+4. For affected units that the Field Notice recommends replacement, follow the direction and
+link provided in the Upgrade Program Information section.
+5. Once the request is submitted, the user will receive the Service Request #. Updates to the
+status will be provided through Service Request updates or by checking the RMA status.
+For further details on Replacements, refer to Field Notice Affected Hardware replacement
+FAQ (sharepoint.com).
+
+--- PAGE 10 ---
+Quick Links -
+About Cisco
+Contact Us
+Careers
+Connect with a partner
+Resources and Legal -
+Feedback
+Help
+Terms & Conditions
+Privacy
+Cookies / Do not sell or share my personal data
+Accessibility
+Trademarks
+Supply Chain Transparency
+Newsroom
+Sitemap
+© 2026 Cisco Systems, Inc.
+
+--- PAGE 11 ---

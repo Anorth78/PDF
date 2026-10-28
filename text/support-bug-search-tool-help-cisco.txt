@@ -1,0 +1,263 @@
+--- PAGE 1 ---
+Log in
+Bug Search Tool Help
+You have reached the Help and FAQ page for Cisco Bug Search Tool (BST). For more assistance
+with Cisco.com, refer to global help. In order to visit the Japanese translation of the FAQ, refer to
+our Japanese version of the Help page.
+Contents
+Introduction to Bug Search
+Search for Bugs
+Sort and Filter Search Results
+View Bug Details
+Introduction
+The Cisco bug tracking system maintains a comprehensive list of defects and vulnerabilities in
+Cisco products and software. Bug Search is a web-based tool that acts as a gateway to the bug
+tracking system and provides you with detailed defect information about your products and
+software.
+Each bug has a unique identifier (ID). Cisco bug IDs use a pattern of CSCxxNNNNN, where x is any
+letter (a-z) and N is any number (0-9). These bug IDs are referenced in Software Release Notes,
+Security Advisories, Field Notices and other Cisco support documents. Technical Assistance Center
+(TAC) engineers or other Cisco staff can also provide you with bug IDs.
+Return to top
+Benefits of Bug Search
+Bug Search can assist you with:
+Risk Management
+Access bug information conveyed through PSIRT Advisories, Security alerts, and so on
+Research potential bugs and vulnerabilities before software upgrades
+Product Maintenance/Operation
+Monitor existing or known bugs for updates
+Search for bugs in production software releases on Cisco products
+Troubleshooting
+Diagnose and troubleshoot issues you encounter and find resolutions
+Return to top
+Access Bug Search
+Anyone who has a valid Cisco.com account can access Bug Search online, but only customers and
+partners can utilize its advanced features. Registered users can view up to 200 bugs per month
+without a service contract using a Bug ID. Customers and partners who have a valid service
+contract can leverage advance features like Product, keyword, and release-based searches.
+
+--- PAGE 2 ---
+Note: If you do not have a profile on Cisco.com, you can obtain a login and create a user profile at
+the Cisco.com Registration page. After you register a Cisco.com account, you must associate a
+Service Contract to your Cisco.com login profile.
+Return to top
+Bug Search Feedback
+The feedback link is located in the upper right-hand corner of Bug Search. This form allows you to
+report general feedback or problems with Bug Search. Every feedback submission is reviewed by
+the Bug Search Support Team. If you provide your contact information, we can reach out to you
+about the feedback submission.
+Return to top
+Search for Bugs
+There are four main search options available in Bug Search:
+Bug ID Search - Search for a specific bug by its ID.
+Keyword Search - Search for bugs that contain specific keywords.
+Product Based Search - Search the database for all bugs related to a specific product.
+Release Version Search - Search based on a specific release version.
+Return to top
+Bug ID Search
+When to Use
+You have one or more Cisco bug IDs and want to obtain details on those bugs.
+How to Use
+Follow these steps:
+Enter a specific bug ID into the basic search box. Currently, multiple bugs as search input is not
+supported.
+Press Enter on your keyboard or leave the field.
+
+--- PAGE 3 ---
+Return to top
+Keyword Search
+When to Use
+You experience a specific problem or issue and want to look for known bugs and fixes related to it.
+How to Use
+Follow these steps:
+Enter a keyword o rmultiple keywords into the search field.
+The system scans the bug headline, bug Release-note Enclosure (RNE) details, and other key bug
+data elements (such as product, software, and so on) and provides matching results for keywords
+entered.
+Press Enter on your keyboard or leave the field.
+Search Syntax Options
+In order to increase your search relevancy, Bug Search supports these Search Syntax options.
+Type Example Results
+Implicit synonym support Crash Matches any bug with crash,
+crashed, or crashing
+Support for multiple strings Ethernet interface Matches anything that has keyword
+Ethernet or interface
+Search for exact string match "Ethernet interface" Matches anything that has the
+exact phrase Ethernet interface
+Return to top
+Product Based Search
+When to Use
+You have a product that runs specific software and want to research the bugs related to that device.
+
+--- PAGE 4 ---
+h4>How to Use
+Choose based on Series/Model or Product ID from the 'Product' drop-down list. You can select
+from the list of autosuggest options for the Series/Model based search. Alternatively, you can also
+choose to navigate the tree and perform a selection using the "Select from List" option.
+Choose a Release (as shown here) in order to further refine your search.
+Note: Bugs at Cisco are not always tracked at the Cisco product model level. In these instances, all
+bugs at the series level impact all the models in the series.
+Release Version Search
+In order to further refine your search, you can also choose a Release based on whether a bug is
+affecting/fixed-in a specific release. The release search has autosuggest options and also allows
+free-form searching (that is, you can type your own version number there).
+Standalone release search is also supported. This means a search can be performed with only the
+release name and without a keyword or product selection (as shown here).
+Note: By default, your search results include bugs with all severity levels and statuses, and bugs
+that were modified any time in the bug life cycle. After you perform a search, you can filter your
+search results in order to display those with a particular Status, Severity, etc.
+Return to top
+Sort and Filter Search Results
+After you perform a search, the search results are listed below your search criteria. A preview of the
+bug information is shown and you can mouse over bugs to see more content about a specific bug.
+
+--- PAGE 5 ---
+You can click on any one bug title to open the Bug Details page for that bug. Before you choose the
+bug or bugs you want to view, there are multiple options available to browse and filter your search
+results table.
+Return to top
+Search Results
+The initial set of 25 search results is shown in the bottom pane. Drag the scroll bar and the next set
+of 25 results will automatically get loaded. Pagination of search results is not supported currently.
+This functionality will be available in a future release. Note - because pagination is not supported,
+sometimes table refresh rates can be slower if the scroll bar is adjusted too quickly.
+Return to top
+View Key Bug Details
+Before you click a specific bug ID to view the Bug Details Page, you can view key bug details on the
+Search Results page itself. Roll your mouse over a specific bug to see more information about that
+bug.
+
+--- PAGE 6 ---
+Return to top
+Default Sort Order
+The default sort order for your search results is dependent upon the search method you use. By
+default, the bugs are displayed in the order most closely related to your search criteria.
+Change Sort Order
+In order to change the order your results are sorted, choose a value in the Sort by drop-down list as
+shown here.
+Return to top
+Apply and Remove Filters
+Bug Search offers powerful filtering options. You can filter your search results based on Bug
+Severity, Bug Status, Bug Rating, Bug Modified Date, and number of support cases.
+Applying Filters
+Choose an appropriate value from the drop-down list by choosing either one Filter or multiple lters
+from the available categories.
+
+--- PAGE 7 ---
+After each selection, the results page will automatically load under the filters pane. If you select
+multiple filters, it behaves like an AND condition.
+For example, this filter selection would load all bugs that contain the keyword "router crash" which
+are fixed and have a severity of 1.
+Removing Filters
+To remove a particular filter, simply click the appropriate filter and choose the empty box from the
+drop-down list as shown:
+Export Results to Excel
+You can export all the bug details from your search to a Microsoft Excel spreadsheet so you can
+view them later at your convenience. Presently, up to 10,000 bugs can be exported at a time to an
+Excel spreadsheet.
+View Bug Details
+When you click a linked bug ID in your search results list, you are taken to the Bug Details page for
+that bug. The Bug Details page contains information in detail about the bug.
+Return to top
+Details Section
+
+--- PAGE 8 ---
+The details section contains information related to the bug status, severity, product, fixed/affected
+releases of the bug, option to download software for the fixed release, and the number of support
+cases associated with the bug.
+You can also view the current community discussions on that bug or have an option to initiate a new
+discussion.
+Severity
+Bug Severity is usually defined from the development managers' point of view and gives the
+product teams ways to focus on bug fixes for their next releases. Severity is also impacted by
+customer priority and other details not displayed within Bug Search. This table defines bug severity
+levels.
+Bug Severity Level Description
+1 Catastrophic Reasonably common circumstances cause the entire system to
+fail, or a major subsystem to stop working, or other devices on the
+network to be disrupted. There is no workaround.
+Example: Router crashes when you enter the isdn bind-l3
+iua-backhaul dpnss command.
+2 Severe Important functions are unusable, and there is no workaround, but
+the other functions and the rest of the network operates normally.
+Example: IP helper addresses are ignored.
+3 Moderate Things fail under unusual circumstances, or minor features do not
+work at all, or things fail but there is a low-impact workaround. This
+is the highest level for documentation bugs.
+Example: LAT does not work unless you have an IP address on the
+interface.
+4 Minor Things fail under very unusual circumstances, but operation
+essentially recovers without intervention. Users do not need to
+install any workarounds, and performance impact is tolerable.
+Example: The first segment for each TCP connection is always
+retransmitted.
+5 Cosmetic The defect causes no real detrimental effect on system
+functionality.
+Example: The word "connection" is incorrectly spelled "conection"
+in a display.
+6 Enhancement This represents a request for new functionality or for an
+improvement to a feature that is currently offered.
+
+--- PAGE 9 ---
+Return to top
+Status
+Important Note: Status can change frequently throughout the lifecycle of a bug. For example, if the
+status is Fixed, the bug is most likely fixed in a new release of the software, as represented in the
+Known fixed Releases.
+Status Description
+Open The bug has not been fixed.
+Fixed The bug has been fixed.
+Other The bug is a duplicate of another bug.
+Terminated A decision was made not to fix the bug.
+Return to top
+Last Modified
+This field displays the last time the bug details were changed.
+Return to top
+Product
+This represents the Cisco Product name or Software in which the bug occurs.
+Return to top
+Known affected releases
+This field displays the software releases known to be impacted by this bug.
+Return to top
+Known fixed releases
+This field displays the software releases known to contain a fix for this bug.
+Return to top
+Bug Description Content Quality Ratings
+In order to assist in improving the bug description of individual bugs, Bug Search has a provision for
+quality ratings. Each bug will be associated with content quality information which will be an average
+of all rating information provided by customers. Cisco recommends that our customers provide
+ratings for all the bugs viewed based on bug description (for example, symptom, condition, and
+workaround). Bug Quality ratings are tracked at five different levels:
+One star rating: Poor (1)
+Two star rating: Moderate (2)
+Three star rating: Medium (3)
+Four star rating: Good (4)
+Five star rating: Excellent (5)
+
+--- PAGE 10 ---
+Quick Links -
+About Cisco
+Contact Us
+Careers
+Connect with a partner
+Resources and Legal -
+Feedback
+Help
+Terms & Conditions
+Privacy
+Cookies / Do not sell or share my personal data
+Accessibility
+Trademarks
+Supply Chain Transparency
+Content quality information is available in the search results table and also in the Bug Details page
+below the description of the bug. On the bug details page, along with overall average quality
+information, the number of users who submitted the feedback is made available next to the rating
+within parenthesis. For example, in the case below, two users have rated the bug based on bug
+description details. You can select the star rating and provide any optional comments before you
+submit ratings information.
+Return to top
+
+--- PAGE 11 ---
+Newsroom
+Sitemap
+© 2026 Cisco Systems, Inc.

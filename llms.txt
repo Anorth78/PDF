@@ -7,7 +7,7 @@ START HERE: use library.json (or api/documents.json) to enumerate every document
 Do not rely on search-engine indexing or directory browsing.
 For each document, fetch its extracted text_url for searchable text; use pdf_url for the original PDF.
 
-Document count: 11
+Document count: 20
 
 ## Machine-readable resources
 - Catalogue: https://anorth78.github.io/PDF/library.json
@@ -16,57 +16,102 @@ Document count: 11
 
 ## Documents
 
-### Bonus1NexusDashboardDataCenterFabric transcript
-- ID: bonus1nexusdashboarddatacenterfabric-transcript
-- Text: https://anorth78.github.io/PDF/text/bonus1nexusdashboarddatacenterfabric-transcript.txt
-- PDF: https://anorth78.github.io/PDF/pdfs/bonus1nexusdashboarddatacenterfabric-transcript.pdf
+### 3 Way RMA   Self Sparing Quick Reference Guide
+- ID: 3-way-rma-self-sparing-quick-reference-guide
+- Text: https://anorth78.github.io/PDF/text/3-way-rma-self-sparing-quick-reference-guide.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/3-way-rma-self-sparing-quick-reference-guide.pdf
 
-### Bonus2CatalystSDWANBranchConnectivity transcript
-- ID: bonus2catalystsdwanbranchconnectivity-transcript
-- Text: https://anorth78.github.io/PDF/text/bonus2catalystsdwanbranchconnectivity-transcript.txt
-- PDF: https://anorth78.github.io/PDF/pdfs/bonus2catalystsdwanbranchconnectivity-transcript.pdf
+### Asset Management   License Tagging transcript
+- ID: asset-management-license-tagging-transcript
+- Text: https://anorth78.github.io/PDF/text/asset-management-license-tagging-transcript.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/asset-management-license-tagging-transcript.pdf
 
-### Bonus3SecureFirewallSitetoSiteVPN1 transcript
-- ID: bonus3securefirewallsitetositevpn1-transcript
-- Text: https://anorth78.github.io/PDF/text/bonus3securefirewallsitetositevpn1-transcript.txt
-- PDF: https://anorth78.github.io/PDF/pdfs/bonus3securefirewallsitetositevpn1-transcript.pdf
+### Best Practice Smart Accounts,Virtual Accounts and license tagging transcript
+- ID: best-practice-smart-accounts-virtual-accounts-and-license-tagging-transcript
+- Text: https://anorth78.github.io/PDF/text/best-practice-smart-accounts-virtual-accounts-and-license-tagging-transcript.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/best-practice-smart-accounts-virtual-accounts-and-license-tagging-transcript.pdf
 
-### Learning Map
-- ID: learning-map
-- Text: https://anorth78.github.io/PDF/text/learning-map.txt
-- PDF: https://anorth78.github.io/PDF/pdfs/learning-map.pdf
+### Bug Search Tool transcript
+- ID: bug-search-tool-transcript
+- Text: https://anorth78.github.io/PDF/text/bug-search-tool-transcript.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/bug-search-tool-transcript.pdf
 
-### Part1IntroWhyCloudControlAICanvas transcript
-- ID: part1introwhycloudcontrolaicanvas-transcript
-- Text: https://anorth78.github.io/PDF/text/part1introwhycloudcontrolaicanvas-transcript.txt
-- PDF: https://anorth78.github.io/PDF/pdfs/part1introwhycloudcontrolaicanvas-transcript.pdf
+### Cisco AI Assistant for Support Overview transcript
+- ID: cisco-ai-assistant-for-support-overview-transcript
+- Text: https://anorth78.github.io/PDF/text/cisco-ai-assistant-for-support-overview-transcript.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cisco-ai-assistant-for-support-overview-transcript.pdf
 
-### Part2DemoUnifiedInventoryTopology transcript
-- ID: part2demounifiedinventorytopology-transcript
-- Text: https://anorth78.github.io/PDF/text/part2demounifiedinventorytopology-transcript.txt
-- PDF: https://anorth78.github.io/PDF/pdfs/part2demounifiedinventorytopology-transcript.pdf
+### Cisco AI Assistant for Support
+- ID: cisco-ai-assistant-for-support
+- Text: https://anorth78.github.io/PDF/text/cisco-ai-assistant-for-support.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cisco-ai-assistant-for-support.pdf
 
-### Part3DemoUnifiedAlertManagementHandofftoAICanvas transcript
-- ID: part3demounifiedalertmanagementhandofftoaicanvas-transcript
-- Text: https://anorth78.github.io/PDF/text/part3demounifiedalertmanagementhandofftoaicanvas-transcript.txt
-- PDF: https://anorth78.github.io/PDF/pdfs/part3demounifiedalertmanagementhandofftoaicanvas-transcript.pdf
+### Cisco RadKit ( Rapid Adoption Kit ) transcript
+- ID: cisco-radkit-rapid-adoption-kit-transcript
+- Text: https://anorth78.github.io/PDF/text/cisco-radkit-rapid-adoption-kit-transcript.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cisco-radkit-rapid-adoption-kit-transcript.pdf
 
-### Part4OverviewArchitecture transcript
-- ID: part4overviewarchitecture-transcript
-- Text: https://anorth78.github.io/PDF/text/part4overviewarchitecture-transcript.txt
-- PDF: https://anorth78.github.io/PDF/pdfs/part4overviewarchitecture-transcript.pdf
+### Cisco TAC Best Practices & Innovations  TAC Workflow, Case Lifecycle and Modern Support Strategies transcript
+- ID: cisco-tac-best-practices-innovations-tac-workflow-case-lifecycle-and-modern-support-strategies-transcript
+- Text: https://anorth78.github.io/PDF/text/cisco-tac-best-practices-innovations-tac-workflow-case-lifecycle-and-modern-support-strategies-transcript.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cisco-tac-best-practices-innovations-tac-workflow-case-lifecycle-and-modern-support-strategies-transcript.pdf
 
-### Part5DemoPromptLibraryWidgets transcript
-- ID: part5demopromptlibrarywidgets-transcript
-- Text: https://anorth78.github.io/PDF/text/part5demopromptlibrarywidgets-transcript.txt
-- PDF: https://anorth78.github.io/PDF/pdfs/part5demopromptlibrarywidgets-transcript.pdf
+### Cisco TAC Best Practices & Innovations   Technical Support Excellence Guide
+- ID: cisco-tac-best-practices-innovations-technical-support-excellence-guide
+- Text: https://anorth78.github.io/PDF/text/cisco-tac-best-practices-innovations-technical-support-excellence-guide.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cisco-tac-best-practices-innovations-technical-support-excellence-guide.pdf
 
-### Part6DemoDeepReasoningMode transcript
-- ID: part6demodeepreasoningmode-transcript
-- Text: https://anorth78.github.io/PDF/text/part6demodeepreasoningmode-transcript.txt
-- PDF: https://anorth78.github.io/PDF/pdfs/part6demodeepreasoningmode-transcript.pdf
+### Customer File Uploads to Cisco Technical Assistance Center   Cisco
+- ID: customer-file-uploads-to-cisco-technical-assistance-center-cisco
+- Text: https://anorth78.github.io/PDF/text/customer-file-uploads-to-cisco-technical-assistance-center-cisco.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/customer-file-uploads-to-cisco-technical-assistance-center-cisco.pdf
 
-### Part7DemoKnowledgeBase transcript
-- ID: part7demoknowledgebase-transcript
-- Text: https://anorth78.github.io/PDF/text/part7demoknowledgebase-transcript.txt
-- PDF: https://anorth78.github.io/PDF/pdfs/part7demoknowledgebase-transcript.pdf
+### Field Notice Adendum
+- ID: field-notice-adendum
+- Text: https://anorth78.github.io/PDF/text/field-notice-adendum.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/field-notice-adendum.pdf
+
+### How to Engage with TAC New transcript
+- ID: how-to-engage-with-tac-new-transcript
+- Text: https://anorth78.github.io/PDF/text/how-to-engage-with-tac-new-transcript.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/how-to-engage-with-tac-new-transcript.pdf
+
+### Limited Use Smart Account transcript
+- ID: limited-use-smart-account-transcript
+- Text: https://anorth78.github.io/PDF/text/limited-use-smart-account-transcript.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/limited-use-smart-account-transcript.pdf
+
+### Meet the Cisco Technical Assistance Center transcript
+- ID: meet-the-cisco-technical-assistance-center-transcript
+- Text: https://anorth78.github.io/PDF/text/meet-the-cisco-technical-assistance-center-transcript.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/meet-the-cisco-technical-assistance-center-transcript.pdf
+
+### Partner Support Automation   RADKit & AutoRCA Overview and demo transcript
+- ID: partner-support-automation-radkit-autorca-overview-and-demo-transcript
+- Text: https://anorth78.github.io/PDF/text/partner-support-automation-radkit-autorca-overview-and-demo-transcript.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/partner-support-automation-radkit-autorca-overview-and-demo-transcript.pdf
+
+### Smart licenseing troubleshooting and Case Studies transcript
+- ID: smart-licenseing-troubleshooting-and-case-studies-transcript
+- Text: https://anorth78.github.io/PDF/text/smart-licenseing-troubleshooting-and-case-studies-transcript.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/smart-licenseing-troubleshooting-and-case-studies-transcript.pdf
+
+### SOftware licensing guide
+- ID: software-licensing-guide
+- Text: https://anorth78.github.io/PDF/text/software-licensing-guide.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/software-licensing-guide.pdf
+
+### Support   Bug Search Tool Help   Cisco
+- ID: support-bug-search-tool-help-cisco
+- Text: https://anorth78.github.io/PDF/text/support-bug-search-tool-help-cisco.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/support-bug-search-tool-help-cisco.pdf
+
+### Support   Product Field Notice Summary   Cisco
+- ID: support-product-field-notice-summary-cisco
+- Text: https://anorth78.github.io/PDF/text/support-product-field-notice-summary-cisco.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/support-product-field-notice-summary-cisco.pdf
+
+### Upgrading Limited Use Smart Accounts transcript
+- ID: upgrading-limited-use-smart-accounts-transcript
+- Text: https://anorth78.github.io/PDF/text/upgrading-limited-use-smart-accounts-transcript.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/upgrading-limited-use-smart-accounts-transcript.pdf

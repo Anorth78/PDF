@@ -4,194 +4,347 @@
   "description": "A searchable collection of PDF knowledge resources.",
   "owner": "Your Organization",
   "site_url": "https://anorth78.github.io/PDF",
-  "generated": "2026-10-13T19:10:09.207555+00:00",
-  "document_count": 11,
+  "generated": "2026-10-28T14:44:20.448473+00:00",
+  "document_count": 20,
   "documents": [
     {
-      "id": "bonus1nexusdashboarddatacenterfabric-transcript",
-      "title": "Bonus1NexusDashboardDataCenterFabric transcript",
-      "original_filename": "Bonus1NexusDashboardDataCenterFabric transcript.pdf",
-      "source_relative_path": "Bonus1NexusDashboardDataCenterFabric transcript.pdf",
-      "pdf_url": "pdfs/bonus1nexusdashboarddatacenterfabric-transcript.pdf",
-      "text_url": "text/bonus1nexusdashboarddatacenterfabric-transcript.txt",
+      "id": "3-way-rma-self-sparing-quick-reference-guide",
+      "title": "3 Way RMA   Self Sparing Quick Reference Guide",
+      "original_filename": "3-Way RMA - Self Sparing Quick Reference Guide.pdf",
+      "source_relative_path": "3-Way RMA - Self Sparing Quick Reference Guide.pdf",
+      "pdf_url": "pdfs/3-way-rma-self-sparing-quick-reference-guide.pdf",
+      "text_url": "text/3-way-rma-self-sparing-quick-reference-guide.txt",
       "type": "PDF",
-      "pages": 3,
-      "bytes": 62207,
-      "sha256": "74f8430eefcc72ce71ee197c91e626ee59bfd63c128ccfbc119aae80b46124c8",
-      "modified": "2026-10-13T19:07:09.567879+00:00",
+      "pages": 20,
+      "bytes": 1195127,
+      "sha256": "f58a3e543f29d450702007938483d4ee222efbcd4c8a8b7d8ded8fcf5c6fd9b6",
+      "modified": "2026-10-28T13:37:26.384431+00:00",
       "text_extraction": {
         "success": true,
         "error": null
       }
     },
     {
-      "id": "bonus2catalystsdwanbranchconnectivity-transcript",
-      "title": "Bonus2CatalystSDWANBranchConnectivity transcript",
-      "original_filename": "Bonus2CatalystSDWANBranchConnectivity transcript.pdf",
-      "source_relative_path": "Bonus2CatalystSDWANBranchConnectivity transcript.pdf",
-      "pdf_url": "pdfs/bonus2catalystsdwanbranchconnectivity-transcript.pdf",
-      "text_url": "text/bonus2catalystsdwanbranchconnectivity-transcript.txt",
+      "id": "asset-management-license-tagging-transcript",
+      "title": "Asset Management   License Tagging transcript",
+      "original_filename": "Asset Management - License Tagging_transcript.pdf",
+      "source_relative_path": "Asset Management - License Tagging_transcript.pdf",
+      "pdf_url": "pdfs/asset-management-license-tagging-transcript.pdf",
+      "text_url": "text/asset-management-license-tagging-transcript.txt",
+      "type": "PDF",
+      "pages": 0,
+      "bytes": 8408,
+      "sha256": "028400d5ee63102baf7f58576768bf9d86c7b167f60bf3462215a4b80e030eab",
+      "modified": "2026-10-28T14:41:53.048071+00:00",
+      "text_extraction": {
+        "success": false,
+        "error": "Stream has ended unexpectedly"
+      }
+    },
+    {
+      "id": "best-practice-smart-accounts-virtual-accounts-and-license-tagging-transcript",
+      "title": "Best Practice Smart Accounts,Virtual Accounts and license tagging transcript",
+      "original_filename": "Best Practice Smart Accounts,Virtual Accounts and license tagging_transcript.pdf",
+      "source_relative_path": "Best Practice Smart Accounts,Virtual Accounts and license tagging_transcript.pdf",
+      "pdf_url": "pdfs/best-practice-smart-accounts-virtual-accounts-and-license-tagging-transcript.pdf",
+      "text_url": "text/best-practice-smart-accounts-virtual-accounts-and-license-tagging-transcript.txt",
+      "type": "PDF",
+      "pages": 0,
+      "bytes": 11350,
+      "sha256": "df5b9404ceef5dca2c06715ecfcc50f053ef55ffec070955fddecd25007526d8",
+      "modified": "2026-10-28T14:43:33.099133+00:00",
+      "text_extraction": {
+        "success": false,
+        "error": "Stream has ended unexpectedly"
+      }
+    },
+    {
+      "id": "bug-search-tool-transcript",
+      "title": "Bug Search Tool transcript",
+      "original_filename": "Bug Search Tool transcript.pdf",
+      "source_relative_path": "Bug Search Tool transcript.pdf",
+      "pdf_url": "pdfs/bug-search-tool-transcript.pdf",
+      "text_url": "text/bug-search-tool-transcript.txt",
+      "type": "PDF",
+      "pages": 0,
+      "bytes": 3336,
+      "sha256": "386b54e90f29a1d4c34cf0c688fb7c49346a6c9aac9abbbf1a0e227b2506bde6",
+      "modified": "2026-10-28T14:42:20.325262+00:00",
+      "text_extraction": {
+        "success": false,
+        "error": "Stream has ended unexpectedly"
+      }
+    },
+    {
+      "id": "cisco-ai-assistant-for-support-overview-transcript",
+      "title": "Cisco AI Assistant for Support Overview transcript",
+      "original_filename": "Cisco AI Assistant for Support Overview_transcript.pdf",
+      "source_relative_path": "Cisco AI Assistant for Support Overview_transcript.pdf",
+      "pdf_url": "pdfs/cisco-ai-assistant-for-support-overview-transcript.pdf",
+      "text_url": "text/cisco-ai-assistant-for-support-overview-transcript.txt",
+      "type": "PDF",
+      "pages": 0,
+      "bytes": 4078,
+      "sha256": "d2f99a869e5faa942a56156e87fa0ae78376efa2fab28bc0a5c6257ec67069e8",
+      "modified": "2026-10-28T14:42:08.780161+00:00",
+      "text_extraction": {
+        "success": false,
+        "error": "Stream has ended unexpectedly"
+      }
+    },
+    {
+      "id": "cisco-ai-assistant-for-support",
+      "title": "Cisco AI Assistant for Support",
+      "original_filename": "Cisco AI Assistant for Support.pdf",
+      "source_relative_path": "Cisco AI Assistant for Support.pdf",
+      "pdf_url": "pdfs/cisco-ai-assistant-for-support.pdf",
+      "text_url": "text/cisco-ai-assistant-for-support.txt",
+      "type": "PDF",
+      "pages": 132,
+      "bytes": 10345997,
+      "sha256": "3b886e0d8c12e4b20f750e022316df12da418acfb44fc4d1a3eaa4a7bfbdccf4",
+      "modified": "2026-10-28T13:29:19.421129+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "cisco-radkit-rapid-adoption-kit-transcript",
+      "title": "Cisco RadKit ( Rapid Adoption Kit ) transcript",
+      "original_filename": "Cisco RadKit ( Rapid Adoption Kit ) transcript.pdf",
+      "source_relative_path": "Cisco RadKit ( Rapid Adoption Kit ) transcript.pdf",
+      "pdf_url": "pdfs/cisco-radkit-rapid-adoption-kit-transcript.pdf",
+      "text_url": "text/cisco-radkit-rapid-adoption-kit-transcript.txt",
+      "type": "PDF",
+      "pages": 0,
+      "bytes": 6683,
+      "sha256": "60ab639e349a72fb7e349a0d783ea6a558c81b0d6b88e0ec1457f6372f7693fc",
+      "modified": "2026-10-28T14:42:32.289784+00:00",
+      "text_extraction": {
+        "success": false,
+        "error": "Stream has ended unexpectedly"
+      }
+    },
+    {
+      "id": "cisco-tac-best-practices-innovations-tac-workflow-case-lifecycle-and-modern-support-strategies-transcript",
+      "title": "Cisco TAC Best Practices & Innovations  TAC Workflow, Case Lifecycle and Modern Support Strategies transcript",
+      "original_filename": "Cisco TAC Best Practices & Innovations  TAC Workflow, Case Lifecycle and Modern Support Strategies_transcript.pdf",
+      "source_relative_path": "Cisco TAC Best Practices & Innovations  TAC Workflow, Case Lifecycle and Modern Support Strategies_transcript.pdf",
+      "pdf_url": "pdfs/cisco-tac-best-practices-innovations-tac-workflow-case-lifecycle-and-modern-support-strategies-transcript.pdf",
+      "text_url": "text/cisco-tac-best-practices-innovations-tac-workflow-case-lifecycle-and-modern-support-strategies-transcript.txt",
+      "type": "PDF",
+      "pages": 0,
+      "bytes": 34395,
+      "sha256": "141c94abea612ae377da8a5424489f499809282248d1809cd60697b99fdb8f52",
+      "modified": "2026-10-28T14:43:43.766386+00:00",
+      "text_extraction": {
+        "success": false,
+        "error": "Stream has ended unexpectedly"
+      }
+    },
+    {
+      "id": "cisco-tac-best-practices-innovations-technical-support-excellence-guide",
+      "title": "Cisco TAC Best Practices & Innovations   Technical Support Excellence Guide",
+      "original_filename": "Cisco TAC Best Practices & Innovations - Technical Support Excellence Guide.pdf",
+      "source_relative_path": "Cisco TAC Best Practices & Innovations - Technical Support Excellence Guide.pdf",
+      "pdf_url": "pdfs/cisco-tac-best-practices-innovations-technical-support-excellence-guide.pdf",
+      "text_url": "text/cisco-tac-best-practices-innovations-technical-support-excellence-guide.txt",
+      "type": "PDF",
+      "pages": 42,
+      "bytes": 3635868,
+      "sha256": "e3f2fa238748bfd187d74a0da45ec2d58148112b5952e06839de14223fc26238",
+      "modified": "2026-10-28T13:42:56.202733+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "customer-file-uploads-to-cisco-technical-assistance-center-cisco",
+      "title": "Customer File Uploads to Cisco Technical Assistance Center   Cisco",
+      "original_filename": "Customer File Uploads to Cisco Technical Assistance Center - Cisco.pdf",
+      "source_relative_path": "Customer File Uploads to Cisco Technical Assistance Center - Cisco.pdf",
+      "pdf_url": "pdfs/customer-file-uploads-to-cisco-technical-assistance-center-cisco.pdf",
+      "text_url": "text/customer-file-uploads-to-cisco-technical-assistance-center-cisco.txt",
+      "type": "PDF",
+      "pages": 13,
+      "bytes": 2590283,
+      "sha256": "14f593be3c8309752be6188d9d3bc17e34f13f27f93652fcb2a1ec66416c6d23",
+      "modified": "2026-10-28T13:54:04.108048+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "field-notice-adendum",
+      "title": "Field Notice Adendum",
+      "original_filename": "Field Notice Adendum.pdf",
+      "source_relative_path": "Field Notice Adendum.pdf",
+      "pdf_url": "pdfs/field-notice-adendum.pdf",
+      "text_url": "text/field-notice-adendum.txt",
       "type": "PDF",
       "pages": 2,
-      "bytes": 58337,
-      "sha256": "be1d00cb4faaf7b72abb2a5229453b940a955651cc2adb9a0b8a5235efac7419",
-      "modified": "2026-10-13T19:07:26.853732+00:00",
+      "bytes": 164472,
+      "sha256": "f9085c7a08262122101fbdffb115f03adccdd847674649c74bbf97a9f05e5738",
+      "modified": "2026-10-28T13:29:01.696976+00:00",
       "text_extraction": {
         "success": true,
         "error": null
       }
     },
     {
-      "id": "bonus3securefirewallsitetositevpn1-transcript",
-      "title": "Bonus3SecureFirewallSitetoSiteVPN1 transcript",
-      "original_filename": "Bonus3SecureFirewallSitetoSiteVPN1 transcript.pdf",
-      "source_relative_path": "Bonus3SecureFirewallSitetoSiteVPN1 transcript.pdf",
-      "pdf_url": "pdfs/bonus3securefirewallsitetositevpn1-transcript.pdf",
-      "text_url": "text/bonus3securefirewallsitetositevpn1-transcript.txt",
+      "id": "how-to-engage-with-tac-new-transcript",
+      "title": "How to Engage with TAC New transcript",
+      "original_filename": "How to Engage with TAC New_transcript.pdf",
+      "source_relative_path": "How to Engage with TAC New_transcript.pdf",
+      "pdf_url": "pdfs/how-to-engage-with-tac-new-transcript.pdf",
+      "text_url": "text/how-to-engage-with-tac-new-transcript.txt",
       "type": "PDF",
-      "pages": 2,
-      "bytes": 59398,
-      "sha256": "6c67e53572e6511a25ae21707b14b2c990072e2235e0aaa83f8a2595601cad7c",
-      "modified": "2026-10-13T19:07:48.689707+00:00",
+      "pages": 0,
+      "bytes": 3017,
+      "sha256": "d078f40ae8ec7918fdd9046aa74bd9796d78e37d64a733fda5065464e31aee6d",
+      "modified": "2026-10-28T14:43:08.769006+00:00",
+      "text_extraction": {
+        "success": false,
+        "error": "Stream has ended unexpectedly"
+      }
+    },
+    {
+      "id": "limited-use-smart-account-transcript",
+      "title": "Limited Use Smart Account transcript",
+      "original_filename": "Limited Use Smart Account_transcript.pdf",
+      "source_relative_path": "Limited Use Smart Account_transcript.pdf",
+      "pdf_url": "pdfs/limited-use-smart-account-transcript.pdf",
+      "text_url": "text/limited-use-smart-account-transcript.txt",
+      "type": "PDF",
+      "pages": 0,
+      "bytes": 4672,
+      "sha256": "113da3d3f23f023ef483f11ec967d0d56e0276be11b3cb7deee62265195ca1b6",
+      "modified": "2026-10-28T14:43:54.965010+00:00",
+      "text_extraction": {
+        "success": false,
+        "error": "Stream has ended unexpectedly"
+      }
+    },
+    {
+      "id": "meet-the-cisco-technical-assistance-center-transcript",
+      "title": "Meet the Cisco Technical Assistance Center transcript",
+      "original_filename": "Meet the Cisco Technical Assistance Center transcript.pdf",
+      "source_relative_path": "Meet the Cisco Technical Assistance Center transcript.pdf",
+      "pdf_url": "pdfs/meet-the-cisco-technical-assistance-center-transcript.pdf",
+      "text_url": "text/meet-the-cisco-technical-assistance-center-transcript.txt",
+      "type": "PDF",
+      "pages": 0,
+      "bytes": 32875,
+      "sha256": "432d02ab4def01f21231457df96ee6d4175ac01932af4cdc9ce7f9dbc93dfe60",
+      "modified": "2026-10-28T14:42:45.550603+00:00",
+      "text_extraction": {
+        "success": false,
+        "error": "Stream has ended unexpectedly"
+      }
+    },
+    {
+      "id": "partner-support-automation-radkit-autorca-overview-and-demo-transcript",
+      "title": "Partner Support Automation   RADKit & AutoRCA Overview and demo transcript",
+      "original_filename": "Partner Support Automation - RADKit & AutoRCA Overview and demo_transcript.pdf",
+      "source_relative_path": "Partner Support Automation - RADKit & AutoRCA Overview and demo_transcript.pdf",
+      "pdf_url": "pdfs/partner-support-automation-radkit-autorca-overview-and-demo-transcript.pdf",
+      "text_url": "text/partner-support-automation-radkit-autorca-overview-and-demo-transcript.txt",
+      "type": "PDF",
+      "pages": 0,
+      "bytes": 42730,
+      "sha256": "ece377b9e1d2e28f910b917365628c484d16706af1c53fdfde34bd93d045c0e4",
+      "modified": "2026-10-28T14:44:07.296241+00:00",
+      "text_extraction": {
+        "success": false,
+        "error": "Stream has ended unexpectedly"
+      }
+    },
+    {
+      "id": "smart-licenseing-troubleshooting-and-case-studies-transcript",
+      "title": "Smart licenseing troubleshooting and Case Studies transcript",
+      "original_filename": "Smart licenseing troubleshooting and Case Studies_transcript.pdf",
+      "source_relative_path": "Smart licenseing troubleshooting and Case Studies_transcript.pdf",
+      "pdf_url": "pdfs/smart-licenseing-troubleshooting-and-case-studies-transcript.pdf",
+      "text_url": "text/smart-licenseing-troubleshooting-and-case-studies-transcript.txt",
+      "type": "PDF",
+      "pages": 0,
+      "bytes": 42544,
+      "sha256": "f14ba5579fad2bb8b8530df68a2b25979373adf6fa8d9e71680f070ed0a26625",
+      "modified": "2026-10-28T14:43:21.967864+00:00",
+      "text_extraction": {
+        "success": false,
+        "error": "Stream has ended unexpectedly"
+      }
+    },
+    {
+      "id": "software-licensing-guide",
+      "title": "SOftware licensing guide",
+      "original_filename": "SOftware licensing guide.pdf",
+      "source_relative_path": "SOftware licensing guide.pdf",
+      "pdf_url": "pdfs/software-licensing-guide.pdf",
+      "text_url": "text/software-licensing-guide.txt",
+      "type": "PDF",
+      "pages": 10,
+      "bytes": 284570,
+      "sha256": "17c30335479fb8496bf5d8a1964623fa94d3c7436160f1a95b7899da500ade2c",
+      "modified": "2026-10-28T13:32:27.992789+00:00",
       "text_extraction": {
         "success": true,
         "error": null
       }
     },
     {
-      "id": "learning-map",
-      "title": "Learning Map",
-      "original_filename": "Learning Map.pdf",
-      "source_relative_path": "Learning Map.pdf",
-      "pdf_url": "pdfs/learning-map.pdf",
-      "text_url": "text/learning-map.txt",
+      "id": "support-bug-search-tool-help-cisco",
+      "title": "Support   Bug Search Tool Help   Cisco",
+      "original_filename": "Support - Bug Search Tool Help - Cisco.pdf",
+      "source_relative_path": "Support - Bug Search Tool Help - Cisco.pdf",
+      "pdf_url": "pdfs/support-bug-search-tool-help-cisco.pdf",
+      "text_url": "text/support-bug-search-tool-help-cisco.txt",
       "type": "PDF",
       "pages": 11,
-      "bytes": 231650,
-      "sha256": "e0235828e938af11ecdf20c0f6ea07fb2a969588a55826d91b2f244ae7f7fbd6",
-      "modified": "2026-09-28T13:58:36.651497+00:00",
+      "bytes": 1848844,
+      "sha256": "39034d21b3821574b49fba8a497762c6acdcb3cca720824e8ccd7e50b2f13789",
+      "modified": "2026-10-28T13:51:23.992035+00:00",
       "text_extraction": {
         "success": true,
         "error": null
       }
     },
     {
-      "id": "part1introwhycloudcontrolaicanvas-transcript",
-      "title": "Part1IntroWhyCloudControlAICanvas transcript",
-      "original_filename": "Part1IntroWhyCloudControlAICanvas transcript.pdf",
-      "source_relative_path": "Part1IntroWhyCloudControlAICanvas transcript.pdf",
-      "pdf_url": "pdfs/part1introwhycloudcontrolaicanvas-transcript.pdf",
-      "text_url": "text/part1introwhycloudcontrolaicanvas-transcript.txt",
+      "id": "support-product-field-notice-summary-cisco",
+      "title": "Support   Product Field Notice Summary   Cisco",
+      "original_filename": "Support - Product Field Notice Summary - Cisco.pdf",
+      "source_relative_path": "Support - Product Field Notice Summary - Cisco.pdf",
+      "pdf_url": "pdfs/support-product-field-notice-summary-cisco.pdf",
+      "text_url": "text/support-product-field-notice-summary-cisco.txt",
       "type": "PDF",
-      "pages": 3,
-      "bytes": 63631,
-      "sha256": "a7645cab1f90c2abb2956c7fb874761731ced1460c9e8060051f8ed338c6db61",
-      "modified": "2026-10-13T19:08:10.163096+00:00",
+      "pages": 11,
+      "bytes": 1413181,
+      "sha256": "321719c8150ec117877285f970888502e740c9109a31c02bc4e297f17b951957",
+      "modified": "2026-10-28T13:53:08.934507+00:00",
       "text_extraction": {
         "success": true,
         "error": null
       }
     },
     {
-      "id": "part2demounifiedinventorytopology-transcript",
-      "title": "Part2DemoUnifiedInventoryTopology transcript",
-      "original_filename": "Part2DemoUnifiedInventoryTopology transcript.pdf",
-      "source_relative_path": "Part2DemoUnifiedInventoryTopology transcript.pdf",
-      "pdf_url": "pdfs/part2demounifiedinventorytopology-transcript.pdf",
-      "text_url": "text/part2demounifiedinventorytopology-transcript.txt",
+      "id": "upgrading-limited-use-smart-accounts-transcript",
+      "title": "Upgrading Limited Use Smart Accounts transcript",
+      "original_filename": "Upgrading Limited Use Smart Accounts_transcript.pdf",
+      "source_relative_path": "Upgrading Limited Use Smart Accounts_transcript.pdf",
+      "pdf_url": "pdfs/upgrading-limited-use-smart-accounts-transcript.pdf",
+      "text_url": "text/upgrading-limited-use-smart-accounts-transcript.txt",
       "type": "PDF",
-      "pages": 5,
-      "bytes": 73504,
-      "sha256": "1e02a4bff8b98a8f9e403d3b614736b349ca84790b5ca24e6cb2d2d90e77d8b9",
-      "modified": "2026-10-13T19:08:29.814182+00:00",
+      "pages": 0,
+      "bytes": 3528,
+      "sha256": "29ea70532f5183328899a535b514a45019d38b54be3fdb4374adf992af4a7a2e",
+      "modified": "2026-10-28T14:42:55.504454+00:00",
       "text_extraction": {
-        "success": true,
-        "error": null
-      }
-    },
-    {
-      "id": "part3demounifiedalertmanagementhandofftoaicanvas-transcript",
-      "title": "Part3DemoUnifiedAlertManagementHandofftoAICanvas transcript",
-      "original_filename": "Part3DemoUnifiedAlertManagementHandofftoAICanvas transcript.pdf",
-      "source_relative_path": "Part3DemoUnifiedAlertManagementHandofftoAICanvas transcript.pdf",
-      "pdf_url": "pdfs/part3demounifiedalertmanagementhandofftoaicanvas-transcript.pdf",
-      "text_url": "text/part3demounifiedalertmanagementhandofftoaicanvas-transcript.txt",
-      "type": "PDF",
-      "pages": 4,
-      "bytes": 68338,
-      "sha256": "4c1633b01117b6b8dde566240fb2ed1a451730378fb05b7d0888a3ea660a8d48",
-      "modified": "2026-10-13T19:08:45.833758+00:00",
-      "text_extraction": {
-        "success": true,
-        "error": null
-      }
-    },
-    {
-      "id": "part4overviewarchitecture-transcript",
-      "title": "Part4OverviewArchitecture transcript",
-      "original_filename": "Part4OverviewArchitecture transcript.pdf",
-      "source_relative_path": "Part4OverviewArchitecture transcript.pdf",
-      "pdf_url": "pdfs/part4overviewarchitecture-transcript.pdf",
-      "text_url": "text/part4overviewarchitecture-transcript.txt",
-      "type": "PDF",
-      "pages": 4,
-      "bytes": 65333,
-      "sha256": "7734da7f39331ff8e244f4a3c8729b0a07ffdfa28199b5e5e0353b8fc7aeeb62",
-      "modified": "2026-10-13T19:09:05.980887+00:00",
-      "text_extraction": {
-        "success": true,
-        "error": null
-      }
-    },
-    {
-      "id": "part5demopromptlibrarywidgets-transcript",
-      "title": "Part5DemoPromptLibraryWidgets transcript",
-      "original_filename": "Part5DemoPromptLibraryWidgets transcript.pdf",
-      "source_relative_path": "Part5DemoPromptLibraryWidgets transcript.pdf",
-      "pdf_url": "pdfs/part5demopromptlibrarywidgets-transcript.pdf",
-      "text_url": "text/part5demopromptlibrarywidgets-transcript.txt",
-      "type": "PDF",
-      "pages": 6,
-      "bytes": 73165,
-      "sha256": "aa133a05ef3bb701d385b9e353a8c54d8a814b2f3ce20afac33d087f2134d113",
-      "modified": "2026-10-13T19:09:21.968889+00:00",
-      "text_extraction": {
-        "success": true,
-        "error": null
-      }
-    },
-    {
-      "id": "part6demodeepreasoningmode-transcript",
-      "title": "Part6DemoDeepReasoningMode transcript",
-      "original_filename": "Part6DemoDeepReasoningMode transcript.pdf",
-      "source_relative_path": "Part6DemoDeepReasoningMode transcript.pdf",
-      "pdf_url": "pdfs/part6demodeepreasoningmode-transcript.pdf",
-      "text_url": "text/part6demodeepreasoningmode-transcript.txt",
-      "type": "PDF",
-      "pages": 4,
-      "bytes": 69697,
-      "sha256": "9085ddd44deca056e624a809cf41b28c4faf9da237fe3ff3c694cca3a6e02785",
-      "modified": "2026-10-13T19:09:36.552529+00:00",
-      "text_extraction": {
-        "success": true,
-        "error": null
-      }
-    },
-    {
-      "id": "part7demoknowledgebase-transcript",
-      "title": "Part7DemoKnowledgeBase transcript",
-      "original_filename": "Part7DemoKnowledgeBase transcript.pdf",
-      "source_relative_path": "Part7DemoKnowledgeBase transcript.pdf",
-      "pdf_url": "pdfs/part7demoknowledgebase-transcript.pdf",
-      "text_url": "text/part7demoknowledgebase-transcript.txt",
-      "type": "PDF",
-      "pages": 3,
-      "bytes": 63339,
-      "sha256": "e0570c2ccd76eda32964c6255eb07fd3c3430935c4f7f9ede43d7a646a965ca5",
-      "modified": "2026-10-13T19:09:54.982575+00:00",
-      "text_extraction": {
-        "success": true,
-        "error": null
+        "success": false,
+        "error": "Stream has ended unexpectedly"
       }
     }
   ]

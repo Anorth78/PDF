@@ -1,0 +1,65 @@
+﻿======================================================================
+TRANSCRIPT WITH SPEAKER IDENTIFICATION
+======================================================================
+Source file    : Bug Search Tool.mp4
+Duration       : 00:02:27
+Language       : en (confidence 1.00)
+Model          : small
+Speakers found : 2
+Generated      : 2026-10-28 09:51
+Please note    : This file was produced automatically by speech
+                 recognition and, where a visual description is
+                 included, by an image model. Both make mistakes. Check
+                 every figure, name and job title against the recording
+                 before relying on it. Each timecode points at the
+                 moment in the video where the statement can be
+                 verified.
+======================================================================
+
+[00:00:00] Speaker1:
+    Hi, the objective of this demo is to show you how to use the bug assistant to check applicability of a given bug to your network device. The first step is to find the bug in bug search tool. Let's use cscbb13018 as an example.
+
+[00:00:17] Speaker2:
+    If the bug is enabled for the cell service functionality, you will see a quick pop-up for the first time. You can click the check bug applicability link, which will start the interaction with the assistant. You can choose to check applicability or view the bug status, or give feedback to the innovation team. Let's choose the check option. The assistant provides the list of commands or
+
+[00:00:47] Speaker1:
+    log files required to perform the applicability check.
+
+[00:00:51] Speaker2:
+    For this bug, you need show inventory, show running config, and show version. I've already collected these commands from
+
+[00:00:58] Speaker1:
+    the network device in a log file. Let's upload it.
+
+[00:01:02] Speaker2:
+    It typically takes about one to minutes to complete the analysis. After the analysis is complete, the system will inform
+
+[00:01:17] Speaker1:
+    whether the bug is applicable or not. If it's applicable, you will see up to three options,
+
+[00:01:23] Speaker2:
+    software upgrade, workaround, and view fixed releases. When you select the software upgrade option, the assistant checks whether one of the Cisco suggested release for the product has the bug fixed. If there is one, then that release is presented to you. Otherwise, The Assistant suggests a fixed version that is closest to the version that is running on
+
+[00:01:44] Speaker1:
+    your device.
+
+[00:01:46] Speaker2:
+    Clicking the Workaround option will display the steps that you can take to mitigate the
+
+[00:01:50] Speaker1:
+    bug if you can't upgrade the device right now.
+
+[00:01:54] Speaker2:
+    The View Fixed Releases option lists all the versions that have the bug fixed. We continuously announce the bug Assistant on a monthly basis. You can click the Release Notes link to get the details of the latest announcements. You can also click this link to get the list of bugs
+
+[00:02:13] Speaker1:
+    supported by the bug assistant.
+
+[00:02:15] Speaker2:
+    Please use the bug assistant to be proactive
+
+[00:02:18] Speaker1:
+    and keep your network healthier.
+
+[00:02:20] Speaker2:
+    We look forward to your feedback. Thank you.

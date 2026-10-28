@@ -1,0 +1,162 @@
+﻿======================================================================
+TRANSCRIPT WITH SPEAKER IDENTIFICATION
+======================================================================
+Source file    : Best Practice Smart Accounts,Virtual Accounts and
+                 license tagging.mp4
+Duration       : 00:10:17
+Language       : en (confidence 1.00)
+Model          : small
+Speakers found : 2
+Generated      : 2026-10-28 09:50
+Please note    : This file was produced automatically by speech
+                 recognition and, where a visual description is
+                 included, by an image model. Both make mistakes. Check
+                 every figure, name and job title against the recording
+                 before relying on it. Each timecode points at the
+                 moment in the video where the statement can be
+                 verified.
+======================================================================
+
+[00:00:04] Speaker1:
+    Hi, this is Tim with Cisco and today we're going to take a look at some best practice topics. Now, this section requires that you have at least a basic understanding of smart accounts and virtual accounts and tagging. If you don't, follow the link in the notes section and that will give you some information to get you up to speed so you can come back to this and this will mean a lot more
+
+[00:00:26] Speaker2:
+    to you then.
+
+[00:00:29] Speaker1:
+    What we're covering today is available on software.cisco.com. This is your primary location to manage your downloads and upgrades, configure network
+
+[00:00:40] Speaker2:
+    plug and play, manage your licenses, order software from Cisco, and administer your smart account.
+
+[00:00:49] Speaker1:
+    We're going to be working in two primary sections. That's the smart licensing section and also the manage smart account section.
+
+[00:00:57] Speaker2:
+    I'm going to show you a couple of tips and tricks along the way. Okay.
+
+[00:01:07] Speaker1:
+    Tip number one, your smart account. The smart account is based on a unique domain identifier, so this means you can have multiple smart accounts
+
+[00:01:15] Speaker2:
+    within your company.
+
+[00:01:17] Speaker1:
+    The thing that you'll need to have is that unique domain identifier, that .com, .org address in order to separate it out. It's important to know that you can't move licenses from one smart account to another, so once they're in a smart account,
+
+[00:01:31] Speaker2:
+    they have to stay to it,
+
+[00:01:32] Speaker1:
+    but it's totally possible to have multiple smart accounts. For this particular session, going to be working with one single smart account and the next tip I'd like to show you is about
+
+[00:01:43] Speaker2:
+    structuring virtual accounts. Okay, tip two, virtual account structure. A virtual account is
+
+[00:01:51] Speaker1:
+    essentially like a file folder. You wouldn't necessarily want to have one file cabinet with a single drawer and all of your files in it. Same goes with your smart account. You get one one default virtual account when the account is set up, and from there you can create as many virtual accounts as you want. The trick is to select something that resonates with your business. In other words, you want to create a folder structure based on business function, or location, or reporting structure, or financial responsibility, or any other thing that makes sense to you and your company.
+
+[00:02:31] Speaker2:
+    point is to pick something and then to stick with it over time. So let's say
+
+[00:02:37] Speaker1:
+    hypothetically I've chosen location and I've set up a virtual account for Santa Cruz. I may want to set up another virtual account for Monterey and by the way setting it public will just simply make it visible in the Commerce
+
+[00:02:49] Speaker2:
+    Workspace tools. And then let's say I wanted to add another virtual account for San Jose. So again the point is pick something that's consistent.
+
+[00:03:01] Speaker1:
+    business functions, locations, reporting structure, fiscal responsibility, just make sure that it's something that resonates with
+
+[00:03:09] Speaker2:
+    your business
+
+[00:03:10] Speaker1:
+    and something that you can recall later on that will make sense to others as they're looking through the list of virtual accounts.
+
+[00:03:17] Speaker2:
+    Okay so here's a pretty cool trick in order to skip to a virtual account from
+
+[00:03:26] Speaker1:
+    the section we're in right here. If you click on the virtual account name, let's say up here at the very top
+
+[00:03:32] Speaker2:
+    default, you can then select the tool that you'd like to manage it with.
+
+[00:03:38] Speaker1:
+    So within smart licensing, if we click on the link here that says smart licenses, it will move you directly over to the virtual account that you just selected in the smart licensing tool. The traditional one will take you to the license registration portal. But the point is you won't have to go back to software central and then choose smart software licensing.
+
+[00:03:59] Speaker2:
+    You can just skip directly to it.
+
+[00:04:04] Speaker1:
+    Now that we've got a basic structure for our virtual accounts, we've chosen to go with locations here. So we have Monterey, San Jose, and Santa Cruz. Let's talk a little bit more about tagging of licenses and how you can differentiate between licenses that are within a particular virtual account. We're going to turn off the advanced view just to make it a little bit easier to see
+
+[00:04:26] Speaker2:
+    what's on the screen here.
+
+[00:04:30] Speaker1:
+    Tip number three, don't keep all of your licenses in the default virtual account. You just set up some folders or virtual accounts for our licenses in order to separate them out by location. So make sure that you move them over to the virtual accounts that you've configured. That way you can sort things and they'll be easier to find using the virtual account
+
+[00:04:53] Speaker2:
+    structure.
+
+[00:04:55] Speaker1:
+    So by separating things out into separate virtual accounts, it's going to be much easier when it comes to reporting, to finding licenses, and also understanding in some cases even what they're being used for. You'll notice that I'm using some new features here that will allow you to multi-select licenses and transfers. So this is a big time saver and a good little trick that you'll pick up along the way so you can choose multiple licenses and transfer them from one virtual account to another instead
+
+[00:05:24] Speaker2:
+    of having to do them just one at a time.
+
+[00:05:29] Speaker1:
+    Okay, so now that we've set up virtual accounts and we've transferred our licenses into the virtual accounts, let's move on to the next tip.
+
+[00:05:37] Speaker2:
+    Step number four, tagging.
+
+[00:05:42] Speaker1:
+    The best advice I could give you on tagging is to be consistent. So you're noticing a theme develop in this best practice video when it comes to consistency,
+
+[00:05:50] Speaker2:
+    especially with tags.
+
+[00:05:53] Speaker1:
+    Now the neat part about tags is you can assign multiple tags. So if we were a managed service provider and we had multiple customers and we wanted to flag a particular entitlement or a license for one customer, let's say a bike shop, we can simply give it a tag value for it, and indicate by location, let's say this is in Monterey, and even further by a technology, let's say this is for routing. Now you'll notice three things that popped out there, customer, location, technology. By putting that prefix in front of each of those, I'll have an automatic memory jogger that goes along with the value that I've just set up, knowing that it's for a customer, a technology, and a location. Now, if we wanna tag another entitlement, you won't have to go back and re-type the entire thing. So if it's already been set up, it'll show up in the drop-down list below so we can tag it for customer, bike shop, location, monoray. But let's say we have a different technology and this one's going to be security, all we need to do is type out technology dash security and now our tag value will be set up for that one. So again, consistent things that we're doing here that you can interchange different types of value with. The point is pick something that makes sense
+
+[00:07:18] Speaker2:
+    to your business and stick with it.
+
+[00:07:23] Speaker1:
+    So let's go ahead and add some more tag values here. We've switched over to the San Jose virtual account And we're going to create a customer tag for a skate shop with a location of San Jose and technology of routing.
+
+[00:07:41] Speaker1:
+    And while I'm tagging the rest of these licenses, let's do a quick recap of the best practices
+
+[00:07:48] Speaker2:
+    that we just picked up here. Tip number one, smart accounts.
+
+[00:07:53] Speaker1:
+    It is possible to have multiple smart accounts
+
+[00:07:55] Speaker2:
+    within your company.
+
+[00:07:56] Speaker1:
+    It is based on a unique domain identifier. As long as you have that domain identifier set up, It is possible to have a separate smart account, but it's important to note you cannot transfer licenses between smart accounts, so be very careful if that's the direction you choose. Tip number two, virtual account structure. Structure your virtual accounts in a way that makes sense to your business. This can be by business function, by location, by reporting structure, by fiscal responsibility. The point is to be consistent when it comes to your virtual account setup. Tip three, when it comes to keeping your licenses in your default virtual account, my advice is don't do it. You have virtual accounts for a specific reason and that's to help you to sort and to file your licenses in a way that makes sense to your business. So take advantage of the virtual accounts as you set them up. But again, see tip number two about being consistent in the structure that you select.
+
+[00:08:59] Speaker2:
+    And tip four on tagging.
+
+[00:09:02] Speaker1:
+    The tip on tagging is to identify some type of nomenclature that will make sense to you. In our example here we use customer location and technology. Find those two or three things that really resonate with your business and when you start tagging it will make it easier for you to find those tags or recall them
+
+[00:09:22] Speaker2:
+    based on how you've set them up.
+
+[00:09:26] Speaker1:
+    So let's take a look at what happens after you're done tagging. You can always toggle the search by, to indicate by tag, and then you'll notice that the tag values are automatically pre-populated. So by selecting the tag value, it will automatically sort and show you the tags
+
+[00:09:44] Speaker2:
+    that are assigned to a particular license.
+
+[00:09:49] Speaker1:
+    So by choosing a virtual account structure, it makes it a lot easier in switching back and forth. Okay, so to recap we had four tips about your smart account structure, your virtual account structure, about using and or not using the default virtual account, and then the last one is around tagging and how to set up tag values. All of this is available on Software Central at software.sysco.com.

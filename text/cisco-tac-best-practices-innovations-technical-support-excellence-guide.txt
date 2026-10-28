@@ -1,0 +1,848 @@
+--- PAGE 1 ---
+Aleksandra Powroznik, Tomasz Kmiec, and Sharon Tom 
+14/05/2026
+Cisco TAC 
+Best Practices & Innovations
+
+--- PAGE 2 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 2© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 2
+Cisco Confidential
+Meet Technical Assistance Center
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLEFast facts 
+Special events
+Responsibilities
+185+ 
+countries served
+3
+TAC centres in 
+EMEA
+24/7
+support
+✓ Service Requests​
+✓ Collaborations​
+✓ Bugs​
+✓ Rotations & CCIE Preparation​
+✓ Conferences​ & Trainings​
+✓ Beta tests
+✓ CXLAB recreates
+✓ Content Creation
+✓ Automation (BDB/BORG)​
+5,5k
+SRs taken daily
+
+--- PAGE 3 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 3© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 3
+Cisco Confidential
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+What to do before opening the case?
+Cisco AI Assistant
+Use Cisco AI Assistant Tools
+01 Research online02 03
+04 05 06Release notes and 
+Field Notices (FN)
+List of related information 
+with that version of produc
+cisco.com/go/fieldnotices
+Bug Search T ool
+bst.cisco.com
+Check software version 
+recommended for your hardware
+software.cisco.com
+community .cisco.com
+Check Configuration 
+Guides
+
+--- PAGE 4 ---
+Global Centres
+Regional Centres (Local Languages)
+Krakow
+Lisbon
+Amman New Delhi
+Bangalore
+Sydney
+Beijing Seoul Tokyo
+Rio De Janeiro
+Costa Rica
+Mexico City
+HoustonRichardson
+San Jose San Bruno RTP (NC) 
+Boxborough
+Shift 4
+8pm – 2am
+CE(S)T
+TAC 24/7/365 – Time Zones & Theatres Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+Always review the TAC engineers email signature for their location .
+Shift 1
+2am – 8am
+CE(S)T
+Shift 2
+8am – 2pm
+CE(S)T
+Shift 3
+2pm – 8pm
+CE(S)T
+
+--- PAGE 5 ---
+Contact with TAC
+cisco.com
+Europe +32 2 704 5555
+By country (f.ex.):
+Belgium 0800 94242
+Netherlands 0800 0200 791
+Poland 0800 4411 932
+UK 0800 404 7778
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+
+--- PAGE 6 ---
+Support Case Manager
+New fields in SCM form: 
+• Use RADKit for data collection
+• Schedule Dispatch new Service Request 
+on the time of your choice using 
+Preferred Contact Time option
+• Use TAC Standby to open proactive 
+Service Request for standby support 
+during maintenance window.
+cisco.com
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+
+--- PAGE 7 ---
+What to include in the case? 
+✓ Detailed & Technical Problem Description
+✓ Urgency and business impact of the 
+problem & deadlines (if any)
+✓ Software Version of affected product
+✓ Hardware Platform and Serial Number
+✓ Topology of the network
+✓ Trigger (if any)
+✓ Troubleshooting already done (if any)
+✓ Technical logs from the system
+✓ Logs from monitoring systems (if any)
+✓ Time of first occurance of the issue
+✓ Up-to-date contact information
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+
+--- PAGE 8 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 12© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 12
+Cisco Confidential
+Problem description is key!
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+Secure Client is not working.
+Secure Client RA VPN sessions cannot be 
+established by random users from various 
+locations. Multiple platforms are affected. 
+The authentication method is SAML. 
+After providing credentials, the following 
+error is displayed: Authentication failure.
+The issue is intermittent. No recent changes 
+on the FTD side and in the network 
+environment.
+Local user authentication works fine.
+Vague description, no details.
+Problem description includes a lot of 
+details about the issue.
+
+--- PAGE 9 ---
+Case uploads
+❖ Email to attach@cisco.comwith attachment (up to 20 MB)
+❖ Support case manager: https://mycase.cloudapps.cisco.com/case(up to 250 GB)
+❖ If you're not a case initiator - ask Cisco case ownerto generate an external upload link for you
+❖ Cisco Support Assistant Extension
+❖ Customer eXperience Drive (no limit)
+❖ Multiprotocol (SCP/SFTP/FTPS/HTTPS/FTP) file transfer service
+❖ Utilities upload-only case-specific credentials
+❖ Allows to upload data directly from devices to TAC Cases
+❖ Automation tools running in no time!
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+
+--- PAGE 10 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 14© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 14
+Cisco Confidential
+Severity 1
+▪ Production network down
+▪ Critical impact to business operations
+▪ 24-hour Cisco, Partner and Customer commitment
+Severity 2
+▪ Network severely degraded
+▪ Significant impact to business operations
+▪ Cisco, Partner and Customer committed during business hours
+Severity 3
+▪ Network functionality degraded
+▪ Business operations noticeably impaired
+▪ Cisco, Partner and Customer in frequent contact
+Severity 4
+▪ General assistance – Ask a question 
+▪ Installation, upgrade, or configuration assistance
+▪ General product information
+Service Request [SR] Prioritization Guidelines 
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+Urgent
+Non-
+Urgent
+
+--- PAGE 11 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 15© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 15
+Cisco Confidential
+Working with TAC: Support on an opened SR Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+• New SRs and re-queued SRs are routed to the 
+appropriate team queues. 
+• TCEs accept cases from their queue, within internally
+specified time limits. 
+• Priority really matters
+• Case Status should clearly represent the status of the 
+investigation. 
+• Email with attach@cisco.com in CC and SR number in 
+subject changes status automatically.
+
+--- PAGE 12 ---
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+Collaboration Types
+• Cross technology collaboration: 
+• Issue from different technology identified,
+• Owner stays the same unless you are notified
+that ownership has changed.
+• Follow the Sun
+• Case transfer to the next timezone
+• Case owner should always change to the 
+engineer who is on shift,
+• The FTS Assistant is simplifying the FTS process
+compliance, 
+• Enables non-stop support for critical customer
+issues which directly impacts customer
+experience
+
+--- PAGE 13 ---
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+SR Engineering Engagement
+• Conversation with the Engineering team is internal
+• Reasons for technical escalation:​
+• logs/debugs are inconclusive​
+• suspected new defect
+• request for special engineering release
+
+--- PAGE 14 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 19© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 19
+Cisco Confidential
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+RMA – Customer Handoff
+• When RMA is needed system will send a handoff email to the SR requester or 
+Acknowledgment contact 
+• Click on “Complete your RMA” button in the email. This will take you to review 
+& submit page on the RMA tool. 
+• Review all details including SITE Address before clicking Submit, to initiate 
+delivery of the RMA. 
+• If you do not submit the draft RMA, you will get subsequent reminder emails to 
+complete your draft RMA. 
+• Draft RMAs auto expire if action is not taken within 7 days of initiation
+
+--- PAGE 15 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 21© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 21
+Cisco Confidential
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+SR Management Escalations
+If you feel that case must be escalated for management reasons, do not hesitate to 
+contact engineer’s manager (Delivery Leader).
+Escalate using Cisco AI Assistant for Support at https://supportassistant.cisco.com/escalate, via 
+Webex App, on Support Case Manager or Virtual Spaces.
+• Enter the case number
+• Provide escalation reason 
+• Choose “Escalate to TAC Manager” 
+• Provide phone number for S1/S2 case or email address for S3/4 case
+
+--- PAGE 16 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 22© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 22
+Cisco Confidential
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+Cisco AI Assistant for Support
+supportassistant.cisco.com/escalate
+Cisco AI Assistant for Support offers customers and partners a self-service experience for 
+common case inquiries and basic transactions. It even has the ability to connect customers with 
+case owners and duty managers.
+How does it work? Check our resources: Cisco AI Assistant for Support
+
+--- PAGE 17 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 23© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 23
+Cisco Confidential
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+How to interact with the Assistant?
+Add Cisco Support Assistant to your Favourites contacts in Webex Teams.
+
+--- PAGE 18 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 24© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 24
+Cisco Confidential
+Escalating via Webex
+
+--- PAGE 19 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 25© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 25
+Cisco Confidential
+Escalating via Webex
+
+--- PAGE 20 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 26© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 26
+Cisco Confidential
+Escalating via Webex
+
+--- PAGE 21 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 27© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 27
+Cisco Confidential
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+• CUSTOMER APPROVED
+• NO RESPONSE: 3 STRIKE RULE
+** Within 14 Days after closure: Reopen the 
+same case
+Case closure
+
+--- PAGE 22 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 28© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 28
+Cisco Confidential
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+TAC Satisfaction Survey: 
+Help us continually improve
+• Customer satisfaction survey generated upon Service Request (SR) 
+closure
+• Additional feedback can be shared but not mandatory
+• Analysis is conducted on the feedback received; 
+Follow-up on low scores
+
+--- PAGE 23 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 29© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 29
+Cisco Confidential
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+General Guidelines
+• One case in T AC = one problem. Do not mix different problems in one case.
+• If you encounter new problems in ongoing Service Request, the T AC engineer will advise
+to open separate case.
+• TAC is ”break/fix” support (day2).  For design/implementation (day0/1) requests, you 
+will be advised to reach out to the appropriate Account T eam regarding Professional 
+Services.
+• You are in control of Service Request’sSeverity. 
+• If Business Impact of the issue changed and you wish to change to Severity 2 or Severity 
+1, it is best practice to do it over the phone, not e-mail.
+
+--- PAGE 24 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 30
+Cisco Confidential
+Technical Support innovations
+
+--- PAGE 25 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 31
+Cisco Confidential
+Current Troubleshooting Method
+Email
+• Initial response
+• Engineer 
+information
+• Request for issue 
+description and 
+basic information 
+collection
+Email
+• Issue description
+• Basic Information 
+collection and send
+Email & call & Webex
+• TAC - Request for additional information 
+collection 
+& analysis iteration
+• Customer - Iterative collection and send of 
+additional information
+• Customer - Environment setup for real -time 
+remote troubleshooting
+• Increase in lead time in the event of 
+customer and partner support delays
+Original
+ Issue clear
+DoneCase open Progress
+
+--- PAGE 26 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 32
+Cisco Confidential
+RADKit Boosts Troubleshooting Experience
+DoneCase open Progress
+Email
+• Initial response
+• Engineer information
+• Request for issue 
+description and basic 
+information collection
+Email
+• Issue description
+• Basic Information 
+collection and send
+Email & call & Webex
+• TAC - Request for additional information collection & 
+analysis iteration
+• Customer - Iterative collection and send of additional 
+information
+• Customer - Environment setup for real-time remote 
+troubleshooting
+• Increase in lead time in the event of customer and 
+partner support delays.
+Original
+ Issue clear
+Email
+• Initial response
+• Engineer information
+• Request for issue 
+description and RADKit
+information
+Email
+• Issue description
+• RADKit access setting 
+and Information send
+RADKit
+• TAC - Direct collection and upload of 
+required information
+• TAC - Real-time remote support & Webex setup
+RADKit
+SimplifyEasy
+TAC Customer TAC & Customer
+Issue clear
+
+--- PAGE 27 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 33
+Cisco Confidential
+RADKit Architecture
+
+--- PAGE 28 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 36
+Cisco Confidential
+Built-in RADKit Secure Firewall Management Center
+
+--- PAGE 29 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 37
+Cisco Confidential
+Built-in RADKit ISE
+
+--- PAGE 30 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 38
+Cisco Confidential
+In-product Experience• Designed to organically appear within product portals as needed.
+• Geared to enhance self-service capabilities for faster solutions.
+• Aimed to optimize your support interactions and workflows.
+
+--- PAGE 31 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 39
+Cisco Confidential
+In-product Experience – Secure Firewall
+
+--- PAGE 32 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 40
+Cisco Confidential
+In-product Experience – XDR
+
+--- PAGE 33 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 41
+Cisco Confidential
+Cisco Support Assistant Extension
+Use case 1: Screen Recording
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+CSA Extension enables the recording of 
+actions taken in UI, helping TAC 
+engineers gain 
+a clearer understanding of the issue.
+
+--- PAGE 34 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 42
+Cisco Confidential
+Cisco Support Assistant Extension
+Use case 2: Browser logs (HAR file) collection
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+CSA Extension allows for easy collection of 
+browser HAR (HTTP Archive) files during UI 
+troubleshooting, eliminating the need to 
+access browser developer tools and collect all 
+required data manually.
+
+--- PAGE 35 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 43
+Cisco Confidential
+Cisco Support Assistant Extension
+Use case 3: Case opening
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+
+--- PAGE 36 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 44
+Cisco Confidential
+Cisco Support Assistant Extension
+Use case 4: Direct file upload to Support Case
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+Two options: 
+a) Attach file to the existing case
+b) Open a new case.
+
+--- PAGE 37 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 45© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 45
+Cisco Confidential
+Case Assistant - Sherlock
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+• Digital TAC engineer supervised by 
+TAC engineers. 
+• Works around the clock.
+• All actions monitored and 
+overwatched.
+Sample Case
+49 min from open
+to resolution
+24-hour hold timer
+Sherlock
+- Tue @ 02:26 am Takes SR
+Tue @ 02:24 am -
+ Customer
+Opens SR
+"Received the following error default 
+Keyring's certificate..."
+Tue @ 03:13am -
+ Customer
+”The issue is resolved. You may 
+close this ticket"
+Sherlock- Tue @ 02:37 am "T o 
+regenerate the certificate, please do the 
+following…"
+Sherlock- Tue @ 04:17 am 
+Starts closing timer
+24-hour hold timer
+
+--- PAGE 38 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 46© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 46
+Cisco Confidential
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+Cisco Support Assistant Bug Applicability Checks
+• Validate if a bug is applicable to a specific device
+• Upload diagnostics data required to perform the check
+• If the bug is applicable the available options to mitigate the bug 
+are presented
+
+--- PAGE 39 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 47© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 47
+Cisco Confidential
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+• Users can subscribe to bi-weekly email alerts about 
+trending issues, tool updates and articles updates 
+related to products of interests.
+• The same alert would be sent max twice
+• Users can acknowledge alerts in CSA
+https://cloud.path.cisco.com/notification-center-csa
+Cisco Support Assistant Proactive TAC Alerts
+
+--- PAGE 40 ---
+© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 48© 2021  Cisco and/or its affiliates.  All rights reserved.   Cisco Con fid ential 48
+Cisco Confidential
+Tips 
+and 
+Tricks
+TAC is working 24/7/365
+Use AI Assistant, Radkit and Extension
+Consider case requeue when required
+Answer all questions asked by TCE
+Emphasize on your business impact 
+(and possible deadlines)
+Use the right severity
+For Escalations: Delivery Leader / Duty 
+Manager
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+
+--- PAGE 41 ---
+Summary: useful links and contacts 
+Self service 
+(online tools and 
+resources)
+Not urgent
+Severity 3-4
+Urgent
+Severity 1-2
+Wordwide Support Contacts
+Support Case Manager (Service 
+Request Tool)
+Support Assistant (Status / 
+Escalation Chat)
+Support and Downloads
+Tools and Resources
+Technology and Support 
+Community
+Request a Cisco RADKit Demo
+Cisco Support Assistance 
+Extension
+Meet TAC organization
+Before opening the case
+Key takeaways
+TAC Innovations
+Processing
+Opening
+Troubleshooting
+Escalating
+Closing
+After closing
+CASE LIFECYCLE
+
+--- PAGE 42 ---

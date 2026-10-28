@@ -1,0 +1,43 @@
+--- PAGE 1 ---
+© 2019  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Field Notices Addendum 1: Export Options
+© 2018  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Operational Insights Portal
+Offers two options for data download 
+• Export PDF: entire dashboard can be exported into a 
+PDF. Option available at top right corner of the screen.
+• Export Results: Each widget results can exported into 
+CSV, JSON or XML format. Option available under each 
+widget on hover.
+Note: It is advised to leverage Excel based NP report for 
+more detailed data download.
+Network profiler
+Suitable for detailed reports. To generate report:
+• NP Home page -> Reports -> Schedule Reports
+• Select deliverable under ‘Reports to generate’, 
+respective parameters, click Next until you get Create 
+Report option.
+
+--- PAGE 2 ---
+© 2019  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Field Notices Addendum 2 : Daily Syslog Report
+© 2018  Cisco and/or its affiliates. All rights reserved.   Cisco Confidential
+Overview
+• An email notification about the syslog's which are of interest to the 
+customer.
+• One fundamental component is the IC catalogue. There is a default 
+Cisco catalogue that evolves over-time. Company-specific catalogue 
+can also be developed. When both catalogues exist, the customer-
+specific catalogue takes precedence.
+Report generation
+To configure Syslog Reports, perform the following:
+• On the Insights screen, a Gear     Icon is available on the top right 
+corner of the screen. Select Syslog Reporting from the menu 
+options listed under the icon.
+• On Syslog Report generation screen, select Meta data of the report 
+i.e. who gets it, how frequently, what is the scope of the report and so 
+on, and click on Update to register for automated syslog reporting.
+You can leverage Help button on the top right corner of the screen to find 
+more details on the Syslog Report generation process..
+Note: The ‘Group’ filter is available only under ‘Syslog Report’. It is 
+NOT available on the Insights Portal under ‘Diagnostic Analysis’.
