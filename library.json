@@ -4,8 +4,8 @@
   "description": "A searchable collection of PDF knowledge resources.",
   "owner": "Your Organization",
   "site_url": "https://anorth78.github.io/PDF",
-  "generated": "2026-10-28T14:44:20.448473+00:00",
-  "document_count": 20,
+  "generated": "2026-10-28T14:47:25.570044+00:00",
+  "document_count": 21,
   "documents": [
     {
       "id": "3-way-rma-self-sparing-quick-reference-guide",
@@ -104,6 +104,23 @@
       "bytes": 10345997,
       "sha256": "3b886e0d8c12e4b20f750e022316df12da418acfb44fc4d1a3eaa4a7bfbdccf4",
       "modified": "2026-10-28T13:29:19.421129+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "cisco-licensing-central",
+      "title": "Cisco Licensing Central",
+      "original_filename": "Cisco Licensing Central.pdf",
+      "source_relative_path": "Cisco Licensing Central.pdf",
+      "pdf_url": "pdfs/cisco-licensing-central.pdf",
+      "text_url": "text/cisco-licensing-central.txt",
+      "type": "PDF",
+      "pages": 1,
+      "bytes": 90769,
+      "sha256": "ac0fe1e6f06fc03900d16633627f9d2edd754a85cfa80f3b9b0e283a5166348d",
+      "modified": "2026-10-28T14:46:51.275544+00:00",
       "text_extraction": {
         "success": true,
         "error": null

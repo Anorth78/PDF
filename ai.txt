@@ -7,8 +7,8 @@ Use library.json for structured metadata.
 Use the linked text_url for extracted document text.
 Use the linked pdf_url for the original PDF.
 
-Document count: 20
-Generated: 2026-10-28T14:44:20.448473+00:00
+Document count: 21
+Generated: 2026-10-28T14:47:25.570044+00:00
 
 ## Documents
 
@@ -53,6 +53,13 @@ Generated: 2026-10-28T14:44:20.448473+00:00
 - PDF: pdfs/cisco-ai-assistant-for-support.pdf
 - Extracted text: text/cisco-ai-assistant-for-support.txt
 - Pages: 132
+
+### Cisco Licensing Central
+- ID: cisco-licensing-central
+- Original filename: Cisco Licensing Central.pdf
+- PDF: pdfs/cisco-licensing-central.pdf
+- Extracted text: text/cisco-licensing-central.txt
+- Pages: 1
 
 ### Cisco RadKit ( Rapid Adoption Kit ) transcript
 - ID: cisco-radkit-rapid-adoption-kit-transcript

@@ -7,7 +7,7 @@ START HERE: use library.json (or api/documents.json) to enumerate every document
 Do not rely on search-engine indexing or directory browsing.
 For each document, fetch its extracted text_url for searchable text; use pdf_url for the original PDF.
 
-Document count: 20
+Document count: 21
 
 ## Machine-readable resources
 - Catalogue: https://anorth78.github.io/PDF/library.json
@@ -45,6 +45,11 @@ Document count: 20
 - ID: cisco-ai-assistant-for-support
 - Text: https://anorth78.github.io/PDF/text/cisco-ai-assistant-for-support.txt
 - PDF: https://anorth78.github.io/PDF/pdfs/cisco-ai-assistant-for-support.pdf
+
+### Cisco Licensing Central
+- ID: cisco-licensing-central
+- Text: https://anorth78.github.io/PDF/text/cisco-licensing-central.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cisco-licensing-central.pdf
 
 ### Cisco RadKit ( Rapid Adoption Kit ) transcript
 - ID: cisco-radkit-rapid-adoption-kit-transcript
