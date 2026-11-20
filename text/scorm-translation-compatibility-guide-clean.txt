@@ -1,0 +1,81 @@
+--- PAGE 1 ---
+SCORM TRANSLATION COMPATIBILITY & GUIDELINES
+A Quick Reference Guide for Digital Content Creators & Instructional Designers
+Impact of Language Expansion: Translated content (e.g., German, French, Spanish) typically expands by 20% to 40%
+compared to source English text. Following the tool-specific layout guidelines below prevents visual overlapping, truncation, and
+costly manual post-translation adjustments.
+1. Articulate Storyline HIGH COMPATIBILITY
+CAPABILITIES LIMITATIONS & RISKS AUTHORING GUIDELINES
+Automatic Scroll Bars: When
+"Accessible Text" is enabled,
+Storyline dynamically adds scroll
+bars to text boxes if translated
+content expands beyond bounds. 
+When Accessible Text is OFF, text
+expansion causes awkward line wraps,
+overlapping elements, or truncation outside
+the visible slide area. 
+Enable Accessible Text: Always turn on
+Accessible Text in player settings to allow
+dynamic scrolling for expanded text.
+Allow Padding: Leave extra space
+around buttons and text boxes.
+2. Articulate Rise MODERATE-HIGH COMPATIBILITY
+CAPABILITIES LIMITATIONS & RISKS AUTHORING GUIDELINES
+Responsive Layout: Content flows
+vertically, accommodating long
+translated sentences in web-based
+block formats. 
+Section headers and structured cards/grids
+can experience overlapping text or severe
+line clipping if margins are tight. 
+Header Vertical Space: Insert a blank
+line (using Enter) below headers to
+provide vertical buffer space.
+Reduce Bullet Font Size: Slightly
+decrease bullet point font sizes to absorb
+20-40% text expansion smoothly.
+3. Adobe Captivate REQUIRES HIGH LAYOUT CARE
+CAPABILITIES LIMITATIONS & RISKS AUTHORING GUIDELINES
+Supports high-design custom
+layouts and precise positioning for
+multi-device delivery. 
+Fixed-Height Containers: Tightly fitted or
+fixed boxes result in severe truncation, text
+cutoff, and broken slide graphics. 
+White Space Padding: Provide
+generous white space around titles,
+headings, and captions.
+Flexible Containers: Enable auto-sizing/
+responsive text boxes; avoid fixed
+heights.
+Font Scaling: Use smaller font sizes for
+list items/bullets.
+• 
+• 
+• 
+• 
+• 
+• 
+•
+
+--- PAGE 2 ---
+4. Xyleme SEAMLESS EXTRACTION
+CAPABILITIES LIMITATIONS & RISKS AUTHORING GUIDELINES
+Zero Native Issues: Excellent
+automated extraction and
+translation compatibility observed
+natively. 
+LMS publishing pipeline compatibility
+requires post-publish validation to ensure
+layout integrity. 
+Mindtickle Validation: Perform
+mandatory end-to-end testing after
+publishing in Mindtickle to confirm
+formatting.
+CRITICAL UNIVERSAL RULE: AVOID EMBEDDED TEXT IN IMAGES
+Never embed translatable text inside image files (JPG, PNG, GIF). Embedded text cannot be automatically extracted or translated by
+translation tools, requiring manual graphic redesign. Always use editable floating text layers/objects over background images to
+support automated translation pipelines.
+SCORM Translation Guidelines & Standard Operating Procedures • Digital Content Authoring Best Practices 
+•
