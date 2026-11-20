@@ -1,0 +1,400 @@
+--- PAGE 1 ---
+ISE_LDAP_Integration 
+ 
+0:13 
+In this video we'll be talking about identity sources, mostly LDAP integration with Cisco Eyes.  
+ 
+0:21 
+My name is Emilio Quefunes, I'm a technical consulting engineer from the Security Tech 888 team.  
+ 
+0:27 
+I'm part of the Mexico 888 team. 
+ 
+0:29 
+I've been an ICE and engineer and I've been on the team for about 5 years.  
+ 
+0:36 
+The agenda of this video is what is LDAP? 
+ 
+0:39 
+Why use LDAP in ICE? 
+ 
+0:41 
+LDAP flow, LDAP integration in ICE, Troubleshooting and its limitations.  
+ 
+0:49 
+First of all, what is LDAP? 
+ 
+0:52 
+LDAP is the lightweight directory access protocol, which is in an open vendor neutral protocol that is 
+used to access these servers. 
+ 
+1:03 
+It's also organized as a tree so it's better optimized for read and search performance.  
+ 
+1:11 
+All that also acts as the standardized language. 
+ 
+1:14 
+So the systems like Active Directory or even Open LDAP will only provide that database 
+implementation and I will use the LDAP language to query this. 
+ 
+1:25 
+The information that will be queried are the following which is entries, which will be the individual 
+objects such as user and groups, the attributes that is the metadata that can be CN, the the user 
+account is disabled member of and others.
+
+--- PAGE 2 ---
+1:45 
+The distinguished name is the most important one. 
+ 
+1:47 
+We will be seeing it as the end which is the unique and absolute path to the specific entry.  
+ 
+1:55 
+In this case, for example, this user is CNI Spind, CN users and CN Test Cisco.  
+ 
+2:04 
+The IS operations that we'll be using for the LDAP servers are BIND which will mostly be used only for 
+authentication and the session initiation and the search and compare.  
+ 
+2:16 
+This will be used to retrieve and verify the object data that is being received.  
+ 
+2:22 
+The connectivity standards are the first one that we'll be using. 
+ 
+2:27 
+IS old app which is used in port 389 is the standard connection and also Ldaps exist which uses ports 
+636 which is the secure and encrypted connection. 
+ 
+2:40 
+Here we also have an example directory which is. 
+ 
+2:44 
+As we can see it's also shown as 3 and we can see that for example the user icebind is part of CN users 
+and CN users is part of CN test Cisco. 
+ 
+2:59 
+And well, why is all that nice? 
+ 
+3:04 
+Mostly it's to avoid domain join complexity. 
+ 
+3:07 
+So here we do not need to join that domain. 
+ 
+3:11 
+Here eyes with the credentials will bind to the directory. 
+ 
+3:17 
+Also authentication and authorization.
+
+--- PAGE 3 ---
+3:19 
+So here in authentication, Eyes will only verify the username and password by binding it to the 
+directory with the user 's distinguished name. 
+ 
+3:29 
+Once the is obtained, we can proceed with authorization. 
+ 
+3:33 
+So for example we can retrieve groups and attributes from the directory and fit this into the policy 
+conditions. 
+ 
+3:41 
+Also importantly, we can use it for centralized identity management. 
+ 
+3:46 
+So all of the changes that are applied to these accounts will be on the AV server.  
+ 
+3:52 
+So Eyes only takes the credential, attempts the binding and if something is changed, Eyes will be 
+notified by the directory. 
+ 
+4:02 
+So in this case for example, if the directory does accept the new change of credentials, ICE is notified 
+and it's a success. 
+ 
+4:13 
+So here is the L dot flow. 
+ 
+4:15 
+First the client authenticates. 
+ 
+4:20 
+Once the client authenticates, ICE will provide the service bind and in this once it's the service is 
+binded, the user will be searched and also the user will be bind with the groups.  
+ 
+4:33 
+Once ICE receives the user groups and attributes, it will proceed with the policy evaluation for 
+authentication and authorization. 
+ 
+4:45 
+The old app integration in ICE. 
+ 
+4:48 
+This can be done by going to administration, identity management, external identity sources and old 
+app.
+
+--- PAGE 4 ---
+4:55 
+And the connection can be set to the primary server and the secondary server.  
+ 
+5:00 
+Have in mind the secondary server is only optional ICE, then it's the LDAP IP, the port, the access.  
+ 
+5:08 
+Here the access will be the username and password. 
+ 
+5:11 
+It can. 
+ 
+5:12 
+It also needs the subject search base and the group search base have in mind.  
+ 
+5:17 
+Once all of this is configured, you have to perform the test bind to server and you need to get a 
+success message. 
+ 
+5:25 
+In this case we can see an example of a success message, but in the following slides we'll be able to 
+see some of the errors to better troubleshooting case we get an error.  
+ 
+5:39 
+Here we can see the general tab and here. 
+ 
+5:42 
+This depends entirely on the old app schema mapping of your configuration.  
+ 
+5:46 
+So you have to actually make sure that this can map into the groups and subjects your directory uses.  
+ 
+5:54 
+This is an example so we can set it to Of the subject object class will be the user.  
+ 
+6:01 
+In order to map the for example the group app attribute, it has to be from the member of attribute.  
+ 
+6:08 
+So this really depends on how your server is configured. 
+ 
+6:16 
+And here it's how to create an enable a bind account in a D LDS.
+
+--- PAGE 5 ---
+6:21 
+This account has to be the read permissions. 
+ 
+6:26 
+So here's how we can do it. 
+ 
+6:29 
+So first we have to create the user. 
+ 
+6:32 
+If we go to CN users, we can create a user. 
+ 
+6:35 
+In this case the user will be named ICE bind. 
+ 
+6:39 
+Then we have to set a password. 
+ 
+6:41 
+We can just do the reset password and place that complex password. 
+ 
+6:46 
+Then we have to enable the account. 
+ 
+6:48 
+This one is very important. 
+ 
+6:50 
+We have to set the MSDS user account disabled to false. 
+ 
+6:54 
+All of the users in ADLDS will start disabled. 
+ 
+6:59 
+Once we have our user and it's enabled, we need to grant the read access.  
+ 
+7:04 
+So we have to bind the user the end to the member of CN readers that it's placed in our server here.  
+ 
+7:16 
+Also here's a diagnostic toolkit that will be using for troubleshooting.  
+ 
+7:22 
+They are ICE test binds server which is the one that we have previously mentioned of the tasknet
+
+--- PAGE 6 ---
+connection IP port 389 that it can be used from another host LDP dot xe that this one is run on the 
+server. 
+ 
+7:38 
+Also the ADSI edit is also run on the server and we can also verify it with the ICE lifelog details.  
+ 
+7:50 
+So the troubleshooting for the ICE test bind server. 
+ 
+7:54 
+Here are the 3 most common errors that someone can get. 
+ 
+7:57 
+So the first one is the all that bind endeth with off and failure. 
+ 
+8:03 
+This can happen because the ROM password is in the ice, or it can also happen because the account is 
+disabled or just the admin. 
+ 
+8:12 
+The end is mistyped, for example, it's probably the user. 
+ 
+8:16 
+Instead of setting the complete distinguished name, only set the common name.  
+ 
+8:22 
+The other error is that we can see that the binding was successful, but it ended with an error with the 
+errors of group search base and the subject search base. 
+ 
+8:34 
+Here we have to verify that well it this means the naming context are wrong.  
+ 
+8:40 
+So we have to go to the directory organization and we have to make sure that the naming context for 
+this are correct. 
+ 
+8:49 
+We can click on naming context for sub trees that are are veritized by the old observer.  
+ 
+8:57 
+The 3rd error that we can get is the timeout occurred for the bind operation and here it means that 
+ICE is not able to reach the server. 
+ 
+9:05 
+So we need to ensure reachability to the port is successful.
+
+--- PAGE 7 ---
+9:09 
+Here we can use the previous command that was mentioned. 
+ 
+9:17 
+We can use in this case for example the test net connection IP port 389 from another host to verify 
+that the server is able to get connections. 
+ 
+9:27 
+But if not, we can also verify it through a pickup in the primary admin node.  
+ 
+9:32 
+Verify if firewall or the proxy is blocking our connection. 
+ 
+9:43 
+OK here is also the LDP dot ex tool. 
+ 
+9:47 
+Here this tool will prove the user has read access. 
+ 
+9:52 
+So once we open the LDP dot ex tool we have 2 connections and connect.  
+ 
+9:58 
+In this case we can set it to local host and the port 389 and once it's open we have to bind the user.  
+ 
+10:07 
+So we choose simple bind test with our user that should have the read permissions and with its 
+password. 
+ 
+10:16 
+And once we bind it, we should get that the successful bind was authenticated as we can see in here.  
+ 
+10:25 
+Then we can do the view tree and this one will show all of the objects. 
+ 
+10:30 
+This one is important as we will be getting all of that information and that's what the information that 
+ICE is receiving. 
+ 
+10:40 
+Also from the server, we can use ADSI Edit which is this tool that we can use it to verify all of the 
+attributes. 
+ 
+10:50 
+For example, the first example, if we go to CN roles, CN administrators, we can verify here the 
+distinguished name of the group.
+
+--- PAGE 8 ---
+10:58 
+So this distinguished name will be the one that ICE receives if you said it correctly.  
+ 
+11:03 
+From here you can verify if ICE if the user on ICE is part of this group.  
+ 
+11:10 
+The second example is for C end users. 
+ 
+11:13 
+In here you can also check the distinguished name, but you can also check the member of and also 
+most importantly you can verify if the user account disabled is set to true or false.  
+ 
+11:28 
+The last, for troubleshooting we can use the live log. 
+ 
+11:32 
+Here it's important that we verify the connection on the live logs to verify if somewhere it fails.  
+ 
+11:40 
+So what we expect to see is that we need to see the request being sent to the old app server at the 
+authentication happening and the if the attributes and groups are retrieved once the authentication is 
+successful, we will see that in this case we set authorization in our policy sets to use one of the groups 
+from the LDAP. 
+ 
+12:05 
+So it will also create it again and ask for the all of the groups. 
+ 
+12:12 
+Once we see that the the external group has been queried, we get the permit access.  
+ 
+12:17 
+So here in other attributes also on the live log details will be getting the identity distinguished name.  
+ 
+12:23 
+So here is the identity of the user that was used in this test and also for external groups.  
+ 
+12:30 
+So you need to make sure which attributes ICE is receiving in case for example a group is wrong.  
+ 
+12:37 
+Here you can verify the correct distinguished name of the group that it's receiving and if it matches 
+what you have said on ICE. 
+ 
+12:48 
+Last but not least, the limitations.
+
+--- PAGE 9 ---
+12:51 
+So here we can see that the authentication methods, the ones that we cannot use are for example Ms 
+CHAP V2 or CHAP. 
+ 
+12:59 
+This is as LDAP cannot validate our response or a challenge, but it can verify with plain text methods 
+such as PAP, Epts, Ttls with PAP inside and it can also use ebtls which can use LDAP for the attributes 
+and group lookups. 
+ 
+13:19 
+Also as a design limitation playing LDAP on or 389 since the password in clear text.  
+ 
+13:28 
+But if security is a concern you can use LDAP which uses board 636 and also uses certificates to secure 
+the connection. 
+ 
+13:38 
+Also, the groups must be stored by full DN uh, so we can see here that it's used to match the external 
+groups. 
+ 
+13:46 
+And also the AD LDS partition root is a container, so you cannot set OUIS and you have to set in every 
+DN the common name. 
+ 
+13:59 
+Thank you for listening.

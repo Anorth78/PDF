@@ -1,0 +1,360 @@
+--- PAGE 1 ---
+ISE-AD_Integration 
+ 
+0:05 
+So everybody, welcome back to the I series of training. 
+ 
+0:09 
+My name is Mohammed Mustakim and I'm a technical consulting engineer in TAG Triple A.  
+ 
+0:14 
+Today we are going to cover the integration of ICE with Active Directory.  
+ 
+0:21 
+And so this session we are going to use ICE 3 dot 3 and my Active Directory server is going to be 
+2016. 
+ 
+0:29 
+So we can use any Active Directory from 2012 and above. 
+ 
+0:32 
+And this can be confirmed in our release notes. 
+ 
+0:43 
+Release notes. 
+ 
+0:44 
+We can go to ICE 3 dot 3 release notes and search for Active Directory or it will be coming under the 
+external identity sources. 
+ 
+0:59 
+So if you Scroll down you'll you'll see the validated source. 
+ 
+1:03 
+And on the Active Directory you can use anything between 2012 and 2022 which is already tested with 
+3 dot 3. 
+ 
+1:12 
+And for any prerequisites, we can also look into the ICE ad integration guide.  
+ 
+1:17 
+You can just search for it and you would see all the prerequisites to join the AD, leave the AD and the 
+operation that happens in the back end when you join eyes to AD.  
+ 
+1:31 
+So let's come up to our session and we are going to do perform the integration.
+
+--- PAGE 2 ---
+1:38 
+So I'm logging into my eyes. 
+ 
+1:47 
+I have my Active Directory already over here, which is 2016, right?  
+ 
+1:56 
+Let's click on next. 
+ 
+2:00 
+So if you come to my ICE version, you could see that it's a 3 dot 3 part 6.  
+ 
+2:07 
+In order to complete the integration, we have to go to administration, identity management and 
+external identity sources. 
+ 
+2:17 
+So under that you will see different identity sources. 
+ 
+2:20 
+We are going to use the most commonly used Active Directory, right?  
+ 
+2:26 
+So first we'll have to join the AD. 
+ 
+2:29 
+You can give any name. 
+ 
+2:31 
+I would prefer going with AD itself because that's the most commonly used term.  
+ 
+2:38 
+And my domain is going to be what I have configured, which is one musta dot local OK.  
+ 
+2:48 
+On submission, it's asking if I want to join the ICE to AD clicking on OK.  
+ 
+2:57 
+So the credentials you are using over here should be able to OK, we have OK.  
+ 
+3:11 
+It's not present here, but the idea, the basic idea is to be able to perform changes on the Active 
+Directory like add an account, remove an account, all that prerequisites all, all that permissions has to 
+be given to the account.
+
+--- PAGE 3 ---
+3:30 
+So I am going to give the username and the password of the account, right?  
+ 
+3:36 
+So by default, any Active Directory integration would add the machine name under your computers 
+account in your domain. 
+ 
+3:47 
+All right. 
+ 
+3:47 
+If you want to specify any different location or a directory, you can just specify it over here as you can 
+leave it empty right now to come to the store credentials. 
+ 
+4:00 
+It is going to store the credentials you're going to type over here in ICE so that it's going to be used 
+for all the domain controllers that is going to be joined to to the ICE. 
+ 
+4:14 
+So upon clicking on OK, you could see that it is completed and it is done.  
+ 
+4:24 
+Very simple, very easy. 
+ 
+4:26 
+Now let's go to the groups. 
+ 
+4:31 
+So now we have to import all the groups which you are going to use or the authorization.  
+ 
+4:37 
+So I can select retrieve group. 
+ 
+4:43 
+So if you don't know which groups are there or present, we could actually retrieve the groups which 
+will list all the groups that is present in the Active Directory. 
+ 
+4:53 
+All right, so for the purpose of this training, let's just add maybe domain users and domain computers 
+domain admins if you need. 
+ 
+5:06 
+So once that is done, you will see separate SIDS for each of it. 
+ 
+5:11 
+And then let's click on save that's completed.
+
+--- PAGE 4 ---
+5:19 
+So if you want to do a user test, this is a place where you can test the user if the ICE is able to validate 
+or look up the user or you can also check if it's able to validate the user credentials as well.  
+ 
+5:35 
+So in order to just do a lookup, probably we can just click on the username, just do a lookup and what 
+all you want to do with the data, it will take the groups that have the attributes.  
+ 
+5:49 
+Once you check on these, just click on test and you could see that it's able to look up the user 
+successfully. 
+ 
+5:56 
+However, if you want to validate the password, you can choose NSRPC and type in the password of 
+this user. 
+ 
+6:05 
+You can see that is also a success. 
+ 
+6:09 
+OK, so once this integration is complete, you would see that this is this the ICE machine host name or 
+the ICE host name will be present under the domain computers. 
+ 
+6:25 
+So if you come here, you can see this is my ICE and it has created an account over here.  
+ 
+6:38 
+If you want to validate it. 
+ 
+6:39 
+Let's go into administration system and deployment. 
+ 
+6:45 
+And here you could see my host name as test 33 in B, right? 
+ 
+6:50 
+So it's just that it will be. 
+ 
+6:52 
+So that's validated. 
+ 
+6:55 
+OK, now let's come to removing or disjoining this ad from ICE. 
+ 
+7:05
+
+--- PAGE 5 ---
+If you want to move, if you have, if you want to join to a different Active Directory, you could always 
+do that. 
+ 
+7:12 
+In order to complete this, just choose the Active Directory domain which you have joined.  
+ 
+7:17 
+Click on leave and you have an option over here to leave domain without credentials.  
+ 
+7:24 
+So this means it's as mentioned over here, it says the machine account which you have created on 
+your AD will not be removed. 
+ 
+7:34 
+OK, so let's test that out first. 
+ 
+7:37 
+So now I am leaving the domain without the credentials. 
+ 
+7:40 
+So that means I don't have to write anything over here. 
+ 
+7:44 
+Just clicking on OK and you can see that it's completed. 
+ 
+7:48 
+You would see that the Active Directory is in a non join state. 
+ 
+7:52 
+Now if I come over here, if I refresh this page, you would see this account is still present.  
+ 
+8:02 
+Now let's do it by removing the Active Directory domain with the credentials.  
+ 
+8:15 
+So, oops, you have to do the join first. 
+ 
+8:19 
+Let's do that. 
+ 
+8:31 
+Cannot open machine account. 
+ 
+8:33 
+Make sure this user has sufficient privileges.
+
+--- PAGE 6 ---
+8:39 
+All right, let's join the user with the same username. 
+ 
+8:50 
+OK, it's completed. 
+ 
+8:52 
+All right, the account is still there. 
+ 
+8:54 
+Now let's refresh. 
+ 
+8:59 
+OK, now removing this user with the credentials. 
+ 
+9:14 
+OK, same message. 
+ 
+9:17 
+You can see that it's not joined. 
+ 
+9:20 
+If you come here, you refresh this page, you would see the test 33 B. 
+ 
+9:26 
+The account is just created for the eyes. 
+ 
+9:28 
+With the eyes host name is getting removed. 
+ 
+9:32 
+All right, now let's focus on few issues that can happen if you're when you're integrating ICE with 
+Active Directory. 
+ 
+9:43 
+All right, coming back to our 3 requisites, right, One of the main things mentioned over here is you 
+need to have the privilege of the user super admin on the system admin account in ICE while doing 
+the integration. 
+ 
+10:01 
+The next thing is regarding the NTP right? 
+ 
+10:05 
+And it mentions that the maximum time difference allows between eyes and AD is 5 minutes.
+
+--- PAGE 7 ---
+10:11 
+Right? 
+ 
+10:12 
+Now coming on to my eyes, if I look into my eyes, the time which is there on eyes you could see it is 
+741 UTC and if I come to my to directory itself, this is an ISD. 
+ 
+10:29 
+Does use DTC +530? 
+ 
+10:34 
+Let's change the time over here. 
+ 
+10:38 
+Change date and time. 
+ 
+10:41 
+It's just the format it's set to automatically set the date and time. 
+ 
+10:56 
+So time zone is not a problem over here. 
+ 
+10:58 
+I'm going to increase this from 16 to maybe 26, right? 
+ 
+11:05 
+So that's like a 10 minute gap. 
+ 
+11:11 
+Now if I try to join the ice to this 80, which you are seeing a small times Q let's see what happens.  
+ 
+11:27 
+OK, So we are seeing an error which is expected. 
+ 
+11:32 
+Now if you go into the details you can see that the clocks queue detected message is present.  
+ 
+11:39 
+So this is a very commonly seen message if the eyes and Active Directory has more than 5 minutes 
+gap. 
+ 
+11:49 
+OK, so if I come here and change the time again, let's put it back to the exact time.
+
+--- PAGE 8 ---
+12:06 
+Hey now, if I want to join there you go. 
+ 
+12:20 
+Voila. 
+ 
+12:22 
+And the repeated removal and wedding of the A D does not remove your groups.  
+ 
+12:30 
+So that is one thing we need to note. 
+ 
+12:33 
+Alright, see everything seems to be good. 
+ 
+12:38 
+One place where you can like get the reports for the Active Directory on add ICE integrations or any 
+communications between these 2 servers, we can just go into the operations and go to reports.  
+ 
+12:54 
+Under reports you have diagnostics and you have the AD connector operations.  
+ 
+13:00 
+So as you can see here, you have everything mentioned over here. 
+ 
+13:05 
+So if you're seeing any kind of issues, this is one place where you can come and check when those 
+issues have talked. 
+ 
+13:13 
+All right, that's it from mine. 
+ 
+13:18 
+Thanks a lot everyone and see you again in the next one.

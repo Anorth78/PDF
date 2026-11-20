@@ -1,0 +1,227 @@
+--- PAGE 1 ---
+Understanding of AAA
+Pavithra G
+Oct 2026
+
+--- PAGE 2 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Overview of AAA : What is AAA? 
+Who wants to access 
+the network?
+What is the user 
+allowed to access?
+What did the user do in 
+the network?
+
+--- PAGE 3 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+- Similar to a passport and boarding pass at an airport
+- This is a way to identify yourself. It could be your 
+username and password, MAC address of your NIC, a 
+certificate, etc.
+- It can be a user or a machine
+Authentication : Who are you?
+
+--- PAGE 4 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+- What seat are you allowed to sit in?
+- What terminal are you allowed to go through?
+- Authorization determines the access or the restriction that 
+you and your machine have.
+Example: 
+• What Vlan can you join?
+• What ACL should be applied?
+• What permissions do you have?
+Authorization: What you are allowed to do?
+
+--- PAGE 5 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+- Have you sat in your seat?
+- Did you move?
+- Accounting will start once authentication is complete. It 
+provides extra information about the user and client machine.
+- Accounting will stop when the user disconnects.
+Accounting: What have you done?
+
+--- PAGE 6 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Authentication Protocols : TACACS
+TACACS : Terminal Access Controller Access-Control System
+Telnet, SSH TACACS 
+Terminal User AAA Client AAA Server
+Key
+
+--- PAGE 7 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+RADIUS : Remote Authentication Dial-In User Service
+ 
+Supplicant Authenticator Authentication server
+EAPoL RADIUS
+Authentication Protocols : RADIUS
+
+--- PAGE 8 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Radius Vs Tacacs
+COMPONENTS RADIUS TACACS
+Standard Created by IETF, Open standard Created by Cisco, Open standard 
+Purpose Used for Network Access
+Ports & Protocol  
+Encryption 
+Command Logging 
+Only passwords are encrypted The whole packet is encrypted 
+Used for Device Administration
+UDP : Port 49
+No command logging Complete Command logging
+Packets Transmission 
+Combined AuthC & AuthZ 
+packets. Separate Acct packets
+Separate AuthC, AuthZ & Acct 
+packets
+Privilege Mode Not honored or Supported Supports 15 Privilege modes
+UDP : Port 1812/1645 (AuthC) , 
+1813/1646 (Acct)
+
+--- PAGE 9 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+The Three key players
+Supplicant Authenticator
+Authenticatio
+n server
+EAPoL RADIUS
+Supplicant Authenticator Auth Server
+Supplicant 
+➢ Its a software in the endpoint machine & it 
+communicate with authenticator by providing 
+the Identity credentials over EAPoL
+Authenticator 
+➢ The network device that controls the physical 
+access to the network basing on authentication 
+status of the endpoint
+➢ The network device that encapsulates EAP 
+packets into RADIUS messages when sending 
+them to the AAA server and decapsulates 
+RADIUS messages back into EAP packets when 
+forwarding them to the authenticating client
+Authentication Server 
+➢ It validate the identity provided by the client 
+and provide the access with the result of 
+accept / deny. In short, it provide 
+authentication services
+
+--- PAGE 10 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+EAP Types
+Non-Tunneled / Native EAP
+The authentication happens directly without 
+creating secure TLS tunnel first.
+Supplicant Authenticator Authentication 
+server
+EAP Authentication
+Supplicant Authenticator
+Authentication 
+server
+TLS Tunnel (outer 
+method)
+EAP Authentication 
+(inner method)
+Tunneled EAP
+The actual authentication happens inside the 
+secure TLS tunnel.
+
+--- PAGE 11 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+EAP Methods
+Non-Tunneled / Native EAP Tunneled EAP
+EAP-MD5 
+• Uses a simple MD5 challenge mechanism.
+• Doesn’t provide mutual authentication and derive 
+encryption keys 
+• Used for basic dot1x testing / legacy deployment.
+EAP-TLS 
+• Uses certificates for authentication between client and 
+server. 
+• Authentication happens during TLS handshake and no 
+inner method. 
+• One of the secure methods as it provides mutual 
+authentication and generates encryption keys.
+EAP-PEAP 
+• Establishes a TLS tunnel using server cert before authentication 
+• Uses another EAP Type as an inner method authenticating the 
+client using EAP outer tunnel
+EAP-FAST 
+• Like PEAP, Fast also creates a TLS tunnel and sends client 
+credentials securely inside it.
+• Uses Protected Access credentials (PAC) for faster 
+reauthentication, quick roaming and session resumption 
+EAP-TTLS 
+• Like Fast and PEAP, TTLS also creates a secure tunnel inside 
+which the authentication will be performed. 
+• Offers simpler setup and session resumption capabilities 
+compared to PEAP.
+
+--- PAGE 12 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+What does Authorization 
+do and how does it 
+work?
+Authorization defines the permissions to be provided to the end 
+user after authentication. Deals with VLANs, DACLs and AV 
+pairs. 
+• AV pairs : Attribute –Value 
+pair
+• Used for Authorization 
+purpose by the Radius server. 
+• Can assign VLANs, ACLs, 
+session timeouts etc. 
+• The VLAN is the attribute and 
+the VLAN ID assigned to the 
+endpoint is the placeholder or 
+the value.
+802.1x Authorization
+
+--- PAGE 13 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+802.1x Change of Authorization
+CoA and Flow ? Mechanism to change network authorization dynamically after 
+they have already authenticated.
+•
+  User/device gets connected to the network initially 
+•
+  ISE Checks identity & posture and decides initial access 
+•
+  Access granted (maybe limited or full access) 
+•
+  Later… something changes! (posture update, guest approved, policy change, etc.) 
+•
+  ISE sends a CoA message to the NAD 
+•
+  The network device says: “Got it, let me re-evaluate this session!” 
+•
+  Session is re-authenticated / re-authorized 
+•
+  User gets new access without unplugging or reconnecting
+
+--- PAGE 14 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+802.1x Accounting
+What is the role of 
+Accounting in the AAA?
+Accounting tracks and logs user or device activity on the network
+
+--- PAGE 15 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Thank you.

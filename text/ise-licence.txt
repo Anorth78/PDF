@@ -1,0 +1,210 @@
+--- PAGE 1 ---
+ISE Smart Licensing
+
+--- PAGE 2 ---
+CONTENT 
+✓ ISE Licenses
+✓ ISE Licensing Models 
+✓ ISE Licensing Lifecycle 
+✓ Smart Licensing on ISE 
+✓ Steps to register for Smart Licensing
+✓ License Migration 
+✓ Smart Licensing with Air Gaped environments
+✓ Basic troubleshooting
+
+--- PAGE 3 ---
+ISE Licenses 
+Cisco ISE services provide visibility and control over increasing 
+numbers of endpoints in your network. Cisco ISE features are mapped 
+to specific licenses, and you can enable the licenses that provide the 
+Cisco ISE capabilities you need to meet your organizational needs.
+Salient Features 
+o Built-in License:
+o Central Management of Licenses
+o Concurrent Active Endpoint Count
+
+--- PAGE 4 ---
+ISE Licensing Model
+
+--- PAGE 5 ---
+Feature Mapping
+
+--- PAGE 6 ---
+Benefits of New Licensing Model
+
+--- PAGE 7 ---
+ISE Licensing Roadmap
+
+--- PAGE 8 ---
+ISE Licensing Lifecycle
+
+--- PAGE 9 ---
+Smart Licensing on ISE 
+➢ When a smart license token is active and registered in the 
+Cisco ISE administration portal, the CSSM monitors the 
+consumption of licenses by each endpoint session per 
+product license. 
+➢ Smart Licensing notifies the administrator about license 
+consumption by endpoint sessions with a simple table 
+layout in Cisco ISE.
+➢ Smart Licensing reports the peak usage of each enabled 
+license to the centralized database daily. When licenses are 
+available and not consumed, the administrator is notified of 
+available licenses and can continue to monitor usage. 
+➢ When consumption exceeds the number of licenses 
+available, an alarm is activated, and the administrator is 
+notified through alarms and notifications.
+
+--- PAGE 10 ---
+Design
+
+--- PAGE 11 ---
+Steps for registering ISE with Smart 
+Account Portal (CSSM)
+Step 1 In the Cisco ISE GUI, click the Menu icon () and choose Administration > System > Licensing.
+Step 2 In the Licensing window that is displayed, click Registration Details
+Step 3 In the Registration Details area that is displayed, enter the registration token that you received from CSSM, in theRegistration Tokenfield.
+Step 4 Choose a connection method from the Connection Method drop-down list:
+➢ Direct HTTPS if you have configured a direct connection to the Internet.
+➢ HTTPS Proxy if you do not have a direct connection to the Internet and need to use a proxy server. (If you 
+change your proxy server configuration after you register Cisco ISE Smart Licenses, you must update your 
+Smart Licenses configuration in the Licensing window. Cisco ISE establishes a connection with the CSSM 
+using the updated proxy server, avoiding disruption of Cisco ISE services.)
+➢ Transport Gatewayis the recommended option. If you have configured a Transport Gateway, this 
+connection is chosen by default. To choose another connection method, you must remove the Transport 
+Gateway configuration.
+➢ SSM On-Prem Server to connect to the configured SSM on-prem server. This option is available in Cisco ISE 
+Release 3.0 Patch 2 and later. SeeSmart Licensing for Air-Gapped Networks.
+Step 5 In the Tier and Virtual Appliance areas, check the check boxes for all the licenses you need to enable. The chosen licenses are activated and their 
+consumption is tracked by CSSM.
+Step 6 Click Register.
+
+--- PAGE 12 ---
+Steps for registering ISE with 
+Smart Account Portal (CSSM)
+
+--- PAGE 13 ---
+ISE License Migration
+
+--- PAGE 14 ---
+Smart Licensing with Air Gaped 
+environments
+An air-gapped network does not allow any communication between a secured network and an external network. 
+Cisco ISE Smart Licensing requires Cisco ISE to communicate with the CSSM. If your network is air-gapped, Cisco 
+ISE is unable to report license usage to CSSM and this lack of reporting results in the loss of administrative access 
+to Cisco ISE and restrictions in Cisco ISE features.
+To avoid licensing issues in air-gapped networks and enable full Cisco ISE functionality, you can:
+➢ Configure a Smart Software Manager (SSM) On-Premises server.
+➢ You must configure an SSM On-Prem and ensure that Cisco ISE can reach this server. This server takes over the role of CSSM 
+in your air-gapped network, releasing license entitlements, as needed, and tracking usage metrics. The SSM On-Prem server 
+also sends notifications, alarms, and warning messages that are related to licensing consumption and validity.
+➢ For more information on how to configure the SSM On-Prem server connection, see  Configure Smart Software Manager 
+On-Prem for Smart Licensing.
+➢ Enable Specific License Reservation which is a smart licensing method that helps you manage your Smart Licensing when 
+your organization's security requirements do not allow a persistent connection between Cisco ISE and the Cisco Smart 
+Software Manager (CSSM). Specific License Reservation allows you to reserve specific licenses entitlements on a Cisco ISE 
+PAN.
+
+--- PAGE 15 ---
+Cisco® Smart Software Manager On-Prem (Cisco SSM On-Prem) license server is a component of Cisco Smart Licensing. 
+It works in conjunction with Cisco Smart Software Manager to intelligently manage customer product licenses, 
+providing near-real-time visibility and reporting of the Cisco licenses that customers purchase and consume.
+Cisco Smart Licensing requires products to be associated with  Smart Accounts, which can be created on  Cisco 
+Software Central. A Smart Account is associated with a unique company ID and is like an online banking account 
+containing Cisco entitlements and devices for that customer. From the Cisco Smart Software Manager, subaccounts 
+(also called virtual accounts) can be created to represent various subdivisions or buying centers of the company.
+Smart Software Manager (SSM) 
+   On-Premises server
+
+--- PAGE 16 ---
+Smart Software Manager (SSM) 
+   On-Premises server
+
+--- PAGE 17 ---
+Specific License Reservation 
+✓ Specific License Reservation is a smart licensing method that helps you manage your Smart 
+Licensing when your organization's security requirements do not allow a persistent connection 
+between Cisco ISE and the Cisco Smart Software Manager (CSSM). Specific License Reservation 
+allows you to reserve specific license entitlements on a Cisco ISE PAN.
+✓ In Specific License Reservation, you must reserve and activate the required license count for 
+each Cisco ISE license type. For example, if you want to use Cisco ISE features enabled by 
+Advantage and Premier licenses, you must reserve both Advantage and Premier licenses. You 
+receive error or nonauthorized behaviour notifications if your Cisco ISE contains only Premier 
+licenses.
+✓ A Specific License Reservation can be enabled only on the Cisco ISE node for which it is 
+generated. In a distributed deployment, we recommend that you enable Specific License 
+Reservations on your primary and secondary PANs.
+✓ If Cisco ISE licenses are registered on the secondary PAN as well, in the event of a primary PAN 
+failover, Cisco ISE will continue to be accessible through the newly promoted secondary PAN. 
+You can then work on re-joining the primary PAN to its original state.
+
+--- PAGE 18 ---
+Steps for SLR Registration 
+Step 1 In the Cisco ISE GUI, click the Menu icon () and choose Administration > System > Licensing.
+Step 2 In the License Type area, click the Specific License Reservation radio button.
+Step 3 In the SLR Configuration area, click Generate Code in the Standalone/Primary PAN area.
+A code is displayed in the Reservation Code field next to it.
+After you generate a reservation code, you can clickCancel Request to return the reservation code. to the CSSM server This code is 
+then rendered invalid. You must generate a new reservation code the next time you want to install and enable Specific License 
+Reservation on your primary PAN.
+Step 4 Copy the reservation code to submit it in the CSSM portal in Step 8.
+Step 5 Log in to the software.cisco.com portal, and from the main menu, choose License > Smart Software Licensing.
+Step 6 Choose Inventory > Licenses to view your purchased smart licenses, license entitlements in use, and available entitlements.
+Step 7 Click License Reservation.
+Step 8 A Smart License Reservation workflow dialog box is displayed. In the Step 1: Enter Request Codetab, in the text field that is 
+displayed, enter the reservation code you received from Cisco ISE in Step 3.
+Step 9 Click Next.
+Step 10 In the Step 2: Select Licenses tab, click the Reserve a specific license radio button. Then, in the Reserve column of the table 
+displayed, for each license type, enter the number of license entitlements you want to reserve on the primary PAN.
+Step11 Click Next.
+
+--- PAGE 19 ---
+Steps for SLR Registration 
+Step 12 In the Step 3: Review and Confirm tab, review the details of your specific license reservation. Then, clickGenerate 
+Authorization Code.
+Step 13 The Step 4: Authorization Code tab contains a field that displays the authorization code in XML format. This XML content 
+includes information on the license reservation and the Cisco ISE node for which the SLR is generated. Do not make any 
+modifications to this content because tampered code is rejected by Cisco ISE. ClickDownload As File to download the .txt file 
+with the XML content to your local system.
+Step 14 In the Licensing window of the Cisco ISE administration portal, in the Primary PAN area, click Upload SLR License Key and 
+choose the XML file that you downloaded from the CSSM portal.
+It takes a few minutes for the key to upload to your node and for the activation of the Specific License Reservation.
+Step 15 To configure Specific License Reservation on your secondary PAN, carry out the following steps in theSecondary PAN 
+(optional) area:
+a.Click Generate Code.
+b.A code is displayed in the Reservation Code field next to it.
+c.After you generate a reservation code, you can clickCancel Request to return the reservation code to the CSSM server. This 
+code is then rendered invalid. You must generate a new reservation code the next time you want to install and enable Specific 
+License Reservation on your secondary PAN.
+d.Repeat Step 5 to Step 13 to configure the Specific License Reservation for your secondary PAN.
+e.In the Secondary PAN area, click Upload SLR License Key and choose the XML file that you downloaded from the CSSM 
+portal.
+f.It takes a few minutes for the key to upload to your node and for the activation of the Specific License Reservation.
+
+--- PAGE 20 ---
+Steps for SLR Registration
+
+--- PAGE 21 ---
+Basic Troubleshooting 
+• Connectivity Check 
+• Debugs 
+From ISE
+
+--- PAGE 22 ---
+Basic Troubleshooting 
+From ISE 
+• TCP Dumps
+
+--- PAGE 23 ---
+Basic Troubleshooting 
+From CSSM Portal 
+• From Event Log 
+• Product Instances
+
+--- PAGE 24 ---
+Basic Troubleshooting 
+From CSSM Portal 
+• Product Instances
+
+--- PAGE 25 ---
+Thank you

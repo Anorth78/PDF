@@ -1,0 +1,56 @@
+--- PAGE 1 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.   
+ISE Backup & Restore
+Manjunath Sheregar
+Security, TAC
+
+--- PAGE 2 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.   
+2 Types of Backup:
+Configuration data - 
+This includes all 
+policies, users, and 
+system settings.  
+Operational Data - This 
+contains logs and 
+monitoring data for 
+reporting and analysis.
+
+--- PAGE 3 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.   
+2 Methods to generate backup:
+CLI 
+command 
+• backup [{backup-name} repository {repository-name} ise-config 
+encryption-key hash| plain {encryption-key name}] 
+• backup [{backup-name} repository {repository-name} ise-
+operational encryption-key hash| plain {encryption-key name}]
+
+--- PAGE 4 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.   
+2 Methods to restore backup:
+CLI 
+command 
+• restore [{filename} repository {repository-name} encryption-
+key hash | plain {encryption-key-name}] 
+• restore [{filename} repository {repository-name} encryption-
+key hash | plain {encryption-key-name} include-adeos]
+
+--- PAGE 5 ---
+© 2025  Cisco and/or its affiliates. All rights reserved.   
+Troubleshoot:
+• show  backup  history
+• show backup status
+• show restore status
+• show restore history
+• Check available disk space for the configured repository
+• Verify if the repository is configured correctly
+• Show logging system ade/ADE.log tail
+• Debug copy 7
+• Debug transfer 7
+• Debug backup-restore all
+Show commands:
+Debug commands:
+Important Checks:
+
+--- PAGE 6 ---

@@ -1,0 +1,475 @@
+--- PAGE 1 ---
+ISE_LICENSE 
+ 
+0:01 
+Hi, my name is Divya. 
+ 
+0:03 
+This video describes the process to integrate ICE with the CSSN portal for smart licensing.  
+ 
+0:10 
+Let me take you through the content of this video. 
+ 
+0:13 
+So we will discuss about ICE licenses, ICE licensing models, smart licensing on ICE, steps to register for 
+smart licensing, licensed migration, smart licensing with air gap environment, basic troubleshooting.  
+ 
+0:30 
+So ICE licensing provides you a visibility and control over increasing number of endpoints in your 
+network. 
+ 
+0:37 
+Cisco ICE features are mapped to specific licenses and you can enable the licenses that provide the 
+Cisco ICE capabilities you need to meet your organizational goals. 
+ 
+0:52 
+There has been a transition in the ICE licensing model from the old model to a new model.  
+ 
+0:58 
+So the new model has been divided into 3 tiers. 
+ 
+1:02 
+First is Premier, second Disadvantage, 30th Essential, Premier. 
+ 
+1:08 
+Premier is a kind of combination of earlier, base, plus and effects. 
+ 
+1:14 
+All 3 of them. 
+ 
+1:16 
+Advantage will cater to base and plus, and Essential is equivalent to base licenses.  
+ 
+1:24 
+There has been a feature mapping for the licenses in case of 3 DOT X model.  
+ 
+1:31 
+Premier licenses will cover compliance and the cloud Full stack.
+
+--- PAGE 2 ---
+1:36 
+Advantage licenses will cover context. 
+ 
+1:39 
+Essential licenses will cover user visibility and enforcement. 
+ 
+1:48 
+Let me walk you through the licensing road map. 
+ 
+1:52 
+After the IC is installed, you will get 90 days of evaluation. 
+ 
+1:56 
+Wherein you can access all the sys features, identify the features that you need and then you can 
+decide to buy the correct eyes licenses to continue using Cisco Eyes.  
+ 
+2:09 
+Let me take you through the licensing life cycle. 
+ 
+2:12 
+So it starts when you install the eyes, you get a 90 days. 
+ 
+2:18 
+For the evaluation and after that once that. 
+ 
+2:22 
+Expires base enforcement without grace period starts in case of base enforcement without grace only 
+licensing page will be displayed with limited feature availability until new licenses are applied and all 
+administrative control of ICE is lost. 
+ 
+2:41 
+If the license is purchased then once the license expires you get or it is overused or over aged it, you 
+will see an alarm popping up on your screen with out of compliance. 
+ 
+2:58 
+There are 2 kinds of. 
+ 
+3:00 
+That starts. 
+ 
+3:00 
+One is soft enforcement, another is hard enforcement. 
+ 
+3:03 
+In case of soft enforcement feature pages will be in read only mode but still previously configured 
+policies and rules continue to work.
+
+--- PAGE 3 ---
+3:13 
+In case of hard enforcement services will be stopped state till new licenses are applied.  
+ 
+3:23 
+So let's discuss about Smart Licensing on ICE. 
+ 
+3:27 
+When a Smart Licensing token is active and registered in Cisco is administration portal, the CSSM 
+monitors the consumption of the licenses by each endpoint session per product license.  
+ 
+3:40 
+Smart Licensing notifies the administrator about license consumption by endpoint session with a 
+simple table layout. 
+ 
+3:48 
+In Cisco is as you can see it here. 
+ 
+3:51 
+Smart Licensing reports the peak usage of each enabled licenses to the centralised database daily.  
+ 
+3:59 
+When licenses are available and not consumed, the administrator is notified of available licenses and 
+continue to monitor usage. 
+ 
+4:10 
+When consumption exceeds the number of licenses available, an alarm is activated and the 
+administrator is notified through alarms and notifications. 
+ 
+4:21 
+So this slide describes about how the ICE deployment will look like. 
+ 
+4:27 
+So you need to activate and use a ICE and the right side you see the Cisco Smart Software Manager, 
+which is responsible for the SMART licensing. 
+ 
+4:39 
+So let's go through the steps for registering ICE with the Smart Account portal.  
+ 
+4:45 
+So the step one, you need to login into the Cisco ICE KOI and then you go to Administrate 
+Administrations System licensing. 
+ 
+4:54 
+In the licensing window that is displayed, click on the registration details.  
+ 
+5:01
+
+--- PAGE 4 ---
+In the registration details area that is displayed, enter the registration token that you receive from 
+CSSM. 
+ 
+5:09 
+In the registration token field, there are various methods by which you can do the.  
+ 
+5:15 
+You can establish the connection between the eyes and the CSSM portal.  
+ 
+5:20 
+First is directs https, second is HTTPS proxy, 3rd is transport gateway, 4th is SSM on Prem server.  
+ 
+5:29 
+Direct https is used to establish a direct connection with the Internet. 
+ 
+5:35 
+In case of proxy server we need to use HTTPS proxy if we do not have a direct communication 
+between ICE and the Internet. 
+ 
+5:44 
+In your environment Transport gateway. 
+ 
+5:49 
+If you have configured a transport gateway, this connection is chosen by default.  
+ 
+5:53 
+You to choose another connection method you must remove the transport gateway configuration.  
+ 
+6:00 
+Next is SSM on Prem server to connect to the configuration configured SSM on Prem server.  
+ 
+6:06 
+This option is available in Sysco is released 3.0 patch 2 and later. 
+ 
+6:12 
+Mostly used for the air gapped environment. 
+ 
+6:16 
+Next step, in the tier and virtual appliance areas, check the check boxes for all the licenses you need to 
+enable. 
+ 
+6:24 
+The chosen licenses are activated and their consumption is tracked by CSSM.  
+ 
+6:29 
+And then you need to click on register.
+
+--- PAGE 5 ---
+6:34 
+If you can see here the registration token needs to be entered. 
+ 
+6:38 
+These are the licensing types. 
+ 
+6:40 
+We need to select Smart License registration followed by the connection method wherein you have 
+multiple options like direct STPS, STPS proxy and on Prem server.  
+ 
+6:52 
+So you need to select according to your environment. 
+ 
+6:57 
+Next is a tier wherein you need to select all the licenses that you have purchased and you want it to 
+be activated. 
+ 
+7:04 
+You need to click on all those licenses and then finally click on register ICE license migration.  
+ 
+7:12 
+How is the process? 
+ 
+7:13 
+So first you have the pack, then it is converted to the smart licensing, Then you need to raise a 
+support case. 
+ 
+7:21 
+We need to have a conversation specific to it. 
+ 
+7:24 
+Then we need to allocate the licenses through the virtual account. 
+ 
+7:28 
+When you upgrade then you need to upgrade your ICE image and ready and it will be ready to use.  
+ 
+7:35 
+In case of the smart licensing with air gapped environment, we does not we do not, we do not have a 
+direct communication between a secured network and an external network.  
+ 
+7:47 
+So in those cases you need to deploy an on Prem server and ensure that Cisco eyes can reach this 
+server. 
+ 
+7:55
+
+--- PAGE 6 ---
+This server takes over the role of the CS system in your air gap network, releasing license entitlements 
+as needed and tracking usage metrics. 
+ 
+8:06 
+The SSM on Prem server also sends notifications, alarms, and warning messages that are related to 
+license consumption and validity. 
+ 
+8:15 
+For more information on how to configure SSM on Prem server connection, see the Configuration 
+Smart Software Manager on Prem for smart Licensing, Enable Specific License Reservation, which is a 
+smart licensing method that helps you manage your smart licensing when your organization's security 
+requirement do not allow a persistent connection between Cisco ICE and CSSL.  
+ 
+8:44 
+Specific License Reservation allows you to reserve specific license sys entitlements on a Cisco ISPAN 
+Smart Software Manager on Prem server. 
+ 
+8:58 
+This license server is a component of Cisco Smart Licensing. 
+ 
+9:02 
+It works in conjunction with the Smart Software Manager to intelligently manage customer product 
+licenses. 
+ 
+9:09 
+It requires product to be associated with smart account which can be created on Cisco Software 
+Central. 
+ 
+9:17 
+A smart account is associated with a unique company ID and is like an online banking account 
+containing Cisco entitlements and devices for that customer from the Cisco Software Manager.  
+ 
+9:31 
+Sub accounts, also called the virtual accounts, can be created to represent various subdivisions.  
+ 
+9:41 
+This shows how you can select in the connection method for the SYSM on Frame server.  
+ 
+9:47 
+Let's talk about specific license reservation. 
+ 
+9:50 
+Specific License Reservation is a smart licensing method that helps you manage your smart licensing 
+when your organization security requirements to not allow a persistent connection with the Syskys 
+and the CSSM portal.
+
+--- PAGE 7 ---
+10:04 
+SLR allows you to reserve specific license entitlements on a SISQI spam. 
+ 
+10:11 
+In case of SLR, you must reserve and activate the required license count for each SISQI license style.  
+ 
+10:19 
+For example, if you want to use Cisco IS features enabled by Advantage and Premier licenses, you 
+must reserve both Advantage and Premier licenses. 
+ 
+10:30 
+You receive error or non authorised behaviour notification if your Cisco IS contains only Premier 
+licenses. 
+ 
+10:39 
+A specific license reservation can be enabled only on the Cisco IS node for which it is generated in a 
+distributed deployment. 
+ 
+10:48 
+We recommend that you enable SLR on your primary and secondary plans if Cisco licenses are 
+registered on the secondary plan as well. 
+ 
+10:59 
+In the event of a PAN failovers, Cisco will continue to be accessible accessible through the newly 
+promoted secondary plan. 
+ 
+11:07 
+You can then work on rejoining the primary plan to the original state.  
+ 
+11:12 
+Let's talk about the steps for the SLR registration. 
+ 
+11:16 
+Registration. 
+ 
+11:17 
+So the steps are more or less similar except few steps. 
+ 
+11:23 
+Let's discuss them. 
+ 
+11:24 
+So we will have to go to the Administration system licensing page.  
+ 
+11:28 
+Therein we need to select the specific license reservation radio button in the SLR configuration area.
+
+--- PAGE 8 ---
+11:35 
+We need to generate a code in the stand alone or primary ban area. 
+ 
+11:39 
+A code is displayed in the reservation code field next to it. 
+ 
+11:43 
+After you generate a reservation code, you can click Cancel request to return the reservation code to 
+the CSSM server. 
+ 
+11:51 
+This code is then rendered invalid. 
+ 
+11:55 
+You must generate a new reservation code the next time you want to install and enable SLR on your 
+primary PAN. 
+ 
+12:03 
+If you want to continue to use that code, copy the reservation code to submit it to the CSSM portal.  
+ 
+12:09 
+In step 8, login to the software.com software.cisco.com portal and from the main menu choose 
+License Smart Software Licensing. 
+ 
+12:22 
+Choose Inventory Licenses to view. 
+ 
+12:25 
+You purchase smart licenses, License entitlements, and use and Available entitlements.  
+ 
+12:33 
+Then you need to click on License Reservation, a Smart license reservation workflow dialogue box with 
+Split in the step one. 
+ 
+12:40 
+Enter Request Code tab. 
+ 
+12:42 
+In the Next text field that is played, enter the reservation code you received from Sys 4 eyes.  
+ 
+12:47 
+In Step 3, click on Next. 
+ 
+12:52 
+In the Step 2, select Licenses tab, click the Reserve a Specific License radio button.
+
+--- PAGE 9 ---
+12:57 
+Then in the Reserve column of the table displayed for each license type, enter the number of licensed 
+entitlement you want to reserve. 
+ 
+13:05 
+On the primary PAN, click on Next. 
+ 
+13:10 
+In this Step 3 Review and Confirm tab. 
+ 
+13:12 
+Review the details of your specific license reservation. 
+ 
+13:15 
+Then click on Generate Authorization Code. 
+ 
+13:19 
+In Step 4, Authorization Code tab contains a field that displays the authorization code in XML format.  
+ 
+13:28 
+This XML contains content includes information on the license reservation and the Cisco eyes for 
+which salary generated. 
+ 
+13:37 
+We do not have to make modifications to this content because tempered code is rejected by ICE.  
+ 
+13:43 
+Click Download as File to download the text file with XML content to your local system.  
+ 
+13:48 
+In the licensing window, Obscisco is Administration portal. 
+ 
+13:51 
+In the primary PAN area, click Upload SLR License Key and choose the XML file that you downloaded 
+from the CSSN portal. 
+ 
+14:02 
+It takes a few minutes for the key to upload to your node for the activation of the specific license 
+reservation. 
+ 
+14:10 
+To configure specific license reservation on your secondary pan, carry out the following steps.  
+ 
+14:16 
+In the secondary pan, click Generate Code.
+
+--- PAGE 10 ---
+14:19 
+A code is displayed in the reservation key, the code field next to it. 
+ 
+14:23 
+After you generate a reservation code, if you want to cancel it, you can cancel that request.  
+ 
+14:27 
+It will be returned to the CSS M in the secondary band area. 
+ 
+14:31 
+Click Upload SLR license key and choose XML file that you downloaded from the CSSM portal.  
+ 
+14:36 
+It will take few minutes to upload to your note and for the activation of SLR.  
+ 
+14:49 
+So these are the documents that you need to refer for the troubleshooting and the YouTube link is 
+also being provided for for checking it. 
+ 
+15:00 
+So for the connection, for the troubleshooting for license issues from the I send, we need to do NS 
+lookup for software.cisco.com and tools.cisco.com. 
+ 
+15:12 
+It should be able to resolve it and we can also check the reachability using ping tool for 
+tools.cisco.com, software.cisco.com and for further troubleshooting we need to enable debug.  
+ 
+15:26 
+So we need to ensure that we have the components admin license and the license are enabled at blog 
+level, debug for the no concern. 
+ 
+15:36 
+And then we can also enable TCP dump. 
+ 
+15:39 
+We need to filter it out with using IP space host space tools.cisco.com or software.cisco.com.  
+ 
+15:47 
+Next, we can also review the event logs and the product instances details from the CSSM portal for 
+any corrections that we need to make. 
+ 
+15:56 
+And that's all for today. 
+ 
+15:58 
+Thank you so much for watching this video.

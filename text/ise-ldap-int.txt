@@ -1,0 +1,274 @@
+--- PAGE 1 ---
+Identity Sources
+LDAP Integration with Cisco ISE
+October 2026
+
+--- PAGE 2 ---
+Emilio Cue Funes
+Technical Consulting Engineer – Security TAC-AAA
+Part of Mexico AAA team. ISE and Duo Engineer.
+5+ Years in TAC Security
+October 2026
+
+--- PAGE 3 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Agenda
+01 What is LDAP?
+02 Why use LDAP in ISE?
+03 LDAP flow
+04 LDAP integration in ISE
+05 Troubleshooting
+06 Limitations
+
+--- PAGE 4 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+What is LDAP?
+Lightweight Directory Access 
+Protocol (LDAP) is an open, 
+vendor-neutral protocol for 
+accessing and maintaining 
+distributed directory information 
+services.
+Organized as a tree, optimized for 
+fast read/search performance 
+rather than write operations.
+LDAP acts as the standardized 
+language. 
+Systems like Active Directory or 
+OpenLDAP provide the database 
+implementation.
+Data Model:
+Entries: Individual objects (users, 
+groups).
+Attributes: Metadata describing 
+the object (cn, msDS-
+UserAccountDisabled, 
+memberOf).
+Distinguished Name (DN): The 
+unique, absolute path to any 
+specific entry in the directory 
+(CN=ise-
+bind,CN=Users,CN=TestCisco)
+
+--- PAGE 5 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+What is LDAP?
+ISE Operations:
+Bind: Authentication and session 
+initiation.
+Search/Compare: Retrieving and 
+verifying object data.
+Connectivity Standards:
+LDAP (Port 389): Standard 
+connection.
+LDAPS (Port 636): Secure, 
+encrypted connection from 
+initiation.
+Example directory
+CN=TestCisco
+CN=Users CN=Roles
+CN=ise-bind CN=testuser1 CN=Administrators
+A DN is the entry's name plus every parent up to the 
+root.
+
+--- PAGE 6 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Why use LDAP in ISE?
+Avoid Domain Join 
+Complexity
+LDAP is a protocol-level 
+integration. You do not need 
+to "join" the domain. You 
+simply provide ISE with the 
+credentials to bind to the 
+directory. 
+Reduces the administrative 
+overhead associated with 
+domain trusts.
+Authentication and 
+Authorization
+Authentication: 
+• ISE verifies the username 
+and password by binding 
+to the directory with the 
+user's DN. 
+Authorization: 
+• Groups and attributes 
+from the directory feed 
+policy conditions. 
+Centralized Identity 
+Management
+Changes to account status 
+are applied immediately 
+across all integrated network 
+services. 
+ISE takes the credentials and 
+attempts to "Bind" to the 
+directory using the user's 
+identity. If the directory 
+server accepts the 
+credentials, ISE is notified of 
+the success.
+
+--- PAGE 7 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+LDAP Flow
+Client Authenticates
+Service Bind
+User Search
+User Bind and Groups
+Policy Evaluation
+
+--- PAGE 8 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+LDAP Integration in ISE
+Once you perform “Test Bind 
+to Server” You need to get a 
+success message
+• Administration > Identity Management > 
+External Identity Sources > LDAP
+• Connection can be set to Primary Server 
+and Secondary Server
+• ISE needs LDAP IP, Port, Access, Subject 
+Search Base and Group Search Base
+
+--- PAGE 9 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+LDAP Integration in ISE
+You need to make sure ISE 
+can map onto the Groups and 
+Subjects the Directory uses
+LDAP Identity Source General tab 
+depends on the LDAP Schema 
+Mapping configuration.
+
+--- PAGE 10 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Create and enable Bind Account in AD LDS
+Create the User
+Set a Password
+Enable the account
+Grant Read Access
+In CN=Users create ise-bind (class user).
+Reset Password with a complex password.
+Set msDS-UserAccountDisabled to FALSE. AD 
+LDS users start disabled.
+Add the bind user's DN to member on 
+CN=Readers,CN=Roles,CN=TestCisco.
+
+--- PAGE 11 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Diagnostic Toolkit
+ISE Test Bind to Server
+Test-NetConnection <ip> -Port 389 from another host.
+ldp.exe (on the server)
+ADSI Edit
+ISE Live Log details
+
+--- PAGE 12 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Troubleshooting ISE Test Bind to Server
+Wrong password in ISE, 
+disabled account or 
+mistyped Admin DN
+ISE not able to reach server. 
+Need to ensure reachability 
+to port is successful. Verify 
+through PCAP in PAN.
+Bind is successful, but 
+Naming Contexts are wrong. 
+Click on Naming Contexts… 
+for subtrees advertised by 
+the LDAP Server
+
+--- PAGE 13 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+1. Connection > Connect… 2. Connection > Bind…
+Will show Objects
+3. View > Tree
+ldp.exe Tool
+Choose “Simple bind” and 
+the bind User with its 
+password.
+Successful Bind will show 
+as Authenticated
+Proves read access 
+without ISE
+
+--- PAGE 14 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+ADSI Edit
+CN=Roles 
+Include the server groups. 
+Here you can verify the 
+distinguishedName of the 
+groups.
+CN=Users
+Includes all users in the 
+server. You can verify 
+membersOf, 
+distinguishedName, msDS-
+UserAccountDisabled
+
+--- PAGE 15 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+LDAP ISE Live Log Detail Example
+➢ 15013  Selected Identity Source - adlds 2
+➢ 24031  Sending request to primary LDAP server - adlds 0
+➢ 24015  Authenticating user against LDAP Server - adlds0
+➢ 24028  User's attributes are retrieved - adlds 0
+➢ 24023  User's groups are retrieved - adlds 0
+➢ 24022  User authentication succeeded - adlds 1
+➢ 22037  Authentication Passed 0
+➢ 24031  Sending request to primary LDAP server - adlds 0
+➢ 24016  Looking up user in LDAP Server - adlds 0
+➢ 24004  User search finished successfully - adlds 0
+➢ 15048  Queried PIP - adlds.ExternalGroups 2
+➢ 15016  Selected Authorization Profile - PermitAccess 3
+Other Attributes
+IdentityDn
+CN=testuser1,CN=Users,CN=TestCisco
+ExternalGroups
+CN=Administrators,CN=Roles,CN=Test
+Cisco
+
+--- PAGE 16 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco Confidential
+Limitations
+Authentication Methods: 
+➢ No MS-CHAPv2 or CHAP: LDAP cannot 
+validate a challenge/response, so PEAP-
+MSCHAPv2 does not work
+➢ Plain-text methods work: PAP, EAP-
+GTC, TTLS with PAP inside
+➢ EAP-TLS can use LDAP for attribute and 
+group lookups
+Design: 
+➢ Plain LDAP on 389 sends passwords in 
+clear text: if security is a concern, use 
+LDAPS (636).
+➢ Groups must be stored by full DN (Group 
+Name Attribute = dn) to match 
+ExternalGroups
+➢ AD LDS partition root is a container, so 
+no OUs: every DN uses CN=
+
+--- PAGE 17 ---
+Thank you
+
+--- PAGE 18 ---
+Cisco

@@ -1,0 +1,1875 @@
+--- PAGE 1 ---
+Cisco_ISE_Guest_Access_Basics 
+ 
+0:01 
+Welcome everybody to 2023. 
+ 
+0:05 
+I got to close out the year with the last webinar in December of 2022.  
+ 
+0:11 
+I get to open up this year with you again, so I'm pretty happy about that.  
+ 
+0:16 
+My name is Charlie Morton. 
+ 
+0:17 
+I am a technical marketing engineer working with ICE, and we're going to go over some of the basic 
+configurations for guest access today. 
+ 
+0:27 
+During today's webinar and demo, we're going to talk about web auth since that's how we actually log 
+into the guest portals through ICE and what's the difference between local and central web auth.  
+ 
+0:41 
+Then we're going to go through the different hotspots that ICE gives us so that you can see how not 
+not only how they're configured, but what they look like for a guest that is experiencing your guest 
+portal. 
+ 
+0:54 
+So let's just jump right in and talk about what is guest access. 
+ 
+0:59 
+In the most basic form, guest access is just you allowing access to the network for people outside of 
+your organization. 
+ 
+1:08 
+The scary part of it is that you're using your network devices to provide this access.  
+ 
+1:13 
+So that's why we want to try to secure it a bit so that they don't have access to resources that you 
+don't want them to. 
+ 
+1:22 
+Now within ICE, we do support up to 1,000,000 guest accounts and the credentials can be emailed, 
+printed or sent via text to the guest user once they register.
+
+--- PAGE 2 ---
+1:34 
+We can also customize the portal language and support multilingual environments.  
+ 
+1:40 
+And we can use social media login. 
+ 
+1:43 
+In our case it's just Facebook at this point to provide a quick login for for end users that are 
+registering through our guest portals. 
+ 
+1:54 
+You can also manage the guest accounts through REST APIs. 
+ 
+1:59 
+Now with ICE there are 3 different types of guest accounts. 
+ 
+2:03 
+The most basic of course being the hotspot guest portal. 
+ 
+2:07 
+This gives you immediate uncredentialed Internet access is the fastest way to get your guests onto the 
+Internet. 
+ 
+2:15 
+And then from there we have a self registered guest account. 
+ 
+2:19 
+And what that does is you go to the SSID and asks you some information and it creates an account for 
+you. 
+ 
+2:27 
+And then we have a sponsored account. 
+ 
+2:30 
+What this is is you have specific people inside your organization who create accounts and hand out 
+the different accounts to the guest users. 
+ 
+2:39 
+Or if a guest user registers themselves through an SSID that requires a sponsor approval, then your 
+sponsors will be able to approve that. 
+ 
+2:50 
+And we'll show you all of these flows. 
+ 
+2:52 
+And our demo is coming up.
+
+--- PAGE 3 ---
+2:54 
+But one thing I want to bring up though, is these 2 guest access are credentialed portals.  
+ 
+3:00 
+So you have to use a username and a password, whereas the hotspot portal is not.  
+ 
+3:05 
+However, you can set up an access code for the hotspot portal. 
+ 
+3:09 
+So it's just not, you know, free access for anybody sitting in a parking lot trying to get onto the 
+network. 
+ 
+3:15 
+This way they actually have to have something that they know that you provide to log into your guest 
+portal. 
+ 
+3:23 
+So having said all of that and going through the basics of the guest portals, what guest portals do you 
+currently use or are you planning on using? 
+ 
+3:34 
+If you can just type that into the slider window here, then that will help us to help Taylor not only this 
+webinar in presentation, but the one in February as well. 
+ 
+3:51 
+And I see a lot of people are using well, hot spot and self registered. 
+ 
+3:55 
+Just keep trading back and forth between the 2. 
+ 
+3:58 
+So but sponsored guests has many different ways of people were using it.  
+ 
+4:05 
+So it looks like they might actually have more sponsored guests than anything.  
+ 
+4:09 
+So that's pretty cool. 
+ 
+4:09 
+All right, so moving on, we're going to talk about local web auth versus central web auth.  
+ 
+4:18 
+For local web auth, you have a guest user that comes in and it joins the SSID and then they're 
+presented with a guest portal.
+
+--- PAGE 4 ---
+4:28 
+Now if this portal is hosted on your network device, like our WLC 's are able to do, then that's going to 
+be a local web office. 
+ 
+4:39 
+It's locally hosted on that local network device that you're logging into. 
+ 
+4:44 
+That is exactly what local web auth is. 
+ 
+4:47 
+However, if you are going to send all that traffic and redirect it to a centralized server that will host 
+these portals, in this case, we're going to use ICE for that. 
+ 
+4:57 
+That's central web auth. 
+ 
+4:59 
+So that right there, that's the difference between the 2 with the central web auth and ICE being a 
+RADIUS server that does so much more with it, you can actually secure it a bit more and have more 
+control over your guest accounts. 
+ 
+5:14 
+So the way that the guest access works is your guest endpoint is going to talk to your network device.  
+ 
+5:21 
+That network device is going to send your map request to ICE. 
+ 
+5:26 
+The information that sends ICE is going to be, you know, the Mac address, identity, session ID, and the 
+Nas IP address, whatever network device that the request is coming from. 
+ 
+5:37 
+So I just going to take a look at that and send back to the network device the ACL and the URL 
+redirect to send to the guest endpoint. 
+ 
+5:46 
+So that when they do access the web, whether it's through the captive network browser or through 
+their regular web browser, it's going to redirect that traffic to the ICE login page.  
+ 
+6:04 
+Whereas they can either register for access or if they have an account already, they can log in to that 
+guest portal. 
+ 
+6:11 
+Then once they do that, the username and password is sent to ICE for the authentication.
+
+--- PAGE 5 ---
+6:18 
+Once that authentication succeeds, the Mac address, the identity session ID, and as IP address.  
+ 
+6:24 
+If you see the difference between the username and password, what it sends back after you log in 
+from the initial request, the only thing that has changed is the identity.  
+ 
+6:33 
+And the identity is that portal user ID that was used for logging into that guest portal.  
+ 
+6:39 
+Now for the hotspot portal, since there is no username and password, that identity is going to remain 
+the Mac address. 
+ 
+6:46 
+Then once ICE gets that information, it sends back the guest access ACL to the network device 
+allowing that endpoint to access the guest network. 
+ 
+6:59 
+Now one thing about that identity being the username here is that we can actually use that as an 
+attribute in our conditions on which we can build policies in our authorization policies as well.  
+ 
+7:15 
+And one question that we get a lot of times is, all right, well, how do I secure my network so that my 
+guest network is totally secure from my internal network? 
+ 
+7:25 
+Well there are 3 basic ways of deploying your Psns, all from the same ICE deployment to be able to 
+host your guest network. 
+ 
+7:36 
+One is the one big happy network. 
+ 
+7:38 
+Everything is all on the same network and talking and you're using Acls, maybe SE TS to segment 
+everything. 
+ 
+7:44 
+So you have your web authentication going to your ICE PS and that comes back, you get your ACL, 
+then you're allowed to go through to the Internet. 
+ 
+7:53 
+The other way to do it is if you place your PSN in the DMZ so that your guest network talks to your 
+access point and the WLC says, well, that SSID only talks to this PSN that's in the DMZ.
+
+--- PAGE 6 ---
+8:07 
+Then once you get that, you can talk to the Internet. 
+ 
+8:09 
+The caveat here that you need to know about is if you do it this way, at some point you're going to 
+have to create holes in the firewall so that your PSN can talk to your admin node.  
+ 
+8:21 
+So that's one thing for your network administrators to take a look at and see if they want to put those 
+holes in there. 
+ 
+8:28 
+The other way to do it is to kind of straddle the DMZ and the internal network with your PSN.  
+ 
+8:35 
+You have one interface in the DMZ and one interface on your internal network.  
+ 
+8:40 
+That way you can talk to the PAN and you still have your separation of services in your DMZ from your 
+internal network. 
+ 
+8:49 
+Of course, the other way of doing it that is not part of the same deployment is to have a separate ICE 
+deployment just for your guest sitting in your DMZ. 
+ 
+9:01 
+So when I go and show you the demos that I have set up for today, I'm going to use 3 different SSID 
+'s. 
+ 
+9:11 
+I've got the demo guess is myself registered. 
+ 
+9:14 
+That's actually going to be the ones that I have where my PSN is in the DMZ.  
+ 
+9:19 
+And you'll see some of the fun stuff that happens with with that as well.  
+ 
+9:25 
+And then I have my demo hotspot in my demo sponsor that's part of my one big happy network.  
+ 
+9:32 
+So that's all relatively easy to to set up and to use here. 
+ 
+9:40
+
+--- PAGE 7 ---
+Before I get into the demos though, I do want to know what guest access options or settings would 
+you like to see as a demo? 
+ 
+9:49 
+And if, if it's something that we're going to get to today, awesome, great. 
+ 
+9:54 
+If it's not, then there's something I can actually put into what we're doing for next month in our 
+advanced series. 
+ 
+10:03 
+So I'm going to go ahead and move on to our Delos and what we're going to talk about here is the 
+hotspot demo. 
+ 
+10:15 
+This is our quick win are easy to use hotspot demo. 
+ 
+10:22 
+So basically what you're going to do with this is get your guests to the Internet as quickly as possible.  
+ 
+10:30 
+So having said that, what I'm using is the work center. 
+ 
+10:33 
+And if you go into your work center and guest access, you're going to get this great overview page 
+that really tells you what steps you need to go ahead and build out guest access no matter which type 
+of portal you're looking to use. 
+ 
+10:49 
+And then if you look up top, you have this whole menu system that is only menu items that directly 
+correlate with the guest access. 
+ 
+10:59 
+So we go into portals and components. 
+ 
+11:01 
+You see we have 3 different portals here. 
+ 
+11:04 
+Best practice is not to use the defaults, but the duplicate. 
+ 
+11:09 
+The defaults duplicate whichever one you want and then create it from there.  
+ 
+11:13 
+That way you always have your default portals and you know what the default settings are.
+
+--- PAGE 8 ---
+11:18 
+And if you do happen to mess up a portal for any reason, you just delete it and start over.  
+ 
+11:25 
+So I'm going to go and look at the portal settings first. 
+ 
+11:28 
+I clicked on the wrong button there. 
+ 
+11:30 
+As you can see, we're using Gigabit Ethernet zero. 
+ 
+11:34 
+We're using our guest endpoints identity group. 
+ 
+11:36 
+That's where all of our Mac addresses are going to go. 
+ 
+11:39 
+We'll take a look at the endpoint identity groups later then acceptable use policy page.  
+ 
+11:44 
+This is where we can put the access code if we want to use an access code for our hotspot portal.  
+ 
+11:50 
+And of course I do a post access banner page that's good for GDPR, but other than that it just an extra 
+click, an extra page. 
+ 
+11:59 
+So I typically don't turn that on for the authentication success settings page.  
+ 
+12:05 
+I'm just going to send it to my website just because it gives them a visual indication that hey, you now 
+have access to the Internet. 
+ 
+12:14 
+It's quick and easy. 
+ 
+12:15 
+You can put whatever you want to in there. 
+ 
+12:17 
+Originating URL requires specific hardware and codes to use that.
+
+--- PAGE 9 ---
+12:23 
+And for every portal that I create, I always include the support information page.  
+ 
+12:28 
+It's a great way to help in troubleshooting if some issues do arise. 
+ 
+12:34 
+So once we save that we're going to go ahead over. 
+ 
+12:38 
+You can see the server response is as saved successfully. 
+ 
+12:40 
+We're going to click on the portal test URL, and as you can see, it automatically opens up to an IP 
+address. 
+ 
+12:48 
+And this IP address is actually my Azure instance device. 
+ 
+12:57 
+So I'm just going to stop that real quick. 
+ 
+13:03 
+Sorry about that. 
+ 
+13:05 
+I wanted to show you that this is what your portal was going to look like.  
+ 
+13:12 
+We're not going to follow this flow all the way through because I'm going to show you that live on an 
+endpoint device. 
+ 
+13:18 
+But this is your basic default view for the hotspot portal with an access code.  
+ 
+13:25 
+So from there, we're going to go in and build out the policy elements that we need to create a policy.  
+ 
+13:34 
+And for that we need to go into our policy elements and results and create authorization profiles.  
+ 
+13:40 
+Now as you can see, I have hotspot redirect and guest access.
+
+--- PAGE 10 ---
+13:44 
+For my hotspot redirect, I'm actually using a Meraki access point for this.  
+ 
+13:50 
+So go down to the web redirection in the common task. 
+ 
+13:53 
+And if as you can see, if you click on that drop down, you have specific number of items that you can 
+choose. 
+ 
+14:00 
+My ACL is not, I'm not using ACL here. 
+ 
+14:03 
+And then I can choose my hotspot guest webinar portal that you saw me create.  
+ 
+14:10 
+And then if you go into guest access, this authorization profile is going to use the airspace ACL and 
+that is named guess access. 
+ 
+14:23 
+And I'll show you over here in my Meraki what that means, why I'm not using redirect ACL or yeah.  
+ 
+14:33 
+So if I go into my demo hotspot, I'm using back base access control and I am using this flash page for 
+Cisco Identity services. 
+ 
+14:44 
+Now if we go into the advanced splash settings, you can see I'm using my walled garden.  
+ 
+14:50 
+Now inside the walled garden I'm putting in the IP address of my PSN.  
+ 
+14:55 
+This is why I don't need to use an ACL here because I only have access to that.  
+ 
+15:01 
+So then my radius servers of course is the same PSN and then the radius attribute for specifying group 
+policy is airspace ACL name. 
+ 
+15:09 
+That's why I use that attribute in the authorization profile. 
+ 
+15:13 
+So the group policy in Meraki, that's what we use as the ACL.
+
+--- PAGE 11 ---
+15:19 
+If we go to network wide and then group policies in our Meraki dashboard, we can see that we have 
+the guest access group policy here. 
+ 
+15:27 
+And I'm denying all my internal for my corporate network, my branch network.  
+ 
+15:31 
+So the only thing my guests have access to is the Internet and that's it.  
+ 
+15:37 
+I'm using this same authorization profile for all my guests access. 
+ 
+15:42 
+The only thing that will change is going to be the only thing that will change is going to be the 
+redirect profile. 
+ 
+15:55 
+So all right, sorry about letting that video get a little bit ahead of me. 
+ 
+16:00 
+I was a little bit more verbose than I thought I was going to be. 
+ 
+16:06 
+All right, So the other thing that we need to do is to create an allowed protocols for math only.  
+ 
+16:14 
+So I'm a big component of you create a different allowed protocols for each way you access the 
+network. 
+ 
+16:19 
+And for math for guess all you need is process host lookup. 
+ 
+16:22 
+As you can see, nothing else has turned on. 
+ 
+16:25 
+So all we're using is process host lookup, which essentially enables MAB.  
+ 
+16:30 
+So now if we go to the policy sets, you can see I have a policy set here for a hotspot guest if the 
+request comes in using the Meraki device type with an SSID and in the hotspot.  
+ 
+16:43 
+We use MAB only for our allowed protocols and our authentication policy.
+
+--- PAGE 12 ---
+16:48 
+I'm not using the default policy. 
+ 
+16:50 
+I created a new policy that says if it's a wireless map request and authentication fails, continue.  
+ 
+16:56 
+If user is not found, continue because if the user is not failed, if the user is not found the 
+authentication will fail. 
+ 
+17:03 
+So we need to continue on to authorization so we can get that redirect.  
+ 
+17:08 
+Now you see we have the hotspot access is above the hotspot redirect.  
+ 
+17:15 
+And the reason we do that is if you're a part of that guess endpoint, if you already registered your 
+device as part of guest endpoint, you don't want to go through that redirect again.  
+ 
+17:28 
+I just will automatically be able to find your Mac address inside guest endpoints and just allow you 
+onto the network. 
+ 
+17:34 
+Whereas have you not already registered? 
+ 
+17:37 
+Then you're going to hit that second rule and that's where you're going to get the redirect.  
+ 
+17:41 
+And that's why the specific order here really does matter. 
+ 
+17:48 
+All right, so now we're going to get out of here. 
+ 
+17:52 
+No, I don't want to go there. 
+ 
+17:53 
+I want to go up and go to the live logs. 
+ 
+17:56 
+So let's go to operations live logs and what I'm going to do here is this is my phone over here I've 
+blurred out some SSID 's to secure my neighbors and I'm accessing the demo hotspot.
+
+--- PAGE 13 ---
+18:12 
+As you can see, captive browser automatically comes up. 
+ 
+18:17 
+I put in my passcode once I access the SSID, you saw my entries here in the live blog.  
+ 
+18:25 
+And then once I click the accept button, I got my change of authorization and I got into the the 
+network you saw. 
+ 
+18:37 
+It redirected me to the website. 
+ 
+18:39 
+I'm going back out to the full browser, unable to browse the web. 
+ 
+18:45 
+And from there, you can see that the authentication policy, the authorization policy and the 
+authorization profiles that have been hit are the exact ones that I wanted them to hit in the exact 
+order they were supposed to. 
+ 
+19:00 
+So that was an abrupt end to my video. 
+ 
+19:06 
+I'm sorry about that. 
+ 
+19:08 
+But that is the flow for the hotspot portal. 
+ 
+19:15 
+I don't think that was the end though, was it? 
+ 
+19:19 
+It was not. 
+ 
+19:20 
+See, I knew there was more to it. 
+ 
+19:23 
+All right, So what we're going to do now is we want to talk about the self registered gas portal.  
+ 
+19:35 
+And before we create a self registered guest portal, we need to talk about guest types.
+
+--- PAGE 14 ---
+19:40 
+You see there are 4 different guest types that are included as default with ICE and these different 
+guest types do and mean different things. 
+ 
+19:51 
+Now a lot of times people just refer to guest types as a length of time.  
+ 
+19:57 
+As you can see we have the daily and the weekly, but we also have contractors and social logging.  
+ 
+20:02 
+So you don't have to just think of guest types as the length of time. 
+ 
+20:09 
+Consider them a specific role to which you want to assign guests.  
+ 
+20:13 
+So for the contractor you can have. 
+ 
+20:16 
+An account duration of a year, but the default account duration is 90 days.  
+ 
+20:21 
+And of course all of this is highly configurable and you can set it to any day that you want.  
+ 
+20:27 
+Contractor daily and weekly. 
+ 
+20:30 
+The timer starts from the sponsor specified date or if it's a self registered it's date of self registration.  
+ 
+20:37 
+So keep that in mind. 
+ 
+20:39 
+You can also change that to from first login. 
+ 
+20:42 
+So if you if you create the account for them as a sponsor and they don't log in for a week, then from 
+first login we'll still get on the 90 days from when they first logged in.  
+ 
+20:54 
+The maximum simultaneous logins is 3 for everyone except daily. 
+ 
+21:02
+
+--- PAGE 15 ---
+Which makes sense because if you're using like a hotspot portal then you only want them to be able 
+to log in one time because the hotspot portal just uses the Mac address.  
+ 
+21:11 
+So it doesn't make any sense to allow for more than that. 
+ 
+21:15 
+Maximum devices guests can register, same thing with that. 
+ 
+21:18 
+The daily only makes sense to have only one. 
+ 
+21:21 
+You can configure these from anywhere from one to I think it's 99, but we'll we'll see when we go 
+through the guest types in the demo. 
+ 
+21:34 
+The reason I put the guest endpoints as the endpoint identity group is not only is that the default for 
+every single guest type, but that doesn't mean it has to be guest endpoints.  
+ 
+21:46 
+You can change that to be any endpoint identity group that you want.  
+ 
+21:49 
+You can create new endpoint identity groups based upon the guest flow through which you're putting 
+your users. 
+ 
+21:58 
+So don't feel like you're locked into just using guest endpoints on that one.  
+ 
+22:05 
+Now the sponsor groups will dive into those deeper when we start talking about the sponsored portal, 
+but this does actually come into account a little bit when we're talking about self register as well.  
+ 
+22:20 
+So the sponsor groups by default for all of your guest types except for social login are shown here.  
+ 
+22:29 
+And it's the all accounts group accounts and own accounts. 
+ 
+22:31 
+Those are all 3 of the sponsor groups that currently exist as a default through ICE.  
+ 
+22:38 
+OK, so now we're going to go ahead and get through our self registered guest demo.
+
+--- PAGE 16 ---
+22:46 
+And again, we're going to start with the guest types and we're going to look at the weekly guest type 
+for a self registered guest. 
+ 
+22:53 
+All right, so from first login, like I said, is always a good way to start. 
+ 
+22:59 
+But you know what, before I do this, I already broke a rule. 
+ 
+23:04 
+So let's go ahead and change that back. 
+ 
+23:05 
+Go back to guest types and we're going to, you have to click on the bottom right corner of these 
+things to select them. 
+ 
+23:12 
+So select that and we're going to duplicate the weekly that way we keep our default weekly in there.  
+ 
+23:18 
+So let's go ahead and we're going to change this to self registered. 
+ 
+23:21 
+Since this is going to be for our self registered guest type, we're just going to name it that.  
+ 
+23:27 
+And now we're going to of course, descriptions always matter. 
+ 
+23:32 
+Why did I create this? 
+ 
+23:33 
+Well, I forget it was 2 years ago, but if you put a description in here then you know why you created.  
+ 
+23:39 
+Even a super basic description can be helpful, especially if someone 's coming in to work with you on 
+something. 
+ 
+23:46 
+So from first log in, we're going to do it for 7 days maximum simultaneous logins 3.  
+ 
+23:54 
+We can keep it at that.
+
+--- PAGE 17 ---
+23:55 
+Maximum devices. 
+ 
+23:57 
+Oh it's 999, not 99, so we're going to keep it at guess end points. 
+ 
+24:03 
+Now we can send account expiration notifications, but we're not going to, this is self registered for 
+only a week. 
+ 
+24:10 
+So halfway through we don't want to send them an email or a text telling them, hey, you're going to 
+expire. 
+ 
+24:17 
+If it was for like a 90 day account, then sure, we do that, but not in this case.  
+ 
+24:23 
+So let's go ahead and we'll save that. 
+ 
+24:27 
+And then we're going to go back to the guest portals and we're going to duplicate our self registered 
+guest portal. 
+ 
+24:35 
+And let's go in here. 
+ 
+24:36 
+We're going to rename this just put webinar at the end. 
+ 
+24:39 
+So we we know that we're using this for today. 
+ 
+24:41 
+And then we're going to go down to our portal settings here. 
+ 
+24:49 
+And what we're going to do here is we're going to look at our authentication method is we're going 
+to be using the guest portal sequence. 
+ 
+25:03 
+This is and identity source sequence. 
+ 
+25:05 
+We're going to talk about those later, but we're going to change our default guest type to self 
+registered.
+
+--- PAGE 18 ---
+25:11 
+As you can see, the drop down box doesn't like to follow the dark mode, so we have to hover over 
+everything to see what's in there. 
+ 
+25:19 
+We're going to include the acceptable use policy as a link. 
+ 
+25:23 
+Instead of having the text take up the whole page, we're just going to do it as a link.  
+ 
+25:26 
+You can require them to accept the AUP as well if you would like them to do that.  
+ 
+25:32 
+This is also where you would allow social login through Facebook and we'll show that next month.  
+ 
+25:36 
+We're going to go through that whole flow, but then we want to go through the registration form 
+settings and oh, wait a second. 
+ 
+25:45 
+So we're going to also make sure that we assign this to guest type, self registered.  
+ 
+25:50 
+As you see the account valid line change so that it's in line with the self registered guest type.  
+ 
+25:59 
+We're not going to have them put in their username. 
+ 
+26:03 
+We're just going to assign that to them ourselves. 
+ 
+26:05 
+We're going to require our first and last name here. 
+ 
+26:12 
+We're not going to require the email address there. 
+ 
+26:14 
+But with our selections down below, you'll see that it's going to automatically require them.  
+ 
+26:20 
+And those selections are for the SMS provider.
+
+--- PAGE 19 ---
+26:22 
+We're going to turn off the global default. 
+ 
+26:24 
+Just turn on the big 3 here for the US is T Mobile, ATT and Verizon and you can edit or do anything 
+you want to for the SMS gateway providers at that link. 
+ 
+26:37 
+And we'll go through some of that in a little bit as well. 
+ 
+26:41 
+So down here we're going to disallow specific email addresses because you know, if we have a 
+domain that we see a lot of junk coming from, we don't want anything from there.  
+ 
+26:58 
+I'm just putting aol.com in there, not to say there's anything bad about it, so don't get upset at me.  
+ 
+27:03 
+And then we're going to send a credential notifications automatically using email and SMS and that's 
+going to require email and phone number for that self registration success page is going to show 
+them everything that they've put in, including their username and password. 
+ 
+27:22 
+The print command will show the username and password on their screen and they can use that to 
+print to any network printer that they have. 
+ 
+27:31 
+We're not going to do an AUP page since that's on the sign in Page as a link for the demo.  
+ 
+27:40 
+We're not going to require a password change, though you definitely could.  
+ 
+27:46 
+And of course, it's going to show you that it's less secure to not require that password change, which 
+is totally true and fine. 
+ 
+27:55 
+We're going to, I'm actually register, we're not doing BYOD. 
+ 
+27:58 
+So we want to make sure that those settings are turned off and by default they are.  
+ 
+28:03 
+You can also do device compliance or device posture through the guest flow, which though is not a 
+very good user experience, is still an option.
+
+--- PAGE 20 ---
+28:15 
+We're not doing a post login banner again, that's just another click.  
+ 
+28:22 
+So we do want to include the support information page. 
+ 
+28:26 
+As you can see, we're using the authentication success page instead of a website here, and I'll show 
+you why once we get to that point. 
+ 
+28:35 
+So we're going ahead and we're going to save that. 
+ 
+28:40 
+You know what? 
+ 
+28:40 
+Let's go ahead and do a quick customization here as well. 
+ 
+28:45 
+Typically, what I do in all of my portals, I didn't do it on the hotspot portal because I was showing you 
+the quickest, easiest way to get to the Internet. 
+ 
+28:53 
+Put 5 spaces in the contact line here. 
+ 
+28:56 
+That leaves that blank. 
+ 
+28:58 
+You have to have something in there, but I don't want any text in there.  
+ 
+29:01 
+So if I come down here to optional content too, I will toggle the HTML button which is right there.  
+ 
+29:10 
+Click on that, then you paste in the HTML here and I'm I'll give you the code for that little bit and then 
+you toggle the HTML off again and you can see that it creates that button there and that's what the 
+button is going to look like. 
+ 
+29:26 
+So we're going to save that and now we're going to go and take a look at what that looks like in our 
+test URL. 
+ 
+29:35 
+As you can see, we have the button at the bottom.
+
+--- PAGE 21 ---
+29:37 
+Now we're going to Click to register an account. 
+ 
+29:44 
+Hey, look, it's me. 
+ 
+29:46 
+I'm sorry that the text size on this is so small. 
+ 
+29:48 
+I didn't realize that until after I had already compiled everything that when you create a new window 
+from ICE, it just reverts back to the the small text size. 
+ 
+30:03 
+So yeah, I'm not giving you my phone number, so I'm sorry about that.  
+ 
+30:06 
+But if I click Register here, this will actually send me a text and an email.  
+ 
+30:15 
+So this is the account success page. 
+ 
+30:18 
+Now from here, you can ask for your credentials again. 
+ 
+30:25 
+If you check 0I got the email and this is what the email looks like for the credentials.  
+ 
+30:30 
+Let's let's make a little bit bigger so you can actually see what it says.  
+ 
+30:35 
+All right, so that's what we have for our. 
+ 
+30:50 
+Self registered portal. 
+ 
+30:51 
+If we go into our access control for our Meraki dashboard for that hotspot, not hotspot but self 
+registered SSID, we can see that it set up the same exact way as the hotspot is.  
+ 
+31:07 
+It's the portal on ice that makes it different.
+
+--- PAGE 22 ---
+31:10 
+So we have this, the walled garden here with the PSN, this is the one that's hosted in AWS.  
+ 
+31:18 
+And then that same PSN is in our RADIUS servers and RADIUS accounting servers, of course, and then 
+our group policy airspace ACL name. 
+ 
+31:27 
+So everything is the same except for the PSN that we're choosing to use.  
+ 
+31:33 
+So if we go into our policy elements and look at our authorization profiles, we're going to create a 
+new profile. 
+ 
+31:43 
+And for this authorization profile, we're just going to make it super simple, self Reg redirect.  
+ 
+31:51 
+And we're going to Scroll down in the common tasks to the web redirection.  
+ 
+31:56 
+And this time see we can't choose self register, but we're we are using centralized web auth.  
+ 
+32:03 
+So that's what we're going to use here. 
+ 
+32:05 
+Everything for guest access. 
+ 
+32:08 
+Will you centralized web auth except hotspot again, ACL is null and we're choosing the portal that we 
+had just created. 
+ 
+32:15 
+I don't have a local DNS server at my house, so I'm just going to use the IP address for my AWS node 
+and we're going to scroll all the way down and save this. 
+ 
+32:32 
+All right, now that we have that saved, we have to create a policy set. 
+ 
+32:36 
+Now you didn't get to see me create that for a hotspot guest, but I'm going to go ahead and build 
+this out real time for you so that you can see how actually quick and easy this really is.  
+ 
+32:47 
+So self registered guest, the fastest, the longest time it takes is for me to type.
+
+--- PAGE 23 ---
+32:54 
+So sorry about that. 
+ 
+32:56 
+So here we're going to choose the attribute and we're going to change the dictionary to device and 
+the device type is going to be Meraki. 
+ 
+33:05 
+These are network devices I have already set up in ICE. 
+ 
+33:08 
+That's how we're accessing network. 
+ 
+33:10 
+Then our attribute is we're going to radius now called station ID is the name of the access point or 
+Mac rest of the access point and it ends with the SSID. 
+ 
+33:26 
+Now the last word in our SS ID is ice demo guest. 
+ 
+33:30 
+So last word is guest. 
+ 
+33:32 
+So anything that ends with guest will go there. 
+ 
+33:34 
+And we're using our map only allowed protocols again. 
+ 
+33:39 
+So once we go in here again, we don't use the default authentication policy.  
+ 
+33:45 
+We create a new policy and this is going to be our self Reg mab and then our conditions is actually 
+pretty quick and each this is a pre built condition. 
+ 
+33:58 
+If we Scroll down on the left side, we'll see wireless mav. 
+ 
+34:01 
+We'll drag that to our editor and click use. 
+ 
+34:05 
+You can see that it's right there.
+
+--- PAGE 24 ---
+34:07 
+We change to internal endpoints and we select the options for authentication.  
+ 
+34:12 
+Fail, continue, user not found, continue. 
+ 
+34:16 
+Our authentication policy is complete. 
+ 
+34:18 
+Let's move to our authorization policy. 
+ 
+34:21 
+So remember what I said, we want the redirect to be on bottom. 
+ 
+34:27 
+So we're going to create our redirect first. 
+ 
+34:34 
+And again, the conditions here, though it's still wireless map, as we Scroll down and see it, the wireless 
+map authorization condition is actually different than the wireless map authentication condition.  
+ 
+34:50 
+And then for our profile, we're going to Scroll down to self Reg redirect.  
+ 
+34:55 
+And now we can create our self registered guest access. 
+ 
+35:01 
+And this one is actually pretty simple as well. 
+ 
+35:06 
+So in our conditions, we are going to use identity group as our attribute.  
+ 
+35:14 
+So click on our dictionary, Scroll down to identity group name, and then once that equals guest 
+endpoints, don't click, say, Scroll down and click Use. 
+ 
+35:26 
+That puts it in your authorization rule and then guest access. 
+ 
+35:31 
+Now we can save that, and from here we can go to our live log again.
+
+--- PAGE 25 ---
+35:44 
+All right, now bring up the phone. 
+ 
+35:51 
+There we go. 
+ 
+35:52 
+I had to get it connected. 
+ 
+35:54 
+Now it's connecting. 
+ 
+35:55 
+Oh, you can see that it's made the connection because our live log has shown some data.  
+ 
+36:01 
+Our mini browser popped up and let's register a new account. 
+ 
+36:06 
+All right, so this is Penelope people pleaser, because why not go with alliteration whenever you can?  
+ 
+36:18 
+I'm going to use the same email address. 
+ 
+36:19 
+I'm going to get a different email notification, of course, and I'll show you that, but I'm also going to 
+put in the mobile. 
+ 
+36:29 
+No wait, I got a errant space here. 
+ 
+36:31 
+Let's get rid of that. 
+ 
+36:33 
+OK, go ahead and put in my mobile number here. 
+ 
+36:39 
+United States is all the way at the bottom, so Scroll down. 
+ 
+36:42 
+Put that in. 
+ 
+36:43 
+Put in the SMS provider and register.
+
+--- PAGE 26 ---
+36:50 
+Oh, an attempt to text your account information to your failed attempt to email account information 
+has failed. 
+ 
+36:57 
+Well, remember what I said, This is my PSN that's in the DMZ. 
+ 
+37:03 
+And because it's in the DMZ, this PSN does not have access to the text or email servers, but I do have 
+access on to the network as you can see here. 
+ 
+37:19 
+I just didn't get the credentials. 
+ 
+37:21 
+So that's the other reason you want to use that authorization success page at that moment is because 
+if you're using that PSN and DMZ, they can log on to the network from that page using that sign on 
+button. 
+ 
+37:38 
+Let's go back to that real quick. 
+ 
+37:39 
+So you can see that you see that bottom button there sign on that would just use their credentials to 
+get them onto the network from that page. 
+ 
+37:48 
+Now, once you do that, we can go ahead and get out of the mini browser.  
+ 
+37:57 
+Let's make sure we're signed on. 
+ 
+37:58 
+Boom, we're signed on. 
+ 
+37:59 
+So let's go ahead and click the done. 
+ 
+38:02 
+We're going to get out of settings and go ahead and look at our Chrome browser.  
+ 
+38:10 
+All right, so now we're in Chrome to open it up. 
+ 
+38:14 
+All right, we're going to go to NFL.com.
+
+--- PAGE 27 ---
+38:17 
+What's going on there? 
+ 
+38:18 
+Hey, look at that. 
+ 
+38:19 
+Wild cards coming up. 
+ 
+38:21 
+Yay. 
+ 
+38:22 
+All right, so now that we've got that and we're on the Internet, let's take a look at the way that we can 
+manage these accounts. 
+ 
+38:33 
+Now, as you've noticed, and if you've played around with nice guest at all, you'll see that there is 
+nowhere inside of the ICE GUI itself that you can see the guest accounts, let alone manage and do 
+anything with them. 
+ 
+38:52 
+The only way to manage guest accounts is through the sponsor portal.  
+ 
+38:58 
+We're going to talk in depth about the sponsor portal once we move to the sponsored guest demo, 
+but this is to show you that any guest, whether it's a self registered guest or a sponsored guest, is 
+managed through this same portal. 
+ 
+39:16 
+Now we're going to go ahead and log in here, but you know what? 
+ 
+39:19 
+I'm going to log in as the admin and I want to show you something using the sponsor portal.  
+ 
+39:25 
+You cannot log in as the default super admin in ICE. 
+ 
+39:29 
+You have to use a network access user that is assigned to one of the sponsor types or sponsor groups.  
+ 
+39:38 
+So that's an important distinction here as well. 
+ 
+39:42 
+So let's go ahead and log in as the network access user that I showed you a while ago.
+
+--- PAGE 28 ---
+39:53 
+Oh, wait, that's me. 
+ 
+39:54 
+All right, so once you get in, you'll see that you have 4 buttons at the top.  
+ 
+40:00 
+One is managed accounts. 
+ 
+40:01 
+So we're going to go into managed accounts, find Penelope, Penelope People, Plaser, and we're going 
+to resend credentials. 
+ 
+40:08 
+So let's click the resend. 
+ 
+40:10 
+And let's resend through text. 
+ 
+40:15 
+0I can't. 
+ 
+40:18 
+OK, well then let's resend through email. 
+ 
+40:23 
+0I can't do that either. 
+ 
+40:26 
+All right, so let's go back over to ICE and see why I can't do this.  
+ 
+40:29 
+So if we go back to our work centers guest access and settings, you'll see that we have guest email 
+settings on the left and send notification sponsor email address is the default.  
+ 
+40:48 
+I want to always send from the default address. 
+ 
+40:51 
+So if I do that, look, I didn't even have to log out and log back in or anything.  
+ 
+40:56 
+I can just do it right away.
+
+--- PAGE 29 ---
+40:58 
+So refresh and look at that. 
+ 
+41:00 
+I've got my new account credentials for penalty people pleaser. 
+ 
+41:05 
+So all right, cool. 
+ 
+41:07 
+Now let's go to our portals and components and our sponsor groups. 
+ 
+41:13 
+Remember the C Morton account was part of the All Accounts group.  
+ 
+41:18 
+If you scroll all the way down, let's let's show you that it's part of the All Accounts group.  
+ 
+41:26 
+There you go. 
+ 
+41:31 
+That way we've verified which group it's a part of. 
+ 
+41:34 
+Now we're going to scroll all the way down to the bottom of this page and you can see that almost 
+everything is selected except for Send SMS notifications with Grit with guest credentials.  
+ 
+41:46 
+So once we save that and we click resend, we can go ahead and send that SMS message and boom, as 
+you can see, we just got the text on our phone. 
+ 
+41:59 
+The notification doesn't show up during the screen recording on the phone, but you can see that I've 
+just got that notification. 
+ 
+42:14 
+OK, so now we're going to move on to our sponsored guest demo.  
+ 
+42:21 
+Now like I said, there are 2 different types of sponsored guests that we're going to go through.  
+ 
+42:26 
+The first one is to have a sponsor create all the accounts to hand out to the guests.
+
+--- PAGE 30 ---
+42:34 
+As you can see, I've created more network access users and I've used different identity groups for 
+them. 
+ 
+42:40 
+I'm using the all accounts, the group accounts and the own accounts, identity groups for these.  
+ 
+42:47 
+Now, if you click on one of your users or even when you're creating your user, you have the spot 
+down below under user groups, and that's where you assign these accounts to your user.  
+ 
+43:02 
+It doesn't have to just be sponsored groups. 
+ 
+43:04 
+It can be any type of identity groups that you create for your user. 
+ 
+43:10 
+All right, so let's go back to our sponsored groups and we'll take a look at our All Accounts sponsor 
+group. 
+ 
+43:19 
+As you can see, the members of the All Accounts Sponsor group is anyone in all accounts.  
+ 
+43:24 
+You can actually add Active Directory groups here or a lot of other external identity sources.  
+ 
+43:32 
+We're going to add our second location here in Raleigh to be managed by this sponsor group as well.  
+ 
+43:42 
+I like to always automatically email gifts account creation just because it's convenient not for only for 
+us, but for the guests as well and for a sponsor group for all accounts. 
+ 
+43:56 
+I'm going to give it a prefix for all of our created accounts that this sponsor will create.  
+ 
+44:04 
+Of course, this sponsor can manage all guest accounts. 
+ 
+44:10 
+That's why the name of the group is all accounts. 
+ 
+44:14 
+We already turned on the SMS notifications.
+
+--- PAGE 31 ---
+44:17 
+But also if you want this sponsor to be able to use guest REST API to manage guest accounts, you 
+have to turn on that last checkbox as well. 
+ 
+44:28 
+We're not doing that in this webinar, but I want you to be aware of that. 
+ 
+44:32 
+So now we're going to look at group accounts. 
+ 
+44:35 
+Same thing. 
+ 
+44:36 
+Group accounts. 
+ 
+44:36 
+Anyone is a member of group accounts is a member of this group. 
+ 
+44:41 
+Let's add Raleigh back into this one as well. 
+ 
+44:44 
+Automatically email guests because he's and we're going to use a username prefix for this one as well.  
+ 
+44:51 
+This is group, of course, because I am so imaginative and creative, right? 
+ 
+44:57 
+So this one is sponsor can manage only those accounts created by members of this sponsor group, 
+right? 
+ 
+45:04 
+Not just this one sponsor, but anyone that is part of this sponsor group.  
+ 
+45:09 
+And of course we're on the SMS and notifications for this one as well.  
+ 
+45:14 
+So we'll save that and we'll go back to our sponsor groups. 
+ 
+45:18 
+And this is the own accounts.
+
+--- PAGE 32 ---
+45:19 
+So you can only see and do anything for the accounts that you yourself create.  
+ 
+45:26 
+Anybody that's part of the own accounts cannot see anybody else 's accounts or guests or anything 
+like that. 
+ 
+45:35 
+You can only manage the accounts that you have created yourself. 
+ 
+45:40 
+I'm also not going to allow SMS notification, and I'm only allowing approval for accounts that this 
+sponsor has created. 
+ 
+45:51 
+All right, now we're going to save that and we're going to create a sponsored guest portal.  
+ 
+46:01 
+As you can see, it's already been created, but we're going to go through the settings and show you 
+what those are. 
+ 
+46:08 
+So for the portal settings, all of our default ports are 8443. 
+ 
+46:15 
+We're using the same guest portal sequence, and we're going to use the contractor guest type.  
+ 
+46:21 
+For our sponsor portal, we're going to include the AUP as a link. 
+ 
+46:26 
+We're not going to allow guests to create their own accounts. 
+ 
+46:29 
+We want to create the accounts to give to the guests. 
+ 
+46:32 
+So everything else is going to be turned off like it was before except for the support information page.  
+ 
+46:39 
+We of course want to make sure that that is enabled. 
+ 
+46:44 
+And here we go.
+
+--- PAGE 33 ---
+46:45 
+Now I want to show you real quick, if you click the change password, you can change your password.  
+ 
+46:52 
+But if you click on your support information, this is the information that you get.  
+ 
+46:57 
+And you can see it says contact the help desk at XXXXXXX. 
+ 
+47:03 
+Let's go ahead and fix that real quick. 
+ 
+47:07 
+Let's update that. 
+ 
+47:09 
+And we do that through the portal page customization. 
+ 
+47:12 
+If we Scroll down, you can see on the left side where we have support information.  
+ 
+47:17 
+That's what we want to update. 
+ 
+47:19 
+Then we go Scroll down to where we see the phone number placeholder.  
+ 
+47:24 
+Let's go ahead and put in the phone number. 
+ 
+47:29 
+We're going to scroll up and save that again. 
+ 
+47:33 
+You can use this mini browser that it shows in the interface here to preview what you're going to see.  
+ 
+47:40 
+And it shows it on a mobile phone. 
+ 
+47:43 
+You can change the desktop, but as we use our preview link and click the contact support, you can see 
+that it updates rather quickly and you can change any of this information to show what you want it to 
+show. 
+ 
+47:58
+
+--- PAGE 34 ---
+Now, you can then go into your sponsor portal and instead of creating a new sponsor portal, we're 
+only going to add an FQDN for this sponsor portal and make sure that that is also in your DNS server.  
+ 
+48:21 
+And then scroll all the way down and we're going to make sure that our support page is also enabled 
+because it's not just, you know, it that's logging into sponsor portals.  
+ 
+48:36 
+It can be anybody from any department. 
+ 
+48:38 
+So if they're having issues logging into your sponsor portal, then you want to have a support page for 
+that as well. 
+ 
+48:46 
+But that's how we got the sponsor dot security demo.net to log in to this and it automatically redirects 
+to the sponsor portal. 
+ 
+48:57 
+Now we're going to use the help desk, which is part of the All Accounts group.  
+ 
+49:03 
+And as you can see, if you click on Manage accounts, it shows all of the accounts that I created under 
+my username. 
+ 
+49:08 
+So it shows all of the accounts. 
+ 
+49:11 
+And you can use a random generator to create random guest accounts if you know you have a 
+conference or a team or a game coming up. 
+ 
+49:26 
+If we change the guest type to contractor, you can see that all of the information for the length of 
+time that the account can be active changes in retrospect to whatever the contractor is.  
+ 
+49:39 
+So before I create these accounts, I want to sign out. 
+ 
+49:45 
+And I'm just going to show you that if I log in using my sponsor account here, which is a part of the 
+group accounts, then I cannot see any of the accounts that are already created.  
+ 
+50:02 
+So if you go to the managed accounts, it's empty, there's nothing there.
+
+--- PAGE 35 ---
+50:08 
+So this is a way to keep security on who gets to see what is part of the sponsor accounts.  
+ 
+50:18 
+All right, so I'm going to go over here to the guest access settings. 
+ 
+50:25 
+I'm going to take a look at the username policy. 
+ 
+50:28 
+And as you can see in the username policy, we're using upper and lower case, alphabet and all 
+numeric, but we're not using any special characters here. 
+ 
+50:42 
+We are using alphanumeric and uppercase and lowercase. 
+ 
+50:49 
+But what I'm showing here on my phone is that let me go back here real quick, All right, so there we 
+go. 
+ 
+51:05 
+So if you click on the number button, oh, I don't like this interface sometimes.  
+ 
+51:16 
+See Where am I? 
+ 
+51:28 
+I am so sorry. 
+ 
+51:35 
+There we go all right, if you click on the numbers button, you'll get this here for special characters.  
+ 
+51:49 
+So if you have to click on that special characters button on your phone, that going to make it so that 
+it's a bad user experience for any of your guests. 
+ 
+52:00 
+So typically any characters that I have in these 2 rows I will remove from the special characters so that 
+they don't have to click the 2 buttons just to put in a special character to get on to a network that 
+they're only going to be on for a week or 2, right? 
+ 
+52:16 
+So I just take those out so that when I generate random accounts, the passwords aren't generated 
+with those special characters, making it hard for people to log on to their network.
+
+--- PAGE 36 ---
+52:31 
+So now I'm going to sign out of here. 
+ 
+52:34 
+I'm going to log back in as help desk. 
+ 
+52:40 
+And one thing that you'll notice when I log in here is it I don't get an AUP this time.  
+ 
+52:46 
+So I have these accounts set up that I only get the AUP on the first login.  
+ 
+52:53 
+All right, so now I'm going to click on random. 
+ 
+52:57 
+I want to create 50 accounts and they're all contractor accounts. 
+ 
+53:05 
+Let's go ahead and get those created. 
+ 
+53:16 
+All right, so now we have 50 accounts created and we can give these out to whomever.  
+ 
+53:23 
+We could also go in here and if we click on manage accounts, we can choose any one of these 
+accounts and we can assign a first name, last name, and email address to anyone of these accounts.  
+ 
+53:36 
+But honestly, that's way too much work. 
+ 
+53:39 
+If you're going to go through all of that, you might as well let your visitors self register and have a 
+sponsor approval. 
+ 
+53:49 
+Or you can import accounts as well and you just do a CSV file, you import it here.  
+ 
+53:54 
+There's always a template that you can download so you know exactly what information is needed.  
+ 
+54:12 
+All right, So again, your sponsor, your group accounts cannot see your all accounts, but your all 
+accounts can see your group accounts.
+
+--- PAGE 37 ---
+54:22 
+Now I understand that we are coming up on time, so I'm going to get through this as much as 
+possible. 
+ 
+54:29 
+I'm going to create a new web portal and this is going to be a self registered guest with sponsor 
+approval. 
+ 
+54:40 
+So one thing that you probably notice is that you are self registered portal.  
+ 
+54:45 
+All the settings and everything are the same as the settings for our sponsored portal.  
+ 
+54:52 
+And you know, it's it's meant to be that way because we can do both with each one of these portals.  
+ 
+55:01 
+So we're going to create this this portal real quick and we're going to go to our login page settings 
+and we are going to allow guests create their own accounts. 
+ 
+55:17 
+And in the registration form settings, I'm again, no username. 
+ 
+55:23 
+So we'll turn off the username. 
+ 
+55:25 
+We will require first and last name. 
+ 
+55:28 
+And yeah, let's turn off company as well, all right. 
+ 
+55:35 
+And let's use Raleigh for our time zone and do our top 3 for SMS. 
+ 
+55:47 
+We do want to keep person being visited and reason for visit. 
+ 
+55:54 
+And let's see, I want guests to be approved. 
+ 
+55:58 
+I don't want to allow automatic log in after approval or great access.
+
+--- PAGE 38 ---
+56:09 
+I just want them to be approved first. 
+ 
+56:11 
+So I put in the sponsor email address here, which thankfully is black text in a black text box.  
+ 
+56:20 
+So let me highlight that for you so you can see what I'm putting.  
+ 
+56:23 
+So yeah, and the different choices you have here is either the person being visited can approve them 
+or the sponsor email address below, which can also be a mail list or a Mailer.  
+ 
+56:38 
+And then we have the approve and deny links. 
+ 
+56:39 
+We just want to do a single click link to approve. 
+ 
+56:43 
+The links are valid for 3 hours. 
+ 
+56:45 
+Nice white text on a white text box. 
+ 
+56:47 
+So that's helpful. 
+ 
+56:49 
+And self registration success page. 
+ 
+56:52 
+So that's the same thing that will allow them to see the status of the approval coming in.  
+ 
+57:02 
+We want to send the credentials through email and SMS and we want to of course make sure that in 
+our self registration success settings there is no option for a username or a password or to send 
+yourself the credentials because you've not been approved yet. 
+ 
+57:24 
+So we can't give you that information to get on to the network until you've been approved.  
+ 
+57:28 
+So that's why those are grayed out and not able to be checked.
+
+--- PAGE 39 ---
+57:31 
+So make sure our support information page is there. 
+ 
+57:34 
+We're going to save this. 
+ 
+57:39 
+All right, we're saved our portal page customization. 
+ 
+57:43 
+Let's go ahead and change our banner real quick. 
+ 
+57:48 
+Save it again. 
+ 
+57:53 
+All right, now we're going to check out our portal test URL, and here we go. 
+ 
+58:00 
+We're going to register for guest access here, and we're going to go through the process of 
+registering our new account. 
+ 
+58:16 
+All right, first name, last name, email address. 
+ 
+58:20 
+Get to typing buddy. 
+ 
+58:24 
+There we go. 
+ 
+58:26 
+Sometimes it takes me a minute to wake up. 
+ 
+58:29 
+More coffee, right? 
+ 
+58:42 
+Of course, I'm going to use my same email address here so that I can just show you quickly the email 
+notification I get for my credentials and whether I am allowed onto the network.  
+ 
+59:01 
+I'm also going to put in my phone number to get a text, change my SMS provider to Verizon.
+
+--- PAGE 40 ---
+59:14 
+I'm visiting market Marky. 
+ 
+59:17 
+All right, so the approval email has been sent. 
+ 
+59:23 
+I'm going to log in as sponsor. 
+ 
+59:26 
+Oh, look, I got an approval request. 
+ 
+59:28 
+I've got a link to approve or to deny for Rip Van Winkle. 
+ 
+59:32 
+I'm going to approve, log into the sponsor real quick. 
+ 
+59:36 
+Sponsor portal real quick all right and submit that all right Rip Van Winkle has been approved go back 
+over here oh by the time I can get back over I've already been allowed Internet through this network 
+so that is self registration with sponsor approval. 
+ 
+1:00:00 
+I was pretty quick, but I know we're running a little bit late today and if we take a look at our live logs 
+we're going to see. 
+ 
+1:00:09 
+Even though we did that through our portal test URL, it still shows in our live log.  
+ 
+1:00:19 
+OK, so I have the link here for the Guest Access per scripted deployment guide.  
+ 
+1:00:31 
+That is where all of this information that I've gone through today is pretty much in that guide.  
+ 
+1:00:37 
+The one thing that is not is that contact support button, and this is the code that I put in that contact 
+support button. 
+ 
+1:00:45 
+But I'm going to have a lot more code and a lot more information next month when I do the 
+advanced guest. 
+ 
+1:00:51 
+And from that, I'm going to have a a new GitHub repository I'm going to create.
+
+--- PAGE 41 ---
+1:00:55 
+And this code will also be in that GitHub repository. 
+ 
+1:01:00 
+And for any more ICE resources, we definitely have all of these links as well.  
+ 
+1:01:06 
+Thank you for staying a few minutes past time with me today. 
+ 
+1:01:10 
+I know we had a lot to cover.

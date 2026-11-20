@@ -4,21 +4,361 @@
   "description": "A searchable collection of PDF knowledge resources.",
   "owner": "Your Organization",
   "site_url": "https://anorth78.github.io/PDF",
-  "generated": "2026-11-20T14:37:36.198508+00:00",
-  "document_count": 1,
+  "generated": "2026-11-20T18:33:19.317496+00:00",
+  "document_count": 21,
   "documents": [
     {
-      "id": "scorm-translation-compatibility-guide-clean",
-      "title": "SCORM Translation Compatibility Guide Clean",
-      "original_filename": "SCORM_Translation_Compatibility_Guide_Clean.pdf",
-      "source_relative_path": "SCORM_Translation_Compatibility_Guide_Clean.pdf",
-      "pdf_url": "pdfs/scorm-translation-compatibility-guide-clean.pdf",
-      "text_url": "text/scorm-translation-compatibility-guide-clean.txt",
+      "id": "cisco-ise-guest-access-basics-en-in",
+      "title": "Cisco ISE Guest Access Basics en IN",
+      "original_filename": "Cisco_ISE_Guest_Access_Basics-en-IN.pdf",
+      "source_relative_path": "Cisco_ISE_Guest_Access_Basics-en-IN.pdf",
+      "pdf_url": "pdfs/cisco-ise-guest-access-basics-en-in.pdf",
+      "text_url": "text/cisco-ise-guest-access-basics-en-in.txt",
       "type": "PDF",
-      "pages": 2,
-      "bytes": 20090,
-      "sha256": "ca8d1c1f8cdc015c5e5ba2ad277d7b2c424e0290a4eff979d2852d6ab671578b",
-      "modified": "2026-07-23T15:17:47.089768+00:00",
+      "pages": 41,
+      "bytes": 177415,
+      "sha256": "7e82d6546f7465c1e5872edec52c9cab0b6b31a21322b86492b334426ce02ebc",
+      "modified": "2026-11-20T18:29:18.273496+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "course-stage-2-order",
+      "title": "Course Stage 2 Order",
+      "original_filename": "Course Stage 2 Order.pdf",
+      "source_relative_path": "Course Stage 2 Order.pdf",
+      "pdf_url": "pdfs/course-stage-2-order.pdf",
+      "text_url": "text/course-stage-2-order.txt",
+      "type": "PDF",
+      "pages": 1,
+      "bytes": 26705,
+      "sha256": "b57178977516ce482f408be130d7429ce6fb31c8dae743bbb873e58011169da9",
+      "modified": "2026-11-20T18:32:22.097414+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "ise-backup-restore",
+      "title": "ISE Backup & Restore",
+      "original_filename": "ISE Backup & Restore.pdf",
+      "source_relative_path": "ISE Backup & Restore.pdf",
+      "pdf_url": "pdfs/ise-backup-restore.pdf",
+      "text_url": "text/ise-backup-restore.txt",
+      "type": "PDF",
+      "pages": 6,
+      "bytes": 503557,
+      "sha256": "7ad74ebdcd4030c6f1b13eab0cffd943468386de5ea1e30601e85078095afe8b",
+      "modified": "2026-11-20T18:25:39.276147+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "ise-certificates-en-in",
+      "title": "ISE Certificates en IN",
+      "original_filename": "ISE Certificates-en-IN.pdf",
+      "source_relative_path": "ISE Certificates-en-IN.pdf",
+      "pdf_url": "pdfs/ise-certificates-en-in.pdf",
+      "text_url": "text/ise-certificates-en-in.txt",
+      "type": "PDF",
+      "pages": 13,
+      "bytes": 95837,
+      "sha256": "4a6aefac088e7e269b241bf1c24c84b058099267cf85bd70478c0665124f521d",
+      "modified": "2026-11-20T18:29:53.592225+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "ise-overview-deployment-en-in",
+      "title": "ISE Overview & deployment en IN",
+      "original_filename": "ISE Overview & deployment-en-IN.pdf",
+      "source_relative_path": "ISE Overview & deployment-en-IN.pdf",
+      "pdf_url": "pdfs/ise-overview-deployment-en-in.pdf",
+      "text_url": "text/ise-overview-deployment-en-in.txt",
+      "type": "PDF",
+      "pages": 13,
+      "bytes": 99748,
+      "sha256": "c7aa85d2c1399c72022d7088376c3ffda7f44eee5e26a7d056147a6322de9925",
+      "modified": "2026-11-20T18:30:03.535873+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "ise-ad-integration-en-in",
+      "title": "ISE AD Integration en IN",
+      "original_filename": "ISE-AD_Integration-en-IN.pdf",
+      "source_relative_path": "ISE-AD_Integration-en-IN.pdf",
+      "pdf_url": "pdfs/ise-ad-integration-en-in.pdf",
+      "text_url": "text/ise-ad-integration-en-in.txt",
+      "type": "PDF",
+      "pages": 8,
+      "bytes": 79660,
+      "sha256": "f380049a6afa37db2fac814ae2c4bbee2e921471a0f13c505d929b2f28bd71ed",
+      "modified": "2026-11-20T18:30:38.467379+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "ise-backup-restore-en-in",
+      "title": "ISE backup restore en IN",
+      "original_filename": "ISE_backup_restore-en-IN.pdf",
+      "source_relative_path": "ISE_backup_restore-en-IN.pdf",
+      "pdf_url": "pdfs/ise-backup-restore-en-in.pdf",
+      "text_url": "text/ise-backup-restore-en-in.txt",
+      "type": "PDF",
+      "pages": 7,
+      "bytes": 77873,
+      "sha256": "f9512961e37d8cb8d2cc77329f9ce48b99886b2189c9ddb2b841ecf735b4f1ea",
+      "modified": "2026-11-20T18:29:04.226085+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "ise-ldap-int",
+      "title": "ISE LDAP Int",
+      "original_filename": "ISE_LDAP_Int.pdf",
+      "source_relative_path": "ISE_LDAP_Int.pdf",
+      "pdf_url": "pdfs/ise-ldap-int.pdf",
+      "text_url": "text/ise-ldap-int.txt",
+      "type": "PDF",
+      "pages": 18,
+      "bytes": 1252279,
+      "sha256": "fcdcf4eb7560eb0b948be9fe843e1f6a5fb0c94a0d0ceb2c7acd2992195ace87",
+      "modified": "2026-11-20T18:25:11.142688+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "ise-ldap-integration-en-in",
+      "title": "ISE LDAP Integration en IN",
+      "original_filename": "ISE_LDAP_Integration-en-IN.pdf",
+      "source_relative_path": "ISE_LDAP_Integration-en-IN.pdf",
+      "pdf_url": "pdfs/ise-ldap-integration-en-in.pdf",
+      "text_url": "text/ise-ldap-integration-en-in.txt",
+      "type": "PDF",
+      "pages": 9,
+      "bytes": 83484,
+      "sha256": "c5920af738f5ebbcd21e2ceec7830eaea0ed09f15712fb33c1f949dfd1a111dc",
+      "modified": "2026-11-20T18:29:40.819499+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "ise-licence",
+      "title": "ISE Licence",
+      "original_filename": "ISE_Licence.pdf",
+      "source_relative_path": "ISE_Licence.pdf",
+      "pdf_url": "pdfs/ise-licence.pdf",
+      "text_url": "text/ise-licence.txt",
+      "type": "PDF",
+      "pages": 25,
+      "bytes": 2337437,
+      "sha256": "cc0893af66778386f614b82776021cd4b33271fb75003eb4721d64193b53c18b",
+      "modified": "2026-11-20T18:26:03.340343+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "ise-license-en-in",
+      "title": "ISE LICENSE en IN",
+      "original_filename": "ISE_LICENSE-en-IN.pdf",
+      "source_relative_path": "ISE_LICENSE-en-IN.pdf",
+      "pdf_url": "pdfs/ise-license-en-in.pdf",
+      "text_url": "text/ise-license-en-in.txt",
+      "type": "PDF",
+      "pages": 10,
+      "bytes": 84762,
+      "sha256": "f399f6bb2395cf8b2f775846e3c42c68f6236552439fe224fc830cbc2efcf6f3",
+      "modified": "2026-11-20T18:29:28.354316+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "ise-node-registration-diviya-1",
+      "title": "ISE Node Registration Diviya (1)",
+      "original_filename": "ISE_Node Registration_Diviya (1).pdf",
+      "source_relative_path": "ISE_Node Registration_Diviya (1).pdf",
+      "pdf_url": "pdfs/ise-node-registration-diviya-1.pdf",
+      "text_url": "text/ise-node-registration-diviya-1.txt",
+      "type": "PDF",
+      "pages": 27,
+      "bytes": 970918,
+      "sha256": "645ee10d0b65560d6c04cc4b536ca9213b55c25e627ddc3f3f55dbc785706b9e",
+      "modified": "2026-11-20T18:24:40.906393+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "ise-overview",
+      "title": "ISE Overview",
+      "original_filename": "ISE_Overview.pdf",
+      "source_relative_path": "ISE_Overview.pdf",
+      "pdf_url": "pdfs/ise-overview.pdf",
+      "text_url": "text/ise-overview.txt",
+      "type": "PDF",
+      "pages": 29,
+      "bytes": 1822466,
+      "sha256": "c674eb834345e760f998d987ccbf9f1a29bc537f35c4a09bcd882365b61ce3fc",
+      "modified": "2026-11-20T18:25:27.607052+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "ise-overview-deployment",
+      "title": "ISE Overview Deployment",
+      "original_filename": "ISE_Overview_Deployment.pdf",
+      "source_relative_path": "ISE_Overview_Deployment.pdf",
+      "pdf_url": "pdfs/ise-overview-deployment.pdf",
+      "text_url": "text/ise-overview-deployment.txt",
+      "type": "PDF",
+      "pages": 29,
+      "bytes": 1869387,
+      "sha256": "32d2ed50d53ca1e3644c4909ae86bddbf5ca7c3ba469774303ea02f098a00199",
+      "modified": "2026-11-20T18:24:57.753342+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "ise-replication-en-in",
+      "title": "ISE Replication en IN",
+      "original_filename": "ISE_Replication-en-IN.pdf",
+      "source_relative_path": "ISE_Replication-en-IN.pdf",
+      "pdf_url": "pdfs/ise-replication-en-in.pdf",
+      "text_url": "text/ise-replication-en-in.txt",
+      "type": "PDF",
+      "pages": 15,
+      "bytes": 104618,
+      "sha256": "c575b2a6ab94c52b69f7723fc582d63b5dc55fe8a57ca18294c9e5e2ffeab9c6",
+      "modified": "2026-11-20T18:30:22.763241+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "ise-replication",
+      "title": "ISE Replication",
+      "original_filename": "ISE_Replication.pdf",
+      "source_relative_path": "ISE_Replication.pdf",
+      "pdf_url": "pdfs/ise-replication.pdf",
+      "text_url": "text/ise-replication.txt",
+      "type": "PDF",
+      "pages": 27,
+      "bytes": 1018490,
+      "sha256": "586ea8845589c467e8233be978c0661496a890bffe2f9ac9d199f69c66af48b8",
+      "modified": "2026-11-20T18:26:54.631446+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "ldap-ecuefune",
+      "title": "LDAP ecuefune",
+      "original_filename": "LDAP-ecuefune.pdf",
+      "source_relative_path": "LDAP-ecuefune.pdf",
+      "pdf_url": "pdfs/ldap-ecuefune.pdf",
+      "text_url": "text/ldap-ecuefune.txt",
+      "type": "PDF",
+      "pages": 18,
+      "bytes": 1298960,
+      "sha256": "f0c998e8e26e17600e91d0a7811cba1d69438d77473567c71b9156073327471b",
+      "modified": "2026-11-20T18:26:18.612630+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "tacacs-en-in",
+      "title": "TACACS en IN",
+      "original_filename": "TACACS-en-IN.pdf",
+      "source_relative_path": "TACACS-en-IN.pdf",
+      "pdf_url": "pdfs/tacacs-en-in.pdf",
+      "text_url": "text/tacacs-en-in.txt",
+      "type": "PDF",
+      "pages": 13,
+      "bytes": 93788,
+      "sha256": "3b40b952a2023d4d800322f26608500bdbd719b4c7de0a8c36323d563fed3ffe",
+      "modified": "2026-11-20T18:28:52.082306+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "understandingaaa-en-in",
+      "title": "UnderstandingAAA en IN",
+      "original_filename": "UnderstandingAAA-en-IN.pdf",
+      "source_relative_path": "UnderstandingAAA-en-IN.pdf",
+      "pdf_url": "pdfs/understandingaaa-en-in.pdf",
+      "text_url": "text/understandingaaa-en-in.txt",
+      "type": "PDF",
+      "pages": 10,
+      "bytes": 85400,
+      "sha256": "682470517ad544d5d8e6364c98a9123c67218f8a4e1536b1cf8fc44a4c3613ae",
+      "modified": "2026-11-20T18:30:12.913846+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "understandingaaa",
+      "title": "UnderstandingAAA",
+      "original_filename": "UnderstandingAAA.pdf",
+      "source_relative_path": "UnderstandingAAA.pdf",
+      "pdf_url": "pdfs/understandingaaa.pdf",
+      "text_url": "text/understandingaaa.txt",
+      "type": "PDF",
+      "pages": 15,
+      "bytes": 649704,
+      "sha256": "a4ceceb9710209efdc1ac53a8f1af18252795f454796618262534c57f09d1477",
+      "modified": "2026-11-20T18:24:09.153150+00:00",
+      "text_extraction": {
+        "success": true,
+        "error": null
+      }
+    },
+    {
+      "id": "understandingaaa-bbt",
+      "title": "UnderstandingAAA BBT",
+      "original_filename": "UnderstandingAAA_BBT.pdf",
+      "source_relative_path": "UnderstandingAAA_BBT.pdf",
+      "pdf_url": "pdfs/understandingaaa-bbt.pdf",
+      "text_url": "text/understandingaaa-bbt.txt",
+      "type": "PDF",
+      "pages": 15,
+      "bytes": 656144,
+      "sha256": "e0deaa73d6fe2654fc62b9619f175a709babad4eff8eea1b7e5144e9d4da8bea",
+      "modified": "2026-11-20T18:26:30.825518+00:00",
       "text_extraction": {
         "success": true,
         "error": null

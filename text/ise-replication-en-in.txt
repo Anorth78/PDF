@@ -1,0 +1,686 @@
+--- PAGE 1 ---
+ISE_Replication 
+ 
+0:00 
+Hi everyone, welcome to the session. 
+ 
+0:01 
+I'm Divya Mall, a Technical Consulting Engineer at Cisco ICE team.  
+ 
+0:05 
+So today we are going to take a look on one of the most important process in ICE which is no 
+registration. 
+ 
+0:13 
+So basically in a distributed deployment, multiple nodes work together to maintain the configuration 
+consistency and to ensure the smooth operations. 
+ 
+0:22 
+Whenever we added a new node to the deployment, several processes happen in the background 
+including no registration, full database synchronization and also continuous replication between the 
+nodes. 
+ 
+0:35 
+So in this session, I will walk through you how these processes work, what happened behind the 
+scenes and some of the more most common issues which might encounter during registration as well 
+as the replication along with some some troubleshooting approaches. 
+ 
+0:49 
+So let us get into the video. 
+ 
+0:51 
+We will be covering these 5 areas in this session. 
+ 
+0:55 
+So first of all no registration which checks the required details before onboarding the node and 
+second of all full synchronization which provides the joining node with the current configuration 
+database. 
+ 
+1:09 
+And then we will be also looking into the node replication through J groups.  
+ 
+1:13 
+And after that we will review node states, endpoint replication behaviour and also some common 
+registration and replication issue. 
+ 
+1:21
+
+--- PAGE 2 ---
+Finally, we will walk through some practical scenarios and discuss how to approach them during the 
+troubleshooting. 
+ 
+1:27 
+Before we get into the registration process, let us let us understand what actually happens when we 
+are adding a new node to the existing ICE deployment. 
+ 
+1:36 
+So node registration is nothing but a process of onboarding a standalone ICE node into a existing 
+deployment in that where the primary PAN will play the key role in establishing the communication 
+and trust within the joining node. 
+ 
+1:53 
+So during this process, secure communication is established between the nodes using HTP is over SSL 
+along with some J groups communication for internal operations. 
+ 
+2:06 
+The registration process we can we can just categories into 3 main phases.  
+ 
+2:13 
+First of all, which is the node registration where the primary plan communicates with the joining 
+nodes, retrieves his details, establish the certificate trust and add into the deployment with the 
+required personas. 
+ 
+2:26 
+Whatever the personas you needed, you can just configure based on your requirement.  
+ 
+2:31 
+The second phase is which is a full synchronization which means here the configuration database is 
+transferred from the primary PAN to the newly registered node, providing it with the initial 
+configuration required to become a part of the deployment. 
+ 
+2:49 
+And finally, we have a incremental replication which means once the initial synchronization is 
+completed, any subsequent configuration changes if we are mating on the primary node, which will 
+automatically replicate to the other nodes in the deployment consistently across the nodes. 
+ 
+3:06 
+Like whenever you are making any changes in one node, it will automatically replicate the rest of the 
+nodes in the deployment. 
+ 
+3:13 
+So these 3 phases work together to ensure a newly known, properly onboarded, synchronised and 
+keep up to date with the rest of the deployment. 
+ 
+3:22 
+Pre registration checks.
+
+--- PAGE 3 ---
+3:24 
+Before you proceed with the registration process, make sure that these things are satisfied like so that 
+we will we can avoid any failures caused during the registration process. 
+ 
+3:35 
+On the identity and software side, we have to make sure that joining node should be in a standalone 
+state and also confirm that it's host name and fully qualified Jamai name or should be correct.  
+ 
+3:48 
+I also verify that it is running in the same ICE version and also the patch level should be same in both 
+the deployment. 
+ 
+3:55 
+Make sure that you have the required administrative prudential as well. 
+ 
+3:59 
+So when we go to the infrastructure site, we have to validate and confirm that the forward and reverse 
+DNS is resolving correctly and also make sure the time is synchronised through the NTP server.  
+ 
+4:13 
+Review the admin certificate and its trust chain. 
+ 
+4:16 
+Finally validate the routing firewall rules required pose and also any network latency between the 
+primary node and the joining node. 
+ 
+4:26 
+So complete these for checks and which can't run the if any if any registration or synchronization fail.  
+ 
+4:33 
+Now let us look at the most important ports which used for the communication between the ICE 
+nodes. 
+ 
+4:39 
+So first of all which is TCP port 443 which is used for the HTTPS communication and next port is one 
+2001 which is for the J groups communication which supports the synchronization as well as the 
+replication between the nodes. 
+ 
+4:57 
+So this port which needs to be opened on the primary PAN. 
+ 
+5:01 
+And finally the port 6379 which is the profiler framework port which is used to relevant the profiler 
+and endpoint related communications.
+
+--- PAGE 4 ---
+5:11 
+So these are the key ports to keep in mind when you are troubleshooting with Internet connectivity.  
+ 
+5:16 
+So these are the 66 steps you have to be following for the registration process.  
+ 
+5:21 
+So make sure the registration should be initiated from the primary PAN before you joining the note.  
+ 
+5:27 
+Make sure it is still a standalone and you have the correct FQDN. 
+ 
+5:31 
+So I let me demonstrate to how the registration works on my lab server.  
+ 
+5:38 
+So first of all, you have to navigate to administration system deployment.  
+ 
+5:42 
+Click on it, you will get this page. 
+ 
+5:44 
+So these are the notes which I already added for my another testings. 
+ 
+5:48 
+So now I will be you have to click on registered here and go to the This is my secondary node.  
+ 
+5:56 
+You have to just copy the FQDN and paste here, provide the details. 
+ 
+6:01 
+So I'm just providing my credentials here along with the password. 
+ 
+6:10 
+So yes, along with the passwords, click next and you have to select the personas, whatever you 
+needed. 
+ 
+6:20 
+So these are the personas. 
+ 
+6:21 
+So this node I am just technically putting it for secondary admin and disabling the policy server 
+because I I just wanted this node to be a secondary node and click submit saving this will take couple 
+of minutes to save the config.
+
+--- PAGE 5 ---
+6:39 
+And so this node I was added already in the deployment for this session, I just deregistered and again 
+registering it. 
+ 
+6:48 
+So it was not asking for the certificate pop up window. 
+ 
+6:51 
+If you are adding a node freshly to the deployment, it will ask for the certificate details that needs to 
+be trusted and import in the server. 
+ 
+7:00 
+So yeah. 
+ 
+7:01 
+So yes. 
+ 
+7:02 
+So you see the node was registered successfully, data will be sent to the node and then the 
+application server will restarted on the node. 
+ 
+7:10 
+This process may take several minutes to complete. 
+ 
+7:12 
+When failover is required on multiple PSM, please put the nodes in node group.  
+ 
+7:18 
+So if you are requiring for PSM failover we have to configure the node group details.  
+ 
+7:24 
+So once it done it will start the process. 
+ 
+7:27 
+You can see here when you click on this eye icon, it will say the synchronization is in process and here 
+also in progress you will able to see it. 
+ 
+7:36 
+So this will take approximately 20 to 35 minutes of the registration process.  
+ 
+7:41 
+You can login to the CLA and keep track the services status where it's been started running on a like it 
+will go down, the services will go down and again it will come back.  
+ 
+7:52
+
+--- PAGE 6 ---
+Once all the services came back, you can see this node was successfully connected and you will get 
+this tick mark. 
+ 
+8:02 
+Let's see what happened after you click on the registration. 
+ 
+8:06 
+So once you click on the registration once you once it started with the registration process it what it 
+do is the joining nodes needs the initial copy of the configuration database.  
+ 
+8:17 
+So the primary pan export the configuration database up to the current system change number and 
+upload the database Dom file with the dot tmf file. 
+ 
+8:29 
+So here H xum is also sent to detect the file corruption. 
+ 
+8:34 
+At this time on the receiving node, the application server will be stopping while the database import 
+takes place. 
+ 
+8:42 
+So the database remains up during the import. 
+ 
+8:45 
+After the import, the application server starts. 
+ 
+8:48 
+The secondary node then informs the primary PAN through J groups that synchronization is 
+completed successfully. 
+ 
+8:55 
+If any of these steps or the process fails, the node will be marking as the registration failed.  
+ 
+9:02 
+So all together for a full node synchronization, the database export, transfer, validation and import 
+workflow should be needed for the proper registration process.  
+ 
+9:14 
+Let us see what happens when the node started its replication. 
+ 
+9:18 
+So whenever the change occurs on the primary PAN, the event is returned to the transaction table.  
+ 
+9:25 
+Which means like separate threads pick up the information and publish the changes, secondary node 
+receives those changes and update their database.
+
+--- PAGE 7 ---
+9:34 
+If a secondary node is misses any messages, it can request the missing information, provide the 
+required messages or still available in the transaction table. 
+ 
+9:44 
+So mainly this slide is highlighting 2 important behaviour. 
+ 
+9:47 
+First of all, the primary node does not wait for any acknowledgments from every secondary node 
+before continuing, and the J groups handles the messaging ordering.  
+ 
+9:59 
+This design supports ongoing distribution of changes, but it also means that we need to monitor 
+whether each secondary node is consuming events at an adequate range.  
+ 
+10:11 
+So let's see in the slide the summarization of the node replication what will actually happens like so.  
+ 
+10:18 
+First of all, the secondary node can request for the missed messages and the transaction table must 
+retain the certain number of messages so the node can catch up. 
+ 
+10:29 
+But the primary node does not wait for any kind of acknowledgement from the secondary node.  
+ 
+10:34 
+So this should be J group responsible to undergo these kind of requests which was raised from the 
+other nodes. 
+ 
+10:42 
+So these are the 4 or 5 possible states that shows when whenever the registration process are in 
+progress. 
+ 
+10:49 
+So it could it it could be in progress not in sing replication stop disconnected and registration failed.  
+ 
+10:56 
+So if you go on through this slide, you might able to understand in which state or in which process 
+that it is throwing up this kind of error. 
+ 
+11:05 
+So what happened when it happens with the endpoint replication?  
+ 
+11:08 
+Let's see that.
+
+--- PAGE 8 ---
+11:09 
+So one thing was changed in starting with the version of 3.3 the behaviour of the endpoint.  
+ 
+11:15 
+So according to this the setting is available under Administration System settings Endpoint 
+Replication. 
+ 
+11:23 
+So what actually happened is the the table separates 2 types endpoint type and with replication 
+behaviour. 
+ 
+11:30 
+So the static endpoints created manually are always what are the endpoints which you have created 
+manually that will always replicated to all the nodes. 
+ 
+11:41 
+The imported CV also always replicated to all the nodes. 
+ 
+11:45 
+The guest and the poster enabled endpoints also always replicated to all the nodes.  
+ 
+11:52 
+But the dynamically dynamically discovered endpoints such as profiled endpoints have configurable 
+endpoint behaviour and that was been disabled by the version 3 dot 3. 
+ 
+12:06 
+Please note that the disabling the dynamic endpoint replication that does not actually cause any data 
+loss. 
+ 
+12:13 
+It only stopped the replicated dynamic discovered between the endpoints.  
+ 
+12:18 
+So basically the existing endpoint datas will be remained there. 
+ 
+12:22 
+Let us see with the stage based troubleshooting. 
+ 
+12:25 
+So it could be very useful for us to understand and troubleshoot the registration and synchronization 
+process in which stage that the process has been broken. 
+ 
+12:37 
+So during the registration state, first of all check with the DNS, other network connectivity and the 
+certificates whether it's been any issues with those parameters and check during the transfer of the 
+dump file review if any delays or any error in the file transfer.
+
+--- PAGE 9 ---
+12:58 
+And also then next stage would be check with the node list in the deployment window to understand 
+the current state. 
+ 
+13:07 
+So it will, it will show us how what was the state of the deployment like in progress or failure session.  
+ 
+13:15 
+It will list out few of the things. 
+ 
+13:16 
+Just focus on that. 
+ 
+13:19 
+And once you review all those things we can go to the log analysis parameters.  
+ 
+13:24 
+So basically have to review the ISPSE log for the registration error and for the replication and Ade log 
+for the sync errors. 
+ 
+13:34 
+So and also we can also look into the deployment log for the initial status what or where the the 
+registration has been stopped or registration was not going through correct.  
+ 
+13:47 
+Let us see the most common registration and replication issues here.  
+ 
+13:52 
+So first of all the nodes will go out of sync because of high event value or unexpected no trains 
+transition or replication alarms and also slow replication to one or more.  
+ 
+14:07 
+That could be also one of the most common reasons for the replication or the registration issue.  
+ 
+14:13 
+So. 
+ 
+14:14 
+So the key process is to have to identify whether the issue is related with the initial registration or with 
+the database dumb transfer or with the J groups connectivity or with the replication processing.  
+ 
+14:27 
+Once you identify with the process or the steps where it actually got failed, it could be easier for us to 
+troubleshoot and identify what could be the root cause of the failure.
+
+--- PAGE 10 ---
+14:37 
+So let us see if the registration or synchronizations are failed. 
+ 
+14:41 
+Let us start with the very basic things to verify. 
+ 
+14:44 
+First of all verify the DNS and NTP configuration does it have any issues and also check if there any 
+there is any related alarms regarding with the DNS and NTP configuration and also confirm that you 
+have the valid admin certificate with the CA sign with complete certificate chains. 
+ 
+15:05 
+So if you are using any self sign certificate then make sure that the certificate are trusted between the 
+nodes. 
+ 
+15:13 
+Next part we have to validate the required network connectivity and the port 443 and other ports one 
+2001 and the primary PAN for J groups must be open. 
+ 
+15:26 
+It also recommends it also be recommend testing with the telnet connectivity between the PAN and 
+the registering node. 
+ 
+15:33 
+That will help us to understand the initial level of checks that where if we are missing something with 
+the failure or the registration process. 
+ 
+15:43 
+So this this will actually correlate with the result of where the exactly the registrations is failing in what 
+stage. 
+ 
+15:53 
+So this chart compass the database dump collection timeout limits.  
+ 
+15:57 
+So it when you look into the chart it states that the version before 3 dot one patch sheet have only 2.5 
+hours or 21 dot hours completion window. 
+ 
+16:08 
+While the other eye server with the same version having the 5 hours window which is some which is 
+100% increase in the allowed time. 
+ 
+16:17 
+So the reason this matters actually is since you have the larger deployment or larger environment with 
+more data which need additional time to complete the database in export and import operations.
+
+--- PAGE 11 ---
+16:32 
+So when reviewing the time out, confirm the exact ICE version and patch level and compare the 
+absurd duration with the applicable limit. 
+ 
+16:42 
+So do not assume that the long running dump is automatically stuck somewhere that without without 
+we are not checking in any progress with the specific behaviour. 
+ 
+16:52 
+So it will happen. 
+ 
+16:53 
+Let us see with 2 different cases where the nodes are marking is out of sync. 
+ 
+16:59 
+So in case one, the primary PAN could not establish the events and the unpublished event count 
+exceed 2,000,000 exceed 2 millions. 
+ 
+17:10 
+In the situation what happened is all the nodes in the deployment would be marked as out of sync.  
+ 
+17:15 
+But when you look into the other node, especially the one particular node, let's say for the secondary 
+node will fall beyond the published sequence approximately 2,000,000 records.  
+ 
+17:26 
+In that case, the specific node would be marked as out of sync. 
+ 
+17:31 
+So you have to check in which scenarios the nodes are being out of sync and have to troubleshoot.  
+ 
+17:36 
+So let's see for the possible slow replication errors we are facing whenever the registered has done.  
+ 
+17:43 
+So basically for slow replication, first of all compare the publishing rate of the primary PAN with the 
+consuming rate on the secondary node. 
+ 
+17:53 
+So I would recommend verifying in the ICE PS E logs that will that will show us the details of the 
+publishing rate and the consuming rate for both primary PAN and the secondary PAN.  
+ 
+18:05 
+So if the primary PAN is publishing faster than the secondary PAN, then the backlog can also grow 
+which will leads to the slower application error as well.
+
+--- PAGE 12 ---
+18:15 
+And also investigate the configuration or the workload factors such as let's say for authentication, 
+accounting and profiling. 
+ 
+18:24 
+So for profiling related issue check for Jedis connection exception especially in the profiler logs and 
+simultaneously review the network latency and load average and collect the thread lump sorry thread 
+dump if further isolation is required. 
+ 
+18:45 
+And also main thing you have to note is from version 32 dot 7 to later port 6379 should be opened for 
+Jejus framework. 
+ 
+18:57 
+So make sure that applicable port requirements for that particular release and features which needs to 
+be investigated. 
+ 
+19:05 
+So these all will isolate us to find out the reason for the slower application errors.  
+ 
+19:11 
+So for deeper troubleshooting whenever if you feel like the registration is still failing and if you 
+required some kind of deeper troubleshooting. 
+ 
+19:20 
+So in that phase collect the debug logs from the primary and the node which you are trying to 
+register. 
+ 
+19:28 
+So these are the debugs which needs to be enabled in both the nodes to identify the reasons of the 
+failure. 
+ 
+19:36 
+So basically you have to enable the debugs on the primary node as well as the registering node and 
+recreate the issue. 
+ 
+19:43 
+Recreate in the sense you have to try with the registration again and collect the support bundle.  
+ 
+19:49 
+So depending on the symptoms, you can also collect the thread dump, heap dump and the packet 
+captures in the both nodes so that you can able to capture the you can able to understand where the 
+actual issue is happening depends upon that we can continue with the troubleshooting. 
+ 
+20:07 
+Let's see some of the common scenarios that would cause with the node replication issue.
+
+--- PAGE 13 ---
+20:12 
+So first of all, the node stuck at 0% sync and the registration kept fail.  
+ 
+20:18 
+So in this scenario, basically what happened is the node remains in in progress for more than 5 years.  
+ 
+20:24 
+So the synchronization percentage in the replication logs will remain for 0% and eventually the system 
+will report for sync fail. 
+ 
+20:33 
+So when you see this pattern, first establish whether the failure is occurring during the database dump 
+transfer or at another stage. 
+ 
+20:42 
+So check the relevant log and compare the behaviour between the local node or the node which is in 
+the remote site. 
+ 
+20:48 
+So when you look for the root cause and the resolution, so it could be you have to check whether the 
+network bandwidth or the connectivity issue if anything between the PAN node or as well as the 
+remote node. 
+ 
+21:04 
+I mean remote secondary node where you are able to connect it. 
+ 
+21:09 
+So to validate the bandwidth check or the connectivity issue, run the test by transferring the large file 
+to both local and the remote repository. 
+ 
+21:18 
+Compare the transfer speeds if this transfer. 
+ 
+21:22 
+If the remote transfer is significantly slower, we have to work with the network team to review the 
+available bandwidth and the path between the sites. 
+ 
+21:32 
+I would recommend scheduling the scheduling the node registration only during the Pcas.  
+ 
+21:38 
+Let's see with the second scenario which is replication stopped. 
+ 
+21:41 
+So in the second scenario, the node shows with replication stopped and the GUI connection on port 
+443 is working, but the communication on 1/2/00 is not.
+
+--- PAGE 14 ---
+21:52 
+So the packet capture will shows you the TCP retransmission on the port one 2001.  
+ 
+22:00 
+So this could be very useful example of why the GUI reachability alone is insufficient.  
+ 
+22:05 
+Or node may be reachable for HTTPS management while the Jeb group communication, but it should 
+not be, we will not get the replication would be stopped that that is why we require to check the 
+packet capture to confirm whether any traffic is being retransmitted or not successfully reaching to 
+the other side. 
+ 
+22:28 
+So when you look into the root cause and the resolution for this would be you have to collect the 
+capture on the port one 2001 between the PAN and the affected node. 
+ 
+22:40 
+Basically what we are trying to add. 
+ 
+22:42 
+So review the firewall access control rules and quality of service policy and IPS signature that may 
+block or block the traffic and also verify the local firewall rules on both nodes to allow the required 
+communication. 
+ 
+22:59 
+So once the network resources, sorry network issue is resolved, you can go ahead.  
+ 
+23:05 
+And when you look into the 3rd scenario, you will notice that all of the secondary nodes are going to 
+out of sync simultaneously. 
+ 
+23:12 
+So when whenever you seen these kind of issue, you have to look on the primary condition first.  
+ 
+23:20 
+What could be the root cause of that? 
+ 
+23:22 
+All node got went out of sync at the same time respective to troubleshooting with each node.  
+ 
+23:30 
+So the main root cause would be the primary PAN. 
+ 
+23:35 
+Unpublished rate crosses the threshold limit and it could not process with the correct data 
+transmission whatever it actually hold.
+
+--- PAGE 15 ---
+23:46 
+So the main resolution for this kind of scenario would be reloading the primary PAN.  
+ 
+23:51 
+So for reloading the primary PAN, which is mainly to clear the memory and it will, and then we have to 
+perform the manual sync up of every node once the primary uh PAN has come back.  
+ 
+24:05 
+So this brings us to the end of the session on Cisco is node registration and internode replication.  
+ 
+24:12 
+So to summarise, we covered the registration process, the full synchronization workflow and how 
+incremental replication works and some of the common troubleshooting scenario.  
+ 
+24:24 
+I hope the session is very helpful for you. 
+ 
+24:26 
+Thank you so much for time and attention. 
+ 
+24:28 
+Have a great day.

@@ -1,0 +1,35 @@
+--- PAGE 1 ---
+Understanding of AAA 
+Introduction to Authentication, 
+Authorization, accounting(AAA) , Auth 
+protocols (TACACS,RADIUS). Role of 
+Supplicant , authenticator and 
+authentication server.  EAP Types , 
+methods. CoA.  
+ISE Overview & Deployment AAA & ISE Fundamentals, Personas and 
+Role, ISE Licenses, Policy Sets 
+ISE installation - SNS, VM , Cloud  
+ISE  Replication 
+Node Registration, Full Sync, Node 
+replication, Endpoint replication, 
+common issues 
+Licensing & TS 
+ISE Smart License, Models, Lifecycle , 
+Registration, Migration , Smart Licensing 
+in Air gapped Environments. 
+Certificate Management  
+Introduction to certificates, HTTPS, EAP 
+communication using ISE certificates, ISE 
+System & trusted certificates. ISE 
+certificate contents, roles. Wildcard 
+certificates. ISE internal CA store 
+ISE Backup & TS 
+Introduction to ISE backup and restore. 
+Types of backup. Different methods of 
+backup and restore 
+ISE Patching and Upgrade  
+Identity Sources (AD,LDAP) - Part-1  
+Device Admin & TS (TACACS)  
+Wired/wireless Access - Part:1 (Radius)  
+Wired/wireless Access - Part:2 (Radius)  
+Cisco ISE Guest Access

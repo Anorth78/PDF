@@ -1,0 +1,588 @@
+--- PAGE 1 ---
+TACACS 
+ 
+0:02 
+Hello everyone. 
+ 
+0:03 
+Thank you for joining today's session on Tekax Terminal Access Controller Access Control System.  
+ 
+0:15 
+We are pretty much, I mean familiar with the Tekax protocol, one of the protocols used for device 
+administration, widely used for device administration compared to the RADIUS protocol.  
+ 
+0:33 
+In this particular session. 
+ 
+0:35 
+As as as Tekax is a common topic known to all very well, we will probably not concentrate more on the 
+basics of Tekax. 
+ 
+0:47 
+We will concentrate more on the messages that are exchanged which will help us to troubleshoot.  
+ 
+0:55 
+Plus we will go through couple of commonly seen Tecac issues, right? 
+ 
+1:02 
+And, and what are what, what solution is there for them. 
+ 
+1:06 
+So that is what we will cover in this particular session. 
+ 
+1:10 
+So let us start. 
+ 
+1:11 
+We will go through the flow and then we will quickly rush through the others lives and then we will 
+spend some time on the messages as I said and then the troubleshooting that is there around Tech X.  
+ 
+1:28 
+So this is the Tech X flow, right? 
+ 
+1:31 
+And administration tries to connect to his network device, SS H, telnet or browser and the request 
+goes to the server, the tech server which is ICE in this scenario. 
+ 
+1:46
+
+--- PAGE 2 ---
+And then the ICE requests for the credential, the user provides the username and password and then 
+ICE validates those credentials, which is authentication. 
+ 
+1:57 
+And then ICE checks what level of privilege is allowed to this particular user, that is the authorization 
+part. 
+ 
+2:07 
+And then based on the result of the authorization, we also assign the commands that is allowed for 
+this particular user to run to be run on that particular network device, which is command 
+authorization, right? 
+ 
+2:25 
+And once the command authorization completes, that's when the client, that's when the network 
+admin is allowed to run certain commands on the on the network device, right?  
+ 
+2:41 
+This is the configuration part, enabling Techax, right? 
+ 
+2:45 
+And then defining the Techax server, putting the server in a group. 
+ 
+2:52 
+This is where you configure the Teqax authentication part. 
+ 
+2:56 
+You say the login is needed on the BT Y lines. 
+ 
+3:00 
+You are assigning the request coming on those BT Y lines to to our Teqax group which is I group and 
+local. 
+ 
+3:12 
+If if the I servers are not reachable then the then the request should fall back to the local trigax.  
+ 
+3:21 
+Logic will use the internal database of the switch to store the username and password.  
+ 
+3:27 
+When a user locks in switch, switch will refer to its local database to search for the username and 
+password and the privileged level based on that user will be either allowed or not allowed to access 
+the device. 
+ 
+3:42 
+This is basically when the local user is in in. 
+ 
+3:45
+
+--- PAGE 3 ---
+In the picture of the first 2 points, we then define the authentication and authorization commands to 
+use either the default method list or the user defined method list. 
+ 
+3:55 
+Method lists are list that tells the switch which server database to look to first look into to authenticate 
+or authorise the user. 
+ 
+4:05 
+If we use the default method list, it gets applied automatically to all the lines.  
+ 
+4:10 
+If we define a user defined method list, we need to call that method list under specific lines otherwise 
+these commands will not take effect. 
+ 
+4:22 
+User defined method list will take precedence over the default method list if called under VTY lines.  
+ 
+4:38 
+Again, we completed the authentication part of config tech acts. 
+ 
+4:43 
+This is the authorization part of the tech acts. 
+ 
+4:46 
+As you can see, as we define those authorization commands, we are also calling those commands in 
+the in the line VTY zero to 4, some privilege levels which we all are aware of.  
+ 
+5:02 
+So let's quickly go further. 
+ 
+5:06 
+We did the TECAC authentication, we did the authorization and these are some of the accounting 
+commands that are needed to capture the commands that are run right. 
+ 
+5:16 
+And finally, we call all the commands here in the line VTY so that every telnet or SSH connection 
+coming through the VTY lines hit the the the the Tekax group server group as defined in the Triple A 
+global configuration. 
+ 
+5:44 
+Some authentication messages, right? 
+ 
+5:46 
+Very important to understand. 
+ 
+5:47 
+This is what is typically needed when it comes to troubleshooting a Tekax issue, right?
+
+--- PAGE 4 ---
+5:53 
+So when using the CACS Plus for authentication, there are only 3 types of packets exchanged between 
+the client and the server, right? 
+ 
+6:03 
+And these packets, these, these these packets are start. 
+ 
+6:08 
+This packet is used start, reply and continue. 
+ 
+6:12 
+This packet is used to begin the authentication request between the Triple A client and the Triple A 
+server. 
+ 
+6:18 
+So the admin is trying to telnet into the Triple A client, which is the network device, and then the 
+network device actually sends a start authentication request to the ICE. 
+ 
+6:30 
+ICE responds with the reply asking for the username. 
+ 
+6:34 
+The network device provides the username with the continue and then ICE again asks with a reply for 
+the password and the network device provides the password with a continue and then ultimately ICE 
+response with the reply with past authentication. 
+ 
+6:53 
+So this is typically tech AX authentication messages, right? 
+ 
+7:01 
+Furthermore, when the authentication request is sent from the client to the server, it begins with the 
+start message, right? 
+ 
+7:10 
+As we discussed earlier, the start message tells the server that an authentication request is coming.  
+ 
+7:15 
+All the messages from the server to the network device during authentication or reply messages as we 
+saw. 
+ 
+7:23 
+I mean clearly in this particular picture as well. 
+ 
+7:26 
+The server sends a reply message asking for the client to retrieve username.
+
+--- PAGE 5 ---
+7:30 
+The client sends the user to the server in a continue message on the server.  
+ 
+7:35 
+Once the server receives the password, it replies. 
+ 
+7:39 
+It sends a reply message back to the client requesting for the password, which is sent back to the 
+server in a continue message. 
+ 
+7:45 
+The server sends a final reply message with the pass or failed status of the authentication.  
+ 
+7:51 
+The final reply message from the Triple A server to Triple A client can include the following possible 
+values, right? 
+ 
+7:59 
+So ultimately, when the last response is sent, reply is sent by the Triple A server to the Triple A client 
+which is the network device. 
+ 
+8:10 
+The reply message may include the following right? 
+ 
+8:15 
+That's accept reject error or continue, right? 
+ 
+8:18 
+Except is If the user authentication was successful then I accept is sent.  
+ 
+8:26 
+If the user authentication failed then a reject will be sent. 
+ 
+8:30 
+An error occurred at some point during the authentication triple. 
+ 
+8:34 
+A client typically attempts to authenticate the user again or attempt a different method of 
+authentication. 
+ 
+8:39 
+So in that case, this reply will contain an error continue. 
+ 
+8:44 
+The user is prompted for additional information.
+
+--- PAGE 6 ---
+8:47 
+This value sent from the Triple A server with reply within the reply message indicating that more 
+information is. 
+ 
+8:54 
+It should not be confused with continue message sent from now.  
+ 
+8:56 
+So let's say if there is more information needed, then the reply will contain the continue message.  
+ 
+9:06 
+OK, next the authorization commands, right? 
+ 
+9:10 
+When using tech for authorization, only 2 messages are used between the Triple A client, that's the 
+network device on second and the Triple A server request and response. 
+ 
+9:22 
+This message is friend from Triple A client to the Triple A server to request authorization, right?  
+ 
+9:28 
+And then a response response is sent from the Triple A server back to Triple A client with the result of 
+the authorization request including specific details such as privilege level assigned to the end user.  
+ 
+9:42 
+A response message may contain one of the following replies. 
+ 
+9:46 
+So these are the replies that could be there in the response. 
+ 
+9:53 
+Fail Password Add Pass Replication Follow Error Fail in response indicates that the user should be 
+denied access to the requested service. 
+ 
+10:09 
+Pass Add This response indicates successful authorization, and the information contained within the 
+response message should be used in addition to the requested information.  
+ 
+10:22 
+If no additional arguments are returned by the REPLACE server within the response message, then the 
+request is simply authorized as is. 
+ 
+10:36 
+Right, a password this This response indicates successful authorization, but the server has chosen to 
+ignore the request message and is replacing it with the information sent back in the response 
+message.
+
+--- PAGE 7 ---
+10:56 
+Follow this reply indicates that the Triple A server wants the triple client to send authorization request 
+to a different server, right? 
+ 
+11:04 
+The new server information will be listed in the response packet.  
+ 
+11:08 
+Let's say if this is not the replace device admin server and if there is a different device admin server, 
+then you can send the follow message in the response to the Triple A client error.  
+ 
+11:23 
+This message indicates a problem occurring in the replace server. 
+ 
+11:26 
+Further troubleshooting which to occur. 
+ 
+11:29 
+So these are all the possible contents of the response message Tekax accounting messages, right?  
+ 
+11:39 
+In the same way, once the authorization is over, the next is the accounting, right?  
+ 
+11:46 
+The accounting has 2 message types Request. 
+ 
+11:53 
+This message is sent from the Triple A client to the Triple A server to indicate a notification of activity, 
+right? 
+ 
+12:00 
+We can see here request accounting start right and then comes a response which is accounting 
+successful right? 
+ 
+12:11 
+And the request can contain start, stop or continue. 
+ 
+12:20 
+Request start means accounting start. 
+ 
+12:23 
+Request stop means stop the accounting right? 
+ 
+12:28 
+Continue means the continued account, sometimes referred to as a watchdog or an update record is 
+sent when a service has already started as in and is in progress but there is an updated information.
+
+--- PAGE 8 ---
+12:39 
+So let's say a client is connected and accounting start has gone already, the session is intact and up.  
+ 
+12:46 
+And if there is some information that needs to be updated, then that can be sent to ICE using the 
+request request accounting with a continue message in it. 
+ 
+12:59 
+Right now these are some of the messages coming from the Triple A server to the Triple A client, 
+which is the network device that's basically response and the response can contain success error or 
+follow right success. 
+ 
+13:14 
+This indicates this value indicates that the server received the record from the client Error.  
+ 
+13:19 
+This value indicates that an error on the server and that record was not stored.  
+ 
+13:26 
+Follow This value indicates that the server wants the client to send the record to a different Triple A 
+server and includes the server information in the response, right? 
+ 
+13:38 
+So these are some of the tech axe accounting messages. 
+ 
+13:42 
+Let's look into some of the troubleshooting scenarios. 
+ 
+13:45 
+When it comes to troubleshooting tech axe issues, right, It's very important to know what debugs can 
+be enabled on the network device to understand the the, the, the Tekax, the Tekax debugs so quickly.  
+ 
+14:08 
+These are some of the debugs which can be enabled on the network device to figure out what is the 
+Tekax issue that is there. 
+ 
+14:15 
+The other debugs which can be involved which can be enabled on ice to troubleshooter Tekax issue is 
+this. 
+ 
+14:24 
+Let me show you that. 
+ 
+14:42 
+If you go into main menu Operations Debug wizard, here is the TECACS locks already enabled right?
+
+--- PAGE 9 ---
+14:55 
+You just need to assign this profile to the PSL. 
+ 
+15:02 
+OK, so here is the TECACS logs which needs to be TECACS profile which needs to be enabled for the 
+on the node which is running the device admin service. 
+ 
+15:15 
+How do you basically do it is select this, click on debug notes and assign it to any of the node which is 
+actually taking the incoming device device administration login requests right?  
+ 
+15:31 
+Once you save this the the locks will be enabled for that particular node.  
+ 
+15:36 
+And the way you can collect locks is you enable the debugs on the network device, you enable these 
+debugs on the particular P PSN node or any node in the cluster which has device administration 
+enabled and then you reattempt to log in to that particular network device. 
+ 
+15:58 
+And then once the attempt fails or the desired issue is reproduced, you stop the logging, you collect 
+the debugs, you stop the debugs, you stop the debugs and eyes as well. 
+ 
+16:11 
+You collect the logs from the network device, you collect the support bundle from the eyes and 
+provide it to the tech to analyse and then provide you the solution.  
+ 
+16:26 
+Right? 
+ 
+16:27 
+Lets quickly look into some of the common issues. 
+ 
+16:29 
+Right Problem description here Tecacs not working after upgrading the switch to version 1612 dot XA.  
+ 
+16:36 
+Very very commonly seen problem. 
+ 
+16:39 
+What is the solution? 
+ 
+16:42 
+In the old config the Tecac servers were defined in a different manner, whereas in versions after 16 dot 
+12 the Tecac server needs to be defined in a different format right?
+
+--- PAGE 10 ---
+16:55 
+And hence this this change in format actually causes the problem when the this this need for change 
+in the command causes the problem as the server iOS is upgraded.  
+ 
+17:11 
+Another common issue ICE 3 dot zero patch for switch is a 3650 switch issue.  
+ 
+17:17 
+For switch local login is fine but tech login is failing right resolution. 
+ 
+17:25 
+What is the error scene? 
+ 
+17:26 
+Right? 
+ 
+17:27 
+I mean in terms of troubleshooting Techax, it's pretty much simple.  
+ 
+17:32 
+The moment you see that the local login is successful but the Techax login is failing, that means it has 
+to do something when the request authentication request goes to the tech server, which is eyes.  
+ 
+17:45 
+So pretty much first check on the eyes whether you see an incoming Techax request from this network 
+device. 
+ 
+17:52 
+And if you do, what is the result? 
+ 
+17:54 
+Is the authentication passing? 
+ 
+17:57 
+And yes, if the authentication is passing then does it complete authorization, right?  
+ 
+18:02 
+That's what you need to check. 
+ 
+18:03 
+Now if the authorization, if the authentication is failing, then you need to check what is the reason for 
+the failure, right? 
+ 
+18:10 
+One of the very commonly seen problem is wrong password or invalidly invalid shared secret, right?
+
+--- PAGE 11 ---
+18:18 
+So invalid shared secret is the shared secret which is which is mentioned in the network device when 
+you define the a tech server and also mentioned in the network device list of the eyes when you 
+define the network device over there, right. 
+ 
+18:33 
+So that is the key using which the the network device and the eyes trust each other, right.  
+ 
+18:39 
+So many a times when you when you remove the secret key and put it back again, the issues get 
+resolved. 
+ 
+18:48 
+So this is this is one of the scenarios where where the same resolve the problem.  
+ 
+18:56 
+Another commonly seen issue Tecac server was not reachable so customer tried to log in with local 
+admin account but got the following error. 
+ 
+19:05 
+Triple authorization failed for command show logging right? 
+ 
+19:08 
+How can we use this? 
+ 
+19:09 
+So very very interesting right? 
+ 
+19:11 
+So Tecac server was not reachable so the customer tried to log in with local admin account.  
+ 
+19:19 
+But it looks like Tripoli authorization is failing. 
+ 
+19:23 
+So it looks like the request is probably still going to the Teqax server.  
+ 
+19:28 
+What is the solution? 
+ 
+19:30 
+So it it looks like there was no local mention at the end of the authorization, right?  
+ 
+19:36 
+As mentioned for failover, if the Teqax servers are unreachable, it is mentioned.
+
+--- PAGE 12 ---
+19:42 
+It is necessary that you mentioned local at the end and otherwise if if this is not mentioned, then the 
+the network device is not going to try to authorise the the local username and password.  
+ 
+19:58 
+I mean authorise the local user internally, right. 
+ 
+20:02 
+So it's important that you mention that together with this. 
+ 
+20:06 
+One more particular issue that I would want to highlight and also commonly seen is many a times we 
+have scripts which which which log into. 
+ 
+20:19 
+All the network devices in the in the cluster periodically and collect certain outputs, right and many a 
+times when the when when these scripts run continuously on the network devices, it creates a lot of 
+traffic, right? 
+ 
+20:36 
+And and you can basically see all of these in the tech axe reports, right?  
+ 
+20:45 
+It is important that the the script that which you have has intelligence on on on the intelligence and 
+understands on when reauthentication should be attempted on a network device which failed 
+authentication right? 
+ 
+21:04 
+Otherwise many a times what happens is I have seen in many many customer environments that let's 
+say a username was a common global username exists which is used by all the scripts to do tech 
+authentication for all the network devices. 
+ 
+21:20 
+But suddenly this this particular usernames password gets expired.  
+ 
+21:26 
+And by the time the network admin team identifies that the password is expired and needs to be 
+renewed. 
+ 
+21:34 
+What happens is the scripts would repeatedly try to use the same username to access to to do 
+authentication and the server, the I server will repeatedly fail the authentication request.  
+ 
+21:48 
+But then there is no intelligence whatsoever in this script so that it does not attempt to do the same 
+authentication again.
+
+--- PAGE 13 ---
+21:56 
+It it will continuously do it, thereby overloading the the the I server. 
+ 
+22:02 
+And this could lead to other performance issues, right? 
+ 
+22:07 
+So that's, that's it in this in this particular session of tech acts. 
+ 
+22:14 
+I hope this session was helpful and you will be able to troubleshoot many tech issues or at least collect 
+the locks that are needed for analysing and troubleshooting the problem together with TAC.  
+ 
+22:33 
+Thank you.

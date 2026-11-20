@@ -1,0 +1,606 @@
+--- PAGE 1 ---
+ISE Overview & deployment 
+ 
+0:04 
+Hello everyone, this is is R Technical Consulting Engineer for Tech security.  
+ 
+0:10 
+Today we are going to review the fundamentals of Cisco Identity Services Engine or ICE.  
+ 
+0:17 
+The objective is not to go through every feature in ICE, but rather to understand how the different 
+pieces fit together from Triple A through policy decisions to the ICE personas and the overall 
+deployment architecture. 
+ 
+0:33 
+We will start with the Foundation Authentication, Authorization and Accounting, or Triple A.  
+ 
+0:40 
+Then we will look at what ICE actually does, how identity and context are used to make policy 
+decisions, and the different personas that provide those services. 
+ 
+0:52 
+After that, we will briefly discuss licensing and finish with one of the most important concepts for 
+anyone working with ICE policy sets and how ICE turns an authentication request into an authorization 
+decision. 
+ 
+1:09 
+Before talking about ICE itself, I want to start with Triple A because these 3 concepts are fundamental 
+to almost everything we do with ICE authentication answers. 
+ 
+1:21 
+Who are you? 
+ 
+1:23 
+This is where we verify the identity of the user or device. 
+ 
+1:27 
+Depending on the use case, this could involve dot 1X, math, radius with authentication or other 
+mechanisms. 
+ 
+1:36 
+Authorization answers. 
+ 
+1:38 
+What are you allowed to do?
+
+--- PAGE 2 ---
+1:40 
+Once we know who or what is connecting, we can determine what level of access should be provide.  
+ 
+1:47 
+That could mean assigning a VLAN, a plug in an ACL, assigning an SDT, or providing administrative 
+privileges. 
+ 
+1:56 
+And finally, accounting answers what happened. 
+ 
+2:00 
+It gives visibility into sessions and activities, for example, when a session start or stop and what 
+administrative activity occur on a network device. 
+ 
+2:11 
+So a simple way to remember it is authentication establishes identity, authorization determines access.  
+ 
+2:19 
+Accounting provides visibility and auditability. 
+ 
+2:24 
+So with Triple A as the foundation, what is ICE? 
+ 
+2:29 
+Cisco defines ICE as the identity base, network access control and policy enforcement system.  
+ 
+2:36 
+The important work here is identity base. 
+ 
+2:40 
+ICE isn't simply asking whether an IP address or Mac address should be allowed onto the network.  
+ 
+2:47 
+ICE can consider multiple pieces of context. 
+ 
+2:50 
+Who is connecting, what type of device is it? 
+ 
+2:54 
+When and where is it connecting, and how is it connecting? 
+ 
+2:58 
+Wired, wireless, or VPN?
+
+--- PAGE 3 ---
+3:01 
+That context can then be used to make a much more granular access decision.  
+ 
+3:08 
+Once we understand that concept, we can see why ICE has such a broad set of capabilities.  
+ 
+3:15 
+At the access level, we have technologies such as DOT 1X, RADIUS, MAP and web based 
+authentication. 
+ 
+3:22 
+But ICE goes beyond basic network access. 
+ 
+3:26 
+It provides device administration through Tag X, guest access, BYOD profiling and asset visibility, 
+segmentation posture and compliance capabilities, and integration with the broader securities 
+ecosystem. 
+ 
+3:42 
+So ICE is better understood as a central policy platform rather than simply a radio server.  
+ 
+3:51 
+3 Capabilities are particularly important when thinking about modern security architectures.  
+ 
+3:57 
+First, segmentation as can use identity and context to help determine which resources and endpoint 
+should be able to access. 
+ 
+4:06 
+Second, posture and compliance. 
+ 
+4:09 
+We can evaluate whether an endpoint meets specific requirements before providing access.  
+ 
+4:15 
+And 3rd, security ecosystem integration. 
+ 
+4:19 
+Through mechanisms such as Bxgrid, iscan exchange contextual information with other security and 
+network platforms. 
+ 
+4:27 
+This is what allows eyes to participate in a broader security architecture instead of operating as an 
+isolated component.
+
+--- PAGE 4 ---
+4:37 
+From a network access perspective, iscan support multiple authentication mechanisms.  
+ 
+4:43 
+The most common examples are DOT 1X and Map, but we also have web based authentication, easy 
+Connect and other authentication methods. 
+ 
+4:54 
+And these mechanisms can be used across different access environments, wire networks, wireless 
+networks and VPN access. 
+ 
+5:03 
+So the access method may change, but the fundamental concept remains the same.  
+ 
+5:08 
+The network sends an access request as evaluates it against policy and the network device enforce the 
+resulting decision. 
+ 
+5:19 
+ICE combines identity with context. 
+ 
+5:22 
+On the identity side, we can have the user, the users group and the identity store.  
+ 
+5:28 
+For the endpoint, we can consider the device type, its profile and endpoint attributes.  
+ 
+5:35 
+Then we have connection information whether the connection is wired or wireless.  
+ 
+5:40 
+Which network device is involved? 
+ 
+5:43 
+The location and the access method. 
+ 
+5:45 
+And finally we can incorporate security information such as posture, thread attributes and vulnerability 
+information. 
+ 
+5:54 
+The important concept is that none of these pieces necessary has to make the decision by itself.  
+ 
+6:00 
+ICE can combine them.
+
+--- PAGE 5 ---
+6:02 
+So instead of asking is this user allowed, we can ask something much more useful.  
+ 
+6:09 
+Is this user using this type of device, connecting from this location through this access method under 
+the security conditions allowed to access this resource? 
+ 
+6:20 
+That is where the power of policy comes from. 
+ 
+6:25 
+Now that we understand what ICE does, let's look at how ICE is built. 
+ 
+6:30 
+ICE separates its functionality into different personas. 
+ 
+6:35 
+The 4 concepts I want you to remember are PAN, PSN, MNT, and PX Grid. 
+ 
+6:42 
+Each one has a different responsibility within the deployment. 
+ 
+6:47 
+Let's start with the Policy Administration Node or PAN. 
+ 
+6:53 
+I'd like to describe the PAN as the brain of the deployment. 
+ 
+6:56 
+This is where we configure eyes, policies, network devices, identity sources, certificates, and other 
+system configuration. 
+ 
+7:06 
+The PAN provides the administrative GUI and is responsible for synchronizing configuration to the 
+other nodes and I deployment can have a primary PAN and a secondary PAN for administrative 
+redundancy. 
+ 
+7:20 
+The important distinction is the PAN is primarily responsible for configuration and administration.  
+ 
+7:27 
+It is not where we want to think of every authentication request being processed that bring us to the 
+PSN. 
+ 
+7:37 
+The policy service node or PSN is the security guard of the deployment.
+
+--- PAGE 6 ---
+7:42 
+This is where the runtime processing happens. 
+ 
+7:46 
+PSN provides services such as RADIUS or network access tag X for device administration, guest access, 
+profiling, PYOD and posture related services. 
+ 
+7:59 
+Most importantly, the Psns evaluate the policy and makes the access decision and deployment must 
+have one or more Psns, and multiple Psns allow us to distribute the authentication and authorization 
+workload. 
+ 
+8:15 
+So the easiest distinction to remember is bank configures the policy and the Psns process the request 
+against that policy. 
+ 
+8:25 
+The 3rd persona is monitoring or MNT. 
+ 
+8:29 
+If the PAN is the brain and the PSN is the security guard. 
+ 
+8:33 
+I'd like to think of MNT as the CCTV system. 
+ 
+8:38 
+MNT receives and stores operational logs and provides reporting, monitoring, and troubleshooting 
+capabilities. 
+ 
+8:45 
+This is where we go when we need to understand what happened during authentication or 
+authorization. 
+ 
+8:53 
+MNT can also be deployed with a primary and secondary node for monitoring redundancy.  
+ 
+9:01 
+The full persona is PX Grid. 
+ 
+9:04 
+I'd like to describe PX Grid as the communication hub between Eyes and the rest of the ecosystem.  
+ 
+9:11 
+Eyes has valuable information about identities, endpoints, and network sessions.
+
+--- PAGE 7 ---
+9:16 
+Through PX Grid, that contextual information can be shared with other Cisco or 3rd party systems.  
+ 
+9:23 
+The reverse can also happen. 
+ 
+9:25 
+External systems can provide information that can influence how we respond to a particular endpoint, 
+so PX Grid is what helps turn eyes from an isolated policy engine into part of a broader security 
+architecture. 
+ 
+9:43 
+This slide brings the personas together. 
+ 
+9:45 
+At the top we have the PAN providing configuration and the administrative interface.  
+ 
+9:51 
+The PAN maintains the configuration database and synchronizes configuration across the deployment.  
+ 
+9:58 
+Then we have the PSN which provides the runtime services. 
+ 
+10:02 
+This is where authentication requests arrive, RADIUS, Tag X, guest access, profiling and other services.  
+ 
+10:10 
+Then we have MNT which collects and process operational information for logging and reporting.  
+ 
+10:17 
+And finally, PX Read provides integration with external systems and allows contextual information to 
+move between eyes and the security ecosystem. 
+ 
+10:28 
+So if you remember only one architecture diagram from this presentation, remember this, the band 
+managed PSM process, MNT monitors and Pxgrid integrates. 
+ 
+10:42 
+I support different deployment models, including standalone configurations where multiple personas 
+can coexist. 
+ 
+10:50 
+On the same note, I deployments can be designed according to the size and requirement of the 
+environment.
+
+--- PAGE 8 ---
+10:57 
+The important concept is not simply choosing between small, medium, or large.  
+ 
+11:02 
+The important question is how much processing do we need, where are our users and devices located, 
+and what level of redundancy and resiliency do we require? 
+ 
+11:14 
+For larger environments, distributing Psns allow us to place policy processing capacity closer to the 
+users and network infrastructure while maintaining centralized administration.  
+ 
+11:26 
+So as you can see on this slide, we have a standalone option, a small deployment option with up to 2 
+nodes and where the 2 of them run all of the personas. 
+ 
+11:38 
+Then we have medium deployment option with a maximum of 8 nodes in where 2 nodes will share 
+admin, MMT and PA create personas. 
+ 
+11:47 
+And then we have 6 dedicated PSN nodes. 
+ 
+11:51 
+And last, we have the large deployment option with a maximum number of 58 nodes, 2 dedicated 
+admin nodes, 2 dedicated MNT nodes, up to 50 PSN nodes and 4 PX grid nodes.  
+ 
+12:10 
+High availability in ICE isn't one single mechanism. 
+ 
+12:15 
+Different personas have different HA considerations. 
+ 
+12:18 
+For PAN, we can have a primary and secondary PAN to provide administrative redundancy or MMT.  
+ 
+12:26 
+We can have primary and secondary monitoring nodes. 
+ 
+12:30 
+For Psns, resiliency is achieved by having multiple Psns and distributing requests across them, 
+commonly through a load balancer or support network device mechanisms and PSNS Node group can 
+provide additional session resiliency for specific use cases. 
+ 
+12:50 
+One important point is that we should not describe is HA are simply turning on one HA feature.
+
+--- PAGE 9 ---
+12:58 
+Instead, we need to think about what happened if each individual service becomes unavailable.  
+ 
+13:07 
+The next topic is licensing. 
+ 
+13:09 
+I'm going to keep this section relatively high level because licensing can become a presentation by 
+itself. 
+ 
+13:15 
+The important point is that licensing determine which acts is capabilities are available for the 
+deployment. 
+ 
+13:24 
+The licensing model has evolved significantly over the different I releases.  
+ 
+13:29 
+So when discussing this with customer or partners, we should always make sure we are talking about 
+the licensing model applicable to their specific eyes release and entitlement.  
+ 
+13:40 
+Conceptually we can think of licensing in terms of the capabilities being consumed at the endpoint 
+access level. 
+ 
+13:48 
+We have functionalities such as Triple A and Dot 1X, guest access, EC Connect and enforcement 
+capabilities. 
+ 
+13:58 
+An essential license is used for this. 
+ 
+14:02 
+Then we have contextual capabilities such as profiling, location, visibility, BYOD&PX grid.  
+ 
+14:10 
+An advantage license is used for this. 
+ 
+14:13 
+And finally, we have advanced capabilities such as posture and the end compliance and threat related 
+functionality. 
+ 
+14:21 
+A premier license is used for this.
+
+--- PAGE 10 ---
+14:25 
+One important distinction is that device administration licensing is separate from endpoint licensing.  
+ 
+14:32 
+For a customer designing a nice solution, the correct question is not simply how many Eyes licenses 
+do I need. 
+ 
+14:40 
+It will be which eyes services are we actually deploying and what licensing entitlement is required for 
+those services. 
+ 
+14:50 
+Now we are going to move into what I would consider the most important configuration concept in 
+ICE, the policy set. 
+ 
+14:58 
+Everything we have discussed so far, identity, context, authentication, and authorization, eventually 
+needs to come together here. 
+ 
+15:08 
+A policy set is essentially a logical container for authentication and authorization policies.  
+ 
+15:16 
+We can have different policy sets based on things such as location, access type, network, device, or 
+business requirement. 
+ 
+15:25 
+The policy set is evaluated hierarchically. 
+ 
+15:29 
+First I determines which policy set applies to the incoming request.  
+ 
+15:34 
+Then the authentication policy determines how that request should be authenticated and which 
+identity source should be used. 
+ 
+15:43 
+After successful authentication, authorization policies are evaluated to determine what access should 
+be granted. 
+ 
+15:51 
+So the policy set provides the structure that allow us to translate the business requirement into an 
+actual ICE configuration. 
+ 
+16:01 
+Think about this from the perspective of a device trying to connect to a network.
+
+--- PAGE 11 ---
+16:06 
+The request arrives at The PSM. 
+ 
+16:09 
+ICE first needs to determine which policy set applies. 
+ 
+16:14 
+Then it evaluates the authentication policy. 
+ 
+16:18 
+If authentication succeeds, Eyes evaluates authorization. 
+ 
+16:23 
+Finally, the matching authorization rule returns an authorization profile.  
+ 
+16:30 
+That profile tells the network device what to do with the session. 
+ 
+16:34 
+So the overall flow is we'll receive a request, Eyes evaluates which policy set to use, then 
+authentication is evaluated after that authorization, and eventually ICE returns a certain access level 
+with the authorization profile. 
+ 
+16:52 
+This is the flow I will keep in mind whenever troubleshooting an ICE access issue.  
+ 
+16:58 
+Conditions are the logic that allows secular Cify request. 
+ 
+17:04 
+For example, we might want a policy set to apply only when a request comes from a particular 
+network, device group or uses a particular protocol. 
+ 
+17:15 
+A condition is essentially a logical test against information available in the authentication request or 
+the IS context. 
+ 
+17:24 
+This allows the same IS deployment to support very different access scenarios without creating 
+completely separate systems. 
+ 
+17:33 
+There are 2 basic ways to build that logic. 
+ 
+17:38 
+A simple condition evaluates one attribute.
+
+--- PAGE 12 ---
+17:41 
+For example, is the authentication method dot one XA compound condition combines multiple 
+conditions using logical operators such as AND and or. 
+ 
+17:54 
+For example, is this a DOT 1X request and is it coming from the corporate wireless network?  
+ 
+18:01 
+Compound conditions allow us to build much more granular policy logic.  
+ 
+18:08 
+When building policy, simple conditions are the individual building blocks.  
+ 
+18:13 
+We can evaluate attributes such as the network, device, protocol, identity group, endpoint 
+information, or other contextual attributes. 
+ 
+18:24 
+The important thing is to understand that these conditions are not the policy itself.  
+ 
+18:30 
+They are the questions I ask in order to determine which policy should apply.  
+ 
+18:37 
+Compound conditions allow us to combine those questions. 
+ 
+18:41 
+For example, User belongs to the employees group and endpoint is a corporate managed device and 
+the request comes from the corporate network. 
+ 
+18:51 
+That combination can produce a completely different result from user belong to employees group but 
+endpoint is unknown. 
+ 
+19:01 
+This is where identity and context become practical. 
+ 
+19:06 
+Once ICE has select the appropriate policy set, the authentication policy determines how the identity 
+should be verified. 
+ 
+19:15 
+For example, we can determine which identity source should be used.  
+ 
+19:20
+
+--- PAGE 13 ---
+That could be Active Directory and LDAP database, the ICE internal user database certificates, or 
+another support identity source. 
+ 
+19:30 
+The authentication policy is therefore answering how do I validate this identity?  
+ 
+19:36 
+It is important not to confuse that with authorization. 
+ 
+19:40 
+Authentications provide identity. 
+ 
+19:45 
+Authorization comes after authentication. 
+ 
+19:48 
+Here, Eyes evaluates attributes from the session, potentially including including the user, device 
+posture, session information, location, and other contextual information.  
+ 
+20:02 
+The matching authorization rule then assigns an authorization profile. 
+ 
+20:07 
+That profile defines the access rights that should be applied. 
+ 
+20:11 
+So for example, 2 users may both authenticate successfully, but they don't necessarily receive the 
+same access. 
+ 
+20:20 
+The authorization policy is where we turn identity and context into actual network access.  
+ 
+20:27 
+And that brings us back to the concept. 
+ 
+20:29 
+We start with Triple A and with that we have covered the fundamentals of Cisco ICE, Triple A, identity, 
+context, ICE capabilities, personas, deployment, licensing and policy sets.  
+ 
+20:45 
+The main methods I would like you to take away is that ICE is fundamentally a policy decision and 
+enforcement platform built around identity and context. 
+ 
+20:56 
+Thank you.

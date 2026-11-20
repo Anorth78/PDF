@@ -1,0 +1,467 @@
+--- PAGE 1 ---
+UnderstandingAAA 
+ 
+0:02 
+Good day everyone. 
+ 
+0:03 
+Today I'll guide you through understanding of Triple A. 
+ 
+0:07 
+We will examine its core framework. 
+ 
+0:12 
+Overview of Triple A. 
+ 
+0:13 
+Triple A is the foundational framework we use to secure our network.  
+ 
+0:18 
+Triple A stands for Authentication, Authorization and accounting.  
+ 
+0:22 
+Firstly, verifying the user identity to ensure only legitimate user gain entry.  
+ 
+0:28 
+That's authentication. 
+ 
+0:30 
+Who wants to access the network? 
+ 
+0:32 
+Is his legitimate or not? 
+ 
+0:33 
+Is his credentials right or no? 
+ 
+0:35 
+That's authentication. 
+ 
+0:37 
+Once authenticated, applying or giving specific permissions to restrict their access so that they can 
+only access resources that they need to. 
+ 
+0:45 
+That's authorization.
+
+--- PAGE 2 ---
+0:47 
+What is the user allowed to access? 
+ 
+0:49 
+What is his? 
+ 
+0:50 
+What is he or she allowed to do on the network? 
+ 
+0:53 
+Authorization. 
+ 
+0:55 
+Finally, tracking all activity to maintain a complete audit trial. 
+ 
+0:59 
+That's accounting. 
+ 
+1:01 
+What did the user do in the network? 
+ 
+1:04 
+Right, So 888 stands for authentication, authorization and accounting. 
+ 
+1:09 
+Let's look into each segment separately. 
+ 
+1:13 
+Authentication. 
+ 
+1:14 
+Who are you? 
+ 
+1:15 
+Think of authentication as a digital equivalent of presenting your passport and boarding pass at the 
+airport. 
+ 
+1:21 
+Security. 
+ 
+1:22 
+It's a critical first step right when the system verifies your identity to before giving network access to 
+you. 
+ 
+1:29
+
+--- PAGE 3 ---
+When it's come to authentication, we often think of username and passwords, but this process can 
+also involve hardware identifiers like Mac address, digital certificates, etcetera.  
+ 
+1:40 
+Authentication applies for both machine and user in that are interacting with the network 
+Authorization, what are you allowed to do? 
+ 
+1:51 
+While authentication verifies who you are, authorization defines exactly what you can do once you are 
+inside the system. 
+ 
+1:59 
+Think of this as a digital boarding pass. 
+ 
+2:02 
+It decides your specific permissions, such as which seat you are allowed to sit, what terminal you are 
+allowed to go through, etcetera. 
+ 
+2:10 
+In networking terms, which VLN you can join, or which ACL applies to your traffic.  
+ 
+2:16 
+By enforcing these restrictions, we ensure that user and machine access only the resources necessary 
+for their role. 
+ 
+2:26 
+Lastly, accounting. 
+ 
+2:27 
+What have you done now that authentication is complete? 
+ 
+2:31 
+System transits into the accounting phase. 
+ 
+2:34 
+Like have you sat in your seat? 
+ 
+2:36 
+Did you move? 
+ 
+2:37 
+What did you do on the airplane? 
+ 
+2:40 
+This stage tracks critical session data such as user activity, client machine details, etcetera.
+
+--- PAGE 4 ---
+2:46 
+It starts once on the application is complete and stops when the user disconnects Authentication 
+protocol. 
+ 
+2:57 
+Firstly TECX. 
+ 
+2:58 
+TECX stands for Terminal Access Controller Access Control System.  
+ 
+3:03 
+It's a security protocol designed specifically for device administration. 
+ 
+3:08 
+For example, let's say a terminal user who has the key, his username and password tries to log in or to 
+a Triple A client via SSH. 
+ 
+3:18 
+The once the user enters his credentials, the Triple A client forwards them to the eyes or the Triple A 
+server. 
+ 
+3:25 
+Post successful authentication, I sends the authorization with the respective privilege level for the user.  
+ 
+3:32 
+The Triple A client grants that privilege level to the user on the SSH session.  
+ 
+3:36 
+This ensures that based on the user identity, the user get the right privilege.  
+ 
+3:42 
+So once they execute a command, the privilege level decides on whether they are allowed to perform 
+that activity the next next protocol. 
+ 
+3:53 
+RADIUS. 
+ 
+3:54 
+RADIUS stands for Remote Authentication Dial in service. 
+ 
+3:58 
+It serves as an industry standard for centralized network access. 
+ 
+4:02 
+Here the supplicant sends the credentials to the authentication server eyes via the authenticator.
+
+--- PAGE 5 ---
+4:08 
+Like switches for wire connections, WLCS for wireless, A SA or FTDS for VPN connections.  
+ 
+4:15 
+The supplicant traffic starts as an equal request. 
+ 
+4:18 
+The authenticator communicates with eyes via RADIUS. 
+ 
+4:22 
+Now that we have gone through the 2 protocols, let's let's look into the difference between them.  
+ 
+4:30 
+The difference between RADIUS and TEC AX. 
+ 
+4:35 
+RADIUS is created by IET F and TEC AX is created by Cisco. 
+ 
+4:40 
+While both are industry standards, the fundamental difference lies in their purpose.  
+ 
+4:45 
+RADIUS is designed for network access whereas TEC AX is designed for device administration.  
+ 
+4:50 
+That means RADIUS is used when user has to log into the network and get a certain privilege.  
+ 
+4:57 
+Techacs is used when user has to log in on the network device to execute certain commands or do 
+certain activities on the device itself. 
+ 
+5:06 
+The protocols RADIUS uses UDP 1812 for authentication and 1813 for accounting and few legacy 
+devices uses 1645 for authentication and 1646 for accounting. 
+ 
+5:19 
+Whereas TEC AX use port 49 for all communications. 
+ 
+5:24 
+In comparison to RADIUS which encrypts only password, TEC AX offers superior security by encrypting 
+the entire packet. 
+ 
+5:33 
+TEC AX also provides granular control through complete command logging.
+
+--- PAGE 6 ---
+5:38 
+That means every command that the user executes can be sent as an authorization packet towards the 
+TEC AX and TEC AX can either permit or deny the specific command. 
+ 
+5:49 
+This feature is not present in RADIUS. 
+ 
+5:51 
+With respect to packet transmission, RADIUS is more streamlined.  
+ 
+5:55 
+It combines authentication and authorization and it and has a separate accounting packet.  
+ 
+6:00 
+Whereas for Tekax all 3 authentication, authorization and accounting are separate packets.  
+ 
+6:07 
+Tekax also support 15 privilege modes. 
+ 
+6:09 
+Radius does not honour or support this. 
+ 
+6:13 
+Remember, we have gone through through the 3 clear pairs during the RADIUS flow, Supplicant, 
+authenticator and authentication server. 
+ 
+6:21 
+Let's look into depth on each 3 segments. 
+ 
+6:25 
+Our network process relies on these components, right? 
+ 
+6:28 
+So firstly, the supplicate, this acts as the client side software. 
+ 
+6:32 
+It initiates the request by passing the credentials via ebook. 
+ 
+6:36 
+Secondly, the authenticator. 
+ 
+6:38 
+It serves as the gatekeeper. 
+ 
+6:40
+
+--- PAGE 7 ---
+It manages physical access and transmits E packets into RADIUS messages for the back end 
+communication with the authentication server. 
+ 
+6:49 
+Finally, the authentication server it makes the ultimate decision. 
+ 
+6:54 
+It validates the identity and issues of final accept or deny to grant network access.  
+ 
+7:03 
+EAP types. 
+ 
+7:04 
+When discussing EAP types the primary distinction is how the authentication process is shielded.  
+ 
+7:11 
+For non tunnelled or native EAP, the authentication happens directly, which means the credentials are 
+more exposed during the initial exchange. 
+ 
+7:20 
+Like the supplicant sends the credentials to the authentication server via the authenticator without any 
+tunnel. 
+ 
+7:27 
+In contrast, tunnel E establishes a secure TLS tunnel first. 
+ 
+7:32 
+This effectively wraps the authentication process in a layer of encryption.  
+ 
+7:37 
+This approach significantly enhance security by protecting sensitive data from an interception.  
+ 
+7:43 
+So the tunnel acts as an outer method where there is an inner method where the actual authentication 
+or the credentials share is being shared. 
+ 
+7:55 
+EAP methods. 
+ 
+7:56 
+When selecting an EAP method, the primary decision is whether to use a native approach or a 
+tunnelled one. 
+ 
+8:02 
+Under native approach we have EAP MD 5.
+
+--- PAGE 8 ---
+8:05 
+It uses simple MD 5 challenge mechanism. 
+ 
+8:08 
+Generally it is limited to legacy testing due to its lack of mutual authentication.  
+ 
+8:13 
+EB TLS on the other hand uses certificate for authentication. 
+ 
+8:17 
+The authentication happens during the TLS handshake. 
+ 
+8:20 
+There are no inner methods here. 
+ 
+8:22 
+The TLS provides maximum security through certificate based mutual validation.  
+ 
+8:28 
+Under tunnel EB we have 3 methods, EB EB FAST and EB TLS. 
+ 
+8:34 
+EB establishes a TNL tunnel using server certificate and sends the credential using another EB type as 
+inner method. 
+ 
+8:43 
+EEPFAST is very similar to EEP. 
+ 
+8:46 
+It also creates a tunnel first and sends the credentials securely inside it.  
+ 
+8:51 
+It also uses Protected Access Credentials pack for faster reauthentication, quick roaming and system 
+resumption. 
+ 
+8:58 
+EEP TLS is similar to EEPFAST and EEP. 
+ 
+9:02 
+It establishes the tunnel and sends the authentication inside it. 
+ 
+9:06 
+It offers simple setup and session resumption capabilities compared to peak.
+
+--- PAGE 9 ---
+9:12 
+Now that we have gone through authentications, let's start with authorization.  
+ 
+9:17 
+What does authorization do and how does it work? 
+ 
+9:20 
+Now let's say the authentication is successful. 
+ 
+9:23 
+Authorization determines exactly what the user is allowed to do on the network.  
+ 
+9:28 
+Instead of granting blanket access, the radio server users attribute value pair, generally known as a V 
+pair, to push specific policies such as VLN or session timeouts directly to the endpoint.  
+ 
+9:42 
+For example, the server identifies the VLN as the attribute and assigns a specific VLN ID as the value, 
+making it an attribute value pair. 
+ 
+9:52 
+This attribute value pair segments the user into its correct network zone.  
+ 
+9:58 
+This ensures that every device operates with minimum necessary privilege to maintain a secure 
+environment. 
+ 
+10:08 
+Let's look an interesting concept, change of authorization or COA. 
+ 
+10:13 
+COA allows us to modify a users network permission in real time without forcing them to disconnect 
+and reconnect. 
+ 
+10:21 
+While standard DOT 1X Flow handles the initial entry, COA acts as in dynamic trigger when a session 
+status change. 
+ 
+10:28 
+Let's have a look at the flow. 
+ 
+10:30 
+User connects to the network eyes, checks the identity and based on that decides on the initial access.  
+ 
+10:38 
+A limited access is granted solely based on the identity.
+
+--- PAGE 10 ---
+10:42 
+Later, some factors change, like a posture update, guest approval policy change, profile change, 
+anything for that matter. 
+ 
+10:51 
+Based on this new information, ICE decides to send a COA change of authorization to the network 
+device. 
+ 
+10:58 
+Once ICE sends the COA message, the network device immediately reevaluates the session and 
+applies the updated policy. 
+ 
+11:06 
+The user then gets the new access without any manual reconnect, right?  
+ 
+11:12 
+This ensures a seamless user experience while maintaining strict adaptive security control.  
+ 
+11:21 
+Lastly, accounting. 
+ 
+11:23 
+While authentication and authorization controls who gets in what they can do, accounting provides 
+the audit trial. 
+ 
+11:31 
+It monitors session duration, data usage, and any specific resource access, etcetera.  
+ 
+11:37 
+It ensures full visibility into the network activity that the user or the machine did when they were on 
+the corporate network. 
+ 
+11:44 
+Post the authentication, the network device sends an accounting start towards the ICE and once the 
+user disconnects from the network, it sends an accounting stop towards the ICE indicating that the 
+session is closed. 
+ 
+11:59 
+Now that we have gone through understanding of Triple A, the main segment being authentication, 
+authorization and accounting. 
+ 
+12:05 
+In brief, we have completed the session. 
+ 
+12:08 
+Thank you and have a nice day.

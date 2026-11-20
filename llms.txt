@@ -7,7 +7,7 @@ START HERE: use library.json (or api/documents.json) to enumerate every document
 Do not rely on search-engine indexing or directory browsing.
 For each document, fetch its extracted text_url for searchable text; use pdf_url for the original PDF.
 
-Document count: 1
+Document count: 21
 
 ## Machine-readable resources
 - Catalogue: https://anorth78.github.io/PDF/library.json
@@ -16,7 +16,107 @@ Document count: 1
 
 ## Documents
 
-### SCORM Translation Compatibility Guide Clean
-- ID: scorm-translation-compatibility-guide-clean
-- Text: https://anorth78.github.io/PDF/text/scorm-translation-compatibility-guide-clean.txt
-- PDF: https://anorth78.github.io/PDF/pdfs/scorm-translation-compatibility-guide-clean.pdf
+### Cisco ISE Guest Access Basics en IN
+- ID: cisco-ise-guest-access-basics-en-in
+- Text: https://anorth78.github.io/PDF/text/cisco-ise-guest-access-basics-en-in.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/cisco-ise-guest-access-basics-en-in.pdf
+
+### Course Stage 2 Order
+- ID: course-stage-2-order
+- Text: https://anorth78.github.io/PDF/text/course-stage-2-order.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/course-stage-2-order.pdf
+
+### ISE Backup & Restore
+- ID: ise-backup-restore
+- Text: https://anorth78.github.io/PDF/text/ise-backup-restore.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ise-backup-restore.pdf
+
+### ISE Certificates en IN
+- ID: ise-certificates-en-in
+- Text: https://anorth78.github.io/PDF/text/ise-certificates-en-in.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ise-certificates-en-in.pdf
+
+### ISE Overview & deployment en IN
+- ID: ise-overview-deployment-en-in
+- Text: https://anorth78.github.io/PDF/text/ise-overview-deployment-en-in.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ise-overview-deployment-en-in.pdf
+
+### ISE AD Integration en IN
+- ID: ise-ad-integration-en-in
+- Text: https://anorth78.github.io/PDF/text/ise-ad-integration-en-in.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ise-ad-integration-en-in.pdf
+
+### ISE backup restore en IN
+- ID: ise-backup-restore-en-in
+- Text: https://anorth78.github.io/PDF/text/ise-backup-restore-en-in.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ise-backup-restore-en-in.pdf
+
+### ISE LDAP Int
+- ID: ise-ldap-int
+- Text: https://anorth78.github.io/PDF/text/ise-ldap-int.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ise-ldap-int.pdf
+
+### ISE LDAP Integration en IN
+- ID: ise-ldap-integration-en-in
+- Text: https://anorth78.github.io/PDF/text/ise-ldap-integration-en-in.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ise-ldap-integration-en-in.pdf
+
+### ISE Licence
+- ID: ise-licence
+- Text: https://anorth78.github.io/PDF/text/ise-licence.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ise-licence.pdf
+
+### ISE LICENSE en IN
+- ID: ise-license-en-in
+- Text: https://anorth78.github.io/PDF/text/ise-license-en-in.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ise-license-en-in.pdf
+
+### ISE Node Registration Diviya (1)
+- ID: ise-node-registration-diviya-1
+- Text: https://anorth78.github.io/PDF/text/ise-node-registration-diviya-1.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ise-node-registration-diviya-1.pdf
+
+### ISE Overview
+- ID: ise-overview
+- Text: https://anorth78.github.io/PDF/text/ise-overview.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ise-overview.pdf
+
+### ISE Overview Deployment
+- ID: ise-overview-deployment
+- Text: https://anorth78.github.io/PDF/text/ise-overview-deployment.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ise-overview-deployment.pdf
+
+### ISE Replication en IN
+- ID: ise-replication-en-in
+- Text: https://anorth78.github.io/PDF/text/ise-replication-en-in.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ise-replication-en-in.pdf
+
+### ISE Replication
+- ID: ise-replication
+- Text: https://anorth78.github.io/PDF/text/ise-replication.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ise-replication.pdf
+
+### LDAP ecuefune
+- ID: ldap-ecuefune
+- Text: https://anorth78.github.io/PDF/text/ldap-ecuefune.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/ldap-ecuefune.pdf
+
+### TACACS en IN
+- ID: tacacs-en-in
+- Text: https://anorth78.github.io/PDF/text/tacacs-en-in.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/tacacs-en-in.pdf
+
+### UnderstandingAAA en IN
+- ID: understandingaaa-en-in
+- Text: https://anorth78.github.io/PDF/text/understandingaaa-en-in.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/understandingaaa-en-in.pdf
+
+### UnderstandingAAA
+- ID: understandingaaa
+- Text: https://anorth78.github.io/PDF/text/understandingaaa.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/understandingaaa.pdf
+
+### UnderstandingAAA BBT
+- ID: understandingaaa-bbt
+- Text: https://anorth78.github.io/PDF/text/understandingaaa-bbt.txt
+- PDF: https://anorth78.github.io/PDF/pdfs/understandingaaa-bbt.pdf

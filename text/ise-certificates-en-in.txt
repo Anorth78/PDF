@@ -1,0 +1,596 @@
+--- PAGE 1 ---
+ISE Certificates 
+ 
+0:00 
+Hello everyone, today I will be talking about certificates on ICE. 
+ 
+0:04 
+I am Sahiti Kapilavai, Technical Consulting Engineer in ICE Triple 18. 
+ 
+0:11 
+Before we start take a minute to think if you can answer these questions.  
+ 
+0:16 
+What are the key certificate based services in ICE? 
+ 
+0:21 
+How does Ciscois use digital certificates in Etls authentication?  
+ 
+0:26 
+If you don't know the answer to these questions, no worries, I got you covered.  
+ 
+0:30 
+Along with this, we will also look at many other things about how to handle certificates on ICE.  
+ 
+0:39 
+Let's start with the fundamentals. 
+ 
+0:41 
+As we know, there are 2 types of encryption. 
+ 
+0:44 
+Symmetric and asymmetric certificates are part of asymmetric encryption.  
+ 
+0:49 
+Asymmetric means let's say there are 2 devices trying to communicate with each other and there's 
+encryption and decryption involved and if they are using 2 different types of keys, public key and 
+private key, it's called asymmetric encryption. 
+ 
+1:03 
+Public key here is used to encrypt and private key is used to decrypt public key.  
+ 
+1:10 
+It is contained in the public certificate and it can be given to anyone in the world with whom you want 
+to communicate. 
+ 
+1:16 
+But private key, it should not leave the resource machine.
+
+--- PAGE 2 ---
+1:20 
+They represent the identity of the system and if they are exposed it's a security risk.  
+ 
+1:25 
+The other entity can impersonate your identity. 
+ 
+1:31 
+What is a certificate? 
+ 
+1:33 
+It is a signed document that represents an identity, much like how aadhaar card or a Social Security 
+number represents a citizen. 
+ 
+1:41 
+This certificate contains a public key, so anyone with the public certificate will be able to encrypt the 
+data and only the certificate owner who holds the private key can decrypt it. 
+ 
+1:53 
+Network access control solution like Eyes, it heavily relies on certificates for various functions, 
+especially for encrypted communication, HTDPS communication and for device authentication, that is 
+EEP communication. 
+ 
+2:10 
+Let us look at how HTDPS communication works using I certificate. 
+ 
+2:14 
+Every web portal with ICE is secured using HTTPS that is SSL encryption of HTTP.  
+ 
+2:21 
+Examples include administrative portal that is the one that administrators login to make management 
+changes. 
+ 
+2:30 
+Then sponsor portal, guest portal, Vyod client provisioning, my device portal, mobile device 
+management portal etcetera. 
+ 
+2:38 
+Let us look at a sample flow. 
+ 
+2:41 
+Let us say a client on their browser is trying to establish a HTTP tunnel HTTPS tunnel with the portal 
+that is hosted on a specific portal port. 
+ 
+2:51 
+Now ICE is going to send a certificate to the browser of the client machine.
+
+--- PAGE 3 ---
+2:56 
+The certificate would be corresponding to the portal port. 
+ 
+3:01 
+Once the certificate is sent, user is prompted to accept the certificate after it is stored in the browser 
+keychain or trusted store. 
+ 
+3:09 
+Now the SSL tunnel is formed, encryption of the HTTP communication takes place.  
+ 
+3:18 
+Let's look at how E communication works. 
+ 
+3:21 
+Certificates are used with nearly every possible EEP method like PEEP ET LS, ETT, LS, efast or PEEP.  
+ 
+3:30 
+With tunnel EEP methods, T LS is used to secure the credential exchange. 
+ 
+3:36 
+The client must trust the server and likewise server should also trust the client.  
+ 
+3:44 
+Let's look at a sample flow. 
+ 
+3:45 
+Much like how HTTPS website is the client server communication with Etls is going to work in similar 
+way. 
+ 
+3:54 
+Client establish the connection to the server which presents its certificate.  
+ 
+3:58 
+Client trust the certificate tunnel is form. 
+ 
+4:02 
+Client credentials are not sent to the server until the tunnel is established, thereby ensuring a secure 
+exchange. 
+ 
+4:09 
+In secure access deployments, client is the supplicant and server is the ICE policy node which is 
+presenting its EEP certificate. 
+ 
+4:20 
+How does ICE validate the certificate?
+
+--- PAGE 4 ---
+4:23 
+Firstly, it determines if the CA the trust if a CA who signed the certificate is a trusted authority.  
+ 
+4:31 
+It does this by looking through the trusted certificates imported on ICE.  
+ 
+4:38 
+On ICE, after you import the trust certificate, you should also enable the setting to Trust for client 
+authentication. 
+ 
+4:46 
+Let me quickly take you to the GUI of ICE and show you where the trusted certificates are under 
+administration certificates, Trusted certificates. 
+ 
+4:55 
+This is where you import the trusted certificate. 
+ 
+4:59 
+So a certificate here needs to have this setting on the right side. 
+ 
+5:04 
+Trust for client authentication. 
+ 
+5:10 
+Now the next thing that ICE validates is if the start and end date of the certificate are valid or if the 
+certificate has expired. 
+ 
+5:22 
+It can also check if the certificate has been revoked. 
+ 
+5:26 
+This is done using the OCSP or CRL checks. 
+ 
+5:30 
+This setting again is on the trusted certificate itself. 
+ 
+5:34 
+So on the GUI of ICE, when you edit a trusted certificate, you would see the options to enable the 
+OCSP or enable CRL Certificate Revocation list. 
+ 
+5:50 
+Then ICE also validates if the client has provided the proof of position. 
+ 
+5:56 
+That means when client sends its certificate that is the public key, ICE will generate a challenge which 
+can only be answered if the client has the corresponding private key.
+
+--- PAGE 5 ---
+6:07 
+Now the client decrypts this challenge using the private key and it sends a response back to ICE.  
+ 
+6:13 
+ICE validates this this response based on the public key. 
+ 
+6:17 
+If the response is correct, it confirms that the client processes the private key and is therefore 
+authentic. 
+ 
+6:27 
+Let us look at contents of a certificate. 
+ 
+6:29 
+A certificate has a subject that includes common name, organizational unit, organization, location, 
+state, etcetera. 
+ 
+6:37 
+Now the subject of a certificate on ICE has to be unique. 
+ 
+6:42 
+Then we have Subject Alternative Name. 
+ 
+6:44 
+This extension to the certificate design allows a single certificate to be used to protect multiple fully 
+qualified domain names. 
+ 
+6:52 
+On the right side, as it demonstrates, we have multiple domain name, domain names, DNS names 
+under the Subject alternative name field. 
+ 
+7:06 
+Let us look at certificate roles on ICE. 
+ 
+7:09 
+Firstly, we have the admin role and ICE node must identify itself to every other ICE node in the cluster 
+like the policy service nodes or the monitoring nodes. 
+ 
+7:19 
+This is crucial because the policy synchronization and management communication happens via the 
+admin role certificate. 
+ 
+7:26 
+Also, this admin role certificate is used when the administrator connects to the the web GUI of ICE for 
+management access.
+
+--- PAGE 6 ---
+7:35 
+Then we have the EEP role and ICE node must identify itself to a DOT 1X client that is connecting to 
+the network. 
+ 
+7:43 
+This is securing the layer to EEP communication and therefore the name of the identity does not have 
+to be DNS resolvable. 
+ 
+7:51 
+That means the ICE host name itself does not have to be on the certificate.  
+ 
+7:57 
+Then we have the portal role. 
+ 
+8:00 
+This is used to secure the HTTP communication over portals like Central Web Authentication portal, 
+Guest BYOD, Client provisioning, Native Supplicant Provisioning portal and so on.  
+ 
+8:10 
+Each portal should be mapped to a portal group tag. 
+ 
+8:13 
+We have a default portal group tag as well that's mapped to multiple portals.  
+ 
+8:19 
+So this group tag instructs the portal on the specifically tag certificate on which certificate has to be 
+used. 
+ 
+8:28 
+Let me take you back to the GUI of ICE to show you what I mean by a portal group tag.  
+ 
+8:34 
+So this is a system certificate page. 
+ 
+8:38 
+For example, I am trying to create a self science certificate which is for the portal role.  
+ 
+8:53 
+I am going to select the portal usage. 
+ 
+8:56 
+I can either use the default portal group tag or I can create a new one by clicking add new and I can 
+type some group tag name. 
+ 
+9:15 
+So this is how you create a portal group tag.
+
+--- PAGE 7 ---
+9:17 
+Once you create a certificate with the group tag, you should also make sure that the portal that you 
+need is mapped with this group tag. 
+ 
+9:27 
+Let's go to a guest portal. 
+ 
+9:30 
+I'll show you where the group tag mapping takes place. 
+ 
+9:35 
+It is under Portal settings. 
+ 
+9:39 
+This is where you map the newly created group tag. 
+ 
+9:44 
+OK, now lets look at the RADIUS DTLS role. 
+ 
+9:51 
+This role specifies the certificate that needs to be used for DTLS connection.  
+ 
+9:57 
+DTLS is TLS over UDP. 
+ 
+10:00 
+If you do not want to use the shared secret for encryption of the traffic between the network device 
+and NICE, you can also use this DTLS feature. 
+ 
+10:11 
+Then we have SAML role server certificate that is used to securely communicate with the SAML 
+identity provider. 
+ 
+10:19 
+Like Okta, they have to uniquely identify ICE. 
+ 
+10:23 
+They use this SAML role certificate to identify ICE. 
+ 
+10:28 
+Then we have ICE messaging role. 
+ 
+10:30 
+This ICE messaging certificate is used for encrypting the log communication instead of using the 
+legacy S log.
+
+--- PAGE 8 ---
+10:38 
+Now ICE uses this ICE messaging service. 
+ 
+10:41 
+The communication for logging happens using this ICE messaging certificate.  
+ 
+10:46 
+Then we have the PX grid roll. 
+ 
+10:48 
+ICE is when it is configured to be a PX grid controller. 
+ 
+10:52 
+The certificate is used for the PX grid services. 
+ 
+10:54 
+On ICE certificate classification. 
+ 
+11:01 
+On ICE we have these 3 broad categories. 
+ 
+11:05 
+First one is the self sign certificate. 
+ 
+11:07 
+That means I signs its own certificate. 
+ 
+11:10 
+The same node where we issue the self sign cert, it signs its own certificate.  
+ 
+11:14 
+There's no CA chain on the right side. 
+ 
+11:16 
+As we can see, the hierarchy does not have any CA chain, it's the own node name.  
+ 
+11:21 
+Then we have the internal CA sign certificate. 
+ 
+11:25 
+ICE can act as a certificate authority itself and have a chain CA chain of its own on the right side.  
+ 
+11:32 
+That is the hierarchy.
+
+--- PAGE 9 ---
+11:33 
+We have the certificate services roots, a notes, a endpoint Subs a followed by the actual certificate.  
+ 
+11:41 
+Then we can also have external CA sign certificates that is corporate or well known.  
+ 
+11:46 
+External CA can act as a certificate authority for a certificate that's generated on ICE.  
+ 
+11:56 
+Let's look at what is a wild card certificate. 
+ 
+11:58 
+Wildcard certificate is the one that uses wildcard notation, that is an* followed by.  
+ 
+12:04 
+Before the domain name. 
+ 
+12:06 
+This wildcard certificate allows the certificate to be shared across multiple hosts, for example start dot 
+security domain.net. 
+ 
+12:16 
+This same certificate can be used to secure any host whose DNS name ends in security.  
+ 
+12:22 
+Demo.net let us have look at how certificates are created on Eyes will go to the GUI of Eyes and I'll 
+give you a quick tour of how you can create certificates on the System certificates page of Eyes.  
+ 
+12:50 
+Earlier I had created a self sign certificate right? 
+ 
+12:53 
+The portal certificate if you see the issued by column is having the post name of the ice node itself.  
+ 
+12:59 
+That means it is a self sign certificate. 
+ 
+13:02 
+If it is showing Certificate Services Endpoint sub CA, that means it is a ICE internal CA sign certificate.  
+ 
+13:09 
+Let's look at how to create a external CA sign certificate.
+
+--- PAGE 10 ---
+13:13 
+Now we would be creating a CSR CSR a Certificate Signing request.  
+ 
+13:19 
+It can be for a specific role or it can be multi use. 
+ 
+13:23 
+You would be selecting the node for which you want to generate the CSR.  
+ 
+13:27 
+You would fill the OOU fields if you wanted to be wild card. 
+ 
+13:34 
+You would be selecting Allow wild card certificate. 
+ 
+13:38 
+Make sure that you are in the down time when you are doing this. 
+ 
+13:41 
+If you are changing the certificate for admin role or even if it is wild card, you have to take a down 
+time for admin role and for portal role also if you are actively using the portals.  
+ 
+13:59 
+So there is no impact when you are generating the CSR, only when you are binding the certificate 
+that's when the impact happens. 
+ 
+14:06 
+That that is the services would be restarting. 
+ 
+14:22 
+I click on generate. 
+ 
+14:23 
+OK, there is a typo here. 
+ 
+14:35 
+OK, the CSR is now exported. 
+ 
+14:40 
+You would be submitting this CSR to the CA who is supposed to sign the certificate.  
+ 
+14:45 
+Once they give the signed certificate, you would be coming back to the CSR seeking on bind 
+certificate and choose the signed certificate file.
+
+--- PAGE 11 ---
+14:55 
+You would give the friendly name. 
+ 
+14:57 
+Since we use the multi user as a sitting on the CSR, you have the option to select the usage.  
+ 
+15:03 
+We can enable whichever role we want. 
+ 
+15:08 
+Yeah, if it is admin role, you would see the option to set a restart time for the nodes.  
+ 
+15:16 
+You can schedule restart. 
+ 
+15:19 
+You can restart now. 
+ 
+15:20 
+That means it would sequentially restart the ICE notes or you can schedule it for a later time.  
+ 
+15:39 
+Let's look at how you can backup the certificates and private keys. 
+ 
+15:43 
+Before any change activity. 
+ 
+15:45 
+It's recommended that you export the system certificates along with the private key and also the 
+trusted certificates. 
+ 
+15:52 
+I will take you to the GUI of ICE again and show you how you can backup the certificates.  
+ 
+15:57 
+The system certificates has to be selected one by one and you need to click on export.  
+ 
+16:03 
+Select the second radio button to expose the certificate along with private key.  
+ 
+16:07 
+You can provide a private key password. 
+ 
+16:09 
+This password has to be noted down securely.
+
+--- PAGE 12 ---
+16:12 
+You would be using the same password when you are importing the certificate back again.  
+ 
+16:19 
+Then you can also go to trusted certificate, select the check box for the CA external CA certificate and 
+you will you will click on export. 
+ 
+16:36 
+Now let us look at some common troubleshooting scenarios. 
+ 
+16:40 
+First one being let us say endpoint rejects ICE EEP certificate during authentication.  
+ 
+16:46 
+How would you troubleshoot this? 
+ 
+16:48 
+Let us say the client device is a Windows device. 
+ 
+16:51 
+You would go to the local Certificate Management Console that is Microsoft Management Console.  
+ 
+16:58 
+From the available snap in column you would select the certificates and choose either your account, 
+user account, or computer account based on if you're using user authentication or machine 
+authentication. 
+ 
+17:12 
+Then under the Trusted Root Certificate Authorities and Intermediate Root Certificate Authorities, you 
+would verify if the ICE Root and intermediate certificates of the EEP authentication cert are present or 
+not. 
+ 
+17:27 
+If you want to validate if the server certificate is causing the issue or not, you can have the option to 
+uncheck the Validate Server Certificate option on the supplicant profile configuration itself and you 
+can test if that is the one that's causing the issue. 
+ 
+17:47 
+Next, sometimes when you're creating a certificate you might have noticed that I still so warning 
+certificate already exists. 
+ 
+17:54 
+This happens when you are using the same subject as the existing certificate.  
+ 
+17:59
+
+--- PAGE 13 ---
+So to deal with this you simply have to change any of the city, state or department release on the 
+certificate to a new slightly newer value. 
+ 
+18:11 
+Then we have a browser sometimes throwing warning that on the portal page that it is an untrusted 
+server. 
+ 
+18:22 
+This happens when the browser does not trust the portal certificate that ISIS presenting.  
+ 
+18:27 
+So firstly you need to ensure that the portal certificate is visible on the browser.  
+ 
+18:34 
+Then you need to make sure that the FQDN that you see on the portal certificate is same as the FQDN 
+that you are typing on the browser to access the portal. 
+ 
+18:46 
+Then you also need to ensure that the portal certificate chain is present on the client OS or the 
+browser software lock collection for issues relating to certificate install on eyes.  
+ 
+19:05 
+These are the debugs that you need to enable on PAN and the affected node.  
+ 
+19:10 
+Then you can collect a support bundle after the debugs are enabled once the issue is replicated.  
+ 
+19:19 
+This brings us to the end of the topic on certificates. 
+ 
+19:22 
+Thank you for watching.

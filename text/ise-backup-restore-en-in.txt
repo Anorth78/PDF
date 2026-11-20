@@ -1,0 +1,310 @@
+--- PAGE 1 ---
+ISE_backup_restore 
+ 
+0:01 
+Hello everyone, thank you for joining today's session on Cisco's Identity Service Engine or ICE Backup 
+and Restore. 
+ 
+0:08 
+My name is Manjunath Shiregar, and I'll be guiding you through this important topic.  
+ 
+0:12 
+The purpose of this training is to ensure you understand the critical aspect of backing up and 
+restoring your ICE system. 
+ 
+0:19 
+This knowledge is essential for maintaining business continuity and protecting your network in case of 
+unexpected events such as hardware failures or system upgrades.  
+ 
+0:30 
+Why ICE backup and restore is important Before diving into the technical details, let's discuss why 
+backup and restore functionality is critical. 
+ 
+0:42 
+As we all are aware, ICE plays a central role in network access control, making it a key component of 
+your network security. 
+ 
+0:52 
+Without a proper backup strategy, issues like hardware failure, cyber attacks, or accidental 
+configuration changes could disrupt your network. 
+ 
+1:03 
+A robust backup and restore plan ensures that you can recover quickly and minimise downtime.  
+ 
+1:14 
+There are 2 types of backups. 
+ 
+1:17 
+Data backups available in Cisco is configuration data or configuration backup and operational data or 
+we can call it as operational backup, right? 
+ 
+1:30 
+Configuration backup is nothing but a backup which includes policies, users and system settings.  
+ 
+1:38 
+Operational backups are backups which contains locks and monitoring data for reporting and analysis.
+
+--- PAGE 2 ---
+1:47 
+The 2 primary methods to generate a backup and to do restore. 
+ 
+1:56 
+The 2 primary methods are the CLI method and the GOI method. 
+ 
+2:02 
+Let me first show you the GOI method. 
+ 
+2:09 
+Here is my eyes. 
+ 
+2:11 
+If you quickly go into administration, back up and restore, it will take you to this particular page.  
+ 
+2:19 
+This is particularly the GOI method of taking an ICE backup, right? 
+ 
+2:26 
+In the GOI method, there are 2 ways of taking backup. 
+ 
+2:30 
+One backup now and the other is the scheduled backup. 
+ 
+2:35 
+Scheduled backup, as you can understand, is something that you schedule.  
+ 
+2:39 
+Let's say if you want to take a backup every week, then you can schedule a configuration or an 
+operational backup and just enable it and it will keep taking backups automatically every week.  
+ 
+2:51 
+You can schedule the backup the way you want once in a week, once in a day, once in a month, 
+etcetera, etcetera. 
+ 
+3:03 
+The backup Now option that you see is more of an ad hoc backup method.  
+ 
+3:09 
+You just can select the kind of backup that you want to take and click on Backup Now and it will allow 
+you to take an instant backup configuration backup or an operational backup of your eyes.  
+ 
+3:23 
+If you have to go back to our slides, right?
+
+--- PAGE 3 ---
+3:27 
+These the the this particular slide talks about the CLI command that can be used to take a backup, 
+right backup, backup a name to the backup, then the repository, the name of your repository.  
+ 
+3:43 
+You need to mention whether you want ice config backup or an operational backup and then an 
+encryption key, which is important when you restore the backup. 
+ 
+3:53 
+So a very key thing to remember is every configuration backup or an operational backup has 
+something called as encryption key. 
+ 
+4:03 
+And this particular key is something that you need to make a note of and store it, store it some 
+somewhere and a confidential key in fact which can be which has to be used when you restore.  
+ 
+4:17 
+If you do not have the encryption key and the restoration of that operational or conflict backup is not 
+possible and hence make sure that you always remember this encryption key or store it somewhere 
+confidentially. 
+ 
+4:31 
+Right here we are talking about the command that can be used to restore the backup.  
+ 
+4:40 
+Now, just like how we have the GOI and CLI method to take a backup, we have the exact 2 methods 
+for the restoration of the backup as well. 
+ 
+4:52 
+Let me show you the CLI, the UI method that we have right below. 
+ 
+5:01 
+If you Scroll down here, you can see the option to restore, right? 
+ 
+5:07 
+Basically, to restore the backup, it is important that you have a repository.  
+ 
+5:12 
+Without the repository, taking a backup or even restoring a backup is not possible.  
+ 
+5:18 
+Hence, it is important that you have a working repository. 
+ 
+5:21 
+To restore a backup, you need to select the repository which has the backup and then once you select
+
+--- PAGE 4 ---
+the repository, it automatically identifies the config backup or the operational backup that is in there 
+and it will list it the way it is listing it over here right now. 
+ 
+5:42 
+And then once you click on restore, it will start the restoration process. 
+ 
+5:47 
+Remember, as I said, the encryption key is important with for for restoring the backup.  
+ 
+5:54 
+Without that restoration is not possible. 
+ 
+5:59 
+In the same way, if you want to restore using the CLI command, this is the command that you can use.  
+ 
+6:05 
+Once again, encryption key and the repository where your backup is stored is important and the 
+reachability from eyes to that particular repository is very very important.  
+ 
+6:27 
+Let's look into the troubleshooting part here. 
+ 
+6:32 
+Some of the show commands that you can use to view what is the status or history of backup are 
+listed over here. 
+ 
+6:40 
+Show show backup history, Show backup status, Show restore status, Show restore history.  
+ 
+6:49 
+These are some show commands which you can use to view the status of the backup and the history 
+right. 
+ 
+6:56 
+In the same way debug commands which can be used are Debug Copy 7, Transfer 7 and Debug 
+backup Restore all the most important aspect. 
+ 
+7:06 
+As I mentioned, without the repository taking a backup or restoration of the backup is not possible.  
+ 
+7:14 
+Especially when you are taking a backup, it is important that your repository has enough space in it to 
+store the backup and you have verified that the connectivity from your eyes to your backup is working 
+fine. 
+ 
+7:31
+
+--- PAGE 5 ---
+These are also some of the important checks that you need to do when your backup is probably 
+failing. 
+ 
+7:36 
+Right? 
+ 
+7:36 
+The other important thing let us say all these aspects are correct the but for XYZ reason if the backup 
+is still failing then one of the ways to check log wise on what is happening is to run this command 
+show logging system a D/ 80 dot log dot tail. 
+ 
+7:55 
+This will tell you on what is happening with the backup or the restoration option based on which you 
+can try to troubleshoot. 
+ 
+8:03 
+Of course, troubleshooting or analysing these locks is something that you should take tax help on 
+because even if you figure out an error in there, fixing it is is is probably tax responsibility and hence 
+reaching out to tack to get it fixed is important. 
+ 
+8:27 
+Another key thing is once you start, let's say you are trying to take a ad hoc backup now of the 
+configurational data and let's say if you click on backup now, it will ask you to select the repository a 
+name for the backup. 
+ 
+8:44 
+I will say test config backup, I'll give an encryption key and I'll click on backup.  
+ 
+9:01 
+Remember internal CA certificate store is not in this backup. 
+ 
+9:05 
+It is recommended to export it separately using the application configure ICE command if I click on 
+backup. 
+ 
+9:28 
+You'll see a status bar popping up over here right now, if at all you want to stop the backup, you can 
+click on stop and the backup should stop, right? 
+ 
+9:38 
+However, if you want to allow, I mean, once you let the backup go on, you will see that this 
+percentage, the status bar will increase from zero and go on all the way till 100.  
+ 
+9:50 
+100 is when the backup is taken and stored in your repository, right?  
+ 
+9:55
+
+--- PAGE 6 ---
+However, many a times based on our experience, we have observed that the backup might get stuck 
+exactly at 75% right now. 
+ 
+10:05 
+Why does it get stuck at 75% Now friends, we have to understand that for a configuration backup 
+process to complete, a configuration backup has to be. 
+ 
+10:16 
+A configuration backup has to be taken which is temporarily stored in IS and then the whole file.  
+ 
+10:25 
+The whole configuration backup file is transferred to the repository.  
+ 
+10:29 
+So the process of taking a backup, storing it temporarily on the eyes is from zero to 75% post 75% the 
+file. 
+ 
+10:42 
+The temporary file is then transferred to the repository that you have selected.  
+ 
+10:47 
+So if at all your backup gets stuck at 75% for couple of hours altogether, then it's probably because 
+the repository is not reachable, or the repository is slow, or the the integration between the the 
+integration between eyes and the repository is not working. 
+ 
+11:10 
+So if at all your backup gets stuck at 75%, the first thing to check is whether the repository has 
+enough space, whether the reachability to the repository exists. 
+ 
+11:22 
+If both of this is working well, then the next thing to check is go to the repository and see whether you 
+can see a file, a config, I mean a config backup name, which you configured right.  
+ 
+11:37 
+The reason why I, I specifically spoke about this particular example is because we have observed a lot 
+of customers facing this exact issue, right? 
+ 
+11:48 
+So that's the troubleshooting for configuration for for ICE backup and restore.  
+ 
+11:57 
+Let me click on stop and it should stop the configuration, stop the backup process.  
+ 
+12:05 
+Another way to stop the backup process exists in the CLI of ICE.
+
+--- PAGE 7 ---
+12:10 
+Let me show you that here. 
+ 
+12:14 
+When you enter the command application configure ICE, you'll see option number 24 Force Backup 
+Cancellation. 
+ 
+12:29 
+Now this this option didn't exist in the older versions of ICE. 
+ 
+12:34 
+However, this option was added because in many of the UI, in many of the cases the UI stop 
+functionality didn't took a while to work or or did not help to stop the backup and hence a force 
+backup cancellation command was added. 
+ 
+12:56 
+And if if the goi function of stopping the backup does not work, you can use this option as better.  
+ 
+13:07 
+And with that it comes to the end of this particular topic. 
+ 
+13:13 
+I believe it was helpful to for you to understand how ice backup and restore works.  
+ 
+13:21 
+Thank you.

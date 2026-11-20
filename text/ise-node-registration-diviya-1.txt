@@ -1,0 +1,356 @@
+--- PAGE 1 ---
+Cisco ISE Node 
+Registration
+Node onboarding, full synchronization, and inter-node replication
+DIVIYA MOL
+Technical Consulting Engineer – CISCO ISE
+
+--- PAGE 2 ---
+Agenda
+Node Registration
+Full Sync
+Node Replication
+Common Issues
+Endpoint Replication
+
+--- PAGE 3 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+ISE Node Registration
+Aaa Aaa
+HTTP over SSL
+JGroup Communication
+WHAT REGISTRATION ESTABLISHES
+Secure communication between the 
+Primary PAN and the joining node.
+The selected personas/services for the 
+new node.
+A synchronized starting point before the 
+node handles production workload.
+Fetch Host Details
+Fetch Local Certs and save in PAN
+Update FW rules, upload DB, Initiate Sync
+Update PAN: SYNC Completed
+THE THREE PHASES 
+‘Node Registration — establishes trust and deployment 
+membership.
+Full Sync — copies the configuration database to the joining 
+node.
+Incremental Replication — keeps nodes aligned with ongoing 
+changes.
+
+--- PAGE 4 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Pre-Registration Checks
+Perform these checks before starting registration; they prevent avoidable failures.
+IDENTITY & SOFTWARE
+• Joining node should be in Standalone state.
+• Use the correct node FQDN/hostname.
+• Verify same ISE version and patch level before joining.
+• Confirm the required GUI/admin credentials are available
+INFRASTRUCTURE
+• Forward and reverse DNS must resolve correctly.
+• NTP/time must be synchronized across nodes.
+• Validate Admin-certificate trust and complete certificate 
+chains.
+• Confirm routing, firewall rules, and required inter-node 
+ports.
+• Check latency/connectivity between PAN and the joining 
+node.
+
+--- PAGE 5 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Inter-Node Connectivity — What to Verify
+The GUI may be reachable while replication is still unhealthy.
+5
+Port
+ Component / use
+ Why it matters
+443
+ HTTPS / secure ISE communication
+ Registration and secure communication
+12001
+ JGroups
+Inter-node synchronization / replication.
+12001 is required to be open on PPAN
+6379
+ Jedis / profiler framework
+ Relevant to profiler/endpoint ownership issues on supported releases
+Key point: TCP/443 success does not prove that JGroups communication on TCP/12001 is healthy.
+
+--- PAGE 6 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Node Registration — Step-by-Step
+Registration is initiated from the Primary PAN.
+Cisco ISE • Node Registration & Inter-node Communications DIVIYA MOL 6
+1 Confirm joining node
+Keep the node standalone and confirm its FQDN.
+2 Open Deployment
+Primary PAN → Administration → System → Deployment.
+3 Start registration
+Select Register and enter the joining node FQDN and credentials.
+4 Establish trust
+Review the Admin certificate and trust relationship between nodes.
+5 Select personas
+Assign the required personas/services to the new node.
+6 Submit & monitor
+Save and watch the node state through registration and sync.
+GUI path: Administration > System > Deployment
+
+--- PAGE 7 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Registering Nodes: Full Sync
+• Export the configuration DB up to current 
+system change number
+• Upload the the database export (.dmp file) 
+to registering node
+• A checksum is sent to detect file corruption
+• Receiving node stops app server (DB is up 
+during import), uses the .dmp file to import 
+data
+• After app server is started secondary node 
+updates primary that it completed sync 
+successfully via JGroups
+• If any step fails, the node is marked as 
+‘Registration Failed’.
+
+--- PAGE 8 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Node Replication (Uses JGroups)
+• Replication is distinct from full sync
+• Events on Primary PAN ‘replicated’ to all nodes as they happen
+• PAN writes the events to its transaction table
+• Separate threads picks the information and Publishes the changes
+• Secondary nodes receive the changes and update its DB
+• Secondary nodes can ask for missed messages
+• Transaction table can store certain number of messages and secondary nodes 
+can fetch and get in sync 
+• PAN doesn’t wait for ACK from Secondary nodes
+• Ordering is undertaken by JGroups
+
+--- PAGE 9 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+1 2 3 4
+Node Replication: Summarization
+Request missed 
+messages
+• Secondary nodes can 
+ask for missed 
+messages
+Transaction table sync No secondary ACKs JGroups ordering
+• Transaction table can 
+store a certain 
+number of messages 
+and secondary nodes 
+can fetch and get in 
+sync
+• PAN doesn’t wait for 
+ACK from secondary 
+nodes
+• Ordering is 
+undertaken by 
+JGroups
+
+--- PAGE 10 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Node status in a Cisco ISE
+• IN PROGRESS : No action is required if the status changes to ‘Connected’. If it changes to any 
+other state, check respective message and action accordingly
+• NOT_IN_SYNC (Critical limit is reached) : PAN stores up to 2M or 5 hours of unpublished 
+messages. Once this limit is reached all nodes will be marked as Out-Of-Sync. A manual sync is 
+required to recover
+• REPLICATION_STOPPED : Secondary nodes are not reachable via JGroups. Once the nodes 
+are reachable, the replication could recover automatically
+• DISCONNECTED : Secondary nodes are not reachable via JGroups for 5 minutes or more. The 
+node may come back up by itself when the underlying issue resolves. If not, log in to the Cisco 
+ISE GUI and perform a manual synchronization from the Deployment window.
+• REGISTRATION FAILED : If any step before successful sync from secondary node to PAN, we 
+get this error
+
+--- PAGE 11 ---
+Endpoint Replication
+• Endpoint Replication behaviour has changed with ISE 3.3+
+• Configuration: Administration > System > Settings >Endpoint Replication
+NOTE :
+Disabling dynamic endpoint replication does NOT cause data loss. It only stops replicating 
+dynamically discovered endpoints. Existing endpoint data is retained
+Endpoint Type Replication Behaviour
+Static (manually created) Always replicated to all nodes
+Imported (CSV) Always replicated to all nodes
+Guest/Posture Enabled Always replicated to all nodes
+Dynamically discovered 
+(profiling)
+Configurable (ISE 3.3 disabled by default)
+
+--- PAGE 12 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Stage-Based Troubleshooting
+• Registration stage: Check DNS, network, and 
+certificates
+• Dump transfer stage: Review logs for transfer 
+errors
+• Check deployment node list status
+• Review ise-psc.log for registration errors
+• Review replication.log and ADE.log for sync 
+errors
+• Review deployment.log for initiation status
+Registration Stage
+Check Node Status
+Dump Transfer Stage
+Review Sync Logs
+Review ise-psc.log
+Review deployment.log
+
+--- PAGE 13 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Common Registration & Replication Issues
+Registration/Sync failed
+Too many events – nodes going out of sync
+Node state transitions
+Replication failed alarms
+Slow replication to one or more nodes
+Session ID: BRKSEC-XXXX 13
+Cisco Confidential
+
+--- PAGE 14 ---
+Registration / Sync Fails – Sanity Checks
+• Verify DNS and NTP configuration (no alarms)
+• Ensure Admin certificates are CA-signed with complete chains
+• If Self-signed certificate, then ensure that the certificates are trusted between the nodes
+• Validate open Ports: 443
+• On PAN we need to ensure open Port : 12001 (JGroup)
+• Test Telnet connectivity between PAN and registering node
+DNS Configured
+ NTP Configured
+ Verify Certificates
+ Network 
+Connectivity
+
+--- PAGE 15 ---
+Dump Export/Import Timings
+The chart illustrates a 100% increase in database dump completion timeout limits starting from version 3.1 P8.
+Key Insights
+• Pre-3.1 P8 versions are restricted to a 2.5-hour completion 
+window
+• Version 3.1 P8 and above doubles the allowed timeout to 5 hours
+• Extended limits accommodate larger data volumes and complex 
+export processes
+Conclusion
+Upgrade to version 3.1 P8 or higher to leverage extended 5-hour 
+timeout windows, ensuring successful completion of large-scale 
+database dump operations without premature termination.
+2.5
+5.0
+0
+1
+2
+3
+4
+5
+6
+Pre-3.1 P8 3.1 P8+
+Timeout (Hours)
+P8 Comparison by Version
+Pre-3.1 P8 3.1 P8+
+
+--- PAGE 16 ---
+Node State Transitions
+CASE 1
+PAN cannot publish events and unpublished event 
+count exceeds 2M
+CASE 2
+When the Secondary node falls behind the published 
+sequence in the order of 2M records
+All Secondary nodes marked 
+OUT OF SYNC
+The Specific Secondary node is marked
+OUT OF SYNC
+
+--- PAGE 17 ---
+Slow Replication Errors
+• Check PPAN publishing rates via ise-psc.log
+• Check Secondary consuming rates via ise-psc.log
+• Investigate misconfigurations (Authentications, 
+Accounting, Profiling)
+• Check profiler logs for JedisConnectionException
+• Investigate node latency
+• High Load Average
+• Thread dump to isolate further
+• ISE 2.7+: Ensure Port 6379 is open for Jedis 
+framework
+PPAN Publishing
+Secondary 
+Consumption
+Performance 
+Factor
+Monitor 
+Threshold
+
+--- PAGE 18 ---
+Debug Logs to Collect
+Category Log Files / Details
+Replication-Deployment replication.log, ise-psc.log
+Replication-JGroup replication.log, ise-psc.log
+Replication Tracker tracking.log
+Hibernate hibernate.log
+Thread dump
+Heap dump
+PCAP On PAN & registering node
+
+--- PAGE 19 ---
+Common 
+Scenarios
+
+--- PAGE 20 ---
+Scenario 1: Node Stuck at 0% Sync / Registration Fails
+Symptoms: 
+• Node stays at "In Progress" > 5 hours
+• replication.log: Sync percentage stuck at 0%  
+• Eventually: Received status: SYNC FAILED
+
+--- PAGE 21 ---
+Scenario 1: Node Stuck at 0% Sync / Registration Fails
+Root Cause: 
+Network bandwidth or connectivity issue between PAN and remote PSN site (often MPLS 
+WAN link)
+Resolution: 
+1. Run the bandwidth test (transfer a large backup file to both local and remote 
+repositories) 
+2. If remote is significantly slower, work with network team to ensure adequate 
+bandwidth 
+3. Consider scheduling registration during off-peak hours
+
+--- PAGE 22 ---
+Scenario 2: Replication Stopped
+Symptoms: 
+• Node status: "Replication Stopped" (connected on 443, not on 12001)
+• Packet capture shows TCP retransmissions on port 12001
+
+--- PAGE 23 ---
+Scenario 2: Replication Stopped — Port 12001 Issues
+Root Cause: 
+Network device (firewall, IPS) blocking or rate-limiting TCP port12001
+Resolution: 
+1. Capture traffic on port 12001 between PAN and affected PSN 
+2. Check for firewall ACLs, QoS policies, or IPS signatures blocking port 12001 
+3. Verify iptables on both nodes allow port 12001 communication
+4. Perform manual sync after network issue is resolved
+
+--- PAGE 24 ---
+Scenario 3: All Secondary nodes are going out of Sync simultaneously
+Symptom:
+replication.log : 
+Multiple nodes changing from SYNCCOMPLETED to OUTOF_SYNC simultaneously
+
+--- PAGE 25 ---
+Scenario 3: All Secondary nodes are going out of Sync simultaneously
+Root Cause:
+PAN unpublished rate crosses the threshold limit
+Resolution: 
+1. Reload PPAN to clear memory 
+2. Perform manual sync on all nodes after PPAN comes back up
+
+--- PAGE 26 ---
+Thank you
+
+--- PAGE 27 ---
+Cisco

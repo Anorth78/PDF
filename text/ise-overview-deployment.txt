@@ -1,0 +1,371 @@
+--- PAGE 1 ---
+ISE Overview & 
+Deployment
+Revising the fundamentals of ISE
+
+--- PAGE 2 ---
+Agenda
+AAA and ISE Fundamentals
+Personas and Role
+ISE Licenses
+Policy Set
+Q & A
+
+--- PAGE 3 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+AAA – Authentication, Authorization and Accounting
+The three building blocks of identity-based access control
+Authentication Authorization Accounting
+Who are you? What are you allowed 
+to do?
+What happened?
+Verifies the identity of 
+the user or device
+Determines the access 
+level or priviledge 
+granted
+Records activity and 
+session information
+Identity → Verified Policy → Decision Activity → Visibility
+Examples: 802.1X, 
+MAB, RADIUS, CWA
+Examples: VLAN; ACL, 
+SGT, access 
+priviledges
+Examples: Session 
+start/stop, 
+administrator actions, 
+usage records
+
+--- PAGE 4 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+What is Cisco ISE? 
+Cisco ISE is an identity-based network access control and policy enforcement system.
+Context Question
+Who Who is the user?
+What What type of device is 
+connecting?
+When When is access occurring?
+Where Where is the endpoint connecting?
+How Wired, wireless, or VPN?
+
+--- PAGE 5 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco ISE capabilities
+Capabilities Description
+Device Administration TACACS+ authentication, authorization and 
+accounting for network device administration
+Guest and Secure Wireless Guest access, web/mobile portals, sponsorship 
+and differentiated guest privileges
+BYOD Secure onboarding and controlled network 
+access
+Asset Visibility Visibility into devices across wired, wireless 
+and VPN connections through probes and 
+device sensors
+Secure Access 802.1X, RADIUS, MAB, web-based 
+authentication, EasyConnect and other 
+authentication methods
+
+--- PAGE 6 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Cisco ISE capabilities
+Capabilities Description
+Segmentation Context-driven segmentation using 
+mechanisms such as SGTs, SGACLs, network 
+access protocols and policy sets
+Posture / Compliance Evaluate endpoint compliantce before granting 
+network access
+Threat Containment Dynamically change endpoints access based 
+on thread/vulnerability information
+Security Ecosystem Integration Exchange contextual information and 
+policy/configuration data through pxGrid
+
+--- PAGE 7 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+How does ISE control network access?
+ISE Supports multiple authentication mechanisms, including:
+• 802.1x
+• RADIUS
+• MAB
+• Web-based authentication
+• Esasy Connect
+• External-agent-enabled authentication method
+Access Environments 
+• Wired – Catalyst Switches
+• Wireless – Cisco Wireless Infraestructure
+• VPN – Remote Access
+
+--- PAGE 8 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Identity + Context = Policy
+Identity
+• User
+• User Group
+• Identity Source
+Endpoint
+• DeviceType
+• Device Profile
+• Endpoint Attributes
+Connection
+• Wired / Wireless / VPN
+• Network Device
+• Location
+• Access Method
+Security
+• Posture
+• Thread Attributes
+• Vulnerability Information
+
+--- PAGE 9 ---
+Personas & 
+Roles
+
+--- PAGE 10 ---
+PAN is the brain of the 
+deployment
+• Licensing 
+• Admin authentication and Authorization
+• Admin Audit Reports (via MNT)
+• Each ISE deployment must have one PAN
+• Only 1xPrimary and 1xSecondary (Backup)
+• Responsible for policy sync to all nodes
+• GUI Interface to configure and view policies
+Policy Administration Node (PAN)
+
+--- PAGE 11 ---
+• Posture
+• BYOD/MDM services
+• Guest Access 
+• Profiling
+• Directly communicates with external identity 
+stores
+• Each deployment must have one or more 
+PSNs (max 50)
+• Device Admin (TACACS)
+• Network Access (RADIUS)
+Policy Service Node (PSN)
+The Security Guard
+
+--- PAGE 12 ---
+CCTV Systems
+• Provides meaningful Reports
+• Only 1xPrimary and 1xSecondary
+• Option for Dedicated MNT
+• Minimum one MNT node 
+• Store log messages
+• Logging and Reporting
+Monitoring Node (MNT)
+
+--- PAGE 13 ---
+Company’s 
+communication hub
+• Shares contextual information between ISE and other 
+devices, including 3rd party devices
+• Invoke adaptive network control actions
+• Operates in Active/Active mode for HA
+• Subscriber-Consumer Model
+• pxGrid 2.0 uses REST and WebSocket for 
+communications
+pxGrid Node (PXG)
+
+--- PAGE 14 ---
+Deployment Summary
+Authentication Server
+TACACS / RADIUS
+Posture / BYOD
+Portals
+Configuration Database
+Configuration
+Admin GUI
+Replication
+Share Session Data
+DNAC / FMC Integration
+Third Party Integration
+Process / Correlate Logs
+Operational Database
+Log Collector
+Reports
+MnTAdmin
+PxGridPSN
+
+--- PAGE 15 ---
+Deployment Models
+Standalone
+Medium
+(Max 8 nodes: 2 Admin/MnT/pxGrid and 6 PSNs)
+Small 
+(2-nodes)
+Large
+(Max 58 nodes: 2 Admin, 2 MnT, 50 PSN 
+and 4 pxGrid)Ref : ISE PERFORMANCE AND SCALE Document
+
+--- PAGE 16 ---
+High Availability and Failover Mechanisms
+• PAN HA: Primary and Secondary PAN setup for 
+administrative redundancy
+• PAN Failover: Automatic failover is configurable 
+but disabled by default (3 nodes mandatory)
+• MnT HA: Primary and Secondary MnT nodes for 
+monitoring redundancy
+• MnT Failover: Manual failover between 
+monitoring nodes
+• PSN HA: Deployment of multiple PSNs behind a 
+load balancer or it can be configured on newer 
+IOS versions.
+• PSN Node Groups: Utilized to enable session 
+failover for URL redirected issue
+High Availability (HA)
+PAN HA
+MnT HA
+PSN HA
+
+--- PAGE 17 ---
+ISE Licenses
+
+--- PAGE 18 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+Plus (Context)
+Base (Network Onboarding)
+Apex (Compliance)
+• AAA & 802.1x
+• Guest (Hotspot, Self-Reg, 
+Sponsored)
+• Trustsec
+• Easy Connect (PassiveID)
+• Profiling
+• Location Visibility & 
+Enforcement
+• Context Sharing (pxGrid)
+• BYOD (+CA,+MDP)
+• RTC (ANC)
+• Posture
+• MDM Compliance
+• TC-NAC
+Legacy Model
+License Models
+Device Admin does not 
+need endpoint licenses
+No changes to Device 
+Admin / VM licenses
+All term-based licenses
+Smart licensing only 
+(+ Satellite* & PLR*)
+Nested-Doll Model (Smart Licensing)
+• Context Sharing (pxGrid 
+Out/In)
+• Profiling
+• Location Visibility & 
+Enforcement
+• BYOD (+CA, +MDP)
+Advantage (Context)
+Essentials (User Visibility & Enforcement)
+Premier (Compliance & Cloud - Full Stack)
+• Endpoint Visibility
+via Endpoint Analytics
+• Group Based Policy 
+(TrustSec)
+Enforcement
+• AAA & 802.1X 
+• Guest (Hotspot, Self-Reg, Sponsored)
+• Easy Connect (PassiveID)
+• RTC (ANC)
+• Posture
+• MDM Compliance
+• TC-NAC
+• Enforcement via Endpoint 
+Analytics
+Cloud
+• User Defined Network
+ISE 
+3.0
+• Ref : ISE 3.4 LICENSING
+
+--- PAGE 19 ---
+Understanding 
+ISE Policy Set
+
+--- PAGE 20 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+ISE Configuration : Policy Sets
+Policy sets (both network access and 
+device administration sets) enable you to 
+logically group authentication and 
+authorization policies within the same set. 
+You can have several policy sets based on 
+an area, location, access type and so on.
+Policy sets are configured hierarchically, 
+where the rule on the top level of the policy 
+set, which can be viewed from the Policy set 
+table, applies to the entire set and is matched 
+before the rules for the rest of the policies and 
+exceptions. Thereafter, rules of the set are 
+applied in this order:
+POLICY SETS
+Authentication Policy 
+Authorization policy – 
+Local Exception 
+Authorization policy – 
+Global Exception
+Authorization policy
+
+--- PAGE 21 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+ISE Configuration : Policy set flow
+letting a device onto the network.
+
+--- PAGE 22 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+ISE Configuration : Policy Sets - Conditions 
+What are conditions?
+Simple Conditions Compound 
+Conditions
+Conditions in Cisco ISE Policy Sets are logical 
+tests used to classify and match incoming 
+authentication requests before applying the 
+appropriate authentication and authorization 
+policies
+
+--- PAGE 23 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+ISE Configuration : Policy Sets - Conditions 
+SIMPLE
+COMPOUND
+A simple condition is a single logical test that evaluates one 
+single attribute from the authentication request
+A compound condition is a combination of two or more 
+simple conditions using the logical operations ( AND/ OR ) to 
+create more granular policy logic 
+C O N D I T I O N S
+
+--- PAGE 24 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+ISE Configuration : Policy Sets - Conditions 
+SIMPLE A simple condition is a single logical test that evaluates one single 
+attribute from the authentication request
+
+--- PAGE 25 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+ISE Configuration : Policy Sets - Conditions 
+COMPOUND
+A compound condition is a combination of two or more simple 
+conditions using the logical operations ( AND/ OR ) to create more 
+granular policy logic
+
+--- PAGE 26 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+ISE Configuration: Policy Sets (Authentication) 
+Authentication rules define which identity source database to use for authentication, and what 
+actions to take if authentication fails.
+
+--- PAGE 27 ---
+© 2026 Cisco and/or its affiliates. All rights reserved.
+ISE Configuration: Policy Sets (Authorization) 
+Authorization rule is a policy decision point that matches attributes from authentication session ( user, 
+device, posture, session, location and so on) and assigns the appropriate authorization profile, which 
+defines the access rights.
+
+--- PAGE 28 ---
+Thank you
+
+--- PAGE 29 ---
+Cisco
